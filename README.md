@@ -7,6 +7,7 @@
   Github Profile Readme Generator
 </h1>
 
+<p align="center"><img src="./src/images/gh-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 #### Tired of editing Github Profile README with new features?
 This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc. 
