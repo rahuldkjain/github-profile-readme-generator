@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-const animationLoader = () => { }
 const Loader = () => {
     let arrow = useRef([]);
     useEffect(() => {

@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/gh-profile-readme-generator`,
   siteMetadata: {
     title: `Github Profile Readme Generator`,
     description: `Prettify your github profile using this amazing readme generator.`,
@@ -27,8 +28,17 @@ module.exports = {
         icon: `src/images/mdg.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-168596085-3",
+        // this option places the tracking script into the head of the DOM
+        head: true,
+        // other options
+      },
+    },
+  ],
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
 }

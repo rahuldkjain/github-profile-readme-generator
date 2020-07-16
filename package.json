@@ -1,12 +1,14 @@
 {
-  "name": "github-profile-reamde-generator",
+  "name": "gh-profile-reamde-generator",
   "private": true,
   "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
   "version": "0.1.0",
   "author": "Rahul Jain <rahuldkjain@gmail.com>",
   "dependencies": {
+    "@primer/octicons-react": "^10.0.0",
     "gatsby": "^2.23.12",
     "gatsby-image": "^2.4.9",
+    "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-manifest": "^2.4.14",
     "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-react-helmet": "^3.3.6",
@@ -17,10 +19,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-github-btn": "^1.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -34,13 +36,14 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/rahuldkjain/gh-profile-readme-generator"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/rahuldkjain/gh-profile-readme-generator/issues"
   }
 }

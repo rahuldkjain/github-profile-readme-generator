@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useState } from "react"
 import MarkdownPreview from "../components/markdownPreview";
 import Markdown from '../components/markdown';
 import Header from '../components/header';
@@ -7,10 +7,14 @@ import Subtitle from '../components/subtitle';
 import Work from '../components/work';
 import Social from '../components/social';
 import Addons from '../components/addons';
+import Skills from '../components/skills';
+import { initialSkillState } from '../constants/skills';
 import gsap from 'gsap';
 import Loader from '../components/loader';
 import Footer from '../components/footer';
 import './index.css'
+import { ArrowLeftIcon, CopyIcon, EyeIcon } from '@primer/octicons-react';
+import SEO from '../components/seo';
 
 const IndexPage = () => {
   const [prefix, setPrefix] = useState({
@@ -57,9 +61,15 @@ const IndexPage = () => {
     instagram: '',
     twitter: '',
   });
+  const [skills, setSkills] = useState(initialSkillState)
   const [generatePreview, setGeneratePreview] = useState(false);
   const [generateMarkdown, setGenerateMarkdown] = useState(false);
   const [displayLoader, setDisplayLoader] = useState(false);
+  const handleSkillsChange = (field) => {
+    let change = { ...skills }
+    change[field] = !change[field];
+    setSkills(change);
+  }
   const handlePrefixChange = (field, e) => {
     let change = { ...prefix }
     change[field] = e.target.value;
@@ -77,7 +87,7 @@ const IndexPage = () => {
   }
   const handleSocialChange = (field, e) => {
     let change = { ...social }
-    change[field] = e.target.value;
+    change[field] = e.target.value.toLowerCase();
     setSocial(change);
   }
   const handleCheckChange = (field) => {
@@ -119,13 +129,21 @@ const IndexPage = () => {
     setGenerateMarkdown(!generateMarkdown);
     setGeneratePreview(!generatePreview);
     if (!generatePreview) {
-      gsap.set('#copy-markdown', {
+      gsap.set('.copy-button', {
         visibility: 'hidden'
       });
       document.getElementById('preview-markdown').innerHTML = 'markdown'
     } else {
-      gsap.set('#copy-markdown', {
+      gsap.set('.copy-button', {
         visibility: 'visible'
+      });
+      gsap.set('#copy-markdown', {
+        innerHTML: 'copy-markdown',
+        color: '#0a0a23',
+      });
+      gsap.to('.copy-button', {
+        border: '2px solid #3b3b4f',
+        duration: 1
       });
       document.getElementById('preview-markdown').innerHTML = 'preview'
     }
@@ -141,6 +159,10 @@ const IndexPage = () => {
       innerHTML: 'copied',
       color: '#00471b',
     });
+    gsap.to('.copy-button', {
+      border: '2px solid #00471b',
+      duration: 1
+    });
   }
   const handleBackToEdit = () => {
     setGeneratePreview(false);
@@ -149,46 +171,49 @@ const IndexPage = () => {
       display: ''
     });
     gsap.to('.generate', {
-      scale: 1,      
+      scale: 1,
     });
   }
   return (
     <>
-      {/* <SEO title="Home" /> */}
+      <SEO title="Github Profile Readme Generator" description="Github Profile Readme Generator" />
       <Header heading="Github Profile Readme Generator" />
       <div className="form">
         <Title data={data} prefix={prefix} handleDataChange={handleDataChange} handlePrefixChange={handlePrefixChange} />
         <Subtitle data={data} handleDataChange={handleDataChange} />
         <Work prefix={prefix} data={data} link={link} handlePrefixChange={handlePrefixChange} handleLinkChange={handleLinkChange} handleDataChange={handleDataChange} />
+        <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
         <Social social={social} handleSocialChange={handleSocialChange} />
         <Addons data={data} handleCheckChange={handleCheckChange} />
-
         <div className="section">
           {(data.visitorsBadge || data.githubStats) && !social.github ?
             <div className="warning">* Please add github username to use these add-ons</div> : ''}
         </div>
         <div className="submit">
-          <div className="button generate" onClick={handleGenerate}>Generate README</div>
+          <div className="button generate" tabIndex="0" role="button" onClick={handleGenerate}>Generate README</div>
         </div>
       </div>
       {displayLoader ? <Loader /> : ''}
-      {/* <div className="section preview"></div> */}
       {(generateMarkdown || generatePreview) ?
-        <div className="section">
-          <div className="back-button" onClick={handleBackToEdit}>&#8592; back to edit</div>
-        </div>
-      : '' }
-      {(generateMarkdown || generatePreview) ?
-        <div className="markdown">
-          <div className="markdown-box">
-            <div className="markdown-util">
-              <div className="copy-button" id="copy-markdown" onClick={handleCopyToClipboard}>copy</div>
-              <div className="preview-button" id="preview-markdown" onClick={handleGeneratePreview}>preview</div>
+        <>
+          <div className="utils">
+            <div className="back-button" tabIndex="0" role="button" onClick={handleBackToEdit}>
+              <ArrowLeftIcon size={16} /> <span className="hide-on-mobile"> back to edit</span>
             </div>
-            {generatePreview ? <MarkdownPreview prefix={prefix} data={data} link={link} social={social} /> : ''}
-            {generateMarkdown ? <Markdown prefix={prefix} data={data} link={link} social={social} /> : ''}
+            <div className="copy-button" tabIndex="0" role="button" onClick={handleCopyToClipboard}>
+              <CopyIcon size={24} /> <span className="hide-on-mobile" id="copy-markdown"> copy-markdown </span>
+            </div>
+            <div className="preview-button" tabIndex="0" role="button" onClick={handleGeneratePreview}>
+              <EyeIcon size={16} /> <span className="hide-on-mobile" id="preview-markdown"> preview</span>
+            </div>
           </div>
-        </div>
+          <div className="markdown">
+            <div className="markdown-box">
+              {generatePreview ? <MarkdownPreview prefix={prefix} data={data} link={link} social={social} skills={skills} /> : ''}
+              {generateMarkdown ? <Markdown prefix={prefix} data={data} link={link} social={social} skills={skills} /> : ''}
+            </div>
+          </div>
+        </>
         : ''}
       <Footer />
     </>

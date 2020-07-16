@@ -38,6 +38,7 @@ input:focus {
     -moz-box-shadow: 0 1px 1px var(--grey-90) !important;
     box-shadow: 0 1px 1px var(--grey-90) !important;
     cursor: pointer;
+    border-radius: 0px !important;
 }
 .icon {
     width: 25px;
@@ -126,35 +127,40 @@ input:focus {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 2%;
 }
 .markdown-box {
-    width: 80%;
+    width: 100%;
     font-size: 12px;
     color: var(--grey-85);
     border: 2px solid var(--grey-75);
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
-    box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
+    -webkit-box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
+    -moz-box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
+    box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
     padding: 1% 2% 0.5% 2%;
+    margin-top:0.5%;
 }
 .copy-button {
-    border: 2px solid var(--grey-15);
-    padding: 1%;
+    background: var(--grey-05);
+    border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
-    justify-self: flex-end;
+    width: 50%;
+    justify-self: center;
+    padding: 2% 0%;
 }
-.markdown-util {
-    display: flex;
-    justify-content: flex-end;
+.utils {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4%;
 }
 .preview-button {
-    justify-self: flex-end;
-    border: 2px solid var(--grey-15);
-    padding: 1%;
+    background: var(--grey-05);
+    border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
+    width: 50%;
+    justify-self: end;
+    padding: 2% 0%;
 }
 .loader {
     height: 100vh;
@@ -166,11 +172,13 @@ input:focus {
   }
 
 .back-button {
-    color: var(--grey-75);
-    width: 14%;
-    font-size: 20px;
-    margin-left: 10%;
+    background: var(--grey-05);
+    border: 2px solid var(--grey-75);
+    text-align: center;
     cursor: pointer;
+    width: 50%;
+    justify-self: start;
+    padding: 2% 0%;
 }
 .title {
     text-align: center;
@@ -198,8 +206,8 @@ input:focus {
     align-items: center;
 }
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 1%;
     cursor: pointer;
 }
@@ -212,13 +220,55 @@ input:focus {
 .heading {
     color: var(--dark-blue);
     font-family: 'Lato', sans-serif;
+    cursor: pointer;
 }
 .footer {
-    margin: 2% 0%;
+    margin: 5% 0% 2% 0%;
     width: 100%;
     text-align: center;
 }
-
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.github {
+    display: inline-flex;
+}
+.github-button {
+    font-size: 12px;
+    padding: 3%;
+    background: var(--grey-05);
+    border: 2px solid var(--grey-85);
+    color: var(--grey-90);
+    margin: 1%;
+    width: 150px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+.skills {
+    margin: 1%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.skill {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    padding-left: 10%;
+}
+.skill-icon {
+    margin-left: 12%;
+    width: 40px;
+    height: 40px;
+}
+.skill-preview-icon {
+    width: 40px;
+    height: 40px;
+    margin: 1%;
+}
 @media only screen and (max-width: 1199px) {
     h1, h2, h3, h4 {
         margin: 2% 0% !important;
@@ -236,10 +286,6 @@ input:focus {
     .button {
         width: 60%;
     }
-    .back-button {
-        width: 35%;
-        font-size: 14px;
-    }
     .cardImage {
         width: 200px;
         height: 100px;
@@ -248,9 +294,38 @@ input:focus {
         height: 15px;
     }
     .heading {
-        font-size: 14px;
+        font-size: 18px;
     }
     .footer {
         font-size: 12px;
+    }
+    .github-button {
+        font-size: 10px !important;
+        padding: 2% 1% !important;
+        width: 120px;
+    }
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skill-icon {
+        margin-left: 12%;
+        width: 25px;
+        height: 25px;
+    }
+    .skill-preview-icon {
+        width: 20px;
+        height: 20px;
+        margin: 1%;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    #markdown-content {
+        word-break: break-all;
     }
 }
