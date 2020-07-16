@@ -7,6 +7,8 @@
   Github Profile Readme Generator
 </h1>
 
+<p align="center"><img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" /></p>
+
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 #### Tired of editing Github Profile README with new features?
