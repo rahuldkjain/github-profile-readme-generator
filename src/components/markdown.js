@@ -39,21 +39,21 @@ const Markdown = (props) => {
     }
     const DisplaySocial = (props) => {
         if (props.username) {
-            return (<>{`<a href=${props.base}/${props.username} target="blank"><img align="center" src=${props.icon} alt="${props.username}" height="20" width="20" /></a>`}<br /></>);
+            return (<>{`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="20" width="20" /></a>`}<br /></>);
         }
         return '';
     }
     const VisitorsBadge = (props) => {
         let link = "https://komarev.com/ghpvc/?username=" + props.github
         if (props.show) {
-            return (<>{`<p align="left"> <img src=${link} alt=${props.github}/> </p>`}<br /><br /></>);
+            return (<>{`<p align="left"> <img src="${link}" alt="${props.github}" /> </p>`}<br /><br /></>);
         }
         return '';
     }
     const GithubStats = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
-            return (<>{`<p align="center"> <img src=${link} alt=${props.github} /> </p>`}<br /><br /></>);
+            return (<>{`<p align="center"> <img src="${link}" alt="${props.github}" /> </p>`}<br /><br /></>);
         }
         return '';
     }
@@ -65,7 +65,7 @@ const Markdown = (props) => {
         const listChosenSkills = [];
         skills.forEach(skill => {
             if (props.skills[skill]) {
-                listChosenSkills.push(`<img src=${baseURL + icons[skill]} alt=${skill} width="20" height="20"/>`);
+                listChosenSkills.push(`<img src="${baseURL + icons[skill]}" alt="${skill}" width="20" height="20"/>`);
             }
         });
         return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';
@@ -79,8 +79,8 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.currentWork} project={props.data.currentWork} link={props.link.currentWork} /></>
             <><DisplayWork prefix={props.prefix.collaborateOn} project={props.data.collaborateOn} link={props.link.collaborateOn} /></>
             <><DisplayWork prefix={props.prefix.helpWith} project={props.data.helpWith} link={props.link.helpWith} /></>
-            <><DisplayWork prefix={props.prefix.portfolio} project={props.data.portfolio} /></>
-            <><DisplayWork prefix={props.prefix.blog} project={props.data.blog} /></>
+            <><DisplayWork prefix={props.prefix.portfolio} link={props.link.portfolio} /></>
+            <><DisplayWork prefix={props.prefix.blog} link={props.link.blog} /></>
             <><DisplayWork prefix={props.prefix.ama} project={props.data.ama} /></>
             <><DisplayWork prefix={props.prefix.contact} project={props.data.contact} /></>
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>

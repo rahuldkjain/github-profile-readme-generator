@@ -103,8 +103,16 @@ input:focus {
     padding-left: 2%;
     margin: 1% 0%;
 }
+.skillCheckboxLabel {
+    width: 25%;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    margin: 8%;
+}
 .checkboxLabel {
     font-weight: 500;
+    cursor: pointer;
 }
 .submit {
     display: flex;
@@ -122,6 +130,9 @@ input:focus {
     -moz-box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
     box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
     padding: 0% 2%;
+}
+.markdown-section {
+    min-height: calc(100vh - 100px);
 }
 .markdown {
     width: 100%;
@@ -253,10 +264,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.skill {
-    display: flex;
-    justify-content: flex-start;
-    align-self: center;
+.skillCheckbox {
     padding-left: 10%;
 }
 .skill-icon {

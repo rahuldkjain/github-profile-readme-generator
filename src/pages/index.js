@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import MarkdownPreview from "../components/markdownPreview";
 import Markdown from '../components/markdown';
 import Header from '../components/header';
@@ -159,9 +159,13 @@ const IndexPage = () => {
       innerHTML: 'copied',
       color: '#00471b',
     });
-    gsap.to('.copy-button', {
+    gsap.fromTo('.copy-button', {
+      scale: 0.5,
+    }, {
+      scale: 1,
+      ease: 'elastic.in',
       border: '2px solid #00471b',
-      duration: 1
+      duration: 0.5
     });
   }
   const handleBackToEdit = () => {
@@ -174,10 +178,19 @@ const IndexPage = () => {
       scale: 1,
     });
   }
+  useEffect(() => {
+    gsap.fromTo(".generate", {
+      boxShadow: "0 0 0 0px rgba(59, 59, 79, 0.4)"
+    }, {
+      boxShadow: "0 0 0 20px rgba(59, 59, 79, 0)",
+      repeat: -1,
+      duration: 1
+    });
+  });
   return (
     <>
       <SEO title="Github Profile Readme Generator" description="Github Profile Readme Generator" />
-      <Header heading="Github Profile Readme Generator" />
+      <><Header heading="Github Profile Readme Generator" /></>
       <div className="form">
         <Title data={data} prefix={prefix} handleDataChange={handleDataChange} handlePrefixChange={handlePrefixChange} />
         <Subtitle data={data} handleDataChange={handleDataChange} />
@@ -195,7 +208,7 @@ const IndexPage = () => {
       </div>
       {displayLoader ? <Loader /> : ''}
       {(generateMarkdown || generatePreview) ?
-        <>
+        <div className="markdown-section">
           <div className="utils">
             <div className="back-button" tabIndex="0" role="button" onClick={handleBackToEdit}>
               <ArrowLeftIcon size={16} /> <span className="hide-on-mobile"> back to edit</span>
@@ -213,7 +226,7 @@ const IndexPage = () => {
               {generateMarkdown ? <Markdown prefix={prefix} data={data} link={link} social={social} skills={skills} /> : ''}
             </div>
           </div>
-        </>
+        </div>
         : ''}
       <Footer />
     </>
