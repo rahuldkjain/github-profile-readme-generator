@@ -24,4 +24,11 @@ You can preview the README too.
 
 You can add latest addons like `visitors count`, `shields`, `dev icons`, `github stats` etc to your README in just one click.
 
+
+### Special Thanks 🙇
+- [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+- [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
+- [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
+
+
 Designed with 💫 by [Rahul](https://rahuldkjain.github.io)
