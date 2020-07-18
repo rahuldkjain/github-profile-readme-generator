@@ -155,7 +155,7 @@ input:focus {
     border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
-    width: 50%;
+    width: 60%;
     justify-self: center;
     padding: 2% 0%;
 }
@@ -164,7 +164,7 @@ input:focus {
     border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
-    width: 50%;
+    width: 60%;
     justify-self: center;
     padding: 2% 0%;
 }
@@ -178,7 +178,7 @@ input:focus {
     border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
-    width: 50%;
+    width: 60%;
     justify-self: end;
     padding: 2% 0%;
 }
@@ -196,7 +196,7 @@ input:focus {
     border: 2px solid var(--grey-75);
     text-align: center;
     cursor: pointer;
-    width: 50%;
+    width: 60%;
     justify-self: start;
     padding: 2% 0%;
 }
