@@ -4,7 +4,8 @@ const skills = ['vuejs', 'react', 'angularjs', 'amazonwebservices', 'android', '
     'cplusplus', 'css3', 'csharp', 'd3js', 'django', 'docker', 'dotnet', 'electron', 'go',
     'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel', 'mongodb', 'mysql', 'php', 'postgresql',
     'rails', 'redis', 'redhat', 'ruby', 'rust',
-    'sass', 'scala', 'nodejs', 'python', 'swift', 'oracle', 'nginx'];
+    'sass', 'scala', 'nodejs', 'python', 'swift', 'oracle', 'nginx', 'linux', 'redux',
+    'webpack', 'express'];
 const icons = {
     vuejs: 'vuejs/vuejs-original-wordmark.svg',
     react: 'react/react-original-wordmark.svg',
@@ -51,7 +52,10 @@ const icons = {
     scala: 'scala/scala-original-wordmark.svg',
     sketch: 'sketch/sketch-original-wordmark.svg',
     swift: 'swift/swift-original-wordmark.svg',
-    typescript: 'typescript/typescript-original.svg'
+    typescript: 'typescript/typescript-original.svg',
+    linux: 'linux/linux-original.svg',
+    redux: 'redux/redux-original.svg',
+    webpack: 'webpack/webpack-original.svg',
 }
 
 const initialSkillState = {}
