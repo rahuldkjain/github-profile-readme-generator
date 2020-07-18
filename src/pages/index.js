@@ -13,7 +13,7 @@ import gsap from 'gsap';
 import Loader from '../components/loader';
 import Footer from '../components/footer';
 import './index.css'
-import { ArrowLeftIcon, CopyIcon, EyeIcon } from '@primer/octicons-react';
+import { ArrowLeftIcon, CopyIcon, DownloadIcon, EyeIcon } from '@primer/octicons-react';
 import SEO from '../components/seo';
 
 const IndexPage = () => {
@@ -168,6 +168,18 @@ const IndexPage = () => {
       duration: 0.5
     });
   }
+
+  const handleDownload = () => {
+    var markdownContent = document.getElementById("markdown-content");
+    var tempElement = document.createElement('a');
+    tempElement.setAttribute('href', 'data:text/markdown;charset=utf-8,' + encodeURIComponent(markdownContent.innerText));
+    tempElement.setAttribute('download', 'README.md');
+    tempElement.style.display = 'none';
+    document.body.appendChild(tempElement);
+    tempElement.click();
+    document.body.removeChild(tempElement);
+  }
+
   const handleBackToEdit = () => {
     setGeneratePreview(false);
     setGenerateMarkdown(false);
@@ -215,6 +227,9 @@ const IndexPage = () => {
             </div>
             <div className="copy-button" tabIndex="0" role="button" onClick={handleCopyToClipboard}>
               <CopyIcon size={24} /> <span className="hide-on-mobile" id="copy-markdown"> copy-markdown </span>
+            </div>
+            <div className="download-button" tabIndex="0" role="button" onClick={handleDownload}>
+              <DownloadIcon size={24} /> <span className="hide-on-mobile" id="download-markdown"> download </span>
             </div>
             <div className="preview-button" tabIndex="0" role="button" onClick={handleGeneratePreview}>
               <EyeIcon size={16} /> <span className="hide-on-mobile" id="preview-markdown"> preview</span>

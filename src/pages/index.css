@@ -159,9 +159,18 @@ input:focus {
     justify-self: center;
     padding: 2% 0%;
 }
+.download-button {
+    background: var(--grey-05);
+    border: 2px solid var(--grey-75);
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    justify-self: center;
+    padding: 2% 0%;
+}
 .utils {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 4%;
 }
 .preview-button {
