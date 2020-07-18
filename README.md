@@ -15,7 +15,7 @@
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </p>
 
-<i>Loved the tool? Please consider [donating](https://paypal.me/rahuldkjain) to help it improve!</i>
+<p align="center"><i>Loved the tool? Please consider [donating](https://paypal.me/rahuldkjain) 💸 to help it improve!</i></p>
 
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
