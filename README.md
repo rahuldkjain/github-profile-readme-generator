@@ -40,5 +40,6 @@ You can add latest addons like `visitors count`, `shields`, `dev icons`, `github
 - [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
 - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A81XXSX)
 
 Designed with 💫 by [Rahul](https://rahuldkjain.github.io)
