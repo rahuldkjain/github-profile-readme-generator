@@ -34,6 +34,25 @@ You can preview the README too.
 
 You can add latest addons like `visitors count`, `shields`, `dev icons`, `github stats` etc to your README in just one click.
 
+### Installation Steps
+1. Clone the repository
+```bash
+git clone https://github.com/rahuldkjain/github-profile-readme-generator.git
+```
+2. Change the working directory
+```bash
+cd github-profile-readme-generator
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Run the app
+```bash
+npm start
+```
+🌟 You are all set!
+
 
 ### Special Thanks 🙇
 - [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
