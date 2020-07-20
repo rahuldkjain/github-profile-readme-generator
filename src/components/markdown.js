@@ -1,5 +1,5 @@
 import React from 'react';
-import { baseURL, icons, skills } from '../constants/skills';
+import {icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
     const Title = (props) => {
@@ -65,7 +65,7 @@ const Markdown = (props) => {
         const listChosenSkills = [];
         skills.forEach(skill => {
             if (props.skills[skill]) {
-                listChosenSkills.push(`<img src="${baseURL + icons[skill]}" alt="${skill}" width="20" height="20"/>`);
+                listChosenSkills.push(`<img src="${icons[skill]}" alt="${skill}" width="20" height="20"/>`);
             }
         });
         return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';

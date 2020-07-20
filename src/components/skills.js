@@ -1,5 +1,5 @@
 import React from 'react';
-import { icons, baseURL, skills } from '../constants/skills';
+import { icons, skills } from '../constants/skills';
 const Skills = (props) => {
     const listSkills = skills.map((skill) => {
         return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { baseURL, icons, skills } from '../constants/skills';
+import {icons, skills } from '../constants/skills';
 
 const MarkdownPreview = (props) => {
     const TitlePreview = (props) => {
@@ -100,7 +100,7 @@ const MarkdownPreview = (props) => {
         var listSkills = []
         skills.forEach((skill) => {
             if(props.skills[skill]) {
-                listSkills.push(<img className="skill-preview-icon" src={baseURL + icons[skill]} alt={skill} />)
+                listSkills.push(<img className="skill-preview-icon" src={icons[skill]} alt={skill} />)
             }
         });
         return listSkills.length > 0 ? <div className='skills-preview'>{listSkills}</div> : ''
