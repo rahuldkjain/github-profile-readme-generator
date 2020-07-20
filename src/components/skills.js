@@ -7,7 +7,7 @@ const Skills = (props) => {
                 <label htmlFor={skill} className="skillCheckboxLabel">
                     <input id={skill} type="checkbox" checked={props.skills[skill]}
                         onChange={event => props.handleSkillsChange(skill)} />
-                        <img className="skill-icon" src={baseURL + icons[skill]}
+                        <img className="skill-icon" src={icons[skill]}
                             alt={skill} />
                 </label>
             </div>
