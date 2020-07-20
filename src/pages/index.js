@@ -60,6 +60,10 @@ const IndexPage = () => {
     fb: '',
     instagram: '',
     twitter: '',
+    dribbble: '',
+    behance: '',
+    medium: '',
+    youtube: ''
   });
   const [skills, setSkills] = useState(initialSkillState)
   const [generatePreview, setGeneratePreview] = useState(false);
