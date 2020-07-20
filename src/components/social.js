@@ -64,6 +64,30 @@ const Social = (props) => {
                 <input id="instagram" placeholder="instagram username" className="inputField lg"
                 value={props.social.instagram} onChange={event => props.handleSocialChange('instagram', event)} />
             </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/dribbble.svg"
+                className="icon" alt="dribbble" />
+                <input id="dribbble" placeholder="dribbble username" className="inputField lg"
+                value={props.social.dribbble} onChange={event => props.handleSocialChange('dribbble', event)} />
+            </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/behance.svg"
+                className="icon" alt="behance" />
+                <input id="behance" placeholder="behance username" className="inputField lg"
+                value={props.social.behance} onChange={event => props.handleSocialChange('behance', event)} />
+            </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/medium.svg"
+                className="icon" alt="medium" />
+                <input id="medium" placeholder="medium username (with @)" className="inputField lg"
+                value={props.social.medium} onChange={event => props.handleSocialChange('medium', event)} />
+            </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/youtube.svg"
+                className="icon" alt="youtube" />
+                <input id="youtube" placeholder="youtube channel name" className="inputField lg"
+                value={props.social.youtube} onChange={event => props.handleSocialChange('youtube', event)} />
+            </div>
         </div>
     );
 }
