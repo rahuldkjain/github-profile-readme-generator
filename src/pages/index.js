@@ -69,7 +69,10 @@ const IndexPage = () => {
   const [generatePreview, setGeneratePreview] = useState(false);
   const [generateMarkdown, setGenerateMarkdown] = useState(false);
   const [displayLoader, setDisplayLoader] = useState(false);
-  const [isCopied, setisCopied] = useState(false);
+  const [copyObj, setcopyObj] = useState({
+    isCopied:false,
+    copiedText:'copy-markdown'
+  });
   const handleSkillsChange = (field) => {
     let change = { ...skills }
     change[field] = !change[field];
@@ -152,6 +155,10 @@ const IndexPage = () => {
       });
       document.getElementById('preview-markdown').innerHTML = 'preview'
     }
+    setcopyObj({
+      isCopied:false,
+      copiedText:'copy-markdown'
+    });
   }
   const handleCopyToClipboard = () => {
     var range = document.createRange();
@@ -172,7 +179,10 @@ const IndexPage = () => {
       border: '2px solid #00471b',
       duration: 0.5
     });
-    setisCopied(true);
+    setcopyObj({
+      isCopied:true,
+      copiedText:'copied'
+    });
   }
 
   const handleDownload = () => {
@@ -233,12 +243,12 @@ const IndexPage = () => {
             </div>
             <div className="copy-button" tabIndex="0" role="button" onClick={handleCopyToClipboard}>
               {
-                isCopied === true ?
+                copyObj.isCopied === true ?
                 <CheckIcon size={24} /> 
                 :
                 <CopyIcon size={24} /> 
               }
-              <span className="hide-on-mobile" id="copy-markdown"> copy-markdown </span>
+              <span className="hide-on-mobile" id="copy-markdown"> {copyObj.copiedText} </span>
             </div>
             <div className="download-button" tabIndex="0" role="button" onClick={handleDownload}>
               <DownloadIcon size={24} /> <span className="hide-on-mobile" id="download-markdown"> download </span>
