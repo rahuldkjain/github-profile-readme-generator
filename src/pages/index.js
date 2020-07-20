@@ -13,7 +13,7 @@ import gsap from 'gsap';
 import Loader from '../components/loader';
 import Footer from '../components/footer';
 import './index.css'
-import { ArrowLeftIcon, CopyIcon, DownloadIcon, EyeIcon } from '@primer/octicons-react';
+import { ArrowLeftIcon, CopyIcon, DownloadIcon, EyeIcon, CheckIcon } from '@primer/octicons-react';
 import SEO from '../components/seo';
 
 const IndexPage = () => {
@@ -69,6 +69,10 @@ const IndexPage = () => {
   const [generatePreview, setGeneratePreview] = useState(false);
   const [generateMarkdown, setGenerateMarkdown] = useState(false);
   const [displayLoader, setDisplayLoader] = useState(false);
+  const [copyObj, setcopyObj] = useState({
+    isCopied:false,
+    copiedText:'copy-markdown'
+  });
   const handleSkillsChange = (field) => {
     let change = { ...skills }
     change[field] = !change[field];
@@ -151,6 +155,10 @@ const IndexPage = () => {
       });
       document.getElementById('preview-markdown').innerHTML = 'preview'
     }
+    setcopyObj({
+      isCopied:false,
+      copiedText:'copy-markdown'
+    });
   }
   const handleCopyToClipboard = () => {
     var range = document.createRange();
@@ -170,6 +178,10 @@ const IndexPage = () => {
       ease: 'elastic.in',
       border: '2px solid #00471b',
       duration: 0.5
+    });
+    setcopyObj({
+      isCopied:true,
+      copiedText:'copied'
     });
   }
 
@@ -230,7 +242,13 @@ const IndexPage = () => {
               <ArrowLeftIcon size={16} /> <span className="hide-on-mobile"> back to edit</span>
             </div>
             <div className="copy-button" tabIndex="0" role="button" onClick={handleCopyToClipboard}>
-              <CopyIcon size={24} /> <span className="hide-on-mobile" id="copy-markdown"> copy-markdown </span>
+              {
+                copyObj.isCopied === true ?
+                <CheckIcon size={24} /> 
+                :
+                <CopyIcon size={24} /> 
+              }
+              <span className="hide-on-mobile" id="copy-markdown"> {copyObj.copiedText} </span>
             </div>
             <div className="download-button" tabIndex="0" role="button" onClick={handleDownload}>
               <DownloadIcon size={24} /> <span className="hide-on-mobile" id="download-markdown"> download </span>
