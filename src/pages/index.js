@@ -124,7 +124,13 @@ const IndexPage = () => {
       });
     }, 3000);
   }
+  const trimDataValues = () => {
+    const dataObj = { ...data };
+    Object.keys(dataObj).forEach(k => (typeof dataObj[k] === 'string') ? dataObj[k] = dataObj[k].trim() : null);
+    setData(dataObj);
+  }
   const handleGenerate = () => {
+    trimDataValues();
     if (data.visitorsBadge || data.githubStats) {
       if (social.github) {
         generate();
