@@ -104,7 +104,7 @@ input:focus {
     margin: 1% 0%;
 }
 .skillCheckboxLabel {
-    width: 25%;
+    width: 70%;
     font-weight: 500;
     cursor: pointer;
     display: flex;
@@ -286,6 +286,30 @@ a {
     height: 40px;
     margin: 1%;
 }
+/* Tooltip css */
+.tooltiptext {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    color: var(--grey-05);
+    margin-left: 8%;
+    background: var(--grey-90);
+    padding: 1px 5%;
+    font-size: 14px;
+}
+.skillCheckboxLabel:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--grey-90) transparent transparent;
+  }
 @media only screen and (max-width: 1199px) {
     h1, h2, h3, h4 {
         margin: 2% 0% !important;
@@ -344,5 +368,11 @@ a {
     }
     #markdown-content {
         word-break: break-all;
+    }
+    .tooltiptext {
+        visibility: hidden;
+    }
+    .skillCheckboxLabel:hover .tooltiptext {
+        visibility: hidden;
     }
 }
