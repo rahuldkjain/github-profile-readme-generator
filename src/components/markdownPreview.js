@@ -100,7 +100,7 @@ const MarkdownPreview = (props) => {
         var listSkills = []
         skills.forEach((skill) => {
             if(props.skills[skill]) {
-                listSkills.push(<img className="skill-preview-icon" src={icons[skill]} alt={skill} />)
+                listSkills.push(<img className="skill-preview-icon" key={skill} src={icons[skill]} alt={skill} />)
             }
         });
         return listSkills.length > 0 ? <div className='skills-preview'>{listSkills}</div> : ''

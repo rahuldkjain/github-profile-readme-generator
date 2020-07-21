@@ -1,5 +1,5 @@
 //const baseURL = 'https://konpa.github.io/devicon/devicon.git/icons/';
-const skills = ['vuejs', 'react', 'angularjs', 'amazonwebservices', 'android', 'backbonejs',
+const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs',
     'bootstrap', 'c', 'coffeescript',
     'cplusplus', 'css3', 'csharp', 'd3js', 'django', 'docker', 'dotnet', 'electron', 'go',
     'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel', 'mongodb', 'mysql', 'php', 'postgresql',
@@ -10,7 +10,7 @@ const icons = {
     vuejs: 'https://konpa.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg',
     react: 'https://konpa.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg',
     angularjs: 'https://konpa.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg',
-    amazonwebservices: 'https://konpa.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    aws: 'https://konpa.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     android: 'https://konpa.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg',
     backbonejs: 'https://konpa.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg',
     bootstrap: 'https://konpa.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg',
