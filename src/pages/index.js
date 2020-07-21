@@ -153,7 +153,7 @@ const IndexPage = () => {
     setGenerateMarkdown(!generateMarkdown);
     setGeneratePreview(!generatePreview);
     if (!generatePreview) {
-      gsap.set('.copy-button', {
+      gsap.set('.copy-button, .download-button', {
         visibility: 'hidden'
       });
       setPreviewMarkdown({
@@ -161,7 +161,7 @@ const IndexPage = () => {
         buttonText: 'markdown'
       })
     } else {
-      gsap.set('.copy-button', {
+      gsap.set('.copy-button, .download-button', {
         visibility: 'visible'
       });
       gsap.to('.copy-button', {
