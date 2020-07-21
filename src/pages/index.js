@@ -137,6 +137,7 @@ const IndexPage = () => {
     trimDataValues(data, setData);
     trimDataValues(social, setSocial);
     trimDataValues(link, setLink);
+    resetCopyMarkdownButton();
     if (data.visitorsBadge || data.githubStats) {
       if (social.github && isGithubUsernameValid(social.github)) {
         generate();
@@ -232,7 +233,6 @@ const IndexPage = () => {
     gsap.to('.generate', {
       scale: 1,
     });
-    resetCopyMarkdownButton();
   }
   useEffect(() => {
     gsap.fromTo(".generate", {
