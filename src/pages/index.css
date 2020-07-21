@@ -326,6 +326,8 @@ a {
     }
     .button {
         width: 60%;
+        margin: 2% 0%;
+        font-size: 14px;
     }
     .cardImage {
         width: 200px;
@@ -370,9 +372,9 @@ a {
         word-break: break-all;
     }
     .tooltiptext {
-        visibility: hidden;
+        display: none;
     }
-    .skillCheckboxLabel:hover .tooltiptext {
-        visibility: hidden;
+    .warning {
+        font-size: 10px;
     }
 }

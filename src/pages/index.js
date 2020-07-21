@@ -238,7 +238,7 @@ const IndexPage = () => {
     gsap.fromTo(".generate", {
       boxShadow: "0 0 0 0px rgba(59, 59, 79, 0.4)"
     }, {
-      boxShadow: "0 0 0 20px rgba(59, 59, 79, 0)",
+      boxShadow: "0 0 0 10px rgba(59, 59, 79, 0)",
       repeat: -1,
       duration: 1
     });
