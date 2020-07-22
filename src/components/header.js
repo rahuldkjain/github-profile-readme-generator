@@ -50,11 +50,11 @@ const Header = (props) => {
       <div className="github" >
         <a href="https://github.com/rahuldkjain/github-profile-readme-generator"
           aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub" target="blank">
-          <div className="github-button" style={{width:"200px"}}> <StarIcon size={16} className="star-icon" /> Star this repo { stats.starsCount }</div>
+          <div className="github-button" style={{width:"90%"}}> <StarIcon size={16} className="star-icon" /> Star this repo { stats.starsCount }</div>
         </a>
         <a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
           aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub" target="blank">
-          <div className="github-button" style={{width:"200px"}}><RepoForkedIcon size={16} className="fork-icon" /> Fork on Github { stats.forksCount }</div>
+          <div className="github-button" style={{width:"90%"}}><RepoForkedIcon size={16} className="fork-icon" /> Fork on Github { stats.forksCount }</div>
         </a>
       </div>
     </div>
