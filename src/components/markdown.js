@@ -96,7 +96,7 @@ const Markdown = (props) => {
                 username={props.social.twitter} /></>
             <><DisplaySocial base='https://linkedin.com/in' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg'
                 username={props.social.linkedin} /></>
-            <><DisplaySocial base='https://stackoverflow.com'
+            <><DisplaySocial base='https://stackoverflow.com/users'
                 icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' username={props.social.stackoverflow} /></>
             <><DisplaySocial base='https://codesandbox.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg'
                 username={props.social.codesandbox} /></>
