@@ -7,7 +7,6 @@ const Header = (props) => {
   const [stats, setStats] = useState({ stars: 0, forks: 0 });
 
   const fetchStats = async () => {
-    console.log('stats:updated')
     const response = await fetch('https://api.github.com/repos/rahuldkjain/github-profile-readme-generator');
     if (response.ok) {
       const {forks_count: forks, stargazers_count: stars } = await response.json();
@@ -34,7 +33,7 @@ const Header = (props) => {
     // repo stats
     fetchStats(); // async initial
     window.addEventListener('visibilitychange', () => !document.hidden && window.setTimeout(fetchStats, 5000)); // post 5 secs
-    window.setInterval(fetchStats, 900000); // every 15 mins
+    window.setInterval(fetchStats, 600000); // every 10 mins
   }, [])
 
   return (
