@@ -1,23 +1,33 @@
-import React from 'react';
+import React from "react"
 
-const Addons = (props) => {
-    return (
-        <div className="section">
-            <h3>Add-ons</h3>
-            <div className="checkbox">
-                <label htmlFor="visitors-count" className="checkboxLabel">
-                    <input type="checkbox" id="visitors-count" checked={props.data.visitorsBadge}
-                        onChange={event => props.handleCheckChange('visitorsBadge')} />&nbsp; display visitors count badge
-                </label>
-            </div>
-            <div className="checkbox">
-                <label htmlFor="github-stats" className="checkboxLabel">
-                    <input id="github-stats" type="checkbox" checked={props.data.githubStats}
-                        onChange={event => props.handleCheckChange('githubStats')} />&nbsp; display github profile stats card
-                </label>
-            </div>
-        </div>
-    )
+const Addons = props => {
+  return (
+    <div className="section">
+      <h3>Add-ons</h3>
+      <div className="checkbox">
+        <label htmlFor="visitors-count" className="checkboxLabel">
+          <input
+            type="checkbox"
+            id="visitors-count"
+            checked={props.data.visitorsBadge}
+            onChange={event => props.handleCheckChange("visitorsBadge")}
+          />
+          &nbsp; Display visitors count badge
+        </label>
+      </div>
+      <div className="checkbox">
+        <label htmlFor="github-stats" className="checkboxLabel">
+          <input
+            id="github-stats"
+            type="checkbox"
+            checked={props.data.githubStats}
+            onChange={event => props.handleCheckChange("githubStats")}
+          />
+          &nbsp; Display GitHub profile stats card
+        </label>
+      </div>
+    </div>
+  )
 }
 
-export default Addons;
+export default Addons
