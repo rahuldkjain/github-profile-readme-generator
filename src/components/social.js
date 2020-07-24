@@ -37,7 +37,7 @@ const Social = (props) => {
             <div className="container">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
                 className="icon" alt="stackoverflow" />
-                <input id="stackoverflow" placeholder="stackoverflow username" className="inputField lg"
+                <input id="stackoverflow" placeholder="stackoverflow user ID" className="inputField lg"
                 value={props.social.stackoverflow} onChange={event => props.handleSocialChange('stackoverflow', event)} />
             </div>
             <div className="container">
