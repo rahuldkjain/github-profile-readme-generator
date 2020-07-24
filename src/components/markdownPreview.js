@@ -70,7 +70,7 @@ const MarkdownPreview = (props) => {
                 <DisplaySocial base="https://dev.to" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" username={props.social.dev} />
                 <DisplaySocial base="https://twitter.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" username={props.social.twitter} />
                 <DisplaySocial base="https://linkedin.com/in" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" username={props.social.linkedin} />
-                <DisplaySocial base="https://stackoverflow.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" username={props.social.stackoverflow} />
+                <DisplaySocial base="https://stackoverflow.com/users" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" username={props.social.stackoverflow} />
                 <DisplaySocial base="https://codesandbox.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" username={props.social.codesandbox} />
                 <DisplaySocial base="https://kaggle.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg" username={props.social.kaggle} />
                 <DisplaySocial base="https://fb.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" username={props.social.fb} />
