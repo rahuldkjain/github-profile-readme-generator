@@ -19,6 +19,7 @@ const Markdown = (props) => {
                 <>
                     {`<h3 align="center">${props.subtitle}</h3>`}
                     <br />
+                    <br />
                 </>
             );
         }
