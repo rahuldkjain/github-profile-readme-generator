@@ -177,18 +177,24 @@ const IndexPage = () => {
     }
   }
   const resetCopyMarkdownButton = () => {
-    gsap.set('#copy-markdown', {
-      color: '#0a0a23',
-    });
+    var el = document.getElementById('copy-markdown')
+    if (el) {
+      gsap.set('#copy-markdown', {
+        color: '#0a0a23',
+      });
+    }
     setcopyObj({
       isCopied: false,
       copiedText: 'copy-markdown'
     });
   }
   const setCopyMarkdownButton = () => {
-    gsap.set('#copy-markdown', {
-      color: '#00471b',
-    });
+    var el = document.getElementById('copy-markdown')
+    if (el) {
+      gsap.set('#copy-markdown', {
+        color: '#00471b',
+      });
+    }
     gsap.fromTo('.copy-button', {
       scale: 0.5,
     }, {
