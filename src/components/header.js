@@ -64,7 +64,7 @@ const Header = props => {
         >
           <div className="github-button">
             <StarIcon size={16} className="star-icon" /> Star this repo{" "}
-            {stats.starsCount}
+            <span className="github-count">{stats.starsCount}</span>
           </div>
         </a>
         <a
@@ -74,7 +74,7 @@ const Header = props => {
         >
           <div className="github-button">
             <RepoForkedIcon size={16} className="fork-icon" /> Fork on Github{" "}
-            {stats.forksCount}
+            <span className="github-count">{stats.forksCount}</span>
           </div>
         </a>
       </div>
