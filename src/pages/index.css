@@ -259,14 +259,17 @@ a {
   display: inline-flex;
 }
 .github-button {
+  color: var(--grey-90);
   font-size: 12px;
   font-weight: bolder;
   padding: 3%;
   background: var(--grey-05);
   border: 2px solid var(--grey-85);
-  color: darkblue;
   margin: 1%;
   width: 230px;
+}
+.github-count {
+  color: var(--dark-purple);
 }
 .logo {
   width: 40px;
@@ -353,7 +356,7 @@ a {
   .github-button {
     font-size: 10px !important;
     padding: 2% 1% !important;
-    width: 120px;
+    width: 140px;
   }
   .logo {
     width: 20px;
