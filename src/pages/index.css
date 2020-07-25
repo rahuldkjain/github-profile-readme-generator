@@ -1,380 +1,388 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
-    --grey-05: #f5f6f7;
-    --grey-10: #dfdfe2;
-    --grey-15: #d0d0d5;
-    --grey-75: #3b3b4f;
-    --grey-80: #2a2a40;
-    --grey-85: #1b1b32;
-    --grey-90: #0a0a23;
-    --purple: #dbb8ff;
-    --yellow: #f1be32;
-    --blue: #99c9ff;
-    --red: #e71837;
-    --light-green: #acd157;
-    --dark-purple: #5a01a7;
-    --dark-yellow: #4d3800;
-    --dark-blue: #002ead;
-    --dark-green: #00471b;
+  --grey-05: #f5f6f7;
+  --grey-10: #dfdfe2;
+  --grey-15: #d0d0d5;
+  --grey-75: #3b3b4f;
+  --grey-80: #2a2a40;
+  --grey-85: #1b1b32;
+  --grey-90: #0a0a23;
+  --purple: #dbb8ff;
+  --yellow: #f1be32;
+  --blue: #99c9ff;
+  --red: #e71837;
+  --light-green: #acd157;
+  --dark-purple: #5a01a7;
+  --dark-yellow: #4d3800;
+  --dark-blue: #002ead;
+  --dark-green: #00471b;
 }
 
-html, body {
-    margin: 1%;
-    padding: 1%;
-    font-family: 'Roboto Mono', monospace;
-    color: var(--grey-90);
+html,
+body {
+  margin: 1%;
+  padding: 1%;
+  font-family: "Roboto Mono", monospace;
+  color: var(--grey-90);
 }
-h1, h2, h3, h4 {
-    margin: 0 !important;
-    font-family: 'Lato', sans-serif;
-    padding-left: 2%;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 !important;
+  font-family: "Lato", sans-serif;
+  padding-left: 2%;
 }
 input:focus {
-    outline: none;
+  outline: none;
 }
-[type=checkbox] {
-    -webkit-box-shadow: 0 1px 1px var(--grey-90) !important;
-    -moz-box-shadow: 0 1px 1px var(--grey-90) !important;
-    box-shadow: 0 1px 1px var(--grey-90) !important;
-    cursor: pointer;
-    border-radius: 0px !important;
+[type="checkbox"] {
+  -webkit-box-shadow: 0 1px 1px var(--grey-90) !important;
+  -moz-box-shadow: 0 1px 1px var(--grey-90) !important;
+  box-shadow: 0 1px 1px var(--grey-90) !important;
+  cursor: pointer;
+  border-radius: 0px !important;
 }
 .icon {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 .section {
-    width: 100%;
-    overflow: hidden;
-    margin: 2% 0%;
+  width: 100%;
+  overflow: hidden;
+  margin: 2% 0%;
 }
 
 .inputField {
-    border: 0px solid;
-    border-bottom: 1px solid grey;
-    margin: 2%;
-    padding: 1% 2% 1% 1%;
-    font-size: 18px;
-    height: 25px;
+  border: 0px solid;
+  border-bottom: 1px solid grey;
+  margin: 2%;
+  padding: 1% 2% 1% 1%;
+  font-size: 18px;
+  height: 25px;
 }
 .row {
-    width: 100%;
-    display: flex;
-    /* justify-content: flex-start; */
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-start; */
 }
 .inputField:focus {
-    border-bottom: 1px solid var(--dark-blue);
-    color: var(--grey-90);
+  border-bottom: 1px solid var(--dark-blue);
+  color: var(--grey-90);
 }
 .sm {
-    width: 15%;
+  width: 15%;
 }
 .md {
-    width: 35%;
+  width: 35%;
 }
 .lg {
-    width: 50%;
+  width: 50%;
 }
 .prefix {
-    color: var(--grey-80);
+  color: var(--grey-80);
 }
 .button {
-    padding: 1% 0%;
-    background: var(--grey-05);
-    border: 2px solid var(--grey-85);
-    color: var(--grey-90);
-    width: 25%;
-    text-align: center;
-    cursor: pointer;
+  padding: 1% 0%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-85);
+  color: var(--grey-90);
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
 }
 .container {
-    width: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  width: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkbox {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 2%;
-    margin: 1% 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2%;
+  margin: 1% 0%;
 }
 .skillCheckboxLabel {
-    width: 70%;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    margin: 8%;
+  width: 70%;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  margin: 8%;
 }
 .checkboxLabel {
-    font-weight: 500;
-    cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
 }
 .submit {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .warning {
-    color: var(--red);
-    background: var(--grey-05);
-    margin-left: 2%;
-    padding: 1%;
+  color: var(--red);
+  background: var(--grey-05);
+  margin-left: 2%;
+  padding: 1%;
 }
 .preview {
-    border: 2px solid var(--grey-75);
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
-    box-shadow: 0px 0px 5px 5px rgba(208,208,213,0.75);
-    padding: 0% 2%;
+  border: 2px solid var(--grey-75);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(208, 208, 213, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(208, 208, 213, 0.75);
+  box-shadow: 0px 0px 5px 5px rgba(208, 208, 213, 0.75);
+  padding: 0% 2%;
 }
 .markdown-section {
-    min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 .markdown {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .markdown-box {
-    width: 100%;
-    font-size: 12px;
-    color: var(--grey-85);
-    border: 2px solid var(--grey-75);
-    -webkit-box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
-    -moz-box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
-    box-shadow: 3px 5px 5px 5px rgba(208,208,213,0.75);
-    padding: 1% 2% 0.5% 2%;
-    margin-top:0.5%;
+  width: 100%;
+  font-size: 12px;
+  color: var(--grey-85);
+  border: 2px solid var(--grey-75);
+  -webkit-box-shadow: 3px 5px 5px 5px rgba(208, 208, 213, 0.75);
+  -moz-box-shadow: 3px 5px 5px 5px rgba(208, 208, 213, 0.75);
+  box-shadow: 3px 5px 5px 5px rgba(208, 208, 213, 0.75);
+  padding: 1% 2% 0.5% 2%;
+  margin-top: 0.5%;
 }
 .copy-button {
-    background: var(--grey-05);
-    border: 2px solid var(--grey-75);
-    text-align: center;
-    cursor: pointer;
-    width: 60%;
-    justify-self: center;
-    padding: 2% 0%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-75);
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  justify-self: center;
+  padding: 2% 0%;
 }
 .download-button {
-    background: var(--grey-05);
-    border: 2px solid var(--grey-75);
-    text-align: center;
-    cursor: pointer;
-    width: 60%;
-    justify-self: center;
-    padding: 2% 0%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-75);
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  justify-self: center;
+  padding: 2% 0%;
 }
 .utils {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4%;
 }
 .preview-button {
-    background: var(--grey-05);
-    border: 2px solid var(--grey-75);
-    text-align: center;
-    cursor: pointer;
-    width: 60%;
-    justify-self: end;
-    padding: 2% 0%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-75);
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  justify-self: end;
+  padding: 2% 0%;
 }
 .loader {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
 
 .back-button {
-    background: var(--grey-05);
-    border: 2px solid var(--grey-75);
-    text-align: center;
-    cursor: pointer;
-    width: 60%;
-    justify-self: start;
-    padding: 2% 0%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-75);
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  justify-self: start;
+  padding: 2% 0%;
 }
 .title {
-    text-align: center;
+  text-align: center;
 }
 .subtitle {
-    text-align: center;
+  text-align: center;
 }
 .link {
-    text-decoration: none;
-    color: var(--dark-blue);
+  text-decoration: none;
+  color: var(--dark-blue);
 }
 .social-icon {
-    margin: 1%
+  margin: 1%;
 }
 .badge {
-    text-align: left;
+  text-align: left;
 }
 .card {
-    text-align: center;
+  text-align: center;
 }
 .social {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon {
-    width: 25px;
-    height: 25px;
-    margin: 1%;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin: 1%;
+  cursor: pointer;
 }
 
 .header {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
 }
 .heading {
-    color: var(--dark-blue);
-    font-family: 'Lato', sans-serif;
-    cursor: pointer;
+  color: var(--dark-blue);
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
 }
 .footer {
-    margin: 5% 0% 2% 0%;
-    width: 100%;
-    text-align: center;
+  margin: 5% 0% 2% 0%;
+  width: 100%;
+  text-align: center;
 }
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 .github {
-    display: inline-flex;
+  display: inline-flex;
 }
 .github-button {
-    font-size: 12px;
-    padding: 3%;
-    background: var(--grey-05);
-    border: 2px solid var(--grey-85);
-    color: var(--grey-90);
-    margin: 1%;
-    width: 150px;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 3%;
+  background: var(--grey-05);
+  border: 2px solid var(--grey-85);
+  color: darkblue;
+  margin: 1%;
+  width: 230px;
 }
 .logo {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .skills {
-    margin: 1%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  margin: 1%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .skillCheckbox {
-    padding-left: 10%;
+  padding-left: 10%;
 }
 .skill-icon {
-    margin-left: 12%;
-    width: 40px;
-    height: 40px;
+  margin-left: 12%;
+  width: 40px;
+  height: 40px;
 }
 .skill-preview-icon {
-    width: 40px;
-    height: 40px;
-    margin: 1%;
+  width: 40px;
+  height: 40px;
+  margin: 1%;
 }
 /* Tooltip css */
 .tooltiptext {
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    color: var(--grey-05);
-    margin-left: 8%;
-    background: var(--grey-90);
-    padding: 1px 5%;
-    font-size: 14px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  color: var(--grey-05);
+  margin-left: 8%;
+  background: var(--grey-90);
+  padding: 1px 5%;
+  font-size: 14px;
 }
 .skillCheckboxLabel:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    right: 100%; /* To the left of the tooltip */
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent var(--grey-90) transparent transparent;
-  }
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--grey-90) transparent transparent;
+}
 @media only screen and (max-width: 1199px) {
-    h1, h2, h3, h4 {
-        margin: 2% 0% !important;
-    }
-    .inputField {
-        font-size: 10px;
-    }
-    .icon {
-        width: 20px;
-        height: 20px;
-    }
-    .checkbox {
-        font-size: 12px;
-    }
-    .button {
-        width: 60%;
-        margin: 2% 0%;
-        font-size: 14px;
-    }
-    .cardImage {
-        width: 200px;
-        height: 100px;
-    }
-    .badgeImage {
-        height: 15px;
-    }
-    .heading {
-        font-size: 18px;
-    }
-    .footer {
-        font-size: 12px;
-    }
-    .github-button {
-        font-size: 10px !important;
-        padding: 2% 1% !important;
-        width: 120px;
-    }
-    .logo {
-        width: 20px;
-        height: 20px;
-    }
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .skill-icon {
-        margin-left: 12%;
-        width: 25px;
-        height: 25px;
-    }
-    .skill-preview-icon {
-        width: 20px;
-        height: 20px;
-        margin: 1%;
-    }
-    .hide-on-mobile {
-        display: none;
-    }
-    #markdown-content {
-        word-break: break-all;
-    }
-    .tooltiptext {
-        display: none;
-    }
-    .warning {
-        font-size: 10px;
-    }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 2% 0% !important;
+  }
+  .inputField {
+    font-size: 10px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox {
+    font-size: 12px;
+  }
+  .button {
+    width: 60%;
+    margin: 2% 0%;
+    font-size: 14px;
+  }
+  .cardImage {
+    width: 200px;
+    height: 100px;
+  }
+  .badgeImage {
+    height: 15px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .github-button {
+    font-size: 10px !important;
+    padding: 2% 1% !important;
+    width: 120px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skill-icon {
+    margin-left: 12%;
+    width: 25px;
+    height: 25px;
+  }
+  .skill-preview-icon {
+    width: 20px;
+    height: 20px;
+    margin: 1%;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  #markdown-content {
+    word-break: break-all;
+  }
+  .tooltiptext {
+    display: none;
+  }
+  .warning {
+    font-size: 10px;
+  }
 }
