@@ -63,5 +63,11 @@ npm start
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
 
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A81XXSX)
-Designed with 💫 by [Rahul](https://rahuldkjain.github.io)
+<p align="center">
+  <a href="https://ko-fi.com/A0A81XXSX"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="sponsor github profile readme generator"/>
+  </a>
+</p>
+
+<p align="center">
+Designed with ❤️ by <a href="https://rahuldkjain.github.io">Rahul</a>
+</p>
