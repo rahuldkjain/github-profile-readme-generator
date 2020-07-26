@@ -16,6 +16,7 @@ import './index.css'
 import { ArrowLeftIcon, CopyIcon, DownloadIcon, EyeIcon, CheckIcon, MarkdownIcon } from '@primer/octicons-react';
 import SEO from '../components/seo';
 import { isGithubUsernameValid } from '../utils/validation';
+import { latestBlogs } from '../utils/workflows';
 const IndexPage = () => {
   const [prefix, setPrefix] = useState({
     title: "Hi 👋, I'm",
@@ -137,6 +138,9 @@ const IndexPage = () => {
     trimDataValues(data, setData);
     trimDataValues(social, setSocial);
     trimDataValues(link, setLink);
+    if (social.dev) {
+      latestBlogs(social.dev);
+    }
     resetCopyMarkdownButton();
     if (data.visitorsBadge || data.githubStats) {
       if (social.github && isGithubUsernameValid(social.github)) {
