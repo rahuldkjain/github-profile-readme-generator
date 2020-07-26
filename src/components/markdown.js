@@ -1,5 +1,5 @@
 import React from 'react';
-import {icons, skills } from '../constants/skills';
+import { icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
     const Title = (props) => {
@@ -60,7 +60,7 @@ const Markdown = (props) => {
     }
     const isSocial = (social) => {
         return (social.dev || social.twitter || social.codepen || social.codesandbox || social.stackoverflow
-            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance ||social.medium ||social.youtube );
+            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube);
     }
     const DisplaySkills = (props) => {
         const listChosenSkills = [];
@@ -82,6 +82,7 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.helpWith} project={props.data.helpWith} link={props.link.helpWith} /></>
             <><DisplayWork prefix={props.prefix.portfolio} link={props.link.portfolio} /></>
             <><DisplayWork prefix={props.prefix.blog} link={props.link.blog} /></>
+            <><DisplayWork prefix={props.prefix.currentLearn} project={props.data.currentLearn} /></>
             <><DisplayWork prefix={props.prefix.ama} project={props.data.ama} /></>
             <><DisplayWork prefix={props.prefix.contact} project={props.data.contact} /></>
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>
@@ -106,13 +107,13 @@ const Markdown = (props) => {
             <><DisplaySocial base='https://fb.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg'
                 username={props.social.fb} /></>
             <><DisplaySocial base='https://instagram.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg'
-                username={ props.social.instagram } /></>
+                username={props.social.instagram} /></>
             <><DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg'
-                username={ props.social.dribbble } /></>
+                username={props.social.dribbble} /></>
             <><DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg'
-                username={ props.social.behance } /></>
+                username={props.social.behance} /></>
             <><DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg'
-                username={ props.social.medium } /></>
+                username={props.social.medium} /></>
             <><DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'
                 username={props.social.youtube} /></>
             {isSocial(props.social) ? `</p>` : ''}

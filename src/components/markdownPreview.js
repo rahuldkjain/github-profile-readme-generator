@@ -1,5 +1,5 @@
 import React from 'react';
-import {icons, skills } from '../constants/skills';
+import { icons, skills } from '../constants/skills';
 
 const MarkdownPreview = (props) => {
     const TitlePreview = (props) => {
@@ -49,6 +49,7 @@ const MarkdownPreview = (props) => {
                 <DisplayWork prefix={prefix.helpWith} project={data.helpWith} link={link.helpWith} />
                 <DisplayWork prefix={prefix.collaborateOn} project={data.collaborateOn}
                     link={link.collaborateOn} />
+                <DisplayWork prefix={prefix.currentLearn} project={data.currentLearn} />
                 <DisplayWork prefix={prefix.ama} project={data.ama} />
                 <DisplayWork prefix={prefix.portfolio} link={link.portfolio} />
                 <DisplayWork prefix={prefix.blog} link={link.blog} />
@@ -74,11 +75,11 @@ const MarkdownPreview = (props) => {
                 <DisplaySocial base="https://codesandbox.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" username={props.social.codesandbox} />
                 <DisplaySocial base="https://kaggle.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg" username={props.social.kaggle} />
                 <DisplaySocial base="https://fb.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" username={props.social.fb} />
-                <DisplaySocial base="https://instagram.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" username={ props.social.instagram } />
-                <DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg'username={ props.social.dribbble } />
-                <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg'username={ props.social.behance } />
-                <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg'username={ props.social.medium } />
-                <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'username={props.social.youtube} />
+                <DisplaySocial base="https://instagram.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" username={props.social.instagram} />
+                <DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg' username={props.social.dribbble} />
+                <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg' username={props.social.behance} />
+                <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg' username={props.social.medium} />
+                <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' username={props.social.youtube} />
             </div>
         )
     }
@@ -99,7 +100,7 @@ const MarkdownPreview = (props) => {
     const SkillsPreview = (props) => {
         var listSkills = []
         skills.forEach((skill) => {
-            if(props.skills[skill]) {
+            if (props.skills[skill]) {
                 listSkills.push(<img className="skill-preview-icon" key={skill} src={icons[skill]} alt={skill} />)
             }
         });
