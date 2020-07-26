@@ -255,7 +255,7 @@ const IndexPage = () => {
   });
   return (
     <>
-      <SEO title="Github Profile Readme Generator" description="Github Profile Readme Generator" />
+      <SEO title="Github Profile Readme Generator" />
       <><Header heading="Github Profile README Generator" /></>
       <div className="form">
         <Title data={data} prefix={prefix} handleDataChange={handleDataChange} handlePrefixChange={handlePrefixChange} />

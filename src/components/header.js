@@ -45,15 +45,10 @@ const Header = props => {
         <h1 className="heading">
           <img
             src={logo}
-            onClick={() => window.location.reload(false)}
             className="logo"
             alt="github profile markdown generator logo"
           />
-          <div
-            onClick={() => window.location.reload(false)}
-            role="button"
-            tabIndex="0"
-          >
+          <div>
             {props.heading}
           </div>
         </h1>

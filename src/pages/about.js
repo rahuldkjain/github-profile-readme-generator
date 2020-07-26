@@ -2,10 +2,12 @@ import React from 'react'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import './about.css';
+import SEO from '../components/seo';
 
 const About = () => {
     return (
         <>
+            <SEO title="About" description="Github Profile Readme Generator" />
             <Header heading="Github Profile README Generator" />
             <h1 id="about-title">About</h1>
             <div className="content-container">
