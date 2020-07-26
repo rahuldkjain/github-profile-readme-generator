@@ -1,0 +1,58 @@
+:root {
+    --grey-05: #f5f6f7;
+    --grey-10: #dfdfe2;
+    --grey-15: #d0d0d5;
+    --grey-75: #3b3b4f;
+    --grey-80: #2a2a40;
+    --grey-85: #1b1b32;
+    --grey-90: #0a0a23;
+    --purple: #dbb8ff;
+    --yellow: #f1be32;
+    --blue: #99c9ff;
+    --red: #e71837;
+    --light-green: #acd157;
+    --dark-purple: #5a01a7;
+    --dark-yellow: #4d3800;
+    --dark-blue: #002ead;
+    --dark-green: #00471b;
+  }
+#about-title {
+    color: var(--grey-90);
+}
+.content-container {
+    padding: 2%;
+    font-size: 20px;
+    color: var(--grey-80)
+}
+.content-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--grey-90);
+}
+#introduction {
+    margin: 2% 0%
+}
+#how-to-use {
+    margin: 5% 0%
+}
+#faq {
+    margin: 5% 0%
+}
+#gprg-gif {
+    text-align: center;
+    margin: 2% 0%;
+}
+@media only screen and (max-width: 1199px) {
+    #about-title {
+        text-align: center;
+    }
+    .content-container {
+        font-size: 14px;
+    }
+    .content-title {
+        font-size: 18px;
+    }
+    #gprg-gif {
+        width: 350px;
+    }
+}

@@ -41,21 +41,23 @@ const Header = props => {
 
   return (
     <div className="header">
-      <h1 className="heading">
-        <img
-          src={logo}
-          onClick={() => window.location.reload(false)}
-          className="logo"
-          alt="github profile markdown generator logo"
-        />
-        <div
-          onClick={() => window.location.reload(false)}
-          role="button"
-          tabIndex="0"
-        >
-          {props.heading}
-        </div>
-      </h1>
+      <a href="/">
+        <h1 className="heading">
+          <img
+            src={logo}
+            onClick={() => window.location.reload(false)}
+            className="logo"
+            alt="github profile markdown generator logo"
+          />
+          <div
+            onClick={() => window.location.reload(false)}
+            role="button"
+            tabIndex="0"
+          >
+            {props.heading}
+          </div>
+        </h1>
+      </a>
       <div className="github">
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"

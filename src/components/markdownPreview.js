@@ -46,6 +46,7 @@ const MarkdownPreview = (props) => {
         return (
             <>
                 <DisplayWork prefix={prefix.currentWork} project={data.currentWork} link={link.currentWork} />
+                <DisplayWork prefix={prefix.currentLearn} project={data.currentLearn} />
                 <DisplayWork prefix={prefix.helpWith} project={data.helpWith} link={link.helpWith} />
                 <DisplayWork prefix={prefix.collaborateOn} project={data.collaborateOn}
                     link={link.collaborateOn} />

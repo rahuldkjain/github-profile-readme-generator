@@ -353,6 +353,9 @@ a {
   .footer {
     font-size: 12px;
   }
+  #footer-about {
+    color: var(--grey-75) !important;
+  }
   .github-button {
     font-size: 10px !important;
     padding: 2% 1% !important;

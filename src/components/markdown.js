@@ -78,6 +78,7 @@ const Markdown = (props) => {
             <><VisitorsBadge show={props.data.visitorsBadge} github={props.social.github} /></>
 
             <><DisplayWork prefix={props.prefix.currentWork} project={props.data.currentWork} link={props.link.currentWork} /></>
+            <><DisplayWork prefix={props.prefix.currentLearn} project={props.data.currentLearn} /></>
             <><DisplayWork prefix={props.prefix.collaborateOn} project={props.data.collaborateOn} link={props.link.collaborateOn} /></>
             <><DisplayWork prefix={props.prefix.helpWith} project={props.data.helpWith} link={props.link.helpWith} /></>
             <><DisplayWork prefix={props.prefix.portfolio} link={props.link.portfolio} /></>
