@@ -41,7 +41,7 @@ const Header = props => {
 
   return (
     <div className="header">
-      <a href="/">
+      <a href="/gh-profile-readme-generator">
         <h1 className="heading">
           <img
             src={logo}

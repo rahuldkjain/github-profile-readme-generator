@@ -9,7 +9,7 @@ const About = () => {
         <>
             <SEO title="About" description="Github Profile Readme Generator" />
             <Header heading="Github Profile README Generator" />
-            <h1 id="about-title">About</h1>
+            <h3 id="about-title">About</h3>
             <div className="content-container">
                 <div id="introduction">
                     Github Profile README Generator provides a cool interface to generate Github profile README in markdown.
