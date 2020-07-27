@@ -2,10 +2,10 @@
 const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs',
     'bootstrap', 'c', 'coffeescript',
     'cplusplus', 'css3', 'csharp', 'd3js', 'django', 'docker', 'dotnet', 'electron', 'go',
-    'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel', 'mongodb', 'mysql', 'php', 'postgresql',
+    'gulp', 'html5', 'java', 'spring', 'javascript', 'typescript', 'laravel', 'mongodb', 'mysql', 'php', 'postgresql',
     'rails', 'redis', 'redhat', 'ruby', 'rust',
     'sass', 'scala', 'nodejs', 'python', 'swift', 'oracle', 'nginx', 'linux', 'redux',
-    'webpack', 'express', 'flutter', 'dart'];
+    'webpack', 'express', 'flutter', 'dart', 'matlab', 'kotlin'];
 const icons = {
     vuejs: 'https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg',
     react: 'https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg',
@@ -31,6 +31,7 @@ const icons = {
     html5: 'https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg',
     illustrator: 'https://devicons.github.io/devicon/devicon.git/icons/illustrator/illustrator-plain.svg',
     java: 'https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg',
+    spring: 'https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg',
     javascript: 'https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg',
     laravel: 'https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg',
     meteor: 'https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg',
@@ -58,6 +59,8 @@ const icons = {
     webpack: 'https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg',
     flutter: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/flutter.svg',
     dart: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/dart.svg',
+    matlab: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/240px-Matlab_Logo.png',
+    kotlin: 'https://res.cloudinary.com/vlctechhub/image/twitter_name/w_350/kotlin_es.jpg'
 }
 
 const initialSkillState = {}
