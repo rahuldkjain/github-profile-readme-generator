@@ -3,7 +3,7 @@ import React from 'react';
 const Social = (props) => {
     return (
         <div className="section">
-            <h3>Social</h3>
+            <div className="section-title">Social</div>
             <div className="container">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
                     className="icon" alt="github" />

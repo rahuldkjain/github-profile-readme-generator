@@ -26,17 +26,19 @@ body {
   font-family: "Roboto Mono", monospace;
   color: var(--grey-90);
 }
-h1,
-h2,
-h3,
-h4 {
+
+.section-title {
   margin: 0 !important;
   font-family: "Lato", sans-serif;
   padding-left: 2%;
+  font-size: 24px;
+  font-weight: 600;
 }
+
 input:focus {
   outline: none;
 }
+
 [type="checkbox"] {
   -webkit-box-shadow: 0 1px 1px var(--grey-90) !important;
   -moz-box-shadow: 0 1px 1px var(--grey-90) !important;
@@ -44,10 +46,12 @@ input:focus {
   cursor: pointer;
   border-radius: 0px !important;
 }
+
 .icon {
   width: 25px;
   height: 25px;
 }
+
 .section {
   width: 100%;
   overflow: hidden;
@@ -62,27 +66,34 @@ input:focus {
   font-size: 18px;
   height: 25px;
 }
+
 .row {
   width: 100%;
   display: flex;
   /* justify-content: flex-start; */
 }
+
 .inputField:focus {
   border-bottom: 1px solid var(--dark-blue);
   color: var(--grey-90);
 }
+
 .sm {
   width: 15%;
 }
+
 .md {
   width: 35%;
 }
+
 .lg {
   width: 50%;
 }
+
 .prefix {
   color: var(--grey-80);
 }
+
 .button {
   padding: 1% 0%;
   background: var(--grey-05);
@@ -92,6 +103,7 @@ input:focus {
   text-align: center;
   cursor: pointer;
 }
+
 .container {
   width: 50%;
   display: inline-flex;
@@ -107,6 +119,7 @@ input:focus {
   padding-left: 2%;
   margin: 1% 0%;
 }
+
 .skillCheckboxLabel {
   width: 70%;
   font-weight: 500;
@@ -114,20 +127,24 @@ input:focus {
   display: flex;
   margin: 8%;
 }
+
 .checkboxLabel {
   font-weight: 500;
   cursor: pointer;
 }
+
 .submit {
   display: flex;
   justify-content: center;
 }
+
 .warning {
   color: var(--red);
   background: var(--grey-05);
   margin-left: 2%;
   padding: 1%;
 }
+
 .preview {
   border: 2px solid var(--grey-75);
   -webkit-box-shadow: 0px 0px 5px 5px rgba(208, 208, 213, 0.75);
@@ -135,14 +152,17 @@ input:focus {
   box-shadow: 0px 0px 5px 5px rgba(208, 208, 213, 0.75);
   padding: 0% 2%;
 }
+
 .markdown-section {
   min-height: calc(100vh - 100px);
 }
+
 .markdown {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .markdown-box {
   width: 100%;
   font-size: 12px;
@@ -154,6 +174,7 @@ input:focus {
   padding: 1% 2% 0.5% 2%;
   margin-top: 0.5%;
 }
+
 .copy-button {
   background: var(--grey-05);
   border: 2px solid var(--grey-75);
@@ -163,6 +184,7 @@ input:focus {
   justify-self: center;
   padding: 2% 0%;
 }
+
 .download-button {
   background: var(--grey-05);
   border: 2px solid var(--grey-75);
@@ -172,11 +194,13 @@ input:focus {
   justify-self: center;
   padding: 2% 0%;
 }
+
 .utils {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 4%;
 }
+
 .preview-button {
   background: var(--grey-05);
   border: 2px solid var(--grey-75);
@@ -186,6 +210,7 @@ input:focus {
   justify-self: end;
   padding: 2% 0%;
 }
+
 .loader {
   height: 100vh;
   width: 100%;
@@ -204,31 +229,39 @@ input:focus {
   justify-self: start;
   padding: 2% 0%;
 }
+
 .title {
   text-align: center;
 }
+
 .subtitle {
   text-align: center;
 }
+
 .link {
   text-decoration: none;
   color: var(--dark-blue);
 }
+
 .social-icon {
   margin: 1%;
 }
+
 .badge {
   text-align: left;
 }
+
 .card {
   text-align: center;
 }
+
 .social {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .icon {
   width: 25px;
   height: 25px;
@@ -241,23 +274,41 @@ input:focus {
   text-align: center;
   display: inline-block;
 }
+
 .heading {
   color: var(--dark-blue);
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+
 .footer {
-  margin: 5% 0% 2% 0%;
+  margin-top: 2%;
   width: 100%;
   text-align: center;
+  padding: 1%;
 }
+.footer-pages {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(calc(20% + 20vmin), 100%), 1fr)
+  );
+  color: var(--grey-75);
+}
+.footer-proud {
+  margin: 2% 0%;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
+
 .github {
   display: inline-flex;
 }
+
 .github-button {
   color: var(--grey-90);
   font-size: 12px;
@@ -268,33 +319,41 @@ a {
   margin: 1%;
   width: 230px;
 }
+
 .github-count {
   color: var(--dark-purple);
 }
+
 .logo {
   width: 40px;
   height: 40px;
 }
+
 .skills {
   margin: 1%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .skillCheckbox {
   padding-left: 10%;
 }
+
 .skill-icon {
   margin-left: 12%;
   width: 40px;
   height: 40px;
 }
+
 .skill-preview-icon {
   width: 40px;
   height: 40px;
   margin: 1%;
 }
+
 /* Tooltip css */
+
 .tooltiptext {
   visibility: hidden;
   display: flex;
@@ -305,24 +364,26 @@ a {
   padding: 1px 5%;
   font-size: 14px;
 }
+
 .skillCheckboxLabel:hover .tooltiptext {
   visibility: visible;
 }
+
 .tooltiptext::after {
   content: " ";
   position: absolute;
   top: 50%;
-  right: 100%; /* To the left of the tooltip */
+  right: 100%;
+  /* To the left of the tooltip */
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent var(--grey-90) transparent transparent;
 }
+
 @media only screen and (max-width: 1199px) {
-  h1,
-  h2,
-  h3,
-  h4 {
+  .section-title {
+    font-size: 18px;
     margin: 2% 0% !important;
   }
   .inputField {
@@ -353,8 +414,11 @@ a {
   .footer {
     font-size: 12px;
   }
-  #footer-about {
-    color: var(--grey-75) !important;
+  .footer-pages {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(calc(10% + 20vmin), 100%), 1fr)
+    );
   }
   .github-button {
     font-size: 10px !important;

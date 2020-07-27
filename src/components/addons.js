@@ -3,7 +3,7 @@ import React from 'react';
 const Addons = (props) => {
     return (
         <div className="section">
-            <h3>Add-ons</h3>
+            <div className="section-title">Add-ons</div>
             <div className="checkbox">
                 <label htmlFor="visitors-count" className="checkboxLabel">
                     <input type="checkbox" id="visitors-count" checked={props.data.visitorsBadge}

@@ -1,9 +1,29 @@
 import React from 'react';
+import links from '../constants/page-links'
+import { Link } from 'gatsby'
 const Footer = () => {
     return (
         <div className="footer">
-            <div><a id="footer-about" href="/gh-profile-readme-generator/about">About GPRG</a></div>
-            Developed with <span role="img" aria-label="love">❤️</span> by <a href="https://rahuldkjain.github.io" style={{textDecoration: 'none'}}>Rahul</a>
+            <div className="footer-pages">
+                <div>
+                    <Link to={links.about} activeStyle={{ color: "#002ead" }}>
+                        About
+                    </Link>
+                </div>
+                <div>
+                    <Link to={links.addons} activeStyle={{ color: "#002ead" }}>
+                        Addons
+                    </Link>
+                </div>
+                <div>
+                    <Link to={links.support} activeStyle={{ color: "#002ead" }}>
+                        Support
+                    </Link>
+                </div>
+            </div>
+            <div className="footer-proud">
+                Developed in India <span role="img" aria-label="india"> 🇮🇳</span>
+            </div>
         </div>
     )
 }

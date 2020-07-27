@@ -127,6 +127,8 @@ const IndexPage = () => {
         duration: 0.5,
         ease: 'Linear.easeNone',
       });
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }, 3000);
   }
   const trimDataValues = (item, setItem) => {
@@ -138,9 +140,9 @@ const IndexPage = () => {
     trimDataValues(data, setData);
     trimDataValues(social, setSocial);
     trimDataValues(link, setLink);
-    if (social.dev) {
-      latestBlogs(social.dev);
-    }
+    // if (social.dev) {
+    //   latestBlogs(social.dev);
+    // }
     resetCopyMarkdownButton();
     if (data.visitorsBadge || data.githubStats) {
       if (social.github && isGithubUsernameValid(social.github)) {

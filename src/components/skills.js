@@ -16,7 +16,7 @@ const Skills = (props) => {
     });
     return (
         <div>
-            <h3>Skills</h3>
+            <div className="section-title">Skills</div>
             <div className="skills">
                 {listSkills}
             </div>
