@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMediumUsernameVaid } from '../utils/validation'
 import { icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
@@ -71,6 +72,16 @@ const Markdown = (props) => {
         });
         return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';
     }
+    const DisplayDynamicBlogs = (props) => {
+        if (props.show) {
+            return (<>{`### Blogs posts`}
+                <br />
+                {`<!-- BLOG-POST-LIST:START -->`}
+                <br />
+                {`<!-- BLOG-POST-LIST:END -->`}<br /> <br /></>)
+        }
+        return '';
+    }
     return (
         <div id="markdown-content">
             <><Title prefix={props.prefix.title} title={props.data.title} /></>
@@ -78,6 +89,7 @@ const Markdown = (props) => {
             <><VisitorsBadge show={props.data.visitorsBadge} github={props.social.github} /></>
 
             <><DisplayWork prefix={props.prefix.currentWork} project={props.data.currentWork} link={props.link.currentWork} /></>
+            <><DisplayWork prefix={props.prefix.currentLearn} project={props.data.currentLearn} /></>
             <><DisplayWork prefix={props.prefix.collaborateOn} project={props.data.collaborateOn} link={props.link.collaborateOn} /></>
             <><DisplayWork prefix={props.prefix.helpWith} project={props.data.helpWith} link={props.link.helpWith} /></>
             <><DisplayWork prefix={props.prefix.portfolio} link={props.link.portfolio} /></>
@@ -87,6 +99,8 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.contact} project={props.data.contact} /></>
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>
 
+            <><DisplayDynamicBlogs show={(props.data.devDynamicBlogs && props.social.dev) ||
+                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium))} /></>
             <><DisplaySkills skills={props.skills} /></>
             <><GithubStats show={props.data.githubStats} github={props.social.github} /></>
             {isSocial(props.social) ? `<p align="center">` : ''} <br />

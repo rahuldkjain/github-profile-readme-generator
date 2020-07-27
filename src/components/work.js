@@ -3,7 +3,7 @@ import React from 'react';
 const Work = (props) => {
     return (
         <div className="section">
-            <h3>Work</h3>
+            <div className="section-title">Work</div>
             <div className="row">
                 <input id="currentWork-prefix" className="inputField md prefix" value={props.prefix.currentWork} 
                 onChange={event => props.handlePrefixChange('currentWork', event)} />

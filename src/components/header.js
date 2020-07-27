@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react"
 import logo from "../images/mdg.png"
+import links from "../constants/page-links"
 import gsap from "gsap"
 import axios from "axios"
+import {Link} from "gatsby"
 
 const Header = props => {
   const fetchData = async () => {
@@ -41,21 +43,18 @@ const Header = props => {
 
   return (
     <div className="header">
-      <h1 className="heading">
-        <img
-          src={logo}
-          onClick={() => window.location.reload(false)}
-          className="logo"
-          alt="github profile markdown generator logo"
-        />
-        <div
-          onClick={() => window.location.reload(false)}
-          role="button"
-          tabIndex="0"
-        >
-          {props.heading}
-        </div>
-      </h1>
+      <Link to={links.home}>
+        <h1 className="heading">
+          <img
+            src={logo}
+            className="logo"
+            alt="github profile markdown generator logo"
+          />
+          <div>
+            {props.heading}
+          </div>
+        </h1>
+      </Link>
       <div className="github">
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"
