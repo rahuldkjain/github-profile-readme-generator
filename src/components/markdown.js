@@ -1,5 +1,6 @@
 import React from 'react';
-import {icons, skills } from '../constants/skills';
+import { isMediumUsernameVaid } from '../utils/validation'
+import { icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
     const Title = (props) => {
@@ -60,7 +61,7 @@ const Markdown = (props) => {
     }
     const isSocial = (social) => {
         return (social.dev || social.twitter || social.codepen || social.codesandbox || social.stackoverflow
-            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance ||social.medium ||social.youtube );
+            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube);
     }
     const DisplaySkills = (props) => {
         const listChosenSkills = [];
@@ -70,6 +71,16 @@ const Markdown = (props) => {
             }
         });
         return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';
+    }
+    const DisplayDynamicBlogs = (props) => {
+        if (props.show) {
+            return (<>{`### Blogs posts`}
+                <br />
+                {`<!-- BLOG-POST-LIST:START -->`}
+                <br />
+                {`<!-- BLOG-POST-LIST:END -->`}<br /> <br /></>)
+        }
+        return '';
     }
     return (
         <div id="markdown-content">
@@ -87,6 +98,8 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.contact} project={props.data.contact} /></>
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>
 
+            <><DisplayDynamicBlogs show={(props.data.devDynamicBlogs && props.social.dev) ||
+                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium))} /></>
             <><DisplaySkills skills={props.skills} /></>
             <><GithubStats show={props.data.githubStats} github={props.social.github} /></>
             {isSocial(props.social) ? `<p align="center">` : ''} <br />
@@ -107,13 +120,13 @@ const Markdown = (props) => {
             <><DisplaySocial base='https://fb.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg'
                 username={props.social.fb} /></>
             <><DisplaySocial base='https://instagram.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg'
-                username={ props.social.instagram } /></>
+                username={props.social.instagram} /></>
             <><DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg'
-                username={ props.social.dribbble } /></>
+                username={props.social.dribbble} /></>
             <><DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg'
-                username={ props.social.behance } /></>
+                username={props.social.behance} /></>
             <><DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg'
-                username={ props.social.medium } /></>
+                username={props.social.medium} /></>
             <><DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'
                 username={props.social.youtube} /></>
             {isSocial(props.social) ? `</p>` : ''}

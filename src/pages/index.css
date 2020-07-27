@@ -380,7 +380,11 @@ a {
   border-style: solid;
   border-color: transparent var(--grey-90) transparent transparent;
 }
-
+.workflow {
+  margin-left: 2%;
+  padding: 1%;
+  background: var(--grey-05);
+}
 @media only screen and (max-width: 1199px) {
   .section-title {
     font-size: 18px;
@@ -454,5 +458,8 @@ a {
   }
   .warning {
     font-size: 10px;
+  }
+  .workflow {
+    font-size: 12px;
   }
 }

@@ -58,7 +58,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://dev.to/feed/rahuldkjain, https://medium.com/@rahuldkjain"
+          feed_list: "https://dev.to/feed/rahuldkjain, https://medium.com/feed/@rahuldkjain"
 ```
 
 - Replace the above url list with your own rss feed urls. See [popular-sources](#popular-sources) for a list of common RSS feed urls.

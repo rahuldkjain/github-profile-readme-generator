@@ -15,8 +15,7 @@ import Footer from '../components/footer';
 import './index.css'
 import { ArrowLeftIcon, CopyIcon, DownloadIcon, EyeIcon, CheckIcon, MarkdownIcon } from '@primer/octicons-react';
 import SEO from '../components/seo';
-import { isGithubUsernameValid } from '../utils/validation';
-import { latestBlogs } from '../utils/workflows';
+import { isGithubUsernameValid, isMediumUsernameVaid } from '../utils/validation';
 const IndexPage = () => {
   const [prefix, setPrefix] = useState({
     title: "Hi 👋, I'm",
@@ -42,6 +41,8 @@ const IndexPage = () => {
     funFact: '',
     visitorsBadge: false,
     githubStats: false,
+    devDynamicBlogs: false,
+    mediumDynamicBlogs: false,
   });
   const [link, setLink] = useState({
     currentWork: '',
@@ -140,9 +141,6 @@ const IndexPage = () => {
     trimDataValues(data, setData);
     trimDataValues(social, setSocial);
     trimDataValues(link, setLink);
-    // if (social.dev) {
-    //   latestBlogs(social.dev);
-    // }
     resetCopyMarkdownButton();
     if (data.visitorsBadge || data.githubStats) {
       if (social.github && isGithubUsernameValid(social.github)) {
@@ -265,12 +263,18 @@ const IndexPage = () => {
         <Work prefix={prefix} data={data} link={link} handlePrefixChange={handlePrefixChange} handleLinkChange={handleLinkChange} handleDataChange={handleDataChange} />
         <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
         <Social social={social} handleSocialChange={handleSocialChange} />
-        <Addons data={data} handleCheckChange={handleCheckChange} />
+        <Addons data={data} social={social} handleCheckChange={handleCheckChange} />
         <div className="section">
           {(data.visitorsBadge || data.githubStats) && !social.github ?
             <div className="warning">* Please add github username to use these add-ons</div> : ''}
           {social.github && !isGithubUsernameValid(social.github) ?
             <div className="warning">* Github username is invalid, please add a valid username</div> : ''}
+          {social.medium && !isMediumUsernameVaid(social.medium) ?
+            <div className="warning">* Medium username is invalid, please add a valid username (with @)</div> : ''}
+          {data.mediumDynamicBlogs && !social.medium ?
+            <div className="warning">* Please add medium username to display latest blogs dynamically</div> : ''}
+          {data.devDynamicBlogs && !social.dev ?
+            <div className="warning">* Please add dev.to username to display latest blogs dynamically</div> : ''}
         </div>
         <div className="submit">
           <div className="button generate" tabIndex="0" role="button" onClick={handleGenerate}>Generate README</div>
