@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMediumUsernameVaid } from '../utils/validation'
+import { isMediumUsernameValid } from '../utils/validation'
 import { icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
@@ -99,7 +99,7 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>
 
             <><DisplayDynamicBlogs show={(props.data.devDynamicBlogs && props.social.dev) ||
-                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium))} /></>
+                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium))} /></>
             <><DisplaySkills skills={props.skills} /></>
             <><GithubStats show={props.data.githubStats} github={props.social.github} /></>
             {isSocial(props.social) ? `<p align="center">` : ''} <br />
