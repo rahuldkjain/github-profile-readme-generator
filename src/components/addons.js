@@ -1,7 +1,7 @@
 import React from "react"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameVaid } from "../utils/validation"
+import { isMediumUsernameValid } from "../utils/validation"
 const Addons = (props) => {
     const blogPostPorkflow = () => {
         let payload = {
@@ -51,7 +51,7 @@ const Addons = (props) => {
                 </label>
             </div>
 
-            {(props.data.devDynamicBlogs && props.social.dev) || (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium)) ?
+            {(props.data.devDynamicBlogs && props.social.dev) || (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium)) ?
                 <div className="workflow">
                     <div>
                         download

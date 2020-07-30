@@ -1,8 +1,8 @@
-import { isMediumUsernameVaid } from "../utils/validation"
+import { isMediumUsernameValid } from "../utils/validation"
 
 const latestBlogs = (payload) => {
     let rssFeed = ''
-    if (payload.dev.show && payload.dev.username && payload.medium.show && payload.medium.username && isMediumUsernameVaid(payload.medium.username)) {
+    if (payload.dev.show && payload.dev.username && payload.medium.show && payload.medium.username && isMediumUsernameValid(payload.medium.username)) {
         rssFeed = 'https://dev.to/feed/' + payload.dev.username + ', https://medium.com/feed/' + payload.medium.username
     } else if(payload.dev.show && payload.dev.username) {
         rssFeed = 'https://dev.to/feed/' + payload.dev.username
