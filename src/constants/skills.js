@@ -16,7 +16,7 @@ const icons = {
     bootstrap: 'https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg',
     c: 'https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg',
     coffeescript: 'https://devicons.github.io/devicon/devicon.git/icons/coffeescript/coffeescript-original-wordmark.svg',
-    codeigniter: 'https://codeigniter.com/assets/images/ci-logo-big.png',
+    codeigniter: 'https://cdn.worldvectorlogo.com/logos/codeigniter.svg',
     cplusplus: 'https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg',
     css3: 'https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg',
     csharp: 'https://devicons.github.io/devicon/devicon.git/icons/csharp/csharp-original.svg',
