@@ -1,5 +1,5 @@
 import React from 'react';
-import {icons, skills } from '../constants/skills';
+import { icons, skills } from '../constants/skills';
 
 const MarkdownPreview = (props) => {
     const TitlePreview = (props) => {
@@ -75,11 +75,11 @@ const MarkdownPreview = (props) => {
                 <DisplaySocial base="https://codesandbox.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" username={props.social.codesandbox} />
                 <DisplaySocial base="https://kaggle.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg" username={props.social.kaggle} />
                 <DisplaySocial base="https://fb.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" username={props.social.fb} />
-                <DisplaySocial base="https://instagram.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" username={ props.social.instagram } />
-                <DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg'username={ props.social.dribbble } />
-                <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg'username={ props.social.behance } />
-                <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg'username={ props.social.medium } />
-                <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'username={props.social.youtube} />
+                <DisplaySocial base="https://instagram.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" username={props.social.instagram} />
+                <DisplaySocial base='https://dribbble.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg' username={props.social.dribbble} />
+                <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg' username={props.social.behance} />
+                <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg' username={props.social.medium} />
+                <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' username={props.social.youtube} />
             </div>
         )
     }
@@ -93,14 +93,21 @@ const MarkdownPreview = (props) => {
     const GithubStatsPreview = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
-            return (<div className="card"> <img className="cardImage" src={link} alt={props.github} /> </div>)
+            return (<div className="github-stats-card"><img src={link} alt={props.github} /></div>)
         }
         return null;
+    }
+    const TopLanguagesPreview = (props) => {
+        let link = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + props.github + "&layout=compact&hide=html"
+        if (props.show) {
+            return (<div className="top-languages-card"><img src={link} alt={props.github} /></div>)
+        }
+        return <div className="top-languages-card"> &nbsp;</div>;
     }
     const SkillsPreview = (props) => {
         var listSkills = []
         skills.forEach((skill) => {
-            if(props.skills[skill]) {
+            if (props.skills[skill]) {
                 listSkills.push(<img className="skill-preview-icon" key={skill} src={icons[skill]} alt={skill} />)
             }
         });
@@ -113,7 +120,10 @@ const MarkdownPreview = (props) => {
             <VisitorsBadgePreview show={props.data.visitorsBadge} github={props.social.github} />
             <WorkPreview work={props} />
             <SkillsPreview skills={props.skills} />
-            <GithubStatsPreview show={props.data.githubStats} github={props.social.github} />
+            <div className="github-cards">
+                <TopLanguagesPreview show={props.data.topLanguages} github={props.social.github} />
+                <GithubStatsPreview show={props.data.githubStats} github={props.social.github} />
+            </div>
             <SocialPreview social={props.social} />
         </div>
     )

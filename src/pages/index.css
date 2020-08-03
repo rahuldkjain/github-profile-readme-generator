@@ -251,10 +251,16 @@ input:focus {
   text-align: left;
 }
 
-.card {
-  text-align: center;
+.github-cards {
+  display: flex;
+  justify-content: center;
 }
-
+.github-stats-card {
+  margin: 1%;
+}
+.top-languages-card {
+  margin: 1%;
+}
 .social {
   width: 100%;
   display: flex;
@@ -405,10 +411,6 @@ a {
     margin: 2% 0%;
     font-size: 14px;
   }
-  .cardImage {
-    width: 200px;
-    height: 100px;
-  }
   .badgeImage {
     height: 15px;
   }
@@ -461,5 +463,20 @@ a {
   }
   .workflow {
     font-size: 12px;
+  }
+  .github-cards {
+    display: block;
+  }
+  .github-stats-card{
+    text-align: center;
+  }
+  .top-languages-card {
+    text-align: center;
+  }
+  .github-stats-card > img{
+    width: 80%;
+  }
+  .top-languages-card > img{
+    width: 80%;
   }
 }
