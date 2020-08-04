@@ -15,11 +15,19 @@
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </p>
 
+<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
+
+<p align="center">
+    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
+    ·
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
+    ·
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Request Feature</a>
+</p>
+
 <p align="center">
 <i>Loved the tool? Please consider <a href="https://paypal.me/rahuldkjain">donating</a>  💸 to help it improve!</i>
 </p>
-
-<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 #### Tired of editing Github Profile README with new features?
 This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc. 
@@ -57,11 +65,15 @@ npm start
 ## Special Thanks 🙇
 - [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 - [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
+- [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
 - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
 
 ## Sponsors 🙇
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
 
+<p align="center">
+<a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
+</p>
 
 <p align="center">
   <a href="https://ko-fi.com/A0A81XXSX"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="sponsor github profile readme generator"/>
@@ -69,5 +81,5 @@ npm start
 </p>
 
 <p align="center">
-Designed with ❤️ by <a href="https://rahuldkjain.github.io">Rahul</a>
+Developed with ❤️ in India 🇮🇳 
 </p>
