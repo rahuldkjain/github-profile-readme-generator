@@ -1,11 +1,11 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
 const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs',
-    'bootstrap', 'c', 'coffeescript',
+    'bootstrap', 'c',
     'cplusplus', 'css3', 'csharp', 'd3js', 'django', 'docker', 'dotnet', 'electron', 'go',
     'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel', 'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql',
     'rails', 'redis', 'redhat', 'ruby', 'rust',
-    'sass', 'scala', 'nodejs', 'python', 'swift', 'oracle', 'nginx', 'linux', 'redux',
-    'webpack', 'express', 'flutter', 'dart'];
+    'sass', 'scala', 'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux',
+    'webpack', 'express', 'flutter', 'dart', 'kotlin'];
 const icons = {
     vuejs: 'https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg',
     react: 'https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg',
@@ -43,7 +43,7 @@ const icons = {
     photoshop: 'https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg',
     php: 'https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg',
     postgresql: 'https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg',
-    python: 'https://devicons.github.io/devicon/devicon.git/icons/python/python-original-wordmark.svg',
+    python: 'https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg',
     rails: 'https://devicons.github.io/devicon/devicon.git/icons/rails/rails-original-wordmark.svg',
     redis: 'https://devicons.github.io/devicon/devicon.git/icons/redis/redis-original-wordmark.svg',
     redhat: 'https://devicons.github.io/devicon/devicon.git/icons/redhat/redhat-original-wordmark.svg',
@@ -53,13 +53,15 @@ const icons = {
     scala: 'https://devicons.github.io/devicon/devicon.git/icons/scala/scala-original-wordmark.svg',
     sketch: 'https://devicons.github.io/devicon/devicon.git/icons/sketch/sketch-original-wordmark.svg',
     symfony: 'https://symfony.com/logos/symfony_black_03.svg',
+    spring: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
     swift: 'https://devicons.github.io/devicon/devicon.git/icons/swift/swift-original-wordmark.svg',
     typescript: 'https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg',
     linux: 'https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg',
     redux: 'https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg',
     webpack: 'https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg',
-    flutter: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/flutter.svg',
-    dart: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/dart.svg',
+    flutter: 'https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg',
+    dart: 'https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg',
+    kotlin: 'https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg'
 }
 
 const initialSkillState = {}

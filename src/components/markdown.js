@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMediumUsernameVaid } from '../utils/validation'
+import { isMediumUsernameValid } from '../utils/validation'
 import { icons, skills } from '../constants/skills';
 
 const Markdown = (props) => {
@@ -55,7 +55,7 @@ const Markdown = (props) => {
     const GithubStats = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
-            return (<>{`<p align="center"> <img src="${link}" alt="${props.github}" /> </p>`}<br /><br /></>);
+            return (<>{`<img align="center" src="${link}" alt="${props.github}" />`}<br /><br /></>);
         }
         return '';
     }
@@ -82,6 +82,16 @@ const Markdown = (props) => {
         }
         return '';
     }
+    const DisplayTopLanguages = (props) => {
+        let link = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + props.github + "&layout=compact&hide=html"
+        if (props.show) {
+            if (!props.showStats) {
+                return (<>{`<img align="center" src="${link}" alt="${props.github}" />`}<br /><br /></>);
+            }
+            return (<>{`<img align="left" src="${link}" alt="${props.github}" />`}<br /><br /></>);
+        }
+        return '';
+    }
     return (
         <div id="markdown-content">
             <><Title prefix={props.prefix.title} title={props.data.title} /></>
@@ -99,8 +109,9 @@ const Markdown = (props) => {
             <><DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} /></>
 
             <><DisplayDynamicBlogs show={(props.data.devDynamicBlogs && props.social.dev) ||
-                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium))} /></>
+                (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium))} /></>
             <><DisplaySkills skills={props.skills} /></>
+            <><DisplayTopLanguages show={props.data.topLanguages} showStats={props.data.githubStats} github={props.social.github} /></>
             <><GithubStats show={props.data.githubStats} github={props.social.github} /></>
             {isSocial(props.social) ? `<p align="center">` : ''} <br />
             <><DisplaySocial base='https://codepen.io' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg'

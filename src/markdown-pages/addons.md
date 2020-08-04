@@ -9,7 +9,15 @@ Github Profile README Generator tool uses few open-source addons developed by ot
 ## [Github README Stats](https://github.com/anuraghazra/github-readme-stats)
 ⚡️ Dynamically generated stats for your github readmes
 
-<img src="https://github-readme-stats.vercel.app/api?username=rahuldkjain&show_icons=true" width="320" alt="Rahul's github stats"/>
+#### Github Stats Card
+<a href="https://github.com/rahuldkjain" target="blank">
+  <img src="https://github-readme-stats.vercel.app/api?username=rahuldkjain&show_icons=true" width="320" alt="Rahul's github stats"/>
+</a>
+
+#### Top Skills Card
+<a href="https://github.com/rahuldkjain" target="blank">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahuldkjain&layout=compact&hide=html" width="320" alt="Rahul's github top skills"/>
+</a>
 
 Developed by [Anurag Hazra](https://github.com/anuraghazra).
 

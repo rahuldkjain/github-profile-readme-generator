@@ -1,7 +1,7 @@
 import React from "react"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameVaid } from "../utils/validation"
+import { isMediumUsernameValid } from "../utils/validation"
 const Addons = (props) => {
     const blogPostPorkflow = () => {
         let payload = {
@@ -39,6 +39,12 @@ const Addons = (props) => {
                 </label>
             </div>
             <div className="checkbox">
+                <label htmlFor="top-languages" className="checkboxLabel">
+                    <input id="top-languages" type="checkbox" checked={props.data.topLanguages}
+                        onChange={event => props.handleCheckChange('topLanguages')} />&nbsp; display top skills
+                </label>
+            </div>
+            <div className="checkbox">
                 <label htmlFor="dev-dynamic-blogs" className="checkboxLabel">
                     <input id="dev-dynamic-blogs" type="checkbox" checked={props.data.devDynamicBlogs}
                         onChange={event => props.handleCheckChange('devDynamicBlogs')} />&nbsp; display latest dev.to blogs dynamically (Github Action)
@@ -51,7 +57,7 @@ const Addons = (props) => {
                 </label>
             </div>
 
-            {(props.data.devDynamicBlogs && props.social.dev) || (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameVaid(props.social.medium)) ?
+            {(props.data.devDynamicBlogs && props.social.dev) || (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium)) ?
                 <div className="workflow">
                     <div>
                         download
