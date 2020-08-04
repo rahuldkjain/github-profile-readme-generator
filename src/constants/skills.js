@@ -1,17 +1,17 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c', 'cplusplus', 'css3', 'csharp',
+const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'babel' 'c', 'cplusplus', 'css3', 'csharp',
     'd3js', 'django', 'docker', 'dotnet', 'electron', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
     'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
-    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender'];
+    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'sketch', 'blender'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'framework', 'language', 'software', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
-        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack'],
+        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack' 'babel'],
     },
     backend_dev: {
         title: 'Backend Development',
@@ -47,7 +47,7 @@ const categorizedSkills = {
     },
     software: {
         title: 'Software',
-        skills: ['illustrator', 'photoshop', 'figma', 'blender']
+        skills: ['illustrator', 'photoshop', 'figma', 'sketch', 'blender']
     },
     other: {
         title: 'Other',
@@ -104,6 +104,7 @@ const icons = {
     linux: 'https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg',
     redux: 'https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg',
     webpack: 'https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg',
+    babel: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/babel.svg',
     flutter: 'https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg',
     dart: 'https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg',
     kotlin: 'https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg',
@@ -124,6 +125,7 @@ const icons = {
     opencv: 'https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg',
     illustrator: 'https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg',
     figma: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    sketch: 'https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/sketch.svg',
     blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
 }
 
