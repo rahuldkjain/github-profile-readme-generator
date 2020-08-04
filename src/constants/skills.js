@@ -1,5 +1,5 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'babel' 'c', 'cplusplus', 'css3', 'csharp',
+const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'babel', 'c', 'cplusplus', 'css3', 'csharp',
     'd3js', 'django', 'docker', 'dotnet', 'electron', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
     'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
