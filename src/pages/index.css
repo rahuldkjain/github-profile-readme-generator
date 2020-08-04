@@ -341,7 +341,11 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
+.skills-category-title {
+  margin: 1% 1% 1% 2%;
+  font-size: 16px;
+  text-align: center;
+}
 .skillCheckbox {
   padding-left: 10%;
 }

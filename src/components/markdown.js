@@ -41,7 +41,7 @@ const Markdown = (props) => {
     }
     const DisplaySocial = (props) => {
         if (props.username) {
-            return (<>{`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="20" width="20" /></a>`}<br /></>);
+            return (<>{`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="30" /></a>`}<br /></>);
         }
         return '';
     }
@@ -67,7 +67,7 @@ const Markdown = (props) => {
         const listChosenSkills = [];
         skills.forEach(skill => {
             if (props.skills[skill]) {
-                listChosenSkills.push(`<img src="${icons[skill]}" alt="${skill}" width="20" height="20"/>`);
+                listChosenSkills.push(`<img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>`);
             }
         });
         return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';
