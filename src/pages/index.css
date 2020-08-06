@@ -345,6 +345,7 @@ a {
   margin: 1% 1% 1% 2%;
   font-size: 16px;
   text-align: center;
+  color: var(--grey-75);
 }
 .skillCheckbox {
   padding-left: 10%;
@@ -482,5 +483,8 @@ a {
   }
   .top-languages-card > img{
     width: 80%;
+  }
+  .skills-category-title {
+    font-size: 14px;
   }
 }

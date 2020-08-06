@@ -4,14 +4,14 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
-    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender'];
+    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'framework', 'language', 'software', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
-        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack'],
+        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel'],
     },
     backend_dev: {
         title: 'Backend Development',
@@ -47,7 +47,7 @@ const categorizedSkills = {
     },
     software: {
         title: 'Software',
-        skills: ['illustrator', 'photoshop', 'figma', 'blender']
+        skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch']
     },
     other: {
         title: 'Other',
@@ -125,6 +125,8 @@ const icons = {
     illustrator: 'https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg',
     figma: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
     blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
+    babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
+    sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
 }
 
 const initialSkillState = {}

@@ -22,7 +22,7 @@ const IndexPage = () => {
     currentWork: '🔭 I’m currently working on',
     currentLearn: '🌱 I’m currently learning',
     collaborateOn: '👯 I’m looking to collaborate on',
-    helpWith: '🤔 I’m looking for help with',
+    helpWith: '🤝 I’m looking for help with',
     ama: '💬 Ask me about',
     contact: '📫 How to reach me',
     funFact: '⚡ Fun fact',
