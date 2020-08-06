@@ -55,7 +55,7 @@ const Markdown = (props) => {
     const GithubStats = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
-            return (<>{`<img align="center" src="${link}" alt="${props.github}" />`}<br /><br /></>);
+            return (<><p align="left">{`<img src="${link}" alt="${props.github}" />`}</p></>);
         }
         return '';
     }
@@ -86,9 +86,9 @@ const Markdown = (props) => {
         let link = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + props.github + "&layout=compact&hide=html"
         if (props.show) {
             if (!props.showStats) {
-                return (<>{`<img align="center" src="${link}" alt="${props.github}" />`}<br /><br /></>);
+                return (<><p align="center">{`<img src="${link}" alt="${props.github}" />`}</p></>);
             }
-            return (<>{`<img align="left" src="${link}" alt="${props.github}" />`}<br /><br /></>);
+            return (<><p align="left">{`<img src="${link}" alt="${props.github}" />`}</p></>);
         }
         return '';
     }
