@@ -1,17 +1,18 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
 const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c', 'cplusplus', 'css3', 'csharp',
-    'd3js', 'django', 'docker', 'dotnet', 'electron', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
-    'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala',
+    'd3js', 'django', 'docker', 'dotnet', 'electron', 'flask', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
+    'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala', 'nativescript',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
-    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch'];
+    'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
+    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma' ];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'framework', 'language', 'software', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
-        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel'],
+        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma'],
     },
     backend_dev: {
         title: 'Backend Development',
@@ -19,7 +20,7 @@ const categorizedSkills = {
     },
     mobile_dev: {
         title: 'Mobile App Development',
-        skills: ['android', 'flutter', 'dart', 'kotlin'],
+        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin'],
     },
     ai: {
         title: 'AI/ML',
@@ -27,11 +28,11 @@ const categorizedSkills = {
     },
     database: {
         title: 'Database',
-        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra'],
+        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb'],
     },
     devops: {
         title: 'Devops',
-        skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure'],
+        skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant'],
     },
     data_visualization: {
         title: 'Data Visualization',
@@ -39,7 +40,7 @@ const categorizedSkills = {
     },
     framework: {
         title: '',
-        skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails']
+        skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask']
     },
     language: {
         title: 'Programming Languages',
@@ -47,7 +48,7 @@ const categorizedSkills = {
     },
     software: {
         title: 'Software',
-        skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch']
+        skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch', 'invision', 'framer']
     },
     other: {
         title: 'Other',
@@ -127,6 +128,16 @@ const icons = {
     blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
     babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
     sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
+    flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg',
+    nativescript: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
+    xamarin: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg',
+    vagrant: 'https://www.vectorlogo.zone/logos/vagrantup/vagrantup-ar21.svg',
+    tailwind: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg',
+    materialize: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
+    invision: 'https://www.vectorlogo.zone/logos/invisionapp/invisionapp-ar21.svg',
+    framer: 'https://www.vectorlogo.zone/logos/framer/framer-ar21.svg',
+    bulma: 'https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg',
+    couchdb: 'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
 }
 
 const initialSkillState = {}
