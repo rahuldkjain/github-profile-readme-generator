@@ -131,7 +131,7 @@ const icons = {
     flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
     nativescript: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
     xamarin: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg',
-    vagrant: 'https://www.vectorlogo.zone/logos/vagrantup/vagrantup-ar21.svg',
+    vagrant: 'https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg',
     tailwind: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
     materialize: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
     invision: 'https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg',
