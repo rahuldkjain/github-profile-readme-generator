@@ -5,7 +5,8 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
-    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 'gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs' ];
+    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 
+     'gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative' ];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
@@ -20,7 +21,7 @@ const categorizedSkills = {
     },
     mobile_dev: {
         title: 'Mobile App Development',
-        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin'],
+        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin', 'reactnative'],
     },
     ai: {
         title: 'AI/ML',
@@ -154,7 +155,8 @@ const icons = {
     gridsome: 'https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg',
     nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg', 
     jekyll: 'https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg',
-    nextjs: 'https://cdn.worldvectorlogo.com/logos/nextjs-3.svg'
+    nextjs: 'https://cdn.worldvectorlogo.com/logos/nextjs-3.svg',
+    reactnative: 'https://reactnative.dev/img/header_logo.svg'
 }
 
 const initialSkillState = {}
