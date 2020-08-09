@@ -5,7 +5,7 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
-    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma' ];
+    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma','visualstudio','msql','svn' ];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'framework', 'language', 'software', 'other'];
@@ -28,11 +28,11 @@ const categorizedSkills = {
     },
     database: {
         title: 'Database',
-        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb'],
+        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb','mssql'],
     },
     devops: {
         title: 'Devops',
-        skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant'],
+        skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant','svn'],
     },
     data_visualization: {
         title: 'Data Visualization',
@@ -48,7 +48,7 @@ const categorizedSkills = {
     },
     software: {
         title: 'Software',
-        skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch', 'invision', 'framer']
+        skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch', 'invision', 'framer','visualstudio']
     },
     other: {
         title: 'Other',
@@ -138,6 +138,9 @@ const icons = {
     framer: 'https://www.vectorlogo.zone/logos/framer/framer-icon.svg',
     bulma: 'https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg',
     couchdb: 'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
+	visualstudio: 'https://devicons.github.io/devicon/devicon.git/icons/visualstudio/visualstudio-plain.svg',
+    mssql:'https://www.brandeps.com/logo-download/M/Microsoft-sql-server-logo-vector-01.svg',
+    svn:'https://logodix.com/logo/1247596.png',
 }
 
 const initialSkillState = {}
