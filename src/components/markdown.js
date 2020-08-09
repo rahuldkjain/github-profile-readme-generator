@@ -86,9 +86,9 @@ const Markdown = (props) => {
         let link = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + props.github + "&layout=compact&hide=html"
         if (props.show) {
             if (!props.showStats) {
-                return (<>{`<p><img align="center" src="${link}" alt="${props.github}" /></p>`}<br /><br /></>);
+                return (<>{`<p>&nbsp;<img align="center" src="${link}" alt="${props.github}" /></p>`}<br /><br /></>);
             }
-            return (<>{`<p><img align="left" src="${link}" alt="${props.github}" /></p>`}<br /><br /></>);
+            return (<>{`<p>&nbsp;<img align="left" src="${link}" alt="${props.github}" /></p>`}<br /><br /></>);
         }
         return '';
     }
