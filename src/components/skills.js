@@ -32,6 +32,9 @@ const Skills = (props) => {
     const listDevopsSkills = categorizedSkills['devops'].skills.map((skill) => {
         return createSkill(skill)
     });
+    const listBaasSkills = categorizedSkills['baas'].skills.map((skill) => {
+        return createSkill(skill)
+    });
     const listDataVisualizationSkills = categorizedSkills['data_visualization'].skills.map((skill) => {
         return createSkill(skill)
     });
@@ -44,9 +47,12 @@ const Skills = (props) => {
     const listSoftwareSkills = categorizedSkills['software'].skills.map((skill) => {
         return createSkill(skill)
     });
-    const listOtherSkills = categorizedSkills['other'].skills.map((skill) => {
+    const listStaticSiteGeneratorSkills = categorizedSkills['static_site_generator'].skills.map((skill) => {
         return createSkill(skill)
     });
+    const listOtherSkills = categorizedSkills['other'].skills.map((skill) => {
+        return createSkill(skill)
+    }); 
 
     return (
         <div>
@@ -91,6 +97,11 @@ const Skills = (props) => {
             <div className="skills">
                 {listDevopsSkills}
             </div>
+        
+            <h4 className="skills-category-title">Backend as a Service</h4>
+            <div className="skills">
+                {listBaasSkills}
+            </div>
 
             <h4 className="skills-category-title">Framework</h4>
             <div className="skills">
@@ -100,6 +111,11 @@ const Skills = (props) => {
             <h4 className="skills-category-title">Software</h4>
             <div className="skills">
                 {listSoftwareSkills}
+            </div>
+        
+            <h4 className="skills-category-title">Static Site Generators</h4>
+            <div className="skills">
+                {listStaticSiteGeneratorSkills}
             </div>
 
             <h4 className="skills-category-title">Other</h4>
