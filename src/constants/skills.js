@@ -5,10 +5,11 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
-    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma' ];
+    'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 
+     'gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative' ];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
-    'devops', 'framework', 'language', 'software', 'other'];
+    'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
@@ -20,7 +21,7 @@ const categorizedSkills = {
     },
     mobile_dev: {
         title: 'Mobile App Development',
-        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin'],
+        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin', 'reactnative'],
     },
     ai: {
         title: 'AI/ML',
@@ -28,11 +29,15 @@ const categorizedSkills = {
     },
     database: {
         title: 'Database',
-        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb'],
+        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb', 'hive', 'realm'],
     },
     devops: {
         title: 'Devops',
         skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant'],
+    },
+    baas: {
+        title: 'Backend as a Service(BaaS)',
+        skills: ['firebase', 'amplify']
     },
     data_visualization: {
         title: 'Data Visualization',
@@ -49,6 +54,10 @@ const categorizedSkills = {
     software: {
         title: 'Software',
         skills: ['illustrator', 'photoshop', 'figma', 'blender', 'sketch', 'invision', 'framer']
+    },
+    static_site_generator: {
+        title: 'Static Site Generators',
+        skills: ['gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs']
     },
     other: {
         title: 'Other',
@@ -138,6 +147,16 @@ const icons = {
     framer: 'https://www.vectorlogo.zone/logos/framer/framer-icon.svg',
     bulma: 'https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg',
     couchdb: 'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
+    firebase: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+    amplify: 'https://docs.amplify.aws/assets/logo-dark.svg',
+    hive: 'https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg',
+    realm: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
+    gastby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
+    gridsome: 'https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg',
+    nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg', 
+    jekyll: 'https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg',
+    nextjs: 'https://cdn.worldvectorlogo.com/logos/nextjs-3.svg',
+    reactnative: 'https://reactnative.dev/img/header_logo.svg'
 }
 
 const initialSkillState = {}
