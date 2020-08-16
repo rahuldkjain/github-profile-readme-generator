@@ -1,6 +1,6 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c', 'cplusplus', 'css3', 'csharp',
-    'd3js', 'django', 'docker', 'dotnet', 'electron', 'flask', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
+const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c','canvasjs', 'cplusplus', 'css3', 'csharp',
+    'd3js', 'django', 'docker', 'dotnet', 'electron', 'flask', 'go', 'gulp', 'html5','hugo','ionic', 'java', 'javascript', 'typescript', 'laravel',
     'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala', 'nativescript',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
