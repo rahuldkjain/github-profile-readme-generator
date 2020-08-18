@@ -109,7 +109,6 @@ const icons = {
     rust: 'https://devicons.github.io/devicon/devicon.git/icons/rust/rust-plain.svg',
     sass: 'https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg',
     scala: 'https://devicons.github.io/devicon/devicon.git/icons/scala/scala-original-wordmark.svg',
-    sketch: 'https://devicons.github.io/devicon/devicon.git/icons/sketch/sketch-original-wordmark.svg',
     symfony: 'https://symfony.com/logos/symfony_black_03.svg',
     spring: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
     swift: 'https://devicons.github.io/devicon/devicon.git/icons/swift/swift-original-wordmark.svg',
