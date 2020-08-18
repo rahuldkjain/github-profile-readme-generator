@@ -6,7 +6,7 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
     'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 
-     'gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative' ];
+     'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative' ];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
@@ -57,7 +57,7 @@ const categorizedSkills = {
     },
     static_site_generator: {
         title: 'Static Site Generators',
-        skills: ['gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs']
+        skills: ['gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs']
     },
     other: {
         title: 'Other',
@@ -151,7 +151,7 @@ const icons = {
     amplify: 'https://docs.amplify.aws/assets/logo-dark.svg',
     hive: 'https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg',
     realm: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
-    gastby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
+    gatsby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
     gridsome: 'https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg',
     nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg', 
     jekyll: 'https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg',
