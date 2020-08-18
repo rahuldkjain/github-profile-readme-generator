@@ -1,12 +1,12 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c', 'cplusplus', 'css3', 'csharp',
-    'd3js', 'django', 'docker', 'dotnet', 'electron', 'flask', 'go', 'gulp', 'html5', 'java', 'javascript', 'typescript', 'laravel',
+const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', 'bootstrap', 'c','canvasjs', 'cplusplus', 'css3', 'csharp',
+    'd3js', 'django', 'docker', 'dotnet', 'electron', 'flask', 'go', 'gulp', 'html5','hugo','ionic', 'java', 'javascript', 'typescript', 'laravel',
     'symfony', 'codeigniter', 'mongodb', 'mysql', 'php', 'postgresql', 'rails', 'redis', 'ruby', 'rust', 'sass', 'scala', 'nativescript',
     'nodejs', 'python', 'swift', 'spring', 'oracle', 'nginx', 'linux', 'redux', 'webpack', 'express', 'flutter', 'dart', 'kotlin',
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
     'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 
-     'gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative', 'mariadb', 'objectivec', 'clojure', 'haskell'];
+     'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative', 'mariadb', 'objectivec', 'clojure', 'haskell'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
@@ -21,7 +21,7 @@ const categorizedSkills = {
     },
     mobile_dev: {
         title: 'Mobile App Development',
-        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin', 'reactnative'],
+        skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin', 'reactnative','ionic'],
     },
     ai: {
         title: 'AI/ML',
@@ -41,7 +41,7 @@ const categorizedSkills = {
     },
     data_visualization: {
         title: 'Data Visualization',
-        skills: ['d3js', 'chartjs']
+        skills: ['d3js', 'chartjs','canvasjs']
     },
     framework: {
         title: '',
@@ -57,7 +57,7 @@ const categorizedSkills = {
     },
     static_site_generator: {
         title: 'Static Site Generators',
-        skills: ['gastby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs']
+        skills: ['gatsby', 'gridsome', 'hugo', 'jekyll', 'nextjs', 'nuxtjs']
     },
     other: {
         title: 'Other',
@@ -73,6 +73,7 @@ const icons = {
     backbonejs: 'https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg',
     bootstrap: 'https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg',
     c: 'https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg',
+    canvasjs : 'https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg',
     coffeescript: 'https://devicons.github.io/devicon/devicon.git/icons/coffeescript/coffeescript-original-wordmark.svg',
     codeigniter: 'https://cdn.worldvectorlogo.com/logos/codeigniter.svg',
     cplusplus: 'https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg',
@@ -87,8 +88,10 @@ const icons = {
     go: 'https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg',
     gulp: 'https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg',
     html5: 'https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg',
+    hugo : 'https://api.iconify.design/logos-hugo.svg',
     java: 'https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg',
     javascript: 'https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg',
+    ionic: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg',
     laravel: 'https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg',
     meteor: 'https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg',
     mongodb: 'https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg',
@@ -151,7 +154,7 @@ const icons = {
     amplify: 'https://docs.amplify.aws/assets/logo-dark.svg',
     hive: 'https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg',
     realm: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
-    gastby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
+    gatsby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
     gridsome: 'https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg',
     nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg', 
     jekyll: 'https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg',
