@@ -6,7 +6,7 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
     'tensorflow', 'chartjs', 'jenkins', 'gcp', 'kubernetes', 'azure', 'git', 'kafka', 'solr', 'cassandra', 'rabbitMQ',
     'hadoop', 'bash', 'pytorch', 'opencv', 'illustrator', 'photoshop', 'figma', 'blender', 'babel', 'sketch',
     'xamarin', 'vagrant', 'tailwind', 'materialize', 'invision', 'framer', 'couchdb', 'bulma', 'firebase', 'amplify', 'hive', 'realm', 
-     'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative' ];
+     'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative', 'mariadb', 'objectivec', 'clojure', 'haskell'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
     'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
@@ -29,7 +29,7 @@ const categorizedSkills = {
     },
     database: {
         title: 'Database',
-        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb', 'hive', 'realm'],
+        skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb', 'hive', 'realm', 'mariadb'],
     },
     devops: {
         title: 'Devops',
@@ -49,7 +49,7 @@ const categorizedSkills = {
     },
     language: {
         title: 'Programming Languages',
-        skills: ['c', 'cplusplus', 'csharp', 'go', 'java', 'javascript', 'typescript', 'php', 'ruby', 'scala', 'python', 'swift']
+        skills: ['c', 'cplusplus', 'csharp', 'go', 'java', 'javascript', 'typescript', 'php', 'ruby', 'scala', 'python', 'swift', 'objectivec', 'clojure', 'rust', 'haskell']
     },
     software: {
         title: 'Software',
@@ -159,7 +159,11 @@ const icons = {
     nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg', 
     jekyll: 'https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg',
     nextjs: 'https://cdn.worldvectorlogo.com/logos/nextjs-3.svg',
-    reactnative: 'https://reactnative.dev/img/header_logo.svg'
+    reactnative: 'https://reactnative.dev/img/header_logo.svg',
+    mariadb: 'https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg',
+    objectivec: 'https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg',
+    clojure: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg',
+    haskell: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg'
 }
 
 const initialSkillState = {}
