@@ -6,9 +6,9 @@ title: "💵 Support OSS"
 
 > Think of giving not as a duty but as a privilege --John D. Rockefeller Hr.
 
-Github Profile README Generator tool is free and will always be free. Numerous developers put their time and effort to make this tool more powerful. However, these developers are doing their full time job along with open-source contributions. 
+🚀 Github Profile README Generator tool is free and will always be free. Numerous developers has put their time and efforts to make this tool more powerful. However, these developers are doing their full time job along with open-source contributions. 
 
-You can come forward to support the developers by making small donations. You never know what will this support mean to them. Some will smile on seeing their work reward, some will be happy to pay the next month rent, some can buy coffee to contribute more.
+You can come forward to support the developers by making small donations. You will never know what this support mean to them. If you find the tool really helpful, then it will be very grateful to support the tool 🙇.
 
 <p align="center">
 <a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
@@ -21,3 +21,4 @@ You can come forward to support the developers by making small donations. You ne
 
 ## Sponsors 🙇
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
+- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed the support with his donation. Thanks a lot.

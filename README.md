@@ -80,6 +80,8 @@ npm start
 
 ## Sponsors 🙇
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
+- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed the support with his donation. Thanks a lot.
+
 
 <p align="center">
 <a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
