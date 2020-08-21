@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from 'gatsby'
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
 import { isMediumUsernameValid } from "../utils/validation"
@@ -62,7 +63,7 @@ const Addons = (props) => {
                     <div>
                         download
                         <span onClick={blogPostPorkflow} role="button" tabIndex="0" style={{ cursor: 'pointer', color: '#002ead' }}> blog-post-workflow.yml</span> file(learn
-                        <a href={links.addons} target="blank" style={{ color: '#002ead' }}> how to setup</a>)
+                        <a href={withPrefix(links.addons)} target="blank" style={{ color: '#002ead' }}> how to setup</a>)
                     </div>
                 </div> : ''}
         </div>
