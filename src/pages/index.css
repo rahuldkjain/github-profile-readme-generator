@@ -488,3 +488,15 @@ a {
     font-size: 14px;
   }
 }
+
+
+.actions {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.actions .button {
+  max-width: 120px;
+  padding: 8px 16px;
+}

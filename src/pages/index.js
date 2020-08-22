@@ -361,12 +361,28 @@ const IndexPage = () => {
   // keep cache updated
   KeepCacheUpdated({ prefix, data, link, social, skills })
 
+
+  const handleResetForm = () => {
+    setPrefix(DEFAULT_PREFIX)
+    setData(DEFAULT_DATA)
+    setLink(DEFAULT_LINK)
+    setSocial(DEFAULT_SOCIAL)
+    setSkills(DEFAULT_SKILLS)
+    console.log('Hola')
+  }
+
   return (
     <>
       <SEO title="Github Profile Readme Generator" />
       <>
         <Header heading="Github Profile README Generator" />
       </>
+
+      <div className="actions">
+        <div className="button github-button" onClick={handleResetForm}>
+          Reset form
+        </div>
+      </div>
 
       <div className="form">
         <Title
