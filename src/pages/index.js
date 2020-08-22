@@ -307,7 +307,6 @@ const IndexPage = () => {
       "href",
       `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ prefix, data, link, social, skills }))}`
     )
-    console.log(encodeURIComponent(JSON.stringify({ prefix, data, link, social, skills })))
     tempElement.setAttribute("download", "data.json")
     tempElement.style.display = "none"
     document.body.appendChild(tempElement)
