@@ -105,7 +105,8 @@ const IndexPage = () => {
   const [link, setLink] = useState(DEFAULT_LINK)
   const [social, setSocial] = useState(DEFAULT_SOCIAL)
   const [skills, setSkills] = useState(DEFAULT_SKILLS)
-
+  
+  const [restore, setRestore] = useState('')
   const [generatePreview, setGeneratePreview] = useState(false)
   const [generateMarkdown, setGenerateMarkdown] = useState(false)
   const [displayLoader, setDisplayLoader] = useState(false)
@@ -162,6 +163,7 @@ const IndexPage = () => {
       ease: "Linear.easeNone",
     })
     tl.set(".form", { display: "none" })
+    tl.set(".actions", { display: "none" })
     setDisplayLoader(true)
     setTimeout(() => {
       setDisplayLoader(false)
@@ -284,7 +286,7 @@ const IndexPage = () => {
     setCopyMarkdownButton()
   }
 
-  const handleDownload = () => {
+  const handleDownloadMarkdown = () => {
     var markdownContent = document.getElementById("markdown-content")
     var tempElement = document.createElement("a")
     tempElement.setAttribute(
@@ -299,10 +301,27 @@ const IndexPage = () => {
     document.body.removeChild(tempElement)
   }
 
+  const handleDownloadJson = () => {
+    var tempElement = document.createElement("a")
+    tempElement.setAttribute(
+      "href",
+      `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ prefix, data, link, social, skills }))}`
+    )
+    console.log(encodeURIComponent(JSON.stringify({ prefix, data, link, social, skills })))
+    tempElement.setAttribute("download", "data.json")
+    tempElement.style.display = "none"
+    document.body.appendChild(tempElement)
+    tempElement.click()
+    document.body.removeChild(tempElement)
+  }
+
   const handleBackToEdit = () => {
     setGeneratePreview(false)
     setGenerateMarkdown(false)
     gsap.set(".form", {
+      display: "",
+    })
+    gsap.set(".actions", {
       display: "",
     })
     gsap.to(".generate", {
@@ -322,22 +341,7 @@ const IndexPage = () => {
     setLink(cache.link || DEFAULT_LINK)
     setSocial(cache.social || DEFAULT_SOCIAL)
 
-    const cacheSkills = Object.keys(DEFAULT_SKILLS).reduce(
-      (previous, currentKey) => {
-        let currentSelected = false
-
-        if (cache.skills[currentKey]) {
-          currentSelected = true
-        }
-
-        return {
-          ...previous,
-          [currentKey]: currentSelected,
-        }
-      },
-      {}
-    )
-
+    const cacheSkills = mergeDefaultWithNewDataSkills(DEFAULT_SKILLS, cache.skills)
     setSkills(cacheSkills || DEFAULT_SKILLS)
   }
 
@@ -368,7 +372,46 @@ const IndexPage = () => {
     setLink(DEFAULT_LINK)
     setSocial(DEFAULT_SOCIAL)
     setSkills(DEFAULT_SKILLS)
-    console.log('Hola')
+  }
+
+  
+  const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
+    return Object.keys(defaultSkills).reduce(
+      (previous, currentKey) => {
+        let currentSelected = false
+
+        if (newSkills[currentKey]) {
+          currentSelected = true
+        }
+
+        return {
+          ...previous,
+          [currentKey]: currentSelected,
+        }
+      },
+      {}
+    )
+  }
+
+  const handleRestore = () => {
+    try {
+      const restoreData = JSON.parse(restore)
+      
+      if (!restoreData) {
+        return
+      }
+
+      setPrefix(restoreData.prefix || DEFAULT_PREFIX)
+      setData(restoreData.data || DEFAULT_DATA)
+      setLink(restoreData.link || DEFAULT_LINK)
+      setSocial(restoreData.social || DEFAULT_SOCIAL)
+
+      const restoreDataSkills = mergeDefaultWithNewDataSkills(DEFAULT_SKILLS, restoreData.skills)
+      setSkills(restoreDataSkills || DEFAULT_SKILLS)
+    } catch (error) {
+    } finally {
+      setRestore('')
+    }
   }
 
   return (
@@ -379,6 +422,14 @@ const IndexPage = () => {
       </>
 
       <div className="actions">
+        <div className="data">
+          <input type="text" className="inputField md" placeholder="JSON Backup" value={restore} onChange={e => setRestore(e.target.value)}/>
+
+          <div className="button github-button" onClick={handleRestore}>
+            Restore
+          </div>
+        </div>
+
         <div className="button github-button" onClick={handleResetForm}>
           Reset form
         </div>
@@ -468,9 +519,10 @@ const IndexPage = () => {
               role="button"
               onClick={handleBackToEdit}
             >
-              <ArrowLeftIcon size={16} />{" "}
+              <ArrowLeftIcon size={16} />
               <span className="hide-on-mobile"> back to edit</span>
             </div>
+
             <div
               className="copy-button"
               tabIndex="0"
@@ -483,22 +535,34 @@ const IndexPage = () => {
                 <CopyIcon size={24} />
               )}
               <span className="hide-on-mobile" id="copy-markdown">
-                {" "}
-                {copyObj.copiedText}{" "}
+                {copyObj.copiedText}
               </span>
             </div>
+
             <div
               className="download-button"
               tabIndex="0"
               role="button"
-              onClick={handleDownload}
-            >
-              <DownloadIcon size={24} />{" "}
+              onClick={handleDownloadMarkdown}
+              >
+              <DownloadIcon size={24} />
               <span className="hide-on-mobile" id="download-markdown">
-                {" "}
-                download{" "}
+                download markdown
               </span>
             </div>
+
+            <div
+              className="download-button"
+              tabIndex="0"
+              role="button"
+              onClick={handleDownloadJson}
+            >
+              <DownloadIcon size={24} />
+              <span className="hide-on-mobile" id="download-json">
+                download backup
+              </span>
+            </div>
+
             <div
               className="preview-button"
               tabIndex="0"
@@ -509,12 +573,13 @@ const IndexPage = () => {
                 <MarkdownIcon size={16} />
               ) : (
                 <EyeIcon size={16} />
-              )}{" "}
+              )}
               <span className="hide-on-mobile" id="preview-markdown">
                 {previewMarkdown.buttonText}
               </span>
             </div>
           </div>
+
           <div className="markdown">
             <div className="markdown-box">
               {generatePreview ? (

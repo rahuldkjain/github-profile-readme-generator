@@ -183,6 +183,7 @@ input:focus {
   width: 60%;
   justify-self: center;
   padding: 2% 0%;
+  align-self: center;
 }
 
 .download-button {
@@ -193,11 +194,12 @@ input:focus {
   width: 60%;
   justify-self: center;
   padding: 2% 0%;
+  align-self: center;
 }
 
 .utils {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   margin-top: 4%;
 }
 
@@ -209,6 +211,7 @@ input:focus {
   width: 60%;
   justify-self: end;
   padding: 2% 0%;
+  align-self: center;
 }
 
 .loader {
@@ -228,6 +231,7 @@ input:focus {
   width: 60%;
   justify-self: start;
   padding: 2% 0%;
+  align-self: center;
 }
 
 .title {
@@ -396,6 +400,32 @@ a {
   padding: 1%;
   background: var(--grey-05);
 }
+
+
+.actions {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  padding-left: 2%;
+}
+
+.actions .button {
+  max-width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.actions .data {
+  display: flex;
+  align-items: center;
+}
+
+.actions .data input {
+  flex: 1;
+}
+
 @media only screen and (max-width: 1199px) {
   .section-title {
     font-size: 18px;
@@ -487,16 +517,10 @@ a {
   .skills-category-title {
     font-size: 14px;
   }
+
+  .actions {
+    flex-direction: column;
+  }
 }
 
 
-.actions {
-  margin-top: 24px;
-  font-weight: 700;
-  font-size: 12px;
-}
-
-.actions .button {
-  max-width: 120px;
-  padding: 8px 16px;
-}
