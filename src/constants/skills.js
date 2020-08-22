@@ -16,6 +16,28 @@ const categories = [
 ]
 
 const categorizedSkills = {
+  language: {
+    title: "Programming Languages",
+    skills: [
+      "c",
+      "cplusplus",
+      "csharp",
+      "go",
+      "java",
+      "javascript",
+      "typescript",
+      "php",
+      "ruby",
+      "scala",
+      "python",
+      "swift",
+      "objectivec",
+      "clojure",
+      "rust",
+      "haskell",
+    ],
+  },
+
   frontend_dev: {
     title: "Frontend Development",
     skills: [
@@ -86,6 +108,11 @@ const categorizedSkills = {
     ],
   },
 
+  data_visualization: {
+    title: "Data Visualization",
+    skills: ["d3js", "chartjs", "canvasjs"],
+  },
+
   devops: {
     title: "Devops",
     skills: [
@@ -105,11 +132,6 @@ const categorizedSkills = {
     skills: ["firebase", "amplify"],
   },
 
-  data_visualization: {
-    title: "Data Visualization",
-    skills: ["d3js", "chartjs", "canvasjs"],
-  },
-
   framework: {
     title: "",
     skills: [
@@ -121,28 +143,6 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-    ],
-  },
-
-  language: {
-    title: "Programming Languages",
-    skills: [
-      "c",
-      "cplusplus",
-      "csharp",
-      "go",
-      "java",
-      "javascript",
-      "typescript",
-      "php",
-      "ruby",
-      "scala",
-      "python",
-      "swift",
-      "objectivec",
-      "clojure",
-      "rust",
-      "haskell",
     ],
   },
 
