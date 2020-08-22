@@ -24,14 +24,14 @@ const Skills = props => {
       <div className="section-title">Skills</div>
 
       {Object.keys(categorizedSkills).map(key => (
-        <Fragment>
+        <div key={key}>
           <h4 className="skills-category-title">
             {categorizedSkills[key].title}
           </h4>
           <div className="skills">
             {categorizedSkills[key].skills.map(skill => createSkill(skill))}
           </div>
-        </Fragment>
+        </div>
       ))}
     </div>
   )

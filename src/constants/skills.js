@@ -1,20 +1,4 @@
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-const categories = [
-  "frontend_dev",
-  "backend_dev",
-  "ai",
-  "mobile_dev",
-  "database",
-  "data_visualization",
-  "devops",
-  "baas",
-  "framework",
-  "language",
-  "software",
-  "static_site_generator",
-  "other",
-]
-
 const categorizedSkills = {
   language: {
     title: "Programming Languages",
@@ -343,5 +327,7 @@ const skills = Object.keys(categorizedSkills)
 skills.forEach(skill => {
   initialSkillState[skill] = false
 })
+
+const categories = Object.keys(categorizedSkills)
 
 export { initialSkillState, icons, skills, categorizedSkills, categories }
