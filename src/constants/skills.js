@@ -13,7 +13,7 @@ const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
-        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma'],
+        skills: ['vuejs', 'react', 'svelte', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma'],
     },
     backend_dev: {
         title: 'Backend Development',
@@ -68,6 +68,7 @@ const icons = {
     vuejs: 'https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg',
     react: 'https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg',
     angularjs: 'https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg',
+    svelte: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png',
     aws: 'https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     android: 'https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg',
     backbonejs: 'https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg',
