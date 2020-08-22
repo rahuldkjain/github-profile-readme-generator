@@ -9,7 +9,7 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
      'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative', 'mariadb', 'objectivec', 'clojure', 'haskell'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
-    'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
+    'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'testing', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
@@ -58,6 +58,10 @@ const categorizedSkills = {
     static_site_generator: {
         title: 'Static Site Generators',
         skills: ['gatsby', 'gridsome', 'hugo', 'jekyll', 'nextjs', 'nuxtjs']
+    },
+    testing: {
+        title: 'Testing',
+        skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine']
     },
     other: {
         title: 'Other',
@@ -165,7 +169,14 @@ const icons = {
     mariadb: 'https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg',
     objectivec: 'https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg',
     clojure: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg',
-    haskell: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg'
+    haskell: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg',
+    mocha: 'https://i.ibb.co/0MCw42Q/mocha.png',
+    jest: 'https://i.ibb.co/Yj6p14L/jest.png',
+    cypress: 'https://i.ibb.co/CWQq8gw/cypress.webp',
+    selenium: 'https://i.ibb.co/9T29DD0/selenium.png',
+    puppeteer: 'https://i.ibb.co/Qk299CX/puppeteer.png',
+    karma: 'https://i.ibb.co/dbgh2DH/jasmine.png',
+    jasmine: 'https://i.ibb.co/55txF2S/karma.png',
 }
 
 const initialSkillState = {}
