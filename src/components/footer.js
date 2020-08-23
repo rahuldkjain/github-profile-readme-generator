@@ -22,7 +22,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-pages">
         {footerList.map(item => (
-          <div>
+          <div key={item.name}>
             <Link to={item.route} activeStyle={{ color: "#002ead" }}>
               {item.name}
             </Link>
