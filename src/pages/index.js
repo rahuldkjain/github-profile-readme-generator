@@ -20,6 +20,7 @@ import {
   EyeIcon,
   CheckIcon,
   MarkdownIcon,
+  FileCodeIcon,
 } from "@primer/octicons-react"
 import SEO from "../components/seo"
 import {
@@ -105,7 +106,7 @@ const IndexPage = () => {
   const [link, setLink] = useState(DEFAULT_LINK)
   const [social, setSocial] = useState(DEFAULT_SOCIAL)
   const [skills, setSkills] = useState(DEFAULT_SKILLS)
-  
+
   const [restore, setRestore] = useState('')
   const [generatePreview, setGeneratePreview] = useState(false)
   const [generateMarkdown, setGenerateMarkdown] = useState(false)
@@ -163,7 +164,7 @@ const IndexPage = () => {
       ease: "Linear.easeNone",
     })
     tl.set(".form", { display: "none" })
-    tl.set(".actions", { display: "none" })
+    tl.set(".config-options", { display: "none" })
     setDisplayLoader(true)
     setTimeout(() => {
       setDisplayLoader(false)
@@ -292,7 +293,7 @@ const IndexPage = () => {
     tempElement.setAttribute(
       "href",
       "data:text/markdown;charset=utf-8," +
-        encodeURIComponent(markdownContent.innerText)
+      encodeURIComponent(markdownContent.innerText)
     )
     tempElement.setAttribute("download", "README.md")
     tempElement.style.display = "none"
@@ -373,7 +374,7 @@ const IndexPage = () => {
     setSkills(DEFAULT_SKILLS)
   }
 
-  
+
   const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
     return Object.keys(defaultSkills).reduce(
       (previous, currentKey) => {
@@ -395,7 +396,7 @@ const IndexPage = () => {
   const handleRestore = () => {
     try {
       const restoreData = JSON.parse(restore)
-      
+
       if (!restoreData) {
         return
       }
@@ -419,20 +420,6 @@ const IndexPage = () => {
       <>
         <Header heading="Github Profile README Generator" />
       </>
-
-      <div className="actions">
-        <div className="data">
-          <input type="text" className="inputField md" placeholder="JSON Backup" value={restore} onChange={e => setRestore(e.target.value)}/>
-
-          <div className="button github-button" onClick={handleRestore}>
-            Restore
-          </div>
-        </div>
-
-        <div className="button github-button" onClick={handleResetForm}>
-          Reset form
-        </div>
-      </div>
 
       <div className="form">
         <Title
@@ -459,41 +446,41 @@ const IndexPage = () => {
         />
         <div className="section">
           {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
-          !social.github ? (
-            <div className="warning">
-              * Please add github username to use these add-ons
-            </div>
-          ) : (
-            ""
-          )}
+            !social.github ? (
+              <div className="warning">
+                * Please add github username to use these add-ons
+              </div>
+            ) : (
+              ""
+            )}
           {social.github && !isGithubUsernameValid(social.github) ? (
             <div className="warning">
               * Github username is invalid, please add a valid username
             </div>
           ) : (
-            ""
-          )}
+              ""
+            )}
           {social.medium && !isMediumUsernameValid(social.medium) ? (
             <div className="warning">
               * Medium username is invalid, please add a valid username (with @)
             </div>
           ) : (
-            ""
-          )}
+              ""
+            )}
           {data.mediumDynamicBlogs && !social.medium ? (
             <div className="warning">
               * Please add medium username to display latest blogs dynamically
             </div>
           ) : (
-            ""
-          )}
+              ""
+            )}
           {data.devDynamicBlogs && !social.dev ? (
             <div className="warning">
               * Please add dev.to username to display latest blogs dynamically
             </div>
           ) : (
-            ""
-          )}
+              ""
+            )}
         </div>
         <div className="submit">
           <div
@@ -531,8 +518,8 @@ const IndexPage = () => {
               {copyObj.isCopied === true ? (
                 <CheckIcon size={24} />
               ) : (
-                <CopyIcon size={24} />
-              )}
+                  <CopyIcon size={24} />
+                )}
               <span className="hide-on-mobile" id="copy-markdown">
                 {copyObj.copiedText}
               </span>
@@ -543,7 +530,7 @@ const IndexPage = () => {
               tabIndex="0"
               role="button"
               onClick={handleDownloadMarkdown}
-              >
+            >
               <DownloadIcon size={24} />
               <span className="hide-on-mobile" id="download-markdown">
                 download markdown
@@ -556,7 +543,7 @@ const IndexPage = () => {
               role="button"
               onClick={handleDownloadJson}
             >
-              <DownloadIcon size={24} />
+              <FileCodeIcon size={24} />
               <span className="hide-on-mobile" id="download-json">
                 download backup
               </span>
@@ -571,8 +558,8 @@ const IndexPage = () => {
               {previewMarkdown.isPreview ? (
                 <MarkdownIcon size={16} />
               ) : (
-                <EyeIcon size={16} />
-              )}
+                  <EyeIcon size={16} />
+                )}
               <span className="hide-on-mobile" id="preview-markdown">
                 {previewMarkdown.buttonText}
               </span>
@@ -590,8 +577,8 @@ const IndexPage = () => {
                   skills={skills}
                 />
               ) : (
-                ""
-              )}
+                  ""
+                )}
               {generateMarkdown ? (
                 <Markdown
                   prefix={prefix}
@@ -601,14 +588,32 @@ const IndexPage = () => {
                   skills={skills}
                 />
               ) : (
-                ""
-              )}
+                  ""
+                )}
             </div>
           </div>
         </div>
       ) : (
-        ""
-      )}
+          ""
+        )}
+      <div className="config-options">
+        <div className="section-title">Config options</div>
+        <div className="actions">
+          <div className="data">
+            <input type="text" className="inputField md" placeholder="JSON Backup" value={restore} onChange={e => setRestore(e.target.value)} />
+
+            <div className="button github-button" role="button" tabIndex="0" onClick={handleRestore}>
+              Restore
+          </div>
+          </div>
+
+          <div className="button github-button" role="button" tabIndex="0" onClick={handleResetForm}>
+            Reset form
+        </div>
+        </div>
+        <div>* Enter the downloaded JSON text to restore.</div>
+        <div>* Press reset to reset the form.</div>
+      </div>
 
       <Footer />
     </>

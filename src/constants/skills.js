@@ -27,11 +27,14 @@ const categorizedSkills = {
     skills: [
       "vuejs",
       "react",
+      "svelte",
       "angularjs",
       "backbonejs",
       "bootstrap",
+      "vuetify",
       "css3",
       "html5",
+      "pug",
       "gulp",
       "sass",
       "redux",
@@ -117,7 +120,7 @@ const categorizedSkills = {
   },
 
   framework: {
-    title: "",
+    title: "Framework",
     skills: [
       "django",
       "dotnet",
@@ -127,6 +130,19 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
+    ],
+  },
+
+  testing: {
+    title: "Testing",
+    skills: [
+      "cypress",
+      "selenium",
+      "jest",
+      "mocha",
+      "puppeteer",
+      "karma",
+      "jasmine",
     ],
   },
 
@@ -315,6 +331,18 @@ const icons = {
     "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
   haskell:
     "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
+  svelte:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png",
+  vuetify:
+    "https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png",
+  pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
+  mocha: "https://i.ibb.co/0MCw42Q/mocha.png",
+  jest: "https://i.ibb.co/Yj6p14L/jest.png",
+  cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
+  selenium: "https://i.ibb.co/9T29DD0/selenium.png",
+  puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
+  karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
+  jasmine: "https://i.ibb.co/55txF2S/karma.png",
 }
 
 const initialSkillState = {}

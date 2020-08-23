@@ -180,7 +180,7 @@ input:focus {
   border: 2px solid var(--grey-75);
   text-align: center;
   cursor: pointer;
-  width: 60%;
+  width: 80%;
   justify-self: center;
   padding: 2% 0%;
   align-self: center;
@@ -191,7 +191,7 @@ input:focus {
   border: 2px solid var(--grey-75);
   text-align: center;
   cursor: pointer;
-  width: 60%;
+  width: 80%;
   justify-self: center;
   padding: 2% 0%;
   align-self: center;
@@ -402,19 +402,24 @@ a {
   background: var(--grey-05);
 }
 
-
-.actions {
-  margin-top: 24px;
+.config-options {
+  margin-top: 48px;
+  padding: 1% 1% 1% 2%;
   font-weight: 700;
   font-size: 12px;
-  display: flex;
-  padding-left: 2%;
+  border: 2px solid var(--grey-15);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .actions .button {
-  max-width: 120px;
+  max-width: 90px;
   padding: 8px 16px;
-  justify-content: center;
+  align-self: center;
+  justify-self: end;
   text-align: center;
 }
 
