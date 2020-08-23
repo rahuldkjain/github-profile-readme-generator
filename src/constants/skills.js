@@ -9,11 +9,11 @@ const skills = ['vuejs', 'react', 'angularjs', 'aws', 'android', 'backbonejs', '
      'gatsby', 'gridsome', 'nuxtjs', 'jekyll', 'nextjs', 'reactnative', 'mariadb', 'objectivec', 'clojure', 'haskell'];
 skills.sort();
 const categories = ['frontend_dev', 'backend_dev', 'ai', 'mobile_dev', 'database', 'data_visualization',
-    'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'other'];
+    'devops', 'baas', 'framework', 'language', 'software', 'static_site_generator', 'testing', 'other'];
 const categorizedSkills = {
     frontend_dev: {
         title: 'Frontend Development',
-        skills: ['vuejs', 'react', 'angularjs', 'backbonejs', 'bootstrap', 'css3', 'html5', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma'],
+        skills: ['vuejs', 'react', 'svelte', 'angularjs', 'backbonejs', 'bootstrap', 'vuetify', 'css3', 'html5', 'pug', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma'],
     },
     backend_dev: {
         title: 'Backend Development',
@@ -59,6 +59,10 @@ const categorizedSkills = {
         title: 'Static Site Generators',
         skills: ['gatsby', 'gridsome', 'hugo', 'jekyll', 'nextjs', 'nuxtjs']
     },
+    testing: {
+        title: 'Testing',
+        skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine']
+    },
     other: {
         title: 'Other',
         skills: ['linux', 'git']
@@ -68,6 +72,9 @@ const icons = {
     vuejs: 'https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg',
     react: 'https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg',
     angularjs: 'https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg',
+    svelte: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png',
+    vuetify: 'https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png',
+    pug: 'https://cdn.worldvectorlogo.com/logos/pug.svg',
     aws: 'https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     android: 'https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg',
     backbonejs: 'https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg',
@@ -162,7 +169,14 @@ const icons = {
     mariadb: 'https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg',
     objectivec: 'https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg',
     clojure: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg',
-    haskell: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg'
+    haskell: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg',
+    mocha: 'https://i.ibb.co/0MCw42Q/mocha.png',
+    jest: 'https://i.ibb.co/Yj6p14L/jest.png',
+    cypress: 'https://i.ibb.co/CWQq8gw/cypress.webp',
+    selenium: 'https://i.ibb.co/9T29DD0/selenium.png',
+    puppeteer: 'https://i.ibb.co/Qk299CX/puppeteer.png',
+    karma: 'https://i.ibb.co/dbgh2DH/jasmine.png',
+    jasmine: 'https://i.ibb.co/55txF2S/karma.png',
 }
 
 const initialSkillState = {}

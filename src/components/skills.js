@@ -50,6 +50,9 @@ const Skills = (props) => {
     const listStaticSiteGeneratorSkills = categorizedSkills['static_site_generator'].skills.map((skill) => {
         return createSkill(skill)
     });
+    const listTestingSkills = categorizedSkills['testing'].skills.map((skill) => {
+        return createSkill(skill)
+    }); 
     const listOtherSkills = categorizedSkills['other'].skills.map((skill) => {
         return createSkill(skill)
     }); 
@@ -116,6 +119,11 @@ const Skills = (props) => {
             <h4 className="skills-category-title">Static Site Generators</h4>
             <div className="skills">
                 {listStaticSiteGeneratorSkills}
+            </div>
+
+            <h4 className="skills-category-title">Testing</h4>
+            <div className="skills">
+                {listTestingSkills}
             </div>
 
             <h4 className="skills-category-title">Other</h4>
