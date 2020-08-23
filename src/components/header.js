@@ -4,11 +4,11 @@ import logo from "../images/mdg.png"
 import links from "../constants/page-links"
 import gsap from "gsap"
 import axios from "axios"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 const Header = props => {
   const fetchData = async () => {
-    var response = await axios.get(
+    const response = await axios.get(
       "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
     )
 
@@ -50,11 +50,10 @@ const Header = props => {
             className="logo"
             alt="github profile markdown generator logo"
           />
-          <div>
-            {props.heading}
-          </div>
+          <div>{props.heading}</div>
         </h1>
       </Link>
+
       <div className="github">
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"
@@ -62,17 +61,18 @@ const Header = props => {
           target="blank"
         >
           <div className="github-button">
-            <StarIcon size={16} className="star-icon" /> Star this repo{" "}
+            <StarIcon size={16} className="star-icon" /> Star this repo
             <span className="github-count">{stats.starsCount}</span>
           </div>
         </a>
+
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
           aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
           target="blank"
         >
           <div className="github-button">
-            <RepoForkedIcon size={16} className="fork-icon" /> Fork on Github{" "}
+            <RepoForkedIcon size={16} className="fork-icon" /> Fork on Github
             <span className="github-count">{stats.forksCount}</span>
           </div>
         </a>
