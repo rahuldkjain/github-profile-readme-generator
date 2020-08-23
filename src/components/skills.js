@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { icons, categorizedSkills } from "../constants/skills"
 
 const Skills = props => {
