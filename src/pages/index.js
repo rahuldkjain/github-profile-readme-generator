@@ -24,7 +24,7 @@ import {
 } from "@primer/octicons-react"
 import SEO from "../components/seo"
 import {
-  isGithubUsernameValid,
+  isGitHubUsernameValid,
   isMediumUsernameValid,
 } from "../utils/validation"
 
@@ -199,11 +199,11 @@ const IndexPage = () => {
     trimDataValues(link, setLink)
     resetCopyMarkdownButton()
     if (data.visitorsBadge || data.githubStats || data.topLanguages) {
-      if (social.github && isGithubUsernameValid(social.github)) {
+      if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
       }
     } else if (social.github) {
-      if (isGithubUsernameValid(social.github)) {
+      if (isGitHubUsernameValid(social.github)) {
         generate()
       }
     } else {
@@ -416,9 +416,9 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Github Profile Readme Generator" />
+      <SEO title="GitHub Profile Readme Generator" />
       <>
-        <Header heading="Github Profile README Generator" />
+        <Header heading="GitHub Profile README Generator" />
       </>
 
       <div className="form">
@@ -453,9 +453,9 @@ const IndexPage = () => {
             ) : (
               ""
             )}
-          {social.github && !isGithubUsernameValid(social.github) ? (
+          {social.github && !isGitHubUsernameValid(social.github) ? (
             <div className="warning">
-              * Github username is invalid, please add a valid username
+              * GitHub username is invalid, please add a valid username
             </div>
           ) : (
               ""

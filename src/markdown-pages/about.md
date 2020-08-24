@@ -7,13 +7,13 @@ title: "👨‍💻 About"
 <img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" />
 </a>
 
-**Github Profile README Generator** is an OSS(Open Source Software) that provides a cool interface to generate Github profile README in markdown.
+**GitHub Profile README Generator** is an OSS(Open Source Software) that provides a cool interface to generate GitHub profile README in markdown.
 
 The tool aims to provide hassle-free experience to add trending addons like profile **visitors count**, **github-stats**, **dynamic blog posts** etc.
 
 The profile should be neat and minimal to give a clear overview of the work. Non-uniform icons, too much content, too much images/gifs distracts visitors to see your actual work.
 
-To solve this, Github Profile README Generator came into existence.
+To solve this, GitHub Profile README Generator came into existence.
 
 So many developers contributed to the project and made it more awesome to use. You can contribute too to make it grow even further.
 

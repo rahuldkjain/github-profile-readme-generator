@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/gh-profile-readme-generator`,
   siteMetadata: {
-    title: `Github Profile Readme Generator`,
+    title: `GitHub Profile Readme Generator`,
     description: `Prettify your github profile using this amazing readme generator.`,
     author: `@rahuldkjain`,
   },

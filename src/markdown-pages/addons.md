@@ -4,12 +4,12 @@ date: "2019-05-04"
 title: "🚀 Addons"
 ---
 
-Github Profile README Generator tool uses few open-source addons developed by other developers. Including such features makes the tool useful. The developers of this tool is very grateful to use these awesome addons.
+GitHub Profile README Generator tool uses few open-source addons developed by other developers. Including such features makes the tool useful. The developers of this tool is very grateful to use these awesome addons.
 
-## [Github README Stats](https://github.com/anuraghazra/github-readme-stats)
+## [GitHub README Stats](https://github.com/anuraghazra/github-readme-stats)
 ⚡️ Dynamically generated stats for your github readmes
 
-#### Github Stats Card
+#### GitHub Stats Card
 <a href="https://github.com/rahuldkjain" target="blank">
   <img src="https://github-readme-stats.vercel.app/api?username=rahuldkjain&show_icons=true" width="320" alt="Rahul's github stats"/>
 </a>
@@ -25,7 +25,7 @@ You can customize the theme too. See how to customize yours [here](https://githu
 
 <br/>
 
-## [Github Profile Views Counter](https://github.com/antonkomarev/github-profile-views-counter)
+## [GitHub Profile Views Counter](https://github.com/antonkomarev/github-profile-views-counter)
 It counts how many times your GitHub profile has been viewed. Free cloud micro-service.  
 
 ![rahuldkjain](https://komarev.com/ghpvc/?username=rahuldkjain&style=flat-square)

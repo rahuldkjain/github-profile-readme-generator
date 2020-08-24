@@ -52,7 +52,7 @@ const Markdown = (props) => {
         }
         return '';
     }
-    const GithubStats = (props) => {
+    const GitHubStats = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
             return (<>{`<p>&nbsp;<img align="center" src="${link}" alt="${props.github}" /></p>`}<br /><br /></>);
@@ -112,7 +112,7 @@ const Markdown = (props) => {
                 (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium))} /></>
             <><DisplaySkills skills={props.skills} /></>
             <><DisplayTopLanguages show={props.data.topLanguages} showStats={props.data.githubStats} github={props.social.github} /></>
-            <><GithubStats show={props.data.githubStats} github={props.social.github} /></>
+            <><GitHubStats show={props.data.githubStats} github={props.social.github} /></>
             {isSocial(props.social) ? `<p align="center">` : ''} <br />
             <><DisplaySocial base='https://codepen.io' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg'
                 username={props.social.codepen} /></>
