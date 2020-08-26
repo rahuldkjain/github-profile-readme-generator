@@ -416,9 +416,9 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Github Profile Readme Generator" />
+      <SEO title="GitHub Profile Readme Generator" />
       <>
-        <Header heading="Github Profile README Generator" />
+        <Header heading="GitHub Profile README Generator" />
       </>
 
       <div className="form">

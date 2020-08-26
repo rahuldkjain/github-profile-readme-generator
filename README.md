@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
-    <img alt="Github Profile Readme Generator" src="./src/images/mdg.png" width="60" />
+    <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Github Profile Readme Generator
+  GitHub Profile Readme Generator
 </h1>
 
 <p align="center">
@@ -39,7 +39,7 @@
 <i>Loved the tool? Please consider <a href="https://paypal.me/rahuldkjain">donating</a>  💸 to help it improve!</i>
 </p>
 
-#### Tired of editing Github Profile README with new features?
+#### Tired of editing GitHub Profile README with new features?
 This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc. 
 
 #### 🚀 Try it out: [Live demo](https://rahuldkjain.github.io/gh-profile-readme-generator)

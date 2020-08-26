@@ -10,7 +10,7 @@ export default function Template({
     const { frontmatter, html } = markdownRemark
     return (
         <>
-            <Header heading="Github Profile README Generator" />
+            <Header heading="GitHub Profile README Generator" />
             <div className="blog-post-container">
                 <div className="blog-post">
                     <h1>{frontmatter.title}</h1>

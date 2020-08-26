@@ -48,13 +48,13 @@ const Addons = (props) => {
             <div className="checkbox">
                 <label htmlFor="dev-dynamic-blogs" className="checkboxLabel">
                     <input id="dev-dynamic-blogs" type="checkbox" checked={props.data.devDynamicBlogs}
-                        onChange={event => props.handleCheckChange('devDynamicBlogs')} />&nbsp; display latest dev.to blogs dynamically (Github Action)
+                        onChange={event => props.handleCheckChange('devDynamicBlogs')} />&nbsp; display latest dev.to blogs dynamically (GitHub Action)
                 </label>
             </div>
             <div className="checkbox">
                 <label htmlFor="medium-dynamic-blogs" className="checkboxLabel">
                     <input id="medium-dynamic-blogs" type="checkbox" checked={props.data.mediumDynamicBlogs}
-                        onChange={event => props.handleCheckChange('mediumDynamicBlogs')} />&nbsp; display latest medium blogs dynamically (Github Action)
+                        onChange={event => props.handleCheckChange('mediumDynamicBlogs')} />&nbsp; display latest medium blogs dynamically (GitHub Action)
                 </label>
             </div>
 
