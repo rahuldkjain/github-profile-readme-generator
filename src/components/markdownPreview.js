@@ -90,7 +90,7 @@ const MarkdownPreview = (props) => {
         }
         return null;
     }
-    const GithubStatsPreview = (props) => {
+    const GitHubStatsPreview = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
             return (<div className="github-stats-card"><img src={link} alt={props.github} /></div>)
@@ -122,7 +122,7 @@ const MarkdownPreview = (props) => {
             <SkillsPreview skills={props.skills} />
             <div className="github-cards">
                 <TopLanguagesPreview show={props.data.topLanguages} github={props.social.github} />
-                <GithubStatsPreview show={props.data.githubStats} github={props.social.github} />
+                <GitHubStatsPreview show={props.data.githubStats} github={props.social.github} />
             </div>
             <SocialPreview social={props.social} />
         </div>
