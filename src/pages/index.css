@@ -409,7 +409,12 @@ a {
   font-size: 12px;
   border: 2px solid var(--grey-15);
 }
-
+.new-tag {
+  font-size: 14px;
+  padding: 2px 4px;
+  background: var(--dark-green);
+  color: white;
+}
 .actions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -525,6 +530,7 @@ a {
   }
 
   .actions {
+    grid-template-columns: 1fr;
     flex-direction: column;
   }
 }

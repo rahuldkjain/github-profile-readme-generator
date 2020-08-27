@@ -417,9 +417,9 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="GitHub Profile Readme Generator" />
-      <>
+      <div>
         <Header heading="GitHub Profile README Generator" />
-      </>
+      </div>
 
       <div className="form">
         <Title
@@ -597,11 +597,10 @@ const IndexPage = () => {
           ""
         )}
       <div className="config-options">
-        <div className="section-title">Config options</div>
+        <div className="section-title">Config options <span className="new-tag">new feature</span></div>
         <div className="actions">
           <div className="data">
             <input type="text" className="inputField md" placeholder="JSON Backup" value={restore} onChange={e => setRestore(e.target.value)} />
-
             <div className="button github-button" role="button" tabIndex="0" onClick={handleRestore}>
               Restore
           </div>
