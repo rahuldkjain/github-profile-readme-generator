@@ -61,7 +61,7 @@ const Markdown = (props) => {
     }
     const isSocial = (social) => {
         return (social.dev || social.twitter || social.codepen || social.codesandbox || social.stackoverflow
-            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube);
+            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube || social.hackerrank || social.hackerearth || social.leetcode || social.geeks_for_geeks);
     }
     const DisplaySkills = (props) => {
         const listChosenSkills = [];
@@ -140,6 +140,14 @@ const Markdown = (props) => {
                 username={props.social.medium} /></>
             <><DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'
                 username={props.social.youtube} /></>
+            <><DisplaySocial base="https://www.hackerrank.com" icon="https://simpleicons.org/icons/hackerrank.svg" 
+                username={props.social.hackerrank}/></>
+            <> <DisplaySocial base="https://www.hackerearth.com" icon="https://simpleicons.org/icons/hackerearth.svg"
+                username={props.social.hackerearth} /></>
+            <><DisplaySocial base="https://leetcode.com" icon="https://simpleicons.org/icons/leetcode.svg" 
+                username={props.social.leetcode}/></>
+            <><DisplaySocial base="https://auth.geeksforgeeks.org/user" icon="https://simpleicons.org/icons/geeksforgeeks.svg" 
+                username={props.social.geeks_for_geeks} /></>
             {isSocial(props.social) ? `</p>` : ''}
         </div>
     );

@@ -88,6 +88,30 @@ const Social = (props) => {
                 <input id="youtube" placeholder="youtube channel name" className="inputField lg"
                 value={props.social.youtube} onChange={event => props.handleSocialChange('youtube', event)} />
             </div>
+            <div className="container">
+                <img src="https://simpleicons.org/icons/hackerrank.svg" 
+                className="icon" alt="hackerrank" />
+                <input id="hackerrank" placeholder="hackerrank username" className="inputField lg" 
+                value={props.social.hackerrank} onChange={event => props.handleSocialChange("hackerrank", event)}/>
+            </div>
+            <div className="container">
+                <img src="https://simpleicons.org/icons/hackerearth.svg" 
+                className="icon" alt="hackerearth" />
+                <input id="hackerearth" placeholder="hackerearth username (with @)" className="inputField lg" 
+                value={props.social.hackerearth} onChange={event => props.handleSocialChange("hackerearth", event)} />
+            </div>
+            <div className="container">
+                <img src="https://simpleicons.org/icons/leetcode.svg" 
+                className="icon" alt="leetcode" />
+                <input id="leetcode" placeholder="leetcode username" className="inputField lg" 
+                value={props.social.leetcode} onChange={event => props.handleSocialChange("leetcode", event)} />
+            </div>
+            <div className="container">
+                <img src="https://simpleicons.org/icons/geeksforgeeks.svg" 
+                className="icon" alt="geeks for geeks" />
+                <input id="geeks_for_geeks" placeholder="GFG username  (<username>/profile) " className="inputField lg" 
+                value={props.social.geeks_for_geeks} onChange={event => props.handleSocialChange("geeks_for_geeks", event)} />
+            </div> 
         </div>
     );
 }

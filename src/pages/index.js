@@ -66,7 +66,11 @@ const IndexPage = () => {
     dribbble: '',
     behance: '',
     medium: '',
-    youtube: ''
+    youtube: '',
+    hackerrank: "",
+    hackerearth: "",
+    leetcode: "",
+    geeks_for_geeks: "",
   });
   const [skills, setSkills] = useState(initialSkillState)
   const [generatePreview, setGeneratePreview] = useState(false);

@@ -80,6 +80,11 @@ const MarkdownPreview = (props) => {
                 <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg' username={props.social.behance} />
                 <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg' username={props.social.medium} />
                 <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' username={props.social.youtube} />
+                <DisplaySocial base='https://www.hackerrank.com' icon='https://simpleicons.org/icons/hackerrank.svg' username={props.social.hackerrank} />
+                <DisplaySocial base='https://www.hackerearth.com' icon='https://simpleicons.org/icons/hackerearth.svg' username={props.social.hackerearth} />
+                <DisplaySocial base='https://auth.geeksforgeeks.org/user' icon='https://simpleicons.org/icons/geeksforgeeks.svg' username={props.social.geeks_for_geeks} />
+                <DisplaySocial base='https://leetcode.com' icon='https://simpleicons.org/icons/leetcode.svg' username={props.social.leetcode} />
+
             </div>
         )
     }
