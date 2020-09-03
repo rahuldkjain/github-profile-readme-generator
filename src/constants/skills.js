@@ -43,6 +43,8 @@ const categorizedSkills = {
       "tailwind",
       "materialize",
       "bulma",
+      "gtk",
+      "qt",
     ],
   },
 
@@ -343,6 +345,7 @@ const icons = {
   puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
   karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
+  gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
 }
 
 const initialSkillState = {}
