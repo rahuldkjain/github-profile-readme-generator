@@ -437,6 +437,12 @@ a {
   flex: 1;
 }
 
+@media only screen and (max-width: 580px) {
+  .tooltiptext {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .section-title {
     font-size: 18px;
@@ -500,9 +506,6 @@ a {
   }
   #markdown-content {
     word-break: break-all;
-  }
-  .tooltiptext {
-    display: none;
   }
   .warning {
     font-size: 10px;
