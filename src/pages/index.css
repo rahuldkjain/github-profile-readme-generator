@@ -21,8 +21,8 @@
 
 html,
 body {
-  margin: 1%;
-  padding: 1%;
+  /* margin: 1%; */
+  padding: 0% 0.5%;
   font-family: "Roboto Mono", monospace;
   color: var(--grey-90);
 }
@@ -47,10 +47,10 @@ input:focus {
   border-radius: 0px !important;
 }
 
-.icon {
+/* .icon {
   width: 25px;
   height: 25px;
-}
+} */
 
 .section {
   width: 100%;
@@ -120,13 +120,6 @@ input:focus {
   margin: 1% 0%;
 }
 
-.skillCheckboxLabel {
-  width: 70%;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  margin: 8%;
-}
 
 .checkboxLabel {
   font-weight: 500;
@@ -175,7 +168,7 @@ input:focus {
   margin-top: 0.5%;
 }
 
-.copy-button {
+/* .copy-button {
   background: var(--grey-05);
   border: 2px solid var(--grey-75);
   text-align: center;
@@ -184,9 +177,9 @@ input:focus {
   justify-self: center;
   padding: 2% 0%;
   align-self: center;
-}
+} */
 
-.download-button {
+/* .download-button {
   background: var(--grey-05);
   border: 2px solid var(--grey-75);
   text-align: center;
@@ -195,13 +188,13 @@ input:focus {
   justify-self: center;
   padding: 2% 0%;
   align-self: center;
-}
+} */
 
-.utils {
+/* .utils {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   margin-top: 4%;
-}
+} */
 
 .preview-button {
   background: var(--grey-05);
@@ -233,51 +226,51 @@ input:focus {
   padding: 2% 0%;
   align-self: center;
 }
-
+/* 
 .title {
   text-align: center;
-}
+} */
 
-.subtitle {
+/* .subtitle {
   text-align: center;
-}
+} */
 
-.link {
+/* .link {
   text-decoration: none;
   color: var(--dark-blue);
-}
+} */
 
-.social-icon {
+/* .social-icon {
   margin: 1%;
-}
+} */
 
-.badge {
+/* .badge {
   text-align: left;
-}
+} */
 
-.github-cards {
+/* .github-cards {
   display: flex;
   justify-content: center;
-}
-.github-stats-card {
+} */
+/* .github-stats-card {
   margin: 1%;
-}
-.top-languages-card {
+} */
+/* .top-languages-card {
   margin: 1%;
-}
-.social {
+} */
+/* .social {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/* 
 .icon {
   width: 25px;
   height: 25px;
   margin: 1%;
   cursor: pointer;
-}
+} */
 
 .header {
   width: 100%;
@@ -362,11 +355,11 @@ a {
   object-fit: contain;
 }
 
-.skill-preview-icon {
+/* .skill-preview-icon {
   width: 40px;
   height: 40px;
   margin: 1%;
-}
+} */
 
 /* Tooltip css */
 
@@ -377,7 +370,7 @@ a {
   color: var(--grey-05);
   margin-left: 8%;
   background: var(--grey-90);
-  padding: 1px 5%;
+  padding: 2% 5%;
   font-size: 14px;
 }
 
@@ -445,10 +438,10 @@ a {
   .inputField {
     font-size: 10px;
   }
-  .icon {
+  /* .icon {
     width: 20px;
     height: 20px;
-  }
+  } */
   .checkbox {
     font-size: 12px;
   }
@@ -457,9 +450,9 @@ a {
     margin: 2% 0%;
     font-size: 14px;
   }
-  .badgeImage {
+  /* .badgeImage {
     height: 15px;
-  }
+  } */
   .heading {
     font-size: 18px;
   }
@@ -490,17 +483,17 @@ a {
     width: 25px;
     height: 25px;
   }
-  .skill-preview-icon {
+  /* .skill-preview-icon {
     width: 20px;
     height: 20px;
     margin: 1%;
-  }
+  } */
   .hide-on-mobile {
     display: none;
   }
-  #markdown-content {
+  /* #markdown-content {
     word-break: break-all;
-  }
+  } */
   .tooltiptext {
     display: none;
   }
@@ -510,21 +503,21 @@ a {
   .workflow {
     font-size: 12px;
   }
-  .github-cards {
+  /* .github-cards {
     display: block;
-  }
-  .github-stats-card{
+  } */
+  /* .github-stats-card{
     text-align: center;
-  }
-  .top-languages-card {
+  } */
+  /* .top-languages-card {
     text-align: center;
-  }
-  .github-stats-card > img{
+  } */
+  /* .github-stats-card > img{
     width: 80%;
-  }
-  .top-languages-card > img{
+  } */
+  /* .top-languages-card > img{
     width: 80%;
-  }
+  } */
   .skills-category-title {
     font-size: 14px;
   }
