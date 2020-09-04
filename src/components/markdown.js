@@ -93,7 +93,7 @@ const Markdown = (props) => {
         return '';
     }
     return (
-        <div id="markdown-content" className="break-all">
+        <div id="markdown-content" className="break-words">
             <><Title prefix={props.prefix.title} title={props.data.title} /></>
             <><SubTitle subtitle={props.data.subtitle} /></>
             <><VisitorsBadge show={props.data.visitorsBadge} github={props.social.github} /></>

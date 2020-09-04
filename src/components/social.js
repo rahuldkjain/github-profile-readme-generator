@@ -19,18 +19,6 @@ const Social = (props) => {
                         className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
                         value={props.social.twitter} onChange={event => props.handleSocialChange('twitter', event)} />
                 </div>
-                {/* <div className="container">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
-                        className="icon" alt="github" />
-                    <input id="github" placeholder="github username" className="inputField lg"
-                        value={props.social.github} onChange={event => props.handleSocialChange('github', event)} />
-                </div>
-                <div className="container">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"
-                        className="icon" alt="twitter" />
-                    <input id="twitter" placeholder="twitter username" className="inputField lg"
-                        value={props.social.twitter} onChange={event => props.handleSocialChange('twitter', event)} />
-                </div> */}
                 <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
                         className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="dev.to" />

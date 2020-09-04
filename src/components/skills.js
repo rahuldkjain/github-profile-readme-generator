@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { icons, categorizedSkills } from "../constants/skills"
 
 const Skills = props => {
@@ -20,7 +20,7 @@ const Skills = props => {
   }
 
   return (
-    <div className="px-2 sm:px-6 mb-4">
+    <div className="px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Skills</div>
 
       {Object.keys(categorizedSkills).map(key => (

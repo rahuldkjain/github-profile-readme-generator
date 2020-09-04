@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Footer = () => {
     return (
         <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
-            <div className="w-full flex justify-evenly items-center py-2 text-blue-500">
+            <div className="w-full flex justify-evenly items-center py-2 text-orange-500">
                 <div>
                     <Link to={links.about} activeStyle={{ color: "#002ead" }}>
                         About

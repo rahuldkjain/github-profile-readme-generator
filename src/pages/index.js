@@ -164,7 +164,7 @@ const IndexPage = () => {
 			duration: 0.5,
 			ease: "Linear.easeNone",
 		})
-		tl.set(".form", { display: "none" })
+		tl.set("#form", { display: "none" });
 		setDisplayLoader(true)
 		setTimeout(() => {
 			setDisplayLoader(false)
@@ -320,7 +320,7 @@ const IndexPage = () => {
 	const handleBackToEdit = () => {
 		setGeneratePreview(false)
 		setGenerateMarkdown(false)
-		gsap.set(".form", {
+		gsap.set("#form", {
 			display: "",
 		})
 		gsap.to(".generate", {
@@ -416,10 +416,9 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
-			<>
+			<div className="m-4 sm:p-4">
 				<SEO title="GitHub Profile Readme Generator" />
-
-				<div className="form">
+				<div id="form">
 					<Title
 						data={data}
 						prefix={prefix}
@@ -481,7 +480,7 @@ const IndexPage = () => {
 								""
 							)}
 					</div>
-					<div className="submit">
+					<div className="flex items-center justify-center w-full">
 						<div
 							className="text-xs sm:text-xl font-medium border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 sm:py-2 px-2 sm:px-4 generate"
 							tabIndex="0"
@@ -489,14 +488,14 @@ const IndexPage = () => {
 							onClick={handleGenerate}
 						>
 							Generate README
-            </div>
+            			</div>
 					</div>
 				</div>
 
 				{displayLoader ? <Loader /> : ""}
 
 				{generateMarkdown || generatePreview ? (
-					<div className="markdown-section">
+					<div className="markdown-section p-4 sm:py-4 sm:px-10">
 						<div className="w-full flex justify-between items-center">
 							<div
 								className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
@@ -569,7 +568,7 @@ const IndexPage = () => {
 						</div>
 
 						<div className="w-full flex justify-center items-center">
-							<div className="w-full text-sm text-gray-900 shadow-lg mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800" id="markdown-box">
+							<div className="w-full text-sm text-gray-900 shadow-xl mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800" id="markdown-box">
 								{generatePreview ? (
 									<MarkdownPreview
 										prefix={prefix}
@@ -638,7 +637,7 @@ const IndexPage = () => {
 						<div className="text-sm sm:text-lg text-gray-700">* Press reset to reset the form.</div>
 					</div>
 				</div>
-			</>
+			</div>
 		</Layout>
 	)
 }

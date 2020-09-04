@@ -25,7 +25,7 @@ const Addons = (props) => {
         document.body.removeChild(tempElement);
     }
     return (
-        <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-4">
+        <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
             <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Add-ons</div>
             <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
                 <label htmlFor="visitors-count" className="cursor-pointer">
