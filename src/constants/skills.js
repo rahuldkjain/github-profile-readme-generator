@@ -343,7 +343,8 @@ const icons = {
     "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
   selenium: "https://i.ibb.co/9T29DD0/selenium.png",
   puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
-  karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
+  karma:
+    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
