@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 // import Header from '../components/header'
 // import Footer from '../components/footer'
+import {Helmet} from "react-helmet";
 import Layout from "../components/layout";
 
 export default function Template({
@@ -12,6 +13,11 @@ export default function Template({
     return (
         <Layout>
             {/* <Header heading="GitHub Profile README Generator" /> */}
+            <Helmet>
+              <meta charSet="utf-8" />
+              <title>{frontmatter.title}</title>
+              <link rel="canonical" href={`https://rahuldkjain.github.io/gh-profile-readme-generator`} />
+            </Helmet>
             <div className="m-4 sm:p-10">
                 <div className="blog-post">
                     <h1 className="text-4xl font-bold">{frontmatter.title}</h1>

@@ -92,8 +92,9 @@ npm start
 </p>
 
 <p align="left">
-  <a href="https://ko-fi.com/A0A81XXSX"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="sponsor github profile readme generator" width="180"/>
+  <a href='https://ko-fi.com/A0A81XXSX' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
   </a>
+  <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
 </p>
 
 <hr>

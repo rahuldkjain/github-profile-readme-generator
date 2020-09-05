@@ -81,7 +81,7 @@
 }
 
 .markdown pre code {
-  @apply block bg-transparent p-0 overflow-visible rounded-none;
+  @apply block p-0 rounded-none;
 }
 
 .markdown ul {
