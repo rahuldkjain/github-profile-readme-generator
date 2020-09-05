@@ -45,6 +45,7 @@ const categorizedSkills = {
       "bulma",
       "gtk",
       "qt",
+      "wx-widgets",
     ],
   },
 
@@ -347,6 +348,8 @@ const icons = {
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
+  "wx-widgets":
+    "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
 }
 
 const initialSkillState = {}
