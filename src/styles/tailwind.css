@@ -77,11 +77,11 @@
 }
 
 .markdown pre {
-  @apply bg-gray-100 rounded p-4;
+  @apply bg-gray-900 text-white overflow-scroll rounded p-4;
 }
 
 .markdown pre code {
-  @apply block p-0 rounded-none;
+  @apply block p-0 rounded-none text-white;
 }
 
 .markdown ul {
