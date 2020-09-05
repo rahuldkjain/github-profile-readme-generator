@@ -346,6 +346,7 @@ const icons = {
   karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
+  qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
 }
 
 const initialSkillState = {}
