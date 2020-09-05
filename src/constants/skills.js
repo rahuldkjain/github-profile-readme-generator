@@ -345,7 +345,7 @@ const icons = {
   puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
   karma:
     "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
-  jasmine: "https://i.ibb.co/55txF2S/karma.png",
+  jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
   "wx-widgets":
