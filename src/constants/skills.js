@@ -339,7 +339,8 @@ const icons = {
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
   mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
   jest: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
-  cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
+  cypress:
+    "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
   selenium: "https://i.ibb.co/9T29DD0/selenium.png",
   puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
   karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
