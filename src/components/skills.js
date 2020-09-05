@@ -28,7 +28,7 @@ const Skills = props => {
           <h4 className="text-sm sm:text-xl text-gray-900 text-center">
             {categorizedSkills[key].title}
           </h4>
-          <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-10">
+          <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
             {categorizedSkills[key].skills.map(skill => createSkill(skill))}
           </div>
         </div>

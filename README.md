@@ -82,16 +82,21 @@ npm start
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
 - [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed the support with his donation. Thanks a lot.
 
-
-<p align="center">
+## Support 🙏
+<p align="left">
 <a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator">
+<img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator" alt="tweet github profile readme generator"/>
+</a>
 </p>
 
-<p align="center">
-  <a href="https://ko-fi.com/A0A81XXSX"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="sponsor github profile readme generator"/>
+<p align="left">
+  <a href="https://ko-fi.com/A0A81XXSX"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="sponsor github profile readme generator" width="180"/>
   </a>
 </p>
 
+<hr>
 <p align="center">
 Developed with ❤️ in India 🇮🇳 
 </p>

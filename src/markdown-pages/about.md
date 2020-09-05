@@ -20,12 +20,17 @@ So many developers contributed to the project and made it more awesome to use. Y
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
 <img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
 </a>
-<br/>
+<br>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
 </p>
 
+### Contributors 🙏
+List of the developers who contributed to the project. A big shout out for them.
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=rahuldkjain/github-profile-readme-generator" />
+</a>
 <hr/>
 
 ## How do I create a profile README?

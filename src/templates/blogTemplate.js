@@ -12,7 +12,7 @@ export default function Template({
     return (
         <Layout>
             {/* <Header heading="GitHub Profile README Generator" /> */}
-            <div className="m-4 p-10">
+            <div className="m-4 sm:p-10">
                 <div className="blog-post">
                     <h1 className="text-4xl font-bold">{frontmatter.title}</h1>
                     {/* <h2>{frontmatter.date}</h2> */}

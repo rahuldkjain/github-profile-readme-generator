@@ -6,102 +6,109 @@
 
 @tailwind @screens;
 
+/* Additional vertical padding used by kbd tag. */
+.py-05 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .markdown {
-  @apply leading-relaxed text-sm;
+  @apply text-gray-900 leading-normal break-words;
 }
 
-@screen sm {
-  .markdown {
-    @apply text-base;
-  }
+.markdown > * + * {
+  @apply mt-0 mb-4;
 }
 
-@screen lg {
-  .markdown {
-    @apply text-lg;
-  }
+/* .markdown p {
+  @apply flex justify-start items-center;
+} */
+
+.markdown li + li {
+  @apply mt-1;
 }
 
-.text-shadow {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.55);
+.markdown li > p + p {
+  @apply mt-6;
 }
 
-/* Headers */
-.markdown h1,
-.markdown h2 {
-  @apply text-xl my-4 font-semibold;
-}
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
-  @apply text-lg my-1 font-semibold;
+.markdown strong {
+  @apply font-semibold;
 }
 
-@screen sm {
-  .markdown h1,
-  .markdown h2 {
-    @apply text-2xl;
-  }
-  .markdown h3,
-  .markdown h4,
-  .markdown h5,
-  .markdown h6 {
-    @apply text-xl;
-  }
-}
-
-/* Links */
 .markdown a {
-  @apply text-blue-800 my-1;
-}
-.markdown a:hover {
-  @apply underline;
-}
-/* Paragraph */
-.markdown p {
-  @apply mb-2;
-}
-/* Lists */
-.markdown ul,
-.markdown ol {
-  @apply mb-2 ml-8;
-}
-.markdown li > p,
-.markdown li > ul,
-.markdown li > ol {
-  @apply mb-0;
-}
-.markdown ol {
-  @apply list-decimal;
-}
-.markdown ul {
-  @apply list-disc;
-}
-/* Blockquotes */
-.markdown blockquote {
-  @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
-}
-.markdown blockquote > p {
-  @apply mb-0;
-}
-/* Tables */
-.markdown td,
-.markdown th {
-  @apply px-2 py-1 border border-gray-400;
-}
-.markdown tr:nth-child(odd) {
-  @apply bg-gray-100;
-}
-.markdown table {
-  @apply mb-6;
+  @apply text-blue-600 font-semibold;
 }
 
-/* Wrap any inline highlights `that are really long`, but don't modify
-     the setting for codeblocks (inside ```), which are rendered in as:
-     <pre><code>...
-  */
-.markdown :not(pre) > code.language-text {
-  white-space: pre-line;
+.markdown strong a {
+  @apply font-bold;
 }
-/* purgecss end ignore */
+
+.markdown h1 {
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h2 {
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h3 {
+  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+}
+
+.markdown h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-6;
+}
+
+.markdown h5 {
+  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+}
+
+.markdown h6 {
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
+}
+
+.markdown code {
+  @apply font-body text-sm inline bg-gray-200 rounded px-1 py-05;
+}
+
+.markdown pre {
+  @apply bg-gray-100 rounded p-4;
+}
+
+.markdown pre code {
+  @apply block bg-transparent p-0 overflow-visible rounded-none;
+}
+
+.markdown ul {
+  @apply text-base pl-8 list-disc;
+}
+
+.markdown ol {
+  @apply text-base pl-8 list-decimal;
+}
+
+.markdown kbd {
+  @apply text-xs inline-block rounded border px-1 py-05 align-middle font-normal font-body shadow;
+}
+
+.markdown table {
+  @apply text-base border-gray-600;
+}
+
+.markdown th {
+  @apply border py-1 px-3;
+}
+
+.markdown td {
+  @apply border py-1 px-3;
+}
+
+/* Override pygments style background color. */
+.markdown .highlight pre {
+  @apply bg-gray-100 !important;
+}
