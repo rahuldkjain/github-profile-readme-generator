@@ -88,6 +88,49 @@ const Social = (props) => {
                 <input id="youtube" placeholder="youtube channel name" className="inputField lg"
                 value={props.social.youtube} onChange={event => props.handleSocialChange('youtube', event)} />
             </div>
+    
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+                className="icon" alt="codechef" />
+                <input id="codechef" placeholder="codechef username" className="inputField lg"
+                value={props.social.codechef} onChange={event => props.handleSocialChange('codechef',event)} />
+            </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerrank.svg"
+                className="icon" alt="hackerrank" />
+                <input id="hackerrank" placeholder="hackerrank username" className="inputField lg"
+                value={props.social.hackerrank} onChange={event => props.handleSocialChange('hackerrank',event)} />
+            </div> 
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codeforces.svg"
+                className="icon" alt="codeforces" />
+                <input id="codeforces" placeholder="codeforces username" className="inputField lg"
+                value={props.social.codeforces} onChange={event => props.handleSocialChange('codeforces',event)} />
+            </div> 
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/leetcode.svg"
+                className="icon" alt="leetcode" />
+                <input id="leetcode" placeholder="leetcode username" className="inputField lg"
+                value={props.social.leetcode} onChange={event => props.handleSocialChange('leetcode',event)} />
+            </div> 
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/topcoder.svg"
+                className="icon" alt="topcoder" />
+                <input id="topcoder" placeholder="topcoder username" className="inputField lg"
+                value={props.social.topcoder} onChange={event => props.handleSocialChange('topcoder',event)} />
+            </div> 
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg"
+                className="icon" alt="hackerearth" />
+                <input id="hackerearth" placeholder="hackerearth username" className="inputField lg"
+                value={props.social.hackerearth} onChange={event => props.handleSocialChange('hackerearth',event)} />
+            </div>
+            <div className="container">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg"
+                className="icon" alt="geeksforgeeks" />
+                <input id="geeksforgeeks" placeholder="geeksforgeeks username" className="inputField lg"
+                value={props.social.geeks_for_geeks} onChange={event => props.handleSocialChange('geeks_for_geeks',event)} />
+            </div>
         </div>
     );
 }
