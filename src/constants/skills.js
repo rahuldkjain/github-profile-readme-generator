@@ -335,8 +335,7 @@ const icons = {
   haskell:
     "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
   svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-  vuetify:
-    "https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png",
+  vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
   mocha: "https://i.ibb.co/0MCw42Q/mocha.png",
   jest: "https://i.ibb.co/Yj6p14L/jest.png",
