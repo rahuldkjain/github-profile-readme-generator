@@ -82,6 +82,13 @@ const DEFAULT_SOCIAL = {
 	behance: "",
 	medium: "",
 	youtube: "",
+	codechef: "",
+	hackerrank: "",
+	codeforces: "",
+	leetcode: "",
+	topcoder: "",
+	hackerearth: "",
+	geeks_for_geeks: "",
 }
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {

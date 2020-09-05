@@ -91,49 +91,48 @@ const Social = (props) => {
                     <input id="youtube" placeholder="youtube channel name" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
                         value={props.social.youtube} onChange={event => props.handleSocialChange('youtube', event)} />
                 </div>
-            </div>
-    
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
-                className="icon" alt="codechef" />
-                <input id="codechef" placeholder="codechef username" className="inputField lg"
-                value={props.social.codechef} onChange={event => props.handleSocialChange('codechef',event)} />
-            </div>
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerrank.svg"
-                className="icon" alt="hackerrank" />
-                <input id="hackerrank" placeholder="hackerrank username" className="inputField lg"
-                value={props.social.hackerrank} onChange={event => props.handleSocialChange('hackerrank',event)} />
-            </div> 
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codeforces.svg"
-                className="icon" alt="codeforces" />
-                <input id="codeforces" placeholder="codeforces username" className="inputField lg"
-                value={props.social.codeforces} onChange={event => props.handleSocialChange('codeforces',event)} />
-            </div> 
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/leetcode.svg"
-                className="icon" alt="leetcode" />
-                <input id="leetcode" placeholder="leetcode username" className="inputField lg"
-                value={props.social.leetcode} onChange={event => props.handleSocialChange('leetcode',event)} />
-            </div> 
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/topcoder.svg"
-                className="icon" alt="topcoder" />
-                <input id="topcoder" placeholder="topcoder username" className="inputField lg"
-                value={props.social.topcoder} onChange={event => props.handleSocialChange('topcoder',event)} />
-            </div> 
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg"
-                className="icon" alt="hackerearth" />
-                <input id="hackerearth" placeholder="hackerearth username" className="inputField lg"
-                value={props.social.hackerearth} onChange={event => props.handleSocialChange('hackerearth',event)} />
-            </div>
-            <div className="container">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg"
-                className="icon" alt="geeksforgeeks" />
-                <input id="geeksforgeeks" placeholder="geeksforgeeks username" className="inputField lg"
-                value={props.social.geeks_for_geeks} onChange={event => props.handleSocialChange('geeks_for_geeks',event)} />
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="codechef" />
+                    <input id="codechef" placeholder="codechef username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.codechef} onChange={event => props.handleSocialChange('codechef', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerrank.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="hackerrank" />
+                    <input id="hackerrank" placeholder="hackerrank username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.hackerrank} onChange={event => props.handleSocialChange('hackerrank', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codeforces.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="codeforces" />
+                    <input id="codeforces" placeholder="codeforces username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.codeforces} onChange={event => props.handleSocialChange('codeforces', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/leetcode.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="leetcode" />
+                    <input id="leetcode" placeholder="leetcode username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.leetcode} onChange={event => props.handleSocialChange('leetcode', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/topcoder.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="topcoder" />
+                    <input id="topcoder" placeholder="topcoder username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.topcoder} onChange={event => props.handleSocialChange('topcoder', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="hackerearth" />
+                    <input id="hackerearth" placeholder="hackerearth username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.hackerearth} onChange={event => props.handleSocialChange('hackerearth', event)} />
+                </div>
+                <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg"
+                        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="geeksforgeeks" />
+                    <input id="geeksforgeeks" placeholder="geeksforgeeks username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                        value={props.social.geeks_for_geeks} onChange={event => props.handleSocialChange('geeks_for_geeks', event)} />
+                </div>
             </div>
         </div>
     );
