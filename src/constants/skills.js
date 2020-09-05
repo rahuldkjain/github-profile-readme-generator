@@ -337,7 +337,7 @@ const icons = {
   svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
   vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
-  mocha: "https://i.ibb.co/0MCw42Q/mocha.png",
+  mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
   jest: "https://i.ibb.co/Yj6p14L/jest.png",
   cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
   selenium: "https://i.ibb.co/9T29DD0/selenium.png",
