@@ -338,7 +338,7 @@ const icons = {
   vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
   mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
-  jest: "https://i.ibb.co/Yj6p14L/jest.png",
+  jest: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
   cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
   selenium: "https://i.ibb.co/9T29DD0/selenium.png",
   puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
