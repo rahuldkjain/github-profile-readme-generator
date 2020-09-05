@@ -349,10 +349,8 @@ const icons = {
 
 const initialSkillState = {}
 
-const skills = Object.keys(categorizedSkills)
-  .map(key => categorizedSkills[key].skills)
-  .flat()
-  .sort()
+const skillsArray = Object.keys(categorizedSkills).map(key => categorizedSkills[key].skills);
+const skills = [].concat.apply([], skillsArray).sort();
 
 skills.forEach(skill => {
   initialSkillState[skill] = false
