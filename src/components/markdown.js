@@ -70,7 +70,7 @@ const Markdown = (props) => {
                 listChosenSkills.push(`<img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>`);
             }
         });
-        return listChosenSkills.length > 0 ? `<p align="left">${listChosenSkills.join(' ')}</p>` : '';
+        return listChosenSkills.length > 0 ? (<>{`<p align="left">${listChosenSkills.join(' ')}</p>`}<br/><br/></>) : '';
     }
     const DisplayDynamicBlogs = (props) => {
         if (props.show) {
@@ -93,7 +93,7 @@ const Markdown = (props) => {
         return '';
     }
     return (
-        <div id="markdown-content">
+        <div id="markdown-content" className="break-words">
             <><Title prefix={props.prefix.title} title={props.data.title} /></>
             <><SubTitle subtitle={props.data.subtitle} /></>
             <><VisitorsBadge show={props.data.visitorsBadge} github={props.social.github} /></>

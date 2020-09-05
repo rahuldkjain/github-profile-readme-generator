@@ -25,8 +25,13 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-purgecss": "^5.0.0",
+    "gatsby-plugin-twitter": "^2.3.10",
+    "gatsby-remark-embedder": "^3.0.0",
     "gh-pages": "^3.1.0",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.7.6"
   },
   "keywords": [
     "gatsby"
