@@ -342,7 +342,7 @@ const icons = {
   cypress:
     "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
   selenium: "https://i.ibb.co/9T29DD0/selenium.png",
-  puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
+  puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
   karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
