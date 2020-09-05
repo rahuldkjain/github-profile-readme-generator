@@ -61,7 +61,7 @@ const Markdown = (props) => {
     }
     const isSocial = (social) => {
         return (social.dev || social.twitter || social.codepen || social.codesandbox || social.stackoverflow
-            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube);
+            || social.linkedin || social.kaggle || social.instagram || social.fb || social.dribbble || social.behance || social.medium || social.youtube|| social.codechef|| social.hackerrank|| social.codeforces|| social.leetcode|| social.topcoder|| social.hackerearth|| social.geeks_for_geeks);
     }
     const DisplaySkills = (props) => {
         const listChosenSkills = [];
@@ -140,6 +140,20 @@ const Markdown = (props) => {
                 username={props.social.medium} /></>
             <><DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg'
                 username={props.social.youtube} /></>
+            <><DisplaySocial base='https://www.codechef.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg'
+                username={props.social.codechef} /></>
+            <><DisplaySocial base='https://www.hackerrank.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg'
+                username={props.social.hackerrank} /></>
+            <><DisplaySocial base='https://www.codeforces.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg'
+                username={props.social.codeforces} /></>
+            <><DisplaySocial base='https://www.leetcode.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg'
+                username={props.social.leetcode} /></>
+            <><DisplaySocial base='https://www.hackerearth.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg'
+                username={props.social.hackerearth} /></>
+            <><DisplaySocial base='https://www.geeksforgeeks.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg'
+                username={props.social.geeks_for_geeks} /></>
+            <><DisplaySocial base='https://www.topcoder.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg'
+                username={props.social.topcoder} /></>
             {isSocial(props.social) ? `</p>` : ''}
         </div>
     );
