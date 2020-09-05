@@ -334,8 +334,7 @@ const icons = {
     "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
   haskell:
     "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
-  svelte:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png",
+  svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
   vuetify:
     "https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
