@@ -43,6 +43,7 @@ const categorizedSkills = {
       "tailwind",
       "materialize",
       "bulma",
+      "ember",
     ],
   },
 
@@ -343,6 +344,7 @@ const icons = {
   puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
   karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
   jasmine: "https://i.ibb.co/55txF2S/karma.png",
+  ember: "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
 }
 
 const initialSkillState = {}
