@@ -12,7 +12,6 @@ export default function Template({
     const { frontmatter, html } = markdownRemark
     return (
         <Layout>
-            {/* <Header heading="GitHub Profile README Generator" /> */}
             <Helmet>
               <meta charSet="utf-8" />
               <title>{frontmatter.title}</title>
@@ -21,14 +20,12 @@ export default function Template({
             <div className="m-4 sm:p-10">
                 <div className="blog-post">
                     <h1 className="text-4xl font-bold">{frontmatter.title}</h1>
-                    {/* <h2>{frontmatter.date}</h2> */}
                     <div
                         className="markdown"
                         dangerouslySetInnerHTML={{ __html: html }}
                     />
                 </div>
             </div>
-            {/* <Footer /> */}
         </Layout>
     )
 }
