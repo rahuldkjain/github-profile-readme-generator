@@ -39,7 +39,6 @@ body {
   margin: 2% 0%;
 }
 
-
 .warning {
   color: var(--red);
   background: var(--grey-05);
@@ -59,8 +58,6 @@ body {
   align-items: center;
   font-size: 24px;
 }
-
-
 
 a {
   text-decoration: none;
