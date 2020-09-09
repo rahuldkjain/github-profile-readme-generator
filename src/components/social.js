@@ -124,13 +124,13 @@ const Social = (props) => {
                 <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg"
                         className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="hackerearth" />
-                    <input id="hackerearth" placeholder="hackerearth username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                    <input id="hackerearth" placeholder="hackerearth user (with @)" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
                         value={props.social.hackerearth} onChange={event => props.handleSocialChange('hackerearth', event)} />
                 </div>
                 <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg"
                         className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4" alt="geeksforgeeks" />
-                    <input id="geeksforgeeks" placeholder="geeksforgeeks username" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+                    <input id="geeksforgeeks" placeholder="GFG (<username>/profile)" className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
                         value={props.social.geeks_for_geeks} onChange={event => props.handleSocialChange('geeks_for_geeks', event)} />
                 </div>
             </div>
