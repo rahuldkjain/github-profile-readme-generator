@@ -20,10 +20,6 @@
   @apply mt-0 mb-4;
 }
 
-/* .markdown p {
-  @apply flex justify-start items-center;
-} */
-
 .markdown li + li {
   @apply mt-1;
 }
