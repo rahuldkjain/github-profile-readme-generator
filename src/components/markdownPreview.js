@@ -5,7 +5,7 @@ const MarkdownPreview = (props) => {
     const TitlePreview = (props) => {
         if (props.prefix && props.title) {
             return (
-                <h1 className="title">{props.prefix + ' ' + props.title}</h1>
+                <h1 className="text-center text-xl font-bold">{props.prefix + ' ' + props.title}</h1>
             )
         }
         return null;
@@ -13,7 +13,7 @@ const MarkdownPreview = (props) => {
     const SubTitlePreview = (props) => {
         if (props.subtitle) {
             return (
-                <h3 className="subtitle">{props.subtitle}</h3>
+                <h3 className="text-center font-medium">{props.subtitle}</h3>
             )
         }
         return null;
@@ -22,18 +22,18 @@ const MarkdownPreview = (props) => {
         if (props.prefix && props.project) {
             if (props.link) {
                 return (
-                    <div>
-                        {props.prefix + ' '}<a href={props.link} className="link" target="blank">{props.project}</a>
+                    <div className="my-2">
+                        {props.prefix + ' '}<a href={props.link} className="no-underline text-blue-700" target="blank">{props.project}</a>
                     </div>
                 );
             } else {
-                return (<div>{props.prefix + ' '}<b>{props.project}</b></div>);
+                return (<div className="my-2">{props.prefix + ' '}<b>{props.project}</b></div>);
             }
         }
         if (props.prefix && props.link) {
             return (
-                <div>
-                    {props.prefix + ' '}<a href={props.link} className="link" target="blank">{props.link}</a>
+                <div className="my-2">
+                    {props.prefix + ' '}<a href={props.link} className="no-underline text-blue-700" target="blank">{props.link}</a>
                 </div>
             );
         }
@@ -60,13 +60,13 @@ const MarkdownPreview = (props) => {
     }
     const DisplaySocial = (props) => {
         if (props.username) {
-            return (<a className="link social-icon" href={props.base + '/' + props.username} target="blank"><img className="icon" src={props.icon} alt="props.username" /></a>)
+            return (<a className="no-underline text-blue-700 m-2" href={props.base + '/' + props.username} target="blank"><img className="w-6 h-6" src={props.icon} alt="props.username" /></a>)
         }
         return null;
     }
     const SocialPreview = (props) => {
         return (
-            <div className="social">
+            <div className="flex justify-center items-end">
                 <DisplaySocial base="https://codepen.io" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg" username={props.social.codepen} />
                 <DisplaySocial base="https://dev.to" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" username={props.social.dev} />
                 <DisplaySocial base="https://twitter.com" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" username={props.social.twitter} />
@@ -80,38 +80,46 @@ const MarkdownPreview = (props) => {
                 <DisplaySocial base='https://www.behance.net' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg' username={props.social.behance} />
                 <DisplaySocial base='https://medium.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg' username={props.social.medium} />
                 <DisplaySocial base='https://www.youtube.com/c' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' username={props.social.youtube} />
+                
+                <DisplaySocial base='https://www.codechef.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codechef.svg' username={props.social.codechef} />
+                <DisplaySocial base='https://www.codeforces.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg' username={props.social.codeforces} />
+                <DisplaySocial base='https://www.hackerrank.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg' username={props.social.hackerrank} />
+                <DisplaySocial base='https://www.geeksforgeeks.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg' username={props.social.geeks_for_geeks} />
+                <DisplaySocial base='https://www.hackerearth.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg' username={props.social.hackerearth} />
+                <DisplaySocial base='https://www.topcoder.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg' username={props.social.topcoder} />
+                <DisplaySocial base='https://www.leetcode.com' icon='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg' username={props.social.leetcode} />
             </div>
         )
     }
     const VisitorsBadgePreview = (props) => {
         let link = "https://komarev.com/ghpvc/?username=" + props.github
         if (props.show) {
-            return (<div className="badge"> <img className="badgeImage" src={link} alt={props.github} /> </div>)
+            return (<div className="text-left my-2"> <img className="h-4 sm:h-6" src={link} alt={props.github} /> </div>)
         }
         return null;
     }
     const GitHubStatsPreview = (props) => {
         let link = "https://github-readme-stats.vercel.app/api?username=" + props.github + "&show_icons=true"
         if (props.show) {
-            return (<div className="github-stats-card"><img src={link} alt={props.github} /></div>)
+            return (<div className="text-center mx-4 mb-4"><img src={link} alt={props.github} /></div>)
         }
         return null;
     }
     const TopLanguagesPreview = (props) => {
         let link = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + props.github + "&layout=compact&hide=html"
         if (props.show) {
-            return (<div className="top-languages-card"><img src={link} alt={props.github} /></div>)
+            return (<div className="text-center mx-4 mb-4"><img src={link} alt={props.github} /></div>)
         }
-        return <div className="top-languages-card"> &nbsp;</div>;
+        return <div className="text-center mx-4 mb-4"> &nbsp;</div>;
     }
     const SkillsPreview = (props) => {
         var listSkills = []
         skills.forEach((skill) => {
             if (props.skills[skill]) {
-                listSkills.push(<img className="skill-preview-icon" key={skill} src={icons[skill]} alt={skill} />)
+                listSkills.push(<img className="my-4 mx-4 h-6 w-6 sm:h-10 sm:w-10" key={skill} src={icons[skill]} alt={skill} />)
             }
         });
-        return listSkills.length > 0 ? <div className='skills-preview'>{listSkills}</div> : ''
+        return listSkills.length > 0 ? <div className='flex flex-wrap justify-start items-center'>{listSkills}</div> : ''
     }
     return (
         <div id="markdown-preview">
@@ -120,7 +128,7 @@ const MarkdownPreview = (props) => {
             <VisitorsBadgePreview show={props.data.visitorsBadge} github={props.social.github} />
             <WorkPreview work={props} />
             <SkillsPreview skills={props.skills} />
-            <div className="github-cards">
+            <div className="block sm:flex sm:justify-center sm:items-start">
                 <TopLanguagesPreview show={props.data.topLanguages} github={props.social.github} />
                 <GitHubStatsPreview show={props.data.githubStats} github={props.social.github} />
             </div>

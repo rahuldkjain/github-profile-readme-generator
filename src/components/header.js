@@ -4,9 +4,9 @@ import logo from "../images/mdg.png"
 import links from "../constants/page-links"
 import gsap from "gsap"
 import axios from "axios"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
-const Header = (props) => {
+const Header = props => {
   const fetchData = async () => {
     var response = await axios.get(
       "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
@@ -29,10 +29,10 @@ const Header = (props) => {
     fetchData()
     setInterval(fetchData, 60000)
 
-    gsap.set(".star-icon, .fork-icon", {
+    gsap.set(".star, .fork", {
       transformOrigin: "center",
     })
-    gsap.to(".star-icon, .fork-icon", {
+    gsap.to(".star, .fork", {
       rotateZ: "360",
       duration: 2,
       ease: "elastic.inOut",
@@ -42,28 +42,27 @@ const Header = (props) => {
   }, [])
 
   return (
-    <div className="header">
+    <div className="shadow flex items-center justify-center flex-col mb-2 py-2">
       <Link to={links.home}>
-        <h1 className="heading">
+        <h1 className="text-base font-bold font-title sm:text-2xl font-medium text-blue-800 flex justify-center items-center flex-col">
           <img
             src={logo}
-            className="logo"
+            className="w-12 h-12"
             alt="github profile markdown generator logo"
           />
-          <div>
-            {props.heading}
-          </div>
+          <div>{props.heading}</div>
         </h1>
       </Link>
-      <div className="github">
+      <div className="flex justify-center items-center">
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"
           aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"
           target="blank"
+          className="mr-2"
         >
-          <div className="github-button">
-            <StarIcon size={16} className="star-icon" /> Star this repo{" "}
-            <span className="github-count">{stats.starsCount}</span>
+          <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
+            <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />Star this repo
+            <span className="github-count px-1 sm:px-2">{stats.starsCount}</span>
           </div>
         </a>
         <a
@@ -71,9 +70,9 @@ const Header = (props) => {
           aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
           target="blank"
         >
-          <div className="github-button">
-            <RepoForkedIcon size={16} className="fork-icon" /> Fork on GitHub{" "}
-            <span className="github-count">{stats.forksCount}</span>
+          <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
+            <RepoForkedIcon size={16} id="fork-icon" className="px-1 w-6 fork" />Fork on GitHub
+            <span className="github-count px-1 sm:px-2">{stats.forksCount}</span>
           </div>
         </a>
       </div>

@@ -16,14 +16,21 @@ The profile should be neat and minimal to give a clear overview of the work. Non
 To solve this, GitHub Profile README Generator came into existence.
 
 So many developers contributed to the project and made it more awesome to use. You can contribute too to make it grow even further.
-
+<p align="left">
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
 <img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
 </a>
+<br>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
+</p>
 
+### Contributors 🙏
+List of the developers who contributed to the project. A big shout out for them.
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=rahuldkjain/github-profile-readme-generator" />
+</a>
 <hr/>
 
 ## How do I create a profile README?

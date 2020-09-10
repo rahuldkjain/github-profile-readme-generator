@@ -45,7 +45,8 @@ const categorizedSkills = {
       "bulma",
       "gtk",
       "qt",
-      "wx-widgets",
+      "wx_widgets",
+      "ember",
     ],
   },
 
@@ -349,16 +350,15 @@ const icons = {
   jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
-  "wx-widgets":
+  wx_widgets:
     "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
+  ember: "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
 }
 
 const initialSkillState = {}
 
-const skills = Object.keys(categorizedSkills)
-  .map(key => categorizedSkills[key].skills)
-  .flat()
-  .sort()
+const skillsArray = Object.keys(categorizedSkills).map(key => categorizedSkills[key].skills);
+const skills = [].concat.apply([], skillsArray).sort();
 
 skills.forEach(skill => {
   initialSkillState[skill] = false

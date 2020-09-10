@@ -52,8 +52,23 @@ module.exports = {
         // other options
       },
     },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      }
+    },
+    `gatsby-plugin-twitter`
   ],
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+  // this (optional) plugin enables Progressive Web App + Offline functionality
+  // To learn more, visit: https://gatsby.dev/offline
+  // `gatsby-plugin-offline`,
 }
