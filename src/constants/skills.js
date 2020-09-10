@@ -43,6 +43,9 @@ const categorizedSkills = {
       "tailwind",
       "materialize",
       "bulma",
+      "gtk",
+      "qt",
+      "wx_widgets",
       "ember",
     ],
   },
@@ -332,18 +335,23 @@ const icons = {
     "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
   haskell:
     "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
-  svelte:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png",
-  vuetify:
-    "https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png",
+  svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
+  vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
-  mocha: "https://i.ibb.co/0MCw42Q/mocha.png",
-  jest: "https://i.ibb.co/Yj6p14L/jest.png",
-  cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
-  selenium: "https://i.ibb.co/9T29DD0/selenium.png",
-  puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
-  karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
-  jasmine: "https://i.ibb.co/55txF2S/karma.png",
+  mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
+  jest: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
+  cypress:
+    "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
+  selenium:
+    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg",
+  puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
+  karma:
+    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
+  jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
+  gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
+  qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
+  wx_widgets:
+    "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
   ember: "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
 }
 
