@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import MarkdownPreview from "../components/markdownPreview"
 import Markdown from "../components/markdown"
-// import Header from "../components/header"
 import Title from "../components/title"
 import Subtitle from "../components/subtitle"
 import Work from "../components/work"
@@ -11,7 +10,6 @@ import Skills from "../components/skills"
 import { initialSkillState } from "../constants/skills"
 import gsap from "gsap"
 import Loader from "../components/loader"
-// import Footer from "../components/footer"
 import "./index.css"
 import {
 	ArrowLeftIcon,
@@ -367,11 +365,9 @@ const IndexPage = () => {
 			}
 		)
 
-		// set initial values
 		setInitialValues()
 	}, [])
 
-	// keep cache updated
 	KeepCacheUpdated({ prefix, data, link, social, skills })
 
 	const handleResetForm = () => {
