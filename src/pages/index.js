@@ -39,7 +39,7 @@ const DEFAULT_PREFIX = {
 	contact: "📫 How to reach me",
 	funFact: "⚡ Fun fact",
 	portfolio: "👨‍💻 All of my projects are available at",
-	blog: "📝 I regulary write articles on",
+	blog: "📝 I regularly write articles on",
 }
 
 const DEFAULT_DATA = {
