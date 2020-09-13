@@ -23,6 +23,7 @@
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
+<img src="https://img.shields.io/discord/735303195105951764?color=%23677BC4&label=Join%20Community&style=flat-square" alt="join discord community of github profile readme generator"/>
 </p>
 
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
