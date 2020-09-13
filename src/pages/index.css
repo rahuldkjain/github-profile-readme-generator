@@ -69,7 +69,6 @@ a {
   color: var(--dark-purple);
 }
 
-
 .tooltiptext {
   visibility: hidden;
   display: flex;
@@ -109,7 +108,6 @@ a {
 }
 
 @media only screen and (max-width: 1199px) {
-
   .checkbox {
     font-size: 12px;
   }
@@ -128,7 +126,4 @@ a {
   .workflow {
     font-size: 12px;
   }
-
 }
-
-
