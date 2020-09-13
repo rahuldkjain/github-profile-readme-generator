@@ -57,6 +57,7 @@ const DEFAULT_DATA = {
   topLanguages: false,
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
+  rssDynamicBlogs: false,
 }
 
 const DEFAULT_LINK = {
@@ -89,6 +90,7 @@ const DEFAULT_SOCIAL = {
   topcoder: "",
   hackerearth: "",
   geeks_for_geeks: "",
+  rssurl: "",
 }
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {
@@ -482,6 +484,14 @@ const IndexPage = () => {
             {data.devDynamicBlogs && !social.dev ? (
               <div className="warning">
                 * Please add dev.to username to display latest blogs dynamically
+              </div>
+            ) : (
+              ""
+            )}
+            {data.rssDynamicBlogs && !social.rssurl ? (
+              <div className="warning">
+                * Please add your rss feed url to display latest blogs
+                dynamically from your personal blog
               </div>
             ) : (
               ""

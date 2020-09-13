@@ -14,6 +14,10 @@ const Addons = props => {
         show: props.data.mediumDynamicBlogs,
         username: props.social.medium,
       },
+      rssurl: {
+        show: props.data.rssDynamicBlogs,
+        username: props.social.rssurl,
+      },
     }
     var actionContent = latestBlogs(payload)
     var tempElement = document.createElement("a")
@@ -87,8 +91,21 @@ const Addons = props => {
           &nbsp; display latest medium blogs dynamically (GitHub Action)
         </label>
       </div>
+      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+        <label htmlFor="rss-dynamic-blogs" className="cursor-pointer">
+          <input
+            id="rss-dynamic-blogs"
+            type="checkbox"
+            checked={props.data.rssDynamicBlogs}
+            onChange={event => props.handleCheckChange("rssDynamicBlogs")}
+          />
+          &nbsp; display latest blogs from your personal blog dynamically
+          (GitHub Action)
+        </label>
+      </div>
 
       {(props.data.devDynamicBlogs && props.social.dev) ||
+      (props.data.rssDynamicBlogs && props.social.rssurl) ||
       (props.data.mediumDynamicBlogs &&
         props.social.medium &&
         isMediumUsernameValid(props.social.medium)) ? (
