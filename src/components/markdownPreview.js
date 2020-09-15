@@ -206,6 +206,11 @@ const MarkdownPreview = props => {
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
           username={props.social.leetcode}
         />
+        <DisplaySocial
+          base=""
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+          username={props.social.rssurl}
+        />
       </div>
     )
   }

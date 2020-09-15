@@ -118,7 +118,8 @@ const Markdown = props => {
       social.leetcode ||
       social.topcoder ||
       social.hackerearth ||
-      social.geeks_for_geeks
+      social.geeks_for_geeks ||
+      social.rssurl
     )
   }
   const DisplaySkills = props => {
@@ -249,6 +250,7 @@ const Markdown = props => {
         <DisplayDynamicBlogs
           show={
             (props.data.devDynamicBlogs && props.social.dev) ||
+            (props.data.rssDynamicBlogs && props.social.rssurl) ||
             (props.data.mediumDynamicBlogs &&
               props.social.medium &&
               isMediumUsernameValid(props.social.medium))
@@ -410,6 +412,13 @@ const Markdown = props => {
           base="https://www.topcoder.com/members"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
           username={props.social.topcoder}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base=""
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+          username={props.social.rssurl}
         />
       </>
       {isSocial(props.social) ? `</p>` : ""}
