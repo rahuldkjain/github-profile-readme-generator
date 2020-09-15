@@ -352,13 +352,16 @@ const icons = {
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
   wx_widgets:
     "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
-  ember: "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
+  ember:
+    "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
 }
 
 const initialSkillState = {}
 
-const skillsArray = Object.keys(categorizedSkills).map(key => categorizedSkills[key].skills);
-const skills = [].concat.apply([], skillsArray).sort();
+const skillsArray = Object.keys(categorizedSkills).map(
+  key => categorizedSkills[key].skills
+)
+const skills = [].concat.apply([], skillsArray).sort()
 
 skills.forEach(skill => {
   initialSkillState[skill] = false

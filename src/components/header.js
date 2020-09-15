@@ -61,8 +61,11 @@ const Header = props => {
           className="mr-2"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
-            <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />Star this repo
-            <span className="github-count px-1 sm:px-2">{stats.starsCount}</span>
+            <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />
+            Star this repo
+            <span className="github-count px-1 sm:px-2">
+              {stats.starsCount}
+            </span>
           </div>
         </a>
         <a
@@ -71,8 +74,15 @@ const Header = props => {
           target="blank"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
-            <RepoForkedIcon size={16} id="fork-icon" className="px-1 w-6 fork" />Fork on GitHub
-            <span className="github-count px-1 sm:px-2">{stats.forksCount}</span>
+            <RepoForkedIcon
+              size={16}
+              id="fork-icon"
+              className="px-1 w-6 fork"
+            />
+            Fork on GitHub
+            <span className="github-count px-1 sm:px-2">
+              {stats.forksCount}
+            </span>
           </div>
         </a>
       </div>

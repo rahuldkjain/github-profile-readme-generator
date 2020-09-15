@@ -24,10 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-prismjs`,
-        ]
-      }
+        plugins: [`gatsby-remark-prismjs`],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -56,7 +54,7 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [require("tailwindcss")],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -64,9 +62,9 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
-      }
+      },
     },
-    `gatsby-plugin-twitter`
+    `gatsby-plugin-twitter`,
   ],
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
