@@ -160,7 +160,7 @@ const Markdown = props => {
     let link =
       "https://github-readme-stats.vercel.app/api/top-langs/?username=" +
       props.github +
-      "&layout=compact&hide=html"
+      "&layout=compact"
     if (props.show) {
       if (!props.showStats) {
         return (
