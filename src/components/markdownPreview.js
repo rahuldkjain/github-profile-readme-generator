@@ -244,7 +244,7 @@ const MarkdownPreview = props => {
     let link =
       "https://github-readme-stats.vercel.app/api/top-langs/?username=" +
       props.github +
-      "&layout=compact&hide=html"
+      "&layout=compact"
     if (props.show) {
       return (
         <div className="text-center mx-4 mb-4">
