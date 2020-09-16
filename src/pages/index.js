@@ -121,6 +121,7 @@ const IndexPage = () => {
   const [generatePreview, setGeneratePreview] = useState(false)
   const [generateMarkdown, setGenerateMarkdown] = useState(false)
   const [displayLoader, setDisplayLoader] = useState(false)
+  const [showConfig, setShowConfig] = useState(true)
   const [copyObj, setcopyObj] = useState({
     isCopied: false,
     copiedText: "copy-markdown",
@@ -167,6 +168,7 @@ const IndexPage = () => {
   }
 
   const generate = () => {
+    setShowConfig(false)
     var tl = new gsap.timeline()
     tl.to(".generate", {
       scale: 0,
@@ -329,6 +331,7 @@ const IndexPage = () => {
   const handleBackToEdit = () => {
     setGeneratePreview(false)
     setGenerateMarkdown(false)
+    setShowConfig(true)
     gsap.set("#form", {
       display: "",
     })
@@ -620,7 +623,7 @@ const IndexPage = () => {
         <div
           className={
             "w-full shadow flex flex-col justify-center items-start mt-16 border-2 border-solid border-gray-600 py-2 px-4 " +
-            (generateMarkdown || generatePreview ? "hidden" : "block")
+            (!showConfig ? "hidden" : "block")
           }
         >
           <div className="flex justify-between items-center w-full">
