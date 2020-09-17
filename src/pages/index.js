@@ -645,7 +645,7 @@ const IndexPage = () => {
           <div className="w-full flex justify-start items-center my-4">
             <input
               type="text"
-              className="w-1/2 mr-6 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
+              className="outline-none w-1/2 mr-6 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
               placeholder="JSON Backup"
               value={restore}
               onChange={e => setRestore(e.target.value)}

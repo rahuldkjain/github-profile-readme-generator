@@ -8,7 +8,7 @@ const Subtitle = props => {
       </div>
       <input
         id="subtitle"
-        className="w-full text-xs sm:text-lg sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        className="outline-none w-full text-xs sm:text-lg sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
         value={props.data.subtitle}
         onChange={event => props.handleDataChange("subtitle", event)}
       />
