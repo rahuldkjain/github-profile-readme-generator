@@ -44,18 +44,18 @@
 
 #### Tired of editing GitHub Profile README with new features?
 
-This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc.
+This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
 #### 🚀 Try it out: [Live demo](https://rahuldkjain.github.io/gh-profile-readme-generator)
 
 ## 🧐 Features
 
-Just fill the details like `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog` etc. with a minimal UI.
+Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
 
-You can add latest addons like `visitors count`, `shields`, `dev icons`, `github stats` etc to your README in just one click.
+You can add the latest add-ons such as `visitors count`, `shields`, `dev icons`, `github stats`, etc. to your README in just one click.
 
 ## Installation Steps
 
@@ -94,8 +94,8 @@ npm start
 
 ## Sponsors 🙇
 
-- [Scott C Wilson](https://github.com/scottcwilson) donated the first ever grant to this tool. A big thanks to him.
-- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed the support with his donation. Thanks a lot.
+- [Scott C Wilson](https://github.com/scottcwilson) donated the first-ever grant to this tool. A big thanks to him.
+- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
 
 ## Support 🙏
 
