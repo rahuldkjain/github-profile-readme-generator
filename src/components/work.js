@@ -10,21 +10,21 @@ const Work = props => {
         <input
           id="currentWork-prefix"
           placeholder="Hi, I'm "
-          className="placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.currentWork}
           onChange={event => props.handlePrefixChange("currentWork", event)}
         />
         <input
           id="currentWork"
           placeholder="project name"
-          className="placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.currentWork}
           onChange={event => props.handleDataChange("currentWork", event)}
         />
         <input
           id="currentWork-link"
           placeholder="project link"
-          className="placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.link.currentWork}
           onChange={event => props.handleLinkChange("currentWork", event)}
         />
@@ -32,21 +32,21 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="collaborateOn-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.collaborateOn}
           onChange={event => props.handlePrefixChange("collaborateOn", event)}
         />
         <input
           id="collaborateOn"
           placeholder="project name"
-          className="placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.collaborateOn}
           onChange={event => props.handleDataChange("collaborateOn", event)}
         />
         <input
           id="collaborateOn-link"
           placeholder="project link"
-          className="placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.link.collaborateOn}
           onChange={event => props.handleLinkChange("collaborateOn", event)}
         />
@@ -54,21 +54,21 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="helpWith-prefix"
-          className="placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.helpWith}
           onChange={event => props.handlePrefixChange("helpWith", event)}
         />
         <input
           id="helpWith"
           placeholder="project name"
-          className="placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.helpWith}
           onChange={event => props.handleDataChange("helpWith", event)}
         />
         <input
           id="helpWith-link"
           placeholder="project link"
-          className="placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.link.helpWith}
           onChange={event => props.handleLinkChange("helpWith", event)}
         />
@@ -77,14 +77,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="currentLearn-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.currentLearn}
           onChange={event => props.handlePrefixChange("currentLearn", event)}
         />
         <input
           id="currentLearn"
           placeholder="Frameworks, courses etc."
-          className="placeholder-gray-700 w-full sm:w-1/3  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 w-full sm:w-1/3  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.currentLearn}
           onChange={event => props.handleDataChange("currentLearn", event)}
         />
@@ -92,14 +92,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="ama-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.ama}
           onChange={event => props.handlePrefixChange("ama", event)}
         />
         <input
           id="ama"
           placeholder="react, vue and gsap"
-          className="placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.ama}
           onChange={event => props.handleDataChange("ama", event)}
         />
@@ -108,14 +108,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="contact-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.contact}
           onChange={event => props.handlePrefixChange("contact", event)}
         />
         <input
           id="contact"
           placeholder="example@gmail.com"
-          className="placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.contact}
           onChange={event => props.handleDataChange("contact", event)}
         />
@@ -124,14 +124,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="portfolio-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.portfolio}
           onChange={event => props.handlePrefixChange("portfolio", event)}
         />
         <input
           id="portfolio"
           placeholder="portfolio link"
-          className="placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.link.portfolio}
           onChange={event => props.handleLinkChange("portfolio", event)}
         />
@@ -139,14 +139,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="blog-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.blog}
           onChange={event => props.handlePrefixChange("blog", event)}
         />
         <input
           id="blog"
           placeholder="blog link"
-          className="placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.link.blog}
           onChange={event => props.handleLinkChange("blog", event)}
         />
@@ -154,14 +154,14 @@ const Work = props => {
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="funFact-prefix"
-          className="mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.funFact}
           onChange={event => props.handlePrefixChange("funFact", event)}
         />
         <input
           id="funFact"
           placeholder="Chai over Coffee"
-          className="placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.funFact}
           onChange={event => props.handleDataChange("funFact", event)}
         />

@@ -16,7 +16,7 @@ const Social = props => {
           <input
             id="github"
             placeholder="github username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-1 sm:px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-1 sm:px-2 focus:border-blue-700"
             value={props.social.github}
             onChange={event => props.handleSocialChange("github", event)}
           />
@@ -30,7 +30,7 @@ const Social = props => {
           <input
             id="twitter"
             placeholder="twitter username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.twitter}
             onChange={event => props.handleSocialChange("twitter", event)}
           />
@@ -44,7 +44,7 @@ const Social = props => {
           <input
             id="dev"
             placeholder="dev.to username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.dev}
             onChange={event => props.handleSocialChange("dev", event)}
           />
@@ -58,7 +58,7 @@ const Social = props => {
           <input
             id="codepen"
             placeholder="codepen username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.codepen}
             onChange={event => props.handleSocialChange("codepen", event)}
           />
@@ -72,7 +72,7 @@ const Social = props => {
           <input
             id="codesandbox"
             placeholder="codesandbox username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.codesandbox}
             onChange={event => props.handleSocialChange("codesandbox", event)}
           />
@@ -86,7 +86,7 @@ const Social = props => {
           <input
             id="stackoverflow"
             placeholder="stackoverflow user ID"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.stackoverflow}
             onChange={event => props.handleSocialChange("stackoverflow", event)}
           />
@@ -100,7 +100,7 @@ const Social = props => {
           <input
             id="linkedin"
             placeholder="linkedin username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.linkedin}
             onChange={event => props.handleSocialChange("linkedin", event)}
           />
@@ -114,7 +114,7 @@ const Social = props => {
           <input
             id="kaggle"
             placeholder="kaggle username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.kaggle}
             onChange={event => props.handleSocialChange("kaggle", event)}
           />
@@ -128,7 +128,7 @@ const Social = props => {
           <input
             id="fb"
             placeholder="facebook username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.fb}
             onChange={event => props.handleSocialChange("fb", event)}
           />
@@ -142,7 +142,7 @@ const Social = props => {
           <input
             id="instagram"
             placeholder="instagram username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.instagram}
             onChange={event => props.handleSocialChange("instagram", event)}
           />
@@ -156,7 +156,7 @@ const Social = props => {
           <input
             id="dribbble"
             placeholder="dribbble username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.dribbble}
             onChange={event => props.handleSocialChange("dribbble", event)}
           />
@@ -170,7 +170,7 @@ const Social = props => {
           <input
             id="behance"
             placeholder="behance username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.behance}
             onChange={event => props.handleSocialChange("behance", event)}
           />
@@ -184,7 +184,7 @@ const Social = props => {
           <input
             id="medium"
             placeholder="medium username (with @)"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.medium}
             onChange={event => props.handleSocialChange("medium", event)}
           />
@@ -198,7 +198,7 @@ const Social = props => {
           <input
             id="youtube"
             placeholder="youtube channel name"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.youtube}
             onChange={event => props.handleSocialChange("youtube", event)}
           />
@@ -212,7 +212,7 @@ const Social = props => {
           <input
             id="codechef"
             placeholder="codechef username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.codechef}
             onChange={event => props.handleSocialChange("codechef", event)}
           />
@@ -226,7 +226,7 @@ const Social = props => {
           <input
             id="hackerrank"
             placeholder="hackerrank username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.hackerrank}
             onChange={event => props.handleSocialChange("hackerrank", event)}
           />
@@ -240,7 +240,7 @@ const Social = props => {
           <input
             id="codeforces"
             placeholder="codeforces username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.codeforces}
             onChange={event => props.handleSocialChange("codeforces", event)}
           />
@@ -254,7 +254,7 @@ const Social = props => {
           <input
             id="leetcode"
             placeholder="leetcode username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.leetcode}
             onChange={event => props.handleSocialChange("leetcode", event)}
           />
@@ -268,7 +268,7 @@ const Social = props => {
           <input
             id="topcoder"
             placeholder="topcoder username"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.topcoder}
             onChange={event => props.handleSocialChange("topcoder", event)}
           />
@@ -282,7 +282,7 @@ const Social = props => {
           <input
             id="hackerearth"
             placeholder="hackerearth user (with @)"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.hackerearth}
             onChange={event => props.handleSocialChange("hackerearth", event)}
           />
@@ -296,7 +296,7 @@ const Social = props => {
           <input
             id="geeksforgeeks"
             placeholder="GFG (<username>/profile)"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.geeks_for_geeks}
             onChange={event =>
               props.handleSocialChange("geeks_for_geeks", event)
@@ -312,7 +312,7 @@ const Social = props => {
           <input
             id="rssurl"
             placeholder="RSS feed URL"
-            className="placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={props.social.rssurl}
             onChange={event => props.handleSocialChange("rssurl", event)}
           />
