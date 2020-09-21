@@ -24,7 +24,7 @@
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
 <a href="https://discord.gg/U7YU3J" target="blank">
-<img src="https://img.shields.io/discord/735303195105951764?color=%23677BC4&label=Join%20Community&style=flat-square" alt="join discord community of github profile readme generator"/>
+<img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
 </a>
 </p>
 
@@ -42,20 +42,41 @@
 <i>Loved the tool? Please consider <a href="https://paypal.me/rahuldkjain">donating</a>  💸 to help it improve!</i>
 </p>
 
+<p align="center">
+<a href="https://www.paypal.me/rahuldkjain"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="sponsor github profile readme generator"/>
+</a>
+<a href='https://ko-fi.com/A0A81XXSX' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
+</a>
+<a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
+</p>
+
 #### Tired of editing GitHub Profile README with new features?
 
 This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
-#### 🚀 Try it out: [Live demo](https://rahuldkjain.github.io/gh-profile-readme-generator)
+
+## Demo 🚀 
+<a href="" target="blank">
+<img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
+</a>
+
+Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator)
 
 ## 🧐 Features
 
 Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
+✅ **Uniform dev icons**
+✅ **Uniform social icons**
+✅ **Visitors Counter Badge**
+✅ **GitHub Profile Stats Card**
+✅ **GitHub Top Skills**
+✅ **Dynamic Dev(.)to Blogs** (GitHub Action)
+✅ **Dynamic Medium Blogs** (GitHub Action)
+✅ **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
+
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
-
-You can add the latest add-ons such as `visitors count`, `shields`, `dev icons`, `github stats`, etc. to your README in just one click.
 
 ## Installation Steps
 
@@ -84,6 +105,18 @@ npm start
 ```
 
 🌟 You are all set!
+
+## Contributing 🍰
+
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
+
+Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+## Built with 💻
+- [Gatsby](https://www.gatsbyjs.com/)
+- [Tailwind CSS](https://tailwindcss.com/): for styling
+- [GSAP](https://greensock.com/gsap/): for small SVG Animations
+
 
 ## Special Thanks 🙇
 
