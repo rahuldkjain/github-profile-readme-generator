@@ -67,12 +67,19 @@ Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh
 Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
 ✅ **Uniform dev icons**
+
 ✅ **Uniform social icons**
+
 ✅ **Visitors Counter Badge**
+
 ✅ **GitHub Profile Stats Card**
+
 ✅ **GitHub Top Skills**
+
 ✅ **Dynamic Dev(.)to Blogs** (GitHub Action)
+
 ✅ **Dynamic Medium Blogs** (GitHub Action)
+
 ✅ **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
 
 Click on `Generate README` to get your README in `markdown`.
