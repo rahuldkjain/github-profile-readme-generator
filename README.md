@@ -66,21 +66,25 @@ Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh
 
 Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
-✅ **Uniform dev icons**
+- [x] **Uniform dev icons**
 
-✅ **Uniform social icons**
+- [x] **Uniform social icons**
 
-✅ **Visitors Counter Badge**
+- [x] **Visitors Counter Badge**
 
-✅ **GitHub Profile Stats Card**
+- [x] **GitHub Profile Stats Card**
 
-✅ **GitHub Top Skills**
+- [x] **GitHub Top Skills**
 
-✅ **Dynamic Dev(.)to Blogs** (GitHub Action)
+- [x] **Dynamic Dev(.)to Blogs** (GitHub Action)
 
-✅ **Dynamic Medium Blogs** (GitHub Action)
+- [x] **Dynamic Medium Blogs** (GitHub Action)
 
-✅ **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
+- [x] **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
+
+- [ ] **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
+
+- [ ] **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
 
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
