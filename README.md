@@ -55,7 +55,7 @@
 This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
 
-## Demo 🚀 
+## 🚀 Demo 
 <a href="" target="blank">
 <img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
 </a>
@@ -66,30 +66,30 @@ Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh
 
 Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
-- [x] **Uniform dev icons**
+- **Uniform Dev Icons**
 
-- [x] **Uniform social icons**
+- **Uniform Social Icons**
 
-- [x] **Visitors Counter Badge**
+- **Visitors Counter Badge**
 
-- [x] **GitHub Profile Stats Card**
+- **GitHub Profile Stats Card**
 
-- [x] **GitHub Top Skills**
+- **GitHub Top Skills**
 
-- [x] **Dynamic Dev(.)to Blogs** (GitHub Action)
+- **Dynamic Dev(.)to Blogs** (GitHub Action)
 
-- [x] **Dynamic Medium Blogs** (GitHub Action)
+- **Dynamic Medium Blogs** (GitHub Action)
 
-- [x] **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
+- **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
 
-- [ ] **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
+- **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
 
-- [ ] **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
+- **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
 
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
 
-## Installation Steps
+## 🛠️ Installation Steps
 
 1. Clone the repository
 
@@ -117,31 +117,31 @@ npm start
 
 🌟 You are all set!
 
-## Contributing 🍰
+## 🍰 Contributing
 
 Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-## Built with 💻
+## 💻 Built with
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Tailwind CSS](https://tailwindcss.com/): for styling
 - [GSAP](https://greensock.com/gsap/): for small SVG Animations
 
 
-## Special Thanks 🙇
+## 🙇 Special Thanks
 
 - [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 - [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
 - [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
 - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
 
-## Sponsors 🙇
+## 🙇 Sponsors
 
 - [Scott C Wilson](https://github.com/scottcwilson) donated the first-ever grant to this tool. A big thanks to him.
 - [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
 
-## Support 🙏
+## 🙏 Support
 
 <p align="left">
 <a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
