@@ -80,7 +80,7 @@ const categorizedSkills = {
 
   ai: {
     title: "AI/ML",
-    skills: ["tensorflow", "pytorch", "opencv"],
+    skills: ["tensorflow", "pytorch", "opencv", "scikit_learn"],
   },
 
   database: {
@@ -354,6 +354,8 @@ const icons = {
     "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
   ember:
     "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
+  scikit_learn:
+    "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
 }
 
 const initialSkillState = {}
