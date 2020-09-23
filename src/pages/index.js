@@ -8,6 +8,7 @@ import Work from "../components/work"
 import Social from "../components/social"
 import Addons from "../components/addons"
 import Skills from "../components/skills"
+import Donate from "../components/donate";
 import { initialSkillState } from "../constants/skills"
 import gsap from "gsap"
 import Loader from "../components/loader"
@@ -188,6 +189,17 @@ const IndexPage = () => {
         {
           scale: 1,
           duration: 0.5,
+          ease: "Linear.easeNone",
+        }
+      )
+      gsap.fromTo(
+        "#support",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+          duration: 2,
           ease: "Linear.easeNone",
         }
       )
@@ -615,6 +627,9 @@ const IndexPage = () => {
                   ""
                 )}
               </div>
+            </div>
+            <div className="mt-10" id="support">
+              <Donate />
             </div>
           </div>
         ) : (
