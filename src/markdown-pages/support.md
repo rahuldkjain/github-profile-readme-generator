@@ -11,7 +11,7 @@ title: "💵 Support OSS"
 You can come forward to support the developers by making small donations. You will never know what this support mean to them. If you find the tool really helpful, then it will be very grateful to support the tool 🙇.
 
 <p align="left">
-  <a href="https://www.paypal.me/rahuldkjain"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
+  <a href="https://www.paypal.me/rahuldkjain/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
   </a>
 
 <a href='https://ko-fi.com/A0A81XXSX' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
