@@ -18,6 +18,12 @@ const MarkdownPreview = props => {
     }
     return null
   }
+  const SectionTitle = props => {
+    if (props.label) {
+      return <h3 className="w-full text-lg sm:text-xl">{props.label}</h3>
+    }
+    return null
+  }
   const DisplayWork = props => {
     if (props.prefix && props.project) {
       if (props.link) {
@@ -105,7 +111,7 @@ const MarkdownPreview = props => {
   const SocialPreview = props => {
     return (
       <div className="flex justify-start items-end flex-wrap">
-        <h3 className="w-full text-lg sm:text-xl">Connect with me:</h3> 
+        <SectionTitle label="Connect with me:" />
         <DisplaySocial
           base="https://codepen.io"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
