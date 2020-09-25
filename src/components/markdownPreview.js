@@ -277,6 +277,7 @@ const MarkdownPreview = props => {
     })
     return listSkills.length > 0 ? (
       <div className="flex flex-wrap justify-start items-center">
+        <SectionTitle label="Languages and Tools:" />
         {listSkills}
       </div>
     ) : (

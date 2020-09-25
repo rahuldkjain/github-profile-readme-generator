@@ -145,6 +145,7 @@ const Markdown = props => {
     })
     return listChosenSkills.length > 0 ? (
       <>
+        <SectionTitle label="Languages and Tools:" />
         {`<p align="left">${listChosenSkills.join(" ")}</p>`}
         <br />
         <br />
