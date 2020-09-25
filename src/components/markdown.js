@@ -1,6 +1,6 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
-import { icons, skills } from "../constants/skills"
+import { icons, skills, skillWebsites } from "../constants/skills"
 
 const Markdown = props => {
   const Title = props => {
@@ -127,7 +127,11 @@ const Markdown = props => {
     skills.forEach(skill => {
       if (props.skills[skill]) {
         listChosenSkills.push(
-          `<img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>`
+          `
+          <a href="${skillWebsites[skill]}" target="_blank">
+            <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
+          </a>
+          `
         )
       }
     })
