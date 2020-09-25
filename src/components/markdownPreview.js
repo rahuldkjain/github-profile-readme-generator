@@ -104,7 +104,8 @@ const MarkdownPreview = props => {
   }
   const SocialPreview = props => {
     return (
-      <div className="flex justify-center items-end">
+      <div className="flex justify-start items-end flex-wrap">
+        <h3 className="w-full text-lg sm:text-xl">Connect with me:</h3> 
         <DisplaySocial
           base="https://codepen.io"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"

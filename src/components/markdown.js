@@ -26,6 +26,18 @@ const Markdown = props => {
     }
     return ""
   }
+  const SectionTitle = props => {
+    if (props.label) {
+      return (
+        <>
+          {`<h3 align="left">${props.label}</h3>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
   const DisplayWork = props => {
     if (props.prefix && props.project) {
       if (props.link) {
@@ -61,7 +73,7 @@ const Markdown = props => {
     if (props.username) {
       return (
         <>
-          {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="30" /></a>`}
+          {`<a href="${props.base}/${props.username}" target="blank" style="margin:0.5rem"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="30" /></a>`}
           <br />
         </>
       )
@@ -273,7 +285,10 @@ const Markdown = props => {
           github={props.social.github}
         />
       </>
-      {isSocial(props.social) ? `<p align="center">` : ""} <br />
+      {isSocial(props.social) ? `<p align="left">` : ""} <br />
+      <>
+        <SectionTitle label="Connect with me:" />
+      </>
       <>
         <DisplaySocial
           base="https://codepen.io"
