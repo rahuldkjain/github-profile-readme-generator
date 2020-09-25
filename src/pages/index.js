@@ -8,7 +8,7 @@ import Work from "../components/work"
 import Social from "../components/social"
 import Addons from "../components/addons"
 import Skills from "../components/skills"
-import Donate from "../components/donate";
+import Donate from "../components/donate"
 import { initialSkillState } from "../constants/skills"
 import gsap from "gsap"
 import Loader from "../components/loader"
