@@ -73,7 +73,7 @@ const Markdown = props => {
     if (props.username) {
       return (
         <>
-          {`<a href="${props.base}/${props.username}" target="blank" style="margin:0.5rem"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="30" /></a>`}
+          {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
           <br />
         </>
       )
