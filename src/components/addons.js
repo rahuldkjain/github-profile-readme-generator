@@ -3,6 +3,8 @@ import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
 import { isMediumUsernameValid } from "../utils/validation"
+import AddonsItem from './AddonsItem';
+
 const Addons = props => {
   const blogPostPorkflow = () => {
     let payload = {
@@ -36,73 +38,48 @@ const Addons = props => {
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
         Add-ons
       </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="visitors-count" className="cursor-pointer">
-          <input
-            type="checkbox"
-            id="visitors-count"
-            checked={props.data.visitorsBadge}
-            onChange={event => props.handleCheckChange("visitorsBadge")}
-          />
-          &nbsp; display visitors count badge
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="github-stats" className="cursor-pointer">
-          <input
-            id="github-stats"
-            type="checkbox"
-            checked={props.data.githubStats}
-            onChange={event => props.handleCheckChange("githubStats")}
-          />
-          &nbsp; display github profile stats card
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="top-languages" className="cursor-pointer">
-          <input
-            id="top-languages"
-            type="checkbox"
-            checked={props.data.topLanguages}
-            onChange={event => props.handleCheckChange("topLanguages")}
-          />
-          &nbsp; display top skills
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="dev-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="dev-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.devDynamicBlogs}
-            onChange={event => props.handleCheckChange("devDynamicBlogs")}
-          />
-          &nbsp; display latest dev.to blogs dynamically (GitHub Action)
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="medium-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="medium-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.mediumDynamicBlogs}
-            onChange={event => props.handleCheckChange("mediumDynamicBlogs")}
-          />
-          &nbsp; display latest medium blogs dynamically (GitHub Action)
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="rss-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="rss-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.rssDynamicBlogs}
-            onChange={event => props.handleCheckChange("rssDynamicBlogs")}
-          />
-          &nbsp; display latest blogs from your personal blog dynamically
-          (GitHub Action)
-        </label>
-      </div>
+      <AddonsItem
+        inputId="visitors-count"
+        inputChecked={props.data.visitorsBadge}
+        onInputChange={() => props.handleCheckChange("visitorsBadge")}
+      >
+        display visitors count badge
+      </AddonsItem>
+      <AddonsItem
+        inputId="github-stats"
+        inputChecked={props.data.githubStats}
+        onInputChange={() => props.handleCheckChange("githubStats")}
+      >
+        display github profile stats card
+      </AddonsItem>
+      <AddonsItem
+        inputId="top-languages"
+        inputChecked={props.data.topLanguages}
+        onInputChange={() => props.handleCheckChange("topLanguages")}
+      >
+        display top skills
+      </AddonsItem>
+      <AddonsItem
+        inputId="dev-dynamic-blogs"
+        inputChecked={props.data.devDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("devDynamicBlogs")}
+      >
+        display latest dev.to blogs dynamically (GitHub Action)
+      </AddonsItem>
+      <AddonsItem
+        inputId="medium-dynamic-blogs"
+        inputChecked={props.data.mediumDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("mediumDynamicBlogs")}
+      >
+        display latest medium blogs dynamically (GitHub Action)
+      </AddonsItem>
+      <AddonsItem
+        inputId="rss-dynamic-blogs"
+        inputChecked={props.data.rssDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("rssDynamicBlogs")}
+      >
+        display latest blogs from your personal blog dynamically (GitHub Action)
+      </AddonsItem>
 
       {(props.data.devDynamicBlogs && props.social.dev) ||
       (props.data.rssDynamicBlogs && props.social.rssurl) ||
