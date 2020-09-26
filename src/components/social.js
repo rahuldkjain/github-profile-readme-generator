@@ -2,7 +2,7 @@ import React from "react"
 
 const Social = props => {
   return (
-    <div className="px-2 sm:px-6 mb-4">
+    <div className="px-2 sm:px-6 mb-4 social">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
         Social
       </div>

@@ -50,10 +50,10 @@ const Header = props => {
             className="w-12 h-12"
             alt="github profile markdown generator logo"
           />
-          <div>{props.heading}</div>
+          <div className="header-title">{props.heading}</div>
         </h1>
       </Link>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center header">
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"
           aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"

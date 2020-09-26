@@ -29,6 +29,9 @@ import {
   isMediumUsernameValid,
 } from "../utils/validation"
 import Layout from "../components/layout"
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from '../styles/theme';
+import { GlobalStyles } from '../styles/global';
 
 const DEFAULT_PREFIX = {
   title: "Hi 👋, I'm",
@@ -117,6 +120,7 @@ const IndexPage = () => {
   const [link, setLink] = useState(DEFAULT_LINK)
   const [social, setSocial] = useState(DEFAULT_SOCIAL)
   const [skills, setSkills] = useState(DEFAULT_SKILLS)
+  const [theme, setTheme] = useState(false)
 
   const [restore, setRestore] = useState("")
   const [generatePreview, setGeneratePreview] = useState(false)
@@ -166,6 +170,10 @@ const IndexPage = () => {
     let change = { ...data }
     change[field] = !change[field]
     setData(change)
+  }
+
+  const handleTheme = field => {
+    setTheme(field);
   }
 
   const generate = () => {
@@ -316,7 +324,7 @@ const IndexPage = () => {
     tempElement.setAttribute(
       "href",
       "data:text/markdown;charset=utf-8," +
-        encodeURIComponent(markdownContent.innerText)
+      encodeURIComponent(markdownContent.innerText)
     )
     tempElement.setAttribute("download", "README.md")
     tempElement.style.display = "none"
@@ -439,253 +447,257 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout>
-      <div className="m-4 sm:p-4">
-        <SEO title="GitHub Profile Readme Generator" />
-        <div id="form">
-          <Title
-            data={data}
-            prefix={prefix}
-            handleDataChange={handleDataChange}
-            handlePrefixChange={handlePrefixChange}
-          />
-          <Subtitle data={data} handleDataChange={handleDataChange} />
-          <Work
-            prefix={prefix}
-            data={data}
-            link={link}
-            handlePrefixChange={handlePrefixChange}
-            handleLinkChange={handleLinkChange}
-            handleDataChange={handleDataChange}
-          />
-          <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
-          <Social social={social} handleSocialChange={handleSocialChange} />
-          <Addons
-            data={data}
-            social={social}
-            handleCheckChange={handleCheckChange}
-          />
-          <div className="section">
-            {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
-            !social.github ? (
-              <div className="warning">
-                * Please add github username to use these add-ons
-              </div>
-            ) : (
-              ""
-            )}
-            {social.github && !isGitHubUsernameValid(social.github) ? (
-              <div className="warning">
-                * GitHub username is invalid, please add a valid username
-              </div>
-            ) : (
-              ""
-            )}
-            {social.medium && !isMediumUsernameValid(social.medium) ? (
-              <div className="warning">
-                * Medium username is invalid, please add a valid username (with
-                @)
-              </div>
-            ) : (
-              ""
-            )}
-            {data.mediumDynamicBlogs && !social.medium ? (
-              <div className="warning">
-                * Please add medium username to display latest blogs dynamically
-              </div>
-            ) : (
-              ""
-            )}
-            {data.devDynamicBlogs && !social.dev ? (
-              <div className="warning">
-                * Please add dev.to username to display latest blogs dynamically
-              </div>
-            ) : (
-              ""
-            )}
-            {data.rssDynamicBlogs && !social.rssurl ? (
-              <div className="warning">
-                * Please add your rss feed url to display latest blogs
-                dynamically from your personal blog
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
-          <div className="flex items-center justify-center w-full">
-            <div
-              className="text-xs sm:text-xl font-medium border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 sm:py-2 px-2 sm:px-4 generate"
-              tabIndex="0"
-              role="button"
-              onClick={handleGenerate}
-            >
-              Generate README
-            </div>
-          </div>
-        </div>
-
-        {displayLoader ? <Loader /> : ""}
-
-        {generateMarkdown || generatePreview ? (
-          <div className="markdown-section p-4 sm:py-4 sm:px-10">
-            <div className="w-full flex justify-between items-center">
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                role="button"
-                onClick={handleBackToEdit}
-              >
-                <ArrowLeftIcon size={16} />
-                <span className="hidden sm:block"> back to edit</span>
-              </div>
-
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                id="copy-button"
-                role="button"
-                onClick={handleCopyToClipboard}
-              >
-                {copyObj.isCopied === true ? (
-                  <CheckIcon size={24} />
-                ) : (
-                  <CopyIcon size={24} />
-                )}
-                <span className="hidden sm:block" id="copy-markdown">
-                  {copyObj.copiedText}
-                </span>
-              </div>
-
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                id="download-md-button"
-                role="button"
-                onClick={handleDownloadMarkdown}
-              >
-                <DownloadIcon size={24} />
-                <span className="hidden sm:block" id="download-markdown">
-                  download markdown
-                </span>
-              </div>
-
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                id="download-json-button"
-                role="button"
-                onClick={handleDownloadJson}
-              >
-                <FileCodeIcon size={24} />
-                <span className="hidden sm:block" id="download-json">
-                  download backup
-                </span>
-              </div>
-
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                role="button"
-                onClick={handleGeneratePreview}
-              >
-                {previewMarkdown.isPreview ? (
-                  <MarkdownIcon size={16} />
-                ) : (
-                  <EyeIcon size={16} />
-                )}
-                <span className="hidden sm:block ml-1" id="preview-markdown">
-                  {previewMarkdown.buttonText}
-                </span>
-              </div>
-            </div>
-
-            <div className="w-full flex justify-center items-center">
-              <div
-                className="w-full text-sm text-gray-900 shadow-xl mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800"
-                id="markdown-box"
-              >
-                {generatePreview ? (
-                  <MarkdownPreview
-                    prefix={prefix}
-                    data={data}
-                    link={link}
-                    social={social}
-                    skills={skills}
-                  />
-                ) : (
-                  ""
-                )}
-                {generateMarkdown ? (
-                  <Markdown
-                    prefix={prefix}
-                    data={data}
-                    link={link}
-                    social={social}
-                    skills={skills}
-                  />
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-            <div className="mt-10" id="support">
-              <Donate />
-            </div>
-          </div>
-        ) : (
-          ""
-        )}
-        <div
-          className={
-            "w-full shadow flex flex-col justify-center items-start mt-16 border-2 border-solid border-gray-600 py-2 px-4 " +
-            (!showConfig ? "hidden" : "block")
-          }
-        >
-          <div className="flex justify-between items-center w-full">
-            <div className="text-lg sm:text-2xl font-bold font-title mt-2 mb-2">
-              Config options
-              <span className="bg-green-800 text-white text-xs sm:text-sm p-1 ml-1">
-                new feature
-              </span>
-            </div>
-            <div
-              className="text-xxs sm:text-sm border-2 w-auto px-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center"
-              role="button"
-              tabIndex="0"
-              onClick={handleResetForm}
-            >
-              Reset form
-            </div>
-          </div>
-          <div className="w-full flex justify-start items-center my-4">
-            <input
-              type="text"
-              className="outline-none w-1/2 mr-6 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
-              placeholder="JSON Backup"
-              value={restore}
-              onChange={e => setRestore(e.target.value)}
+    <ThemeProvider theme={theme ? darkTheme : lightTheme}>
+      <GlobalStyles />
+      <Layout>
+        <div className="m-4 sm:p-4">
+          <SEO title="GitHub Profile Readme Generator" />
+          <div id="form">
+            <Title
+              data={data}
+              prefix={prefix}
+              handleDataChange={handleDataChange}
+              handlePrefixChange={handlePrefixChange}
             />
-            <div
-              className="text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
-              role="button"
-              tabIndex="0"
-              onClick={handleRestore}
-            >
-              Restore
+            <Subtitle data={data} handleDataChange={handleDataChange} />
+            <Work
+              prefix={prefix}
+              data={data}
+              link={link}
+              handlePrefixChange={handlePrefixChange}
+              handleLinkChange={handleLinkChange}
+              handleDataChange={handleDataChange}
+            />
+            <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
+            <Social social={social} handleSocialChange={handleSocialChange} />
+            <Addons
+              data={data}
+              social={social}
+              handleCheckChange={handleCheckChange}
+              handleTheme={handleTheme}
+            />
+            <div className="section">
+              {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
+                !social.github ? (
+                  <div className="warning">
+                    * Please add github username to use these add-ons
+                  </div>
+                ) : (
+                  ""
+                )}
+              {social.github && !isGitHubUsernameValid(social.github) ? (
+                <div className="warning">
+                  * GitHub username is invalid, please add a valid username
+                </div>
+              ) : (
+                  ""
+                )}
+              {social.medium && !isMediumUsernameValid(social.medium) ? (
+                <div className="warning">
+                  * Medium username is invalid, please add a valid username (with
+                  @)
+                </div>
+              ) : (
+                  ""
+                )}
+              {data.mediumDynamicBlogs && !social.medium ? (
+                <div className="warning">
+                  * Please add medium username to display latest blogs dynamically
+                </div>
+              ) : (
+                  ""
+                )}
+              {data.devDynamicBlogs && !social.dev ? (
+                <div className="warning">
+                  * Please add dev.to username to display latest blogs dynamically
+                </div>
+              ) : (
+                  ""
+                )}
+              {data.rssDynamicBlogs && !social.rssurl ? (
+                <div className="warning">
+                  * Please add your rss feed url to display latest blogs
+                  dynamically from your personal blog
+                </div>
+              ) : (
+                  ""
+                )}
+            </div>
+            <div className="flex items-center justify-center w-full generate-readme-field">
+              <div
+                className="text-xs sm:text-xl font-medium border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 sm:py-2 px-2 sm:px-4 generate"
+                tabIndex="0"
+                role="button"
+                onClick={handleGenerate}
+              >
+                Generate README
+            </div>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-center">
-            <div className="text-green-700 font-medium">Tips</div>
-            <div className="text-sm sm:text-lg text-gray-700">
-              * Enter the downloaded JSON text to restore.
+
+          {displayLoader ? <Loader /> : ""}
+
+          {generateMarkdown || generatePreview ? (
+            <div className="markdown-section p-4 sm:py-4 sm:px-10">
+              <div className="w-full flex justify-between items-center" style={{color: 'black'}}>
+                <div
+                  className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                  tabIndex="0"
+                  role="button"
+                  onClick={handleBackToEdit}
+                >
+                  <ArrowLeftIcon size={16} />
+                  <span className="hidden sm:block"> back to edit</span>
+                </div>
+
+                <div
+                  className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                  tabIndex="0"
+                  id="copy-button"
+                  role="button"
+                  onClick={handleCopyToClipboard}
+                >
+                  {copyObj.isCopied === true ? (
+                    <CheckIcon size={24} />
+                  ) : (
+                      <CopyIcon size={24} />
+                    )}
+                  <span className="hidden sm:block" id="copy-markdown">
+                    {copyObj.copiedText}
+                  </span>
+                </div>
+
+                <div
+                  className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                  tabIndex="0"
+                  id="download-md-button"
+                  role="button"
+                  onClick={handleDownloadMarkdown}
+                >
+                  <DownloadIcon size={24} />
+                  <span className="hidden sm:block" id="download-markdown">
+                    download markdown
+                </span>
+                </div>
+
+                <div
+                  className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                  tabIndex="0"
+                  id="download-json-button"
+                  role="button"
+                  onClick={handleDownloadJson}
+                >
+                  <FileCodeIcon size={24} />
+                  <span className="hidden sm:block" id="download-json">
+                    download backup
+                </span>
+                </div>
+
+                <div
+                  className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                  tabIndex="0"
+                  role="button"
+                  onClick={handleGeneratePreview}
+                >
+                  {previewMarkdown.isPreview ? (
+                    <MarkdownIcon size={16} />
+                  ) : (
+                      <EyeIcon size={16} />
+                    )}
+                  <span className="hidden sm:block ml-1" id="preview-markdown">
+                    {previewMarkdown.buttonText}
+                  </span>
+                </div>
+              </div>
+
+              <div className="w-full flex justify-center items-center">
+                <div
+                  className="w-full text-sm text-gray-900 shadow-xl mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800"
+                  id="markdown-box"
+                >
+                  {generatePreview ? (
+                    <MarkdownPreview
+                      prefix={prefix}
+                      data={data}
+                      link={link}
+                      social={social}
+                      skills={skills}
+                    />
+                  ) : (
+                      ""
+                    )}
+                  {generateMarkdown ? (
+                    <Markdown
+                      prefix={prefix}
+                      data={data}
+                      link={link}
+                      social={social}
+                      skills={skills}
+                    />
+                  ) : (
+                      ""
+                    )}
+                </div>
+              </div>
+              <div className="mt-10" id="support">
+                <Donate />
+              </div>
             </div>
-            <div className="text-sm sm:text-lg text-gray-700">
-              * Press reset to reset the form.
+          ) : (
+              ""
+            )}
+          <div
+            className={
+              "w-full shadow flex flex-col justify-center items-start mt-16 border-2 border-solid border-gray-600 py-2 px-4 " +
+              (!showConfig ? "hidden" : "block")
+            }
+          >
+            <div className="flex justify-between items-center w-full">
+              <div className="text-lg sm:text-2xl font-bold font-title mt-2 mb-2">
+                Config options
+              <span className="bg-green-800 text-white text-xs sm:text-sm p-1 ml-1">
+                  new feature
+              </span>
+              </div>
+              <div
+                className="text-xxs sm:text-sm border-2 w-auto px-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center config-reset-form"
+                role="button"
+                tabIndex="0"
+                onClick={handleResetForm}
+              >
+                Reset form
+            </div>
+            </div>
+            <div className="w-full flex justify-start items-center my-4">
+              <input
+                type="text"
+                className="outline-none w-1/2 mr-6 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
+                placeholder="JSON Backup"
+                value={restore}
+                onChange={e => setRestore(e.target.value)}
+              />
+              <div
+                className="text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 config-restore-form"
+                role="button"
+                tabIndex="0"
+                onClick={handleRestore}
+              >
+                Restore
+            </div>
+            </div>
+            <div className="flex flex-col items-start justify-center tips">
+              <div className="text-green-700 font-medium">Tips</div>
+              <div className="text-sm sm:text-lg text-gray-700">
+                * Enter the downloaded JSON text to restore.
+            </div>
+              <div className="text-sm sm:text-lg text-gray-700">
+                * Press reset to reset the form.
+            </div>
             </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </ThemeProvider>
   )
 }
 
