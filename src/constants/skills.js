@@ -43,6 +43,10 @@ const categorizedSkills = {
       "tailwind",
       "materialize",
       "bulma",
+      "gtk",
+      "qt",
+      "wx_widgets",
+      "ember",
     ],
   },
 
@@ -76,7 +80,7 @@ const categorizedSkills = {
 
   ai: {
     title: "AI/ML",
-    skills: ["tensorflow", "pytorch", "opencv"],
+    skills: ["tensorflow", "pytorch", "opencv", "scikit_learn"],
   },
 
   database: {
@@ -331,26 +335,151 @@ const icons = {
     "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
   haskell:
     "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
-  svelte:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/498px-Svelte_Logo.svg.png",
-  vuetify:
-    "https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png",
+  svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
+  vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
-  mocha: "https://i.ibb.co/0MCw42Q/mocha.png",
-  jest: "https://i.ibb.co/Yj6p14L/jest.png",
-  cypress: "https://i.ibb.co/CWQq8gw/cypress.webp",
-  selenium: "https://i.ibb.co/9T29DD0/selenium.png",
-  puppeteer: "https://i.ibb.co/Qk299CX/puppeteer.png",
-  karma: "https://i.ibb.co/dbgh2DH/jasmine.png",
-  jasmine: "https://i.ibb.co/55txF2S/karma.png",
+  mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
+  jest: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
+  cypress:
+    "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
+  selenium:
+    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg",
+  puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
+  karma:
+    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
+  jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
+  gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
+  qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
+  wx_widgets:
+    "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
+  ember:
+    "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
+  scikit_learn:
+    "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+}
+
+const skillWebsites = {
+  vuejs: "https://vuejs.org/",
+  react: "https://reactjs.org/",
+  angularjs: "https://angular.io",
+  aws: "https://aws.amazon.com",
+  android: "https://developer.android.com",
+  backbonejs: "https://backbonejs.org",
+  bootstrap: "https://getbootstrap.com",
+  c: "https://www.cprogramming.com/",
+  canvasjs: "https://canvasjs.com",
+  coffeescript: "https://offeescript.org",
+  codeigniter: "https://codeigniter.com",
+  cplusplus: "https://www.w3schools.com/cpp/",
+  css3: "https://www.w3schools.com/css/",
+  csharp: "https://www.w3schools.com/cs/",
+  d3js: "https://d3js.org/",
+  django: "https://www.djangoproject.com/",
+  docker: "https://www.docker.com/",
+  dotnet: "https://dotnet.microsoft.com/",
+  electron: "https://www.electronjs.org",
+  express: "https://expressjs.com",
+  go: "https://golang.org",
+  gulp: "https://gulpjs.com",
+  html5: "https://www.w3.org/html/",
+  hugo: "https://gohugo.io/",
+  java: "https://www.java.com",
+  javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  ionic: "https://ionicframework.com",
+  laravel: "https://laravel.com/",
+  meteor: "https://www.meteor.com/",
+  mongodb: "https://www.mongodb.com/",
+  mysql: "https://www.mysql.com/",
+  nginx: "https://www.nginx.com",
+  nodejs: "https://nodejs.org",
+  oracle: "https://www.oracle.com/",
+  photoshop: "https://www.photoshop.com/en",
+  php: "https://www.php.net",
+  postgresql: "https://www.postgresql.org",
+  python: "https://www.python.org",
+  rails: "https://rubyonrails.org",
+  redis: "https://redis.io",
+  ruby: "https://www.ruby-lang.org/en/",
+  rust: "https://www.rust-lang.org",
+  sass: "https://sass-lang.com",
+  scala: "https://www.scala-lang.org",
+  symfony: "https://symfony.com",
+  spring: "",
+  swift: "",
+  typescript: "https://www.typescriptlang.org/",
+  linux: "https://www.linux.org/",
+  redux: "https://redux.js.org",
+  webpack: "https://webpack.js.org",
+  flutter: "https://flutter.dev",
+  dart: "https://dart.dev",
+  kotlin: "https://kotlinlang.org",
+  tensorflow: "https://www.tensorflow.org",
+  chartjs: "https://www.chartjs.org",
+  jenkins: "https://www.jenkins.io",
+  gcp: "https://cloud.google.com",
+  kubernetes: "https://kubernetes.io",
+  azure: "https://azure.microsoft.com/en-in/",
+  git: "https://git-scm.com/",
+  kafka: "https://kafka.apache.org/",
+  solr: "https://lucene.apache.org/solr/",
+  cassandra: "https://cassandra.apache.org/",
+  rabbitMQ: "https://www.rabbitmq.com",
+  hadoop: "https://hadoop.apache.org/",
+  bash: "https://www.gnu.org/software/bash/",
+  pytorch: "https://pytorch.org/",
+  opencv: "https://opencv.org/",
+  illustrator: "https://www.adobe.com/in/products/illustrator.html",
+  figma: "https://www.figma.com/",
+  blender: "",
+  babel: "https://babeljs.io/",
+  sketch: "https://www.sketch.com/",
+  flask: "",
+  nativescript: "https://nativescript.org/",
+  xamarin: "https://dotnet.microsoft.com/apps/xamarin",
+  vagrant: "",
+  tailwind: "https://tailwindcss.com/",
+  materialize: "https://materializecss.com/",
+  invision: "https://www.invisionapp.com/",
+  framer: "",
+  bulma: "https://bulma.io/",
+  couchdb: "",
+  firebase: "https://firebase.google.com/",
+  amplify: "https://aws.amazon.com/amplify/",
+  hive: "",
+  realm: "",
+  gatsby: "https://www.gatsbyjs.com/",
+  gridsome: "",
+  nuxtjs: "https://nuxtjs.org/",
+  jekyll: "https://jekyllrb.com/",
+  nextjs: "https://nextjs.org/",
+  reactnative: "https://reactnative.dev/",
+  mariadb: "https://mariadb.org/",
+  objectivec: "",
+  clojure: "",
+  haskell: "",
+  svelte: "https://svelte.dev",
+  vuetify: "https://vuetifyjs.com/en/",
+  pug: "https://pugjs.org",
+  mocha: "https://mochajs.org",
+  jest: "https://jestjs.io",
+  cypress: "https://www.cypress.io",
+  selenium: "https://www.selenium.dev",
+  puppeteer: "https://github.com/puppeteer/puppeteer",
+  karma: "https://karma-runner.github.io/latest/index.html",
+  jasmine: "https://jasmine.github.io/",
+  gtk: "",
+  qt: "",
+  wx_widgets: "",
+  ember: "",
+  scikit_learn: "",
 }
 
 const initialSkillState = {}
 
-const skills = Object.keys(categorizedSkills)
-  .map(key => categorizedSkills[key].skills)
-  .flat()
-  .sort()
+const skillsArray = Object.keys(categorizedSkills).map(
+  key => categorizedSkills[key].skills
+)
+const skills = [].concat.apply([], skillsArray).sort()
 
 skills.forEach(skill => {
   initialSkillState[skill] = false
@@ -358,4 +487,11 @@ skills.forEach(skill => {
 
 const categories = Object.keys(categorizedSkills)
 
-export { initialSkillState, icons, skills, categorizedSkills, categories }
+export {
+  initialSkillState,
+  icons,
+  skills,
+  skillWebsites,
+  categorizedSkills,
+  categories,
+}

@@ -1,10 +1,9 @@
 ---
 name: Feature/Enhancement request
 about: Suggest an idea for this project
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 **Is your feature request related to a problem? Please describe.**
@@ -18,3 +17,7 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+Join the **Discord Server** for further discussions.
+
+Server Link: https://discord.gg/HHMs7Eg
