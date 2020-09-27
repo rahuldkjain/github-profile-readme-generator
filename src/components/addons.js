@@ -3,7 +3,22 @@ import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
 import { isMediumUsernameValid } from "../utils/validation"
-import AddonsItem from './AddonsItem';
+
+const AddonsItem = ({inputId, inputChecked, onInputChange, ...props}) => {
+  return (
+      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+          <label htmlFor={inputId} className="cursor-pointer flex items-center">
+              <input
+                  type="checkbox"
+                  id={inputId}
+                  checked={inputChecked}
+                  onChange={onInputChange}
+              />
+              <span className="pl-4">{props.children}</span>
+          </label>
+      </div>
+  )
+}
 
 const Addons = props => {
   const blogPostPorkflow = () => {
