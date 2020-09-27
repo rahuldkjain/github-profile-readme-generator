@@ -160,7 +160,7 @@ const Work = props => {
         />
         <input
           id="funFact"
-          placeholder="Chai over Coffee"
+          placeholder="I think I am funny"
           className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.funFact}
           onChange={event => props.handleDataChange("funFact", event)}

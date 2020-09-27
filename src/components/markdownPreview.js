@@ -268,7 +268,7 @@ const MarkdownPreview = props => {
         listSkills.push(
           <a href={skillWebsites[skill]} target="_blank">
             <img
-              className="my-4 mx-4 h-6 w-6 sm:h-10 sm:w-10"
+              className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
               key={skill}
               src={icons[skill]}
               alt={skill}
@@ -295,6 +295,7 @@ const MarkdownPreview = props => {
         github={props.social.github}
       />
       <WorkPreview work={props} />
+      <SocialPreview social={props.social} />
       <SkillsPreview skills={props.skills} />
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview
@@ -306,7 +307,6 @@ const MarkdownPreview = props => {
           github={props.social.github}
         />
       </div>
-      <SocialPreview social={props.social} />
     </div>
   )
 }
