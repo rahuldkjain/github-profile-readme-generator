@@ -22,6 +22,15 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "utsav00",
+      "name": "Utsav",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/39943143?v=4",
+      "profile": "https://github.com/utsav00",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
