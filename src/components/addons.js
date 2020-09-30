@@ -31,6 +31,14 @@ const Addons = props => {
     tempElement.click()
     document.body.removeChild(tempElement)
   }
+
+  const blogPostKeyDown = (event) => {
+    const keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode === '13'){
+      blogPostPorkflow();
+    }
+  }
+
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
@@ -114,6 +122,7 @@ const Addons = props => {
             download
             <span
               onClick={blogPostPorkflow}
+              onKeyDown={blogPostKeyDown}
               role="button"
               tabIndex="0"
               style={{ cursor: "pointer", color: "#002ead" }}

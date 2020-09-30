@@ -266,7 +266,7 @@ const MarkdownPreview = props => {
     skills.forEach(skill => {
       if (props.skills[skill]) {
         listSkills.push(
-          <a href={skillWebsites[skill]} target="_blank">
+          <a href={skillWebsites[skill]} target="_blank" rel="noreferrer">
             <img
               className="my-4 mx-4 h-6 w-6 sm:h-10 sm:w-10"
               key={skill}
