@@ -37,6 +37,16 @@ const Addons = props => {
         Add-ons
       </div>
       <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+        <label htmlFor="dark-mode" className="cursor-pointer">
+          <input
+            type="checkbox"
+            id="dark-mode"
+            onChange={event => props.handleTheme(event.target.checked)}
+          />
+          &nbsp; display dark mode
+        </label>
+      </div>
+      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
         <label htmlFor="visitors-count" className="cursor-pointer">
           <input
             type="checkbox"

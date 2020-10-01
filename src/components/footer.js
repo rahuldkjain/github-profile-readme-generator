@@ -21,7 +21,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="py-2">
+      <div className="py-2" style={{color: 'black'}}>
         Developed in India{" "}
         <span role="img" aria-label="india">
           {" "}

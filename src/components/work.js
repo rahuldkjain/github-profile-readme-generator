@@ -2,7 +2,7 @@ import React from "react"
 
 const Work = props => {
   return (
-    <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
+    <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10 work-section">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
         Work
       </div>
