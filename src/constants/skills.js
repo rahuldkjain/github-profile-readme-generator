@@ -160,6 +160,7 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
+      "xd"
     ],
   },
 
@@ -240,6 +241,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
+    xd:
+      "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
   postgresql:
