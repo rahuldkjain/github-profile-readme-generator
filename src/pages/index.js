@@ -27,6 +27,8 @@ import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
+  isHackerEarthUsernameValid,
+  isGFGUsernameValid,
 } from "../utils/validation"
 import Layout from "../components/layout"
 
@@ -477,6 +479,24 @@ const IndexPage = () => {
             {social.github && !isGitHubUsernameValid(social.github) ? (
               <div className="warning">
                 * GitHub username is invalid, please add a valid username
+              </div>
+            ) : (
+              ""
+            )}
+            {social.hackerearth &&
+            !isHackerEarthUsernameValid(social.hackerearth) ? (
+              <div className="warning">
+                * Hackerearth username is invalid, please add a valid username
+                (with @)
+              </div>
+            ) : (
+              ""
+            )}
+            {social.geeks_for_geeks &&
+            !isGFGUsernameValid(social.geeks_for_geeks) ? (
+              <div className="warning">
+                * Geeks for geeks username is invalid, please add a valid
+                username (append with /profile at the end)
               </div>
             ) : (
               ""
