@@ -3,7 +3,7 @@
     <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
   </a>
 </p>
-<h1 align="center">
+<h1 style="font-size:30px" align="center">
   GitHub Profile README Generator
 </h1>
 
