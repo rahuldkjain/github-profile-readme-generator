@@ -53,6 +53,7 @@ const DEFAULT_DATA = {
   ama: "",
   contact: "",
   funFact: "",
+  twitterBadge: false,
   visitorsBadge: false,
   githubStats: false,
   topLanguages: false,
@@ -223,6 +224,10 @@ const IndexPage = () => {
     resetCopyMarkdownButton()
     if (data.visitorsBadge || data.githubStats || data.topLanguages) {
       if (social.github && isGitHubUsernameValid(social.github)) {
+        generate()
+      }
+    } else if (data.twitterBadge) {
+      if (social.twitter)) {
         generate()
       }
     } else if (social.github) {
@@ -507,6 +512,13 @@ const IndexPage = () => {
               <div className="warning">
                 * Please add your rss feed url to display latest blogs
                 dynamically from your personal blog
+              </div>
+            ) : (
+              ""
+            )}
+            {(data.twitterBadge && !social.twitter ? (
+              <div className="warning">
+                * Please add twitter username to use these add-ons
               </div>
             ) : (
               ""
