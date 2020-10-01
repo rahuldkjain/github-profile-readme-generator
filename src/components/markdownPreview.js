@@ -1,5 +1,5 @@
 import React from "react"
-import { icons, skills } from "../constants/skills"
+import { icons, skills, skillWebsites } from "../constants/skills"
 
 const MarkdownPreview = props => {
   const TitlePreview = props => {
@@ -15,6 +15,12 @@ const MarkdownPreview = props => {
   const SubTitlePreview = props => {
     if (props.subtitle) {
       return <h3 className="text-center font-medium">{props.subtitle}</h3>
+    }
+    return null
+  }
+  const SectionTitle = props => {
+    if (props.label) {
+      return <h3 className="w-full text-lg sm:text-xl">{props.label}</h3>
     }
     return null
   }
@@ -104,7 +110,8 @@ const MarkdownPreview = props => {
   }
   const SocialPreview = props => {
     return (
-      <div className="flex justify-center items-end">
+      <div className="flex justify-start items-end flex-wrap">
+        <SectionTitle label="Connect with me:" />
         <DisplaySocial
           base="https://codepen.io"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
@@ -259,17 +266,20 @@ const MarkdownPreview = props => {
     skills.forEach(skill => {
       if (props.skills[skill]) {
         listSkills.push(
-          <img
-            className="my-4 mx-4 h-6 w-6 sm:h-10 sm:w-10"
-            key={skill}
-            src={icons[skill]}
-            alt={skill}
-          />
+          <a href={skillWebsites[skill]} target="_blank">
+            <img
+              className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
+              key={skill}
+              src={icons[skill]}
+              alt={skill}
+            />
+          </a>
         )
       }
     })
     return listSkills.length > 0 ? (
       <div className="flex flex-wrap justify-start items-center">
+        <SectionTitle label="Languages and Tools:" />
         {listSkills}
       </div>
     ) : (
@@ -285,6 +295,7 @@ const MarkdownPreview = props => {
         github={props.social.github}
       />
       <WorkPreview work={props} />
+      <SocialPreview social={props.social} />
       <SkillsPreview skills={props.skills} />
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview
@@ -296,7 +307,6 @@ const MarkdownPreview = props => {
           github={props.social.github}
         />
       </div>
-      <SocialPreview social={props.social} />
     </div>
   )
 }
