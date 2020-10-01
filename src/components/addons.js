@@ -70,6 +70,17 @@ const Addons = props => {
         </label>
       </div>
       <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+        <label htmlFor="twitter-badge" className="cursor-pointer">
+          <input
+            id="twitter-badge"
+            type="checkbox"
+            checked={props.data.twitterBadge}
+            onChange={event => props.handleCheckChange("twitterBadge")}
+          />
+          &nbsp; display twitter badge
+        </label>
+      </div>
+      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
         <label htmlFor="dev-dynamic-blogs" className="cursor-pointer">
           <input
             id="dev-dynamic-blogs"
