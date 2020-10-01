@@ -50,7 +50,7 @@
 <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
 </p>
 
-#### Tired of editing GitHub Profile README with new features?
+#### Tired of editing - GitHub Profile README with new features?
 
 This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
