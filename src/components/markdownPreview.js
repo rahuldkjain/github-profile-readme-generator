@@ -233,6 +233,19 @@ const MarkdownPreview = props => {
     }
     return null
   }
+  const GithubProfileTrophyPreview = props => {
+    let link =
+      "https://github-profile-trophy.vercel.app/?username=" + props.github
+    if (props.show) {
+      return (
+        <div className="text-left my-2">
+          {" "}
+          <img src={link} alt={props.github} />{" "}
+        </div>
+      )
+    }
+    return null
+  }
   const GitHubStatsPreview = props => {
     let link =
       "https://github-readme-stats.vercel.app/api?username=" +
@@ -292,6 +305,10 @@ const MarkdownPreview = props => {
       <SubTitlePreview subtitle={props.data.subtitle} />
       <VisitorsBadgePreview
         show={props.data.visitorsBadge}
+        github={props.social.github}
+      />
+      <GithubProfileTrophyPreview
+        show={props.data.githubProfileTrophy}
         github={props.social.github}
       />
       <WorkPreview work={props} />

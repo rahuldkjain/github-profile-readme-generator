@@ -54,6 +54,7 @@ const DEFAULT_DATA = {
   contact: "",
   funFact: "",
   visitorsBadge: false,
+  githubProfileTrophy: false,
   githubStats: false,
   topLanguages: false,
   devDynamicBlogs: false,
@@ -221,7 +222,12 @@ const IndexPage = () => {
     trimDataValues(social, setSocial)
     trimDataValues(link, setLink)
     resetCopyMarkdownButton()
-    if (data.visitorsBadge || data.githubStats || data.topLanguages) {
+    if (
+      data.visitorsBadge ||
+      data.githubProfileTrophy ||
+      data.githubStats ||
+      data.topLanguages
+    ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
       }
@@ -466,7 +472,10 @@ const IndexPage = () => {
             handleCheckChange={handleCheckChange}
           />
           <div className="section">
-            {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
+            {(data.visitorsBadge ||
+              data.githubProfileTrophy ||
+              data.githubStats ||
+              data.topLanguages) &&
             !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons
