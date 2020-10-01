@@ -518,7 +518,7 @@ const IndexPage = () => {
               tabIndex="0"
               role="button"
               onClick={handleGenerate}
-              onKeyDown={(e) => e.key === 13 && handleGenerate()}
+              onKeyDown={(e) => e.keyCode === 13 && handleGenerate()}
             >
               Generate README
             </div>
