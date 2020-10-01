@@ -134,6 +134,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
+      "quasar"
     ],
   },
 
@@ -356,6 +357,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+  quasar:
+    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg"
 }
 
 const skillWebsites = {
@@ -472,6 +475,7 @@ const skillWebsites = {
   wx_widgets: "",
   ember: "",
   scikit_learn: "",
+  quasar: "https://quasar.dev/"
 }
 
 const initialSkillState = {}
