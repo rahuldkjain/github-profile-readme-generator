@@ -22,6 +22,15 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "jaideepghosh",
+      "name": "Jaideep Ghosh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3909648?v=4",
+      "profile": "http://jaideepghosh.blogspot.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
