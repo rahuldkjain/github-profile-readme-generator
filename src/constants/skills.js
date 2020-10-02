@@ -169,6 +169,11 @@ const categorizedSkills = {
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
 
+  game_engines:{
+    title: "Game Engines",
+    skills: ["unity"],
+  },
+
   other: {
     title: "Other",
     skills: ["linux", "git"],
@@ -358,7 +363,9 @@ const icons = {
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg"
+    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
 }
 
 const skillWebsites = {
@@ -475,7 +482,8 @@ const skillWebsites = {
   wx_widgets: "",
   ember: "",
   scikit_learn: "",
-  quasar: "https://quasar.dev/"
+  quasar: "https://quasar.dev/",
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}
