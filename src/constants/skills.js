@@ -9,6 +9,7 @@ const categorizedSkills = {
       "go",
       "java",
       "javascript",
+      "kotlin",
       "typescript",
       "php",
       "ruby",
@@ -226,6 +227,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg",
   javascript:
     "https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg",
+  kotlin:
+    "https://devicons.github.io/devicon/devicon.git/icons/java/kotlin-logo.svg",
   ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
   laravel:
     "https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg",
@@ -398,6 +401,7 @@ const skillWebsites = {
   hugo: "https://gohugo.io/",
   java: "https://www.java.com",
   javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  kotlin: "https://kotlinlang.org",
   ionic: "https://ionicframework.com",
   laravel: "https://laravel.com/",
   meteor: "https://www.meteor.com/",
