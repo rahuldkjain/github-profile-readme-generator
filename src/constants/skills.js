@@ -96,12 +96,13 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
+      "elasticsearch"
     ],
   },
 
   data_visualization: {
     title: "Data Visualization",
-    skills: ["d3js", "chartjs", "canvasjs"],
+    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana"],
   },
 
   devops: {
@@ -115,6 +116,7 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
+      "circleci"
     ],
   },
 
@@ -358,7 +360,15 @@ const icons = {
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg"
+    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  kibana:
+    "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
+  grafana:
+    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch:
+    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci:
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg"
 }
 
 const skillWebsites = {
@@ -475,7 +485,11 @@ const skillWebsites = {
   wx_widgets: "",
   ember: "",
   scikit_learn: "",
-  quasar: "https://quasar.dev/"
+  quasar: "https://quasar.dev/",
+  kibana: "https://www.elastic.co/kibana",
+  grafana: "https://grafana.com",
+  elasticsearch: "https://www.elastic.co",
+  circleci: "https://circleci.com"
 }
 
 const initialSkillState = {}
