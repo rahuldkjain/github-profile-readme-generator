@@ -173,7 +173,7 @@ const categorizedSkills = {
   dev_environment:{
     title:"Dev environment",
     skills:["vim","vscode", "eclipse", "pycharm", "jupyter notebooks", "intellij", "webstorm", "sublime", 
-    "mysql workbench", "postbird","atom"]
+    "mysql workbench", "postbird","atom","brackets"]
   },
   other: {
     title: "Other",
@@ -383,7 +383,8 @@ const icons = {
   atom:"https://github.com/haideralipunjabi/atom-icons/raw/master/svg/poptheme_night-owl.svg",
   webstorm:"https://cdn.freebiesupply.com/logos/large/2x/webstorm-icon-logo-svg-vector.svg",
   "mysql workbench":"https://www.michaelstults.com/wp-content/uploads/2014/10/MySQLWorkbench-300x300.png",
-  postbird:"https://www.electronjs.org/app-img/postbird/postbird-icon-128.png"
+  postbird:"https://www.electronjs.org/app-img/postbird/postbird-icon-128.png",
+  brackets:"https://upload.wikimedia.org/wikipedia/commons/4/4c/Brackets_Icon.svg"
 
 }
 
@@ -505,7 +506,19 @@ const skillWebsites = {
   kibana: "https://www.elastic.co/kibana",
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
-  circleci: "https://circleci.com"
+  circleci: "https://circleci.com",
+  vim:"https://www.vim.org/",
+  vscode:"https://code.visualstudio.com/",
+  eclipse:"https://www.eclipse.org/",
+  pycharm:"https://www.jetbrains.com/pycharm/",
+  "jupyter notebooks":"https://jupyter.org/",
+  intellij:"https://www.jetbrains.com/idea/",
+  webstorm:"https://www.jetbrains.com/webstorm/",
+  sublime:"https://www.sublimetext.com/",
+  "mysql workbench":"https://www.mysql.com/products/workbench/",
+  postbird:"https://www.electronjs.org/apps/postbird",
+  atom:"https://atom.io/",
+  brackets:"http://brackets.io/"
 }
 
 const initialSkillState = {}
