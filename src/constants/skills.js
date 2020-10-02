@@ -164,6 +164,7 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
+      "solidworks",
     ],
   },
 
@@ -179,7 +180,7 @@ const categorizedSkills = {
 
   other: {
     title: "Other",
-    skills: ["linux", "git"],
+    skills: ["linux", "git", "arduino"],
   },
 }
 
@@ -194,6 +195,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
     "https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg",
+  arduino:
+    "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
   backbonejs:
     "https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg",
   bootstrap:
@@ -268,6 +271,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg",
   scala:
     "https://devicons.github.io/devicon/devicon.git/icons/scala/scala-original-wordmark.svg",
+  solidworks:
+   "https://cdn.worldvectorlogo.com/logos/solidworks.svg",
   symfony: "https://symfony.com/logos/symfony_black_03.svg",
   spring: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
   swift:
@@ -381,6 +386,8 @@ const icons = {
 }
 
 const skillWebsites = {
+  arduino: "https://www.arduino.cc/",
+  solidworks: "https://www.solidworks.com/",
   vuejs: "https://vuejs.org/",
   react: "https://reactjs.org/",
   angularjs: "https://angular.io",
