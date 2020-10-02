@@ -57,6 +57,7 @@ const DEFAULT_DATA = {
   badgeStyle: "flat",
   badgeColor: "0e75b6",
   badgeLabel: "Profile views",
+  githubProfileTrophy: false,
   githubStats: false,
   topLanguages: false,
   devDynamicBlogs: false,
@@ -224,7 +225,12 @@ const IndexPage = () => {
     trimDataValues(social, setSocial)
     trimDataValues(link, setLink)
     resetCopyMarkdownButton()
-    if (data.visitorsBadge || data.githubStats || data.topLanguages) {
+    if (
+      data.visitorsBadge ||
+      data.githubProfileTrophy ||
+      data.githubStats ||
+      data.topLanguages
+    ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
       }
@@ -470,7 +476,10 @@ const IndexPage = () => {
             handleDataChange={handleDataChange}
           />
           <div className="section">
-            {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
+            {(data.visitorsBadge ||
+              data.githubProfileTrophy ||
+              data.githubStats ||
+              data.topLanguages) &&
             !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons
