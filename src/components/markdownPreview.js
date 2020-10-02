@@ -233,6 +233,18 @@ const MarkdownPreview = props => {
     }
     return null
   }
+    const TwitterBadgePreview = props => {
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    if (props.show) {
+      return (
+        <div className="text-left my-2">
+          {" "}
+          <img className="h-4 sm:h-6" src={link} alt={props.twitter} />{" "}
+        </div>
+      )
+    }
+    return null
+  }
   const GitHubStatsPreview = props => {
     let link =
       "https://github-readme-stats.vercel.app/api?username=" +
@@ -293,6 +305,10 @@ const MarkdownPreview = props => {
       <VisitorsBadgePreview
         show={props.data.visitorsBadge}
         github={props.social.github}
+      />
+      <TwitterBadgePreview
+        show={props.data.twitterBadge}
+        twitter={props.social.twitter}
       />
       <WorkPreview work={props} />
       <SocialPreview social={props.social} />
