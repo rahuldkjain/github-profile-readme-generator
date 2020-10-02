@@ -34,7 +34,7 @@ const Skills = props => {
 
       {Object.keys(categorizedSkills).map(key => (
         <div key={key}>
-          <h4 className="text-sm sm:text-xl text-gray-900 text-center">
+          <h4 className="text-sm sm:text-xl text-gray-900 text-left">
             {categorizedSkills[key].title}
           </h4>
           <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
