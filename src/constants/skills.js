@@ -76,6 +76,7 @@ const categorizedSkills = {
       "xamarin",
       "reactnative",
       "ionic",
+      "ios"
     ],
   },
 
@@ -378,6 +379,8 @@ const icons = {
     "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
   unity:
     "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+  ios:
+    "https://www.flaticon.com/svg/static/icons/svg/37/37150.svg"
 }
 
 const skillWebsites = {
