@@ -222,7 +222,11 @@ const MarkdownPreview = props => {
     )
   }
   const VisitorsBadgePreview = props => {
-    let link = "https://komarev.com/ghpvc/?username=" + props.github
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <div className="text-left my-2">
@@ -293,6 +297,11 @@ const MarkdownPreview = props => {
       <VisitorsBadgePreview
         show={props.data.visitorsBadge}
         github={props.social.github}
+        badgeOptions={{
+          badgeLabel: encodeURI(props.data.badgeLabel),
+          badgeColor: props.data.badgeColor,
+          badgeStyle: props.data.badgeStyle
+        }}
       />
       <WorkPreview work={props} />
       <SocialPreview social={props.social} />

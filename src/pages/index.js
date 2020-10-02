@@ -54,6 +54,9 @@ const DEFAULT_DATA = {
   contact: "",
   funFact: "",
   visitorsBadge: false,
+  badgeStyle: "flat",
+  badgeColor: "0e75b6",
+  badgeLabel: "Profile views",
   githubStats: false,
   topLanguages: false,
   devDynamicBlogs: false,
@@ -359,10 +362,10 @@ const IndexPage = () => {
       return
     }
 
-    setPrefix(cache.prefix || DEFAULT_PREFIX)
-    setData(cache.data || DEFAULT_DATA)
-    setLink(cache.link || DEFAULT_LINK)
-    setSocial(cache.social || DEFAULT_SOCIAL)
+    setPrefix(cache.prefix ? {...DEFAULT_PREFIX, ...cache.prefix} : DEFAULT_PREFIX)
+    setData(cache.data ? {...DEFAULT_DATA, ...cache.data} : DEFAULT_DATA)
+    setLink(cache.link ? {...DEFAULT_LINK, ...cache.link} : DEFAULT_LINK)
+    setSocial(cache.social ? {...DEFAULT_SOCIAL, ...cache.social} : DEFAULT_SOCIAL)
 
     const cacheSkills = mergeDefaultWithNewDataSkills(
       DEFAULT_SKILLS,
@@ -464,6 +467,7 @@ const IndexPage = () => {
             data={data}
             social={social}
             handleCheckChange={handleCheckChange}
+            handleDataChange={handleDataChange}
           />
           <div className="section">
             {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
