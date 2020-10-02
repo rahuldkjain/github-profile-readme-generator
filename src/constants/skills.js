@@ -56,6 +56,7 @@ const categorizedSkills = {
       "nodejs",
       "spring",
       "express",
+      "graphql",
       "kafka",
       "solr",
       "rabbitMQ",
@@ -96,12 +97,13 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
+      "elasticsearch"
     ],
   },
 
   data_visualization: {
     title: "Data Visualization",
-    skills: ["d3js", "chartjs", "canvasjs"],
+    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana"],
   },
 
   devops: {
@@ -115,6 +117,7 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
+      "circleci"
     ],
   },
 
@@ -169,6 +172,11 @@ const categorizedSkills = {
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
 
+  game_engines:{
+    title: "Game Engines",
+    skills: ["unity"],
+  },
+
   other: {
     title: "Other",
     skills: ["linux", "git"],
@@ -215,6 +223,7 @@ const icons = {
   express:
     "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
   go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
+  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
   html5:
@@ -358,7 +367,17 @@ const icons = {
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg"
+    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  kibana:
+    "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
+  grafana:
+    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch:
+    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci:
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
 
 const skillWebsites = {
@@ -383,6 +402,7 @@ const skillWebsites = {
   electron: "https://www.electronjs.org",
   express: "https://expressjs.com",
   go: "https://golang.org",
+  graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
   html5: "https://www.w3.org/html/",
   hugo: "https://gohugo.io/",
@@ -475,7 +495,12 @@ const skillWebsites = {
   wx_widgets: "",
   ember: "",
   scikit_learn: "",
-  quasar: "https://quasar.dev/"
+  quasar: "https://quasar.dev/",
+  kibana: "https://www.elastic.co/kibana",
+  grafana: "https://grafana.com",
+  elasticsearch: "https://www.elastic.co",
+  circleci: "https://circleci.com",
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}

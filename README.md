@@ -84,8 +84,6 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 
 - **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
 
-- **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
-
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
 
@@ -179,5 +177,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <hr>
 <p align="center">
-Developed with ❤️ in India 🇮🇳
+Developed with ❤️ in India 🇮🇳 
 </p>
