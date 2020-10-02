@@ -13,6 +13,24 @@
       "contributions": [
         "code"
       ]
+
+      "login": "sarbikbetal",
+      "name": "Sarbik Betal",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/41508422?v=4",
+      "profile": "https://github.com/sarbikbetal",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "antonkomarev",
+      "name": "Anton Komarev",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1849174?v=4",
+      "profile": "https://komarev.com",
+      "contributions": [
+        "plugin"
+      ]
+
     }
   ],
   "contributorsPerLine": 7,

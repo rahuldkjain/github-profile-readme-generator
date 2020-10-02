@@ -26,7 +26,7 @@
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
-<a href="https://discord.gg/U7YU3J" target="blank">
+<a href="https://discord.gg/HHMs7Eg" target="blank">
 <img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
 </a>
 </p>
@@ -86,8 +86,6 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 - **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
 
 - **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
-
-- **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
 
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
@@ -159,6 +157,26 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
   </a>
   <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
 </p>
+
+## Contributors ✨
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/sarbikbetal"><img src="https://avatars2.githubusercontent.com/u/41508422?v=4" width="100px;" alt=""/><br /><sub><b>Sarbik Betal</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=sarbikbetal" title="Code">💻</a></td>
+    <td align="center"><a href="https://komarev.com"><img src="https://avatars0.githubusercontent.com/u/1849174?v=4" width="100px;" alt=""/><br /><sub><b>Anton Komarev</b></sub></a><br /><a href="#plugin-antonkomarev" title="Plugin/utility libraries">🔌</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <hr>
 <p align="center">

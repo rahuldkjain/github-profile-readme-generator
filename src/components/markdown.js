@@ -32,7 +32,6 @@ const Markdown = props => {
         <>
           {`<h3 align="left">${props.label}</h3>`}
           <br />
-          <br />
         </>
       )
     }
@@ -274,22 +273,6 @@ const Markdown = props => {
           }
         />
       </>
-      <>
-        <DisplaySkills skills={props.skills} />
-      </>
-      <>
-        <DisplayTopLanguages
-          show={props.data.topLanguages}
-          showStats={props.data.githubStats}
-          github={props.social.github}
-        />
-      </>
-      <>
-        <GitHubStats
-          show={props.data.githubStats}
-          github={props.social.github}
-        />
-      </>
       {isSocial(props.social) ? `<p align="left">` : ""} <br />
       <>
         <SectionTitle label="Connect with me:" />
@@ -441,7 +424,23 @@ const Markdown = props => {
           username={props.social.rssurl}
         />
       </>
-      {isSocial(props.social) ? `</p>` : ""}
+      {isSocial(props.social) ? <>{`</p>`}<br/><br/></> : ""}
+      <>
+        <DisplaySkills skills={props.skills} />
+      </>
+      <>
+        <DisplayTopLanguages
+          show={props.data.topLanguages}
+          showStats={props.data.githubStats}
+          github={props.social.github}
+        />
+      </>
+      <>
+        <GitHubStats
+          show={props.data.githubStats}
+          github={props.social.github}
+        />
+      </>
     </div>
   )
 }
