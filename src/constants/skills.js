@@ -398,7 +398,6 @@ const skillWebsites = {
   hugo: "https://gohugo.io/",
   java: "https://www.java.com",
   javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  kotlin: "https://kotlinlang.org",
   ionic: "https://ionicframework.com",
   laravel: "https://laravel.com/",
   meteor: "https://www.meteor.com/",
