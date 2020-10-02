@@ -71,7 +71,6 @@ const categorizedSkills = {
       "android",
       "flutter",
       "dart",
-      "kotlin",
       "nativescript",
       "xamarin",
       "reactnative",
@@ -227,7 +226,6 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg",
   javascript:
     "https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg",
-  kotlin: "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin-logo.svg",
   ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
   laravel:
     "https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg",
