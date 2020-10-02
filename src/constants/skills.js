@@ -56,6 +56,7 @@ const categorizedSkills = {
       "nodejs",
       "spring",
       "express",
+      "graphql",
       "kafka",
       "solr",
       "rabbitMQ",
@@ -217,6 +218,7 @@ const icons = {
   express:
     "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
   go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
+  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
   html5:
@@ -393,6 +395,7 @@ const skillWebsites = {
   electron: "https://www.electronjs.org",
   express: "https://expressjs.com",
   go: "https://golang.org",
+  graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
   html5: "https://www.w3.org/html/",
   hugo: "https://gohugo.io/",
