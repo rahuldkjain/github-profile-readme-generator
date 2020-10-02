@@ -383,9 +383,9 @@ const icons = {
   scully:
     "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
   "11ty":
-    "https://www.11ty.dev/img/avatars/twitter/d4dc83e-90.webp",
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg",
   sculpin:
-    "https://sculpin.io/css/sculpin-mascot-jackson-medium.png",
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
   sapper:
     "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
 }
