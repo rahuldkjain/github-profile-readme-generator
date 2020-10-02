@@ -240,7 +240,9 @@ const MarkdownPreview = props => {
       return (
         <div className="text-left my-2">
           {" "}
-          <img src={link} alt={props.github} />{" "}
+          <a href="https://github.com/ryo-ma/github-profile-trophy">
+            <img src={link} alt={props.github} />
+          </a>{" "}
         </div>
       )
     }
