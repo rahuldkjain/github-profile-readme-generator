@@ -2,29 +2,29 @@ import React, { useState, useEffect } from "react"
 import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameValid } from "../utils/validation"
+import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
 import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
 
 const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ...props}) => {
   return (
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-          <label htmlFor={inputId} className="cursor-pointer flex items-center">
-              <input
-                  type="checkbox"
-                  id={inputId}
-                  checked={inputChecked}
-                  onChange={onInputChange}
-              />
-              <span className="pl-4">{props.children}</span>
-          </label>
-          {
-            Icon?
-              <button onClick={onIconClick} className="flex">
-                <Icon className="transform scale-100 md:scale-125 ml-3" />
-              </button>
-              :''
-          }
-      </div>
+    <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+      <label htmlFor={inputId} className="cursor-pointer flex items-center">
+        <input
+          type="checkbox"
+          id={inputId}
+          checked={inputChecked}
+          onChange={onInputChange}
+        />
+        <span className="pl-4">{props.children}</span>
+      </label>
+      {
+        Icon?
+          <button onClick={onIconClick} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
+            <Icon className="transform scale-100 md:scale-125" />
+          </button>
+          :''
+      }
+    </div>
   )
 }
 
@@ -61,7 +61,7 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
             type="text" 
             id="badge-label-text" 
             placeholder="Profile views" 
-            className="w-2/4 bg-gray-400 pl-2"
+            className="w-2/4 bg-gray-300 pl-2"
             onChange={(e) => onBadgeUpdate('badgeLabel', e.target.value.trim())}
             defaultValue={badgeOptions.badgeLabel}
           />
@@ -69,14 +69,19 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
         
         <span className="mt-2 flex items-center">
           Preview:&nbsp;
-          <img 
-            src={`https://komarev.com/ghpvc/`
-                + `?username=${githubName}`
-                + `&label=${encodeURI(badgeOptions.badgeLabel)}`
-                + `&color=${badgeOptions.badgeColor}`
-                + `&style=${badgeOptions.badgeStyle}`
-                }
-          />
+          {
+            isGitHubUsernameValid(githubName)?
+              <img 
+                src={`https://komarev.com/ghpvc/`
+                    + `?username=${githubName}`
+                    + `&label=${encodeURI(badgeOptions.badgeLabel)}`
+                    + `&color=${badgeOptions.badgeColor}`
+                    + `&style=${badgeOptions.badgeStyle}`
+                    }
+              />
+            : <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+          }
+          
         </span>
       </div>
     </div>
