@@ -171,6 +171,11 @@ const categorizedSkills = {
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
 
+  game_engines:{
+    title: "Game Engines",
+    skills: ["unity"],
+  },
+
   other: {
     title: "Other",
     skills: ["linux", "git"],
@@ -368,7 +373,9 @@ const icons = {
   elasticsearch:
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg"
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
 
 const skillWebsites = {
@@ -489,7 +496,8 @@ const skillWebsites = {
   kibana: "https://www.elastic.co/kibana",
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
-  circleci: "https://circleci.com"
+  circleci: "https://circleci.com",
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}
