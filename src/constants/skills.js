@@ -11,6 +11,7 @@ const categorizedSkills = {
       "javascript",
       "typescript",
       "php",
+      "perl",
       "ruby",
       "scala",
       "python",
@@ -252,6 +253,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
+  perl:
+    "https://www.vectorlogo.zone/logos/perl/perl-vertical.svg",
   postgresql:
     "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
   python:
@@ -418,6 +421,7 @@ const skillWebsites = {
   oracle: "https://www.oracle.com/",
   photoshop: "https://www.photoshop.com/en",
   php: "https://www.php.net",
+  perl: "https://www.perl.org/",
   postgresql: "https://www.postgresql.org",
   python: "https://www.python.org",
   rails: "https://rubyonrails.org",
