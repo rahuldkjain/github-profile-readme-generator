@@ -170,7 +170,11 @@ const categorizedSkills = {
     title: "Static Site Generators",
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
-
+  dev_environment:{
+    title:"Dev environment",
+    skills:["vim","vscode", "eclipse", "pycharm", "jupyter notebooks", "intellij", "webstorm", "sublime", 
+    "mysql workbench", "postbird","atom"]
+  },
   other: {
     title: "Other",
     skills: ["linux", "git"],
@@ -368,7 +372,19 @@ const icons = {
   elasticsearch:
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg"
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  vim:"https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg",
+  vscode:"https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+  eclipse:"https://cdn.worldvectorlogo.com/logos/eclipse-11.svg",
+  pycharm:"https://upload.wikimedia.org/wikipedia/commons/a/a1/PyCharm_Logo.svg",
+  "jupyter notebooks":"https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg",
+  intellij:"https://upload.wikimedia.org/wikipedia/commons/d/d5/IntelliJ_IDEA_Logo.svg",
+  sublime:"https://cdn.worldvectorlogo.com/logos/sublime-text.svg",
+  atom:"https://github.com/haideralipunjabi/atom-icons/raw/master/svg/poptheme_night-owl.svg",
+  webstorm:"https://cdn.freebiesupply.com/logos/large/2x/webstorm-icon-logo-svg-vector.svg",
+  "mysql workbench":"https://www.michaelstults.com/wp-content/uploads/2014/10/MySQLWorkbench-300x300.png",
+  postbird:"https://www.electronjs.org/app-img/postbird/postbird-icon-128.png"
+
 }
 
 const skillWebsites = {
