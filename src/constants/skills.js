@@ -168,7 +168,18 @@ const categorizedSkills = {
 
   static_site_generator: {
     title: "Static Site Generators",
-    skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
+    skills: [
+      "gatsby", 
+      "gridsome", 
+      "hugo", 
+      "jekyll", 
+      "nextjs", 
+      "nuxtjs", 
+      "11ty", 
+      "scully",
+      "sculpin",
+      "sapper",
+    ],
   },
 
   other: {
@@ -368,7 +379,15 @@ const icons = {
   elasticsearch:
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg"
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  scully:
+    "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
+  "11ty":
+    "https://www.11ty.dev/img/avatars/twitter/d4dc83e-90.webp",
+  sculpin:
+    "https://sculpin.io/css/sculpin-mascot-jackson-medium.png",
+  sapper:
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
 }
 
 const skillWebsites = {
@@ -489,7 +508,11 @@ const skillWebsites = {
   kibana: "https://www.elastic.co/kibana",
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
-  circleci: "https://circleci.com"
+  circleci: "https://circleci.com",
+  scully: "https://scully.io/",
+  sculpin: "https://sculpin.io/",
+  "11ty": "https://www.11ty.dev/",
+  sapper: "https://sapper.svelte.dev/",
 }
 
 const initialSkillState = {}
