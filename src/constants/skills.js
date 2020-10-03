@@ -158,6 +158,7 @@ const categorizedSkills = {
     title: "Software",
     skills: [
       "illustrator",
+      "AdobeXD",
       "photoshop",
       "figma",
       "blender",
@@ -194,6 +195,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
     "https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg",
+  AdobeXD:
+  "https://github.com/MThakkar121/github-profile-readme-generator/blob/master/src/images/icons/adobe-xd.svg",
   backbonejs:
     "https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg",
   bootstrap:
@@ -386,6 +389,7 @@ const skillWebsites = {
   angularjs: "https://angular.io",
   aws: "https://aws.amazon.com",
   android: "https://developer.android.com",
+  AdobeXD: "https://www.adobe.com/in/products/xd.html",
   backbonejs: "https://backbonejs.org",
   bootstrap: "https://getbootstrap.com",
   c: "https://www.cprogramming.com/",
