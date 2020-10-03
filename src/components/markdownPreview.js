@@ -89,6 +89,7 @@ const MarkdownPreview = props => {
         <DisplayWork prefix={prefix.ama} project={data.ama} />
         <DisplayWork prefix={prefix.portfolio} link={link.portfolio} />
         <DisplayWork prefix={prefix.blog} link={link.blog} />
+        <DisplayWork prefix={prefix.resume} link={link.resume} />
         <DisplayWork prefix={prefix.contact} project={data.contact} />
         <DisplayWork prefix={prefix.funFact} project={data.funFact} />
       </>
