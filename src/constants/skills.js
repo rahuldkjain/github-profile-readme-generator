@@ -97,7 +97,7 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
-      "elasticsearch"
+      "elasticsearch",
     ],
   },
 
@@ -117,7 +117,7 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
-      "circleci"
+      "circleci",
     ],
   },
 
@@ -137,7 +137,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar"
+      "quasar",
     ],
   },
 
@@ -164,6 +164,7 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
+      "xd",
     ],
   },
 
@@ -172,7 +173,7 @@ const categorizedSkills = {
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
 
-  game_engines:{
+  game_engines: {
     title: "Game Engines",
     skills: ["unity"],
   },
@@ -306,6 +307,7 @@ const icons = {
   illustrator:
     "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
   figma: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+  xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   blender:
     "https://download.blender.org/branding/community/blender_community_badge_white.svg",
   babel: "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg",
@@ -366,18 +368,13 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-  quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  quasar: "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
   kibana:
     "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
-  grafana:
-    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
-  elasticsearch:
-    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
-  circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
-  unity:
-    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+  grafana: "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci: "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
 }
 
 const skillWebsites = {
@@ -500,7 +497,7 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  unity: "https://unity.com/"
+  unity: "https://unity.com/",
 }
 
 const initialSkillState = {}
