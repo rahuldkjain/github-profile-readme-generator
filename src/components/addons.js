@@ -61,6 +61,13 @@ const Addons = props => {
         display visitors count badge
       </AddonsItem>
       <AddonsItem
+        inputId="github-profile-trophy"
+        inputChecked={props.data.githubProfileTrophy}
+        onInputChange={() => props.handleCheckChange("githubProfileTrophy")}
+      >
+        display github trophy
+      </AddonsItem>
+      <AddonsItem
         inputId="github-stats"
         inputChecked={props.data.githubStats}
         onInputChange={() => props.handleCheckChange("githubStats")}

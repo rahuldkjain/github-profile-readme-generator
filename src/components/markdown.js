@@ -1,6 +1,7 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
+import {devEnvironmentArr} from "../constants/devenvironment";
 
 const Markdown = props => {
   const Title = props => {
@@ -92,6 +93,20 @@ const Markdown = props => {
     }
     return ""
   }
+  const GithubProfileTrophy = props => {
+    let link =
+      "https://github-profile-trophy.vercel.app/?username=" + props.github
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="${link}" alt="${props.github}" /></a> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
   const GitHubStats = props => {
     let link =
       "https://github-readme-stats.vercel.app/api?username=" +
@@ -157,6 +172,30 @@ const Markdown = props => {
       ""
     )
   }
+  const DisplayDevEnv = props => {
+    let devenv = [];
+    devEnvironmentArr.forEach((env) => {
+      if(props.devenv[env.title]){
+        devenv.push(
+          `
+          <a href="${env.url }" target="_blank">
+            <img src="${env.image}" alt="${env.title}" width="40" height="40"/>
+          </a>
+          `
+        )
+      }
+    })
+    return devenv.length > 0 ? (
+      <>
+        <SectionTitle label="Dev environment:" />
+        {`<p align="left">${devenv.join(" ")}</p>`}
+        <br />
+        <br />
+      </>
+    ) : (
+      ""
+    )
+  }
   const DisplayDynamicBlogs = props => {
     if (props.show) {
       return (
@@ -208,6 +247,12 @@ const Markdown = props => {
       <>
         <VisitorsBadge
           show={props.data.visitorsBadge}
+          github={props.social.github}
+        />
+      </>
+      <>
+        <GithubProfileTrophy
+          show={props.data.githubProfileTrophy}
           github={props.social.github}
         />
       </>
@@ -427,6 +472,9 @@ const Markdown = props => {
       {isSocial(props.social) ? <>{`</p>`}<br/><br/></> : ""}
       <>
         <DisplaySkills skills={props.skills} />
+      </>
+      <>
+        <DisplayDevEnv devenv={props.devenv}/>
       </>
       <>
         <DisplayTopLanguages

@@ -56,6 +56,7 @@ const categorizedSkills = {
       "nodejs",
       "spring",
       "express",
+      "graphql",
       "kafka",
       "solr",
       "rabbitMQ",
@@ -170,10 +171,10 @@ const categorizedSkills = {
     title: "Static Site Generators",
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
-  dev_environment:{
-    title:"Dev environment",
-    skills:["vim","vscode", "eclipse", "pycharm", "jupyter notebooks", "intellij", "webstorm", "sublime", 
-    "mysql workbench", "postbird","atom","brackets"]
+
+  game_engines:{
+    title: "Game Engines",
+    skills: ["unity"],
   },
   other: {
     title: "Other",
@@ -221,6 +222,7 @@ const icons = {
   express:
     "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
   go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
+  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
   html5:
@@ -373,19 +375,8 @@ const icons = {
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
     "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
-  vim:"https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg",
-  vscode:"https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
-  eclipse:"https://cdn.worldvectorlogo.com/logos/eclipse-11.svg",
-  pycharm:"https://upload.wikimedia.org/wikipedia/commons/a/a1/PyCharm_Logo.svg",
-  "jupyter notebooks":"https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg",
-  intellij:"https://upload.wikimedia.org/wikipedia/commons/d/d5/IntelliJ_IDEA_Logo.svg",
-  sublime:"https://cdn.worldvectorlogo.com/logos/sublime-text.svg",
-  atom:"https://github.com/haideralipunjabi/atom-icons/raw/master/svg/poptheme_night-owl.svg",
-  webstorm:"https://cdn.freebiesupply.com/logos/large/2x/webstorm-icon-logo-svg-vector.svg",
-  "mysql workbench":"https://www.michaelstults.com/wp-content/uploads/2014/10/MySQLWorkbench-300x300.png",
-  postbird:"https://www.electronjs.org/app-img/postbird/postbird-icon-128.png",
-  brackets:"https://upload.wikimedia.org/wikipedia/commons/4/4c/Brackets_Icon.svg"
-
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
 
 const skillWebsites = {
@@ -410,6 +401,7 @@ const skillWebsites = {
   electron: "https://www.electronjs.org",
   express: "https://expressjs.com",
   go: "https://golang.org",
+  graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
   html5: "https://www.w3.org/html/",
   hugo: "https://gohugo.io/",
@@ -507,18 +499,7 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  vim:"https://www.vim.org/",
-  vscode:"https://code.visualstudio.com/",
-  eclipse:"https://www.eclipse.org/",
-  pycharm:"https://www.jetbrains.com/pycharm/",
-  "jupyter notebooks":"https://jupyter.org/",
-  intellij:"https://www.jetbrains.com/idea/",
-  webstorm:"https://www.jetbrains.com/webstorm/",
-  sublime:"https://www.sublimetext.com/",
-  "mysql workbench":"https://www.mysql.com/products/workbench/",
-  postbird:"https://www.electronjs.org/apps/postbird",
-  atom:"https://atom.io/",
-  brackets:"http://brackets.io/"
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}
