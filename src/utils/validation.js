@@ -9,4 +9,9 @@ const isMediumUsernameValid = username => {
   return true
 }
 
-export { isGitHubUsernameValid, isMediumUsernameValid }
+const isTwitterUsernameValid = username => {
+  var pattern = /^[a-zA-Z0-9_]{1,15}$/
+  return pattern.test(username)
+}
+
+export { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid }
