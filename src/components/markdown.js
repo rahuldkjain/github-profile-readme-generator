@@ -469,7 +469,15 @@ const Markdown = props => {
           username={props.social.rssurl}
         />
       </>
-      {isSocial(props.social) ? <>{`</p>`}<br/><br/></> : ""}
+      {isSocial(props.social) ? (
+        <>
+          {`</p>`}
+          <br />
+          <br />
+        </>
+      ) : (
+        ""
+      )}
       <>
         <DisplaySkills skills={props.skills} />
       </>
