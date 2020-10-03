@@ -38,9 +38,11 @@ const DEFAULT_PREFIX = {
   helpWith: "🤝 I’m looking for help with",
   ama: "💬 Ask me about",
   contact: "📫 How to reach me",
+  resume: "📄 Know about my experiences",
   funFact: "⚡ Fun fact",
   portfolio: "👨‍💻 All of my projects are available at",
   blog: "📝 I regulary write articles on",
+  
 }
 
 const DEFAULT_DATA = {
@@ -67,6 +69,7 @@ const DEFAULT_LINK = {
   helpWith: "",
   portfolio: "",
   blog: "",
+  resume: "",
 }
 
 const DEFAULT_SOCIAL = {
