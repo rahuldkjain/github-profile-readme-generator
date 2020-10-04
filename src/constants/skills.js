@@ -164,7 +164,6 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
-      "xd",
     ],
   },
 
@@ -175,7 +174,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: "Game Engines",
-    skills: ["unity"],
+    skills: ["unity", "unreal"],
   },
 
   other: {
@@ -307,7 +306,6 @@ const icons = {
   illustrator:
     "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
   figma: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
-  xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   blender:
     "https://download.blender.org/branding/community/blender_community_badge_white.svg",
   babel: "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg",
@@ -375,6 +373,8 @@ const icons = {
   elasticsearch: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci: "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
   unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+  unreal:
+    "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg",
 }
 
 const skillWebsites = {
