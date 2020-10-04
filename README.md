@@ -170,7 +170,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/sarbikbetal"><img src="https://avatars2.githubusercontent.com/u/41508422?v=4" width="100px;" alt=""/><br /><sub><b>Sarbik Betal</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=sarbikbetal" title="Code">💻</a></td>
     <td align="center"><a href="https://komarev.com"><img src="https://avatars0.githubusercontent.com/u/1849174?v=4" width="100px;" alt=""/><br /><sub><b>Anton Komarev</b></sub></a><br /><a href="#plugin-antonkomarev" title="Plugin/utility libraries">🔌</a></td>
-    <td align="center"><a href="https://github.com/abhijit-hota"><img src="https://avatars0.githubusercontent.com/u/8116174?v=4" width="100px;" alt=""/><br /><sub><b>Abhijit Hota</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=abhijit-hota" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/abhijit-hota"><img src="https://avatars0.githubusercontent.com/u/8116174?v=4" width="100px;" alt=""/><br /><sub><b>Abhijit Hota</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=abhijit-hota" title="Code">💻</a> <a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=abhijit-hota" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
