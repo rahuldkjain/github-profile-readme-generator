@@ -62,6 +62,7 @@ const categorizedSkills = {
       "rabbitMQ",
       "hadoop",
       "nginx",
+      "openresty",
     ],
   },
 
@@ -259,6 +260,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg",
   nodejs:
     "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg",
+  openresty:
+    "https://symbols-electrical.getvecta.com/stencil_25/66_openresty.403a21ca72.svg",
   oracle:
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
@@ -439,6 +442,7 @@ const skillWebsites = {
   mysql: "https://www.mysql.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
+  openresty: "https://openresty.org/",
   oracle: "https://www.oracle.com/",
   photoshop: "https://www.photoshop.com/en",
   xd: "https://www.adobe.com/products/xd.html",
