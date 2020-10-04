@@ -96,6 +96,19 @@ const Markdown = props => {
     }
     return ""
   }
+  const TwitterBadge = props => {
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <img src="${link}" alt="${props.twitter}" /> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
   const GithubProfileTrophy = props => {
     let link =
       "https://github-profile-trophy.vercel.app/?username=" + props.github
@@ -238,6 +251,10 @@ const Markdown = props => {
         <GithubProfileTrophy
           show={props.data.githubProfileTrophy}
           github={props.social.github}
+        />
+        <TwitterBadge
+          show={props.data.twitterBadge}
+          twitter={props.social.twitter}
         />
       </>
       <>

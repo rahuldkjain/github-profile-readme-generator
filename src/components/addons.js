@@ -191,6 +191,13 @@ const Addons = props => {
         display top skills
       </AddonsItem>
       <AddonsItem
+        inputId="twitter-badge"
+        inputChecked={props.data.twitterBadge}
+        onInputChange={() => props.handleCheckChange("twitterBadge")}
+      >
+        display twitter badge
+      </AddonsItem>
+      <AddonsItem
         inputId="dev-dynamic-blogs"
         inputChecked={props.data.devDynamicBlogs}
         onInputChange={() => props.handleCheckChange("devDynamicBlogs")}
