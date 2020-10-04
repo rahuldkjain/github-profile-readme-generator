@@ -533,6 +533,7 @@ const skillWebsites = {
   sculpin: "https://sculpin.io/",
   "11ty": "https://www.11ty.dev/",
   sapper: "https://sapper.svelte.dev/",
+  vuepress: "https://vuepress.vuejs.org/",
   unity: "https://unity.com/"
 }
 
