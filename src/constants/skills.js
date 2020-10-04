@@ -171,7 +171,18 @@ const categorizedSkills = {
 
   static_site_generator: {
     title: "Static Site Generators",
-    skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
+    skills: [
+      "gatsby", 
+      "gridsome", 
+      "hugo", 
+      "jekyll", 
+      "nextjs", 
+      "nuxtjs", 
+      "11ty", 
+      "scully",
+      "sculpin",
+      "sapper",
+    ],
   },
 
   game_engines:{
@@ -381,6 +392,14 @@ const icons = {
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
     "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  scully:
+    "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
+  "11ty":
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg",
+  sculpin:
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
+  sapper:
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
   unity:
     "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
@@ -507,6 +526,10 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
+  scully: "https://scully.io/",
+  sculpin: "https://sculpin.io/",
+  "11ty": "https://www.11ty.dev/",
+  sapper: "https://sapper.svelte.dev/",
   unity: "https://unity.com/"
 }
 
