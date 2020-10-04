@@ -11,6 +11,7 @@ const categorizedSkills = {
       "javascript",
       "typescript",
       "php",
+      "perl",
       "ruby",
       "scala",
       "python",
@@ -62,6 +63,7 @@ const categorizedSkills = {
       "rabbitMQ",
       "hadoop",
       "nginx",
+      "openresty",
     ],
   },
 
@@ -97,6 +99,7 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
+      "cockroachdb",
       "elasticsearch",
     ],
   },
@@ -159,6 +162,7 @@ const categorizedSkills = {
     skills: [
       "illustrator",
       "photoshop",
+      "xd",
       "figma",
       "blender",
       "sketch",
@@ -169,7 +173,18 @@ const categorizedSkills = {
 
   static_site_generator: {
     title: "Static Site Generators",
-    skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
+    skills: [
+      "gatsby", 
+      "gridsome", 
+      "hugo", 
+      "jekyll", 
+      "nextjs", 
+      "nuxtjs", 
+      "11ty", 
+      "scully",
+      "sculpin",
+      "sapper",
+    ],
   },
 
   game_engines: {
@@ -246,12 +261,18 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg",
   nodejs:
     "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg",
+  openresty:
+    "https://symbols-electrical.getvecta.com/stencil_25/66_openresty.403a21ca72.svg",
   oracle:
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
+  xd:
+    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
+  perl:
+    "https://api.iconify.design/logos-perl.svg",
   postgresql:
     "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
   python:
@@ -339,6 +360,7 @@ const icons = {
   nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
+  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
   objectivec:
     "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
   clojure:
@@ -369,12 +391,24 @@ const icons = {
   quasar: "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
   kibana:
     "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
-  grafana: "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
-  elasticsearch: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
-  circleci: "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
-  unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
   unreal:
     "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg",
+  grafana:
+    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch:
+    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci:
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  scully:
+    "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
+  "11ty":
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg",
+  sculpin:
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
+  sapper:
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
 
 const skillWebsites = {
@@ -412,9 +446,12 @@ const skillWebsites = {
   mysql: "https://www.mysql.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
+  openresty: "https://openresty.org/",
   oracle: "https://www.oracle.com/",
   photoshop: "https://www.photoshop.com/en",
+  xd: "https://www.adobe.com/products/xd.html",
   php: "https://www.php.net",
+  perl: "https://www.perl.org/",
   postgresql: "https://www.postgresql.org",
   python: "https://www.python.org",
   rails: "https://rubyonrails.org",
@@ -474,6 +511,7 @@ const skillWebsites = {
   nextjs: "https://nextjs.org/",
   reactnative: "https://reactnative.dev/",
   mariadb: "https://mariadb.org/",
+  cockroachdb: "https://www.cockroachlabs.com/product/cockroachdb/",
   objectivec: "",
   clojure: "",
   haskell: "",
@@ -497,7 +535,11 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  unity: "https://unity.com/",
+  scully: "https://scully.io/",
+  sculpin: "https://sculpin.io/",
+  "11ty": "https://www.11ty.dev/",
+  sapper: "https://sapper.svelte.dev/",
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}
