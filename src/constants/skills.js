@@ -159,6 +159,7 @@ const categorizedSkills = {
     skills: [
       "illustrator",
       "photoshop",
+      "xd",
       "figma",
       "blender",
       "sketch",
@@ -250,6 +251,8 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
+  xd:
+    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
   postgresql:
@@ -417,6 +420,7 @@ const skillWebsites = {
   nodejs: "https://nodejs.org",
   oracle: "https://www.oracle.com/",
   photoshop: "https://www.photoshop.com/en",
+  xd: "https://www.adobe.com/products/xd.html",
   php: "https://www.php.net",
   postgresql: "https://www.postgresql.org",
   python: "https://www.python.org",
