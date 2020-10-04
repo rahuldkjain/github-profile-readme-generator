@@ -27,6 +27,7 @@ import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
+  isTwitterUsernameValid
 } from "../utils/validation"
 import Layout from "../components/layout"
 
@@ -230,13 +231,13 @@ const IndexPage = () => {
       data.visitorsBadge ||
       data.githubProfileTrophy ||
       data.githubStats ||
-      data.topLanguages
+      data.topLanguages || 
     ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
       }
-    } else if (data.twitterBadge) {
-      if (social.twitter) {
+    } else if (data.twitterBadge && social.twitter) {
+      if (isTwitterUsernameValid(social.twitter)) {
         generate()
       }
     } else if (social.github) {
@@ -529,9 +530,16 @@ const IndexPage = () => {
             ) : (
               ""
             )}
-            {(data.twitterBadge && !social.twitter) ? (
+            {data.twitterBadge && !social.twitter ? (
               <div className="warning">
                 * Please add twitter username to use these add-ons
+              </div>
+            ) : (
+              ""
+            )}
+            {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
+              <div className="warning">
+                * Twitter username is invalid, please add a valid username
               </div>
             ) : (
               ""
