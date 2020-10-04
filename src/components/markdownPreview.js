@@ -222,7 +222,11 @@ const MarkdownPreview = props => {
     )
   }
   const VisitorsBadgePreview = props => {
-    let link = "https://komarev.com/ghpvc/?username=" + props.github
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <div className="text-left my-2">
@@ -233,13 +237,28 @@ const MarkdownPreview = props => {
     }
     return null
   }
-    const TwitterBadgePreview = props => {
+  const TwitterBadgePreview = props => {
     let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
     if (props.show) {
       return (
         <div className="text-left my-2">
           {" "}
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />{" "}
+        </div>
+      )
+    }
+    return null
+  }
+  const GithubProfileTrophyPreview = props => {
+    let link =
+      "https://github-profile-trophy.vercel.app/?username=" + props.github
+    if (props.show) {
+      return (
+        <div className="text-left my-2">
+          {" "}
+          <a href="https://github.com/ryo-ma/github-profile-trophy">
+            <img src={link} alt={props.github} />
+          </a>{" "}
         </div>
       )
     }
@@ -304,6 +323,15 @@ const MarkdownPreview = props => {
       <SubTitlePreview subtitle={props.data.subtitle} />
       <VisitorsBadgePreview
         show={props.data.visitorsBadge}
+        github={props.social.github}
+        badgeOptions={{
+          badgeLabel: encodeURI(props.data.badgeLabel),
+          badgeColor: props.data.badgeColor,
+          badgeStyle: props.data.badgeStyle
+        }}
+      />
+      <GithubProfileTrophyPreview
+        show={props.data.githubProfileTrophy}
         github={props.social.github}
       />
       <TwitterBadgePreview

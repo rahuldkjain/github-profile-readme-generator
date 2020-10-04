@@ -53,7 +53,12 @@ const DEFAULT_DATA = {
   ama: "",
   contact: "",
   funFact: "",
+  twitterBadge: false,
   visitorsBadge: false,
+  badgeStyle: "flat",
+  badgeColor: "0e75b6",
+  badgeLabel: "Profile views",
+  githubProfileTrophy: false,
   githubStats: false,
   topLanguages: false,
   devDynamicBlogs: false,
@@ -221,8 +226,17 @@ const IndexPage = () => {
     trimDataValues(social, setSocial)
     trimDataValues(link, setLink)
     resetCopyMarkdownButton()
-    if (data.visitorsBadge || data.githubStats || data.topLanguages) {
+    if (
+      data.visitorsBadge ||
+      data.githubProfileTrophy ||
+      data.githubStats ||
+      data.topLanguages
+    ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
+        generate()
+      }
+    } else if (data.twitterBadge) {
+      if (social.twitter)) {
         generate()
       }
     } else if (social.github) {
@@ -359,10 +373,10 @@ const IndexPage = () => {
       return
     }
 
-    setPrefix(cache.prefix || DEFAULT_PREFIX)
-    setData(cache.data || DEFAULT_DATA)
-    setLink(cache.link || DEFAULT_LINK)
-    setSocial(cache.social || DEFAULT_SOCIAL)
+    setPrefix(cache.prefix ? {...DEFAULT_PREFIX, ...cache.prefix} : DEFAULT_PREFIX)
+    setData(cache.data ? {...DEFAULT_DATA, ...cache.data} : DEFAULT_DATA)
+    setLink(cache.link ? {...DEFAULT_LINK, ...cache.link} : DEFAULT_LINK)
+    setSocial(cache.social ? {...DEFAULT_SOCIAL, ...cache.social} : DEFAULT_SOCIAL)
 
     const cacheSkills = mergeDefaultWithNewDataSkills(
       DEFAULT_SKILLS,
@@ -464,9 +478,13 @@ const IndexPage = () => {
             data={data}
             social={social}
             handleCheckChange={handleCheckChange}
+            handleDataChange={handleDataChange}
           />
           <div className="section">
-            {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
+            {(data.visitorsBadge ||
+              data.githubProfileTrophy ||
+              data.githubStats ||
+              data.topLanguages) &&
             !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons
@@ -507,6 +525,13 @@ const IndexPage = () => {
               <div className="warning">
                 * Please add your rss feed url to display latest blogs
                 dynamically from your personal blog
+              </div>
+            ) : (
+              ""
+            )}
+            {(data.twitterBadge && !social.twitter ? (
+              <div className="warning">
+                * Please add twitter username to use these add-ons
               </div>
             ) : (
               ""
