@@ -236,7 +236,7 @@ const IndexPage = () => {
         generate()
       }
     } else if (data.twitterBadge) {
-      if (social.twitter)) {
+      if (social.twitter) {
         generate()
       }
     } else if (social.github) {
