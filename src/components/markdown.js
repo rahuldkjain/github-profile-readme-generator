@@ -101,7 +101,7 @@ const Markdown = props => {
     if (props.show) {
       return (
         <>
-          {`<p align="left"> <img src="${link}" alt="${props.twitter}" /> </p>`}
+          {`<p align="left"> <a href="https://twitter.com/{props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
           <br />
           <br />
         </>
