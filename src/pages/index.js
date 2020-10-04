@@ -529,7 +529,7 @@ const IndexPage = () => {
             ) : (
               ""
             )}
-            {(data.twitterBadge && !social.twitter ? (
+            {(data.twitterBadge && !social.twitter) ? (
               <div className="warning">
                 * Please add twitter username to use these add-ons
               </div>
