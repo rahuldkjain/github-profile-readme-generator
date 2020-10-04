@@ -229,6 +229,7 @@ const Addons = props => {
             download
             <span
               onClick={blogPostPorkflow}
+              onKeyDown={(e) => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
               tabIndex="0"
               style={{ cursor: "pointer", color: "#002ead" }}
