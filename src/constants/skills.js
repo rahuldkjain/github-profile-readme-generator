@@ -11,6 +11,7 @@ const categorizedSkills = {
       "javascript",
       "typescript",
       "php",
+      "perl",
       "ruby",
       "scala",
       "python",
@@ -270,6 +271,8 @@ const icons = {
     "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
+  perl:
+    "https://api.iconify.design/logos-perl.svg",
   postgresql:
     "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
   python:
@@ -447,6 +450,7 @@ const skillWebsites = {
   photoshop: "https://www.photoshop.com/en",
   xd: "https://www.adobe.com/products/xd.html",
   php: "https://www.php.net",
+  perl: "https://www.perl.org/",
   postgresql: "https://www.postgresql.org",
   python: "https://www.python.org",
   rails: "https://rubyonrails.org",
