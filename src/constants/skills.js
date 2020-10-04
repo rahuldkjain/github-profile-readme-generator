@@ -182,6 +182,7 @@ const categorizedSkills = {
       "scully",
       "sculpin",
       "sapper",
+      "vuepress"
     ],
   },
 
@@ -400,6 +401,8 @@ const icons = {
     "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
   sapper:
     "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
+  vuepress:
+    "https://raw.githubusercontent.com/vuejs/vuepress/master/packages/docs/docs/.vuepress/public/hero.png",
   unity:
     "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
