@@ -303,6 +303,9 @@ const Markdown = props => {
         />
       </>
       <>
+        <DisplayWork prefix={props.prefix.resume} link={props.link.resume} />
+      </>
+      <>
         <DisplayWork
           prefix={props.prefix.funFact}
           project={props.data.funFact}
