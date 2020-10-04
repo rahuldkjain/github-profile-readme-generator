@@ -236,8 +236,8 @@ const IndexPage = () => {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
       }
-    } else if (data.twitterBadge && social.twitter) {
-      if (isTwitterUsernameValid(social.twitter)) {
+    } else if (data.twitterBadge) {
+      if (social.twitter && isTwitterUsernameValid(social.twitter)) {
         generate()
       }
     } else if (social.github) {
