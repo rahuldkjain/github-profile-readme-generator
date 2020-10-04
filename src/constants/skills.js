@@ -402,7 +402,7 @@ const icons = {
   sapper:
     "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
   vuepress:
-    "https://raw.githubusercontent.com/vuejs/vuepress/master/packages/docs/docs/.vuepress/public/hero.png",
+    "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",
   unity:
     "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
