@@ -53,7 +53,12 @@ const DEFAULT_DATA = {
   ama: "",
   contact: "",
   funFact: "",
+  twitterBadge: false,
   visitorsBadge: false,
+  badgeStyle: "flat",
+  badgeColor: "0e75b6",
+  badgeLabel: "Profile views",
+  githubProfileTrophy: false,
   githubStats: false,
   topLanguages: false,
   devDynamicBlogs: false,
@@ -221,8 +226,17 @@ const IndexPage = () => {
     trimDataValues(social, setSocial)
     trimDataValues(link, setLink)
     resetCopyMarkdownButton()
-    if (data.visitorsBadge || data.githubStats || data.topLanguages) {
+    if (
+      data.visitorsBadge ||
+      data.githubProfileTrophy ||
+      data.githubStats ||
+      data.topLanguages
+    ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
+        generate()
+      }
+    } else if (data.twitterBadge) {
+      if (social.twitter) {
         generate()
       }
     } else if (social.github) {
@@ -359,10 +373,10 @@ const IndexPage = () => {
       return
     }
 
-    setPrefix(cache.prefix || DEFAULT_PREFIX)
-    setData(cache.data || DEFAULT_DATA)
-    setLink(cache.link || DEFAULT_LINK)
-    setSocial(cache.social || DEFAULT_SOCIAL)
+    setPrefix(cache.prefix ? {...DEFAULT_PREFIX, ...cache.prefix} : DEFAULT_PREFIX)
+    setData(cache.data ? {...DEFAULT_DATA, ...cache.data} : DEFAULT_DATA)
+    setLink(cache.link ? {...DEFAULT_LINK, ...cache.link} : DEFAULT_LINK)
+    setSocial(cache.social ? {...DEFAULT_SOCIAL, ...cache.social} : DEFAULT_SOCIAL)
 
     const cacheSkills = mergeDefaultWithNewDataSkills(
       DEFAULT_SKILLS,
@@ -464,9 +478,13 @@ const IndexPage = () => {
             data={data}
             social={social}
             handleCheckChange={handleCheckChange}
+            handleDataChange={handleDataChange}
           />
           <div className="section">
-            {(data.visitorsBadge || data.githubStats || data.topLanguages) &&
+            {(data.visitorsBadge ||
+              data.githubProfileTrophy ||
+              data.githubStats ||
+              data.topLanguages) &&
             !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons
@@ -511,6 +529,13 @@ const IndexPage = () => {
             ) : (
               ""
             )}
+            {(data.twitterBadge && !social.twitter) ? (
+              <div className="warning">
+                * Please add twitter username to use these add-ons
+              </div>
+            ) : (
+              ""
+            )}
           </div>
           <div className="flex items-center justify-center w-full">
             <div
@@ -518,6 +543,7 @@ const IndexPage = () => {
               tabIndex="0"
               role="button"
               onClick={handleGenerate}
+              onKeyDown={(e) => e.keyCode === 13 && handleGenerate()}
             >
               Generate README
             </div>
@@ -529,21 +555,17 @@ const IndexPage = () => {
         {generateMarkdown || generatePreview ? (
           <div className="markdown-section p-4 sm:py-4 sm:px-10">
             <div className="w-full flex justify-between items-center">
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                role="button"
+              <button
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
                 onClick={handleBackToEdit}
               >
-                <ArrowLeftIcon size={16} />
+                <ArrowLeftIcon size={24} />
                 <span className="hidden sm:block"> back to edit</span>
-              </div>
+              </button>
 
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
+              <button
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
                 id="copy-button"
-                role="button"
                 onClick={handleCopyToClipboard}
               >
                 {copyObj.isCopied === true ? (
@@ -554,38 +576,32 @@ const IndexPage = () => {
                 <span className="hidden sm:block" id="copy-markdown">
                   {copyObj.copiedText}
                 </span>
-              </div>
+              </button>
 
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
+              <button
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
                 id="download-md-button"
-                role="button"
                 onClick={handleDownloadMarkdown}
               >
                 <DownloadIcon size={24} />
                 <span className="hidden sm:block" id="download-markdown">
                   download markdown
                 </span>
-              </div>
+              </button>
 
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
+              <button
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
                 id="download-json-button"
-                role="button"
                 onClick={handleDownloadJson}
               >
                 <FileCodeIcon size={24} />
                 <span className="hidden sm:block" id="download-json">
                   download backup
                 </span>
-              </div>
+              </button>
 
-              <div
-                className="cursor-pointer text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
-                tabIndex="0"
-                role="button"
+              <button
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
                 onClick={handleGeneratePreview}
               >
                 {previewMarkdown.isPreview ? (
@@ -596,7 +612,7 @@ const IndexPage = () => {
                 <span className="hidden sm:block ml-1" id="preview-markdown">
                   {previewMarkdown.buttonText}
                 </span>
-              </div>
+              </button>
             </div>
 
             <div className="w-full flex justify-center items-center">
@@ -648,14 +664,12 @@ const IndexPage = () => {
                 new feature
               </span>
             </div>
-            <div
+            <button
               className="text-xxs sm:text-sm border-2 w-auto px-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center"
-              role="button"
-              tabIndex="0"
               onClick={handleResetForm}
             >
               Reset form
-            </div>
+            </button>
           </div>
           <div className="w-full flex justify-start items-center my-4">
             <input
@@ -665,14 +679,12 @@ const IndexPage = () => {
               value={restore}
               onChange={e => setRestore(e.target.value)}
             />
-            <div
+            <button
               className="text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
-              role="button"
-              tabIndex="0"
               onClick={handleRestore}
             >
               Restore
-            </div>
+            </button>
           </div>
           <div className="flex flex-col items-start justify-center">
             <div className="text-green-700 font-medium">Tips</div>
