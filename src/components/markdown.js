@@ -98,8 +98,8 @@ const Markdown = props => {
   }
   const TwitterBadge = props => {
     let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    let hLink = "https://twitter.com/" + props.twitter
     if (props.show) {
-      let hLink = "https://twitter.com/" + props.twitter
       return (
         <>
           {`<p align="left"> <a href="${hLink}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
