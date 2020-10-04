@@ -97,7 +97,7 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
-      "elasticsearch"
+      "elasticsearch",
     ],
   },
 
@@ -117,7 +117,7 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
-      "circleci"
+      "circleci",
     ],
   },
 
@@ -137,7 +137,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar"
+      "quasar",
     ],
   },
 
@@ -172,9 +172,27 @@ const categorizedSkills = {
     skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
   },
 
-  game_engines:{
+  game_engines: {
     title: "Game Engines",
     skills: ["unity"],
+  },
+
+  text_editors: {
+    title: "Texto Editors",
+    skills: [
+      "vscode",
+      "atom",
+      "sublime",
+      "vim",
+      "brackets",
+      "notepad",
+      "eclipse",
+      "netbeans",
+      "webstorm",
+      "phpstorm",
+      "pycharm",
+      "intelliJ",
+    ],
   },
 
   other: {
@@ -366,18 +384,35 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-  quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  quasar: "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
   kibana:
     "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
-  grafana:
-    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
-  elasticsearch:
-    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
-  circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
-  unity:
-    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+  grafana: "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci: "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+  vscode: "https://code.visualstudio.com/assets/updates/1_35/logo-stable.png",
+  atom: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Atom_1.0_icon.png",
+  sublime:
+    "https://upload.wikimedia.org/wikipedia/fr/thumb/7/78/Sublime_text_logo.png/220px-Sublime_text_logo.png",
+  vim:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1200px-Vimlogo.svg.png",
+  notepad:
+    "https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png",
+  brackets:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/1200px-Brackets_Icon.svg.png",
+  eclipse:
+    "https://www.logolynx.com/images/logolynx/70/70bdf1f34c9712ad1bf95170c681e119.png",
+  netbeans:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/1200px-Apache_NetBeans_Logo.svg.png",
+  webstorm:
+    "https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png",
+  phpstorm:
+    "https://i0.wp.com/byteslivres.com.br/blog/wp-content/uploads/2017/12/phpstorm_logo_300x300.png?ssl=1",
+  pycharm:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/1024px-PyCharm_Logo.svg.png",
+  intelliJ:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/IntelliJ_IDEA_Logo.svg/1200px-IntelliJ_IDEA_Logo.svg.png",
 }
 
 const skillWebsites = {
@@ -500,7 +535,19 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  unity: "https://unity.com/"
+  unity: "https://unity.com/",
+  vscode: "https://code.visualstudio.com/",
+  atom: "https://atom.io/",
+  sublime: "https://www.sublimetext.com/",
+  vim: "https://www.vim.org/",
+  notepad: "https://notepad-plus-plus.org/",
+  brackets: "http://brackets.io/",
+  eclipse: "https://www.eclipse.org",
+  netbeans: "https://netbeans.org/",
+  webstorm: "https://www.jetbrains.com/pt-br/webstorm/",
+  phpstorm: "https://www.jetbrains.com/pt-br/phpstorm/",
+  pycharm: "https://www.jetbrains.com/pt-br/pycharm/",
+  intelliJ: "https://www.jetbrains.com/pt-br/idea/",
 }
 
 const initialSkillState = {}
