@@ -13,7 +13,6 @@ import { initialSkillState } from "../constants/skills"
 import {devEnvInitialState} from "../constants/devenvironment";
 import gsap from "gsap"
 import Loader from "../components/loader"
-import Devenvironment from "../components/devenvironment"
 // import Footer from "../components/footer"
 import "./index.css"
 import {
@@ -504,8 +503,7 @@ const IndexPage = () => {
             handleLinkChange={handleLinkChange}
             handleDataChange={handleDataChange}
           />
-          <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
-          <Devenvironment devenvarr={devenv} handleDevEnvChange={handleDevEnvChange}/>
+          <Skills devenvarr={devenv} handleDevEnvChange={handleDevEnvChange} skills={skills} handleSkillsChange={handleSkillsChange} />
           <Social social={social} handleSocialChange={handleSocialChange} />
           <Addons
             data={data}
