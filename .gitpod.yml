@@ -1,0 +1,12 @@
+tasks:
+  - name: Dev Server
+    init: npm install
+    command: npm run start
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - esbenp.prettier-vscode@5.7.1:4Zx39KyQMoIz7x94PSmDmQ==
