@@ -168,19 +168,20 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
+      "matlab"
     ],
   },
 
   static_site_generator: {
     title: "Static Site Generators",
     skills: [
-      "gatsby", 
-      "gridsome", 
-      "hugo", 
-      "jekyll", 
-      "nextjs", 
-      "nuxtjs", 
-      "11ty", 
+      "gatsby",
+      "gridsome",
+      "hugo",
+      "jekyll",
+      "nextjs",
+      "nuxtjs",
+      "11ty",
       "scully",
       "sculpin",
       "sapper",
@@ -188,7 +189,7 @@ const categorizedSkills = {
     ],
   },
 
-  game_engines:{
+  game_engines: {
     title: "Game Engines",
     skills: ["unity"],
   },
@@ -252,6 +253,7 @@ const icons = {
   ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
   laravel:
     "https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg",
+  matlab: "https://svgshare.com/i/QFw.svg",
   meteor:
     "https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg",
   mongodb:
@@ -361,7 +363,7 @@ const icons = {
   nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
-  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
+  cockroachdb: "https://worldvectorlogo.com/es/download/cockroachdb.svg",
   objectivec:
     "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
   clojure:
@@ -406,7 +408,7 @@ const icons = {
   sculpin:
     "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
   sapper:
-    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg",
   vuepress:
     "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",
   unity:
