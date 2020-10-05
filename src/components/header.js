@@ -5,6 +5,8 @@ import links from "../constants/page-links"
 import gsap from "gsap"
 import axios from "axios"
 import { Link } from "gatsby"
+import { act } from 'react-dom/test-utils'
+
 
 const Header = props => {
   const fetchData = async () => {
@@ -13,10 +15,11 @@ const Header = props => {
     )
 
     const { stargazers_count, forks_count } = response.data
-
-    setstats({
-      starsCount: stargazers_count,
-      forksCount: forks_count,
+    act(() => {
+      setstats({
+        starsCount: stargazers_count,
+        forksCount: forks_count,
+      })
     })
   }
 
