@@ -439,7 +439,7 @@ const IndexPage = () => {
       )
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
     } catch (error) {
-    } finally {
+    } finally { 
       setRestore("")
     }
   }
