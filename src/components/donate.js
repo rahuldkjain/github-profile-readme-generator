@@ -2,7 +2,9 @@ import React from "react"
 const Donate = () => {
   return (
     <>
-      <div className="text-center text-4xl my-2">Support 🙏</div>
+      <div className="text-center text-4xl my-2">Support&nbsp;
+        <span role="img" aria-label="praying hand emoji">🙏</span>
+      </div>
       <div className="flex flex-col sm:flex-row items-start justify-between">
         <div className="w-full sm:w-2/3">
           <div className="text-2xl mb-2">
@@ -28,12 +30,13 @@ const Donate = () => {
           </div>
         </div>
         <div className="w-full sm:w-1/3 flex flex-col justify-center items-center">
-          Tip💰
+          <span>Tip<span role="img" aria-label="Dollar medal">💰</span></span>
           {/* Ko-Fi */}
           <a
             href="https://ko-fi.com/A0A81XXSX"
             className="flex items-center justify-evenly bg-red-500 text-white py-2 px-4 my-2"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="w-6 h-6 mr-2"
@@ -47,6 +50,7 @@ const Donate = () => {
             href="https://www.paypal.me/rahuldkjain/10"
             className="flex items-center justify-evenly bg-blue-500 text-white py-2 px-4 my-2"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="w-6 h-6 mr-2"
@@ -60,6 +64,7 @@ const Donate = () => {
             href="https://www.buymeacoffee.com/rahuldkjain"
             className="flex items-center justify-evenly bg-orange-500 text-white py-2 px-4 my-2"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="w-6 h-6 mr-2"
