@@ -31,6 +31,15 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "g-savitha",
+      "name": "Savitha Gollamudi",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31612459?v=4",
+      "profile": "https://www.gsavitha.in",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
