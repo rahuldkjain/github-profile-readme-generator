@@ -1,9 +1,110 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameValid } from "../utils/validation"
+import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
+import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
+
+const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ...props}) => {
+  return (
+    <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+      <label htmlFor={inputId} className="cursor-pointer flex items-center">
+        <input
+          type="checkbox"
+          id={inputId}
+          checked={inputChecked}
+          onChange={onInputChange}
+        />
+        <span className="pl-4">{props.children}</span>
+      </label>
+      {
+        Icon?
+          <button onClick={onIconClick} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
+            <Icon className="transform scale-100 md:scale-125" />
+          </button>
+          :''
+      }
+    </div>
+  )
+}
+
+const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
+  return (
+    <div className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`} style={{maxWidth: '21rem'}}>
+      <header className="text-base sm:text-lg">Customize Badge</header>
+      <hr className="border-gray-500"/>
+      <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
+        <label htmlFor="badge-style">Style:&nbsp;
+          <select 
+            id="badge-style" 
+            onChange={(e) => onBadgeUpdate('badgeStyle', e.target.value)} 
+            value = {badgeOptions.badgeStyle}
+          >
+            <option value="flat">Flat</option>
+            <option value="flat-square">Flat Square</option>
+            <option value="plastic">Plastic</option>
+          </select> 
+        </label>
+        
+        <label htmlFor="badge-color">Color:&nbsp;
+          <input 
+            type="color" 
+            id="badge-color" 
+            defaultValue={`#${badgeOptions.badgeColor}`} 
+            className="w-6"
+            onChange={(e) => onBadgeUpdate('badgeColor', e.target.value.replace('#', ''))}
+          />
+        </label>
+        
+        <label htmlFor="badge-label-text">Label Text:&nbsp;
+          <input 
+            type="text" 
+            id="badge-label-text" 
+            placeholder="Profile views" 
+            className="w-2/4 bg-gray-300 pl-2"
+            onChange={(e) => onBadgeUpdate('badgeLabel', e.target.value.trim())}
+            defaultValue={badgeOptions.badgeLabel}
+          />
+        </label>
+        
+        <span className="mt-2 flex items-center">
+          Preview:&nbsp;
+          {
+            isGitHubUsernameValid(githubName)?
+              <img 
+                src={`https://komarev.com/ghpvc/`
+                    + `?username=${githubName}`
+                    + `&label=${encodeURI(badgeOptions.badgeLabel)}`
+                    + `&color=${badgeOptions.badgeColor}`
+                    + `&style=${badgeOptions.badgeStyle}`
+                    }
+              />
+            : <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+          }
+          
+        </span>
+      </div>
+    </div>
+  )
+}
+
 const Addons = props => {
+  const [customizeBadgeOpen, setCustomizeOpen] = useState(false);
+  const [debounce, setDebounce] = useState(undefined);
+  const [badgeOptions, setBadgeOptions] = useState({
+    badgeStyle: props.data.badgeStyle, 
+    badgeColor: props.data.badgeColor, 
+    badgeLabel: props.data.badgeLabel
+  });
+
+  useEffect(() => {
+    setBadgeOptions({
+      badgeStyle: props.data.badgeStyle, 
+      badgeColor: props.data.badgeColor, 
+      badgeLabel: props.data.badgeLabel
+    })
+  }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
+
   const blogPostPorkflow = () => {
     let payload = {
       dev: {
@@ -31,78 +132,92 @@ const Addons = props => {
     tempElement.click()
     document.body.removeChild(tempElement)
   }
+
+  const onCustomizeClick = () => {
+    setCustomizeOpen(!customizeBadgeOpen);
+  }
+
+  const onBadgeUpdate = (option, value) => {
+    const callback = () => {
+      let newVal = (option==='badgeLabel' && value==='')?'Profile views':value;
+      setBadgeOptions({...badgeOptions, [option]: newVal});
+      props.handleDataChange(option, {target: {value: newVal}})
+    }
+    clearTimeout(debounce);
+    setDebounce(setTimeout(callback, 300));
+  }
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
         Add-ons
       </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="visitors-count" className="cursor-pointer">
-          <input
-            type="checkbox"
-            id="visitors-count"
-            checked={props.data.visitorsBadge}
-            onChange={event => props.handleCheckChange("visitorsBadge")}
+      <AddonsItem
+        inputId="visitors-count"
+        inputChecked={props.data.visitorsBadge}
+        onInputChange={() => props.handleCheckChange("visitorsBadge")}
+        Icon={ customizeBadgeOpen ? XCircleIcon : ToolsIcon }
+        onIconClick={onCustomizeClick}
+      >
+        display visitors count badge
+      </AddonsItem>
+      {
+        customizeBadgeOpen?
+          <CustomizeBadge 
+            githubName={props.social.github} 
+            badgeOptions={badgeOptions}
+            onBadgeUpdate={onBadgeUpdate}
           />
-          &nbsp; display visitors count badge
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="github-stats" className="cursor-pointer">
-          <input
-            id="github-stats"
-            type="checkbox"
-            checked={props.data.githubStats}
-            onChange={event => props.handleCheckChange("githubStats")}
-          />
-          &nbsp; display github profile stats card
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="top-languages" className="cursor-pointer">
-          <input
-            id="top-languages"
-            type="checkbox"
-            checked={props.data.topLanguages}
-            onChange={event => props.handleCheckChange("topLanguages")}
-          />
-          &nbsp; display top skills
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="dev-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="dev-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.devDynamicBlogs}
-            onChange={event => props.handleCheckChange("devDynamicBlogs")}
-          />
-          &nbsp; display latest dev.to blogs dynamically (GitHub Action)
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="medium-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="medium-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.mediumDynamicBlogs}
-            onChange={event => props.handleCheckChange("mediumDynamicBlogs")}
-          />
-          &nbsp; display latest medium blogs dynamically (GitHub Action)
-        </label>
-      </div>
-      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor="rss-dynamic-blogs" className="cursor-pointer">
-          <input
-            id="rss-dynamic-blogs"
-            type="checkbox"
-            checked={props.data.rssDynamicBlogs}
-            onChange={event => props.handleCheckChange("rssDynamicBlogs")}
-          />
-          &nbsp; display latest blogs from your personal blog dynamically
-          (GitHub Action)
-        </label>
-      </div>
+        : ''
+      }
+      <AddonsItem
+        inputId="github-profile-trophy"
+        inputChecked={props.data.githubProfileTrophy}
+        onInputChange={() => props.handleCheckChange("githubProfileTrophy")}
+      >
+        display github trophy
+      </AddonsItem>
+      <AddonsItem
+        inputId="github-stats"
+        inputChecked={props.data.githubStats}
+        onInputChange={() => props.handleCheckChange("githubStats")}
+      >
+        display github profile stats card
+      </AddonsItem>
+      <AddonsItem
+        inputId="top-languages"
+        inputChecked={props.data.topLanguages}
+        onInputChange={() => props.handleCheckChange("topLanguages")}
+      >
+        display top skills
+      </AddonsItem>
+      <AddonsItem
+        inputId="twitter-badge"
+        inputChecked={props.data.twitterBadge}
+        onInputChange={() => props.handleCheckChange("twitterBadge")}
+      >
+        display twitter badge
+      </AddonsItem>
+      <AddonsItem
+        inputId="dev-dynamic-blogs"
+        inputChecked={props.data.devDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("devDynamicBlogs")}
+      >
+        display latest dev.to blogs dynamically (GitHub Action)
+      </AddonsItem>
+      <AddonsItem
+        inputId="medium-dynamic-blogs"
+        inputChecked={props.data.mediumDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("mediumDynamicBlogs")}
+      >
+        display latest medium blogs dynamically (GitHub Action)
+      </AddonsItem>
+      <AddonsItem
+        inputId="rss-dynamic-blogs"
+        inputChecked={props.data.rssDynamicBlogs}
+        onInputChange={() => props.handleCheckChange("rssDynamicBlogs")}
+      >
+        display latest blogs from your personal blog dynamically (GitHub Action)
+      </AddonsItem>
 
       {(props.data.devDynamicBlogs && props.social.dev) ||
       (props.data.rssDynamicBlogs && props.social.rssurl) ||
@@ -114,6 +229,7 @@ const Addons = props => {
             download
             <span
               onClick={blogPostPorkflow}
+              onKeyDown={(e) => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
               tabIndex="0"
               style={{ cursor: "pointer", color: "#002ead" }}
