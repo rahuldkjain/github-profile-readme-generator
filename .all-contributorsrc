@@ -15,6 +15,15 @@
       ]
     },
     {
+      "login": "Hardik0307",
+      "name": "Hardik Bagada",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41434099?v=4",
+      "profile": "https://github.com/Hardik0307",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "antonkomarev",
       "name": "Anton Komarev",
       "avatar_url": "https://avatars0.githubusercontent.com/u/1849174?v=4",
@@ -31,6 +40,24 @@
       "contributions": [
         "code",
         "test"
+      ]
+    },
+    {
+      "login": "Maddoxx88",
+      "name": "Sunit Shirke",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/34238672?v=4",
+      "profile": "https://maddoxx88.github.io/",
+      "contributions": [
+        "code"
+      ]
+    }
+    {
+      "login": "g-savitha",
+      "name": "Savitha Gollamudi",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31612459?v=4",
+      "profile": "https://www.gsavitha.in",
+      "contributions": [
+        "code"
       ]
     }
   ],
