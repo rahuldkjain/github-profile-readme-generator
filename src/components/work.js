@@ -153,6 +153,22 @@ const Work = props => {
       </div>
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
+          id="resume-prefix"
+          className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          value={props.prefix.resume}
+          onChange={event => props.handlePrefixChange("resume", event)}
+        />
+        <input
+          id="resume"
+          placeholder="resume link"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          value={props.link.resume}
+          onChange={event => props.handleLinkChange("resume", event)}
+        />
+      </div>
+      
+      <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
+        <input
           id="funFact-prefix"
           className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.prefix.funFact}
@@ -160,7 +176,7 @@ const Work = props => {
         />
         <input
           id="funFact"
-          placeholder="Chai over Coffee"
+          placeholder="I think I am funny"
           className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.funFact}
           onChange={event => props.handleDataChange("funFact", event)}

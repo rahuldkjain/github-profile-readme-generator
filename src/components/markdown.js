@@ -32,7 +32,6 @@ const Markdown = props => {
         <>
           {`<h3 align="left">${props.label}</h3>`}
           <br />
-          <br />
         </>
       )
     }
@@ -81,11 +80,42 @@ const Markdown = props => {
     return ""
   }
   const VisitorsBadge = props => {
-    let link = "https://komarev.com/ghpvc/?username=" + props.github
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <>
           {`<p align="left"> <img src="${link}" alt="${props.github}" /> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const TwitterBadge = props => {
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <img src="${link}" alt="${props.twitter}" /> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const GithubProfileTrophy = props => {
+    let link =
+      "https://github-profile-trophy.vercel.app/?username=" + props.github
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="${link}" alt="${props.github}" /></a> </p>`}
           <br />
           <br />
         </>
@@ -210,6 +240,21 @@ const Markdown = props => {
         <VisitorsBadge
           show={props.data.visitorsBadge}
           github={props.social.github}
+          badgeOptions={{
+            badgeLabel: encodeURI(props.data.badgeLabel),
+            badgeColor: props.data.badgeColor,
+            badgeStyle: props.data.badgeStyle
+          }}
+        />
+      </>
+      <>
+        <GithubProfileTrophy
+          show={props.data.githubProfileTrophy}
+          github={props.social.github}
+        />
+        <TwitterBadge
+          show={props.data.twitterBadge}
+          twitter={props.social.twitter}
         />
       </>
       <>
@@ -258,6 +303,9 @@ const Markdown = props => {
         />
       </>
       <>
+        <DisplayWork prefix={props.prefix.resume} link={props.link.resume} />
+      </>
+      <>
         <DisplayWork
           prefix={props.prefix.funFact}
           project={props.data.funFact}
@@ -272,22 +320,6 @@ const Markdown = props => {
               props.social.medium &&
               isMediumUsernameValid(props.social.medium))
           }
-        />
-      </>
-      <>
-        <DisplaySkills skills={props.skills} />
-      </>
-      <>
-        <DisplayTopLanguages
-          show={props.data.topLanguages}
-          showStats={props.data.githubStats}
-          github={props.social.github}
-        />
-      </>
-      <>
-        <GitHubStats
-          show={props.data.githubStats}
-          github={props.social.github}
         />
       </>
       {isSocial(props.social) ? `<p align="left">` : ""} <br />
@@ -441,7 +473,31 @@ const Markdown = props => {
           username={props.social.rssurl}
         />
       </>
-      {isSocial(props.social) ? `</p>` : ""}
+      {isSocial(props.social) ? (
+        <>
+          {`</p>`}
+          <br />
+          <br />
+        </>
+      ) : (
+        ""
+      )}
+      <>
+        <DisplaySkills skills={props.skills} />
+      </>
+      <>
+        <DisplayTopLanguages
+          show={props.data.topLanguages}
+          showStats={props.data.githubStats}
+          github={props.social.github}
+        />
+      </>
+      <>
+        <GitHubStats
+          show={props.data.githubStats}
+          github={props.social.github}
+        />
+      </>
     </div>
   )
 }

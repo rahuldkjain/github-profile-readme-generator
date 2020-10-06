@@ -23,7 +23,7 @@
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
-<a href="https://discord.gg/U7YU3J" target="blank">
+<a href="https://discord.gg/HHMs7Eg" target="blank">
 <img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
 </a>
 </p>
@@ -83,8 +83,6 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 - **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
 
 - **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
-
-- **YouTube Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/119)
 
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
@@ -170,6 +168,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/sarbikbetal"><img src="https://avatars2.githubusercontent.com/u/41508422?v=4" width="100px;" alt=""/><br /><sub><b>Sarbik Betal</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=sarbikbetal" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Hardik0307"><img src="https://avatars3.githubusercontent.com/u/41434099?v=4" width="100px;" alt=""/><br /><sub><b>Hardik Bagada</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=Hardik0307" title="Code">💻</a></td>
+    <td align="center"><a href="https://komarev.com"><img src="https://avatars0.githubusercontent.com/u/1849174?v=4" width="100px;" alt=""/><br /><sub><b>Anton Komarev</b></sub></a><br /><a href="#plugin-antonkomarev" title="Plugin/utility libraries">🔌</a></td>
   </tr>
 </table>
 

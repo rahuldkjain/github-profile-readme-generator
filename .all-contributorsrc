@@ -22,6 +22,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "antonkomarev",
+      "name": "Anton Komarev",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1849174?v=4",
+      "profile": "https://komarev.com",
+      "contributions": [
+        "plugin"
+      ]
     }
   ],
   "contributorsPerLine": 7,
