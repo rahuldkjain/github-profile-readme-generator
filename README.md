@@ -157,7 +157,7 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## Contributors ✨
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -167,7 +167,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/sarbikbetal"><img src="https://avatars2.githubusercontent.com/u/41508422?v=4" width="100px;" alt=""/><br /><sub><b>Sarbik Betal</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=sarbikbetal" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Hardik0307"><img src="https://avatars3.githubusercontent.com/u/41434099?v=4" width="100px;" alt=""/><br /><sub><b>Hardik Bagada</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=Hardik0307" title="Code">💻</a></td>
     <td align="center"><a href="https://komarev.com"><img src="https://avatars0.githubusercontent.com/u/1849174?v=4" width="100px;" alt=""/><br /><sub><b>Anton Komarev</b></sub></a><br /><a href="#plugin-antonkomarev" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://kkvanonymous.github.io/"><img src="https://avatars3.githubusercontent.com/u/58628586?v=4" width="100px;" alt=""/><br /><sub><b>Kunal Kumar Verma</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=KKVANONYMOUS" title="Code">💻</a></td>
+    <td align="center"><a href="http://jaideepghosh.blogspot.com"><img src="https://avatars2.githubusercontent.com/u/3909648?v=4" width="100px;" alt=""/><br /><sub><b>Jaideep Ghosh</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=jaideepghosh" title="Code">💻</a></td>
+    <td align="center"><a href="http://yashkandalkar.github.io"><img src="https://avatars0.githubusercontent.com/u/35102959?v=4" width="100px;" alt=""/><br /><sub><b>yash</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=YashKandalkar" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/abhijit-hota"><img src="https://avatars0.githubusercontent.com/u/8116174?v=4" width="100px;" alt=""/><br /><sub><b>Abhijit Hota</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=abhijit-hota" title="Code">💻</a> <a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=abhijit-hota" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://maddoxx88.github.io/"><img src="https://avatars1.githubusercontent.com/u/34238672?v=4" width="100px;" alt=""/><br /><sub><b>Sunit Shirke</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=Maddoxx88" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.gsavitha.in"><img src="https://avatars0.githubusercontent.com/u/31612459?v=4" width="100px;" alt=""/><br /><sub><b>Savitha Gollamudi</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/commits?author=g-savitha" title="Code">💻</a></td>
   </tr>
 </table>
 

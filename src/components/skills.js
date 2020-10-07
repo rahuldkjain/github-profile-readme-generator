@@ -34,7 +34,7 @@ const Skills = props => {
         <input 
           type="search" 
           onChange={(e) => update(e.target.value)} 
-          className="leading:none text-xs my-0 py-0 sm:text-xl rounded-sm border border-gray-600 hover:border-gray-900 focus:outline-none focus:shadow-outline p-2 m-2" 
+          className="leading:none text-xs my-0 py-1 px-2 sm:text-xl border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 placeholder-gray-700" 
           placeholder="Search Skills" 
         />
       </div>
@@ -47,12 +47,12 @@ const Skills = props => {
         return filtered.length !== 0
       })
       .map(key => (
-        <div key={key}>
-            <div className="text-sm sm:text-xl text-gray-900 text-left border-b border-r p-2 border-gray-400 m-2 rounded-sm">
+        <div key={key} className="divide-y divide-gray-500">
+            <div className="text-sm sm:text-xl text-gray-900 text-left py-1">
               {categorizedSkills[key].title}
             </div>
           <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
-            {categorizedSkills[key].skills
+            {categorizedSkills[key].skills   
             .filter(skill => {
               return skill.includes(search.toLowerCase())
             })
@@ -61,7 +61,7 @@ const Skills = props => {
         </div>
       ))}
     </div>
-  )
+  ) 
 }
 
 export default Skills

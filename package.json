@@ -25,12 +25,17 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "babel-jest": "26.3.0",
+    "babel-preset-gatsby": "0.5.11",
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-twitter": "^2.3.10",
     "gatsby-remark-embedder": "^3.0.0",
     "gh-pages": "^3.1.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.4.2",
     "prettier": "2.0.5",
+    "react-test-renderer": "16.13.1",
     "tailwindcss": "^1.7.6"
   },
   "keywords": [
@@ -44,7 +49,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "repository": {

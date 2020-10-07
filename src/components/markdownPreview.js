@@ -89,6 +89,7 @@ const MarkdownPreview = props => {
         <DisplayWork prefix={prefix.ama} project={data.ama} />
         <DisplayWork prefix={prefix.portfolio} link={link.portfolio} />
         <DisplayWork prefix={prefix.blog} link={link.blog} />
+        <DisplayWork prefix={prefix.resume} link={link.resume} />
         <DisplayWork prefix={prefix.contact} project={data.contact} />
         <DisplayWork prefix={prefix.funFact} project={data.funFact} />
       </>
@@ -222,12 +223,30 @@ const MarkdownPreview = props => {
     )
   }
   const VisitorsBadgePreview = props => {
-    let link = "https://komarev.com/ghpvc/?username=" + props.github
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <div className="text-left my-2">
           {" "}
           <img className="h-4 sm:h-6" src={link} alt={props.github} />{" "}
+        </div>
+      )
+    }
+    return null
+  }
+  const TwitterBadgePreview = props => {
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    if (props.show) {
+      return (
+        <div className="text-left my-2">
+          {" "}
+          <a href="https://twitter.com/${props.twitter}" target="blank">
+            <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
+          </a>{" "}
         </div>
       )
     }
@@ -281,7 +300,7 @@ const MarkdownPreview = props => {
     skills.forEach(skill => {
       if (props.skills[skill]) {
         listSkills.push(
-          <a href={skillWebsites[skill]} target="_blank">
+          <a href={skillWebsites[skill]} target="_blank" rel="noreferrer">
             <img
               className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
               key={skill}
@@ -308,10 +327,19 @@ const MarkdownPreview = props => {
       <VisitorsBadgePreview
         show={props.data.visitorsBadge}
         github={props.social.github}
+        badgeOptions={{
+          badgeLabel: encodeURI(props.data.badgeLabel),
+          badgeColor: props.data.badgeColor,
+          badgeStyle: props.data.badgeStyle
+        }}
       />
       <GithubProfileTrophyPreview
         show={props.data.githubProfileTrophy}
         github={props.social.github}
+      />
+      <TwitterBadgePreview
+        show={props.data.twitterBadge}
+        twitter={props.social.twitter}
       />
       <WorkPreview work={props} />
       <SocialPreview social={props.social} />
