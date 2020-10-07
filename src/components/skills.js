@@ -47,7 +47,7 @@ const Skills = props => {
         Skills
         <div className="relative flex">
           <input 
-            type="search" 
+            type="text" 
             onChange={(e) => onSearchChange(e.target.value)} 
             className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" 
             placeholder="Search Skills" 
