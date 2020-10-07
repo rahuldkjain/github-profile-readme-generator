@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { icons, categorizedSkills } from "../constants/skills"
 // npm install --save-dev @iconify/react @iconify/icons-octicon
-import { SearchIcon} from "@primer/octicons-react";
+import { SearchIcon, XIcon } from "@primer/octicons-react";
 
 
 const Skills = props => {
@@ -47,7 +47,7 @@ const Skills = props => {
         Skills
         <div className="relative flex">
           <input 
-            type="search" 
+            type="text" 
             onChange={(e) => onSearchChange(e.target.value)} 
             className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" 
             placeholder="Search Skills" 
@@ -60,7 +60,7 @@ const Skills = props => {
                   inputRef.current.value = ''
                 }
               }>
-              {""}
+              <XIcon size={16} className="mb-1 transform scale-100 md:scale-125"/>
             </button>
             :<SearchIcon size={16} className="mb-1 transform scale-100 md:scale-125"/>
             }
