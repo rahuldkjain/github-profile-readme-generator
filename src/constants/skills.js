@@ -11,6 +11,7 @@ const categorizedSkills = {
       "javascript",
       "typescript",
       "php",
+      "perl",
       "ruby",
       "scala",
       "python",
@@ -56,11 +57,13 @@ const categorizedSkills = {
       "nodejs",
       "spring",
       "express",
+      "graphql",
       "kafka",
       "solr",
       "rabbitMQ",
       "hadoop",
       "nginx",
+      "openresty",
     ],
   },
 
@@ -96,7 +99,8 @@ const categorizedSkills = {
       "hive",
       "realm",
       "mariadb",
-      "elasticsearch"
+      "cockroachdb",
+      "elasticsearch",
     ],
   },
 
@@ -158,6 +162,7 @@ const categorizedSkills = {
     skills: [
       "illustrator",
       "photoshop",
+      "xd",
       "figma",
       "blender",
       "sketch",
@@ -168,7 +173,24 @@ const categorizedSkills = {
 
   static_site_generator: {
     title: "Static Site Generators",
-    skills: ["gatsby", "gridsome", "hugo", "jekyll", "nextjs", "nuxtjs"],
+    skills: [
+      "gatsby", 
+      "gridsome", 
+      "hugo", 
+      "jekyll", 
+      "nextjs", 
+      "nuxtjs", 
+      "11ty", 
+      "scully",
+      "sculpin",
+      "sapper",
+      "vuepress"
+    ],
+  },
+
+  game_engines:{
+    title: "Game Engines",
+    skills: ["unity"],
   },
 
   other: {
@@ -217,6 +239,7 @@ const icons = {
   express:
     "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
   go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
+  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
   html5:
@@ -239,12 +262,18 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg",
   nodejs:
     "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg",
+  openresty:
+    "https://symbols-electrical.getvecta.com/stencil_25/66_openresty.403a21ca72.svg",
   oracle:
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
+  xd:
+    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
+  perl:
+    "https://api.iconify.design/logos-perl.svg",
   postgresql:
     "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
   python:
@@ -332,6 +361,7 @@ const icons = {
   nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
+  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
   objectivec:
     "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
   clojure:
@@ -368,7 +398,19 @@ const icons = {
   elasticsearch:
     "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
   circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg"
+    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  scully:
+    "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
+  "11ty":
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg",
+  sculpin:
+    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
+  sapper:
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
+  vuepress:
+    "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",
+  unity:
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
 }
 
 const skillWebsites = {
@@ -393,6 +435,7 @@ const skillWebsites = {
   electron: "https://www.electronjs.org",
   express: "https://expressjs.com",
   go: "https://golang.org",
+  graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
   html5: "https://www.w3.org/html/",
   hugo: "https://gohugo.io/",
@@ -405,9 +448,12 @@ const skillWebsites = {
   mysql: "https://www.mysql.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
+  openresty: "https://openresty.org/",
   oracle: "https://www.oracle.com/",
   photoshop: "https://www.photoshop.com/en",
+  xd: "https://www.adobe.com/products/xd.html",
   php: "https://www.php.net",
+  perl: "https://www.perl.org/",
   postgresql: "https://www.postgresql.org",
   python: "https://www.python.org",
   rails: "https://rubyonrails.org",
@@ -467,6 +513,7 @@ const skillWebsites = {
   nextjs: "https://nextjs.org/",
   reactnative: "https://reactnative.dev/",
   mariadb: "https://mariadb.org/",
+  cockroachdb: "https://www.cockroachlabs.com/product/cockroachdb/",
   objectivec: "",
   clojure: "",
   haskell: "",
@@ -489,7 +536,13 @@ const skillWebsites = {
   kibana: "https://www.elastic.co/kibana",
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
-  circleci: "https://circleci.com"
+  circleci: "https://circleci.com",
+  scully: "https://scully.io/",
+  sculpin: "https://sculpin.io/",
+  "11ty": "https://www.11ty.dev/",
+  sapper: "https://sapper.svelte.dev/",
+  vuepress: "https://vuepress.vuejs.org/",
+  unity: "https://unity.com/"
 }
 
 const initialSkillState = {}

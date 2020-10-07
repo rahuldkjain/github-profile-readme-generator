@@ -80,11 +80,42 @@ const Markdown = props => {
     return ""
   }
   const VisitorsBadge = props => {
-    let link = "https://komarev.com/ghpvc/?username=" + props.github
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <>
           {`<p align="left"> <img src="${link}" alt="${props.github}" /> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const TwitterBadge = props => {
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <a href="${props.base}/${props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const GithubProfileTrophy = props => {
+    let link =
+      "https://github-profile-trophy.vercel.app/?username=" + props.github
+    if (props.show) {
+      return (
+        <>
+          {`<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="${link}" alt="${props.github}" /></a> </p>`}
           <br />
           <br />
         </>
@@ -209,6 +240,22 @@ const Markdown = props => {
         <VisitorsBadge
           show={props.data.visitorsBadge}
           github={props.social.github}
+          badgeOptions={{
+            badgeLabel: encodeURI(props.data.badgeLabel),
+            badgeColor: props.data.badgeColor,
+            badgeStyle: props.data.badgeStyle
+          }}
+        />
+      </>
+      <>
+        <GithubProfileTrophy
+          show={props.data.githubProfileTrophy}
+          github={props.social.github}
+        />
+        <TwitterBadge
+          base="https://twitter.com"
+          show={props.data.twitterBadge}
+          twitter={props.social.twitter}
         />
       </>
       <>
@@ -255,6 +302,9 @@ const Markdown = props => {
           prefix={props.prefix.contact}
           project={props.data.contact}
         />
+      </>
+      <>
+        <DisplayWork prefix={props.prefix.resume} link={props.link.resume} />
       </>
       <>
         <DisplayWork
@@ -424,7 +474,15 @@ const Markdown = props => {
           username={props.social.rssurl}
         />
       </>
-      {isSocial(props.social) ? <>{`</p>`}<br/><br/></> : ""}
+      {isSocial(props.social) ? (
+        <>
+          {`</p>`}
+          <br />
+          <br />
+        </>
+      ) : (
+        ""
+      )}
       <>
         <DisplaySkills skills={props.skills} />
       </>
