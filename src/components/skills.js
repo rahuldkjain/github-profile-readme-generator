@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import { icons, categorizedSkills } from "../constants/skills"
-// npm install --save-dev @iconify/react @iconify/icons-octicon
 import { SearchIcon, XIcon } from "@primer/octicons-react";
 
 
