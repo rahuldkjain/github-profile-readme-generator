@@ -1,8 +1,13 @@
 import React, {useState} from "react"
 import { icons, categorizedSkills } from "../constants/skills"
+// npm install --save-dev @iconify/react @iconify/icons-octicon
+import { SearchIcon, XIcon } from "@primer/octicons-react";
+
 
 const Skills = props => {
-  const [search, update] = useState('')
+  const [search, setSearch] = useState('')
+  const [debounce, setDebounce] = useState(undefined);
+  const inputRef = React.createRef()
   const createSkill = skill => {
     return (
       <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
@@ -27,16 +32,40 @@ const Skills = props => {
     )
   }
 
+  const onSearchChange = (value) => {
+    const callback = () => {
+      setSearch(value)
+    }
+    clearTimeout(debounce)
+    setDebounce(setTimeout(callback, 50))
+
+  }
+
   return (
     <div className="px-2 sm:px-6 mb-10 ">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
         Skills
-        <input 
-          type="search" 
-          onChange={(e) => update(e.target.value)} 
-          className="leading:none text-xs my-0 py-1 px-2 sm:text-xl border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 placeholder-gray-700" 
-          placeholder="Search Skills" 
-        />
+        <div className="relative flex">
+          <input 
+            type="search" 
+            onChange={(e) => onSearchChange(e.target.value)} 
+            className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" 
+            placeholder="Search Skills" 
+            ref = {inputRef}
+          />  
+          <span className="absolute" style={{right:"10px"}}>
+            {(search !== '')
+            ?<button className="focus:outline-none" onClick={() =>  {
+                  setSearch('')
+                  inputRef.current.value = ''
+                }
+              }>
+              <XIcon size={16} className="mb-1 transform scale-100 md:scale-125"/>
+            </button>
+            :<SearchIcon size={16} className="mb-1 transform scale-100 md:scale-125"/>
+            }
+          </span>        
+        </div>
       </div>
      
       {Object.keys(categorizedSkills)
