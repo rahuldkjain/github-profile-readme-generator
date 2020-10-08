@@ -10,6 +10,7 @@ import Addons from "../components/addons"
 import Skills from "../components/skills"
 import Donate from "../components/donate"
 import { initialSkillState } from "../constants/skills"
+import {devEnvInitialState} from "../constants/devenvironment";
 import gsap from "gsap"
 import Loader from "../components/loader"
 // import Footer from "../components/footer"
@@ -103,7 +104,7 @@ const DEFAULT_SOCIAL = {
   rssurl: "",
 }
 
-const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {
+const KeepCacheUpdated = ({ prefix, data, link, social, skills,devenv }) => {
   useEffect(() => {
     localStorage.setItem(
       "cache",
@@ -113,20 +114,21 @@ const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {
         link,
         social,
         skills,
+        devenv
       })
     )
-  }, [prefix, data, link, social, skills])
+  }, [prefix, data, link, social, skills,devenv])
 }
 
 const DEFAULT_SKILLS = initialSkillState
-
+const DEFAULT_DEVENV = devEnvInitialState
 const IndexPage = () => {
   const [prefix, setPrefix] = useState(DEFAULT_PREFIX)
   const [data, setData] = useState(DEFAULT_DATA)
   const [link, setLink] = useState(DEFAULT_LINK)
   const [social, setSocial] = useState(DEFAULT_SOCIAL)
   const [skills, setSkills] = useState(DEFAULT_SKILLS)
-
+  const [devenv,setDevEnv] = useState(DEFAULT_DEVENV)
   const [restore, setRestore] = useState("")
   const [generatePreview, setGeneratePreview] = useState(false)
   const [generateMarkdown, setGenerateMarkdown] = useState(false)
@@ -145,6 +147,12 @@ const IndexPage = () => {
     let change = { ...skills }
     change[field] = !change[field]
     setSkills(change)
+  }
+
+  const handleDevEnvChange = field => {
+    let change = {...devenv}
+    change[field] = !change[field]
+    setDevEnv(change)
   }
 
   const handlePrefixChange = (field, e) => {
@@ -386,7 +394,9 @@ const IndexPage = () => {
       DEFAULT_SKILLS,
       cache.skills
     )
+    const cacheDevEnv = mergeDefaultWithNewDevEnv(DEFAULT_DEVENV,cache.devenv);
     setSkills(cacheSkills || DEFAULT_SKILLS)
+    setDevEnv(cacheDevEnv || DEFAULT_DEVENV)
   }
 
   useEffect(() => {
@@ -407,7 +417,7 @@ const IndexPage = () => {
   }, [])
 
   // keep cache updated
-  KeepCacheUpdated({ prefix, data, link, social, skills })
+  KeepCacheUpdated({ prefix, data, link, social, skills,devenv })
 
   const handleResetForm = () => {
     setPrefix(DEFAULT_PREFIX)
@@ -415,6 +425,7 @@ const IndexPage = () => {
     setLink(DEFAULT_LINK)
     setSocial(DEFAULT_SOCIAL)
     setSkills(DEFAULT_SKILLS)
+    setDevEnv(DEFAULT_DEVENV)
   }
 
   const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
@@ -430,6 +441,21 @@ const IndexPage = () => {
         [currentKey]: currentSelected,
       }
     }, {})
+  }
+
+  const mergeDefaultWithNewDevEnv = (defaultDevEnv,devenv) => {
+    let obj = {};
+    Object.keys(defaultDevEnv).map((key) => {
+
+      let currentSelected = false;
+      if(devenv[key]){
+        currentSelected = true
+      }
+
+      obj[key] = currentSelected;
+
+    })
+    return obj;
   }
 
   const handleRestore = () => {
@@ -449,7 +475,9 @@ const IndexPage = () => {
         DEFAULT_SKILLS,
         restoreData.skills
       )
+      const restoreDevEnv = mergeDefaultWithNewDevEnv(DEFAULT_DEVENV,restoreData.devenv)
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
+      setDevEnv(restoreDevEnv || DEFAULT_DEVENV)
     } catch (error) {
     } finally {
       setRestore("")
@@ -476,7 +504,7 @@ const IndexPage = () => {
             handleLinkChange={handleLinkChange}
             handleDataChange={handleDataChange}
           />
-          <Skills skills={skills} handleSkillsChange={handleSkillsChange} />
+          <Skills devenvarr={devenv} handleDevEnvChange={handleDevEnvChange} skills={skills} handleSkillsChange={handleSkillsChange} />
           <Social social={social} handleSocialChange={handleSocialChange} />
           <Addons
             data={data}
@@ -638,6 +666,7 @@ const IndexPage = () => {
                     link={link}
                     social={social}
                     skills={skills}
+                    devenv={devenv}
                   />
                 ) : (
                   ""
@@ -649,6 +678,7 @@ const IndexPage = () => {
                     link={link}
                     social={social}
                     skills={skills}
+                    devenv={devenv}
                   />
                 ) : (
                   ""

@@ -1,5 +1,6 @@
 import React from "react"
 import { icons, skills, skillWebsites } from "../constants/skills"
+import {devEnvironmentArr} from "../constants/devenvironment";
 
 const MarkdownPreview = props => {
   const TitlePreview = props => {
@@ -320,6 +321,31 @@ const MarkdownPreview = props => {
       ""
     )
   }
+  const DevEnv = props => {
+    var devenv = [];
+    devEnvironmentArr.forEach((env) => {
+      if(props.devenv[env.title]){
+        devenv.push(
+        <a href={env.url} target="_blank">
+            <img
+              className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
+              key={env.title}
+              src={env.image}
+              alt={env.title}
+            />
+          </a>
+        )
+      }
+    })
+    return devenv.length > 0 ? (
+      <div className="flex flex-wrap justify-start items-center">
+        <SectionTitle label="Dev environment:" />
+        {devenv}
+      </div>
+    ) : (
+      ""
+    )
+  }
   return (
     <div id="markdown-preview">
       <TitlePreview prefix={props.prefix.title} title={props.data.title} />
@@ -344,6 +370,7 @@ const MarkdownPreview = props => {
       <WorkPreview work={props} />
       <SocialPreview social={props.social} />
       <SkillsPreview skills={props.skills} />
+      <DevEnv devenv={props.devenv}/>
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview
           show={props.data.topLanguages}

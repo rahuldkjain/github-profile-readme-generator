@@ -1,6 +1,7 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
+import {devEnvironmentArr} from "../constants/devenvironment";
 
 const Markdown = props => {
   const Title = props => {
@@ -181,6 +182,30 @@ const Markdown = props => {
       <>
         <SectionTitle label="Languages and Tools:" />
         {`<p align="left">${listChosenSkills.join(" ")}</p>`}
+        <br />
+        <br />
+      </>
+    ) : (
+      ""
+    )
+  }
+  const DisplayDevEnv = props => {
+    let devenv = [];
+    devEnvironmentArr.forEach((env) => {
+      if(props.devenv[env.title]){
+        devenv.push(
+          `
+          <a href="${env.url }" target="_blank">
+            <img src="${env.image}" alt="${env.title}" width="40" height="40"/>
+          </a>
+          `
+        )
+      }
+    })
+    return devenv.length > 0 ? (
+      <>
+        <SectionTitle label="Dev environment:" />
+        {`<p align="left">${devenv.join(" ")}</p>`}
         <br />
         <br />
       </>
@@ -485,6 +510,9 @@ const Markdown = props => {
       )}
       <>
         <DisplaySkills skills={props.skills} />
+      </>
+      <>
+        <DisplayDevEnv devenv={props.devenv}/>
       </>
       <>
         <DisplayTopLanguages

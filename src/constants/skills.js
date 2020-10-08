@@ -192,7 +192,6 @@ const categorizedSkills = {
     title: "Game Engines",
     skills: ["unity"],
   },
-
   other: {
     title: "Other",
     skills: ["linux", "git"],
