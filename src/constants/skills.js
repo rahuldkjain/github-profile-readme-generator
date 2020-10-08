@@ -361,7 +361,7 @@ const icons = {
   nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
-  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
+  cockroachdb:  "https://cdn.worldvectorlogo.com/logos/cockroachdb.svg",
   objectivec:
     "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
   clojure:
