@@ -5,6 +5,26 @@ import links from "../constants/page-links"
 import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
 import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
 
+const CustomizeOptions = ({title, CustomizationOptions}) =>  {
+  const [open, setOpen] = useState(false)
+  const Icon = open ? XCircleIcon : ToolsIcon
+
+  return (
+    <>
+    <button onClick={() => setOpen(!open)} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
+      <Icon className="transform scale-100 md:scale-125" />
+    </button>
+    {open && <div className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`} style={{maxWidth: '21rem'}}>
+      <header className="text-base sm:text-lg">{ title }</header>
+      <hr className="border-gray-500"/>
+      <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
+        {CustomizationOptions}
+      </div>
+    </div>}
+  </>
+  )
+}
+
 const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ...props}) => {
   return (
     <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
@@ -182,6 +202,7 @@ const Addons = props => {
         onInputChange={() => props.handleCheckChange("githubStats")}
       >
         display github profile stats card
+        <CustomizeOptions title="Customize Github Stats Card" CustomizationOptions={<div>test</div>}/>
       </AddonsItem>
       <AddonsItem
         inputId="top-languages"
