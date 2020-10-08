@@ -37,7 +37,6 @@ const Skills = props => {
     }
     clearTimeout(debounce)
     setDebounce(setTimeout(callback, 50))
-
   }
 
   return (
