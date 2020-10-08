@@ -87,6 +87,16 @@ const Skills = props => {
           </div>
         </div>
       ))}
+      <span className="flex justify-center text-gray-900">
+        {(Object.keys(categorizedSkills)
+        .filter(key => {
+        let filtered = categorizedSkills[key].skills.filter(skill => {
+          return skill.includes(search.toLowerCase())
+        })
+          return filtered.length !== 0
+        })
+        .length === 0)?"No Results Found":""}
+      </span>
     </div>
   ) 
 }
