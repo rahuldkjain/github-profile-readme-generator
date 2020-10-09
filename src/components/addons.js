@@ -108,25 +108,81 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
 
 const CustomizeGithubStats = ({ githubStatsOptions, onStatsUpdate }) => {
   return (
-    <label htmlFor="github-stats-theme">Theme:&nbsp;
-      <select
-        id="github-stats-theme"
-        onChange={({target: { value }}) => onStatsUpdate("theme", value)}
-        value={githubStatsOptions.theme}
-      >
-        <option value={ null }>none</option>
-        <option value="dark">Dark</option>
-        <option value="radical">Radical</option>
-        <option value="merko">Merko</option>
-        <option value="gruvbox">Gruvbox</option>
-        <option value="tokyonight">Tokyonight</option>
-        <option value="onedark">Onedark</option>
-        <option value="cobalt">Cobalt</option>
-        <option value="synthwave">Synthwave</option>
-        <option value="highcontrast">Highcontrast</option>
-        <option value="dracula">Dracula</option>
-      </select>
-    </label>
+    <>
+      <label htmlFor="github-stats-theme">Theme:&nbsp;
+        <select
+          id="github-stats-theme"
+          onChange={({target: { value }}) => onStatsUpdate("theme", value)}
+          value={githubStatsOptions.theme}
+        >
+          <option value="none">none</option>
+          <option value="dark">Dark</option>
+          <option value="radical">Radical</option>
+          <option value="merko">Merko</option>
+          <option value="gruvbox">Gruvbox</option>
+          <option value="tokyonight">Tokyonight</option>
+          <option value="onedark">Onedark</option>
+          <option value="cobalt">Cobalt</option>
+          <option value="synthwave">Synthwave</option>
+          <option value="highcontrast">Highcontrast</option>
+          <option value="dracula">Dracula</option>
+        </select>
+      </label>
+      <label htmlFor="github-stats-title-color">Title Color:&nbsp;
+        <input
+          type="color"
+          id="github-stats-title-color"
+          defaultValue={`#${githubStatsOptions.titleColor}`}
+          className="w-6"
+          onChange={(e) => onStatsUpdate('titleColor', e.target.value.replace('#', ''))}
+        />
+      </label>
+      <label htmlFor="github-stats-text-color">Text Color:&nbsp;
+        <input
+          type="color"
+          id="github-stats-text-color"
+          defaultValue={`#${githubStatsOptions.textColor}`}
+          className="w-6"
+          onChange={(e) => onStatsUpdate('textColor', e.target.value.replace('#', ''))}
+        />
+      </label>
+      <label htmlFor="github-stats-bg-color">Background Color:&nbsp;
+        <input
+          type="color"
+          id="github-stats-bg-color"
+          defaultValue={`#${githubStatsOptions.bgColor}`}
+          className="w-6"
+          onChange={(e) => onStatsUpdate('bgColor', e.target.value.replace('#', ''))}
+        />
+      </label>
+      <label htmlFor="github-stats-hide-border">Hide border:&nbsp;
+        <input
+          id="github-stats-hide-border"
+          type="checkbox"
+          checked={githubStatsOptions.hideBorder}
+          onChange={(e) => onStatsUpdate('hideBorder', e.target.checked)}
+        />
+      </label>
+      <label htmlFor="github-stats-cache-seconds">Cache Seconds:&nbsp;
+        <input
+          id="github-stats-cache-seconds"
+          type="number"
+          min={1800}
+          max={86400}
+          placeholder={1800}
+          onChange={(e) => onStatsUpdate('cacheSeconds', e.target.value)}
+        />
+      </label>
+      <label htmlFor="github-stats-locale">Locale:&nbsp;
+        <input
+          id="github-stats-locale"
+          type="text"
+          placeholder="en"
+          onChange={(e) => onStatsUpdate('locale', e.target.value)}
+          size="2"
+        />
+      </label>
+    </>
   )
 }
 
@@ -147,7 +203,7 @@ const Addons = props => {
   }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
 
   const [githubStatsOptions, setGithubStatsOptions] = useState({
-    theme: ""
+    ...props.data.githubStatsOptions,
   });
 
   useEffect(() => {

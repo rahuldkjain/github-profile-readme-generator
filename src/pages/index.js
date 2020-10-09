@@ -64,7 +64,13 @@ const DEFAULT_DATA = {
   githubProfileTrophy: false,
   githubStats: false,
   githubStatsOptions: {
-    theme: ""
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
   },
   topLanguages: false,
   devDynamicBlogs: false,
@@ -459,7 +465,7 @@ const IndexPage = () => {
       setRestore("")
     }
   }
-
+console.log(data.githubStatsOptions)
   return (
     <Layout>
       <div className="m-4 sm:p-4">
