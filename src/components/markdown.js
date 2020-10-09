@@ -101,7 +101,7 @@ const Markdown = props => {
     if (props.show) {
       return (
         <>
-          {`<p align="left"> <img src="${link}" alt="${props.twitter}" /> </p>`}
+          {`<p align="left"> <a href="${props.base}/${props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
           <br />
           <br />
         </>
@@ -253,6 +253,7 @@ const Markdown = props => {
           github={props.social.github}
         />
         <TwitterBadge
+          base="https://twitter.com"
           show={props.data.twitterBadge}
           twitter={props.social.twitter}
         />
