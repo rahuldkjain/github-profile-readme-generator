@@ -1,8 +1,7 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
-import { githubStatsLinkGenerator } from "../utils/link-generators"
-
+import { githubStatsLinkGenerator, topLanguagesLinkGenerator } from "../utils/link-generators"
 
 const Markdown = props => {
   const Title = props => {
@@ -125,11 +124,11 @@ const Markdown = props => {
     }
     return ""
   }
-  const GitHubStats = props => {
-    if (props.show) {
+  const GitHubStats = ({ show, github, options }) => {
+    if (show) {
       return (
         <>
-          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator(props)}" alt="${props.github}" /></p>`}
+          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({github: github, options})}" alt="${github}" /></p>`}
           <br />
           <br />
         </>
@@ -202,15 +201,11 @@ const Markdown = props => {
     return ""
   }
   const DisplayTopLanguages = props => {
-    let link =
-      "https://github-readme-stats.vercel.app/api/top-langs/?username=" +
-      props.github +
-      "&layout=compact"
     if (props.show) {
       if (!props.showStats) {
         return (
           <>
-            {`<p><img align="center" src="${link}" alt="${props.github}" /></p>`}
+            {`<p><img align="center" src="${topLanguagesLinkGenerator({github: props.github, options: props.options})}" alt="${props.github}" /></p>`}
             <br />
             <br />
           </>
@@ -218,7 +213,7 @@ const Markdown = props => {
       }
       return (
         <>
-          {`<p><img align="left" src="${link}" alt="${props.github}" /></p>`}
+          {`<p><img align="left" src="${topLanguagesLinkGenerator({github: props.github, options: props.options })}" alt="${props.github}" /></p>`}
           <br />
           <br />
         </>
@@ -489,6 +484,7 @@ const Markdown = props => {
           show={props.data.topLanguages}
           showStats={props.data.githubStats}
           github={props.social.github}
+          options={props.data.topLanguagesOptions}
         />
       </>
       <>

@@ -1,6 +1,6 @@
 import React from "react"
 import { icons, skills, skillWebsites } from "../constants/skills"
-import { githubStatsLinkGenerator } from "../utils/link-generators"
+import { githubStatsLinkGenerator, topLanguagesLinkGenerator } from "../utils/link-generators"
 
 const MarkdownPreview = props => {
   const TitlePreview = props => {
@@ -273,21 +273,17 @@ const MarkdownPreview = props => {
     if (show) {
       return (
         <div className="text-center mx-4 mb-4">
-          <img src={githubStatsLinkGenerator({github, options, show})} alt={github} />
+          <img src={githubStatsLinkGenerator({github, options})} alt={github} />
         </div>
       )
     }
     return null
   }
-  const TopLanguagesPreview = props => {
-    let link =
-      "https://github-readme-stats.vercel.app/api/top-langs/?username=" +
-      props.github +
-      "&layout=compact"
-    if (props.show) {
+  const TopLanguagesPreview = ({github, options, show})=> {
+    if (show) {
       return (
         <div className="text-center mx-4 mb-4">
-          <img src={link} alt={props.github} />
+          <img src={topLanguagesLinkGenerator({github, options})} alt={props.github} />
         </div>
       )
     }
@@ -346,6 +342,7 @@ const MarkdownPreview = props => {
         <TopLanguagesPreview
           show={props.data.topLanguages}
           github={props.social.github}
+          options={props.data.topLanguagesOptions}
         />
         <GitHubStatsPreview
           show={props.data.githubStats}

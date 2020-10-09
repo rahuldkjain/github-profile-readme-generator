@@ -73,6 +73,15 @@ const DEFAULT_DATA = {
     locale: "en",
   },
   topLanguages: false,
+  topLanguagesOptions: {
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
+  },
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
   rssDynamicBlogs: false,
@@ -163,7 +172,6 @@ const IndexPage = () => {
   }
 
   const handleDataChange = (field, e) => {
-    debugger
     let change = { ...data }
     change[field] = e.target.value
     setData(change)
@@ -465,7 +473,6 @@ const IndexPage = () => {
       setRestore("")
     }
   }
-console.log(data.githubStatsOptions)
   return (
     <Layout>
       <div className="m-4 sm:p-4">

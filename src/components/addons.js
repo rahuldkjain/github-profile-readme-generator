@@ -106,14 +106,13 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
   )
 }
 
-const CustomizeGithubStats = ({ githubStatsOptions, onStatsUpdate }) => {
-  return (
+const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
     <>
-      <label htmlFor="github-stats-theme">Theme:&nbsp;
+      <label htmlFor={`${prefix}-theme`}>Theme:&nbsp;
         <select
-          id="github-stats-theme"
-          onChange={({target: { value }}) => onStatsUpdate("theme", value)}
-          value={githubStatsOptions.theme}
+          id={`${prefix}-theme`}
+          onChange={({target: { value }}) => onUpdate("theme", value)}
+          defaultValue={options.theme}
         >
           <option value="none">none</option>
           <option value="dark">Dark</option>
@@ -128,63 +127,63 @@ const CustomizeGithubStats = ({ githubStatsOptions, onStatsUpdate }) => {
           <option value="dracula">Dracula</option>
         </select>
       </label>
-      <label htmlFor="github-stats-title-color">Title Color:&nbsp;
+      <label htmlFor={`${prefix}-title-color`}>Title Color:&nbsp;
         <input
           type="color"
-          id="github-stats-title-color"
-          defaultValue={`#${githubStatsOptions.titleColor}`}
+          id={`${prefix}-title-color`}
+          defaultValue={`#${options.titleColor}`}
           className="w-6"
-          onChange={(e) => onStatsUpdate('titleColor', e.target.value.replace('#', ''))}
+          onChange={(e) => onUpdate('titleColor', e.target.value.replace('#', ''))}
         />
       </label>
-      <label htmlFor="github-stats-text-color">Text Color:&nbsp;
+      <label htmlFor={`${prefix}-text-color`}>Text Color:&nbsp;
         <input
           type="color"
-          id="github-stats-text-color"
-          defaultValue={`#${githubStatsOptions.textColor}`}
+          id={`${prefix}-text-color`}
+          defaultValue={`#${options.textColor}`}
           className="w-6"
-          onChange={(e) => onStatsUpdate('textColor', e.target.value.replace('#', ''))}
+          onChange={(e) => onUpdate('textColor', e.target.value.replace('#', ''))}
         />
       </label>
-      <label htmlFor="github-stats-bg-color">Background Color:&nbsp;
+      <label htmlFor={`${prefix}-bg-color`}>Background Color:&nbsp;
         <input
           type="color"
-          id="github-stats-bg-color"
-          defaultValue={`#${githubStatsOptions.bgColor}`}
+          id={`${prefix}-bg-color`}
+          defaultValue={`#${options.bgColor}`}
           className="w-6"
-          onChange={(e) => onStatsUpdate('bgColor', e.target.value.replace('#', ''))}
+          onChange={(e) => onUpdate('bgColor', e.target.value.replace('#', ''))}
         />
       </label>
-      <label htmlFor="github-stats-hide-border">Hide border:&nbsp;
+      <label htmlFor={`${prefix}-hide-border`}>Hide border:&nbsp;
         <input
-          id="github-stats-hide-border"
+          id={`${prefix}-hide-border`}
           type="checkbox"
-          checked={githubStatsOptions.hideBorder}
-          onChange={(e) => onStatsUpdate('hideBorder', e.target.checked)}
+          checked={options.hideBorder}
+          onChange={(e) => onUpdate('hideBorder', e.target.checked)}
         />
       </label>
-      <label htmlFor="github-stats-cache-seconds">Cache Seconds:&nbsp;
+      <label htmlFor={`${prefix}-cache-seconds`}>Cache Seconds:&nbsp;
         <input
-          id="github-stats-cache-seconds"
+          id={`${prefix}-cache-seconds`}
           type="number"
           min={1800}
           max={86400}
           placeholder={1800}
-          onChange={(e) => onStatsUpdate('cacheSeconds', e.target.value)}
+          defaultValue={options.cacheSeconds}
+          onChange={(e) => onUpdate('cacheSeconds', e.target.value)}
         />
       </label>
-      <label htmlFor="github-stats-locale">Locale:&nbsp;
+      <label htmlFor={`${prefix}-locale`}>Locale:&nbsp;
         <input
-          id="github-stats-locale"
+          id={`${prefix}-locale`}
           type="text"
           placeholder="en"
-          onChange={(e) => onStatsUpdate('locale', e.target.value)}
+          defaultValue={options.locale}
+          onChange={(e) => onUpdate('locale', e.target.value)}
           size="2"
         />
       </label>
     </>
-  )
-}
 
 const Addons = props => {
   const [debounce, setDebounce] = useState(undefined);
@@ -211,6 +210,16 @@ const Addons = props => {
       ...props.data.githubStatsOptions
     })
   }, [props.data.githubStatsOptions])
+
+  const [topLanguagesOptions, setTopLanguagesOptions] = useState({
+    ...props.data.topLanguagesOptions,
+  });
+
+  useEffect(() => {
+    setTopLanguagesOptions({
+      ...props.data.topLanguagesOptions
+    })
+  }, [props.data.topLanguagesOptions])
 
   const blogPostPorkflow = () => {
     let payload = {
@@ -256,6 +265,12 @@ const Addons = props => {
     props.handleDataChange("githubStatsOptions", {target: {value: newStatsOptions}})
   }
 
+  const onTopLangUpdate = (option, value) => {
+    const newLangOptions = {...topLanguagesOptions, [option]: value}
+    setTopLanguagesOptions(newLangOptions)
+    props.handleDataChange("topLanguagesOptions", {target: {value: newLangOptions}})
+  }
+
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
@@ -295,7 +310,7 @@ const Addons = props => {
           <CustomizeOptions
             title="Customize Github Stats Card"
             CustomizationOptions={
-          <CustomizeGithubStats githubStatsOptions={githubStatsOptions} onStatsUpdate={onStatsUpdate}/>
+          <CustomizeGithubStatsBase prefix="stats" options={githubStatsOptions} onUpdate={onStatsUpdate}/>
             }
           />
         }
@@ -306,6 +321,14 @@ const Addons = props => {
         inputId="top-languages"
         inputChecked={props.data.topLanguages}
         onInputChange={() => props.handleCheckChange("topLanguages")}
+        Options={
+          <CustomizeOptions
+            title="Customize Top Skills Card"
+            CustomizationOptions={
+            <CustomizeGithubStatsBase prefix="top-lang" options={topLanguagesOptions} onUpdate={onTopLangUpdate}/>
+            }
+          />
+        }
       >
         display top skills
       </AddonsItem>

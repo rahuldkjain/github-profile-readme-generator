@@ -1,6 +1,5 @@
-export const githubStatsLinkGenerator = ({github, options, show}) => {
+const githubStatsStylingQueryString = options => {
   const params = {
-    username: github,
     show_icons: true,
     ...(options.theme && options.theme !== "none") && { theme: options.theme },
     ...options.titleColor && { "title_color": options.titleColor },
@@ -10,8 +9,12 @@ export const githubStatsLinkGenerator = ({github, options, show}) => {
     ...options.cacheSeconds && { "cache_seconds": options.cacheSeconds},
     ...options.locale && { "locale": options.locale},
   }
-  console.log(params);
   const query_string = Object.entries(params).map(([key, value]) => `${key}=${value}`).join("&")
-  const link = `https://github-readme-stats.vercel.app/api?${query_string}`
-  return link
+  return query_string
 }
+
+export const githubStatsLinkGenerator = ({github, options}) =>
+  `https://github-readme-stats.vercel.app/api?username=${github}&${githubStatsStylingQueryString(options)}`
+
+export const topLanguagesLinkGenerator = ({github, options}) =>
+ `https://github-readme-stats.vercel.app/api/top-langs?username=${github}&${githubStatsStylingQueryString(options)}&layout=compact`
