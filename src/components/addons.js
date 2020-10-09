@@ -5,55 +5,54 @@ import links from "../constants/page-links"
 import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
 import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
 
-const CustomizeOptions = ({title, CustomizationOptions}) =>  {
-  const [open, setOpen] = useState(false)
-  const Icon = open ? XCircleIcon : ToolsIcon
+const AddonsItem = ({ inputId, inputChecked, onInputChange, Options, onIconClick, ...props }) => {
+  const [open, setOpen] = useState(false);
+  const Icon = open ? XCircleIcon : ToolsIcon;
 
   return (
     <>
-    <button onClick={() => setOpen(!open)} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
-      <Icon className="transform scale-100 md:scale-125" />
-    </button>
-    {open && <div className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`} style={{maxWidth: '21rem'}}>
-      <header className="text-base sm:text-lg">{ title }</header>
-      <hr className="border-gray-500"/>
-      <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
-        {CustomizationOptions}
-      </div>
-    </div>}
-  </>
-  )
-}
-
-const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ...props}) => {
-  return (
-    <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-      <label htmlFor={inputId} className="cursor-pointer flex items-center">
-        <input
-          type="checkbox"
-          id={inputId}
-          checked={inputChecked}
-          onChange={onInputChange}
-        />
-        <span className="pl-4">{props.children}</span>
-      </label>
-      {
-        Icon?
-          <button onClick={onIconClick} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
+      <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
+        <label htmlFor={inputId} className="cursor-pointer flex items-center">
+          <input
+            type="checkbox"
+            id={inputId}
+            checked={inputChecked}
+            onChange={onInputChange}
+          />
+          <span className="pl-4">{props.children}</span>
+        </label>
+        {Options && (
+          <button
+            onClick={() => setOpen(!open)}
+            className="flex ml-3 focus:bg-gray-400"
+            style={{ outline: "none" }}
+          >
             <Icon className="transform scale-100 md:scale-125" />
           </button>
-          :''
-      }
+        )}
+      </div>
+      {Options && open && Options}
+    </>
+  );
+};
+
+const CustomizeOptions = ({ title, CustomizationOptions }) => (
+  <div
+    className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`}
+    style={{ maxWidth: "21rem" }}
+  >
+    <header className="text-base sm:text-lg">{title}</header>
+    <hr className="border-gray-500" />
+    <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
+      {CustomizationOptions}
     </div>
-  )
-}
+  </div>
+);
+
 
 const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
   return (
-    <div className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`} style={{maxWidth: '21rem'}}>
-      <header className="text-base sm:text-lg">Customize Badge</header>
-      <hr className="border-gray-500"/>
-      <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
+    <>
         <label htmlFor="badge-style">Style:&nbsp;
           <select 
             id="badge-style" 
@@ -103,13 +102,11 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
           }
           
         </span>
-      </div>
-    </div>
+    </>
   )
 }
 
 const Addons = props => {
-  const [customizeBadgeOpen, setCustomizeOpen] = useState(false);
   const [debounce, setDebounce] = useState(undefined);
   const [badgeOptions, setBadgeOptions] = useState({
     badgeStyle: props.data.badgeStyle, 
@@ -153,10 +150,6 @@ const Addons = props => {
     document.body.removeChild(tempElement)
   }
 
-  const onCustomizeClick = () => {
-    setCustomizeOpen(!customizeBadgeOpen);
-  }
-
   const onBadgeUpdate = (option, value) => {
     const callback = () => {
       let newVal = (option==='badgeLabel' && value==='')?'Profile views':value;
@@ -175,20 +168,21 @@ const Addons = props => {
         inputId="visitors-count"
         inputChecked={props.data.visitorsBadge}
         onInputChange={() => props.handleCheckChange("visitorsBadge")}
-        Icon={ customizeBadgeOpen ? XCircleIcon : ToolsIcon }
-        onIconClick={onCustomizeClick}
+        Options={
+          <CustomizeOptions
+            title="Customize Badge"
+            CustomizationOptions={
+              <CustomizeBadge
+                githubName={props.social.github} 
+                badgeOptions={badgeOptions}
+                onBadgeUpdate={onBadgeUpdate}
+              />
+            }
+          />
+        }
       >
         display visitors count badge
       </AddonsItem>
-      {
-        customizeBadgeOpen?
-          <CustomizeBadge 
-            githubName={props.social.github} 
-            badgeOptions={badgeOptions}
-            onBadgeUpdate={onBadgeUpdate}
-          />
-        : ''
-      }
       <AddonsItem
         inputId="github-profile-trophy"
         inputChecked={props.data.githubProfileTrophy}
@@ -200,9 +194,9 @@ const Addons = props => {
         inputId="github-stats"
         inputChecked={props.data.githubStats}
         onInputChange={() => props.handleCheckChange("githubStats")}
+        Options={<CustomizeOptions title="Customize Github Stats Card" CustomizationOptions={<div>test</div>}/>}
       >
         display github profile stats card
-        <CustomizeOptions title="Customize Github Stats Card" CustomizationOptions={<div>test</div>}/>
       </AddonsItem>
       <AddonsItem
         inputId="top-languages"
