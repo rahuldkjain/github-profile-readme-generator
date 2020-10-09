@@ -106,6 +106,30 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
   )
 }
 
+const CustomizeGithubStats = ({ githubStatsOptions, onStatsUpdate }) => {
+  return (
+    <label htmlFor="github-stats-theme">Theme:&nbsp;
+      <select
+        id="github-stats-theme"
+        onChange={({target: { value }}) => onStatsUpdate("theme", value)}
+        value={githubStatsOptions.theme}
+      >
+        <option value={ null }>none</option>
+        <option value="dark">Dark</option>
+        <option value="radical">Radical</option>
+        <option value="merko">Merko</option>
+        <option value="gruvbox">Gruvbox</option>
+        <option value="tokyonight">Tokyonight</option>
+        <option value="onedark">Onedark</option>
+        <option value="cobalt">Cobalt</option>
+        <option value="synthwave">Synthwave</option>
+        <option value="highcontrast">Highcontrast</option>
+        <option value="dracula">Dracula</option>
+      </select>
+    </label>
+  )
+}
+
 const Addons = props => {
   const [debounce, setDebounce] = useState(undefined);
   const [badgeOptions, setBadgeOptions] = useState({
@@ -121,6 +145,10 @@ const Addons = props => {
       badgeLabel: props.data.badgeLabel
     })
   }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
+
+  const [githubStatsOptions, setGithubStatsOptions] = useState({
+    theme: ""
+  });
 
   const blogPostPorkflow = () => {
     let payload = {
@@ -159,6 +187,13 @@ const Addons = props => {
     clearTimeout(debounce);
     setDebounce(setTimeout(callback, 300));
   }
+
+  const onStatsUpdate = (option, value) => {
+    const newStatsOptions = {...githubStatsOptions, [option]: value}
+    setGithubStatsOptions(newStatsOptions)
+    props.handleDataChange("githubStatsOptions", {target: {value: newStatsOptions}})
+  }
+
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
@@ -194,7 +229,14 @@ const Addons = props => {
         inputId="github-stats"
         inputChecked={props.data.githubStats}
         onInputChange={() => props.handleCheckChange("githubStats")}
-        Options={<CustomizeOptions title="Customize Github Stats Card" CustomizationOptions={<div>test</div>}/>}
+        Options={
+          <CustomizeOptions
+            title="Customize Github Stats Card"
+            CustomizationOptions={
+          <CustomizeGithubStats githubStatsOptions={githubStatsOptions} onStatsUpdate={onStatsUpdate}/>
+            }
+          />
+        }
       >
         display github profile stats card
       </AddonsItem>

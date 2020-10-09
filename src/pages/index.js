@@ -63,6 +63,9 @@ const DEFAULT_DATA = {
   badgeLabel: "Profile views",
   githubProfileTrophy: false,
   githubStats: false,
+  githubStatsOptions: {
+    theme: ""
+  },
   topLanguages: false,
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
@@ -154,6 +157,7 @@ const IndexPage = () => {
   }
 
   const handleDataChange = (field, e) => {
+    debugger
     let change = { ...data }
     change[field] = e.target.value
     setData(change)

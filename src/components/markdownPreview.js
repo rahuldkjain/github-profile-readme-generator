@@ -267,12 +267,16 @@ const MarkdownPreview = props => {
     }
     return null
   }
-  const GitHubStatsPreview = props => {
-    let link =
-      "https://github-readme-stats.vercel.app/api?username=" +
-      props.github +
-      "&show_icons=true"
-    if (props.show) {
+  const GitHubStatsPreview = ({github, options, show })=> {
+    const params = {
+      username: github,
+      show_icons: true,
+      ...options.theme && { theme: options.theme }
+    }
+    const query_string = Object.entries(params).map(([key, value]) => `${key}=${value}`).join("&")
+    const link = `https://github-readme-stats.vercel.app/api?${query_string}`
+
+    if (show) {
       return (
         <div className="text-center mx-4 mb-4">
           <img src={link} alt={props.github} />
@@ -352,6 +356,7 @@ const MarkdownPreview = props => {
         <GitHubStatsPreview
           show={props.data.githubStats}
           github={props.social.github}
+          options={props.data.githubStatsOptions}
         />
       </div>
     </div>
