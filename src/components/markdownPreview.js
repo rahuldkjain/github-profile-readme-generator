@@ -1,5 +1,6 @@
 import React from "react"
 import { icons, skills, skillWebsites } from "../constants/skills"
+import { githubStatsLinkGenerator } from "../utils/link-generators"
 
 const MarkdownPreview = props => {
   const TitlePreview = props => {
@@ -267,19 +268,12 @@ const MarkdownPreview = props => {
     }
     return null
   }
-  const GitHubStatsPreview = ({github, options, show })=> {
-    const params = {
-      username: github,
-      show_icons: true,
-      ...options.theme && { theme: options.theme }
-    }
-    const query_string = Object.entries(params).map(([key, value]) => `${key}=${value}`).join("&")
-    const link = `https://github-readme-stats.vercel.app/api?${query_string}`
 
+  const GitHubStatsPreview = ({github, options, show })=> {
     if (show) {
       return (
         <div className="text-center mx-4 mb-4">
-          <img src={link} alt={props.github} />
+          <img src={githubStatsLinkGenerator({github, options, show})} alt={github} />
         </div>
       )
     }

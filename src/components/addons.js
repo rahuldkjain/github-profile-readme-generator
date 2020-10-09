@@ -150,6 +150,12 @@ const Addons = props => {
     theme: ""
   });
 
+  useEffect(() => {
+    setGithubStatsOptions({
+      ...props.data.githubStatsOptions
+    })
+  }, [props.data.githubStatsOptions])
+
   const blogPostPorkflow = () => {
     let payload = {
       dev: {

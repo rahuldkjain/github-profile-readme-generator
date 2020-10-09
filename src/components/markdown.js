@@ -1,6 +1,8 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
+import { githubStatsLinkGenerator } from "../utils/link-generators"
+
 
 const Markdown = props => {
   const Title = props => {
@@ -124,14 +126,10 @@ const Markdown = props => {
     return ""
   }
   const GitHubStats = props => {
-    let link =
-      "https://github-readme-stats.vercel.app/api?username=" +
-      props.github +
-      "&show_icons=true"
     if (props.show) {
       return (
         <>
-          {`<p>&nbsp;<img align="center" src="${link}" alt="${props.github}" /></p>`}
+          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator(props)}" alt="${props.github}" /></p>`}
           <br />
           <br />
         </>
@@ -497,10 +495,10 @@ const Markdown = props => {
         <GitHubStats
           show={props.data.githubStats}
           github={props.social.github}
+          options={props.data.githubStatsOptions}
         />
       </>
     </div>
   )
 }
-
 export default Markdown
