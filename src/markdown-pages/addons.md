@@ -28,6 +28,26 @@ You can customize the theme too. See how to customize yours [here](https://githu
 
 <br/>
 
+## [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
+
+🏆 Add dynamically generated GitHub Trophy on your readme.
+
+<a href="https://github.com/ryo-ma/github-profile-trophy" target="blank">
+  <img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&column=8" alt="github trophy"/>
+</a>
+
+#### Apply theme
+
+<a href="https://github.com/ryo-ma/github-profile-trophy" target="blank">
+  <img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&column=8&theme=gruvbox" alt="github trophy"/>
+</a>
+
+Developed by [Ryota Sakamoto](https://github.com/ryo-ma)
+
+You can customize the theme too. See how to customize yours [here](https://github.com/ryo-ma/github-profile-trophy)
+
+<br/>
+
 ## [GitHub Profile Views Counter](https://github.com/antonkomarev/github-profile-views-counter)
 
 It counts how many times your GitHub profile has been viewed. Free cloud micro-service.
