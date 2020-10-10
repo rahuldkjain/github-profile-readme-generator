@@ -22,6 +22,16 @@ const categorizedSkills = {
     ],
   },
 
+  fullstack_dev: {
+    title: "Fullstack Development",
+    skills: [
+      "MERN_stack",
+      "MEAN_stack",
+      "LAMP_stack",
+      "JAM_stack",
+    ],
+  },
+
   frontend_dev: {
     title: "Frontend Development",
     skills: [
@@ -78,6 +88,8 @@ const categorizedSkills = {
       "ionic",
     ],
   },
+
+  
 
   ai: {
     title: "AI/ML",
@@ -184,6 +196,7 @@ const categorizedSkills = {
 }
 
 const icons = {
+
   vuejs:
     "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg",
   react:
@@ -377,7 +390,16 @@ const icons = {
   circleci:
     "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
   unity:
-    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+  JAM_stack: 
+    "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/jam.svg",
+  MEAN_stack:
+   "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/mean.svg",
+  MERN_stack:
+    "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/mern.svg",
+  LAMP_stack:
+    "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/lamp_1.svg",
+
 }
 
 const skillWebsites = {
@@ -500,7 +522,11 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  unity: "https://unity.com/"
+  unity: "https://unity.com/",
+  LAMP_stack: "https://en.wikipedia.org/wiki/LAMP_(software_bundle)",
+  MERN_stack: "",
+  MEAN_stack: "https://meanjs.org",
+  JAM_stack: "https://jamstack.org/",
 }
 
 const initialSkillState = {}
