@@ -6,7 +6,7 @@ const categorizedSkills = {
       "c",
       "cplusplus",
       "csharp",
-      "go",
+      "go", 
       "java",
       "javascript",
       "typescript",
