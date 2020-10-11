@@ -63,7 +63,25 @@ const DEFAULT_DATA = {
   badgeLabel: "Profile views",
   githubProfileTrophy: false,
   githubStats: false,
+  githubStatsOptions: {
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
+  },
   topLanguages: false,
+  topLanguagesOptions: {
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
+  },
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
   rssDynamicBlogs: false,
@@ -451,11 +469,10 @@ const IndexPage = () => {
       )
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
     } catch (error) {
-    } finally {
+    } finally { 
       setRestore("")
     }
   }
-
   return (
     <Layout>
       <div className="m-4 sm:p-4">
