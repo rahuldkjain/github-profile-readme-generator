@@ -2,10 +2,20 @@ import React, { useState, useEffect } from "react"
 import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
-import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
+import {
+  isMediumUsernameValid,
+  isGitHubUsernameValid,
+} from "../utils/validation"
+import { ToolsIcon, XCircleIcon } from "@primer/octicons-react"
 
-const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ...props}) => {
+const AddonsItem = ({
+  inputId,
+  inputChecked,
+  onInputChange,
+  Icon,
+  onIconClick,
+  ...props
+}) => {
   return (
     <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
       <label htmlFor={inputId} className="cursor-pointer flex items-center">
@@ -17,71 +27,85 @@ const AddonsItem = ({inputId, inputChecked, onInputChange, Icon, onIconClick, ..
         />
         <span className="pl-4">{props.children}</span>
       </label>
-      {
-        Icon?
-          <button onClick={onIconClick} className="flex ml-3 focus:bg-gray-400" style={{outline: "none"}}>
-            <Icon className="transform scale-100 md:scale-125" />
-          </button>
-          :''
-      }
+      {Icon ? (
+        <button
+          onClick={onIconClick}
+          className="flex ml-3 focus:bg-gray-400"
+          style={{ outline: "none" }}
+        >
+          <Icon className="transform scale-100 md:scale-125" />
+        </button>
+      ) : (
+        ""
+      )}
     </div>
   )
 }
 
-const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
+const CustomizeBadge = ({ githubName, badgeOptions, onBadgeUpdate }) => {
   return (
-    <div className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`} style={{maxWidth: '21rem'}}>
+    <div
+      className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`}
+      style={{ maxWidth: "21rem" }}
+    >
       <header className="text-base sm:text-lg">Customize Badge</header>
-      <hr className="border-gray-500"/>
+      <hr className="border-gray-500" />
       <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">
-        <label htmlFor="badge-style">Style:&nbsp;
-          <select 
-            id="badge-style" 
-            onChange={(e) => onBadgeUpdate('badgeStyle', e.target.value)} 
-            value = {badgeOptions.badgeStyle}
+        <label htmlFor="badge-style">
+          Style:&nbsp;
+          <select
+            id="badge-style"
+            onChange={e => onBadgeUpdate("badgeStyle", e.target.value)}
+            value={badgeOptions.badgeStyle}
           >
             <option value="flat">Flat</option>
             <option value="flat-square">Flat Square</option>
             <option value="plastic">Plastic</option>
-          </select> 
+          </select>
         </label>
-        
-        <label htmlFor="badge-color">Color:&nbsp;
-          <input 
-            type="color" 
-            id="badge-color" 
-            defaultValue={`#${badgeOptions.badgeColor}`} 
+
+        <label htmlFor="badge-color">
+          Color:&nbsp;
+          <input
+            type="color"
+            id="badge-color"
+            defaultValue={`#${badgeOptions.badgeColor}`}
             className="w-6"
-            onChange={(e) => onBadgeUpdate('badgeColor', e.target.value.replace('#', ''))}
+            onChange={e =>
+              onBadgeUpdate("badgeColor", e.target.value.replace("#", ""))
+            }
           />
         </label>
-        
-        <label htmlFor="badge-label-text">Label Text:&nbsp;
-          <input 
-            type="text" 
-            id="badge-label-text" 
-            placeholder="Profile views" 
+
+        <label htmlFor="badge-label-text">
+          Label Text:&nbsp;
+          <input
+            type="text"
+            id="badge-label-text"
+            placeholder="Profile views"
             className="w-2/4 bg-gray-300 pl-2"
-            onChange={(e) => onBadgeUpdate('badgeLabel', e.target.value.trim())}
+            onChange={e => onBadgeUpdate("badgeLabel", e.target.value.trim())}
             defaultValue={badgeOptions.badgeLabel}
           />
         </label>
-        
+
         <span className="mt-2 flex items-center">
           Preview:&nbsp;
-          {
-            isGitHubUsernameValid(githubName)?
-              <img 
-                src={`https://komarev.com/ghpvc/`
-                    + `?username=${githubName}`
-                    + `&label=${encodeURI(badgeOptions.badgeLabel)}`
-                    + `&color=${badgeOptions.badgeColor}`
-                    + `&style=${badgeOptions.badgeStyle}`
-                    }
-              />
-            : <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
-          }
-          
+          {isGitHubUsernameValid(githubName) ? (
+            <img
+              src={
+                `https://komarev.com/ghpvc/` +
+                `?username=${githubName}` +
+                `&label=${encodeURI(badgeOptions.badgeLabel)}` +
+                `&color=${badgeOptions.badgeColor}` +
+                `&style=${badgeOptions.badgeStyle}`
+              }
+            />
+          ) : (
+            <span className="text-xxs md:text-sm text-red-600">
+              Invalid GitHub username
+            </span>
+          )}
         </span>
       </div>
     </div>
@@ -89,19 +113,19 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
 }
 
 const Addons = props => {
-  const [customizeBadgeOpen, setCustomizeOpen] = useState(false);
-  const [debounce, setDebounce] = useState(undefined);
+  const [customizeBadgeOpen, setCustomizeOpen] = useState(false)
+  const [debounce, setDebounce] = useState(undefined)
   const [badgeOptions, setBadgeOptions] = useState({
-    badgeStyle: props.data.badgeStyle, 
-    badgeColor: props.data.badgeColor, 
-    badgeLabel: props.data.badgeLabel
-  });
+    badgeStyle: props.data.badgeStyle,
+    badgeColor: props.data.badgeColor,
+    badgeLabel: props.data.badgeLabel,
+  })
 
   useEffect(() => {
     setBadgeOptions({
-      badgeStyle: props.data.badgeStyle, 
-      badgeColor: props.data.badgeColor, 
-      badgeLabel: props.data.badgeLabel
+      badgeStyle: props.data.badgeStyle,
+      badgeColor: props.data.badgeColor,
+      badgeLabel: props.data.badgeLabel,
     })
   }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
 
@@ -134,17 +158,18 @@ const Addons = props => {
   }
 
   const onCustomizeClick = () => {
-    setCustomizeOpen(!customizeBadgeOpen);
+    setCustomizeOpen(!customizeBadgeOpen)
   }
 
   const onBadgeUpdate = (option, value) => {
     const callback = () => {
-      let newVal = (option==='badgeLabel' && value==='')?'Profile views':value;
-      setBadgeOptions({...badgeOptions, [option]: newVal});
-      props.handleDataChange(option, {target: {value: newVal}})
+      let newVal =
+        option === "badgeLabel" && value === "" ? "Profile views" : value
+      setBadgeOptions({ ...badgeOptions, [option]: newVal })
+      props.handleDataChange(option, { target: { value: newVal } })
     }
-    clearTimeout(debounce);
-    setDebounce(setTimeout(callback, 300));
+    clearTimeout(debounce)
+    setDebounce(setTimeout(callback, 300))
   }
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
@@ -155,20 +180,20 @@ const Addons = props => {
         inputId="visitors-count"
         inputChecked={props.data.visitorsBadge}
         onInputChange={() => props.handleCheckChange("visitorsBadge")}
-        Icon={ customizeBadgeOpen ? XCircleIcon : ToolsIcon }
+        Icon={customizeBadgeOpen ? XCircleIcon : ToolsIcon}
         onIconClick={onCustomizeClick}
       >
         display visitors count badge
       </AddonsItem>
-      {
-        customizeBadgeOpen?
-          <CustomizeBadge 
-            githubName={props.social.github} 
-            badgeOptions={badgeOptions}
-            onBadgeUpdate={onBadgeUpdate}
-          />
-        : ''
-      }
+      {customizeBadgeOpen ? (
+        <CustomizeBadge
+          githubName={props.social.github}
+          badgeOptions={badgeOptions}
+          onBadgeUpdate={onBadgeUpdate}
+        />
+      ) : (
+        ""
+      )}
       <AddonsItem
         inputId="github-profile-trophy"
         inputChecked={props.data.githubProfileTrophy}
@@ -229,7 +254,7 @@ const Addons = props => {
             download
             <span
               onClick={blogPostPorkflow}
-              onKeyDown={(e) => e.keyCode === 13 && blogPostPorkflow()}
+              onKeyDown={e => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
               tabIndex="0"
               style={{ cursor: "pointer", color: "#002ead" }}

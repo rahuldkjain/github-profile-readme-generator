@@ -42,7 +42,6 @@ const DEFAULT_PREFIX = {
   funFact: "⚡ Fun fact",
   portfolio: "👨‍💻 All of my projects are available at",
   blog: "📝 I regulary write articles on",
-  
 }
 
 const DEFAULT_DATA = {
@@ -376,10 +375,14 @@ const IndexPage = () => {
       return
     }
 
-    setPrefix(cache.prefix ? {...DEFAULT_PREFIX, ...cache.prefix} : DEFAULT_PREFIX)
-    setData(cache.data ? {...DEFAULT_DATA, ...cache.data} : DEFAULT_DATA)
-    setLink(cache.link ? {...DEFAULT_LINK, ...cache.link} : DEFAULT_LINK)
-    setSocial(cache.social ? {...DEFAULT_SOCIAL, ...cache.social} : DEFAULT_SOCIAL)
+    setPrefix(
+      cache.prefix ? { ...DEFAULT_PREFIX, ...cache.prefix } : DEFAULT_PREFIX
+    )
+    setData(cache.data ? { ...DEFAULT_DATA, ...cache.data } : DEFAULT_DATA)
+    setLink(cache.link ? { ...DEFAULT_LINK, ...cache.link } : DEFAULT_LINK)
+    setSocial(
+      cache.social ? { ...DEFAULT_SOCIAL, ...cache.social } : DEFAULT_SOCIAL
+    )
 
     const cacheSkills = mergeDefaultWithNewDataSkills(
       DEFAULT_SKILLS,
@@ -452,6 +455,15 @@ const IndexPage = () => {
     } catch (error) {
     } finally {
       setRestore("")
+    }
+  }
+
+  const handleFileInput = e => {
+    const file = e.target.files[0]
+    const reader = new FileReader()
+    reader.readAsText(file, "UTF-8")
+    reader.onload = () => {
+      setRestore(reader.result)
     }
   }
 
@@ -532,7 +544,7 @@ const IndexPage = () => {
             ) : (
               ""
             )}
-            {(data.twitterBadge && !social.twitter) ? (
+            {data.twitterBadge && !social.twitter ? (
               <div className="warning">
                 * Please add twitter username to use these add-ons
               </div>
@@ -546,7 +558,7 @@ const IndexPage = () => {
               tabIndex="0"
               role="button"
               onClick={handleGenerate}
-              onKeyDown={(e) => e.keyCode === 13 && handleGenerate()}
+              onKeyDown={e => e.keyCode === 13 && handleGenerate()}
             >
               Generate README
             </div>
@@ -678,17 +690,29 @@ const IndexPage = () => {
             <input
               type="text"
               className="outline-none w-1/2 mr-6 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
-              placeholder="JSON Backup"
+              placeholder="Paste JSON code or upload file"
               value={restore}
               onChange={e => setRestore(e.target.value)}
             />
-            <button
-              className="text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
-              onClick={handleRestore}
-            >
-              Restore
-            </button>
+
+            <div class="overflow-hidden relative w-64 mt-4 mb-4">
+              <input
+                class="cursor-pointer absolute block opacity-0 pin-r pin-t before:cursor-pointer"
+                type="file"
+                name="vacancyImageFiles"
+                onChange={handleFileInput}
+              />
+              <button class="text-xxs sm:text-sm border-2 w-40 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1">
+                Upload json file
+              </button>
+            </div>
           </div>
+          <button
+            className="mr-5 mb-10 text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
+            onClick={handleRestore}
+          >
+            Restore
+          </button>
           <div className="flex flex-col items-start justify-center">
             <div className="text-green-700 font-medium">Tips</div>
             <div className="text-sm sm:text-lg text-gray-700">

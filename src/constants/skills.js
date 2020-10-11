@@ -120,7 +120,7 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
-      "circleci"
+      "circleci",
     ],
   },
 
@@ -140,7 +140,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar"
+      "quasar",
     ],
   },
 
@@ -174,21 +174,21 @@ const categorizedSkills = {
   static_site_generator: {
     title: "Static Site Generators",
     skills: [
-      "gatsby", 
-      "gridsome", 
-      "hugo", 
-      "jekyll", 
-      "nextjs", 
-      "nuxtjs", 
-      "11ty", 
+      "gatsby",
+      "gridsome",
+      "hugo",
+      "jekyll",
+      "nextjs",
+      "nuxtjs",
+      "11ty",
       "scully",
       "sculpin",
       "sapper",
-      "vuepress"
+      "vuepress",
     ],
   },
 
-  game_engines:{
+  game_engines: {
     title: "Game Engines",
     skills: ["unity"],
   },
@@ -268,12 +268,10 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
   photoshop:
     "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
-  xd:
-    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
+  xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
-  perl:
-    "https://api.iconify.design/logos-perl.svg",
+  perl: "https://api.iconify.design/logos-perl.svg",
   postgresql:
     "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
   python:
@@ -361,7 +359,7 @@ const icons = {
   nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
-  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
+  cockroachdb: "https://worldvectorlogo.com/es/download/cockroachdb.svg",
   objectivec:
     "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
   clojure:
@@ -389,16 +387,12 @@ const icons = {
     "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-  quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+  quasar: "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
   kibana:
     "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
-  grafana:
-    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
-  elasticsearch:
-    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
-  circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
+  grafana: "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
+  elasticsearch: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
+  circleci: "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
   scully:
     "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
   "11ty":
@@ -406,11 +400,10 @@ const icons = {
   sculpin:
     "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
   sapper:
-    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
+    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg",
   vuepress:
     "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",
-  unity:
-    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+  unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
 }
 
 const skillWebsites = {
@@ -542,7 +535,7 @@ const skillWebsites = {
   "11ty": "https://www.11ty.dev/",
   sapper: "https://sapper.svelte.dev/",
   vuepress: "https://vuepress.vuejs.org/",
-  unity: "https://unity.com/"
+  unity: "https://unity.com/",
 }
 
 const initialSkillState = {}
