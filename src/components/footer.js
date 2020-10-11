@@ -6,19 +6,29 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
-      <div className="w-full flex justify-evenly py-2">
-        <div className="mr-6">
-          <h1 className="text-base font-bold font-title sm:text-2xl flex-col items-end">
-            <img
-              src={logo}
-              className="h-24"
-              alt="github profile markdown generator logo"
-            />
-            GitHub Profile README Generator
+      <div className="w-full flex flex-col sm:flex-row justify-evenly py-2">
+        <div className="sm:mr-6 order-last sm:order-none flex justify-center">
+          <h1 className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0">
+            <div className="flex sm:flex-col items-start justify-center mb-3 sm:mb-0">
+              <img
+                src={logo}
+                className="hidden sm:block h-24"
+                alt="github profile markdown generator logo"
+              />
+              <div className="mr-2 sm:mr-0">
+                GitHub Profile{" "}
+                <img
+                  src={logo}
+                  className="inline sm:hidden h-12"
+                  alt="github profile markdown generator logo"
+                />
+                <span className="block sm:inline">README Generator</span>
+              </div>
+            </div>
           </h1>
         </div>
         <div>
-          <div className="mb-2 font-bold font-medium font-title">
+          <div className="font-title font-bold text-xl sm:text-base mb-4 sm:mb-2">
             <strong>Pages</strong>
           </div>
           <div>
@@ -38,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="mb-2 font-bold font-medium font-title">
+          <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
             <strong>More</strong>
           </div>
           <div>
@@ -61,8 +71,8 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="mb-2 font-bold font-medium font-title">
-            <strong>Community</strong>
+          <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
+            <strong>Join Community</strong>
           </div>
           <div>
             <a
