@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
       <div className="w-full flex flex-col sm:flex-row justify-evenly py-2">
-        <div className="sm:mr-6 order-last sm:order-none flex justify-center">
+        <div className="ml-2 sm:ml-0 sm:mr-6 order-last sm:order-none flex">
           <h1 className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0">
-            <div className="flex sm:flex-col items-start justify-center mb-3 sm:mb-0">
+            <div className="flex sm:flex-col items-start mb-3 sm:mb-0">
               <img
                 src={logo}
                 className="hidden sm:block h-24"
@@ -27,31 +27,31 @@ const Footer = () => {
             </div>
           </h1>
         </div>
-        <div>
-          <div className="font-title font-bold text-xl sm:text-base mb-4 sm:mb-2">
+        <div className="text-xl sm:text-base">
+          <div className="font-title font-bold mb-4 sm:mb-2">
             <strong>Pages</strong>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <Link to={links.addons} activeStyle={{ color: "#002ead" }}>
               Addons
             </Link>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <Link to={links.support} activeStyle={{ color: "#002ead" }}>
               Support
             </Link>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <Link to={links.about} activeStyle={{ color: "#002ead" }}>
               About
             </Link>
           </div>
         </div>
-        <div>
-          <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
+        <div className="text-xl sm:text-base">
+          <div className="font-title font-bold my-4 sm:my-0 sm:mb-2">
             <strong>More</strong>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator"
               aria-label="Github rahuldkjain/github-profile-readme-generator"
@@ -60,7 +60,7 @@ const Footer = () => {
               Github
             </a>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/releases"
               aria-label="Releases on Github rahuldkjain/github-profile-readme-generator"
