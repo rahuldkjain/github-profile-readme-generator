@@ -179,7 +179,7 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
-      "matlab"
+      "matlab",
       "postman"
     ],
   },
