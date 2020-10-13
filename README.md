@@ -72,7 +72,7 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 
 - **Visitors Counter Badge**
 
-- [**GitHub Profile Trophy**](https://github.com/ryo-ma/github-profile-trophy)
+- **GitHub Profile Trophy**
 
 - **GitHub Profile Stats Card**
 
