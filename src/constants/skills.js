@@ -425,7 +425,7 @@ const icons = {
   unity:
     "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
   JAM_stack: 
-    "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/jam.svg",
+    "https://raw.githubusercontent.com/jamstack/jamstack.org/main/src/site/img/logo/svg/Jamstack_Icon_Original.svg",
   MEAN_stack:
    "https://raw.githubusercontent.com/sixthcodebrewer/fullstack-svg/be9264224dc17677a90b1937610264a587df5585/mean.svg",
   MERN_stack:
