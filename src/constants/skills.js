@@ -3,7 +3,7 @@
 // Frontend Development
 import jamStack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
 import mernStack from "../images/icons/fullstack/mern.svg";
-import meanStack from "../images/icons/fullstack/";
+import meanStack from "../images/icons/fullstack/meanStack.svg";
 import lampStack from "../images/icons/fullstack/lamp.svg";
 
 
