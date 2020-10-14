@@ -62,7 +62,7 @@ const Footer = () => {
           <div>
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
-              aria-label="Releases on Github rahuldkjain/github-profile-readme-generator"
+              aria-label="Issues in rahuldkjain/github-profile-readme-generator"
               target="blank"
             >
               Issues
@@ -71,7 +71,7 @@ const Footer = () => {
           <div>
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
-              aria-label="Releases on Github rahuldkjain/github-profile-readme-generator"
+              aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
               target="blank"
             >
               Pull Requests
