@@ -1,3 +1,4 @@
+
 // Programming Languages
 import c from '../images/icons/ProgrammingLanguages/c.svg';
 import clojure from "../images/icons/ProgrammingLanguages/clojure.svg";
@@ -19,6 +20,14 @@ import rust from "../images/icons/ProgrammingLanguages/rust.svg";
 import scala from "../images/icons/ProgrammingLanguages/scala.svg";
 import swift from "../images/icons/ProgrammingLanguages/swift.svg";
 import typescript from "../images/icons/ProgrammingLanguages/typescript.svg";
+
+// Fullstack Development
+import jamStack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
+import mernStack from "../images/icons/fullstack/mern.svg";
+import meanStack from "../images/icons/fullstack/mean.svg";
+import lampStack from "../images/icons/fullstack/lamp.svg";
+
+
 
 // Frontend Development
 import angularjs from "../images/icons/FrontendDevelopment/angularjs.svg";
@@ -174,14 +183,6 @@ import git from "../images/icons/Other/git.svg";
 import linux from "../images/icons/Other/linux.svg";
 
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
-
-// Fullstack Development
-import jamStack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
-import mernStack from "../images/icons/fullstack/mern.svg";
-import meanStack from "../images/icons/fullstack/meanStack.svg";
-import lampStack from "../images/icons/fullstack/lamp.svg";
-
-
 const categorizedSkills = {
   language: {
     title: "Programming Languages",
@@ -277,8 +278,6 @@ const categorizedSkills = {
       "apachecordova"
     ],
   },
-
-  
 
   ai: {
     title: "AI/ML",
@@ -550,7 +549,6 @@ const icons = {
   unreal: unreal,
   elixir: elixir,
   heroku: heroku,
-  coffeescript: coffeescript,
   hexo: hexo,
   travisci: travisci,
   apachecordova: apachecordova,
@@ -578,7 +576,6 @@ const skillWebsites = {
   bootstrap: "https://getbootstrap.com",
   c: "https://www.cprogramming.com/",
   canvasjs: "https://canvasjs.com",
-  coffeescript: "https://offeescript.org",
   codeigniter: "https://codeigniter.com",
   cplusplus: "https://www.w3schools.com/cpp/",
   css3: "https://www.w3schools.com/css/",
@@ -693,11 +690,6 @@ const skillWebsites = {
   grafana: "https://grafana.com",
   elasticsearch: "https://www.elastic.co",
   circleci: "https://circleci.com",
-  unity: "https://unity.com/",
-  LAMP_stack: "https://en.wikipedia.org/wiki/LAMP_(software_bundle)",
-  MERN_stack: "",
-  MEAN_stack: "https://meanjs.org",
-  JAM_stack: "https://jamstack.org/",
   scully: "https://scully.io/",
   sculpin: "https://sculpin.io/",
   "11ty": "https://www.11ty.dev/",
@@ -715,7 +707,11 @@ const skillWebsites = {
   "sqlite": "https://www.sqlite.org/",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
-  middleman: "https://middlemanapp.com/"
+  middleman: "https://middlemanapp.com/",
+  LAMP_stack: "https://en.wikipedia.org/wiki/LAMP_(software_bundle)",
+  MERN_stack: "",
+  MEAN_stack: "https://meanjs.org",
+  JAM_stack: "https://jamstack.org/",
 }
 
 const initialSkillState = {}
