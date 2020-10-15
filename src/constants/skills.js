@@ -22,10 +22,10 @@ import swift from "../images/icons/ProgrammingLanguages/swift.svg";
 import typescript from "../images/icons/ProgrammingLanguages/typescript.svg";
 
 // Fullstack Development
-import jamStack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
-import mernStack from "../images/icons/fullstack/mern.svg";
-import meanStack from "../images/icons/fullstack/mean.svg";
-import lampStack from "../images/icons/fullstack/lamp.svg";
+import jamstack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
+import mernstack from "../images/icons/fullstack/mern.svg";
+import meanstack from "../images/icons/fullstack/mean.svg";
+import lampstack from "../images/icons/fullstack/lamp.svg";
 
 
 
@@ -557,10 +557,10 @@ const icons = {
   erlang: erlang,
   sqlite: sqlite,
   middleman: middleman,
-  JAM_stack: jamStack,
-  MEAN_stack: meanStack,
-  MERN_stack: mernStack,
-  LAMP_stack: lampStack
+  JAM_stack: jamstack,
+  MEAN_stack: meanstack,
+  MERN_stack: mernstack,
+  LAMP_stack: lampstack
 
 }
 
