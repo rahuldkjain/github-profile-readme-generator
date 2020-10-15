@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </h1>
         </div>
-        <div className="text-xl sm:text-base">
+        <div className="text-xl sm:text-base font-light sm:font-normal">
           <div className="font-title font-bold mb-4 sm:mb-2">
             <strong>Pages</strong>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="text-xl sm:text-base">
+        <div className="text-xl sm:text-base font-light sm:font-normal">
           <div className="font-title font-bold my-4 sm:my-0 sm:mb-2">
             <strong>More</strong>
           </div>
