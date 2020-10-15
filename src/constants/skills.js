@@ -22,7 +22,7 @@ import swift from "../images/icons/ProgrammingLanguages/swift.svg";
 import typescript from "../images/icons/ProgrammingLanguages/typescript.svg";
 
 // Fullstack Development
-import jamstack from "../images/icons/fullstack/Jamstack_Icon_Original.svg";
+import jamstack from "../images/icons/fullstack/jamstack.svg";
 import mernstack from "../images/icons/fullstack/mern.svg";
 import meanstack from "../images/icons/fullstack/mean.svg";
 import lampstack from "../images/icons/fullstack/lamp.svg";
