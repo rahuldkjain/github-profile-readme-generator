@@ -560,7 +560,7 @@ const icons = {
   JAM_stack: jamStack,
   MEAN_stack: meanStack,
   MERN_stack: mernStack,
-  LAMP_stack: lampStack,
+  LAMP_stack: lampStack
 
 }
 
