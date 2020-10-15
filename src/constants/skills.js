@@ -139,6 +139,7 @@ import figma from "../images/icons/Software/figma.svg";
 import framer from "../images/icons/Software/framer.svg";
 import illustrator from "../images/icons/Software/illustrator.svg";
 import invision from "../images/icons/Software/invision.svg";
+import matlab from "../images/icons/Software/matlab.svg"
 import photoshop from "../images/icons/Software/photoshop.svg";
 import postman from "../images/icons/Software/postman.svg";
 import sketch from "../images/icons/Software/sketch.svg";
@@ -180,7 +181,7 @@ const categorizedSkills = {
       "c",
       "cplusplus",
       "csharp",
-      "go", 
+      "go",
       "java",
       "javascript",
       "typescript",
@@ -353,8 +354,8 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
-      "postman",
-      "solidworks",
+      "matlab",
+      "postman"
     ],
   },
 
@@ -384,7 +385,7 @@ const categorizedSkills = {
 
   automation: {
     title: "Automation",
-    skills: ["zapier", ],
+    skills: ["zapier",],
   },
 
   other: {
@@ -424,6 +425,7 @@ const icons = {
   javascript: javascript,
   ionic: ionic,
   laravel: laravel,
+  matlab: matlab,
   meteor: meteor,
   mongodb: mongodb,
   mysql: mysql,
@@ -571,6 +573,7 @@ const skillWebsites = {
   javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   ionic: "https://ionicframework.com",
   laravel: "https://laravel.com/",
+  matlab: "https://www.mathworks.com/",
   meteor: "https://www.meteor.com/",
   mongodb: "https://www.mongodb.com/",
   mysql: "https://www.mysql.com/",
