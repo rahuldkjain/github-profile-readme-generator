@@ -1,177 +1,177 @@
 // Programming Languages
-import c from '../images/icons/ProgrammingLanguages/c.svg';
-import clojure from "../images/icons/ProgrammingLanguages/clojure.svg";
-import coffeescript from "../images/icons/ProgrammingLanguages/coffeescript.svg";
-import cpp from "../images/icons/ProgrammingLanguages/cpp.svg";
-import csharp from "../images/icons/ProgrammingLanguages/csharp.svg";
-import elixir from "../images/icons/ProgrammingLanguages/elixir.svg";
-import erlang from "../images/icons/ProgrammingLanguages/erlang.svg";
-import go from "../images/icons/ProgrammingLanguages/go.svg";
-import haskell from "../images/icons/ProgrammingLanguages/haskell.svg";
-import java from "../images/icons/ProgrammingLanguages/java.svg";
-import javascript from "../images/icons/ProgrammingLanguages/javascript.svg";
-import objetivec from "../images/icons/ProgrammingLanguages/objectivec.svg";
-import perl from "../images/icons/ProgrammingLanguages/perl.svg";
-import php from "../images/icons/ProgrammingLanguages/php.svg";
-import python from "../images/icons/ProgrammingLanguages/python.svg";
-import ruby from "../images/icons/ProgrammingLanguages/ruby.svg";
-import rust from "../images/icons/ProgrammingLanguages/rust.svg";
-import scala from "../images/icons/ProgrammingLanguages/scala.svg";
-import swift from "../images/icons/ProgrammingLanguages/swift.svg";
-import typescript from "../images/icons/ProgrammingLanguages/typescript.svg";
+import c from "../images/icons/ProgrammingLanguages/c.svg"
+import clojure from "../images/icons/ProgrammingLanguages/clojure.svg"
+import coffeescript from "../images/icons/ProgrammingLanguages/coffeescript.svg"
+import cpp from "../images/icons/ProgrammingLanguages/cpp.svg"
+import csharp from "../images/icons/ProgrammingLanguages/csharp.svg"
+import elixir from "../images/icons/ProgrammingLanguages/elixir.svg"
+import erlang from "../images/icons/ProgrammingLanguages/erlang.svg"
+import go from "../images/icons/ProgrammingLanguages/go.svg"
+import haskell from "../images/icons/ProgrammingLanguages/haskell.svg"
+import java from "../images/icons/ProgrammingLanguages/java.svg"
+import javascript from "../images/icons/ProgrammingLanguages/javascript.svg"
+import objetivec from "../images/icons/ProgrammingLanguages/objectivec.svg"
+import perl from "../images/icons/ProgrammingLanguages/perl.svg"
+import php from "../images/icons/ProgrammingLanguages/php.svg"
+import python from "../images/icons/ProgrammingLanguages/python.svg"
+import ruby from "../images/icons/ProgrammingLanguages/ruby.svg"
+import rust from "../images/icons/ProgrammingLanguages/rust.svg"
+import scala from "../images/icons/ProgrammingLanguages/scala.svg"
+import swift from "../images/icons/ProgrammingLanguages/swift.svg"
+import typescript from "../images/icons/ProgrammingLanguages/typescript.svg"
 
 // Frontend Development
-import angularjs from "../images/icons/FrontendDevelopment/angularjs.svg";
-import babel from "../images/icons/FrontendDevelopment/babel.svg";
-import backbonejs from "../images/icons/FrontendDevelopment/backbonejs.svg";
-import bootstrap from "../images/icons/FrontendDevelopment/bootstrap.svg";
-import bulma from "../images/icons/FrontendDevelopment/bulma.svg";
-import css from "../images/icons/FrontendDevelopment/css.svg";
-import ember from "../images/icons/FrontendDevelopment/ember.svg";
-import gtk from "../images/icons/FrontendDevelopment/gtk.svg";
-import gulp from "../images/icons/FrontendDevelopment/gulp.svg";
-import html from "../images/icons/FrontendDevelopment/html.svg";
-import materialize from "../images/icons/FrontendDevelopment/materialize.svg";
+import angularjs from "../images/icons/FrontendDevelopment/angularjs.svg"
+import babel from "../images/icons/FrontendDevelopment/babel.svg"
+import backbonejs from "../images/icons/FrontendDevelopment/backbonejs.svg"
+import bootstrap from "../images/icons/FrontendDevelopment/bootstrap.svg"
+import bulma from "../images/icons/FrontendDevelopment/bulma.svg"
+import css from "../images/icons/FrontendDevelopment/css.svg"
+import ember from "../images/icons/FrontendDevelopment/ember.svg"
+import gtk from "../images/icons/FrontendDevelopment/gtk.svg"
+import gulp from "../images/icons/FrontendDevelopment/gulp.svg"
+import html from "../images/icons/FrontendDevelopment/html.svg"
+import materialize from "../images/icons/FrontendDevelopment/materialize.svg"
 import meteor from "../images/icons/FrontendDevelopment/meteor.svg"
-import pug from "../images/icons/FrontendDevelopment/pug.svg";
-import qt from "../images/icons/FrontendDevelopment/qt.svg";
-import reactjs from "../images/icons/FrontendDevelopment/reactjs.svg";
-import redux from "../images/icons/FrontendDevelopment/redux.svg";
-import sass from "../images/icons/FrontendDevelopment/sass.svg";
-import svelte from "../images/icons/FrontendDevelopment/svelte.svg";
-import tailwind from "../images/icons/FrontendDevelopment/tailwind.svg";
-import vuejs from "../images/icons/FrontendDevelopment/vuejs.svg";
-import vuetify from "../images/icons/FrontendDevelopment/vuetify.svg";
-import webpack from "../images/icons/FrontendDevelopment/webpack.svg";
-import wxwidgets from "../images/icons/FrontendDevelopment/wxwidgets.svg";
+import pug from "../images/icons/FrontendDevelopment/pug.svg"
+import qt from "../images/icons/FrontendDevelopment/qt.svg"
+import reactjs from "../images/icons/FrontendDevelopment/reactjs.svg"
+import redux from "../images/icons/FrontendDevelopment/redux.svg"
+import sass from "../images/icons/FrontendDevelopment/sass.svg"
+import svelte from "../images/icons/FrontendDevelopment/svelte.svg"
+import tailwind from "../images/icons/FrontendDevelopment/tailwind.svg"
+import vuejs from "../images/icons/FrontendDevelopment/vuejs.svg"
+import vuetify from "../images/icons/FrontendDevelopment/vuetify.svg"
+import webpack from "../images/icons/FrontendDevelopment/webpack.svg"
+import wxwidgets from "../images/icons/FrontendDevelopment/wxwidgets.svg"
 
 // Backend Development
-import express from "../images/icons/BackendDevelopment/express.svg";
-import graphql from "../images/icons/BackendDevelopment/graphql.svg";
-import hadoop from "../images/icons/BackendDevelopment/hadoop.svg";
-import kafka from "../images/icons/BackendDevelopment/kafka.svg";
-import nginx from "../images/icons/BackendDevelopment/nginx.svg";
-import nodejs from "../images/icons/BackendDevelopment/nodejs.svg";
-import openresty from "../images/icons/BackendDevelopment/openresty.svg";
-import rabbitmq from "../images/icons/BackendDevelopment/rabbitmq.svg";
-import solr from "../images/icons/BackendDevelopment/solr.svg";
-import spring from "../images/icons/BackendDevelopment/spring.svg";
+import express from "../images/icons/BackendDevelopment/express.svg"
+import graphql from "../images/icons/BackendDevelopment/graphql.svg"
+import hadoop from "../images/icons/BackendDevelopment/hadoop.svg"
+import kafka from "../images/icons/BackendDevelopment/kafka.svg"
+import nginx from "../images/icons/BackendDevelopment/nginx.svg"
+import nodejs from "../images/icons/BackendDevelopment/nodejs.svg"
+import openresty from "../images/icons/BackendDevelopment/openresty.svg"
+import rabbitmq from "../images/icons/BackendDevelopment/rabbitmq.svg"
+import solr from "../images/icons/BackendDevelopment/solr.svg"
+import spring from "../images/icons/BackendDevelopment/spring.svg"
 
 // Mobile App Development
-import android from "../images/icons/MobileAppDevelopment/android.svg";
-import apachecordova from "../images/icons/MobileAppDevelopment/apachecordova.svg";
-import dart from "../images/icons/MobileAppDevelopment/dart.svg";
-import flutter from "../images/icons/MobileAppDevelopment/flutter.svg";
-import ionic from "../images/icons/MobileAppDevelopment/ionic.svg";
-import kotlin from "../images/icons/MobileAppDevelopment/kotlin.svg";
-import nativescript from "../images/icons/MobileAppDevelopment/nativescript.svg";
-import reactnative from "../images/icons/MobileAppDevelopment/reactnative.svg";
-import xamarin from "../images/icons/MobileAppDevelopment/xamarin.svg";
+import android from "../images/icons/MobileAppDevelopment/android.svg"
+import apachecordova from "../images/icons/MobileAppDevelopment/apachecordova.svg"
+import dart from "../images/icons/MobileAppDevelopment/dart.svg"
+import flutter from "../images/icons/MobileAppDevelopment/flutter.svg"
+import ionic from "../images/icons/MobileAppDevelopment/ionic.svg"
+import kotlin from "../images/icons/MobileAppDevelopment/kotlin.svg"
+import nativescript from "../images/icons/MobileAppDevelopment/nativescript.svg"
+import reactnative from "../images/icons/MobileAppDevelopment/reactnative.svg"
+import xamarin from "../images/icons/MobileAppDevelopment/xamarin.svg"
 
 // AI/ML
-import opencv from "../images/icons/AIML/opencv.svg";
-import pytorch from "../images/icons/AIML/pytorch.svg";
-import scikit from "../images/icons/AIML/scikit.svg";
-import tensorflow from "../images/icons/AIML/tensorflow.svg";
+import opencv from "../images/icons/AIML/opencv.svg"
+import pytorch from "../images/icons/AIML/pytorch.svg"
+import scikit from "../images/icons/AIML/scikit.svg"
+import tensorflow from "../images/icons/AIML/tensorflow.svg"
 
 // Database
-import cassandra from "../images/icons/Database/cassandra.svg";
-import cockroachdb from "../images/icons/Database/cockroachdb.svg";
-import couchdb from "../images/icons/Database/couchdb.svg";
-import elasticsearch from "../images/icons/Database/elasticsearch.svg";
-import hive from "../images/icons/Database/hive.svg";
-import mariadb from "../images/icons/Database/mariadb.svg";
-import mongodb from "../images/icons/Database/mongodb.svg";
-import mysql from "../images/icons/Database/mysql.svg";
-import oracle from "../images/icons/Database/oracle.svg";
-import postgresql from "../images/icons/Database/postgresql.svg";
-import realm from "../images/icons/Database/realm.svg";
-import redis from "../images/icons/Database/redis.svg";
-import sqlite from "../images/icons/Database/sqlite.svg";
+import cassandra from "../images/icons/Database/cassandra.svg"
+import cockroachdb from "../images/icons/Database/cockroachdb.svg"
+import couchdb from "../images/icons/Database/couchdb.svg"
+import elasticsearch from "../images/icons/Database/elasticsearch.svg"
+import hive from "../images/icons/Database/hive.svg"
+import mariadb from "../images/icons/Database/mariadb.svg"
+import mongodb from "../images/icons/Database/mongodb.svg"
+import mysql from "../images/icons/Database/mysql.svg"
+import oracle from "../images/icons/Database/oracle.svg"
+import postgresql from "../images/icons/Database/postgresql.svg"
+import realm from "../images/icons/Database/realm.svg"
+import redis from "../images/icons/Database/redis.svg"
+import sqlite from "../images/icons/Database/sqlite.svg"
 
 // Data Visualization
-import canvasjs from "../images/icons/DataVisualization/canvasjs.svg";
-import chartjs from "../images/icons/DataVisualization/chartjs.svg";
-import d3js from "../images/icons/DataVisualization/d3js.svg";
-import grafana from "../images/icons/DataVisualization/grafana.svg";
-import kibana from "../images/icons/DataVisualization/kibana.svg";
+import canvasjs from "../images/icons/DataVisualization/canvasjs.svg"
+import chartjs from "../images/icons/DataVisualization/chartjs.svg"
+import d3js from "../images/icons/DataVisualization/d3js.svg"
+import grafana from "../images/icons/DataVisualization/grafana.svg"
+import kibana from "../images/icons/DataVisualization/kibana.svg"
 
 // Devops
-import aws from "../images/icons/Devops/aws.svg";
-import azure from "../images/icons/Devops/azure.svg";
-import bash from "../images/icons/Devops/bash.svg";
-import circleci from "../images/icons/Devops/circleci.svg";
-import docker from "../images/icons/Devops/docker.svg";
-import gcp from "../images/icons/Devops/gcp.svg";
-import jenkins from "../images/icons/Devops/jenkins.svg";
-import kubernetes from "../images/icons/Devops/kubernetes.svg";
-import travisci from "../images/icons/Devops/travisci.svg";
-import vagrant from "../images/icons/Devops/vagrant.svg";
+import aws from "../images/icons/Devops/aws.svg"
+import azure from "../images/icons/Devops/azure.svg"
+import bash from "../images/icons/Devops/bash.svg"
+import circleci from "../images/icons/Devops/circleci.svg"
+import docker from "../images/icons/Devops/docker.svg"
+import gcp from "../images/icons/Devops/gcp.svg"
+import jenkins from "../images/icons/Devops/jenkins.svg"
+import kubernetes from "../images/icons/Devops/kubernetes.svg"
+import travisci from "../images/icons/Devops/travisci.svg"
+import vagrant from "../images/icons/Devops/vagrant.svg"
 
 // Backend as a Service(BaaS)
-import amplify from "../images/icons/BaaS/amplify.svg";
-import firebase from "../images/icons/BaaS/firebase.svg";
-import heroku from "../images/icons/BaaS/heroku.svg";
+import amplify from "../images/icons/BaaS/amplify.svg"
+import firebase from "../images/icons/BaaS/firebase.svg"
+import heroku from "../images/icons/BaaS/heroku.svg"
 
 // Framework
-import codeigniter from "../images/icons/Framework/codeigniter.svg";
-import django from "../images/icons/Framework/django.svg";
-import dotnet from "../images/icons/Framework/dotnet.svg";
-import electron from "../images/icons/Framework/electron.svg";
-import flask from "../images/icons/Framework/flask.svg";
-import laravel from "../images/icons/Framework/laravel.svg";
-import quasar from "../images/icons/Framework/quasar.svg";
-import rails from "../images/icons/Framework/rails.svg";
-import symfony from "../images/icons/Framework/symfony.svg";
+import codeigniter from "../images/icons/Framework/codeigniter.svg"
+import django from "../images/icons/Framework/django.svg"
+import dotnet from "../images/icons/Framework/dotnet.svg"
+import electron from "../images/icons/Framework/electron.svg"
+import flask from "../images/icons/Framework/flask.svg"
+import laravel from "../images/icons/Framework/laravel.svg"
+import quasar from "../images/icons/Framework/quasar.svg"
+import rails from "../images/icons/Framework/rails.svg"
+import symfony from "../images/icons/Framework/symfony.svg"
 
 // Testing
-import cypress from "../images/icons/Testing/cypress.svg";
-import jasmine from "../images/icons/Testing/jasmine.svg";
-import jest from "../images/icons/Testing/jest.svg";
-import karma from "../images/icons/Testing/karma.svg";
-import mocha from "../images/icons/Testing/mocha.svg";
-import puppeteer from "../images/icons/Testing/puppeteer.svg";
-import selenium from "../images/icons/Testing/selenium.svg";
+import cypress from "../images/icons/Testing/cypress.svg"
+import jasmine from "../images/icons/Testing/jasmine.svg"
+import jest from "../images/icons/Testing/jest.svg"
+import karma from "../images/icons/Testing/karma.svg"
+import mocha from "../images/icons/Testing/mocha.svg"
+import puppeteer from "../images/icons/Testing/puppeteer.svg"
+import selenium from "../images/icons/Testing/selenium.svg"
 
 // Software
-import blender from "../images/icons/Software/blender.svg";
-import figma from "../images/icons/Software/figma.svg";
-import framer from "../images/icons/Software/framer.svg";
-import illustrator from "../images/icons/Software/illustrator.svg";
-import invision from "../images/icons/Software/invision.svg";
+import blender from "../images/icons/Software/blender.svg"
+import figma from "../images/icons/Software/figma.svg"
+import framer from "../images/icons/Software/framer.svg"
+import illustrator from "../images/icons/Software/illustrator.svg"
+import invision from "../images/icons/Software/invision.svg"
 import matlab from "../images/icons/Software/matlab.svg"
-import photoshop from "../images/icons/Software/photoshop.svg";
-import postman from "../images/icons/Software/postman.svg";
-import sketch from "../images/icons/Software/sketch.svg";
-import solidworks from "../images/icons/Software/solidworks.svg";
-import xd from "../images/icons/Software/xd.svg";
+import photoshop from "../images/icons/Software/photoshop.svg"
+import postman from "../images/icons/Software/postman.svg"
+import sketch from "../images/icons/Software/sketch.svg"
+import solidworks from "../images/icons/Software/solidworks.svg"
+import xd from "../images/icons/Software/xd.svg"
 
 // Static Site Generators
-import eleventy from "../images/icons/StaticSiteGenerators/11ty.svg";
-import gatsby from "../images/icons/StaticSiteGenerators/gatsby.svg";
-import grindsome from "../images/icons/StaticSiteGenerators/gridsome.svg";
-import hexo from "../images/icons/StaticSiteGenerators/hexo.svg";
-import hugo from "../images/icons/StaticSiteGenerators/hugo.svg";
-import jekyll from "../images/icons/StaticSiteGenerators/jekyll.svg";
-import middleman from "../images/icons/StaticSiteGenerators/middleman.svg";
-import nextjs from "../images/icons/StaticSiteGenerators/nextjs.svg";
-import nuxtjs from "../images/icons/StaticSiteGenerators/nuxtjs.svg";
-import sapper from "../images/icons/StaticSiteGenerators/sapper.svg";
-import scully from "../images/icons/StaticSiteGenerators/scully.svg";
-import sculpin from "../images/icons/StaticSiteGenerators/sculpin.svg";
-import vuepress from "../images/icons/StaticSiteGenerators/vuepress.svg";
+import eleventy from "../images/icons/StaticSiteGenerators/11ty.svg"
+import gatsby from "../images/icons/StaticSiteGenerators/gatsby.svg"
+import grindsome from "../images/icons/StaticSiteGenerators/gridsome.svg"
+import hexo from "../images/icons/StaticSiteGenerators/hexo.svg"
+import hugo from "../images/icons/StaticSiteGenerators/hugo.svg"
+import jekyll from "../images/icons/StaticSiteGenerators/jekyll.svg"
+import middleman from "../images/icons/StaticSiteGenerators/middleman.svg"
+import nextjs from "../images/icons/StaticSiteGenerators/nextjs.svg"
+import nuxtjs from "../images/icons/StaticSiteGenerators/nuxtjs.svg"
+import sapper from "../images/icons/StaticSiteGenerators/sapper.svg"
+import scully from "../images/icons/StaticSiteGenerators/scully.svg"
+import sculpin from "../images/icons/StaticSiteGenerators/sculpin.svg"
+import vuepress from "../images/icons/StaticSiteGenerators/vuepress.svg"
 
 // Game Engines
-import unity from "../images/icons/GameEngines/unity.svg";
-import unreal from "../images/icons/GameEngines/unreal.svg";
+import unity from "../images/icons/GameEngines/unity.svg"
+import unreal from "../images/icons/GameEngines/unreal.svg"
 
 // Automation
-import zapier from "../images/icons/Automation/zapier.svg";
+import zapier from "../images/icons/Automation/zapier.svg"
 
 // Other
-import arduino from "../images/icons/Other/arduino.svg";
-import git from "../images/icons/Other/git.svg";
-import linux from "../images/icons/Other/linux.svg";
+import arduino from "../images/icons/Other/arduino.svg"
+import git from "../images/icons/Other/git.svg"
+import linux from "../images/icons/Other/linux.svg"
 
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
 const categorizedSkills = {
@@ -256,18 +256,13 @@ const categorizedSkills = {
       "xamarin",
       "reactnative",
       "ionic",
-      "apachecordova"
+      "apachecordova",
     ],
   },
 
   ai: {
     title: "AI/ML",
-    skills: [
-      "tensorflow",
-      "pytorch",
-      "opencv",
-      "scikit_learn"
-    ],
+    skills: ["tensorflow", "pytorch", "opencv", "scikit_learn"],
   },
 
   database: {
@@ -326,7 +321,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar"
+      "quasar",
     ],
   },
 
@@ -355,7 +350,7 @@ const categorizedSkills = {
       "invision",
       "framer",
       "matlab",
-      "postman"
+      "postman",
     ],
   },
 
@@ -374,7 +369,7 @@ const categorizedSkills = {
       "sapper",
       "vuepress",
       "hexo",
-      "middleman"
+      "middleman",
     ],
   },
 
@@ -385,7 +380,7 @@ const categorizedSkills = {
 
   automation: {
     title: "Automation",
-    skills: ["zapier",],
+    skills: ["zapier"],
   },
 
   other: {
@@ -530,7 +525,6 @@ const icons = {
   unreal: unreal,
   elixir: elixir,
   heroku: heroku,
-  coffeescript: coffeescript,
   hexo: hexo,
   travisci: travisci,
   apachecordova: apachecordova,
@@ -538,7 +532,7 @@ const icons = {
   postman: postman,
   erlang: erlang,
   sqlite: sqlite,
-  middleman: middleman
+  middleman: middleman,
 }
 
 const skillWebsites = {
@@ -645,7 +639,8 @@ const skillWebsites = {
   reactnative: "https://reactnative.dev/",
   mariadb: "https://mariadb.org/",
   cockroachdb: "https://www.cockroachlabs.com/product/cockroachdb/",
-  objectivec: "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+  objectivec:
+    "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
   clojure: "https://clojure.org/",
   haskell: "https://www.haskell.org/",
   svelte: "https://svelte.dev",
@@ -681,11 +676,10 @@ const skillWebsites = {
   elixir: "https://elixir-lang.org",
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
-  coffeescript: "https://coffeescript.org/",
-  "sqlite": "https://www.sqlite.org/",
+  sqlite: "https://www.sqlite.org/",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
-  middleman: "https://middlemanapp.com/"
+  middleman: "https://middlemanapp.com/",
 }
 
 const initialSkillState = {}

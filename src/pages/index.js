@@ -27,7 +27,7 @@ import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
-  isTwitterUsernameValid
+  isTwitterUsernameValid,
 } from "../utils/validation"
 import Layout from "../components/layout"
 
@@ -43,7 +43,6 @@ const DEFAULT_PREFIX = {
   funFact: "⚡ Fun fact",
   portfolio: "👨‍💻 All of my projects are available at",
   blog: "📝 I regulary write articles on",
-  
 }
 
 const DEFAULT_DATA = {
@@ -395,10 +394,14 @@ const IndexPage = () => {
       return
     }
 
-    setPrefix(cache.prefix ? {...DEFAULT_PREFIX, ...cache.prefix} : DEFAULT_PREFIX)
-    setData(cache.data ? {...DEFAULT_DATA, ...cache.data} : DEFAULT_DATA)
-    setLink(cache.link ? {...DEFAULT_LINK, ...cache.link} : DEFAULT_LINK)
-    setSocial(cache.social ? {...DEFAULT_SOCIAL, ...cache.social} : DEFAULT_SOCIAL)
+    setPrefix(
+      cache.prefix ? { ...DEFAULT_PREFIX, ...cache.prefix } : DEFAULT_PREFIX
+    )
+    setData(cache.data ? { ...DEFAULT_DATA, ...cache.data } : DEFAULT_DATA)
+    setLink(cache.link ? { ...DEFAULT_LINK, ...cache.link } : DEFAULT_LINK)
+    setSocial(
+      cache.social ? { ...DEFAULT_SOCIAL, ...cache.social } : DEFAULT_SOCIAL
+    )
 
     const cacheSkills = mergeDefaultWithNewDataSkills(
       DEFAULT_SKILLS,
@@ -422,7 +425,7 @@ const IndexPage = () => {
 
     // set initial values
     setInitialValues()
-  }, [])
+  })
 
   // keep cache updated
   KeepCacheUpdated({ prefix, data, link, social, skills })
@@ -469,7 +472,7 @@ const IndexPage = () => {
       )
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
     } catch (error) {
-    } finally { 
+    } finally {
       setRestore("")
     }
   }
@@ -571,7 +574,7 @@ const IndexPage = () => {
               tabIndex="0"
               role="button"
               onClick={handleGenerate}
-              onKeyDown={(e) => e.keyCode === 13 && handleGenerate()}
+              onKeyDown={e => e.keyCode === 13 && handleGenerate()}
             >
               Generate README
             </div>
