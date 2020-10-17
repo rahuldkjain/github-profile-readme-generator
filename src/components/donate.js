@@ -2,11 +2,8 @@ import React from "react"
 const Donate = () => {
   return (
     <>
-      <div className="text-center text-4xl my-2">
-        Support&nbsp;
-        <span role="img" aria-label="praying hand emoji">
-          🙏
-        </span>
+      <div className="text-center text-4xl my-2">Support&nbsp;
+        <span role="img" aria-label="praying hand emoji">🙏</span>
       </div>
       <div className="flex flex-col sm:flex-row items-start justify-between">
         <div className="w-full sm:w-2/3">
@@ -33,12 +30,7 @@ const Donate = () => {
           </div>
         </div>
         <div className="w-full sm:w-1/3 flex flex-col justify-center items-center">
-          <span>
-            Tip
-            <span role="img" aria-label="Dollar medal">
-              💰
-            </span>
-          </span>
+          <span>Tip<span role="img" aria-label="Dollar medal">💰</span></span>
           {/* Ko-Fi */}
           <a
             href="https://ko-fi.com/A0A81XXSX"

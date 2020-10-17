@@ -166,7 +166,7 @@ const Work = props => {
           onChange={event => props.handleLinkChange("resume", event)}
         />
       </div>
-
+      
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input
           id="funFact-prefix"

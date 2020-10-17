@@ -80,12 +80,11 @@ const Markdown = props => {
     return ""
   }
   const VisitorsBadge = props => {
-    let link =
-      "https://komarev.com/ghpvc/?username=" +
-      props.github +
-      `&label=${props.badgeOptions.badgeLabel}` +
-      `&color=${props.badgeOptions.badgeColor}` +
-      `&style=${props.badgeOptions.badgeStyle}`
+    let link = "https://komarev.com/ghpvc/?username=" 
+                + props.github
+                + `&label=${props.badgeOptions.badgeLabel}`
+                + `&color=${props.badgeOptions.badgeColor}`
+                + `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <>
@@ -98,10 +97,7 @@ const Markdown = props => {
     return ""
   }
   const TwitterBadge = props => {
-    let link =
-      "https://img.shields.io/twitter/follow/" +
-      props.twitter +
-      "?logo=twitter&style=for-the-badge"
+    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
     if (props.show) {
       return (
         <>
@@ -247,7 +243,7 @@ const Markdown = props => {
           badgeOptions={{
             badgeLabel: encodeURI(props.data.badgeLabel),
             badgeColor: props.data.badgeColor,
-            badgeStyle: props.data.badgeStyle,
+            badgeStyle: props.data.badgeStyle
           }}
         />
       </>
