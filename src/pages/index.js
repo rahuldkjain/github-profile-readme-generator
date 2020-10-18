@@ -27,6 +27,7 @@ import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
+  isTwitterUsernameValid
 } from "../utils/validation"
 import Layout from "../components/layout"
 
@@ -61,7 +62,25 @@ const DEFAULT_DATA = {
   badgeLabel: "Profile views",
   githubProfileTrophy: false,
   githubStats: false,
+  githubStatsOptions: {
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
+  },
   topLanguages: false,
+  topLanguagesOptions: {
+    theme: "",
+    titleColor: "",
+    textColor: "",
+    bgColor: "",
+    hideBorder: false,
+    cacheSeconds: null,
+    locale: "en",
+  },
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
   rssDynamicBlogs: false,
@@ -238,7 +257,7 @@ const IndexPage = () => {
         generate()
       }
     } else if (data.twitterBadge) {
-      if (social.twitter) {
+      if (social.twitter && isTwitterUsernameValid(social.twitter)) {
         generate()
       }
     } else if (social.github) {
@@ -453,7 +472,7 @@ const IndexPage = () => {
       )
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
     } catch (error) {
-    } finally {
+    } finally { 
       setRestore("")
     }
   }
@@ -466,7 +485,7 @@ const IndexPage = () => {
       setRestore(reader.result)
     }
   }
-
+  
   return (
     <Layout>
       <div className="m-4 sm:p-4">
@@ -547,6 +566,13 @@ const IndexPage = () => {
             {data.twitterBadge && !social.twitter ? (
               <div className="warning">
                 * Please add twitter username to use these add-ons
+              </div>
+            ) : (
+              ""
+            )}
+            {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
+              <div className="warning">
+                * Twitter username is invalid, please add a valid username
               </div>
             ) : (
               ""

@@ -1,3 +1,178 @@
+// Programming Languages
+import c from '../images/icons/ProgrammingLanguages/c.svg';
+import clojure from "../images/icons/ProgrammingLanguages/clojure.svg";
+import coffeescript from "../images/icons/ProgrammingLanguages/coffeescript.svg";
+import cpp from "../images/icons/ProgrammingLanguages/cpp.svg";
+import csharp from "../images/icons/ProgrammingLanguages/csharp.svg";
+import elixir from "../images/icons/ProgrammingLanguages/elixir.svg";
+import erlang from "../images/icons/ProgrammingLanguages/erlang.svg";
+import go from "../images/icons/ProgrammingLanguages/go.svg";
+import haskell from "../images/icons/ProgrammingLanguages/haskell.svg";
+import java from "../images/icons/ProgrammingLanguages/java.svg";
+import javascript from "../images/icons/ProgrammingLanguages/javascript.svg";
+import objetivec from "../images/icons/ProgrammingLanguages/objectivec.svg";
+import perl from "../images/icons/ProgrammingLanguages/perl.svg";
+import php from "../images/icons/ProgrammingLanguages/php.svg";
+import python from "../images/icons/ProgrammingLanguages/python.svg";
+import ruby from "../images/icons/ProgrammingLanguages/ruby.svg";
+import rust from "../images/icons/ProgrammingLanguages/rust.svg";
+import scala from "../images/icons/ProgrammingLanguages/scala.svg";
+import swift from "../images/icons/ProgrammingLanguages/swift.svg";
+import typescript from "../images/icons/ProgrammingLanguages/typescript.svg";
+
+// Frontend Development
+import angularjs from "../images/icons/FrontendDevelopment/angularjs.svg";
+import babel from "../images/icons/FrontendDevelopment/babel.svg";
+import backbonejs from "../images/icons/FrontendDevelopment/backbonejs.svg";
+import bootstrap from "../images/icons/FrontendDevelopment/bootstrap.svg";
+import bulma from "../images/icons/FrontendDevelopment/bulma.svg";
+import css from "../images/icons/FrontendDevelopment/css.svg";
+import ember from "../images/icons/FrontendDevelopment/ember.svg";
+import gtk from "../images/icons/FrontendDevelopment/gtk.svg";
+import gulp from "../images/icons/FrontendDevelopment/gulp.svg";
+import html from "../images/icons/FrontendDevelopment/html.svg";
+import materialize from "../images/icons/FrontendDevelopment/materialize.svg";
+import meteor from "../images/icons/FrontendDevelopment/meteor.svg"
+import pug from "../images/icons/FrontendDevelopment/pug.svg";
+import qt from "../images/icons/FrontendDevelopment/qt.svg";
+import reactjs from "../images/icons/FrontendDevelopment/reactjs.svg";
+import redux from "../images/icons/FrontendDevelopment/redux.svg";
+import sass from "../images/icons/FrontendDevelopment/sass.svg";
+import svelte from "../images/icons/FrontendDevelopment/svelte.svg";
+import tailwind from "../images/icons/FrontendDevelopment/tailwind.svg";
+import vuejs from "../images/icons/FrontendDevelopment/vuejs.svg";
+import vuetify from "../images/icons/FrontendDevelopment/vuetify.svg";
+import webpack from "../images/icons/FrontendDevelopment/webpack.svg";
+import wxwidgets from "../images/icons/FrontendDevelopment/wxwidgets.svg";
+
+// Backend Development
+import express from "../images/icons/BackendDevelopment/express.svg";
+import graphql from "../images/icons/BackendDevelopment/graphql.svg";
+import hadoop from "../images/icons/BackendDevelopment/hadoop.svg";
+import kafka from "../images/icons/BackendDevelopment/kafka.svg";
+import nginx from "../images/icons/BackendDevelopment/nginx.svg";
+import nodejs from "../images/icons/BackendDevelopment/nodejs.svg";
+import openresty from "../images/icons/BackendDevelopment/openresty.svg";
+import rabbitmq from "../images/icons/BackendDevelopment/rabbitmq.svg";
+import solr from "../images/icons/BackendDevelopment/solr.svg";
+import spring from "../images/icons/BackendDevelopment/spring.svg";
+
+// Mobile App Development
+import android from "../images/icons/MobileAppDevelopment/android.svg";
+import apachecordova from "../images/icons/MobileAppDevelopment/apachecordova.svg";
+import dart from "../images/icons/MobileAppDevelopment/dart.svg";
+import flutter from "../images/icons/MobileAppDevelopment/flutter.svg";
+import ionic from "../images/icons/MobileAppDevelopment/ionic.svg";
+import kotlin from "../images/icons/MobileAppDevelopment/kotlin.svg";
+import nativescript from "../images/icons/MobileAppDevelopment/nativescript.svg";
+import reactnative from "../images/icons/MobileAppDevelopment/reactnative.svg";
+import xamarin from "../images/icons/MobileAppDevelopment/xamarin.svg";
+
+// AI/ML
+import opencv from "../images/icons/AIML/opencv.svg";
+import pytorch from "../images/icons/AIML/pytorch.svg";
+import scikit from "../images/icons/AIML/scikit.svg";
+import tensorflow from "../images/icons/AIML/tensorflow.svg";
+
+// Database
+import cassandra from "../images/icons/Database/cassandra.svg";
+import cockroachdb from "../images/icons/Database/cockroachdb.svg";
+import couchdb from "../images/icons/Database/couchdb.svg";
+import elasticsearch from "../images/icons/Database/elasticsearch.svg";
+import hive from "../images/icons/Database/hive.svg";
+import mariadb from "../images/icons/Database/mariadb.svg";
+import mongodb from "../images/icons/Database/mongodb.svg";
+import mysql from "../images/icons/Database/mysql.svg";
+import oracle from "../images/icons/Database/oracle.svg";
+import postgresql from "../images/icons/Database/postgresql.svg";
+import realm from "../images/icons/Database/realm.svg";
+import redis from "../images/icons/Database/redis.svg";
+import sqlite from "../images/icons/Database/sqlite.svg";
+
+// Data Visualization
+import canvasjs from "../images/icons/DataVisualization/canvasjs.svg";
+import chartjs from "../images/icons/DataVisualization/chartjs.svg";
+import d3js from "../images/icons/DataVisualization/d3js.svg";
+import grafana from "../images/icons/DataVisualization/grafana.svg";
+import kibana from "../images/icons/DataVisualization/kibana.svg";
+
+// Devops
+import aws from "../images/icons/Devops/aws.svg";
+import azure from "../images/icons/Devops/azure.svg";
+import bash from "../images/icons/Devops/bash.svg";
+import circleci from "../images/icons/Devops/circleci.svg";
+import docker from "../images/icons/Devops/docker.svg";
+import gcp from "../images/icons/Devops/gcp.svg";
+import jenkins from "../images/icons/Devops/jenkins.svg";
+import kubernetes from "../images/icons/Devops/kubernetes.svg";
+import travisci from "../images/icons/Devops/travisci.svg";
+import vagrant from "../images/icons/Devops/vagrant.svg";
+
+// Backend as a Service(BaaS)
+import amplify from "../images/icons/BaaS/amplify.svg";
+import firebase from "../images/icons/BaaS/firebase.svg";
+import heroku from "../images/icons/BaaS/heroku.svg";
+
+// Framework
+import codeigniter from "../images/icons/Framework/codeigniter.svg";
+import django from "../images/icons/Framework/django.svg";
+import dotnet from "../images/icons/Framework/dotnet.svg";
+import electron from "../images/icons/Framework/electron.svg";
+import flask from "../images/icons/Framework/flask.svg";
+import laravel from "../images/icons/Framework/laravel.svg";
+import quasar from "../images/icons/Framework/quasar.svg";
+import rails from "../images/icons/Framework/rails.svg";
+import symfony from "../images/icons/Framework/symfony.svg";
+
+// Testing
+import cypress from "../images/icons/Testing/cypress.svg";
+import jasmine from "../images/icons/Testing/jasmine.svg";
+import jest from "../images/icons/Testing/jest.svg";
+import karma from "../images/icons/Testing/karma.svg";
+import mocha from "../images/icons/Testing/mocha.svg";
+import puppeteer from "../images/icons/Testing/puppeteer.svg";
+import selenium from "../images/icons/Testing/selenium.svg";
+
+// Software
+import blender from "../images/icons/Software/blender.svg";
+import figma from "../images/icons/Software/figma.svg";
+import framer from "../images/icons/Software/framer.svg";
+import illustrator from "../images/icons/Software/illustrator.svg";
+import invision from "../images/icons/Software/invision.svg";
+import matlab from "../images/icons/Software/matlab.svg"
+import photoshop from "../images/icons/Software/photoshop.svg";
+import postman from "../images/icons/Software/postman.svg";
+import sketch from "../images/icons/Software/sketch.svg";
+import solidworks from "../images/icons/Software/solidworks.svg";
+import xd from "../images/icons/Software/xd.svg";
+
+// Static Site Generators
+import eleventy from "../images/icons/StaticSiteGenerators/11ty.svg";
+import gatsby from "../images/icons/StaticSiteGenerators/gatsby.svg";
+import grindsome from "../images/icons/StaticSiteGenerators/gridsome.svg";
+import hexo from "../images/icons/StaticSiteGenerators/hexo.svg";
+import hugo from "../images/icons/StaticSiteGenerators/hugo.svg";
+import jekyll from "../images/icons/StaticSiteGenerators/jekyll.svg";
+import middleman from "../images/icons/StaticSiteGenerators/middleman.svg";
+import nextjs from "../images/icons/StaticSiteGenerators/nextjs.svg";
+import nuxtjs from "../images/icons/StaticSiteGenerators/nuxtjs.svg";
+import sapper from "../images/icons/StaticSiteGenerators/sapper.svg";
+import scully from "../images/icons/StaticSiteGenerators/scully.svg";
+import sculpin from "../images/icons/StaticSiteGenerators/sculpin.svg";
+import vuepress from "../images/icons/StaticSiteGenerators/vuepress.svg";
+
+// Game Engines
+import unity from "../images/icons/GameEngines/unity.svg";
+import unreal from "../images/icons/GameEngines/unreal.svg";
+
+// Automation
+import zapier from "../images/icons/Automation/zapier.svg";
+
+// Other
+import arduino from "../images/icons/Other/arduino.svg";
+import git from "../images/icons/Other/git.svg";
+import linux from "../images/icons/Other/linux.svg";
+
 //const baseURL = 'https://devicons.github.io/devicon/devicon.git/icons/';
 const categorizedSkills = {
   language: {
@@ -20,6 +195,9 @@ const categorizedSkills = {
       "clojure",
       "rust",
       "haskell",
+      "coffeescript",
+      "elixir",
+      "erlang",
     ],
   },
 
@@ -78,12 +256,18 @@ const categorizedSkills = {
       "xamarin",
       "reactnative",
       "ionic",
+      "apachecordova"
     ],
   },
 
   ai: {
     title: "AI/ML",
-    skills: ["tensorflow", "pytorch", "opencv", "scikit_learn"],
+    skills: [
+      "tensorflow",
+      "pytorch",
+      "opencv",
+      "scikit_learn"
+    ],
   },
 
   database: {
@@ -101,6 +285,7 @@ const categorizedSkills = {
       "mariadb",
       "cockroachdb",
       "elasticsearch",
+      "sqlite",
     ],
   },
 
@@ -120,13 +305,14 @@ const categorizedSkills = {
       "bash",
       "azure",
       "vagrant",
-      "circleci"
+      "circleci",
+      "travisci",
     ],
   },
 
   baas: {
     title: "Backend as a Service(BaaS)",
-    skills: ["firebase", "amplify"],
+    skills: ["firebase", "amplify", "heroku"],
   },
 
   framework: {
@@ -168,252 +354,196 @@ const categorizedSkills = {
       "sketch",
       "invision",
       "framer",
+      "matlab",
+      "postman"
     ],
   },
 
   static_site_generator: {
     title: "Static Site Generators",
     skills: [
-      "gatsby", 
-      "gridsome", 
-      "hugo", 
-      "jekyll", 
-      "nextjs", 
-      "nuxtjs", 
-      "11ty", 
+      "gatsby",
+      "gridsome",
+      "hugo",
+      "jekyll",
+      "nextjs",
+      "nuxtjs",
+      "11ty",
       "scully",
       "sculpin",
       "sapper",
-      "vuepress"
+      "vuepress",
+      "hexo",
+      "middleman"
     ],
   },
 
-  game_engines:{
+  game_engines: {
     title: "Game Engines",
-    skills: ["unity"],
+    skills: ["unity", "unreal"],
+  },
+
+  automation: {
+    title: "Automation",
+    skills: ["zapier",],
   },
 
   other: {
     title: "Other",
-    skills: ["linux", "git"],
+    skills: ["linux", "git", "arduino"],
   },
 }
 
 const icons = {
-  vuejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg",
-  react:
-    "https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg",
-  angularjs:
-    "https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg",
-  aws:
-    "https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-  android:
-    "https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg",
-  backbonejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg",
-  bootstrap:
-    "https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg",
-  c: "https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg",
-  canvasjs:
-    "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
-  coffeescript:
-    "https://devicons.github.io/devicon/devicon.git/icons/coffeescript/coffeescript-original-wordmark.svg",
-  codeigniter: "https://cdn.worldvectorlogo.com/logos/codeigniter.svg",
-  cplusplus:
-    "https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg",
-  css3:
-    "https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg",
-  csharp:
-    "https://devicons.github.io/devicon/devicon.git/icons/csharp/csharp-original.svg",
-  d3js:
-    "https://devicons.github.io/devicon/devicon.git/icons/d3js/d3js-original.svg",
-  django:
-    "https://devicons.github.io/devicon/devicon.git/icons/django/django-original.svg",
-  docker:
-    "https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg",
-  dotnet:
-    "https://devicons.github.io/devicon/devicon.git/icons/dot-net/dot-net-original-wordmark.svg",
-  electron:
-    "https://devicons.github.io/devicon/devicon.git/icons/electron/electron-original.svg",
-  express:
-    "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
-  go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
-  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
-  gulp:
-    "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
-  html5:
-    "https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg",
-  hugo: "https://api.iconify.design/logos-hugo.svg",
-  java:
-    "https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg",
-  javascript:
-    "https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg",
-  ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
-  laravel:
-    "https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg",
-  meteor:
-    "https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg",
-  mongodb:
-    "https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg",
-  mysql:
-    "https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg",
-  nginx:
-    "https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg",
-  nodejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg",
-  openresty:
-    "https://symbols-electrical.getvecta.com/stencil_25/66_openresty.403a21ca72.svg",
-  oracle:
-    "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
-  photoshop:
-    "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
-  xd:
-    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
-  php:
-    "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
-  perl:
-    "https://api.iconify.design/logos-perl.svg",
-  postgresql:
-    "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
-  python:
-    "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
-  rails:
-    "https://devicons.github.io/devicon/devicon.git/icons/rails/rails-original-wordmark.svg",
-  redis:
-    "https://devicons.github.io/devicon/devicon.git/icons/redis/redis-original-wordmark.svg",
-  ruby:
-    "https://devicons.github.io/devicon/devicon.git/icons/ruby/ruby-original-wordmark.svg",
-  rust:
-    "https://devicons.github.io/devicon/devicon.git/icons/rust/rust-plain.svg",
-  sass:
-    "https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg",
-  scala:
-    "https://devicons.github.io/devicon/devicon.git/icons/scala/scala-original-wordmark.svg",
-  symfony: "https://symfony.com/logos/symfony_black_03.svg",
-  spring: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
-  swift:
-    "https://devicons.github.io/devicon/devicon.git/icons/swift/swift-original-wordmark.svg",
-  typescript:
-    "https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg",
-  linux:
-    "https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg",
-  redux:
-    "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
-  webpack:
-    "https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg",
-  flutter: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg",
-  dart: "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg",
-  kotlin: "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-  tensorflow:
-    "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",
-  chartjs: "https://www.chartjs.org/media/logo-title.svg",
-  jenkins: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg",
-  gcp: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
-  kubernetes:
-    "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
-  azure:
-    "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg",
-  git: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-  kafka: "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg",
-  solr: "https://www.vectorlogo.zone/logos/apache_solr/apache_solr-icon.svg",
-  cassandra:
-    "https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-icon.svg",
-  rabbitMQ: "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg",
-  hadoop:
-    "https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg",
-  bash: "https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg",
-  pytorch: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg",
-  opencv: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg",
-  illustrator:
-    "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
-  figma: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
-  blender:
-    "https://download.blender.org/branding/community/blender_community_badge_white.svg",
-  babel: "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg",
-  sketch: "https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg",
-  flask: "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg",
-  nativescript:
-    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg",
-  xamarin:
-    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg",
-  vagrant: "https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg",
-  tailwind:
-    "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  materialize:
-    "https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg",
-  invision:
-    "https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg",
-  framer: "https://www.vectorlogo.zone/logos/framer/framer-icon.svg",
-  bulma:
-    "https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg",
-  couchdb:
-    "https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg",
-  firebase: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-  amplify: "https://docs.amplify.aws/assets/logo-dark.svg",
-  hive: "https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg",
-  realm:
-    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg",
-  gatsby: "https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg",
-  gridsome: "https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg",
-  nuxtjs: "https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg",
-  jekyll: "https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg",
-  nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
-  reactnative: "https://reactnative.dev/img/header_logo.svg",
-  mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
-  cockroachdb:  "https://worldvectorlogo.com/es/download/cockroachdb.svg",
-  objectivec:
-    "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
-  clojure:
-    "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
-  haskell:
-    "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
-  svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-  vuetify: "https://bestofjs.org/logos/vuetify.svg",
-  pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
-  mocha: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
-  jest: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
-  cypress:
-    "https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg",
-  selenium:
-    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg",
-  puppeteer: "https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg",
-  karma:
-    "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
-  jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
-  gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
-  qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
-  wx_widgets:
-    "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
-  ember:
-    "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
-  scikit_learn:
-    "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-  quasar:
-    "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
-  kibana:
-    "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
-  grafana:
-    "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg",
-  elasticsearch:
-    "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg",
-  circleci:
-    "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg",
-  scully:
-    "https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg",
-  "11ty":
-    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg",
-  sculpin:
-    "https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg",
-  sapper:
-    "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg", 
-  vuepress:
-    "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",
-  unity:
-    "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+  vuejs: vuejs,
+  react: reactjs,
+  angularjs: angularjs,
+  aws: aws,
+  android: android,
+  arduino: arduino,
+  backbonejs: backbonejs,
+  bootstrap: bootstrap,
+  c: c,
+  canvasjs: canvasjs,
+  coffeescript: coffeescript,
+  codeigniter: codeigniter,
+  cplusplus: cpp,
+  css3: css,
+  csharp: csharp,
+  d3js: d3js,
+  django: django,
+  docker: docker,
+  dotnet: dotnet,
+  electron: electron,
+  express: express,
+  go: go,
+  graphql: graphql,
+  gulp: gulp,
+  html5: html,
+  hugo: hugo,
+  java: java,
+  javascript: javascript,
+  ionic: ionic,
+  laravel: laravel,
+  matlab: matlab,
+  meteor: meteor,
+  mongodb: mongodb,
+  mysql: mysql,
+  nginx: nginx,
+  nodejs: nodejs,
+  openresty: openresty,
+  oracle: oracle,
+  photoshop: photoshop,
+  xd: xd,
+  php: php,
+  perl: perl,
+  postgresql: postgresql,
+  python: python,
+  rails: rails,
+  redis: redis,
+  ruby: ruby,
+  rust: rust,
+  sass: sass,
+  scala: scala,
+  solidworks: solidworks,
+  symfony: symfony,
+  spring: spring,
+  swift: swift,
+  typescript: typescript,
+  linux: linux,
+  redux: redux,
+  webpack: webpack,
+  flutter: flutter,
+  dart: dart,
+  kotlin: kotlin,
+  tensorflow: tensorflow,
+  chartjs: chartjs,
+  jenkins: jenkins,
+  gcp: gcp,
+  kubernetes: kubernetes,
+  azure: azure,
+  git: git,
+  kafka: kafka,
+  solr: solr,
+  cassandra: cassandra,
+  rabbitMQ: rabbitmq,
+  hadoop: hadoop,
+  bash: bash,
+  pytorch: pytorch,
+  opencv: opencv,
+  illustrator: illustrator,
+  figma: figma,
+  blender: blender,
+  babel: babel,
+  sketch: sketch,
+  flask: flask,
+  nativescript: nativescript,
+  xamarin: xamarin,
+  vagrant: vagrant,
+  tailwind: tailwind,
+  materialize: materialize,
+  invision: invision,
+  framer: framer,
+  bulma: bulma,
+  couchdb: couchdb,
+  firebase: firebase,
+  amplify: amplify,
+  hive: hive,
+  realm: realm,
+  gatsby: gatsby,
+  gridsome: grindsome,
+  nuxtjs: nuxtjs,
+  jekyll: jekyll,
+  nextjs: nextjs,
+  reactnative: reactnative,
+  mariadb: mariadb,
+  cockroachdb: cockroachdb,
+  objectivec: objetivec,
+  clojure: clojure,
+  haskell: haskell,
+  svelte: svelte,
+  vuetify: vuetify,
+  pug: pug,
+  mocha: mocha,
+  jest: jest,
+  cypress: cypress,
+  selenium: selenium,
+  puppeteer: puppeteer,
+  karma: karma,
+  jasmine: jasmine,
+  gtk: gtk,
+  qt: qt,
+  wx_widgets: wxwidgets,
+  ember: ember,
+  scikit_learn: scikit,
+  quasar: quasar,
+  kibana: kibana,
+  grafana: grafana,
+  elasticsearch: elasticsearch,
+  circleci: circleci,
+  scully: scully,
+  "11ty": eleventy,
+  sculpin: sculpin,
+  sapper: sapper,
+  vuepress: vuepress,
+  unity: unity,
+  unreal: unreal,
+  elixir: elixir,
+  heroku: heroku,
+  coffeescript: coffeescript,
+  hexo: hexo,
+  travisci: travisci,
+  apachecordova: apachecordova,
+  zapier: zapier,
+  postman: postman,
+  erlang: erlang,
+  sqlite: sqlite,
+  middleman: middleman
 }
 
 const skillWebsites = {
+  arduino: "https://www.arduino.cc/",
+  solidworks: "https://www.solidworks.com/",
   vuejs: "https://vuejs.org/",
   react: "https://reactjs.org/",
   angularjs: "https://angular.io",
@@ -443,6 +573,7 @@ const skillWebsites = {
   javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   ionic: "https://ionicframework.com",
   laravel: "https://laravel.com/",
+  matlab: "https://www.mathworks.com/",
   meteor: "https://www.meteor.com/",
   mongodb: "https://www.mongodb.com/",
   mysql: "https://www.mysql.com/",
@@ -463,8 +594,8 @@ const skillWebsites = {
   sass: "https://sass-lang.com",
   scala: "https://www.scala-lang.org",
   symfony: "https://symfony.com",
-  spring: "",
-  swift: "",
+  spring: "https://spring.io/",
+  swift: "https://developer.apple.com/swift/",
   typescript: "https://www.typescriptlang.org/",
   linux: "https://www.linux.org/",
   redux: "https://redux.js.org",
@@ -489,34 +620,34 @@ const skillWebsites = {
   opencv: "https://opencv.org/",
   illustrator: "https://www.adobe.com/in/products/illustrator.html",
   figma: "https://www.figma.com/",
-  blender: "",
+  blender: "https://www.blender.org/",
   babel: "https://babeljs.io/",
   sketch: "https://www.sketch.com/",
-  flask: "",
+  flask: "https://flask.palletsprojects.com/",
   nativescript: "https://nativescript.org/",
   xamarin: "https://dotnet.microsoft.com/apps/xamarin",
-  vagrant: "",
+  vagrant: "https://www.vagrantup.com/",
   tailwind: "https://tailwindcss.com/",
   materialize: "https://materializecss.com/",
   invision: "https://www.invisionapp.com/",
-  framer: "",
+  framer: "https://www.framer.com/",
   bulma: "https://bulma.io/",
-  couchdb: "",
+  couchdb: "https://couchdb.apache.org/",
   firebase: "https://firebase.google.com/",
   amplify: "https://aws.amazon.com/amplify/",
-  hive: "",
-  realm: "",
+  hive: "https://hive.apache.org/",
+  realm: "https://realm.io/",
   gatsby: "https://www.gatsbyjs.com/",
-  gridsome: "",
+  gridsome: "https://gridsome.org/",
   nuxtjs: "https://nuxtjs.org/",
   jekyll: "https://jekyllrb.com/",
   nextjs: "https://nextjs.org/",
   reactnative: "https://reactnative.dev/",
   mariadb: "https://mariadb.org/",
   cockroachdb: "https://www.cockroachlabs.com/product/cockroachdb/",
-  objectivec: "",
-  clojure: "",
-  haskell: "",
+  objectivec: "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+  clojure: "https://clojure.org/",
+  haskell: "https://www.haskell.org/",
   svelte: "https://svelte.dev",
   vuetify: "https://vuetifyjs.com/en/",
   pug: "https://pugjs.org",
@@ -527,11 +658,11 @@ const skillWebsites = {
   puppeteer: "https://github.com/puppeteer/puppeteer",
   karma: "https://karma-runner.github.io/latest/index.html",
   jasmine: "https://jasmine.github.io/",
-  gtk: "",
-  qt: "",
-  wx_widgets: "",
-  ember: "",
-  scikit_learn: "",
+  gtk: "https://www.gtk.org/",
+  qt: "https://www.qt.io/",
+  wx_widgets: "https://www.wxwidgets.org/",
+  ember: "https://emberjs.com/",
+  scikit_learn: "https://scikit-learn.org/",
   quasar: "https://quasar.dev/",
   kibana: "https://www.elastic.co/kibana",
   grafana: "https://grafana.com",
@@ -542,7 +673,19 @@ const skillWebsites = {
   "11ty": "https://www.11ty.dev/",
   sapper: "https://sapper.svelte.dev/",
   vuepress: "https://vuepress.vuejs.org/",
-  unity: "https://unity.com/"
+  unity: "https://unity.com/",
+  unreal: "https://unrealengine.com/",
+  hexo: "hexo.io/",
+  heroku: "https://heroku.com",
+  zapier: "https://zapier.com",
+  elixir: "https://elixir-lang.org",
+  travisci: "https://travis-ci.org",
+  apachecordova: "https://cordova.apache.org/",
+  coffeescript: "https://coffeescript.org/",
+  "sqlite": "https://www.sqlite.org/",
+  postman: "https://postman.com",
+  erlang: "https://www.erlang.org/",
+  middleman: "https://middlemanapp.com/"
 }
 
 const initialSkillState = {}
