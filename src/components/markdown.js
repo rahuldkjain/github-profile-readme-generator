@@ -1,7 +1,10 @@
 import React from "react"
 import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
-import { githubStatsLinkGenerator, topLanguagesLinkGenerator } from "../utils/link-generators"
+import {
+  githubStatsLinkGenerator,
+  topLanguagesLinkGenerator,
+} from "../utils/link-generators"
 
 const Markdown = props => {
   const Title = props => {
@@ -81,11 +84,12 @@ const Markdown = props => {
     return ""
   }
   const VisitorsBadge = props => {
-    let link = "https://komarev.com/ghpvc/?username=" 
-                + props.github
-                + `&label=${props.badgeOptions.badgeLabel}`
-                + `&color=${props.badgeOptions.badgeColor}`
-                + `&style=${props.badgeOptions.badgeStyle}`
+    let link =
+      "https://komarev.com/ghpvc/?username=" +
+      props.github +
+      `&label=${props.badgeOptions.badgeLabel}` +
+      `&color=${props.badgeOptions.badgeColor}` +
+      `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <>
@@ -98,7 +102,10 @@ const Markdown = props => {
     return ""
   }
   const TwitterBadge = props => {
-    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    let link =
+      "https://img.shields.io/twitter/follow/" +
+      props.twitter +
+      "?logo=twitter&style=for-the-badge"
     if (props.show) {
       return (
         <>
@@ -128,7 +135,10 @@ const Markdown = props => {
     if (show) {
       return (
         <>
-          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({github: github, options})}" alt="${github}" /></p>`}
+          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({
+            github: github,
+            options,
+          })}" alt="${github}" /></p>`}
           <br />
           <br />
         </>
@@ -205,7 +215,10 @@ const Markdown = props => {
       if (!props.showStats) {
         return (
           <>
-            {`<p><img align="center" src="${topLanguagesLinkGenerator({github: props.github, options: props.options})}" alt="${props.github}" /></p>`}
+            {`<p><img align="center" src="${topLanguagesLinkGenerator({
+              github: props.github,
+              options: props.options,
+            })}" alt="${props.github}" /></p>`}
             <br />
             <br />
           </>
@@ -213,7 +226,10 @@ const Markdown = props => {
       }
       return (
         <>
-          {`<p><img align="left" src="${topLanguagesLinkGenerator({github: props.github, options: props.options })}" alt="${props.github}" /></p>`}
+          {`<p><img align="left" src="${topLanguagesLinkGenerator({
+            github: props.github,
+            options: props.options,
+          })}" alt="${props.github}" /></p>`}
           <br />
           <br />
         </>
@@ -236,7 +252,7 @@ const Markdown = props => {
           badgeOptions={{
             badgeLabel: encodeURI(props.data.badgeLabel),
             badgeColor: props.data.badgeColor,
-            badgeStyle: props.data.badgeStyle
+            badgeStyle: props.data.badgeStyle,
           }}
         />
       </>
