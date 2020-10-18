@@ -8,19 +8,28 @@ import { Link } from "gatsby"
 import { act } from "react-dom/test-utils"
 
 const Header = props => {
+  const shouldRequestStats = () => {
+    const isFirstRequest = stats.starsCount === 0
+    const isVisible = window.document.visibilityState === 'visible'
+    const hasFocus = window.document.hasFocus()
+    return isFirstRequest || isVisible && hasFocus
+  }
+
   const fetchData = async () => {
-    var response = await axios.get(
-      "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
-    )
+    if (shouldRequestStats()) {
+      var response = await axios.get(
+        "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
+      )
 
-    const { stargazers_count, forks_count } = response.data
+      const { stargazers_count, forks_count } = response.data
 
-    act(() =>
-      setstats({
-        starsCount: stargazers_count,
-        forksCount: forks_count,
-      })
-    )
+      act(() =>
+        setstats({
+          starsCount: stargazers_count,
+          forksCount: forks_count,
+        })
+      )
+    }
   }
 
   const [stats, setstats] = useState({
