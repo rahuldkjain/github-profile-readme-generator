@@ -69,6 +69,24 @@ const Footer = () => {
               Releases
             </a>
           </div>
+          <div>
+            <a
+              href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
+              aria-label="Issues in rahuldkjain/github-profile-readme-generator"
+              target="blank"
+            >
+              Issues
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
+              aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
+              target="blank"
+            >
+              Pull Requests
+            </a>
+          </div>
         </div>
         <div>
           <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
