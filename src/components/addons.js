@@ -57,6 +57,7 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
           <select 
             id="badge-style" 
             onChange={(e) => onBadgeUpdate('badgeStyle', e.target.value)} 
+            onBlur={(e) => onBadgeUpdate('badgeStyle', e.target.value)} 
             value = {badgeOptions.badgeStyle}
           >
             <option value="flat">Flat</option>
@@ -97,6 +98,7 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
                     + `&color=${badgeOptions.badgeColor}`
                     + `&style=${badgeOptions.badgeStyle}`
                     }
+                alt = {githubName}
               />
             : <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
           }
@@ -112,6 +114,7 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
         <select
           id={`${prefix}-theme`}
           onChange={({target: { value }}) => onUpdate("theme", value)}
+          onBlur={({target: { value }}) => onUpdate("theme", value)}
           defaultValue={options.theme}
         >
           <option value="none">none</option>

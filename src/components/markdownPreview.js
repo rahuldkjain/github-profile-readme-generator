@@ -115,7 +115,7 @@ const MarkdownPreview = props => {
   const SocialPreview = props => {
     let viewSocial = false;
     Object.keys(props.social).forEach(key => {
-      if (props.social[key] && key != 'github')
+      if (props.social[key] && key !== 'github')
         viewSocial = true;
     })
     return (
@@ -252,7 +252,7 @@ const MarkdownPreview = props => {
       return (
         <div className="text-left my-2">
           {" "}
-          <a href="https://twitter.com/${props.twitter}" target="blank">
+          <a href={`https://twitter.com/${props.twitter}`} target="blank">
             <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
           </a>{" "}
         </div>

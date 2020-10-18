@@ -232,8 +232,6 @@ const icons = {
   c: "https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg",
   canvasjs:
     "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
-  coffeescript:
-    "https://devicons.github.io/devicon/devicon.git/icons/coffeescript/coffeescript-original-wordmark.svg",
   codeigniter: "https://cdn.worldvectorlogo.com/logos/codeigniter.svg",
   cplusplus:
     "https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg",
@@ -450,7 +448,6 @@ const skillWebsites = {
   bootstrap: "https://getbootstrap.com",
   c: "https://www.cprogramming.com/",
   canvasjs: "https://canvasjs.com",
-  coffeescript: "https://offeescript.org",
   codeigniter: "https://codeigniter.com",
   cplusplus: "https://www.w3schools.com/cpp/",
   css3: "https://www.w3schools.com/css/",

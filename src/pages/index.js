@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import MarkdownPreview from "../components/markdownPreview"
 import Markdown from "../components/markdown"
 // import Header from "../components/header"
@@ -387,28 +387,30 @@ const IndexPage = () => {
     })
   }
 
-  const setInitialValues = () => {
-    const cache = JSON.parse(localStorage.getItem("cache"))
-
-    if (!cache) {
-      return
+  const setInitialValues = useCallback(
+    () => {
+      const cache = JSON.parse(localStorage.getItem("cache"))
+  
+      if (!cache) {
+        return
+      }
+  
+      setPrefix(
+        cache.prefix ? { ...DEFAULT_PREFIX, ...cache.prefix } : DEFAULT_PREFIX
+      )
+      setData(cache.data ? { ...DEFAULT_DATA, ...cache.data } : DEFAULT_DATA)
+      setLink(cache.link ? { ...DEFAULT_LINK, ...cache.link } : DEFAULT_LINK)
+      setSocial(
+        cache.social ? { ...DEFAULT_SOCIAL, ...cache.social } : DEFAULT_SOCIAL
+      )
+  
+      const cacheSkills = mergeDefaultWithNewDataSkills(
+        DEFAULT_SKILLS,
+        cache.skills
+      )
+      setSkills(cacheSkills || DEFAULT_SKILLS)
     }
-
-    setPrefix(
-      cache.prefix ? { ...DEFAULT_PREFIX, ...cache.prefix } : DEFAULT_PREFIX
-    )
-    setData(cache.data ? { ...DEFAULT_DATA, ...cache.data } : DEFAULT_DATA)
-    setLink(cache.link ? { ...DEFAULT_LINK, ...cache.link } : DEFAULT_LINK)
-    setSocial(
-      cache.social ? { ...DEFAULT_SOCIAL, ...cache.social } : DEFAULT_SOCIAL
-    )
-
-    const cacheSkills = mergeDefaultWithNewDataSkills(
-      DEFAULT_SKILLS,
-      cache.skills
-    )
-    setSkills(cacheSkills || DEFAULT_SKILLS)
-  }
+    ,[])
 
   useEffect(() => {
     gsap.fromTo(
@@ -422,10 +424,9 @@ const IndexPage = () => {
         duration: 1,
       }
     )
-
     // set initial values
     setInitialValues()
-  }, [])
+  }, [setInitialValues])
 
   // keep cache updated
   KeepCacheUpdated({ prefix, data, link, social, skills })
