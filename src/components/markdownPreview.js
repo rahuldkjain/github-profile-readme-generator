@@ -20,7 +20,9 @@ const MarkdownPreview = props => {
     return null
   }
   const SectionTitle = props => {
-    if (props.label) {
+    if (!props.visible)
+      return null
+    else if (props.label) {
       return <h3 className="w-full text-lg sm:text-xl">{props.label}</h3>
     }
     return null
@@ -111,9 +113,14 @@ const MarkdownPreview = props => {
     return null
   }
   const SocialPreview = props => {
+    let viewSocial = false;
+    Object.keys(props.social).forEach(key => {
+      if (props.social[key] && key != 'github')
+        viewSocial = true;
+    })
     return (
       <div className="flex justify-start items-end flex-wrap">
-        <SectionTitle label="Connect with me:" />
+        <SectionTitle label="Connect with me:" visible={viewSocial}/>
         <DisplaySocial
           base="https://codepen.io"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
@@ -307,7 +314,7 @@ const MarkdownPreview = props => {
     })
     return listSkills.length > 0 ? (
       <div className="flex flex-wrap justify-start items-center">
-        <SectionTitle label="Languages and Tools:" />
+        <SectionTitle label="Languages and Tools:" visible={true}/>
         {listSkills}
       </div>
     ) : (
