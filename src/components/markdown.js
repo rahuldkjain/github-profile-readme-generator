@@ -332,10 +332,12 @@ const Markdown = props => {
           }
         />
       </>
-      {isSocial(props.social) ? `<p align="left">` : ""} <br />
-      <>
-        <SectionTitle label="Connect with me:" />
-      </>
+      {isSocial(props.social) ? (
+        <>
+          <SectionTitle label="Connect with me:" />
+          {`<p align="left">`}
+        </>) : ""}
+      <br />
       <>
         <DisplaySocial
           base="https://codepen.io"
