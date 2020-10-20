@@ -1,6 +1,9 @@
 import React from "react"
 import { icons, skills, skillWebsites } from "../constants/skills"
-import { githubStatsLinkGenerator, topLanguagesLinkGenerator } from "../utils/link-generators"
+import {
+  githubStatsLinkGenerator,
+  topLanguagesLinkGenerator,
+} from "../utils/link-generators"
 
 const MarkdownPreview = props => {
   const TitlePreview = props => {
@@ -20,8 +23,7 @@ const MarkdownPreview = props => {
     return null
   }
   const SectionTitle = props => {
-    if (!props.visible)
-      return null
+    if (!props.visible) return null
     else if (props.label) {
       return <h3 className="w-full text-lg sm:text-xl">{props.label}</h3>
     }
@@ -113,14 +115,13 @@ const MarkdownPreview = props => {
     return null
   }
   const SocialPreview = props => {
-    let viewSocial = false;
+    let viewSocial = false
     Object.keys(props.social).forEach(key => {
-      if (props.social[key] && key != 'github')
-        viewSocial = true;
+      if (props.social[key] && key != "github") viewSocial = true
     })
     return (
       <div className="flex justify-start items-end flex-wrap">
-        <SectionTitle label="Connect with me:" visible={viewSocial}/>
+        <SectionTitle label="Connect with me:" visible={viewSocial} />
         <DisplaySocial
           base="https://codepen.io"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
@@ -223,6 +224,11 @@ const MarkdownPreview = props => {
           username={props.social.leetcode}
         />
         <DisplaySocial
+          base="https://discord.gg"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+          username={props.social.discord}
+        />
+        <DisplaySocial
           base=""
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
           username={props.social.rssurl}
@@ -231,11 +237,12 @@ const MarkdownPreview = props => {
     )
   }
   const VisitorsBadgePreview = props => {
-    let link = "https://komarev.com/ghpvc/?username=" 
-                + props.github
-                + `&label=${props.badgeOptions.badgeLabel}`
-                + `&color=${props.badgeOptions.badgeColor}`
-                + `&style=${props.badgeOptions.badgeStyle}`
+    let link =
+      "https://komarev.com/ghpvc/?username=" +
+      props.github +
+      `&label=${props.badgeOptions.badgeLabel}` +
+      `&color=${props.badgeOptions.badgeColor}` +
+      `&style=${props.badgeOptions.badgeStyle}`
     if (props.show) {
       return (
         <div className="text-left my-2">
@@ -247,7 +254,10 @@ const MarkdownPreview = props => {
     return null
   }
   const TwitterBadgePreview = props => {
-    let link = "https://img.shields.io/twitter/follow/" + props.twitter + "?logo=twitter&style=for-the-badge"
+    let link =
+      "https://img.shields.io/twitter/follow/" +
+      props.twitter +
+      "?logo=twitter&style=for-the-badge"
     if (props.show) {
       return (
         <div className="text-left my-2">
@@ -276,21 +286,27 @@ const MarkdownPreview = props => {
     return null
   }
 
-  const GitHubStatsPreview = ({github, options, show })=> {
+  const GitHubStatsPreview = ({ github, options, show }) => {
     if (show) {
       return (
         <div className="text-center mx-4 mb-4">
-          <img src={githubStatsLinkGenerator({github, options})} alt={github} />
+          <img
+            src={githubStatsLinkGenerator({ github, options })}
+            alt={github}
+          />
         </div>
       )
     }
     return null
   }
-  const TopLanguagesPreview = ({github, options, show})=> {
+  const TopLanguagesPreview = ({ github, options, show }) => {
     if (show) {
       return (
         <div className="text-center mx-4 mb-4">
-          <img src={topLanguagesLinkGenerator({github, options})} alt={props.github} />
+          <img
+            src={topLanguagesLinkGenerator({ github, options })}
+            alt={props.github}
+          />
         </div>
       )
     }
@@ -314,7 +330,7 @@ const MarkdownPreview = props => {
     })
     return listSkills.length > 0 ? (
       <div className="flex flex-wrap justify-start items-center">
-        <SectionTitle label="Languages and Tools:" visible={true}/>
+        <SectionTitle label="Languages and Tools:" visible={true} />
         {listSkills}
       </div>
     ) : (
@@ -331,7 +347,7 @@ const MarkdownPreview = props => {
         badgeOptions={{
           badgeLabel: encodeURI(props.data.badgeLabel),
           badgeColor: props.data.badgeColor,
-          badgeStyle: props.data.badgeStyle
+          badgeStyle: props.data.badgeStyle,
         }}
       />
       <GithubProfileTrophyPreview

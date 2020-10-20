@@ -27,7 +27,7 @@ import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
-  isTwitterUsernameValid
+  isTwitterUsernameValid,
 } from "../utils/validation"
 import Layout from "../components/layout"
 
@@ -117,6 +117,7 @@ const DEFAULT_SOCIAL = {
   topcoder: "",
   hackerearth: "",
   geeks_for_geeks: "",
+  discord: "",
   rssurl: "",
 }
 
@@ -184,7 +185,8 @@ const IndexPage = () => {
 
   const handleSocialChange = (field, e) => {
     let change = { ...social }
-    change[field] = e.target.value.toLowerCase()
+    change[field] =
+      field === "discord" ? e.target.value : e.target.value.toLowerCase()
     setSocial(change)
   }
 
@@ -472,7 +474,7 @@ const IndexPage = () => {
       )
       setSkills(restoreDataSkills || DEFAULT_SKILLS)
     } catch (error) {
-    } finally { 
+    } finally {
       setRestore("")
     }
   }
@@ -485,7 +487,7 @@ const IndexPage = () => {
       setRestore(reader.result)
     }
   }
-  
+
   return (
     <Layout>
       <div className="m-4 sm:p-4">
@@ -721,14 +723,14 @@ const IndexPage = () => {
               onChange={e => setRestore(e.target.value)}
             />
 
-            <div class="overflow-hidden relative w-64 mt-4 mb-4">
+            <div className="overflow-hidden relative w-64 mt-4 mb-4">
               <input
-                class="cursor-pointer absolute block opacity-0 pin-r pin-t before:cursor-pointer"
+                className="cursor-pointer absolute block opacity-0 pin-r pin-t before:cursor-pointer"
                 type="file"
                 name="vacancyImageFiles"
                 onChange={handleFileInput}
               />
-              <button class="text-xxs sm:text-sm border-2 w-40 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1">
+              <button className="text-xxs sm:text-sm border-2 w-40 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1">
                 Upload json file
               </button>
             </div>
