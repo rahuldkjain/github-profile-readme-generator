@@ -84,7 +84,7 @@ const Work = props => {
         <input
           id="currentLearn"
           placeholder="Frameworks, courses etc."
-          className="outline-none placeholder-gray-700 w-full sm:w-1/3  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={props.data.currentLearn}
           onChange={event => props.handleDataChange("currentLearn", event)}
         />

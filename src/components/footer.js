@@ -69,7 +69,7 @@ const Footer = () => {
               Releases
             </a>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
               aria-label="Issues in rahuldkjain/github-profile-readme-generator"
@@ -78,7 +78,7 @@ const Footer = () => {
               Issues
             </a>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
               aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
