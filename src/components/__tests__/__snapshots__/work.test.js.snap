@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Work renders work component correctly 1`] = `
+<div
+  className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10"
+>
+  <div
+    className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+  >
+    Work
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="currentWork-prefix"
+      onChange={[Function]}
+      placeholder="Hi, I'm "
+      value="test_currentwork"
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="currentWork"
+      onChange={[Function]}
+      placeholder="project name"
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="currentWork-link"
+      onChange={[Function]}
+      placeholder="project link"
+      value="test_currentwork"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="collaborateOn-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="collaborateOn"
+      onChange={[Function]}
+      placeholder="project name"
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="collaborateOn-link"
+      onChange={[Function]}
+      placeholder="project link"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="helpWith-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 w-full sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="helpWith"
+      onChange={[Function]}
+      placeholder="project name"
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/4  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="helpWith-link"
+      onChange={[Function]}
+      placeholder="project link"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="currentLearn-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 w-full sm:w-1/3  border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="currentLearn"
+      onChange={[Function]}
+      placeholder="Frameworks, courses etc."
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="ama-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="ama"
+      onChange={[Function]}
+      placeholder="react, vue and gsap"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="contact-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="contact"
+      onChange={[Function]}
+      placeholder="example@gmail.com"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="portfolio-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="portfolio"
+      onChange={[Function]}
+      placeholder="portfolio link"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="blog-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="blog"
+      onChange={[Function]}
+      placeholder="blog link"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="resume-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 text-blue-700 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="resume"
+      onChange={[Function]}
+      placeholder="resume link"
+    />
+  </div>
+  <div
+    className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0"
+  >
+    <input
+      className="outline-none mr-8 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="funFact-prefix"
+      onChange={[Function]}
+    />
+    <input
+      className="outline-none placeholder-gray-700 mr-8 sm:mr-0 w-full sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+      id="funFact"
+      onChange={[Function]}
+      placeholder="I think I am funny"
+    />
+  </div>
+</div>
+`;
