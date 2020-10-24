@@ -1,0 +1,889 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown renders correctly 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders devDynamicBlogs is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  ### Blogs posts
+  <br />
+  &lt;!-- BLOG-POST-LIST:START --&gt;
+  <br />
+  &lt;!-- BLOG-POST-LIST:END --&gt;
+  <br />
+   
+  <br />
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders githubProfileTrophy is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  &lt;p align="left"&gt; &lt;a href="https://github.com/ryo-ma/github-profile-trophy"&gt;&lt;img src="https://github-profile-trophy.vercel.app/?username=undefined" alt="undefined" /&gt;&lt;/a&gt; &lt;/p&gt;
+  <br />
+  <br />
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders githubProfileTrophy is true 2`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  &lt;p align="left"&gt; &lt;a href="https://github.com/ryo-ma/github-profile-trophy"&gt;&lt;img src="https://github-profile-trophy.vercel.app/?username=undefined" alt="undefined" /&gt;&lt;/a&gt; &lt;/p&gt;
+  <br />
+  <br />
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders topLanguages is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  &lt;p&gt;&lt;img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=undefined&show_icons=true&locale=en&layout=compact" alt="undefined" /&gt;&lt;/p&gt;
+  <br />
+  <br />
+  
+</div>
+`;
+
+exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  &lt;p&gt;&lt;img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=undefined&show_icons=true&locale=en&layout=compact" alt="undefined" /&gt;&lt;/p&gt;
+  <br />
+  <br />
+  &lt;p&gt;&nbsp;&lt;img align="center" src="https://github-readme-stats.vercel.app/api?username=undefined&show_icons=true&locale=en" alt="undefined" /&gt;&lt;/p&gt;
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Markdown renders twitterBadge is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  &lt;p align="left"&gt; &lt;a href="https://twitter.com/undefined" target="blank"&gt;&lt;img src="https://img.shields.io/twitter/follow/undefined?logo=twitter&style=for-the-badge" alt="undefined" /&gt;&lt;/a&gt; &lt;/p&gt;
+  <br />
+  <br />
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders visitorsBadge is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  &lt;p align="left"&gt; &lt;img src="https://komarev.com/ghpvc/?username=undefined&label=Profile%20views&color=0e75b6&style=flat" alt="undefined" /&gt; &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders without link.currentWork 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on **currentWork**
+  <br />
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders without prefix.title and data.title 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  
+  &lt;h3 align="center"&gt;A passionate frontend developer from India&lt;/h3&gt;
+  <br />
+  <br />
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`Markdown renders without subtitle 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  &lt;h1 align="center"&gt;Hi 👋, I'm title&lt;/h1&gt;
+  <br />
+  
+  
+  
+  
+  - 🔭 I’m currently working on [currentWork](currentWork)
+  <br />
+  <br />
+  
+  - 👯 I’m looking to collaborate on [collaborateOn](collaborateOn)
+  <br />
+  <br />
+  - 🤝 I’m looking for help with [helpWith](helpWith)
+  <br />
+  <br />
+  - 👨‍💻 All of my projects are available at [portfolio](portfolio)
+  <br />
+  <br />
+  - 📝 I regulary write articles on [blog](blog)
+  <br />
+  <br />
+  
+  
+  - 📄 Know about my experiences [resume](resume)
+  <br />
+  <br />
+  
+  
+  &lt;h3 align="left"&gt;Connect with me:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+  <br />
+  
+  &lt;a href="https://dev.to/dev" target="blank"&gt;&lt;img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dev" height="30" width="40" /&gt;&lt;/a&gt;
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;/p&gt;
+  <br />
+  <br />
+  &lt;h3 align="left"&gt;Languages and Tools:&lt;/h3&gt;
+  <br />
+  &lt;p align="left"&gt;
+          &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"&gt;
+            &lt;img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/&gt;
+          &lt;/a&gt;
+          &lt;/p&gt;
+  <br />
+  <br />
+  
+  
+</div>
+`;
