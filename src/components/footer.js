@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
       <div className="w-full flex flex-col sm:flex-row justify-evenly py-2">
-        <div className="ml-2 sm:ml-0 sm:mr-6 order-last sm:order-none flex">
+        <div className="sm:ml-0 sm:mr-6 order-last sm:order-none flex">
           <h1 className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0">
             <div className="flex sm:flex-col items-start mb-3 sm:mb-0">
               <img
@@ -69,7 +69,7 @@ const Footer = () => {
               Releases
             </a>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
               aria-label="Issues in rahuldkjain/github-profile-readme-generator"
@@ -78,7 +78,7 @@ const Footer = () => {
               Issues
             </a>
           </div>
-          <div>
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
               aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
             <strong>Join Community</strong>
           </div>
-          <div>
+          <div class="ml-2 sm:ml-0">
             <a
               href="https://discord.gg/HHMs7Eg"
               aria-label="Discord of the community"
