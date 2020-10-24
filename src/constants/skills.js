@@ -105,6 +105,7 @@ const categorizedSkills = {
       "cockroachdb",
       "elasticsearch",
       "sqlite",
+      "mssql",
     ],
   },
 
@@ -422,8 +423,6 @@ const icons = {
     "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
   elixir: "https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
   heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
-  coffeescript:
-    "https://www.vectorlogo.zone/logos/coffeescript/coffeescript-icon.svg",
   hexo: "https://www.vectorlogo.zone/logos/hexoio/hexoio-icon.svg",
   travisci: "https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg",
   apachecordova:
@@ -432,8 +431,10 @@ const icons = {
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
+  mssql: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg",
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
+  matlab: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg",
 }
 
 const skillWebsites = {
@@ -576,8 +577,8 @@ const skillWebsites = {
   elixir: "https://elixir-lang.org",
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
-  coffeescript: "https://coffeescript.org/",
   sqlite: "https://www.sqlite.org/",
+  mssql: "https://www.microsoft.com/en-us/sql-server",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
