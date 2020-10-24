@@ -305,6 +305,20 @@ const Social = props => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/discord.svg"
+            className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+            alt="discord"
+          />
+          <input
+            id="discord"
+            placeholder="discord invite (only code)"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            value={props.social.discord}
+            onChange={event => props.handleSocialChange("discord", event)}
+          />
+        </div>
+        <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+          <img
             src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/rss.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="rssfeed"
