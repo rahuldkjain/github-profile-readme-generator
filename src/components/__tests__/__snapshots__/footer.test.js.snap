@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component Matches the snapshot 1`] = `
+exports[`Footer component renders correctly 1`] = `
 <div
   className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2"
 >
@@ -8,7 +8,7 @@ exports[`Footer component Matches the snapshot 1`] = `
     className="w-full flex flex-col sm:flex-row justify-evenly py-2"
   >
     <div
-      className="ml-2 sm:ml-0 sm:mr-6 order-last sm:order-none flex"
+      className="sm:ml-0 sm:mr-6 order-last sm:order-none flex"
     >
       <h1
         className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0"
@@ -53,29 +53,44 @@ exports[`Footer component Matches the snapshot 1`] = `
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/addons"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/addons"
         >
           Addons
-        </a>
+        </mockConstructor>
       </div>
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/support"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/support"
         >
           Support
-        </a>
+        </mockConstructor>
       </div>
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/about"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/about"
         >
           About
-        </a>
+        </mockConstructor>
       </div>
     </div>
     <div
@@ -110,7 +125,9 @@ exports[`Footer component Matches the snapshot 1`] = `
           Releases
         </a>
       </div>
-      <div>
+      <div
+        className="ml-2 sm:ml-0"
+      >
         <a
           aria-label="Issues in rahuldkjain/github-profile-readme-generator"
           href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
@@ -119,7 +136,9 @@ exports[`Footer component Matches the snapshot 1`] = `
           Issues
         </a>
       </div>
-      <div>
+      <div
+        className="ml-2 sm:ml-0"
+      >
         <a
           aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
           href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
@@ -137,7 +156,9 @@ exports[`Footer component Matches the snapshot 1`] = `
           Join Community
         </strong>
       </div>
-      <div>
+      <div
+        class="ml-2 sm:ml-0"
+      >
         <a
           aria-label="Discord of the community"
           href="https://discord.gg/HHMs7Eg"

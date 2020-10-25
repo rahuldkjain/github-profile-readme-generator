@@ -1,13 +1,13 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { shallow } from "enzyme"
+import toJson from "enzyme-to-json"
 
 import Header from "../header"
 
 describe("Header", () => {
+  const component = shallow(<Header heading="heading" />)
+
   it("renders correctly", () => {
-    const tree = renderer
-      .create(<Header heading="heading" />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 })
