@@ -105,6 +105,7 @@ const categorizedSkills = {
       "cockroachdb",
       "elasticsearch",
       "sqlite",
+      "mssql",
     ],
   },
 
@@ -432,6 +433,7 @@ const icons = {
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
+  mssql: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg",
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg",
@@ -579,6 +581,7 @@ const skillWebsites = {
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
   sqlite: "https://www.sqlite.org/",
+  mssql: "https://www.microsoft.com/en-us/sql-server",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
