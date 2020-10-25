@@ -1,314 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DisplaySocial Preview renders correctly 1`] = `
-<a
-  className="no-underline text-blue-700 m-2"
-  href="https://codepen.io/dummy"
-  target="blank"
->
-  <img
-    alt="props.username"
-    className="w-6 h-6"
-    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-  />
-</a>
-`;
+exports[`DisplaySocial Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`DisplaySocial Preview renders correctly with no username 1`] = `null`;
+exports[`DisplaySocial Preview renders correctly with no username 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly 1`] = `
-<div
-  className="my-2"
->
-  [object Object] 
-  <a
-    className="no-underline text-blue-700"
-    href="https://dummy.com"
-    target="blank"
-  >
-    readme-generator
-  </a>
-</div>
-`;
+exports[`DisplayWork Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no link 1`] = `
-<div
-  className="my-2"
->
-  [object Object] 
-  <b>
-    readme-generator
-  </b>
-</div>
-`;
+exports[`DisplayWork Preview renders correctly with no link 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no prefix 1`] = `null`;
+exports[`DisplayWork Preview renders correctly with no prefix 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no prefix and link 1`] = `null`;
+exports[`DisplayWork Preview renders correctly with no prefix and link 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no prefix, link and project 1`] = `null`;
+exports[`DisplayWork Preview renders correctly with no prefix, link and project 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no project 1`] = `
-<div
-  className="my-2"
->
-  [object Object] 
-  <a
-    className="no-underline text-blue-700"
-    href="https://dummy.com"
-    target="blank"
-  >
-    https://dummy.com
-  </a>
-</div>
-`;
+exports[`DisplayWork Preview renders correctly with no project 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no project and link 1`] = `null`;
+exports[`DisplayWork Preview renders correctly with no project and link 1`] = `ShallowWrapper {}`;
 
-exports[`DisplayWork Preview renders correctly with no project and prefix 1`] = `null`;
+exports[`DisplayWork Preview renders correctly with no project and prefix 1`] = `ShallowWrapper {}`;
 
-exports[`GitHubStats Preview renders correctly 1`] = `null`;
+exports[`GitHubStats Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`GitHubStats Preview renders correctly 2`] = `
-<div
-  className="text-center mx-4 mb-4"
->
-  <img
-    alt=""
-    src="https://github-readme-stats.vercel.app/api?username=&show_icons=true&locale=en"
-  />
-</div>
-`;
+exports[`GitHubStats Preview renders correctly 2`] = `ShallowWrapper {}`;
 
-exports[`GithubProfileTrophy Preview renders correctly 1`] = `null`;
+exports[`GithubProfileTrophy Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`GithubProfileTrophy Preview renders correctly with show true 1`] = `
-<div
-  className="text-left my-2"
->
-   
-  <a
-    href="https://github.com/ryo-ma/github-profile-trophy"
-  >
-    <img
-      alt=""
-      src="https://github-profile-trophy.vercel.app/?username="
-    />
-  </a>
-   
-</div>
-`;
+exports[`GithubProfileTrophy Preview renders correctly with show true 1`] = `ShallowWrapper {}`;
 
-exports[`Markdown Preview renders correctly 1`] = `
-<div
-  id="markdown-preview"
->
-  <h1
-    className="text-center text-xl font-bold"
-  >
-    Hi 👋, I'm dummy
-  </h1>
-  <h3
-    className="text-center font-medium"
-  >
-    A passionate frontend developer from India
-  </h3>
-  <div
-    className="my-2"
-  >
-    🔭 I’m currently working on 
-    <a
-      className="no-underline text-blue-700"
-      href="https://dummy.com"
-      target="blank"
-    >
-      readme-generator
-    </a>
-  </div>
-  <div
-    className="flex justify-start items-end flex-wrap"
-  >
-    <h3
-      className="w-full text-lg sm:text-xl"
-    >
-      Connect with me:
-    </h3>
-    <a
-      className="no-underline text-blue-700 m-2"
-      href="https://codepen.io/dummy"
-      target="blank"
-    >
-      <img
-        alt="props.username"
-        className="w-6 h-6"
-        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-      />
-    </a>
-  </div>
-  
-  <div
-    className="block sm:flex sm:justify-center sm:items-start"
-  >
-    <div
-      className="text-center mx-4 mb-4"
-    >
-        
-    </div>
-  </div>
-</div>
-`;
+exports[`Markdown Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`SectionTitle Preview renders correctly 1`] = `
-<h3
-  className="w-full text-lg sm:text-xl"
->
-  dummy
-</h3>
-`;
+exports[`SectionTitle Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`SectionTitle Preview renders correctly with no label 1`] = `null`;
+exports[`SectionTitle Preview renders correctly with no label 1`] = `ShallowWrapper {}`;
 
-exports[`SectionTitle Preview renders correctly with visible false 1`] = `null`;
+exports[`SectionTitle Preview renders correctly with visible false 1`] = `ShallowWrapper {}`;
 
-exports[`Skills Preview renders correctly 1`] = `
-<div
-  className="flex flex-wrap justify-start items-center"
->
-  <h3
-    className="w-full text-lg sm:text-xl"
-  >
-    Languages and Tools:
-  </h3>
-  <a
-    href="https://unity.com/"
-    rel="noreferrer"
-    target="_blank"
-  >
-    <img
-      alt="unity"
-      className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
-      src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
-    />
-  </a>
-</div>
-`;
+exports[`Skills Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`Skills Preview renders correctly with no skills 1`] = `""`;
+exports[`Skills Preview renders correctly with no skills 1`] = `ShallowWrapper {}`;
 
-exports[`Social Preview renders correctly 1`] = `
-<div
-  className="flex justify-start items-end flex-wrap"
->
-  <h3
-    className="w-full text-lg sm:text-xl"
-  >
-    Connect with me:
-  </h3>
-  <a
-    className="no-underline text-blue-700 m-2"
-    href="https://codepen.io/dummy"
-    target="blank"
-  >
-    <img
-      alt="props.username"
-      className="w-6 h-6"
-      src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-    />
-  </a>
-</div>
-`;
+exports[`Social Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`SubTitle Preview renders correctly 1`] = `
-<h3
-  className="text-center font-medium"
->
-  A passionate frontend developer from India
-</h3>
-`;
+exports[`SubTitle Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`SubTitle Preview renders correctly with no subtitle 1`] = `null`;
+exports[`SubTitle Preview renders correctly with no subtitle 1`] = `ShallowWrapper {}`;
 
-exports[`Title Preview renders correctly 1`] = `
-<h1
-  className="text-center text-xl font-bold"
->
-  Hi 👋, I'm dummy
-</h1>
-`;
+exports[`Title Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`Title Preview renders correctly with no prefix 1`] = `null`;
+exports[`Title Preview renders correctly with no prefix 1`] = `ShallowWrapper {}`;
 
-exports[`Title Preview renders correctly with no title 1`] = `null`;
+exports[`Title Preview renders correctly with no title 1`] = `ShallowWrapper {}`;
 
-exports[`Title Preview renders correctly with no title and prefix 1`] = `null`;
+exports[`Title Preview renders correctly with no title and prefix 1`] = `ShallowWrapper {}`;
 
-exports[`TopLanguages Preview renders correctly 1`] = `
-<div
-  className="text-center mx-4 mb-4"
->
-    
-</div>
-`;
+exports[`TopLanguages Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`TopLanguages Preview renders correctly with show true 1`] = `
-<div
-  className="text-center mx-4 mb-4"
->
-  <img
-    alt=""
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=&show_icons=true&locale=en&layout=compact"
-  />
-</div>
-`;
+exports[`TopLanguages Preview renders correctly with show true 1`] = `ShallowWrapper {}`;
 
-exports[`TwitterBadgePreview Preview renders correctly 1`] = `null`;
+exports[`TwitterBadgePreview Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
-<div
-  className="text-left my-2"
->
-   
-  <a
-    href="https://twitter.com/\${props.twitter}"
-    target="blank"
-  >
-    <img
-      alt=""
-      className="h-4 sm:h-6"
-      src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge"
-    />
-  </a>
-   
-</div>
-`;
+exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `ShallowWrapper {}`;
 
-exports[`VisitorsBadge Preview renders correctly 1`] = `null`;
+exports[`VisitorsBadge Preview renders correctly 1`] = `ShallowWrapper {}`;
 
-exports[`VisitorsBadge Preview renders correctly with show true 1`] = `
-<div
-  className="text-left my-2"
->
-   
-  <img
-    alt=""
-    className="h-4 sm:h-6"
-    src="https://komarev.com/ghpvc/?username=&label=Profile%20views&color=0e75b6&style=flat"
-  />
-   
-</div>
-`;
+exports[`VisitorsBadge Preview renders correctly with show true 1`] = `ShallowWrapper {}`;
 
-exports[`Work Preview renders correctly 1`] = `
-<div
-  className="my-2"
->
-  🔭 I’m currently working on 
-  <a
-    className="no-underline text-blue-700"
-    href="https://dummy.com"
-    target="blank"
-  >
-    readme-generator
-  </a>
-</div>
-`;
+exports[`Work Preview renders correctly 1`] = `ShallowWrapper {}`;
