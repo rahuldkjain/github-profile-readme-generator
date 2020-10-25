@@ -8,7 +8,7 @@ describe("Subtitle", () => {
   const mockEvent = { target: { value: "This is a mock event" } }
   const props = {
     data: {
-      subtitle: "subtitle",
+      subtitle: "A frontend developer",
     },
     handleDataChange: jest.fn().mockReturnValue({}),
   }
