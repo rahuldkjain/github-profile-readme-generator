@@ -1,13 +1,15 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { shallow } from "enzyme"
+import toJson from "enzyme-to-json"
 
 import Subtitle from "../subtitle"
 
 describe("Subtitle", () => {
+  const component = shallow(
+    <Subtitle data={{ subtitle: "A frontend developer" }} />
+  )
+
   it("renders correctly", () => {
-    const tree = renderer
-      .create(<Subtitle data={{ subtitle: "A passionate frontend developer from India" }} />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 })

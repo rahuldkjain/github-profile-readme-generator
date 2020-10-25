@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Donate renders correctly 1`] = `
-Array [
+<Fragment>
   <div
     className="text-center text-4xl my-2"
   >
@@ -12,7 +12,7 @@ Array [
     >
       🙏
     </span>
-  </div>,
+  </div>
   <div
     className="flex flex-col sm:flex-row items-start justify-between"
   >
@@ -97,6 +97,6 @@ Array [
         Buy me a coffee
       </a>
     </div>
-  </div>,
-]
+  </div>
+</Fragment>
 `;
