@@ -1,5 +1,6 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { shallow } from "enzyme"
+import toJson from "enzyme-to-json"
 
 import Markdown from "../markdown"
 
@@ -76,18 +77,9 @@ describe("Markdown", () => {
     },
   };
 
-  it("renders correctly", () => {
-    const tree = renderer.create(
-        <Markdown
-          {...props}
-        />
-      )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
 
   it("renders without subtitle", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -96,12 +88,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders without prefix.title and data.title", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -114,12 +105,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders topLanguages is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -128,12 +118,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders topLanguages is true and githubStats is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -143,12 +132,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders devDynamicBlogs is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -157,12 +145,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders without link.currentWork", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           link={{
@@ -171,12 +158,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders visitorsBadge is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -185,12 +171,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders twitterBadge is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -199,12 +184,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders githubProfileTrophy is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -213,12 +197,11 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it("renders githubProfileTrophy is true", () => {
-    const tree = renderer.create(
+    const component = shallow(
         <Markdown
           {...props}
           data={{
@@ -227,7 +210,6 @@ describe("Markdown", () => {
           }}
         />
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 })
