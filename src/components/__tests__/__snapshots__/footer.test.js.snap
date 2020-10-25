@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component Matches the snapshot 1`] = `
+exports[`Footer component renders correctly 1`] = `
 <div
   className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2"
 >
@@ -53,29 +53,44 @@ exports[`Footer component Matches the snapshot 1`] = `
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/addons"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/addons"
         >
           Addons
-        </a>
+        </mockConstructor>
       </div>
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/support"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/support"
         >
           Support
-        </a>
+        </mockConstructor>
       </div>
       <div
         className="ml-2 sm:ml-0"
       >
-        <a
-          href="/about"
+        <mockConstructor
+          activeStyle={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          to="/about"
         >
           About
-        </a>
+        </mockConstructor>
       </div>
     </div>
     <div

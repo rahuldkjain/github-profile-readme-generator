@@ -1,5 +1,5 @@
 {
-  "name": "gh-profile-reamde-generator",
+  "name": "gh-profile-readme-generator",
   "private": true,
   "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
   "version": "0.1.0",
