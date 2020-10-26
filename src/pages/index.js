@@ -81,6 +81,10 @@ const DEFAULT_DATA = {
     cacheSeconds: null,
     locale: "en",
   },
+  streakStats: false,
+  streakStatsOptions: {
+    theme: "",
+  },
   devDynamicBlogs: false,
   mediumDynamicBlogs: false,
   rssDynamicBlogs: false,
@@ -253,7 +257,8 @@ const IndexPage = () => {
       data.visitorsBadge ||
       data.githubProfileTrophy ||
       data.githubStats ||
-      data.topLanguages
+      data.topLanguages ||
+      data.streakStats
     ) {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate()
@@ -520,7 +525,8 @@ const IndexPage = () => {
             {(data.visitorsBadge ||
               data.githubProfileTrophy ||
               data.githubStats ||
-              data.topLanguages) &&
+              data.topLanguages || 
+              data.streakStats) &&
             !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons

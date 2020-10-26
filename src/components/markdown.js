@@ -4,6 +4,7 @@ import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
   topLanguagesLinkGenerator,
+  streakStatsLinkGenerator
 } from "../utils/link-generators"
 
 const Markdown = props => {
@@ -136,6 +137,21 @@ const Markdown = props => {
       return (
         <>
           {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({
+            github: github,
+            options,
+          })}" alt="${github}" /></p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const DisplayStreakStats = ({ show, github, options }) => {
+    if (show) {
+      return (
+        <>
+          {`<p>&nbsp;<img align="center" src="${streakStatsLinkGenerator({
             github: github,
             options,
           })}" alt="${github}" /></p>`}
@@ -521,6 +537,13 @@ const Markdown = props => {
           show={props.data.githubStats}
           github={props.social.github}
           options={props.data.githubStatsOptions}
+        />
+      </>
+      <>
+        <DisplayStreakStats
+          show={props.data.streakStats}
+          github={props.social.github}
+          options={props.data.streakStatsOptions}
         />
       </>
     </div>

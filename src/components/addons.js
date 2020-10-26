@@ -221,6 +221,16 @@ const Addons = props => {
     })
   }, [props.data.topLanguagesOptions])
 
+  const [streakStatsOptions, setStreakStatsOptions] = useState({
+    ...props.data.streakStatsOptions,
+  });
+
+  useEffect(() => {
+    setStreakStatsOptions({
+      ...props.data.streakStatsOptions
+    })
+  }, [props.data.streakStatsOptions])
+
   const blogPostPorkflow = () => {
     let payload = {
       dev: {
@@ -269,6 +279,12 @@ const Addons = props => {
     const newLangOptions = {...topLanguagesOptions, [option]: value}
     setTopLanguagesOptions(newLangOptions)
     props.handleDataChange("topLanguagesOptions", {target: {value: newLangOptions}})
+  }
+
+  const onStreakStatsUpdate = (option, value) => {
+    const newStreakStatsOptions = {...streakStatsOptions, [option]: value}
+    setStreakStatsOptions(newStreakStatsOptions)
+    props.handleDataChange("streakStatsOptions", {target: {value: newStreakStatsOptions}})
   }
 
   return (
@@ -331,6 +347,21 @@ const Addons = props => {
         }
       >
         display top skills
+      </AddonsItem>
+      <AddonsItem
+        inputId="streak-stats"
+        inputChecked={props.data.streakStats}
+        onInputChange={() => props.handleCheckChange("streakStats")}
+        Options={
+          <CustomizeOptions
+            title="Customize Streak Stats Card"
+            CustomizationOptions={
+            <CustomizeGithubStatsBase prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate}/>
+            }
+          />
+        }
+      >
+        display streak stats
       </AddonsItem>
       <AddonsItem
         inputId="twitter-badge"
