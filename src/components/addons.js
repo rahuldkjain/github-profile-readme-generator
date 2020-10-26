@@ -372,7 +372,7 @@ const Addons = props => {
           <CustomizeOptions
             title="Customize Streak Stats Card"
             CustomizationOptions={
-            <CustomizeGithubStatsBase prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate}/>
+            <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate}/>
             }
           />
         }
