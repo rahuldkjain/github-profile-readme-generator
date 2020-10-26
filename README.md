@@ -76,6 +76,8 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 
 - **GitHub Top Skills**
 
+- **GitHub Streak Stats**
+
 - **Dynamic Dev(.)to Blogs** (GitHub Action)
 
 - **Dynamic Medium Blogs** (GitHub Action)
