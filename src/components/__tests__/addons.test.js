@@ -1,5 +1,6 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import toJson from "enzyme-to-json"
+import { shallow } from "enzyme"
 
 import Addons from "../addons"
 
@@ -82,14 +83,13 @@ describe("Addons", () => {
   });
 
   it("renders correctly", () => {
-    const tree = renderer
-      .create(<Addons
-        data={dataInput}
-        social={socialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />)
-      .toJSON()
-    expect(tree).toMatchSnapshot();
+    const addOnComponent = shallow(<Addons
+      data={dataInput}
+      social={socialInput}
+      handleCheckChange={mockHandleCheckChange}
+      handleDataChange={mockHandleDataChange}
+    />);
+
+    expect(toJson(addOnComponent)).toMatchSnapshot();
   });
 });
