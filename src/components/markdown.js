@@ -147,21 +147,6 @@ const Markdown = props => {
     }
     return ""
   }
-  const DisplayStreakStats = ({ show, github, options }) => {
-    if (show) {
-      return (
-        <>
-          {`<p>&nbsp;<img align="center" src="${streakStatsLinkGenerator({
-            github: github,
-            options,
-          })}" alt="${github}" /></p>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
   const isSocial = social => {
     return (
       social.dev ||
@@ -244,6 +229,21 @@ const Markdown = props => {
       return (
         <>
           {`<p><img align="left" src="${topLanguagesLinkGenerator({
+            github: props.github,
+            options: props.options,
+          })}" alt="${props.github}" /></p>`}
+          <br />
+          <br />
+        </>
+      )
+    }
+    return ""
+  }
+  const DisplayStreakStats = props => {
+    if (props.show) {
+      return (
+        <>
+          {`<p><img align="center" src="${streakStatsLinkGenerator({
             github: props.github,
             options: props.options,
           })}" alt="${props.github}" /></p>`}

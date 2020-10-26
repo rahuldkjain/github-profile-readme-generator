@@ -185,6 +185,22 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
       </label>
     </>
 
+const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
+  <>
+    <label htmlFor={`${prefix}-theme`}>
+      Theme:&nbsp;
+      <select
+        id={`${prefix}-theme`}
+        onChange={({ target: { value } }) => onUpdate("theme", value)}
+        defaultValue={options.theme}
+      >
+        <option value="default">default</option>
+        <option value="dark">dark</option>
+      </select>
+    </label>
+  </>
+)
+
 const Addons = props => {
   const [debounce, setDebounce] = useState(undefined);
   const [badgeOptions, setBadgeOptions] = useState({
