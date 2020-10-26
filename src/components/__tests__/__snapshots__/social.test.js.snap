@@ -25,7 +25,7 @@ exports[`Social renders correctly 1`] = `
         id="github"
         onChange={[Function]}
         placeholder="github username"
-        value="github"
+        value="github "
       />
     </div>
     <div
@@ -41,6 +41,7 @@ exports[`Social renders correctly 1`] = `
         id="twitter"
         onChange={[Function]}
         placeholder="twitter username"
+        value="twitter"
       />
     </div>
     <div
@@ -56,6 +57,7 @@ exports[`Social renders correctly 1`] = `
         id="dev"
         onChange={[Function]}
         placeholder="dev.to username"
+        value="dev"
       />
     </div>
     <div
@@ -71,6 +73,7 @@ exports[`Social renders correctly 1`] = `
         id="codepen"
         onChange={[Function]}
         placeholder="codepen username"
+        value="codepen"
       />
     </div>
     <div
@@ -86,6 +89,7 @@ exports[`Social renders correctly 1`] = `
         id="codesandbox"
         onChange={[Function]}
         placeholder="codesandbox username"
+        value="codesandbodx"
       />
     </div>
     <div
@@ -101,6 +105,7 @@ exports[`Social renders correctly 1`] = `
         id="stackoverflow"
         onChange={[Function]}
         placeholder="stackoverflow user ID"
+        value="stackoverflow"
       />
     </div>
     <div
@@ -116,6 +121,7 @@ exports[`Social renders correctly 1`] = `
         id="linkedin"
         onChange={[Function]}
         placeholder="linkedin username"
+        value="linkedin"
       />
     </div>
     <div
@@ -131,6 +137,7 @@ exports[`Social renders correctly 1`] = `
         id="kaggle"
         onChange={[Function]}
         placeholder="kaggle username"
+        value="kaggle"
       />
     </div>
     <div
@@ -146,6 +153,7 @@ exports[`Social renders correctly 1`] = `
         id="fb"
         onChange={[Function]}
         placeholder="facebook username"
+        value="fb"
       />
     </div>
     <div
@@ -161,6 +169,7 @@ exports[`Social renders correctly 1`] = `
         id="instagram"
         onChange={[Function]}
         placeholder="instagram username"
+        value="instagram"
       />
     </div>
     <div
@@ -191,6 +200,7 @@ exports[`Social renders correctly 1`] = `
         id="behance"
         onChange={[Function]}
         placeholder="behance username"
+        value="behance"
       />
     </div>
     <div
@@ -206,6 +216,7 @@ exports[`Social renders correctly 1`] = `
         id="medium"
         onChange={[Function]}
         placeholder="medium username (with @)"
+        value="medium"
       />
     </div>
     <div
@@ -221,6 +232,7 @@ exports[`Social renders correctly 1`] = `
         id="youtube"
         onChange={[Function]}
         placeholder="youtube channel name"
+        value="youtube"
       />
     </div>
     <div
@@ -236,6 +248,7 @@ exports[`Social renders correctly 1`] = `
         id="codechef"
         onChange={[Function]}
         placeholder="codechef username"
+        value="codechef"
       />
     </div>
     <div
@@ -266,6 +279,7 @@ exports[`Social renders correctly 1`] = `
         id="codeforces"
         onChange={[Function]}
         placeholder="codeforces username"
+        value="codeforces"
       />
     </div>
     <div
@@ -281,6 +295,7 @@ exports[`Social renders correctly 1`] = `
         id="leetcode"
         onChange={[Function]}
         placeholder="leetcode username"
+        value="leetcode"
       />
     </div>
     <div
@@ -296,6 +311,7 @@ exports[`Social renders correctly 1`] = `
         id="topcoder"
         onChange={[Function]}
         placeholder="topcoder username"
+        value="topcoder"
       />
     </div>
     <div
@@ -311,6 +327,7 @@ exports[`Social renders correctly 1`] = `
         id="hackerearth"
         onChange={[Function]}
         placeholder="hackerearth user (with @)"
+        value="@hackerearth"
       />
     </div>
     <div
@@ -326,6 +343,7 @@ exports[`Social renders correctly 1`] = `
         id="geeksforgeeks"
         onChange={[Function]}
         placeholder="GFG (<username>/profile)"
+        value="geeks_for_geeks"
       />
     </div>
     <div
@@ -341,6 +359,7 @@ exports[`Social renders correctly 1`] = `
         id="discord"
         onChange={[Function]}
         placeholder="discord invite (only code)"
+        value="discord"
       />
     </div>
     <div
@@ -356,6 +375,7 @@ exports[`Social renders correctly 1`] = `
         id="rssurl"
         onChange={[Function]}
         placeholder="RSS feed URL"
+        value="rssurl"
       />
     </div>
   </div>
