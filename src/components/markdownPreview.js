@@ -340,7 +340,7 @@ export const SkillsPreview = props => {
     }
   })
   return listSkills.length > 0 ? (
-    <div className="flex flex-wrap justify-start items-center">
+    <div className="flex flex-wrap justify-start items-center" key={listSkills}>
       <SectionTitle label="Languages and Tools:" visible={true} />
       {listSkills}
     </div>
