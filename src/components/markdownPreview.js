@@ -270,7 +270,7 @@ export const TwitterBadgePreview = props => {
       <div className="text-left my-2">
         {" "}
         <a href ={`https://twitter.com/${props.twitter}`}
-        target = "blank" >
+        target = "blank">
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
