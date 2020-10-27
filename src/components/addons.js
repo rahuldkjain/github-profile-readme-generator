@@ -23,6 +23,7 @@ const AddonsItem = ({ inputId, inputChecked, onInputChange, Options, onIconClick
         </label>
         {Options && (
           <button
+            id={`${inputId}-open-btn`}
             onClick={() => setOpen(!open)}
             className="flex ml-3 focus:bg-gray-400"
             style={{ outline: "none" }}
@@ -370,6 +371,7 @@ const Addons = props => {
           <div>
             download
             <span
+              id="blog-post-worklow-span"
               onClick={blogPostPorkflow}
               onKeyDown={(e) => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
