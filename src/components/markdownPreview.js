@@ -328,7 +328,7 @@ export const SkillsPreview = props => {
   skills.forEach(skill => {
     if (props.skills[skill]) {
       listSkills.push(
-        <a href={skillWebsites[skill]} target="_blank" rel="noreferrer">
+        <a href={skillWebsites[skill]} target="_blank" rel="noreferrer" key={skill}>
           <img
             className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
             key={skill}
@@ -340,7 +340,7 @@ export const SkillsPreview = props => {
     }
   })
   return listSkills.length > 0 ? (
-    <div className="flex flex-wrap justify-start items-center" key={listSkills}>
+    <div className="flex flex-wrap justify-start items-center">
       <SectionTitle label="Languages and Tools:" visible={true} />
       {listSkills}
     </div>
