@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills renders correctly 1`] = `
+<div
+  className="px-2 sm:px-6 mb-10 "
+>
+  <div
+    className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between"
+  >
+    Skills
+    <div
+      className="relative flex"
+    >
+      <input
+        className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700"
+        onChange={[Function]}
+        placeholder="Search Skills"
+        type="text"
+      />
+      <span
+        className="absolute"
+        style={
+          Object {
+            "right": "10px",
+          }
+        }
+      >
+        <SearchIcon
+          className="mb-1 transform scale-100 md:scale-125"
+          size={16}
+          verticalAlign="text-bottom"
+        />
+      </span>
+    </div>
+  </div>
+  <div
+    className="divide-y divide-gray-500"
+    key="language"
+  >
+    <div
+      className="text-sm sm:text-xl text-gray-900 text-left py-1"
+    >
+      Programming Languages
+    </div>
+    <div
+      className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10"
+    >
+      <div
+        className="w-1/3 sm:w-1/4 my-6"
+        key="javascript"
+      >
+        <label
+          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          htmlFor="javascript"
+        >
+          <input
+            checked={true}
+            id="javascript"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <img
+            alt="javascript"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="javascript.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            javascript
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="divide-y divide-gray-500"
+    key="frontend_dev"
+  >
+    <div
+      className="text-sm sm:text-xl text-gray-900 text-left py-1"
+    >
+      Frontend Development
+    </div>
+    <div
+      className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10"
+    >
+      <div
+        className="w-1/3 sm:w-1/4 my-6"
+        key="react"
+      >
+        <label
+          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          htmlFor="react"
+        >
+          <input
+            id="react"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <img
+            alt="react"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="react.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            react
+          </span>
+        </label>
+      </div>
+      <div
+        className="w-1/3 sm:w-1/4 my-6"
+        key="svelte"
+      >
+        <label
+          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          htmlFor="svelte"
+        >
+          <input
+            id="svelte"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <img
+            alt="svelte"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="svelte.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            svelte
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <span
+    className="flex justify-center text-gray-900"
+  />
+</div>
+`;
