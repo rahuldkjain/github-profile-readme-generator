@@ -1,0 +1,2212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Addons renders correctly 1`] = `
+<div
+  className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10"
+>
+  <div
+    className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+  >
+    Add-ons
+  </div>
+  <AddonsItem
+    Options={
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeBadge
+            badgeOptions={
+              Object {
+                "badgeColor": "0e75b6",
+                "badgeLabel": "Profile views",
+                "badgeStyle": "flat",
+              }
+            }
+            githubName=""
+            onBadgeUpdate={[Function]}
+          />
+        }
+        title="Customize Badge"
+      />
+    }
+    inputChecked={false}
+    inputId="visitors-count"
+    onInputChange={[Function]}
+  >
+    display visitors count badge
+  </AddonsItem>
+  <AddonsItem
+    inputChecked={false}
+    inputId="github-profile-trophy"
+    onInputChange={[Function]}
+  >
+    display github trophy
+  </AddonsItem>
+  <AddonsItem
+    Options={
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeGithubStatsBase
+            onUpdate={[Function]}
+            options={
+              Object {
+                "bgColor": "",
+                "cacheSeconds": null,
+                "hideBorder": false,
+                "locale": "en",
+                "textColor": "",
+                "theme": "",
+                "titleColor": "",
+              }
+            }
+            prefix="stats"
+          />
+        }
+        title="Customize Github Stats Card"
+      />
+    }
+    inputChecked={false}
+    inputId="github-stats"
+    onInputChange={[Function]}
+  >
+    display github profile stats card
+  </AddonsItem>
+  <AddonsItem
+    Options={
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeGithubStatsBase
+            onUpdate={[Function]}
+            options={
+              Object {
+                "bgColor": "",
+                "cacheSeconds": null,
+                "hideBorder": false,
+                "locale": "en",
+                "textColor": "",
+                "theme": "",
+                "titleColor": "",
+              }
+            }
+            prefix="top-lang"
+          />
+        }
+        title="Customize Top Skills Card"
+      />
+    }
+    inputChecked={false}
+    inputId="top-languages"
+    onInputChange={[Function]}
+  >
+    display top skills
+  </AddonsItem>
+  <AddonsItem
+    inputChecked={false}
+    inputId="twitter-badge"
+    onInputChange={[Function]}
+  >
+    display twitter badge
+  </AddonsItem>
+  <AddonsItem
+    inputChecked={false}
+    inputId="dev-dynamic-blogs"
+    onInputChange={[Function]}
+  >
+    display latest dev.to blogs dynamically (GitHub Action)
+  </AddonsItem>
+  <AddonsItem
+    inputChecked={false}
+    inputId="medium-dynamic-blogs"
+    onInputChange={[Function]}
+  >
+    display latest medium blogs dynamically (GitHub Action)
+  </AddonsItem>
+  <AddonsItem
+    inputChecked={false}
+    inputId="rss-dynamic-blogs"
+    onInputChange={[Function]}
+  >
+    display latest blogs from your personal blog dynamically (GitHub Action)
+  </AddonsItem>
+</div>
+`;
+
+exports[`Addons should display workflow details if devDynamicBlogs and dev social data are available 1`] = `
+<div
+  className="workflow"
+>
+  <div>
+    download
+    <span
+      id="blog-post-worklow-span"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      style={
+        Object {
+          "color": "#002ead",
+          "cursor": "pointer",
+        }
+      }
+      tabIndex="0"
+    >
+       
+      blog-post-workflow.yml
+    </span>
+     
+    file(learn
+    <a
+      href="/addons"
+      style={
+        Object {
+          "color": "#002ead",
+        }
+      }
+      target="blank"
+    >
+       
+      how to setup
+    </a>
+    )
+  </div>
+</div>
+`;
+
+exports[`Addons should display workflow details if mediumDynamicBlogs, medium social data are available 1`] = `
+<div
+  className="workflow"
+>
+  <div>
+    download
+    <span
+      id="blog-post-worklow-span"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      style={
+        Object {
+          "color": "#002ead",
+          "cursor": "pointer",
+        }
+      }
+      tabIndex="0"
+    >
+       
+      blog-post-workflow.yml
+    </span>
+     
+    file(learn
+    <a
+      href="/addons"
+      style={
+        Object {
+          "color": "#002ead",
+        }
+      }
+      target="blank"
+    >
+       
+      how to setup
+    </a>
+    )
+  </div>
+</div>
+`;
+
+exports[`Addons should display workflow details if rssDynamicBlogs and rss url data are available 1`] = `
+<div
+  className="workflow"
+>
+  <div>
+    download
+    <span
+      id="blog-post-worklow-span"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      style={
+        Object {
+          "color": "#002ead",
+          "cursor": "pointer",
+        }
+      }
+      tabIndex="0"
+    >
+       
+      blog-post-workflow.yml
+    </span>
+     
+    file(learn
+    <a
+      href="/addons"
+      style={
+        Object {
+          "color": "#002ead",
+        }
+      }
+      target="blank"
+    >
+       
+      how to setup
+    </a>
+    )
+  </div>
+</div>
+`;
+
+exports[`Addons should render Customize Badges 1`] = `
+<Addons
+  data={
+    Object {
+      "ama": "",
+      "badgeColor": "0e75b6",
+      "badgeLabel": "Profile views",
+      "badgeStyle": "flat",
+      "collaborateOn": "",
+      "contact": "",
+      "currentLearn": "",
+      "currentWork": "",
+      "devDynamicBlogs": false,
+      "funFact": "",
+      "githubProfileTrophy": false,
+      "githubStats": false,
+      "githubStatsOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "helpWith": "",
+      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "rssDynamicBlogs": false,
+      "subtitle": "A passionate frontend developer from India",
+      "title": "",
+      "topLanguages": false,
+      "topLanguagesOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "twitterBadge": false,
+      "visitorsBadge": false,
+    }
+  }
+  handleCheckChange={[MockFunction]}
+  handleDataChange={[MockFunction]}
+  social={
+    Object {
+      "medium": "@abcd",
+    }
+  }
+>
+  <div
+    className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10"
+  >
+    <div
+      className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+    >
+      Add-ons
+    </div>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeBadge
+              badgeOptions={
+                Object {
+                  "badgeColor": "0e75b6",
+                  "badgeLabel": "Profile views",
+                  "badgeStyle": "flat",
+                }
+              }
+              onBadgeUpdate={[Function]}
+            />
+          }
+          title="Customize Badge"
+        />
+      }
+      inputChecked={false}
+      inputId="visitors-count"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="visitors-count"
+        >
+          <input
+            checked={false}
+            id="visitors-count"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display visitors count badge
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="visitors-count-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <XCircleIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 24 24"
+              width={16}
+            />
+          </XCircleIcon>
+        </button>
+      </div>
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeBadge
+            badgeOptions={
+              Object {
+                "badgeColor": "0e75b6",
+                "badgeLabel": "Profile views",
+                "badgeStyle": "flat",
+              }
+            }
+            onBadgeUpdate={[Function]}
+          />
+        }
+        title="Customize Badge"
+      >
+        <div
+          className="border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8"
+          style={
+            Object {
+              "maxWidth": "21rem",
+            }
+          }
+        >
+          <header
+            className="text-base sm:text-lg"
+          >
+            Customize Badge
+          </header>
+          <hr
+            className="border-gray-500"
+          />
+          <div
+            className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4"
+          >
+            <CustomizeBadge
+              badgeOptions={
+                Object {
+                  "badgeColor": "0e75b6",
+                  "badgeLabel": "Profile views",
+                  "badgeStyle": "flat",
+                }
+              }
+              onBadgeUpdate={[Function]}
+            >
+              <label
+                htmlFor="badge-style"
+              >
+                Style: 
+                <select
+                  id="badge-style"
+                  onChange={[Function]}
+                  value="flat"
+                >
+                  <option
+                    value="flat"
+                  >
+                    Flat
+                  </option>
+                  <option
+                    value="flat-square"
+                  >
+                    Flat Square
+                  </option>
+                  <option
+                    value="plastic"
+                  >
+                    Plastic
+                  </option>
+                </select>
+              </label>
+              <label
+                htmlFor="badge-color"
+              >
+                Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#0e75b6"
+                  id="badge-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="badge-label-text"
+              >
+                Label Text: 
+                <input
+                  className="w-2/4 bg-gray-300 pl-2"
+                  defaultValue="Profile views"
+                  id="badge-label-text"
+                  onChange={[Function]}
+                  placeholder="Profile views"
+                  type="text"
+                />
+              </label>
+              <span
+                className="mt-2 flex items-center"
+              >
+                Preview: 
+                <img
+                  src="https://komarev.com/ghpvc/?username=undefined&label=Profile%20views&color=0e75b6&style=flat"
+                />
+              </span>
+            </CustomizeBadge>
+          </div>
+        </div>
+      </CustomizeOptions>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="github-profile-trophy"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-profile-trophy"
+        >
+          <input
+            checked={false}
+            id="github-profile-trophy"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github trophy
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="stats"
+            />
+          }
+          title="Customize Github Stats Card"
+        />
+      }
+      inputChecked={false}
+      inputId="github-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-stats"
+        >
+          <input
+            checked={false}
+            id="github-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github profile stats card
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="github-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="top-lang"
+            />
+          }
+          title="Customize Top Skills Card"
+        />
+      }
+      inputChecked={false}
+      inputId="top-languages"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="top-languages"
+        >
+          <input
+            checked={false}
+            id="top-languages"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display top skills
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="top-languages-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="twitter-badge"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="twitter-badge"
+        >
+          <input
+            checked={false}
+            id="twitter-badge"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display twitter badge
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="dev-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="dev-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="dev-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest dev.to blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked="some-medium-blogs-value"
+      inputId="medium-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="medium-dynamic-blogs"
+        >
+          <input
+            checked="some-medium-blogs-value"
+            id="medium-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest medium blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="rss-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="rss-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="rss-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest blogs from your personal blog dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <div
+      className="workflow"
+    >
+      <div>
+        download
+        <span
+          id="blog-post-worklow-span"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "color": "#002ead",
+              "cursor": "pointer",
+            }
+          }
+          tabIndex="0"
+        >
+           
+          blog-post-workflow.yml
+        </span>
+         
+        file(learn
+        <a
+          href="/addons"
+          style={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          target="blank"
+        >
+           
+          how to setup
+        </a>
+        )
+      </div>
+    </div>
+  </div>
+</Addons>
+`;
+
+exports[`Addons should render Customize Github stats card 1`] = `
+<Addons
+  data={
+    Object {
+      "ama": "",
+      "badgeColor": "0e75b6",
+      "badgeLabel": "Profile views",
+      "badgeStyle": "flat",
+      "collaborateOn": "",
+      "contact": "",
+      "currentLearn": "",
+      "currentWork": "",
+      "devDynamicBlogs": false,
+      "funFact": "",
+      "githubProfileTrophy": false,
+      "githubStats": false,
+      "githubStatsOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "helpWith": "",
+      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "rssDynamicBlogs": false,
+      "subtitle": "A passionate frontend developer from India",
+      "title": "",
+      "topLanguages": false,
+      "topLanguagesOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "twitterBadge": false,
+      "visitorsBadge": false,
+    }
+  }
+  handleCheckChange={[MockFunction]}
+  handleDataChange={[MockFunction]}
+  social={
+    Object {
+      "medium": "@abcd",
+    }
+  }
+>
+  <div
+    className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10"
+  >
+    <div
+      className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+    >
+      Add-ons
+    </div>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeBadge
+              badgeOptions={
+                Object {
+                  "badgeColor": "0e75b6",
+                  "badgeLabel": "Profile views",
+                  "badgeStyle": "flat",
+                }
+              }
+              onBadgeUpdate={[Function]}
+            />
+          }
+          title="Customize Badge"
+        />
+      }
+      inputChecked={false}
+      inputId="visitors-count"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="visitors-count"
+        >
+          <input
+            checked={false}
+            id="visitors-count"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display visitors count badge
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="visitors-count-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="github-profile-trophy"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-profile-trophy"
+        >
+          <input
+            checked={false}
+            id="github-profile-trophy"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github trophy
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="stats"
+            />
+          }
+          title="Customize Github Stats Card"
+        />
+      }
+      inputChecked={false}
+      inputId="github-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-stats"
+        >
+          <input
+            checked={false}
+            id="github-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github profile stats card
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="github-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <XCircleIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 24 24"
+              width={16}
+            />
+          </XCircleIcon>
+        </button>
+      </div>
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeGithubStatsBase
+            onUpdate={[Function]}
+            options={
+              Object {
+                "bgColor": "",
+                "cacheSeconds": null,
+                "hideBorder": false,
+                "locale": "en",
+                "textColor": "",
+                "theme": "",
+                "titleColor": "",
+              }
+            }
+            prefix="stats"
+          />
+        }
+        title="Customize Github Stats Card"
+      >
+        <div
+          className="border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8"
+          style={
+            Object {
+              "maxWidth": "21rem",
+            }
+          }
+        >
+          <header
+            className="text-base sm:text-lg"
+          >
+            Customize Github Stats Card
+          </header>
+          <hr
+            className="border-gray-500"
+          />
+          <div
+            className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4"
+          >
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="stats"
+            >
+              <label
+                htmlFor="stats-theme"
+              >
+                Theme: 
+                <select
+                  defaultValue=""
+                  id="stats-theme"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="none"
+                  >
+                    none
+                  </option>
+                  <option
+                    value="dark"
+                  >
+                    Dark
+                  </option>
+                  <option
+                    value="radical"
+                  >
+                    Radical
+                  </option>
+                  <option
+                    value="merko"
+                  >
+                    Merko
+                  </option>
+                  <option
+                    value="gruvbox"
+                  >
+                    Gruvbox
+                  </option>
+                  <option
+                    value="tokyonight"
+                  >
+                    Tokyonight
+                  </option>
+                  <option
+                    value="onedark"
+                  >
+                    Onedark
+                  </option>
+                  <option
+                    value="cobalt"
+                  >
+                    Cobalt
+                  </option>
+                  <option
+                    value="synthwave"
+                  >
+                    Synthwave
+                  </option>
+                  <option
+                    value="highcontrast"
+                  >
+                    Highcontrast
+                  </option>
+                  <option
+                    value="dracula"
+                  >
+                    Dracula
+                  </option>
+                </select>
+              </label>
+              <label
+                htmlFor="stats-title-color"
+              >
+                Title Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="stats-title-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="stats-text-color"
+              >
+                Text Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="stats-text-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="stats-bg-color"
+              >
+                Background Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="stats-bg-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="stats-hide-border"
+              >
+                Hide border: 
+                <input
+                  checked={false}
+                  id="stats-hide-border"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </label>
+              <label
+                htmlFor="stats-cache-seconds"
+              >
+                Cache Seconds: 
+                <input
+                  defaultValue={null}
+                  id="stats-cache-seconds"
+                  max={86400}
+                  min={1800}
+                  onChange={[Function]}
+                  placeholder={1800}
+                  type="number"
+                />
+              </label>
+              <label
+                htmlFor="stats-locale"
+              >
+                Locale: 
+                <input
+                  defaultValue="en"
+                  id="stats-locale"
+                  onChange={[Function]}
+                  placeholder="en"
+                  size="2"
+                  type="text"
+                />
+              </label>
+            </CustomizeGithubStatsBase>
+          </div>
+        </div>
+      </CustomizeOptions>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="top-lang"
+            />
+          }
+          title="Customize Top Skills Card"
+        />
+      }
+      inputChecked={false}
+      inputId="top-languages"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="top-languages"
+        >
+          <input
+            checked={false}
+            id="top-languages"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display top skills
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="top-languages-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="twitter-badge"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="twitter-badge"
+        >
+          <input
+            checked={false}
+            id="twitter-badge"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display twitter badge
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="dev-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="dev-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="dev-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest dev.to blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked="some-medium-blogs-value"
+      inputId="medium-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="medium-dynamic-blogs"
+        >
+          <input
+            checked="some-medium-blogs-value"
+            id="medium-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest medium blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="rss-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="rss-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="rss-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest blogs from your personal blog dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <div
+      className="workflow"
+    >
+      <div>
+        download
+        <span
+          id="blog-post-worklow-span"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "color": "#002ead",
+              "cursor": "pointer",
+            }
+          }
+          tabIndex="0"
+        >
+           
+          blog-post-workflow.yml
+        </span>
+         
+        file(learn
+        <a
+          href="/addons"
+          style={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          target="blank"
+        >
+           
+          how to setup
+        </a>
+        )
+      </div>
+    </div>
+  </div>
+</Addons>
+`;
+
+exports[`Addons should render Customize Top Skills Card 1`] = `
+<Addons
+  data={
+    Object {
+      "ama": "",
+      "badgeColor": "0e75b6",
+      "badgeLabel": "Profile views",
+      "badgeStyle": "flat",
+      "collaborateOn": "",
+      "contact": "",
+      "currentLearn": "",
+      "currentWork": "",
+      "devDynamicBlogs": false,
+      "funFact": "",
+      "githubProfileTrophy": false,
+      "githubStats": false,
+      "githubStatsOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "helpWith": "",
+      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "rssDynamicBlogs": false,
+      "subtitle": "A passionate frontend developer from India",
+      "title": "",
+      "topLanguages": false,
+      "topLanguagesOptions": Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      },
+      "twitterBadge": false,
+      "visitorsBadge": false,
+    }
+  }
+  handleCheckChange={[MockFunction]}
+  handleDataChange={[MockFunction]}
+  social={
+    Object {
+      "medium": "@abcd",
+    }
+  }
+>
+  <div
+    className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10"
+  >
+    <div
+      className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+    >
+      Add-ons
+    </div>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeBadge
+              badgeOptions={
+                Object {
+                  "badgeColor": "0e75b6",
+                  "badgeLabel": "Profile views",
+                  "badgeStyle": "flat",
+                }
+              }
+              onBadgeUpdate={[Function]}
+            />
+          }
+          title="Customize Badge"
+        />
+      }
+      inputChecked={false}
+      inputId="visitors-count"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="visitors-count"
+        >
+          <input
+            checked={false}
+            id="visitors-count"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display visitors count badge
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="visitors-count-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="github-profile-trophy"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-profile-trophy"
+        >
+          <input
+            checked={false}
+            id="github-profile-trophy"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github trophy
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="stats"
+            />
+          }
+          title="Customize Github Stats Card"
+        />
+      }
+      inputChecked={false}
+      inputId="github-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="github-stats"
+        >
+          <input
+            checked={false}
+            id="github-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github profile stats card
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="github-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="top-lang"
+            />
+          }
+          title="Customize Top Skills Card"
+        />
+      }
+      inputChecked={false}
+      inputId="top-languages"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="top-languages"
+        >
+          <input
+            checked={false}
+            id="top-languages"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display top skills
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="top-languages-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <XCircleIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 24 24"
+              width={16}
+            />
+          </XCircleIcon>
+        </button>
+      </div>
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeGithubStatsBase
+            onUpdate={[Function]}
+            options={
+              Object {
+                "bgColor": "",
+                "cacheSeconds": null,
+                "hideBorder": false,
+                "locale": "en",
+                "textColor": "",
+                "theme": "",
+                "titleColor": "",
+              }
+            }
+            prefix="top-lang"
+          />
+        }
+        title="Customize Top Skills Card"
+      >
+        <div
+          className="border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8"
+          style={
+            Object {
+              "maxWidth": "21rem",
+            }
+          }
+        >
+          <header
+            className="text-base sm:text-lg"
+          >
+            Customize Top Skills Card
+          </header>
+          <hr
+            className="border-gray-500"
+          />
+          <div
+            className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4"
+          >
+            <CustomizeGithubStatsBase
+              onUpdate={[Function]}
+              options={
+                Object {
+                  "bgColor": "",
+                  "cacheSeconds": null,
+                  "hideBorder": false,
+                  "locale": "en",
+                  "textColor": "",
+                  "theme": "",
+                  "titleColor": "",
+                }
+              }
+              prefix="top-lang"
+            >
+              <label
+                htmlFor="top-lang-theme"
+              >
+                Theme: 
+                <select
+                  defaultValue=""
+                  id="top-lang-theme"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="none"
+                  >
+                    none
+                  </option>
+                  <option
+                    value="dark"
+                  >
+                    Dark
+                  </option>
+                  <option
+                    value="radical"
+                  >
+                    Radical
+                  </option>
+                  <option
+                    value="merko"
+                  >
+                    Merko
+                  </option>
+                  <option
+                    value="gruvbox"
+                  >
+                    Gruvbox
+                  </option>
+                  <option
+                    value="tokyonight"
+                  >
+                    Tokyonight
+                  </option>
+                  <option
+                    value="onedark"
+                  >
+                    Onedark
+                  </option>
+                  <option
+                    value="cobalt"
+                  >
+                    Cobalt
+                  </option>
+                  <option
+                    value="synthwave"
+                  >
+                    Synthwave
+                  </option>
+                  <option
+                    value="highcontrast"
+                  >
+                    Highcontrast
+                  </option>
+                  <option
+                    value="dracula"
+                  >
+                    Dracula
+                  </option>
+                </select>
+              </label>
+              <label
+                htmlFor="top-lang-title-color"
+              >
+                Title Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="top-lang-title-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="top-lang-text-color"
+              >
+                Text Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="top-lang-text-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="top-lang-bg-color"
+              >
+                Background Color: 
+                <input
+                  className="w-6"
+                  defaultValue="#"
+                  id="top-lang-bg-color"
+                  onChange={[Function]}
+                  type="color"
+                />
+              </label>
+              <label
+                htmlFor="top-lang-hide-border"
+              >
+                Hide border: 
+                <input
+                  checked={false}
+                  id="top-lang-hide-border"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </label>
+              <label
+                htmlFor="top-lang-cache-seconds"
+              >
+                Cache Seconds: 
+                <input
+                  defaultValue={null}
+                  id="top-lang-cache-seconds"
+                  max={86400}
+                  min={1800}
+                  onChange={[Function]}
+                  placeholder={1800}
+                  type="number"
+                />
+              </label>
+              <label
+                htmlFor="top-lang-locale"
+              >
+                Locale: 
+                <input
+                  defaultValue="en"
+                  id="top-lang-locale"
+                  onChange={[Function]}
+                  placeholder="en"
+                  size="2"
+                  type="text"
+                />
+              </label>
+            </CustomizeGithubStatsBase>
+          </div>
+        </div>
+      </CustomizeOptions>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="twitter-badge"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="twitter-badge"
+        >
+          <input
+            checked={false}
+            id="twitter-badge"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display twitter badge
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="dev-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="dev-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="dev-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest dev.to blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked="some-medium-blogs-value"
+      inputId="medium-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="medium-dynamic-blogs"
+        >
+          <input
+            checked="some-medium-blogs-value"
+            id="medium-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest medium blogs dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <AddonsItem
+      inputChecked={false}
+      inputId="rss-dynamic-blogs"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="rss-dynamic-blogs"
+        >
+          <input
+            checked={false}
+            id="rss-dynamic-blogs"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display latest blogs from your personal blog dynamically (GitHub Action)
+          </span>
+        </label>
+      </div>
+    </AddonsItem>
+    <div
+      className="workflow"
+    >
+      <div>
+        download
+        <span
+          id="blog-post-worklow-span"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "color": "#002ead",
+              "cursor": "pointer",
+            }
+          }
+          tabIndex="0"
+        >
+           
+          blog-post-workflow.yml
+        </span>
+         
+        file(learn
+        <a
+          href="/addons"
+          style={
+            Object {
+              "color": "#002ead",
+            }
+          }
+          target="blank"
+        >
+           
+          how to setup
+        </a>
+        )
+      </div>
+    </div>
+  </div>
+</Addons>
+`;
