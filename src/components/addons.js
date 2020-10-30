@@ -197,6 +197,7 @@ const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
       >
         <option value="default">default</option>
         <option value="dark">dark</option>
+        <option value="highcontrast">highcontrast</option>
       </select>
     </label>
   </>
