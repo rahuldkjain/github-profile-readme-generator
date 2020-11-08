@@ -22,6 +22,7 @@ const categorizedSkills = {
       "coffeescript",
       "elixir",
       "erlang",
+      "lua"
     ],
   },
 
