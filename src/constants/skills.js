@@ -587,6 +587,7 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
+  lua: "https://www.lua.org/"
 }
 
 const initialSkillState = {}
