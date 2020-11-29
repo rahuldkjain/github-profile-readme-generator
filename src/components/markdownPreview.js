@@ -3,6 +3,7 @@ import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
   topLanguagesLinkGenerator,
+  streakStatsLinkGenerator
 } from "../utils/link-generators"
 
 export const TitlePreview = props => {
@@ -322,6 +323,20 @@ export const TopLanguagesPreview = ({ github, options, show }) => {
   return <div className="text-center mx-4 mb-4"> &nbsp;</div>
 }
 
+export const StreakStatsPreview = ({ github, options, show }) => {
+  if (show) {
+    return (
+      <div className="text-center mx-4 mb-4">
+        <img
+          src={streakStatsLinkGenerator({ github, options })}
+          alt={github}
+        />
+      </div>
+    )
+  }
+  return null
+}
+
 export const SkillsPreview = props => {
   var listSkills = []
   skills.forEach(skill => {
@@ -384,6 +399,11 @@ const MarkdownPreview = props => {
           show={props.data.githubStats}
           github={props.social.github}
           options={props.data.githubStatsOptions}
+        />
+        <StreakStatsPreview
+          show={props.data.streakStats}
+          github={props.social.github}
+          options={props.data.streakStatsOptions}
         />
       </div>
     </div>

@@ -30,8 +30,6 @@
   "devDependencies": {
     "babel-jest": "26.3.0",
     "babel-preset-gatsby": "0.5.11",
-    "eslint": "^7.12.1",
-    "eslint-plugin-react": "^7.21.5",
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-twitter": "^2.3.10",
@@ -50,8 +48,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

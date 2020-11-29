@@ -186,6 +186,23 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
       </label>
     </>
 
+const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
+  <>
+    <label htmlFor={`${prefix}-theme`}>
+      Theme:&nbsp;
+      <select
+        id={`${prefix}-theme`}
+        onChange={({ target: { value } }) => onUpdate("theme", value)}
+        defaultValue={options.theme}
+      >
+        <option value="default">default</option>
+        <option value="dark">dark</option>
+        <option value="highcontrast">highcontrast</option>
+      </select>
+    </label>
+  </>
+)
+
 const Addons = props => {
   const [debounce, setDebounce] = useState(undefined);
   const [badgeOptions, setBadgeOptions] = useState({
@@ -221,6 +238,16 @@ const Addons = props => {
       ...props.data.topLanguagesOptions
     })
   }, [props.data.topLanguagesOptions])
+
+  const [streakStatsOptions, setStreakStatsOptions] = useState({
+    ...props.data.streakStatsOptions,
+  });
+
+  useEffect(() => {
+    setStreakStatsOptions({
+      ...props.data.streakStatsOptions
+    })
+  }, [props.data.streakStatsOptions])
 
   const blogPostPorkflow = () => {
     let payload = {
@@ -270,6 +297,12 @@ const Addons = props => {
     const newLangOptions = {...topLanguagesOptions, [option]: value}
     setTopLanguagesOptions(newLangOptions)
     props.handleDataChange("topLanguagesOptions", {target: {value: newLangOptions}})
+  }
+
+  const onStreakStatsUpdate = (option, value) => {
+    const newStreakStatsOptions = {...streakStatsOptions, [option]: value}
+    setStreakStatsOptions(newStreakStatsOptions)
+    props.handleDataChange("streakStatsOptions", {target: {value: newStreakStatsOptions}})
   }
 
   return (
@@ -332,6 +365,21 @@ const Addons = props => {
         }
       >
         display top skills
+      </AddonsItem>
+      <AddonsItem
+        inputId="streak-stats"
+        inputChecked={props.data.streakStats}
+        onInputChange={() => props.handleCheckChange("streakStats")}
+        Options={
+          <CustomizeOptions
+            title="Customize Streak Stats Card"
+            CustomizationOptions={
+            <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate}/>
+            }
+          />
+        }
+      >
+        display streak stats
       </AddonsItem>
       <AddonsItem
         inputId="twitter-badge"
