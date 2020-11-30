@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useCallback } from "react"
+
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react"
 import logo from "../images/mdg.png"
 import links from "../constants/page-links"
@@ -8,14 +9,21 @@ import { Link } from "gatsby"
 import { act } from "react-dom/test-utils"
 
 const Header = props => {
-  const shouldRequestStats = () => {
+  const [stats, setstats] = useState({
+    starsCount: 0,
+    forksCount: 0,
+  })
+  
+  const shouldRequestStats = useCallback(
+    () => {
     const isFirstRequest = stats.starsCount === 0
     const isVisible = window.document.visibilityState === 'visible'
     const hasFocus = window.document.hasFocus()
-    return isFirstRequest || isVisible && hasFocus
-  }
+    return isFirstRequest || (isVisible && hasFocus)
+  }, [stats])
 
-  const fetchData = async () => {
+  const fetchData = useCallback(
+    async() => {
     if (shouldRequestStats()) {
       var response = await axios.get(
         "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
@@ -30,12 +38,8 @@ const Header = props => {
         })
       )
     }
-  }
+  }, [shouldRequestStats])
 
-  const [stats, setstats] = useState({
-    starsCount: 0,
-    forksCount: 0,
-  })
 
   useEffect(() => {
     fetchData()
@@ -51,7 +55,7 @@ const Header = props => {
       repeat: -1,
       yoyo: true,
     })
-  }, [])
+  }, [fetchData])
 
   return (
     <div className="shadow flex items-center justify-center flex-col mb-2 py-2">

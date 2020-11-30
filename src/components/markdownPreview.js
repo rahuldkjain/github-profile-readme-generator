@@ -123,7 +123,7 @@ export const DisplaySocial = props => {
 export const SocialPreview = props => {
   let viewSocial = false
   Object.keys(props.social).forEach(key => {
-    if (props.social[key] && key != "github") viewSocial = true
+    if (props.social[key] && key !== "github") viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
@@ -270,7 +270,8 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
+        <a href ={`https://twitter.com/${props.twitter}`}
+        target = "blank">
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
@@ -342,7 +343,7 @@ export const SkillsPreview = props => {
   skills.forEach(skill => {
     if (props.skills[skill]) {
       listSkills.push(
-        <a href={skillWebsites[skill]} target="_blank" rel="noreferrer">
+        <a href={skillWebsites[skill]} target="_blank" rel="noreferrer" key={skill}>
           <img
             className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
             key={skill}
