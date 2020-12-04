@@ -2,7 +2,7 @@
   "name": "github-profile-readme-generator",
   "private": true,
   "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
-  "version": "1.1.10",
+  "version": "1.2.0",
   "author": "Rahul Jain <rahuldkjain@gmail.com>",
   "dependencies": {
     "@primer/octicons-react": "^10.0.0",
