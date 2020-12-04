@@ -379,7 +379,7 @@ const Addons = props => {
           />
         }
       >
-        display streak stats
+        display github streak stats
       </AddonsItem>
       <AddonsItem
         inputId="twitter-badge"
