@@ -4,231 +4,218 @@ import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
   topLanguagesLinkGenerator,
-  streakStatsLinkGenerator
+  streakStatsLinkGenerator,
 } from "../utils/link-generators"
-
-const Markdown = props => {
-  const Title = props => {
-    if (props.prefix && props.title) {
-      return (
-        <>
-          {`<h1 align="center">${props.prefix + " " + props.title}</h1>`}
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const SubTitle = props => {
-    if (props.subtitle) {
-      return (
-        <>
-          {`<h3 align="center">${props.subtitle}</h3>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const SectionTitle = props => {
-    if (props.label) {
-      return (
-        <>
-          {`<h3 align="left">${props.label}</h3>`}
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const DisplayWork = props => {
-    if (props.prefix && props.project) {
-      if (props.link) {
-        return (
-          <>
-            {`- ${props.prefix} [${props.project}](${props.link})`}
-            <br />
-            <br />
-          </>
-        )
-      } else {
-        return (
-          <>
-            {`- ${props.prefix} **${props.project}**`}
-            <br />
-            <br />
-          </>
-        )
-      }
-    }
-    if (props.prefix && props.link) {
-      return (
-        <>
-          {`- ${props.prefix} [${props.link}](${props.link})`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const DisplaySocial = props => {
-    if (props.username) {
-      return (
-        <>
-          {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const VisitorsBadge = props => {
-    let link =
-      "https://komarev.com/ghpvc/?username=" +
-      props.github +
-      `&label=${props.badgeOptions.badgeLabel}` +
-      `&color=${props.badgeOptions.badgeColor}` +
-      `&style=${props.badgeOptions.badgeStyle}`
-    if (props.show) {
-      return (
-        <>
-          {`<p align="left"> <img src="${link}" alt="${props.github}" /> </p>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const TwitterBadge = props => {
-    let link =
-      "https://img.shields.io/twitter/follow/" +
-      props.twitter +
-      "?logo=twitter&style=for-the-badge"
-    if (props.show) {
-      return (
-        <>
-          {`<p align="left"> <a href="${props.base}/${props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const GithubProfileTrophy = props => {
-    let link =
-      "https://github-profile-trophy.vercel.app/?username=" + props.github
-    if (props.show) {
-      return (
-        <>
-          {`<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="${link}" alt="${props.github}" /></a> </p>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const GitHubStats = ({ show, github, options }) => {
-    if (show) {
-      return (
-        <>
-          {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({
-            github: github,
-            options,
-          })}" alt="${github}" /></p>`}
-          <br />
-          <br />
-        </>
-      )
-    }
-    return ""
-  }
-  const isSocial = social => {
+const Title = props => {
+  if (props.prefix && props.title) {
     return (
-      social.dev ||
-      social.twitter ||
-      social.codepen ||
-      social.codesandbox ||
-      social.stackoverflow ||
-      social.linkedin ||
-      social.kaggle ||
-      social.instagram ||
-      social.fb ||
-      social.dribbble ||
-      social.behance ||
-      social.medium ||
-      social.youtube ||
-      social.codechef ||
-      social.hackerrank ||
-      social.codeforces ||
-      social.leetcode ||
-      social.topcoder ||
-      social.hackerearth ||
-      social.geeks_for_geeks ||
-      social.discord ||
-      social.rssurl
+      <>
+        {`<h1 align="center">${props.prefix + " " + props.title}</h1>`}
+        <br />
+      </>
     )
   }
-  const DisplaySkills = props => {
-    const listChosenSkills = []
-    skills.forEach(skill => {
-      if (props.skills[skill]) {
-        listChosenSkills.push(
-          `
-          <a href="${skillWebsites[skill]}" target="_blank">
-            <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
-          </a>
-          `
-        )
-      }
-    })
-    return listChosenSkills.length > 0 ? (
+  return ""
+}
+const SubTitle = props => {
+  if (props.subtitle) {
+    return (
       <>
-        <SectionTitle label="Languages and Tools:" />
-        {`<p align="left">${listChosenSkills.join(" ")}</p>`}
+        {`<h3 align="center">${props.subtitle}</h3>`}
         <br />
         <br />
       </>
-    ) : (
-      ""
     )
   }
-  const DisplayDynamicBlogs = props => {
-    if (props.show) {
+  return ""
+}
+const SectionTitle = props => {
+  if (props.label) {
+    return (
+      <>
+        {`<h3 align="left">${props.label}</h3>`}
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const DisplayWork = props => {
+  if (props.prefix && props.project) {
+    if (props.link) {
       return (
         <>
-          {`### Blogs posts`}
+          {`- ${props.prefix} [${props.project}](${props.link})`}
           <br />
-          {`<!-- BLOG-POST-LIST:START -->`}
           <br />
-          {`<!-- BLOG-POST-LIST:END -->`}
-          <br /> <br />
+        </>
+      )
+    } else {
+      return (
+        <>
+          {`- ${props.prefix} **${props.project}**`}
+          <br />
+          <br />
         </>
       )
     }
-    return ""
   }
-  const DisplayTopLanguages = props => {
-    if (props.show) {
-      if (!props.showStats) {
-        return (
-          <>
-            {`<p><img align="center" src="${topLanguagesLinkGenerator({
-              github: props.github,
-              options: props.options,
-            })}" alt="${props.github}" /></p>`}
-            <br />
-            <br />
-          </>
-        )
-      }
+  if (props.prefix && props.link) {
+    return (
+      <>
+        {`- ${props.prefix} [${props.link}](${props.link})`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const DisplaySocial = props => {
+  if (props.username) {
+    return (
+      <>
+        {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const VisitorsBadge = props => {
+  let link =
+    "https://komarev.com/ghpvc/?username=" +
+    props.github +
+    `&label=${props.badgeOptions.badgeLabel}` +
+    `&color=${props.badgeOptions.badgeColor}` +
+    `&style=${props.badgeOptions.badgeStyle}`
+  if (props.show) {
+    return (
+      <>
+        {`<p align="left"> <img src="${link}" alt="${props.github}" /> </p>`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const TwitterBadge = props => {
+  let link =
+    "https://img.shields.io/twitter/follow/" +
+    props.twitter +
+    "?logo=twitter&style=for-the-badge"
+  if (props.show) {
+    return (
+      <>
+        {`<p align="left"> <a href="${props.base}/${props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const GithubProfileTrophy = props => {
+  let link =
+    "https://github-profile-trophy.vercel.app/?username=" + props.github
+  if (props.show) {
+    return (
+      <>
+        {`<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="${link}" alt="${props.github}" /></a> </p>`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const GitHubStats = ({ show, github, options }) => {
+  if (show) {
+    return (
+      <>
+        {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({
+          github: github,
+          options,
+        })}" alt="${github}" /></p>`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const isSocial = social => {
+  return (
+    social.dev ||
+    social.twitter ||
+    social.codepen ||
+    social.codesandbox ||
+    social.stackoverflow ||
+    social.linkedin ||
+    social.kaggle ||
+    social.instagram ||
+    social.fb ||
+    social.dribbble ||
+    social.behance ||
+    social.medium ||
+    social.youtube ||
+    social.codechef ||
+    social.hackerrank ||
+    social.codeforces ||
+    social.leetcode ||
+    social.topcoder ||
+    social.hackerearth ||
+    social.geeks_for_geeks ||
+    social.discord ||
+    social.rssurl
+  )
+}
+const DisplaySkills = props => {
+  const listChosenSkills = []
+  skills.forEach(skill => {
+    if (props.skills[skill]) {
+      listChosenSkills.push(
+        `
+        <a href="${skillWebsites[skill]}" target="_blank">
+          <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
+        </a>
+        `
+      )
+    }
+  })
+  return listChosenSkills.length > 0 ? (
+    <>
+      <SectionTitle label="Languages and Tools:" />
+      {`<p align="left">${listChosenSkills.join(" ")}</p>`}
+      <br />
+      <br />
+    </>
+  ) : (
+    ""
+  )
+}
+const DisplayDynamicBlogs = props => {
+  if (props.show) {
+    return (
+      <>
+        {`### Blogs posts`}
+        <br />
+        {`<!-- BLOG-POST-LIST:START -->`}
+        <br />
+        {`<!-- BLOG-POST-LIST:END -->`}
+        <br /> <br />
+      </>
+    )
+  }
+  return ""
+}
+const DisplayTopLanguages = props => {
+  if (props.show) {
+    if (!props.showStats) {
       return (
         <>
-          {`<p><img align="left" src="${topLanguagesLinkGenerator({
+          {`<p><img align="center" src="${topLanguagesLinkGenerator({
             github: props.github,
             options: props.options,
           })}" alt="${props.github}" /></p>`}
@@ -237,23 +224,57 @@ const Markdown = props => {
         </>
       )
     }
-    return ""
+    return (
+      <>
+        {`<p><img align="left" src="${topLanguagesLinkGenerator({
+          github: props.github,
+          options: props.options,
+        })}" alt="${props.github}" /></p>`}
+        <br />
+        <br />
+      </>
+    )
   }
-  const DisplayStreakStats = props => {
-    if (props.show) {
-      return (
-        <>
-          {`<p><img align="center" src="${streakStatsLinkGenerator({
-            github: props.github,
-            options: props.options,
-          })}" alt="${props.github}" /></p>`}
-          <br />
-          <br />
-        </>
-      )
+  return ""
+}
+const DisplayStreakStats = props => {
+  if (props.show) {
+    return (
+      <>
+        {`<p><img align="center" src="${streakStatsLinkGenerator({
+          github: props.github,
+          options: props.options,
+        })}" alt="${props.github}" /></p>`}
+        <br />
+        <br />
+      </>
+    )
+  }
+  return ""
+}
+const DisplaySupport = props => {
+  let viewSupport = false
+  Object.keys(props.support).forEach(key => {
+    if (props.support[key]) {
+      viewSupport = true
     }
-    return ""
-  }
+  })
+  return viewSupport ? (
+    <div>
+      <SectionTitle label="Support:" />
+      {`<p>`}
+      {props.support.buyMeACoffee &&
+        `<a href="https://www.buymeacoffee.com/${props.support.buyMeACoffee}">
+      <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="${props.support.buyMeACoffee}" /></a>`}
+      {`</p><br><br>`}
+      <br />
+      <br />
+    </div>
+  ) : (
+    ""
+  )
+}
+const Markdown = props => {
   return (
     <div id="markdown-content" className="break-words">
       <>
@@ -523,6 +544,9 @@ const Markdown = props => {
       )}
       <>
         <DisplaySkills skills={props.skills} />
+      </>
+      <>
+        <DisplaySupport support={props.support} />
       </>
       <>
         <DisplayTopLanguages

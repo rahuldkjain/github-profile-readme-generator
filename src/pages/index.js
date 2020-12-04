@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
+import gsap from "gsap"
 import MarkdownPreview from "../components/markdownPreview"
 import Markdown from "../components/markdown"
-// import Header from "../components/header"
 import Title from "../components/title"
 import Subtitle from "../components/subtitle"
 import Work from "../components/work"
@@ -9,10 +9,11 @@ import Social from "../components/social"
 import Addons from "../components/addons"
 import Skills from "../components/skills"
 import Donate from "../components/donate"
+import Support from "../components/support"
 import { initialSkillState } from "../constants/skills"
-import gsap from "gsap"
 import Loader from "../components/loader"
-// import Footer from "../components/footer"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 import "./index.css"
 import {
   ArrowLeftIcon,
@@ -23,109 +24,20 @@ import {
   MarkdownIcon,
   FileCodeIcon,
 } from "@primer/octicons-react"
-import SEO from "../components/seo"
 import {
   isGitHubUsernameValid,
   isMediumUsernameValid,
   isTwitterUsernameValid,
 } from "../utils/validation"
-import Layout from "../components/layout"
+import {
+  DEFAULT_PREFIX,
+  DEFAULT_DATA,
+  DEFAULT_LINK,
+  DEFAULT_SOCIAL,
+  DEFAULT_SUPPORT,
+} from "../constants/defaults"
 
-const DEFAULT_PREFIX = {
-  title: "Hi 👋, I'm",
-  currentWork: "🔭 I’m currently working on",
-  currentLearn: "🌱 I’m currently learning",
-  collaborateOn: "👯 I’m looking to collaborate on",
-  helpWith: "🤝 I’m looking for help with",
-  ama: "💬 Ask me about",
-  contact: "📫 How to reach me",
-  resume: "📄 Know about my experiences",
-  funFact: "⚡ Fun fact",
-  portfolio: "👨‍💻 All of my projects are available at",
-  blog: "📝 I regulary write articles on",
-}
-
-const DEFAULT_DATA = {
-  title: "",
-  subtitle: "A passionate frontend developer from India",
-  currentWork: "",
-  currentLearn: "",
-  collaborateOn: "",
-  helpWith: "",
-  ama: "",
-  contact: "",
-  funFact: "",
-  twitterBadge: false,
-  visitorsBadge: false,
-  badgeStyle: "flat",
-  badgeColor: "0e75b6",
-  badgeLabel: "Profile views",
-  githubProfileTrophy: false,
-  githubStats: false,
-  githubStatsOptions: {
-    theme: "",
-    titleColor: "",
-    textColor: "",
-    bgColor: "",
-    hideBorder: false,
-    cacheSeconds: null,
-    locale: "en",
-  },
-  topLanguages: false,
-  topLanguagesOptions: {
-    theme: "",
-    titleColor: "",
-    textColor: "",
-    bgColor: "",
-    hideBorder: false,
-    cacheSeconds: null,
-    locale: "en",
-  },
-  streakStats: false,
-  streakStatsOptions: {
-    theme: "",
-  },
-  devDynamicBlogs: false,
-  mediumDynamicBlogs: false,
-  rssDynamicBlogs: false,
-}
-
-const DEFAULT_LINK = {
-  currentWork: "",
-  collaborateOn: "",
-  helpWith: "",
-  portfolio: "",
-  blog: "",
-  resume: "",
-}
-
-const DEFAULT_SOCIAL = {
-  github: "",
-  dev: "",
-  linkedin: "",
-  codepen: "",
-  stackoverflow: "",
-  kaggle: "",
-  codesandbox: "",
-  fb: "",
-  instagram: "",
-  twitter: "",
-  dribbble: "",
-  behance: "",
-  medium: "",
-  youtube: "",
-  codechef: "",
-  hackerrank: "",
-  codeforces: "",
-  leetcode: "",
-  topcoder: "",
-  hackerearth: "",
-  geeks_for_geeks: "",
-  discord: "",
-  rssurl: "",
-}
-
-const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {
+const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
   useEffect(() => {
     localStorage.setItem(
       "cache",
@@ -135,9 +47,10 @@ const KeepCacheUpdated = ({ prefix, data, link, social, skills }) => {
         link,
         social,
         skills,
+        support,
       })
     )
-  }, [prefix, data, link, social, skills])
+  }, [prefix, data, link, social, skills, support])
 }
 
 const DEFAULT_SKILLS = initialSkillState
@@ -148,6 +61,7 @@ const IndexPage = () => {
   const [link, setLink] = useState(DEFAULT_LINK)
   const [social, setSocial] = useState(DEFAULT_SOCIAL)
   const [skills, setSkills] = useState(DEFAULT_SKILLS)
+  const [support, setSupport] = useState(DEFAULT_SUPPORT)
 
   const [restore, setRestore] = useState("")
   const [generatePreview, setGeneratePreview] = useState(false)
@@ -192,6 +106,12 @@ const IndexPage = () => {
     change[field] =
       field === "discord" ? e.target.value : e.target.value.toLowerCase()
     setSocial(change)
+  }
+
+  const handleSupportChange = (field, e) => {
+    let change = { ...support }
+    change[field] = e.target.value
+    setSupport(change)
   }
 
   const handleCheckChange = field => {
@@ -415,6 +335,10 @@ const IndexPage = () => {
       cache.skills
     )
     setSkills(cacheSkills || DEFAULT_SKILLS)
+
+    setSupport(
+      cache.support ? { ...DEFAULT_SUPPORT, ...cache.support } : DEFAULT_SUPPORT
+    )
   }
 
   useEffect(() => {
@@ -435,7 +359,7 @@ const IndexPage = () => {
   }, [])
 
   // keep cache updated
-  KeepCacheUpdated({ prefix, data, link, social, skills })
+  KeepCacheUpdated({ prefix, data, link, social, skills, support })
 
   const handleResetForm = () => {
     setPrefix(DEFAULT_PREFIX)
@@ -521,11 +445,15 @@ const IndexPage = () => {
             handleCheckChange={handleCheckChange}
             handleDataChange={handleDataChange}
           />
+          <Support
+            support={support}
+            handleSupportChange={handleSupportChange}
+          />
           <div className="section">
             {(data.visitorsBadge ||
               data.githubProfileTrophy ||
               data.githubStats ||
-              data.topLanguages || 
+              data.topLanguages ||
               data.streakStats) &&
             !social.github ? (
               <div className="warning">
@@ -676,6 +604,7 @@ const IndexPage = () => {
                     link={link}
                     social={social}
                     skills={skills}
+                    support={support}
                   />
                 ) : (
                   ""
@@ -687,6 +616,7 @@ const IndexPage = () => {
                     link={link}
                     social={social}
                     skills={skills}
+                    support={support}
                   />
                 ) : (
                   ""

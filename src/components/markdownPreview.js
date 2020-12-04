@@ -3,7 +3,7 @@ import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
   topLanguagesLinkGenerator,
-  streakStatsLinkGenerator
+  streakStatsLinkGenerator,
 } from "../utils/link-generators"
 
 export const TitlePreview = props => {
@@ -299,10 +299,7 @@ export const GitHubStatsPreview = ({ github, options, show }) => {
   if (show) {
     return (
       <div className="text-center mx-4 mb-4">
-        <img
-          src={githubStatsLinkGenerator({ github, options })}
-          alt={github}
-        />
+        <img src={githubStatsLinkGenerator({ github, options })} alt={github} />
       </div>
     )
   }
@@ -327,10 +324,7 @@ export const StreakStatsPreview = ({ github, options, show }) => {
   if (show) {
     return (
       <div className="text-center mx-4 mb-4">
-        <img
-          src={streakStatsLinkGenerator({ github, options })}
-          alt={github}
-        />
+        <img src={streakStatsLinkGenerator({ github, options })} alt={github} />
       </div>
     )
   }
@@ -342,10 +336,14 @@ export const SkillsPreview = props => {
   skills.forEach(skill => {
     if (props.skills[skill]) {
       listSkills.push(
-        <a href={skillWebsites[skill]} target="_blank" rel="noreferrer">
+        <a
+          href={skillWebsites[skill]}
+          key={skill}
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
-            key={skill}
             src={icons[skill]}
             alt={skill}
           />
@@ -359,12 +357,39 @@ export const SkillsPreview = props => {
       {listSkills}
     </div>
   ) : (
-      ""
-    )
+    ""
+  )
+}
+
+export const SupportPreview = props => {
+  let viewSupport = false
+  Object.keys(props.support).forEach(key => {
+    if (props.support[key]) {
+      viewSupport = true
+    }
+  })
+  return (
+    <div className="mb-4">
+      <SectionTitle label="Support:" visible={viewSupport} />
+      {props.support.buyMeACoffee && (
+        <div style={{ width: "210px" }}>
+          <a
+            href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
+            target="_blank"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              alt="Buy Me A Coffee"
+              className="w-36 h-8 sm:w-52 sm:h-12"
+            />
+          </a>
+        </div>
+      )}
+    </div>
+  )
 }
 
 const MarkdownPreview = props => {
-
   return (
     <div id="markdown-preview">
       <TitlePreview prefix={props.prefix.title} title={props.data.title} />
@@ -389,6 +414,7 @@ const MarkdownPreview = props => {
       <WorkPreview work={props} />
       <SocialPreview social={props.social} />
       <SkillsPreview skills={props.skills} />
+      <SupportPreview support={props.support} />
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview
           show={props.data.topLanguages}
