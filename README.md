@@ -86,6 +86,8 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 
 - **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
 
+- **Buy Me A Coffee button**
+
 Click on `Generate README` to get your README in `markdown`.
 You can preview the README too.
 

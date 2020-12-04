@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
             <strong>Join Community</strong>
           </div>
-          <div class="ml-2 sm:ml-0">
+          <div className="ml-2 sm:ml-0">
             <a
               href="https://discord.gg/HHMs7Eg"
               aria-label="Discord of the community"
