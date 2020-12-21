@@ -31,6 +31,7 @@ describe("Social", () => {
       geeks_for_geeks: "geeks_for_geeks",
       discord: "discord",
       rssurl: "rssurl",
+      katacoda: "katacoda",
     },
     handleSocialChange: jest.fn().mockReturnValue({}),
   }
