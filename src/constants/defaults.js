@@ -90,6 +90,7 @@ export const DEFAULT_SOCIAL = {
   geeks_for_geeks: "",
   discord: "",
   rssurl: "",
+  katacoda: "",
 }
 
 export const DEFAULT_SUPPORT = {
