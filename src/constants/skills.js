@@ -230,7 +230,7 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg",
   bootstrap:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
-  c: "https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg",
+  c: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
   canvasjs:
     "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
   coffeescript:
