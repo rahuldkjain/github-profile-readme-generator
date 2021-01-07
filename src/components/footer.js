@@ -55,7 +55,7 @@ const Footer = () => {
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator"
               aria-label="Github rahuldkjain/github-profile-readme-generator"
-              target="blank"
+              target="_blank"
             >
               Github
             </a>
@@ -64,7 +64,7 @@ const Footer = () => {
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/releases"
               aria-label="Releases on Github rahuldkjain/github-profile-readme-generator"
-              target="blank"
+              target="_blank"
             >
               Releases
             </a>
@@ -73,7 +73,7 @@ const Footer = () => {
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
               aria-label="Issues in rahuldkjain/github-profile-readme-generator"
-              target="blank"
+              target="_blank"
             >
               Issues
             </a>
@@ -82,7 +82,7 @@ const Footer = () => {
             <a
               href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
               aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
-              target="blank"
+              target="_blank"
             >
               Pull Requests
             </a>
@@ -96,7 +96,7 @@ const Footer = () => {
             <a
               href="https://discord.gg/HHMs7Eg"
               aria-label="Discord of the community"
-              target="blank"
+              target="_blank"
             >
               <img
                 src={discord}

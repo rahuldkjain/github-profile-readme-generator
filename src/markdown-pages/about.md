@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "👨‍💻 About"
 ---
 
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="_blank">
 <img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" />
 </a>
 
@@ -19,11 +19,11 @@ To solve this, GitHub Profile README Generator came into existence.
 So many developers contributed to the project and made it more awesome to use. You can contribute too to make it grow even further.
 
 <p align="left">
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="_blank">
 <img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
 </a>
 <br>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="_blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
 </p>

@@ -4,7 +4,7 @@ exports[`DisplaySocial Preview renders correctly 1`] = `
 <a
   className="no-underline text-blue-700 m-2"
   href="https://codepen.io/dummy"
-  target="blank"
+  target="_blank"
 >
   <img
     alt="props.username"
@@ -24,7 +24,7 @@ exports[`DisplayWork Preview renders correctly 1`] = `
   <a
     className="no-underline text-blue-700"
     href="https://dummy.com"
-    target="blank"
+    target="_blank"
   >
     readme-generator
   </a>
@@ -56,7 +56,7 @@ exports[`DisplayWork Preview renders correctly with no project 1`] = `
   <a
     className="no-underline text-blue-700"
     href="https://dummy.com"
-    target="blank"
+    target="_blank"
   >
     https://dummy.com
   </a>
@@ -501,7 +501,7 @@ exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
    
   <a
     href="https://twitter.com/\${props.twitter}"
-    target="blank"
+    target="_blank"
   >
     <img
       alt=""

@@ -41,7 +41,7 @@ export const DisplayWork = props => {
           <a
             href={props.link}
             className="no-underline text-blue-700"
-            target="blank"
+            target="_blank"
           >
             {props.project}
           </a>
@@ -63,7 +63,7 @@ export const DisplayWork = props => {
         <a
           href={props.link}
           className="no-underline text-blue-700"
-          target="blank"
+          target="_blank"
         >
           {props.link}
         </a>
@@ -111,7 +111,7 @@ export const DisplaySocial = props => {
       <a
         className="no-underline text-blue-700 m-2"
         href={props.base + "/" + props.username}
-        target="blank"
+        target="_blank"
       >
         <img className="w-6 h-6" src={props.icon} alt="props.username" />
       </a>
@@ -270,7 +270,7 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
+        <a href="https://twitter.com/${props.twitter}" target="_blank">
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>

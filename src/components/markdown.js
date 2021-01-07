@@ -75,7 +75,7 @@ const DisplaySocial = props => {
   if (props.username) {
     return (
       <>
-        {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
+        {`<a href="${props.base}/${props.username}" target="_blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
         <br />
       </>
     )
@@ -108,7 +108,7 @@ const TwitterBadge = props => {
   if (props.show) {
     return (
       <>
-        {`<p align="left"> <a href="${props.base}/${props.twitter}" target="blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
+        {`<p align="left"> <a href="${props.base}/${props.twitter}" target="_blank"><img src="${link}" alt="${props.twitter}" /></a> </p>`}
         <br />
         <br />
       </>

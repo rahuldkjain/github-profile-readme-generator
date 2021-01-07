@@ -12,13 +12,13 @@ GitHub Profile README Generator tool uses few open-source addons developed by ot
 
 #### GitHub Stats Card
 
-<a href="https://github.com/rahuldkjain" target="blank">
+<a href="https://github.com/rahuldkjain" target="_blank">
   <img src="https://github-readme-stats.vercel.app/api?username=rahuldkjain&show_icons=true" width="320" alt="Rahul's github stats"/>
 </a>
 
 #### Top Skills Card
 
-<a href="https://github.com/rahuldkjain" target="blank">
+<a href="https://github.com/rahuldkjain" target="_blank">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahuldkjain&layout=compact&hide=html" width="320" alt="Rahul's github top skills"/>
 </a>
 
