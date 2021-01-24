@@ -533,6 +533,13 @@ const Markdown = props => {
           username={props.social.rssurl}
         />
       </>
+      <>
+        <DisplaySocial
+          base="https://www.katacoda.com"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@4/icons/katacoda.svg"
+          username={props.social.katacoda}
+        />
+      </>
       {isSocial(props.social) ? (
         <>
           {`</p>`}

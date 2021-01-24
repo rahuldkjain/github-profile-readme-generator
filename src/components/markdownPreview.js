@@ -239,6 +239,11 @@ export const SocialPreview = props => {
         icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
         username={props.social.rssurl}
       />
+      <DisplaySocial
+        base="https://www.katacoda.com"
+        icon="https://cdn.jsdelivr.net/npm/simple-icons@4/icons/katacoda.svg"
+        username={props.social.katacoda}
+      />
     </div>
   )
 }
