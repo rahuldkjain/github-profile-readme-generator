@@ -123,7 +123,7 @@ export const DisplaySocial = props => {
 export const SocialPreview = props => {
   let viewSocial = false
     const icon_base_url =
-    "https://raw.githubusercontent.com/MaheshBharadwaj/github-profile-readme-generator/neutral-icons/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/";
   Object.keys(props.social).forEach(key => {
     if (props.social[key] && key != "github") viewSocial = true
   })
