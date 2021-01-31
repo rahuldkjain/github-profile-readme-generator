@@ -122,123 +122,168 @@ export const DisplaySocial = props => {
 
 export const SocialPreview = props => {
   let viewSocial = false
+    const icon_base_url =
+    "https://raw.githubusercontent.com/MaheshBharadwaj/github-profile-readme-generator/neutral-icons/src/images/icons/Social/";
   Object.keys(props.social).forEach(key => {
     if (props.social[key] && key != "github") viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
       <SectionTitle label="Connect with me:" visible={viewSocial} />
-      <DisplaySocial
-        base="https://codepen.io"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-        username={props.social.codepen}
-      />
-      <DisplaySocial
-        base="https://dev.to"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
-        username={props.social.dev}
-      />
-      <DisplaySocial
-        base="https://twitter.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
-        username={props.social.twitter}
-      />
-      <DisplaySocial
-        base="https://linkedin.com/in"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
-        username={props.social.linkedin}
-      />
-      <DisplaySocial
-        base="https://stackoverflow.com/users"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
-        username={props.social.stackoverflow}
-      />
-      <DisplaySocial
-        base="https://codesandbox.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
-        username={props.social.codesandbox}
-      />
-      <DisplaySocial
-        base="https://kaggle.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
-        username={props.social.kaggle}
-      />
-      <DisplaySocial
-        base="https://fb.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
-        username={props.social.fb}
-      />
-      <DisplaySocial
-        base="https://instagram.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
-        username={props.social.instagram}
-      />
-      <DisplaySocial
-        base="https://dribbble.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
-        username={props.social.dribbble}
-      />
-      <DisplaySocial
-        base="https://www.behance.net"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
-        username={props.social.behance}
-      />
-      <DisplaySocial
-        base="https://medium.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
-        username={props.social.medium}
-      />
-      <DisplaySocial
-        base="https://www.youtube.com/c"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
-        username={props.social.youtube}
-      />
-
-      <DisplaySocial
-        base="https://www.codechef.com/users"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codechef.svg"
-        username={props.social.codechef}
-      />
-      <DisplaySocial
-        base="https://codeforces.com/profile"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
-        username={props.social.codeforces}
-      />
-      <DisplaySocial
-        base="https://www.hackerrank.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
-        username={props.social.hackerrank}
-      />
-      <DisplaySocial
-        base="https://auth.geeksforgeeks.org/user"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
-        username={props.social.geeks_for_geeks}
-      />
-      <DisplaySocial
-        base="https://www.hackerearth.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
-        username={props.social.hackerearth}
-      />
-      <DisplaySocial
-        base="https://www.topcoder.com/members"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
-        username={props.social.topcoder}
-      />
-      <DisplaySocial
-        base="https://www.leetcode.com"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
-        username={props.social.leetcode}
-      />
-      <DisplaySocial
-        base="https://discord.gg"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
-        username={props.social.discord}
-      />
-      <DisplaySocial
-        base=""
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
-        username={props.social.rssurl}
-      />
+      <>
+        <DisplaySocial
+          base="https://codepen.io"
+          icon={icon_base_url + "codepen.svg"}
+          username={props.social.codepen}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://dev.to"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+          username={props.social.dev}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://twitter.com"
+          icon={icon_base_url + "twitter.svg"}
+          username={props.social.twitter}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://linkedin.com/in"    
+          icon={icon_base_url + "linked-in-alt.svg"}
+          username={props.social.linkedin}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://stackoverflow.com/users"
+          icon={icon_base_url + "stack-overflow.svg"}
+          username={props.social.stackoverflow}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://codesandbox.com"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+          username={props.social.codesandbox}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://kaggle.com"
+          icon={icon_base_url + "kaggle.svg"}
+          username={props.social.kaggle}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://fb.com"
+          icon={icon_base_url + "facebook.svg"}
+          username={props.social.fb}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://instagram.com"
+          icon={icon_base_url + "instagram.svg"}
+          username={props.social.instagram}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://dribbble.com"
+          icon={icon_base_url + "dribbble.svg"}
+          username={props.social.dribbble}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.behance.net"
+          icon={icon_base_url + "behance.svg"}
+          username={props.social.behance}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://medium.com"
+          icon={icon_base_url + "medium.svg"}
+          username={props.social.medium}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.youtube.com/c"
+          icon={icon_base_url + "youtube.svg"}
+          username={props.social.youtube}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.codechef.com/users"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+          username={props.social.codechef}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.hackerrank.com"
+          icon={icon_base_url + "hackerrank.svg"}
+          username={props.social.hackerrank}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://codeforces.com/profile"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+          username={props.social.codeforces}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.leetcode.com"
+          icon={icon_base_url+"leet-code.svg"}
+          username={props.social.leetcode}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.hackerearth.com"
+          icon={icon_base_url+"hackerearth.svg"}
+          username={props.social.hackerearth}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://auth.geeksforgeeks.org/user"
+          icon={icon_base_url + "geeks-for-geeks.svg"}
+          username={props.social.geeks_for_geeks}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://www.topcoder.com/members"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+          username={props.social.topcoder}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base="https://discord.gg"
+          icon={icon_base_url + "discord.svg"}
+          username={props.social.discord}
+        />
+      </>
+      <>
+        <DisplaySocial
+          base=""
+          icon={icon_base_url + "rss.svg"}
+          username={props.social.rssurl}
+        />
+      </>
     </div>
   )
 }

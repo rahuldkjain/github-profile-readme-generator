@@ -275,6 +275,9 @@ const DisplaySupport = props => {
   )
 }
 const Markdown = props => {
+  const icon_base_url =
+    "https://raw.githubusercontent.com/MaheshBharadwaj/github-profile-readme-generator/neutral-icons/src/images/icons/Social/";
+    
   return (
     <div id="markdown-content" className="break-words">
       <>
@@ -382,7 +385,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://codepen.io"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+          icon={icon_base_url + "codepen.svg"}
           username={props.social.codepen}
         />
       </>
@@ -396,21 +399,21 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://twitter.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+          icon={icon_base_url + "twitter.svg"}
           username={props.social.twitter}
         />
       </>
       <>
         <DisplaySocial
-          base="https://linkedin.com/in"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+          base="https://linkedin.com/in"    
+          icon={icon_base_url + "linked-in-alt.svg"}
           username={props.social.linkedin}
         />
       </>
       <>
         <DisplaySocial
           base="https://stackoverflow.com/users"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+          icon={icon_base_url + "stack-overflow.svg"}
           username={props.social.stackoverflow}
         />
       </>
@@ -424,49 +427,49 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://kaggle.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+          icon={icon_base_url + "kaggle.svg"}
           username={props.social.kaggle}
         />
       </>
       <>
         <DisplaySocial
           base="https://fb.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+          icon={icon_base_url + "facebook.svg"}
           username={props.social.fb}
         />
       </>
       <>
         <DisplaySocial
           base="https://instagram.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+          icon={icon_base_url + "instagram.svg"}
           username={props.social.instagram}
         />
       </>
       <>
         <DisplaySocial
           base="https://dribbble.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+          icon={icon_base_url + "dribbble.svg"}
           username={props.social.dribbble}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.behance.net"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+          icon={icon_base_url + "behance.svg"}
           username={props.social.behance}
         />
       </>
       <>
         <DisplaySocial
           base="https://medium.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+          icon={icon_base_url + "medium.svg"}
           username={props.social.medium}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.youtube.com/c"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+          icon={icon_base_url + "youtube.svg"}
           username={props.social.youtube}
         />
       </>
@@ -480,7 +483,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://www.hackerrank.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+          icon={icon_base_url + "hackerrank.svg"}
           username={props.social.hackerrank}
         />
       </>
@@ -494,21 +497,21 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+          icon={icon_base_url+"leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+          icon={icon_base_url+"hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>
       <>
         <DisplaySocial
           base="https://auth.geeksforgeeks.org/user"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+          icon={icon_base_url + "geeks-for-geeks.svg"}
           username={props.social.geeks_for_geeks}
         />
       </>
@@ -522,14 +525,14 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://discord.gg"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+          icon={icon_base_url + "discord.svg"}
           username={props.social.discord}
         />
       </>
       <>
         <DisplaySocial
           base=""
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+          icon={icon_base_url + "rss.svg"}
           username={props.social.rssurl}
         />
       </>
