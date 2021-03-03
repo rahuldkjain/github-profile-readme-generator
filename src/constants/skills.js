@@ -444,7 +444,7 @@ const skillWebsites = {
   solidworks: "https://www.solidworks.com/",
   vuejs: "https://vuejs.org/",
   react: "https://reactjs.org/",
-  angularjs: "https://angular.io",
+  angularjs: "https://angularjs.org/",
   aws: "https://aws.amazon.com",
   android: "https://developer.android.com",
   backbonejs: "https://backbonejs.org",
