@@ -223,7 +223,7 @@ const icons = {
   angularjs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
   angular:
-    "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg",
+    "https://angular.io/assets/images/logos/angular/angular.svg",
   aws:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
