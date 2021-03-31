@@ -56,7 +56,7 @@ describe("Markdown", () => {
     },
     prefix: {
       ama: '💬 Ask me about',
-      blog: '📝 I regularly  write articles on',
+      blog: '📝 I regularly write articles on',
       collaborateOn: '👯 I’m looking to collaborate on',
       contact: '📫 How to reach me',
       currentLearn: '🌱 I’m currently learning',

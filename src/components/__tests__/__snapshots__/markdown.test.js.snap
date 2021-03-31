@@ -54,7 +54,7 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -267,7 +267,7 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -480,7 +480,7 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -693,7 +693,7 @@ exports[`Markdown renders topLanguages is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -906,7 +906,7 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -1119,7 +1119,7 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -1332,7 +1332,7 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -1543,7 +1543,7 @@ exports[`Markdown renders without link.currentWork 1`] = `
     prefix="👨‍💻 All of my projects are available at"
   />
   <DisplayWork
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -1755,7 +1755,7 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"
@@ -1968,7 +1968,7 @@ exports[`Markdown renders without subtitle 1`] = `
   />
   <DisplayWork
     link="blog"
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     prefix="💬 Ask me about"

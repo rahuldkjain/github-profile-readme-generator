@@ -182,7 +182,7 @@ exports[`Markdown Preview renders correctly 1`] = `
         },
         "prefix": Object {
           "ama": "💬 Ask me about",
-          "blog": "📝 I regularly  write articles on",
+          "blog": "📝 I regularly write articles on",
           "collaborateOn": "👯 I’m looking to collaborate on",
           "contact": "📫 How to reach me",
           "currentLearn": "🌱 I’m currently learning",
@@ -560,7 +560,7 @@ exports[`Work Preview renders correctly 1`] = `
   />
   <DisplayWork
     link=""
-    prefix="📝 I regularly  write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     link=""

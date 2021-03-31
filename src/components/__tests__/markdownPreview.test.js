@@ -16,7 +16,7 @@ const DEFAULT_PREFIX = {
     resume: "📄 Know about my experiences",
     funFact: "⚡ Fun fact",
     portfolio: "👨‍💻 All of my projects are available at",
-    blog: "📝 I regularly  write articles on",
+    blog: "📝 I regularly write articles on",
 }
 
 const DEFAULT_DATA = {
