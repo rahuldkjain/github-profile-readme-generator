@@ -1,15 +1,15 @@
 export const DEFAULT_PREFIX = {
   title: "Hi 👋, I'm",
-  currentWork: "🔭&nbsp;&nbsp; I’m currently working on",
-  currentLearn: "🌱&nbsp;&nbsp; I’m currently learning",
-  collaborateOn: "👯&nbsp;&nbsp; I’m looking to collaborate on",
-  helpWith: "🤝&nbsp;&nbsp; I’m looking for help with",
-  ama: "💬&nbsp;&nbsp; Ask me about",
-  contact: "📫&nbsp;&nbsp; How to reach me",
-  resume: "📄&nbsp;&nbsp; Know about my experiences",
-  funFact: "⚡&nbsp;&nbsp; Fun fact",
-  portfolio: "👨‍💻&nbsp;&nbsp; All of my projects are available at",
-  blog: "📝&nbsp;&nbsp; I regularly write articles on",
+  currentWork: "🔭&nbsp; I’m currently working on",
+  currentLearn: "🌱&nbsp; I’m currently learning",
+  collaborateOn: "👯&nbsp; I’m looking to collaborate on",
+  helpWith: "🤝&nbsp; I’m looking for help with",
+  ama: "💬&nbsp; Ask me about",
+  contact: "📫&nbsp; How to reach me",
+  resume: "📄&nbsp; Know about my experiences",
+  funFact: "⚡&nbsp; Fun fact",
+  portfolio: "👨‍💻&nbsp; All of my projects are available at",
+  blog: "📝&nbsp; I regularly write articles on",
 }
 
 export const DEFAULT_DATA = {
