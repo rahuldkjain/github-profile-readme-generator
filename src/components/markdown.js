@@ -41,11 +41,17 @@ const SectionTitle = props => {
   return ""
 }
 const DisplayWork = props => {
-  if (props.prefix && props.project) {
+  if (!props.prefix) return ""
+  const prefix = props.prefix.replace(
+    // Simple emoji regex
+    /^(([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D]|\u200d)+) /,
+    "$1&nbsp;&nbsp;"
+  )
+  if (props.project) {
     if (props.link) {
       return (
         <>
-          {`- ${props.prefix} [${props.project}](${props.link})`}
+          {`- ${prefix} [${props.project}](${props.link})`}
           <br />
           <br />
         </>
@@ -53,17 +59,17 @@ const DisplayWork = props => {
     } else {
       return (
         <>
-          {`- ${props.prefix} **${props.project}**`}
+          {`- ${prefix} **${props.project}**`}
           <br />
           <br />
         </>
       )
     }
   }
-  if (props.prefix && props.link) {
+  if (props.link) {
     return (
       <>
-        {`- ${props.prefix} [${props.link}](${props.link})`}
+        {`- ${prefix} [${props.link}](${props.link})`}
         <br />
         <br />
       </>
