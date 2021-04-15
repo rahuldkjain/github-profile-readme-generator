@@ -37,7 +37,7 @@ export const DisplayWork = props => {
   const prefix = props.prefix.replace(
     // Simple emoji regex
     /^(([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D]|\u200d)+) /,
-    "$1&nbsp;&nbsp;"
+    "$1  "
   )
   if (props.project) {
     if (props.link) {
