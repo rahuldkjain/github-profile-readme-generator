@@ -48,16 +48,21 @@ const Donate = () => {
           {/* Paypal */}
           <a
             href="https://www.paypal.me/rahuldkjain/10"
-            className="flex items-center justify-evenly bg-blue-500 text-white py-2 px-4 my-2"
+            className="flex items-center justify-evenly bg-white-500 text-white py-2 px-4 my-2 border border-solid"
             target="_blank"
             rel="noreferrer"
           >
             <img
+              className="w-32 h-4"
+              src="https://cdn.worldvectorlogo.com/logos/paypal-2.svg"
+              alt="Donate rahuldkjain via paypal"
+            />
+            {/* <img
               className="w-6 h-6 mr-2"
               src="https://www.vectorlogo.zone/logos/paypal/paypal-ar21.svg"
               alt="Donate rahuldkjain via paypal"
             />
-            Paypal
+            Paypal */}
           </a>
           {/* BuyMeACoffee */}
           <a
