@@ -79,7 +79,7 @@ exports[`Donate renders correctly 1`] = `
         <img
           alt="Donate rahuldkjain via paypal"
           className="w-6 h-6 mr-2"
-          src="https://cdn.worldvectorlogo.com/logos/paypal-icon.svg"
+          src="https://www.vectorlogo.zone/logos/paypal/paypal-ar21.svg"
         />
         Paypal
       </a>

@@ -20,7 +20,7 @@ exports[`DisplayWork Preview renders correctly 1`] = `
 <div
   className="my-2"
 >
-  [object Object] 
+  [object Object]
   <a
     className="no-underline text-blue-700"
     href="https://dummy.com"
@@ -35,7 +35,7 @@ exports[`DisplayWork Preview renders correctly with no link 1`] = `
 <div
   className="my-2"
 >
-  [object Object] 
+  [object Object]
   <b>
     readme-generator
   </b>
@@ -52,7 +52,7 @@ exports[`DisplayWork Preview renders correctly with no project 1`] = `
 <div
   className="my-2"
 >
-  [object Object] 
+  [object Object]
   <a
     className="no-underline text-blue-700"
     href="https://dummy.com"
@@ -86,7 +86,7 @@ exports[`GithubProfileTrophy Preview renders correctly with show true 1`] = `
 <div
   className="text-left my-2"
 >
-   
+
   <a
     href="https://github.com/ryo-ma/github-profile-trophy"
   >
@@ -95,7 +95,7 @@ exports[`GithubProfileTrophy Preview renders correctly with show true 1`] = `
       src="https://github-profile-trophy.vercel.app/?username="
     />
   </a>
-   
+
 </div>
 `;
 
@@ -182,7 +182,7 @@ exports[`Markdown Preview renders correctly 1`] = `
         },
         "prefix": Object {
           "ama": "💬 Ask me about",
-          "blog": "📝 I regulary write articles on",
+          "blog": "📝 I regularly write articles on",
           "collaborateOn": "👯 I’m looking to collaborate on",
           "contact": "📫 How to reach me",
           "currentLearn": "🌱 I’m currently learning",
@@ -498,7 +498,7 @@ exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
 <div
   className="text-left my-2"
 >
-   
+
   <a
     href="https://twitter.com/\${props.twitter}"
     target="blank"
@@ -509,7 +509,7 @@ exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
       src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge"
     />
   </a>
-   
+
 </div>
 `;
 
@@ -519,13 +519,13 @@ exports[`VisitorsBadge Preview renders correctly with show true 1`] = `
 <div
   className="text-left my-2"
 >
-   
+
   <img
     alt=""
     className="h-4 sm:h-6"
     src="https://komarev.com/ghpvc/?username=&label=Profile%20views&color=0e75b6&style=flat"
   />
-   
+
 </div>
 `;
 
@@ -560,7 +560,7 @@ exports[`Work Preview renders correctly 1`] = `
   />
   <DisplayWork
     link=""
-    prefix="📝 I regulary write articles on"
+    prefix="📝 I regularly write articles on"
   />
   <DisplayWork
     link=""
