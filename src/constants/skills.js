@@ -32,6 +32,7 @@ const categorizedSkills = {
       "react",
       "svelte",
       "angularjs",
+      "angular",
       "backbonejs",
       "bootstrap",
       "vuetify",
@@ -221,6 +222,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   angularjs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
+  angular:
+    "https://angular.io/assets/images/logos/angular/angular.svg",
   aws:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
@@ -446,6 +449,7 @@ const skillWebsites = {
   vuejs: "https://vuejs.org/",
   react: "https://reactjs.org/",
   angularjs: "https://angular.io",
+  angular: "https://angular.io",
   aws: "https://aws.amazon.com",
   android: "https://developer.android.com",
   backbonejs: "https://backbonejs.org",
