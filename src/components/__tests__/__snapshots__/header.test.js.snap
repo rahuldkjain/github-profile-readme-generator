@@ -27,7 +27,7 @@ exports[`Header renders correctly 1`] = `
       aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"
       className="mr-2"
       href="https://github.com/rahuldkjain/github-profile-readme-generator"
-      target="blank"
+      target="_blank"
     >
       <div
         className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2"
@@ -49,7 +49,7 @@ exports[`Header renders correctly 1`] = `
     <a
       aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
       href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
-      target="blank"
+      target="_blank"
     >
       <div
         className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2"

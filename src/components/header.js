@@ -69,7 +69,7 @@ const Header = props => {
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator"
           aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"
-          target="blank"
+          target="_blank"
           className="mr-2"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
@@ -83,7 +83,7 @@ const Header = props => {
         <a
           href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
           aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
-          target="blank"
+          target="_blank"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <RepoForkedIcon

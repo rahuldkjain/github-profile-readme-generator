@@ -432,7 +432,7 @@ const Addons = props => {
             file(learn
             <a
               href={withPrefix(links.addons)}
-              target="blank"
+              target="_blank"
               style={{ color: "#002ead" }}
             >
               {" "}

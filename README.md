@@ -8,22 +8,22 @@
 </h1>
 
 <p align="center">
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="_blank">
 <img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" />
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="_blank">
 <img src="https://img.shields.io/github/forks/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="_blank">
 <img src="https://img.shields.io/github/stars/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator stars"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="_blank">
 <img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="_blank">
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
-<a href="https://discord.gg/HHMs7Eg" target="blank">
+<a href="https://discord.gg/HHMs7Eg" target="_blank">
 <img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
 </a>
 </p>
@@ -31,7 +31,7 @@
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
-    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
+    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
     ·
@@ -56,7 +56,7 @@ This tool provides an easy way to create a GitHub profile readme with the latest
 
 
 ## 🚀 Demo 
-<a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">
+<a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="_blank">
 <img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
 </a>
 
