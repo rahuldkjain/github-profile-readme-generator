@@ -128,6 +128,7 @@ const categorizedSkills = {
       "vagrant",
       "circleci",
       "travisci",
+      "appveyor",
     ],
   },
 
@@ -206,7 +207,7 @@ const categorizedSkills = {
 
   automation: {
     title: "Automation",
-    skills: ["zapier"],
+    skills: ["zapier" , "ifttt"],
   },
 
   other: {
@@ -441,6 +442,8 @@ const icons = {
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg",
+  appveyor: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Appveyor_logo.svg",
+  ifttt: "https://upload.wikimedia.org/wikipedia/commons/8/8d/IFTTT_Logo.svg",
 }
 
 const skillWebsites = {
