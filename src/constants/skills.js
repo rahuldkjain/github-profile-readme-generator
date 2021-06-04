@@ -437,10 +437,10 @@ const icons = {
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
-  mssql: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg",
+  mssql: "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
-  matlab: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg",
+  matlab: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
 }
 
 const skillWebsites = {
