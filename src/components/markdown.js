@@ -276,7 +276,7 @@ const DisplaySupport = props => {
 }
 const Markdown = props => {
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
     
   return (
     <div id="markdown-content" className="break-words">
