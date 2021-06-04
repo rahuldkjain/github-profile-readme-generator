@@ -349,7 +349,7 @@ const icons = {
   blender:
     "https://download.blender.org/branding/community/blender_community_badge_white.svg",
   babel:
-    "https://lh3.googleusercontent.com/proxy/rd0LcVzPDeEBzDpF0Ux_s6B-XzQb63vPme2gfA8IDbnUA0TPvXbzf1mLmj-VBhc3yAZhSLiDiS2au-Guu3YSaY0V9dL2K9Xx09j1RfhHZlfGkOZSR-PrYrP7vTARBbcM1lh4WjFBPQ",
+    "https://user-images.githubusercontent.com/3025322/87547253-bf050400-c6a2-11ea-950a-280311bc6cc8.png",
   sketch: "https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg",
   flask:
     "https://cms-assets.tutsplus.com/uploads/users/30/posts/16037/preview_image/flask.png",
@@ -439,7 +439,7 @@ const icons = {
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
-  mssql: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg",
+  mssql: "https://img.icons8.com/color/452/microsoft-sql-server.png",
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab:
