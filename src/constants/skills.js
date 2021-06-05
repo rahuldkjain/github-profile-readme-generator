@@ -7,6 +7,8 @@ const categorizedSkills = {
       "csharp",
       "go",
       "java",
+      "kotlin", 
+      "dart", 
       "javascript",
       "typescript",
       "php",
@@ -75,8 +77,6 @@ const categorizedSkills = {
     skills: [
       "android",
       "flutter",
-      "dart",
-      "kotlin",
       "nativescript",
       "xamarin",
       "reactnative",
