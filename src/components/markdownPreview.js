@@ -125,7 +125,7 @@ export const SocialPreview = props => {
     const icon_base_url =
     "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
   Object.keys(props.social).forEach(key => {
-    if (props.social[key] && key != "github") viewSocial = true
+    if (props.social[key] && key !== "github") viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
@@ -315,7 +315,7 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
+        <a href="https://twitter.com/${props.twitter}" target="_blank" rel="noreferrer">
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
@@ -421,6 +421,7 @@ export const SupportPreview = props => {
           <a
             href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"

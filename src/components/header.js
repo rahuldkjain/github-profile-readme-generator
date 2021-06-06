@@ -12,7 +12,7 @@ const Header = props => {
     const isFirstRequest = stats.starsCount === 0
     const isVisible = window.document.visibilityState === 'visible'
     const hasFocus = window.document.hasFocus()
-    return isFirstRequest || isVisible && hasFocus
+    return isFirstRequest || (isVisible && hasFocus)
   }
 
   const fetchData = async () => {
@@ -56,7 +56,7 @@ const Header = props => {
   return (
     <div className="shadow flex items-center justify-center flex-col mb-2 py-2">
       <Link to={links.home}>
-        <h1 className="text-base font-bold font-title sm:text-2xl font-medium text-blue-800 flex justify-center items-center flex-col">
+        <h1 className="text-base font-bold font-title sm:text-2xl text-blue-800 flex justify-center items-center flex-col">
           <img
             src={logo}
             className="w-12 h-12"
