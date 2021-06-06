@@ -428,7 +428,7 @@ const icons = {
   unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
   unreal:
     "https://icon-library.com/images/unreal-engine-icon/unreal-engine-icon-25.jpg",
-    godot:"https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
+    godot:"https://raw.githubusercontent.com/godotengine/godot/master/icon.svg",
   elixir: "https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
   heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
   appwrite: "https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg",
