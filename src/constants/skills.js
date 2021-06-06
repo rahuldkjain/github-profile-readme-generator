@@ -583,7 +583,7 @@ const skillWebsites = {
   vuepress: "https://vuepress.vuejs.org/",
   unity: "https://unity.com/",
   unreal: "https://unrealengine.com/",
-  godot:"https://godotengine.org/",
+  godot: "https://godotengine.org/",
   hexo: "hexo.io/",
   heroku: "https://heroku.com",
   appwrite: "https://appwrite.io",
