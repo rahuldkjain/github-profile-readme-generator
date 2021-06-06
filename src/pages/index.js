@@ -305,6 +305,10 @@ const IndexPage = () => {
   const handleBackToEdit = () => {
     setGeneratePreview(false)
     setGenerateMarkdown(false)
+    setPreviewMarkdown({
+      isPreview: false,
+      buttonText: "preview",
+    })
     setShowConfig(true)
     gsap.set("#form", {
       display: "",
