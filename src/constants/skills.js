@@ -201,7 +201,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: "Game Engines",
-    skills: ["unity", "unreal"],
+    skills: ["unity", "unreal","godot"],
   },
 
   automation: {
@@ -428,6 +428,7 @@ const icons = {
   unity: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
   unreal:
     "https://icon-library.com/images/unreal-engine-icon/unreal-engine-icon-25.jpg",
+    godot:"https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
   elixir: "https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
   heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
   appwrite: "https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg",
@@ -582,6 +583,7 @@ const skillWebsites = {
   vuepress: "https://vuepress.vuejs.org/",
   unity: "https://unity.com/",
   unreal: "https://unrealengine.com/",
+  godot:"https://godotengine.org/",
   hexo: "hexo.io/",
   heroku: "https://heroku.com",
   appwrite: "https://appwrite.io",
