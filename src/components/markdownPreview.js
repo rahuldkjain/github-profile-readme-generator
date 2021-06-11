@@ -167,7 +167,7 @@ export const SocialPreview = props => {
       </>
       <>
         <DisplaySocial
-          base="https://codesandbox.com"
+          base="https://codesandbox.io/u"
           icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
           username={props.social.codesandbox}
         />
