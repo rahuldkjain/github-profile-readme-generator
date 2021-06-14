@@ -148,6 +148,7 @@ const categorizedSkills = {
       "rails",
       "flask",
       "quasar",
+      "phoenix"
     ],
   },
 
@@ -291,6 +292,7 @@ const icons = {
   php:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
   perl: "https://api.iconify.design/logos-perl.svg",
+  phoenix: "https://cdn.worldvectorlogo.com/logos/phoenix-36.svg",
   postgresql:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
   python:
