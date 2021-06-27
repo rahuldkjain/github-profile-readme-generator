@@ -12,6 +12,13 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <link 
+          rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.css"
+        ></link>
+        <script 
+          src="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.js" defer
+          ></script>
         <script
           data-name="BMC-Widget"
           src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
@@ -25,6 +32,12 @@ export default function HTML(props) {
         ></script>
       </head>
       <body {...props.bodyAttributes}>
+        <a 
+          href="https://github.com/rahuldkjain/github-profile-readme-generator" 
+          target="_blank" 
+          id="fork-corner" 
+          class="fork-corner fc-pos-tr fc-animate-default fc-theme-github"
+        ></a>
         {props.preBodyComponents}
         <div
           key={`body`}
