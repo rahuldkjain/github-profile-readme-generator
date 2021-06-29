@@ -112,7 +112,7 @@ const categorizedSkills = {
 
   data_visualization: {
     title: "Data Visualization",
-    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana","r"],
+    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana", "r"],
   },
 
   devops: {
