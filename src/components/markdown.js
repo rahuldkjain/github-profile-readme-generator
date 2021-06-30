@@ -74,8 +74,14 @@ const DisplayWork = props => {
 const DisplaySocial = props => {
   if (props.username) {
     return (
+      props.base !== '' ?
       <>
         {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
+        <br />
+      </>
+      :
+      <>
+        {`<a href="${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
         <br />
       </>
     )
