@@ -201,7 +201,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: "Game Engines",
-    skills: ["unity", "unreal"],
+    skills: ["unity", "unreal", "godot"],
   },
 
   automation: {
@@ -258,6 +258,7 @@ const icons = {
   express:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   go: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+  godot: "https://raw.githubusercontent.com/devicons/devicon/master/icons/godot/godot-original.svg",
   graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
@@ -468,6 +469,7 @@ const skillWebsites = {
   electron: "https://www.electronjs.org",
   express: "https://expressjs.com",
   go: "https://golang.org",
+  godot: "https://godotengine.org/",
   graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
   html5: "https://www.w3.org/html/",
