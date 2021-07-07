@@ -72,6 +72,8 @@ Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `C
 
 - **Visitors Counter Badge**
 
+- **GitHub Profile Trophy**
+
 - **GitHub Profile Stats Card**
 
 - **GitHub Top Skills**
