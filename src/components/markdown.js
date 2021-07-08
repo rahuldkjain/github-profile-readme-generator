@@ -73,9 +73,10 @@ const DisplayWork = props => {
 }
 const DisplaySocial = props => {
   if (props.username) {
+    const socialLink = props.base ? props.base + "/" + props.username : props.username
     return (
       <>
-        {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
+        {`<a href="${socialLink}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
         <br />
       </>
     )
