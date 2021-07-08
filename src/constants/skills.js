@@ -51,6 +51,7 @@ const categorizedSkills = {
       "qt",
       "wx_widgets",
       "ember",
+      "foundation",
     ],
   },
 
