@@ -442,7 +442,7 @@ const icons = {
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
-  foundation: "https://get.foundation/",
+  foundation: "https://raw.githubusercontent.com/devicons/devicon/master/icons/foundation/foundation-original.svg",
 }
 
 const skillWebsites = {
@@ -593,6 +593,7 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
+  foundation: "https://get.foundation",
 }
 
 const initialSkillState = {}
