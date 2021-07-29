@@ -126,6 +126,36 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
           <option value="synthwave">Synthwave</option>
           <option value="highcontrast">Highcontrast</option>
           <option value="dracula">Dracula</option>
+          <option value="prussian">Prussian</option>
+          <option value="monokai">Monokai</option>
+          <option value="vue">Vue</option>
+          <option value="shades-of-purple">Shades of Purple</option>
+          <option value="nightowl">Nightowl</option>
+          <option value="buefy">Buefy</option>
+          <option value="blue-green">Blue-Green</option>
+          <option value="algolia">Algolia</option>
+          <option value="great-gatsby">Great Gatsby</option>
+          <option value="darcula">Darcula</option>
+          <option value="bear">Bear</option>
+          <option value="solarized-dark">Solarized Dark</option>
+          <option value="nord">Nord</option>
+          <option value="gotham">Gotham</option>
+          <option value="material-palenight">Material Palenight</option>
+          <option value="graywhite">Graywhite</option>
+          <option value="vision-friendly-dark">Vision Friendly Dark</option>
+          <option value="ayu-mirage">Ayu Mirage</option>
+          <option value="midnight-purple">Midnight Purple</option>
+          <option value="calm">Calm</option>
+          <option value="flag-india">Flag India</option>
+          <option value="omni">Omni</option>
+          <option value="react">React</option>
+          <option value="jolly">Jolly</option>
+          <option value="maroongold">Maroongold</option>
+          <option value="yeblu">yeblu</option>
+          <option value="blueberry">Blueberry</option>
+          <option value="slateorange">Slate Orange</option>
+          <option value="kacho_ga">Kacho ga</option>
+          <option value="outrun">Outrun</option>
         </select>
       </label>
       <label htmlFor={`${prefix}-title-color`}>Title Color:&nbsp;
