@@ -201,7 +201,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: "Game Engines",
-    skills: ["unity", "unreal", "godot", "contruct"],
+    skills: ["unity", "unreal", "godot", "construct"],
   },
 
   automation: {
