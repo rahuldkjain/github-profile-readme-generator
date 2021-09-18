@@ -595,6 +595,8 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
+  godot: "https://godotengine.org/",
+  construct: "https://www.construct.net/en"
 }
 
 const initialSkillState = {}
