@@ -8,7 +8,6 @@ const Skills = props => {
   const [debounce, setDebounce] = useState(undefined);
   const inputRef = React.createRef()
   const createSkill = skill => {
-    console.log("skill", skill)
     return (
       <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
         <label

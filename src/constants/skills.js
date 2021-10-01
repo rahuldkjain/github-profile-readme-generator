@@ -207,7 +207,7 @@ const categorizedSkills = {
   },
 
   cloud_providers: {
-    title: 'Cloud Providers',
+    title: "Cloud Providers",
     skills: ["aws", "azure", "ibm", "googlecloud", "oracle", "alibaba", "tencent"]
   },
 
