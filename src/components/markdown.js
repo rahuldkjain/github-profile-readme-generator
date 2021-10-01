@@ -266,6 +266,9 @@ const DisplaySupport = props => {
       {props.support.buyMeACoffee &&
         `<a href="https://www.buymeacoffee.com/${props.support.buyMeACoffee}">
       <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="${props.support.buyMeACoffee}" /></a>`}
+      {props.support.buyMeAKofi &&
+        `<a href="https://ko-fi.com/${props.support.buyMeAKofi}">
+      <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="${props.support.buyMeAKofi}" /></a>`}
       {`</p><br><br>`}
       <br />
       <br />
@@ -277,7 +280,7 @@ const DisplaySupport = props => {
 const Markdown = props => {
   const icon_base_url =
     "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
-    
+
   return (
     <div id="markdown-content" className="break-words">
       <>
@@ -405,7 +408,7 @@ const Markdown = props => {
       </>
       <>
         <DisplaySocial
-          base="https://linkedin.com/in"    
+          base="https://linkedin.com/in"
           icon={icon_base_url + "linked-in-alt.svg"}
           username={props.social.linkedin}
         />
