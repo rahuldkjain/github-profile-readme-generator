@@ -118,13 +118,10 @@ const categorizedSkills = {
   devops: {
     title: "Devops",
     skills: [
-      "aws",
       "docker",
       "jenkins",
-      "gcp",
       "kubernetes",
       "bash",
-      "azure",
       "vagrant",
       "circleci",
       "travisci",
@@ -133,7 +130,7 @@ const categorizedSkills = {
 
   baas: {
     title: "Backend as a Service(BaaS)",
-    skills: ["firebase", "appwrite", "amplify", "heroku"],
+    skills: ["firebase", "appwrite", "amplify", "heroku", "serverless"],
   },
 
   framework: {
@@ -209,6 +206,11 @@ const categorizedSkills = {
     skills: ["zapier"],
   },
 
+  cloud_providers: {
+    title: 'Cloud Providers',
+    skills: ["aws", "azure", "ibm", "googlecloud", "oracle", "alibaba", "tencent"]
+  },
+
   other: {
     title: "Other",
     skills: ["linux", "git", "arduino"],
@@ -216,6 +218,9 @@ const categorizedSkills = {
 }
 
 const icons = {
+  serverless: "https://www.vectorlogo.zone/logos/serverless/serverless-icon.svg",
+  alibaba: "https://www.vectorlogo.zone/logos/alibabacloud/alibabacloud-icon.svg",
+  tencent: "https://avatars.githubusercontent.com/u/20101770?s=280&v=4",
   vuejs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",
   react:
@@ -258,9 +263,11 @@ const icons = {
   express:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   go: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+  googlecloud: "https://www.gstatic.com/devrel-devsite/prod/v7385327dc46d08b8dfdb825d1a873cb039e1740549bdbb7e3c982c2f1dbdd48e/cloud/images/favicons/onecloud/apple-icon.png",
   graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
+  ibm: "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg",
   html5:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
   hugo: "https://api.iconify.design/logos-hugo.svg",
