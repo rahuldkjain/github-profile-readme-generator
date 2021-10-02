@@ -392,7 +392,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://dev.to"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+          icon={icon_base_url + "devto.svg"}
           username={props.social.dev}
         />
       </>
