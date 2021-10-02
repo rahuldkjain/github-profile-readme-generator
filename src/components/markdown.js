@@ -420,7 +420,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://codesandbox.com"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+          icon={icon_base_url + "codesandbox.svg"}
           username={props.social.codesandbox}
         />
       </>
@@ -490,7 +490,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://codeforces.com/profile"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+          icon={icon_base_url+"codeforces.svg"}
           username={props.social.codeforces}
         />
       </>
@@ -518,7 +518,7 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://www.topcoder.com/members"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+          icon={icon_base_url + "topcoder.svg"}
           username={props.social.topcoder}
         />
       </>
