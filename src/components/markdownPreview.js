@@ -122,7 +122,7 @@ export const DisplaySocial = props => {
 
 export const SocialPreview = props => {
   let viewSocial = false
-    const icon_base_url =
+  const icon_base_url =
     "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
   Object.keys(props.social).forEach(key => {
     if (props.social[key] && key != "github") viewSocial = true
@@ -153,7 +153,7 @@ export const SocialPreview = props => {
       </>
       <>
         <DisplaySocial
-          base="https://linkedin.com/in"    
+          base="https://linkedin.com/in"
           icon={icon_base_url + "linked-in-alt.svg"}
           username={props.social.linkedin}
         />
@@ -413,24 +413,36 @@ export const SupportPreview = props => {
       viewSupport = true
     }
   })
-  return (
-    <div className="mb-4">
+  return props.support.buyMeACoffee || props.support.buyMeAKofi ? (
+    <div className="flex flex-wrap justify-start items-center">
       <SectionTitle label="Support:" visible={viewSupport} />
       {props.support.buyMeACoffee && (
-        <div style={{ width: "210px" }}>
-          <a
-            href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
-            target="_blank"
-          >
-            <img
-              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-              alt="Buy Me A Coffee"
-              className="w-36 h-8 sm:w-52 sm:h-12"
-            />
-          </a>
-        </div>
+        <a
+          href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
+          target="_blank"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+          />
+        </a>
+      )}
+      {props.support.buyMeAKofi && (
+        <a
+          href={`https://ko-fi.com/` + props.support.buyMeAKofi}
+          target="_blank"
+        >
+          <img
+            src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
+            alt="Buy Me A Ko-fi"
+            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+          />
+        </a>
       )}
     </div>
+  ) : (
+    ""
   )
 }
 
