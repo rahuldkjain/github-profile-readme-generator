@@ -410,10 +410,12 @@ const IndexPage = () => {
 
   const handleFileInput = e => {
     const file = e.target.files[0]
-    const reader = new FileReader()
-    reader.readAsText(file, "UTF-8")
-    reader.onload = () => {
-      setRestore(reader.result)
+    if (file && file.type === "application/json") {
+      const reader = new FileReader()
+      reader.readAsText(file, "UTF-8")
+      reader.onload = () => {
+        setRestore(reader.result)
+      }
     }
   }
 
