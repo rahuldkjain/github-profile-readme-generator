@@ -279,6 +279,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
   mysql:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+  nestjs:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg",
   nginx:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
   nodejs:
@@ -481,6 +483,7 @@ const skillWebsites = {
   meteor: "https://www.meteor.com/",
   mongodb: "https://www.mongodb.com/",
   mysql: "https://www.mysql.com/",
+  nestjs: "https://nestjs.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
   openresty: "https://openresty.org/",
