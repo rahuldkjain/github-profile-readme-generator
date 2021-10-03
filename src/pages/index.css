@@ -80,8 +80,48 @@ a {
   font-size: 14px;
 }
 
-.skillCheckboxLabel:hover .tooltiptext {
+.skillCheckbox:hover .tooltiptext {
   visibility: visible;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: all 0.25s;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #fff;
+  top: 2px;
+  left: 2px;
+  transition: all 0.25s;
+}
+
+input[type='checkbox']:checked+.switch::after {
+  transform: translateX(20px);
+}
+input[type='checkbox']:checked+.switch {
+  background-color: var(--light-green);
+}
+input[type='checkbox']:focus+.switch {
+  background-color: var(--blue);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+input[type='checkbox']:checked:focus+.switch {
+  background-color: var(--light-green);
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
 }
 
 .tooltiptext::after {
