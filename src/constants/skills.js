@@ -206,7 +206,7 @@ const categorizedSkills = {
 
   automation: {
     title: "Automation",
-    skills: ["zapier"],
+    skills: ["zapier", "ifttt"],
   },
 
   other: {
@@ -434,6 +434,7 @@ const icons = {
   apachecordova:
     "https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg",
   zapier: "https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg",
+  ifttt: "https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg",
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
@@ -583,6 +584,7 @@ const skillWebsites = {
   heroku: "https://heroku.com",
   appwrite: "https://appwrite.io",
   zapier: "https://zapier.com",
+  ifttt: "https://ifttt.com/",
   elixir: "https://elixir-lang.org",
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
