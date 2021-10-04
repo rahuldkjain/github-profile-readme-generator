@@ -177,6 +177,7 @@ const categorizedSkills = {
       "framer",
       "matlab",
       "postman",
+      "inkscape"
     ],
   },
 
@@ -441,6 +442,7 @@ const icons = {
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+  inkscape: "https://media.inkscape.org/static/images/inkscape-logo.svg",
 }
 
 const skillWebsites = {
@@ -591,6 +593,7 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
+  inkscape: "https://media.inkscape.org/static/images/inkscape-logo.svg",
 }
 
 const initialSkillState = {}
