@@ -356,7 +356,7 @@ const IndexPage = () => {
 
     // set initial values
     setInitialValues()
-  }, [])
+  })
 
   // keep cache updated
   KeepCacheUpdated({ prefix, data, link, social, skills, support })
