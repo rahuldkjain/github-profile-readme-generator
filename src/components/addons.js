@@ -157,13 +157,15 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
           onChange={(e) => onUpdate('bgColor', e.target.value.replace('#', ''))}
         />
       </label>
-      <label htmlFor={`${prefix}-hide-border`}>Hide border:&nbsp;
+      <label htmlFor={`${prefix}-hide-border`} className="checkbox-label">Hide border:&nbsp;
         <input
           id={`${prefix}-hide-border`}
           type="checkbox"
+          className="checkbox-label__input"
           checked={options.hideBorder}
           onChange={(e) => onUpdate('hideBorder', e.target.checked)}
         />
+        <span class="checkbox-label__control" />
       </label>
       <label htmlFor={`${prefix}-cache-seconds`}>Cache Seconds:&nbsp;
         <input
