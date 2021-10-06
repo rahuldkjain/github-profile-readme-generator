@@ -39,6 +39,8 @@ const categorizedSkills = {
       "css3",
       "html5",
       "pug",
+      "ejs",
+      "handlebars",
       "gulp",
       "sass",
       "redux",
