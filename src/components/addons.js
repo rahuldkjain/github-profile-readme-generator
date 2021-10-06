@@ -12,13 +12,15 @@ const AddonsItem = ({ inputId, inputChecked, onInputChange, Options, onIconClick
   return (
     <>
       <div className="py-2 flex justify-start items-center text-sm sm:text-lg">
-        <label htmlFor={inputId} className="cursor-pointer flex items-center">
+        <label htmlFor={inputId} className="checkbox-label flex items-center">
           <input
-            type="checkbox"
             id={inputId}
+            type="checkbox"
+            className="checkbox-label__input"
             checked={inputChecked}
             onChange={onInputChange}
           />
+          <span class="checkbox-label__control" />
           <span className="pl-4">{props.children}</span>
         </label>
         {Options && (

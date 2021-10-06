@@ -9,25 +9,27 @@ const Skills = props => {
   const inputRef = React.createRef()
   const createSkill = skill => {
     return (
-      <div
-        className="skillCheckbox w-1/3 sm:w-1/4 my-6 flex items-center"
-        key={skill}>
-        <input
-          type="checkbox"
-          id={skill}
-          className="offscreen"
-          checked={props.skills[skill]}
-          onChange={event => props.handleSkillsChange(skill)}
-        />
-        <label htmlFor={skill} className="switch cursor-pointer" />
-        <img
-          className="ml-4 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer"
-          onClick={event => props.handleSkillsChange(skill)}
-          src={icons[skill]}
-          alt={skill}
-        />
-        <span className="tooltiptext">{skill}</span>
-      </div>
+      <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
+        <label
+          htmlFor={skill}
+          className="checkbox-label flex items-center justify-start"
+        >
+          <input
+            id={skill}
+            type="checkbox"
+            className="checkbox-label__input"
+            checked={props.skills[skill]}
+            onChange={event => props.handleSkillsChange(skill)}
+          />
+          <span class="checkbox-label__control" />
+          <img
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src={icons[skill]}
+            alt={skill}
+          />
+          <span className="tooltiptext">{skill}</span>
+        </label>
+      </div> 
     )
   }
 
