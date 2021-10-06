@@ -87,7 +87,7 @@ const categorizedSkills = {
 
   ai: {
     title: "AI/ML",
-    skills: ["tensorflow", "pytorch", "opencv", "scikit_learn"],
+    skills: ["tensorflow", "pytorch", "pandas", "seaborn", "opencv", "scikit_learn"],
   },
 
   database: {
@@ -342,6 +342,8 @@ const icons = {
     "https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg",
   bash: "https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg",
   pytorch: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg",
+  pandas: "https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg",
+  seaborn: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
   opencv: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg",
   illustrator:
     "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
@@ -520,6 +522,8 @@ const skillWebsites = {
   hadoop: "https://hadoop.apache.org/",
   bash: "https://www.gnu.org/software/bash/",
   pytorch: "https://pytorch.org/",
+  pandas: "https://pandas.pydata.org/",
+  seaborn: "https://seaborn.pydata.org/",
   opencv: "https://opencv.org/",
   illustrator: "https://www.adobe.com/in/products/illustrator.html",
   figma: "https://www.figma.com/",
