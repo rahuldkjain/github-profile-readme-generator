@@ -43,12 +43,13 @@ input[type="checkbox"] {
 }
 .checkbox-label__control {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 12px;
   vertical-align: middle;
-  background-color: var(--grey-05);
+  background-color: #f7fafc;
   border: 2px solid var(--grey-90);
   transform: scale(0.75);
 }

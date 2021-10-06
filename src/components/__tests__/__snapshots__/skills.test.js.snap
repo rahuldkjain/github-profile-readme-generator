@@ -46,31 +46,34 @@ exports[`Skills renders correctly 1`] = `
       className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10"
     >
       <div
-        className="skillCheckbox w-1/3 sm:w-1/4 my-6 flex items-center"
+        className="w-1/3 sm:w-1/4 my-6"
         key="javascript"
       >
-        <input
-          checked={true}
-          className="offscreen"
-          id="javascript"
-          onChange={[Function]}
-          type="checkbox"
-        />
         <label
-          className="switch cursor-pointer"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="javascript"
-        />
-        <img
-          alt="javascript"
-          className="ml-4 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer"
-          onClick={[Function]}
-          src="javascript.svg"
-        />
-        <span
-          className="tooltiptext"
         >
-          javascript
-        </span>
+          <input
+            checked={true}
+            className="checkbox-label__input"
+            id="javascript"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <img
+            alt="javascript"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="javascript.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            javascript
+          </span>
+        </label>
       </div>
     </div>
   </div>
@@ -87,56 +90,62 @@ exports[`Skills renders correctly 1`] = `
       className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10"
     >
       <div
-        className="skillCheckbox w-1/3 sm:w-1/4 my-6 flex items-center"
+        className="w-1/3 sm:w-1/4 my-6"
         key="react"
       >
-        <input
-          className="offscreen"
-          id="react"
-          onChange={[Function]}
-          type="checkbox"
-        />
         <label
-          className="switch cursor-pointer"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="react"
-        />
-        <img
-          alt="react"
-          className="ml-4 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer"
-          onClick={[Function]}
-          src="react.svg"
-        />
-        <span
-          className="tooltiptext"
         >
-          react
-        </span>
+          <input
+            className="checkbox-label__input"
+            id="react"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <img
+            alt="react"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="react.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            react
+          </span>
+        </label>
       </div>
       <div
-        className="skillCheckbox w-1/3 sm:w-1/4 my-6 flex items-center"
+        className="w-1/3 sm:w-1/4 my-6"
         key="svelte"
       >
-        <input
-          className="offscreen"
-          id="svelte"
-          onChange={[Function]}
-          type="checkbox"
-        />
         <label
-          className="switch cursor-pointer"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="svelte"
-        />
-        <img
-          alt="svelte"
-          className="ml-4 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer"
-          onClick={[Function]}
-          src="svelte.svg"
-        />
-        <span
-          className="tooltiptext"
         >
-          svelte
-        </span>
+          <input
+            className="checkbox-label__input"
+            id="svelte"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <img
+            alt="svelte"
+            className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
+            src="svelte.svg"
+          />
+          <span
+            className="tooltiptext"
+          >
+            svelte
+          </span>
+        </label>
       </div>
     </div>
   </div>
