@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplaySocial Preview renders correctly 1`] = `
+<a
+  className="no-underline text-blue-700 m-2"
+  href="https://codepen.io/dummy"
+  target="blank"
+>
+  <img
+    alt="props.username"
+    className="w-6 h-6"
+    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+</a>
+`;
+
+exports[`DisplaySocial Preview renders correctly with no username 1`] = `""`;
+
+exports[`DisplayWork Preview renders correctly 1`] = `
+<div
+  className="my-2"
+>
+  [object Object]
+  <a
+    className="no-underline text-blue-700"
+    href="https://dummy.com"
+    target="blank"
+  >
+    readme-generator
+  </a>
+</div>
+`;
+
+exports[`DisplayWork Preview renders correctly with no link 1`] = `
+<div
+  className="my-2"
+>
+  [object Object]
+  <b>
+    readme-generator
+  </b>
+</div>
+`;
+
+exports[`DisplayWork Preview renders correctly with no prefix 1`] = `""`;
+
+exports[`DisplayWork Preview renders correctly with no prefix and link 1`] = `""`;
+
+exports[`DisplayWork Preview renders correctly with no prefix, link and project 1`] = `""`;
+
+exports[`DisplayWork Preview renders correctly with no project 1`] = `
+<div
+  className="my-2"
+>
+  [object Object]
+  <a
+    className="no-underline text-blue-700"
+    href="https://dummy.com"
+    target="blank"
+  >
+    https://dummy.com
+  </a>
+</div>
+`;
+
+exports[`DisplayWork Preview renders correctly with no project and link 1`] = `""`;
+
+exports[`DisplayWork Preview renders correctly with no project and prefix 1`] = `""`;
+
+exports[`GitHubStats Preview renders correctly 1`] = `""`;
+
+exports[`GitHubStats Preview renders correctly 2`] = `
+<div
+  className="text-center mx-4 mb-4"
+>
+  <img
+    alt=""
+    src="https://github-readme-stats.vercel.app/api?username=&show_icons=true&locale=en"
+  />
+</div>
+`;
+
+exports[`GithubProfileTrophy Preview renders correctly 1`] = `""`;
+
+exports[`GithubProfileTrophy Preview renders correctly with show true 1`] = `
+<div
+  className="text-left my-2"
+>
+
+  <a
+    href="https://github.com/ryo-ma/github-profile-trophy"
+  >
+    <img
+      alt=""
+      src="https://github-profile-trophy.vercel.app/?username="
+    />
+  </a>
+
+</div>
+`;
+
+exports[`Markdown Preview renders correctly 1`] = `
+<div
+  id="markdown-preview"
+>
+  <TitlePreview
+    prefix="Hi 👋, I'm"
+    title="dummy"
+  />
+  <SubTitlePreview
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadgePreview
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    github=""
+    show={false}
+  />
+  <GithubProfileTrophyPreview
+    github=""
+    show={false}
+  />
+  <TwitterBadgePreview
+    show={false}
+    twitter=""
+  />
+  <WorkPreview
+    work={
+      Object {
+        "data": Object {
+          "ama": "",
+          "badgeColor": "0e75b6",
+          "badgeLabel": "Profile views",
+          "badgeStyle": "flat",
+          "collaborateOn": "",
+          "contact": "",
+          "currentLearn": "",
+          "currentWork": "readme-generator",
+          "devDynamicBlogs": false,
+          "funFact": "",
+          "githubProfileTrophy": false,
+          "githubStats": false,
+          "githubStatsOptions": Object {
+            "bgColor": "",
+            "cacheSeconds": null,
+            "hideBorder": false,
+            "locale": "en",
+            "textColor": "",
+            "theme": "",
+            "titleColor": "",
+          },
+          "helpWith": "",
+          "mediumDynamicBlogs": false,
+          "rssDynamicBlogs": false,
+          "subtitle": "A passionate frontend developer from India",
+          "title": "dummy",
+          "topLanguages": false,
+          "topLanguagesOptions": Object {
+            "bgColor": "",
+            "cacheSeconds": null,
+            "hideBorder": false,
+            "locale": "en",
+            "textColor": "",
+            "theme": "",
+            "titleColor": "",
+          },
+          "twitterBadge": false,
+          "visitorsBadge": false,
+        },
+        "link": Object {
+          "blog": "",
+          "collaborateOn": "",
+          "currentWork": "https://dummy.com",
+          "helpWith": "",
+          "portfolio": "",
+          "resume": "",
+        },
+        "prefix": Object {
+          "ama": "💬 Ask me about",
+          "blog": "📝 I regularly write articles on",
+          "collaborateOn": "👯 I’m looking to collaborate on",
+          "contact": "📫 How to reach me",
+          "currentLearn": "🌱 I’m currently learning",
+          "currentWork": "🔭 I’m currently working on",
+          "funFact": "⚡ Fun fact",
+          "helpWith": "🤝 I’m looking for help with",
+          "portfolio": "👨‍💻 All of my projects are available at",
+          "resume": "📄 Know about my experiences",
+          "title": "Hi 👋, I'm",
+        },
+        "skills": Object {},
+        "social": Object {
+          "behance": "",
+          "codechef": "",
+          "codeforces": "",
+          "codepen": "dummy",
+          "codesandbox": "",
+          "dev": "",
+          "discord": "",
+          "dribbble": "",
+          "fb": "",
+          "geeks_for_geeks": "",
+          "github": "",
+          "hackerearth": "",
+          "hackerrank": "",
+          "instagram": "",
+          "kaggle": "",
+          "leetcode": "",
+          "linkedin": "",
+          "medium": "",
+          "rssurl": "",
+          "stackoverflow": "",
+          "topcoder": "",
+          "twitter": "",
+          "youtube": "",
+        },
+      }
+    }
+  />
+  <SocialPreview
+    social={
+      Object {
+        "behance": "",
+        "codechef": "",
+        "codeforces": "",
+        "codepen": "dummy",
+        "codesandbox": "",
+        "dev": "",
+        "discord": "",
+        "dribbble": "",
+        "fb": "",
+        "geeks_for_geeks": "",
+        "github": "",
+        "hackerearth": "",
+        "hackerrank": "",
+        "instagram": "",
+        "kaggle": "",
+        "leetcode": "",
+        "linkedin": "",
+        "medium": "",
+        "rssurl": "",
+        "stackoverflow": "",
+        "topcoder": "",
+        "twitter": "",
+        "youtube": "",
+      }
+    }
+  />
+  <SkillsPreview
+    skills={Object {}}
+  />
+  <div
+    className="block sm:flex sm:justify-center sm:items-start"
+  >
+    <TopLanguagesPreview
+      github=""
+      options={
+        Object {
+          "bgColor": "",
+          "cacheSeconds": null,
+          "hideBorder": false,
+          "locale": "en",
+          "textColor": "",
+          "theme": "",
+          "titleColor": "",
+        }
+      }
+      show={false}
+    />
+    <GitHubStatsPreview
+      github=""
+      options={
+        Object {
+          "bgColor": "",
+          "cacheSeconds": null,
+          "hideBorder": false,
+          "locale": "en",
+          "textColor": "",
+          "theme": "",
+          "titleColor": "",
+        }
+      }
+      show={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`SectionTitle Preview renders correctly 1`] = `
+<h3
+  className="w-full text-lg sm:text-xl"
+>
+  dummy
+</h3>
+`;
+
+exports[`SectionTitle Preview renders correctly with no label 1`] = `""`;
+
+exports[`SectionTitle Preview renders correctly with visible false 1`] = `""`;
+
+exports[`Skills Preview renders correctly 1`] = `
+<div
+  className="flex flex-wrap justify-start items-center"
+>
+  <SectionTitle
+    label="Languages and Tools:"
+    visible={true}
+  />
+  <a
+    href="https://unity.com/"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="unity"
+      className="mb-4 mr-4 h-6 w-6 sm:h-10 sm:w-10"
+      key="unity"
+      src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Skills Preview renders correctly with no skills 1`] = `""`;
+
+exports[`Social Preview renders correctly 1`] = `
+<div
+  className="flex justify-start items-end flex-wrap"
+>
+  <SectionTitle
+    label="Connect with me:"
+    visible={true}
+  />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    username="dummy"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    username=""
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    username=""
+  />
+</div>
+`;
+
+exports[`SubTitle Preview renders correctly 1`] = `
+<h3
+  className="text-center font-medium"
+>
+  A passionate frontend developer from India
+</h3>
+`;
+
+exports[`SubTitle Preview renders correctly with no subtitle 1`] = `""`;
+
+exports[`Title Preview renders correctly 1`] = `
+<h1
+  className="text-center text-xl font-bold"
+>
+  Hi 👋, I'm dummy
+</h1>
+`;
+
+exports[`Title Preview renders correctly with no prefix 1`] = `""`;
+
+exports[`Title Preview renders correctly with no title 1`] = `""`;
+
+exports[`Title Preview renders correctly with no title and prefix 1`] = `""`;
+
+exports[`TopLanguages Preview renders correctly 1`] = `
+<div
+  className="text-center mx-4 mb-4"
+>
+    
+</div>
+`;
+
+exports[`TopLanguages Preview renders correctly with show true 1`] = `
+<div
+  className="text-center mx-4 mb-4"
+>
+  <img
+    alt=""
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=&show_icons=true&locale=en&layout=compact"
+  />
+</div>
+`;
+
+exports[`TwitterBadgePreview Preview renders correctly 1`] = `""`;
+
+exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
+<div
+  className="text-left my-2"
+>
+
+  <a
+    href="https://twitter.com/\${props.twitter}"
+    target="blank"
+  >
+    <img
+      alt=""
+      className="h-4 sm:h-6"
+      src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge"
+    />
+  </a>
+
+</div>
+`;
+
+exports[`VisitorsBadge Preview renders correctly 1`] = `""`;
+
+exports[`VisitorsBadge Preview renders correctly with show true 1`] = `
+<div
+  className="text-left my-2"
+>
+
+  <img
+    alt=""
+    className="h-4 sm:h-6"
+    src="https://komarev.com/ghpvc/?username=&label=Profile%20views&color=0e75b6&style=flat"
+  />
+
+</div>
+`;
+
+exports[`Work Preview renders correctly 1`] = `
+<Fragment>
+  <DisplayWork
+    link="https://dummy.com"
+    prefix="🔭 I’m currently working on"
+    project="readme-generator"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link=""
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link=""
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    link=""
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link=""
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    link=""
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+</Fragment>
+`;

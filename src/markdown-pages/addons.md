@@ -28,6 +28,18 @@ You can customize the theme too. See how to customize yours [here](https://githu
 
 <br/>
 
+## [GitHub Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+
+Stay motivated while contributing to open source by displaying your current contribution streak
+
+![rahuldkjain](https://github-readme-streak-stats.herokuapp.com/?user=rahuldkjain)
+
+Developed by by [Jonah Lawrence](https://github.com/DenverCoder1).
+
+See how to customize the theme [here](https://github.com/DenverCoder1/github-readme-streak-stats)
+
+<br/>
+
 ## [GitHub Profile Views Counter](https://github.com/antonkomarev/github-profile-views-counter)
 
 It counts how many times your GitHub profile has been viewed. Free cloud micro-service.

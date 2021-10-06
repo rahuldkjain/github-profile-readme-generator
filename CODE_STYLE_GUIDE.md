@@ -3,14 +3,14 @@
 ## File Layout (`src/components/*.js`)
 
 1. Imports
-2. Reusabe components needed for the main component
+2. Reusable components needed for the main component
 3. Main component (Eg: Addons in addons.js)
 4. export default \<MainComponent\>;
 
 ## Reusable components
 
 * Do not make a new file for smaller components.
-* Smaller, reusable components neeeded in the main components should be added **above** the main component, **not** inside it.
+* Smaller, reusable components needed in the main components should be added **above** the main component, **not** inside it.
 * Use ES6 arrow functions for defining components.
 
 ## Spacing
@@ -84,7 +84,7 @@
 
 * We are using [octicons](https://primer.style/octicons/) for icons. Use this if you need to add icons. Do **not** add a new library for icons.
 * Try to not commit changes in `package.json`, `package-lock.json`. 
-* Disscuss with contributors on discord if you're planning to add/remove a package.
+* Discuss with contributors on discord if you're planning to add/remove a package.
 
 ## Further reading:
 

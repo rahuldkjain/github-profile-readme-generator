@@ -10,6 +10,17 @@ module.exports = {
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
   globals: {
     __PATH_PREFIX__: ``,
+    __BASE_PATH__: ``, 
   },
   setupFiles: [`<rootDir>/loadershim.js`],
+  setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
+  coverageThreshold: {
+    global: {
+      branches: 0,
+      functions: 75,
+      lines: 68,
+      statements: 68,
+    },
+  },
 }

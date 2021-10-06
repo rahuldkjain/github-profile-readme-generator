@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social renders correctly 1`] = `
+<div
+  className="px-2 sm:px-6 mb-4"
+>
+  <div
+    className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2"
+  >
+    Social
+  </div>
+  <div
+    className="flex flex-wrap justify-center items-center"
+  >
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="github"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-1 sm:px-2 focus:border-blue-700"
+        id="github"
+        onChange={[Function]}
+        placeholder="github username"
+        value="github "
+      />
+    </div>
+    <div
+      className="w-1/2  flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="twitter"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="twitter"
+        onChange={[Function]}
+        placeholder="twitter username"
+        value="twitter"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="dev.to"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="dev"
+        onChange={[Function]}
+        placeholder="dev.to username"
+        value="dev"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="codepen"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="codepen"
+        onChange={[Function]}
+        placeholder="codepen username"
+        value="codepen"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="codesandbox"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="codesandbox"
+        onChange={[Function]}
+        placeholder="codesandbox username"
+        value="codesandbodx"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="stackoverflow"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="stackoverflow"
+        onChange={[Function]}
+        placeholder="stackoverflow user ID"
+        value="stackoverflow"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="linkedin"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="linkedin"
+        onChange={[Function]}
+        placeholder="linkedin username"
+        value="linkedin"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="kaggle"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="kaggle"
+        onChange={[Function]}
+        placeholder="kaggle username"
+        value="kaggle"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="facebook"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="fb"
+        onChange={[Function]}
+        placeholder="facebook username"
+        value="fb"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="instagram"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="instagram"
+        onChange={[Function]}
+        placeholder="instagram username"
+        value="instagram"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="dribbble"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/dribbble.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="dribbble"
+        onChange={[Function]}
+        placeholder="dribbble username"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="behance"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/behance.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="behance"
+        onChange={[Function]}
+        placeholder="behance username"
+        value="behance"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="medium"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/medium.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="medium"
+        onChange={[Function]}
+        placeholder="medium username (with @)"
+        value="medium"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="youtube"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/youtube.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="youtube"
+        onChange={[Function]}
+        placeholder="youtube channel name"
+        value="youtube"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="codechef"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="codechef"
+        onChange={[Function]}
+        placeholder="codechef username"
+        value="codechef"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="hackerrank"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerrank.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="hackerrank"
+        onChange={[Function]}
+        placeholder="hackerrank username"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="codeforces"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codeforces.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="codeforces"
+        onChange={[Function]}
+        placeholder="codeforces username"
+        value="codeforces"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="leetcode"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/leetcode.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="leetcode"
+        onChange={[Function]}
+        placeholder="leetcode username"
+        value="leetcode"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="topcoder"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/topcoder.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="topcoder"
+        onChange={[Function]}
+        placeholder="topcoder username"
+        value="topcoder"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="hackerearth"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="hackerearth"
+        onChange={[Function]}
+        placeholder="hackerearth user (with @)"
+        value="@hackerearth"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="geeksforgeeks"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="geeksforgeeks"
+        onChange={[Function]}
+        placeholder="GFG (<username>/profile)"
+        value="geeks_for_geeks"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="discord"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/discord.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="discord"
+        onChange={[Function]}
+        placeholder="discord invite (only code)"
+        value="discord"
+      />
+    </div>
+    <div
+      className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0"
+    >
+      <img
+        alt="rssfeed"
+        className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/rss.svg"
+      />
+      <input
+        className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+        id="rssurl"
+        onChange={[Function]}
+        placeholder="RSS feed URL"
+        value="rssurl"
+      />
+    </div>
+  </div>
+</div>
+`;

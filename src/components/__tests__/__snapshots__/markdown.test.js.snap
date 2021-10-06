@@ -1,0 +1,2128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown renders devDynamicBlogs is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show="dev"
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders githubProfileTrophy is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={true}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders githubProfileTrophy is true 2`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={true}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders topLanguages is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={true}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={true}
+    showStats={true}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={true}
+  />
+</div>
+`;
+
+exports[`Markdown renders twitterBadge is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={true}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders visitorsBadge is true 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={true}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders without link.currentWork 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link=""
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link=""
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link=""
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders without prefix.title and data.title 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix=""
+    title=""
+  />
+  <SubTitle
+    subtitle="A passionate frontend developer from India"
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;
+
+exports[`Markdown renders without subtitle 1`] = `
+<div
+  className="break-words"
+  id="markdown-content"
+>
+  <Title
+    prefix="Hi 👋, I'm"
+    title="title"
+  />
+  <SubTitle
+    subtitle=""
+  />
+  <VisitorsBadge
+    badgeOptions={
+      Object {
+        "badgeColor": "0e75b6",
+        "badgeLabel": "Profile%20views",
+        "badgeStyle": "flat",
+      }
+    }
+    show={false}
+  />
+  <GithubProfileTrophy
+    show={false}
+  />
+  <TwitterBadge
+    base="https://twitter.com"
+    show={false}
+  />
+  <DisplayWork
+    link="currentWork"
+    prefix="🔭 I’m currently working on"
+    project="currentWork"
+  />
+  <DisplayWork
+    prefix="🌱 I’m currently learning"
+    project=""
+  />
+  <DisplayWork
+    link="collaborateOn"
+    prefix="👯 I’m looking to collaborate on"
+    project=""
+  />
+  <DisplayWork
+    link="helpWith"
+    prefix="🤝 I’m looking for help with"
+    project=""
+  />
+  <DisplayWork
+    link="portfolio"
+    prefix="👨‍💻 All of my projects are available at"
+  />
+  <DisplayWork
+    link="blog"
+    prefix="📝 I regularly write articles on"
+  />
+  <DisplayWork
+    prefix="💬 Ask me about"
+    project=""
+  />
+  <DisplayWork
+    prefix="📫 How to reach me"
+    project=""
+  />
+  <DisplayWork
+    link="resume"
+    prefix="📄 Know about my experiences"
+  />
+  <DisplayWork
+    prefix="⚡ Fun fact"
+    project=""
+  />
+  <DisplayDynamicBlogs
+    show={false}
+  />
+  <SectionTitle
+    label="Connect with me:"
+  />
+  &lt;p align="left"&gt;
+  <br />
+  <DisplaySocial
+    base="https://codepen.io"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+  />
+  <DisplaySocial
+    base="https://dev.to"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    username="dev"
+  />
+  <DisplaySocial
+    base="https://twitter.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+  />
+  <DisplaySocial
+    base="https://linkedin.com/in"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+  />
+  <DisplaySocial
+    base="https://stackoverflow.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+  />
+  <DisplaySocial
+    base="https://codesandbox.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+  />
+  <DisplaySocial
+    base="https://kaggle.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+  />
+  <DisplaySocial
+    base="https://fb.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+  />
+  <DisplaySocial
+    base="https://instagram.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+  />
+  <DisplaySocial
+    base="https://dribbble.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+  />
+  <DisplaySocial
+    base="https://www.behance.net"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+  />
+  <DisplaySocial
+    base="https://medium.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+  />
+  <DisplaySocial
+    base="https://www.youtube.com/c"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+  />
+  <DisplaySocial
+    base="https://www.codechef.com/users"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://www.hackerrank.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+  />
+  <DisplaySocial
+    base="https://codeforces.com/profile"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+  />
+  <DisplaySocial
+    base="https://www.leetcode.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+  />
+  <DisplaySocial
+    base="https://www.hackerearth.com"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+  />
+  <DisplaySocial
+    base="https://auth.geeksforgeeks.org/user"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+  />
+  <DisplaySocial
+    base="https://www.topcoder.com/members"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+  />
+  <DisplaySocial
+    base="https://discord.gg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+  />
+  <DisplaySocial
+    base=""
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+  />
+  &lt;/p&gt;
+  <br />
+  <br />
+  <DisplaySkills
+    skills={
+      Object {
+        "express": false,
+        "javascript": true,
+      }
+    }
+  />
+  <DisplayTopLanguages
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+    showStats={false}
+  />
+  <GitHubStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": null,
+        "hideBorder": false,
+        "locale": "en",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+    show={false}
+  />
+</div>
+`;

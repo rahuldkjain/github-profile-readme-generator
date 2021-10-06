@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="shadow flex items-center justify-center flex-col mb-2 py-2"
+>
+  <mockConstructor
+    to="/"
+  >
+    <h1
+      className="text-base font-bold font-title sm:text-2xl font-medium text-blue-800 flex justify-center items-center flex-col"
+    >
+      <img
+        alt="github profile markdown generator logo"
+        className="w-12 h-12"
+        src="test-file-stub"
+      />
+      <div>
+        heading
+      </div>
+    </h1>
+  </mockConstructor>
+  <div
+    className="flex justify-center items-center"
+  >
+    <a
+      aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"
+      className="mr-2"
+      href="https://github.com/rahuldkjain/github-profile-readme-generator"
+      target="blank"
+    >
+      <div
+        className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2"
+      >
+        <StarIcon
+          className="px-1 w-6 star"
+          id="star-icon"
+          size={16}
+          verticalAlign="text-bottom"
+        />
+        Star this repo
+        <span
+          className="github-count px-1 sm:px-2"
+        >
+          0
+        </span>
+      </div>
+    </a>
+    <a
+      aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
+      href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
+      target="blank"
+    >
+      <div
+        className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2"
+      >
+        <RepoForkedIcon
+          className="px-1 w-6 fork"
+          id="fork-icon"
+          size={16}
+          verticalAlign="text-bottom"
+        />
+        Fork on GitHub
+        <span
+          className="github-count px-1 sm:px-2"
+        >
+          0
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+`;

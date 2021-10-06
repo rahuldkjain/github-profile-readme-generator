@@ -32,6 +32,7 @@ const categorizedSkills = {
       "react",
       "svelte",
       "angularjs",
+      "angular",
       "backbonejs",
       "bootstrap",
       "vuetify",
@@ -105,6 +106,7 @@ const categorizedSkills = {
       "cockroachdb",
       "elasticsearch",
       "sqlite",
+      "mssql",
     ],
   },
 
@@ -131,7 +133,7 @@ const categorizedSkills = {
 
   baas: {
     title: "Backend as a Service(BaaS)",
-    skills: ["firebase", "amplify", "heroku"],
+    skills: ["firebase", "appwrite", "amplify", "heroku"],
   },
 
   framework: {
@@ -215,107 +217,109 @@ const categorizedSkills = {
 
 const icons = {
   vuejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",
   react:
-    "https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   angularjs:
-    "https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
+  angular:
+    "https://angular.io/assets/images/logos/angular/angular.svg",
   aws:
-    "https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
-    "https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg",
   arduino: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
   backbonejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/backbonejs/backbonejs-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg",
   bootstrap:
-    "https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg",
-  c: "https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+  c: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
   canvasjs:
     "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
   coffeescript:
-    "https://devicons.github.io/devicon/devicon.git/icons/coffeescript/coffeescript-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg",
   codeigniter: "https://cdn.worldvectorlogo.com/logos/codeigniter.svg",
   cplusplus:
-    "https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
   css3:
-    "https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
   csharp:
-    "https://devicons.github.io/devicon/devicon.git/icons/csharp/csharp-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
   d3js:
-    "https://devicons.github.io/devicon/devicon.git/icons/d3js/d3js-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg",
   django:
-    "https://devicons.github.io/devicon/devicon.git/icons/django/django-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg",
   docker:
-    "https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
   dotnet:
-    "https://devicons.github.io/devicon/devicon.git/icons/dot-net/dot-net-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg",
   electron:
-    "https://devicons.github.io/devicon/devicon.git/icons/electron/electron-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   express:
-    "https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg",
-  go: "https://devicons.github.io/devicon/devicon.git/icons/go/go-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+  go: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
   graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
-    "https://devicons.github.io/devicon/devicon.git/icons/gulp/gulp-plain.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
   html5:
-    "https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
   hugo: "https://api.iconify.design/logos-hugo.svg",
   java:
-    "https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
   javascript:
-    "https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
   ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
   laravel:
-    "https://devicons.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg",
   meteor:
     "https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg",
   mongodb:
-    "https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
   mysql:
-    "https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
   nginx:
-    "https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
   nodejs:
-    "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
   openresty:
-    "https://symbols-electrical.getvecta.com/stencil_25/66_openresty.403a21ca72.svg",
+    "https://openresty.org/images/logo.png",
   oracle:
-    "https://devicons.github.io/devicon/devicon.git/icons/oracle/oracle-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
   photoshop:
-    "https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
   xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
-    "https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
   perl: "https://api.iconify.design/logos-perl.svg",
   postgresql:
-    "https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
   python:
-    "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
   rails:
-    "https://devicons.github.io/devicon/devicon.git/icons/rails/rails-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
   redis:
-    "https://devicons.github.io/devicon/devicon.git/icons/redis/redis-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg",
   ruby:
-    "https://devicons.github.io/devicon/devicon.git/icons/ruby/ruby-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
   rust:
-    "https://devicons.github.io/devicon/devicon.git/icons/rust/rust-plain.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg",
   sass:
-    "https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
   scala:
-    "https://devicons.github.io/devicon/devicon.git/icons/scala/scala-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg",
   solidworks: "https://cdn.worldvectorlogo.com/logos/solidworks.svg",
   symfony: "https://symfony.com/logos/symfony_black_03.svg",
   spring: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
   swift:
-    "https://devicons.github.io/devicon/devicon.git/icons/swift/swift-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg",
   typescript:
-    "https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
   linux:
-    "https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
   redux:
-    "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   webpack:
-    "https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg",
   flutter: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg",
   dart: "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg",
   kotlin: "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
@@ -400,7 +404,7 @@ const icons = {
   wx_widgets:
     "https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg",
   ember:
-    "https://devicons.github.io/devicon/devicon.git/icons/ember/ember-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg",
   scikit_learn:
     "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   quasar: "https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
@@ -424,8 +428,7 @@ const icons = {
     "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
   elixir: "https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
   heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
-  coffeescript:
-    "https://www.vectorlogo.zone/logos/coffeescript/coffeescript-icon.svg",
+  appwrite: "https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg",
   hexo: "https://www.vectorlogo.zone/logos/hexoio/hexoio-icon.svg",
   travisci: "https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg",
   apachecordova:
@@ -434,8 +437,10 @@ const icons = {
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
+  mssql: "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
+  matlab: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
 }
 
 const skillWebsites = {
@@ -444,6 +449,7 @@ const skillWebsites = {
   vuejs: "https://vuejs.org/",
   react: "https://reactjs.org/",
   angularjs: "https://angular.io",
+  angular: "https://angular.io",
   aws: "https://aws.amazon.com",
   android: "https://developer.android.com",
   backbonejs: "https://backbonejs.org",
@@ -575,12 +581,13 @@ const skillWebsites = {
   unreal: "https://unrealengine.com/",
   hexo: "hexo.io/",
   heroku: "https://heroku.com",
+  appwrite: "https://appwrite.io",
   zapier: "https://zapier.com",
   elixir: "https://elixir-lang.org",
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
-  coffeescript: "https://coffeescript.org/",
   sqlite: "https://www.sqlite.org/",
+  mssql: "https://www.microsoft.com/en-us/sql-server",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
