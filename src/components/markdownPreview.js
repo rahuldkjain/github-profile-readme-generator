@@ -41,7 +41,8 @@ export const DisplayWork = props => {
           <a
             href={props.link}
             className="no-underline text-blue-700"
-            target="blank"
+            target="_blank"
+            rel="noreferrer"
           >
             {props.project}
           </a>
@@ -63,7 +64,8 @@ export const DisplayWork = props => {
         <a
           href={props.link}
           className="no-underline text-blue-700"
-          target="blank"
+          target="_blank"
+          rel="noreferrer"
         >
           {props.link}
         </a>
@@ -111,7 +113,8 @@ export const DisplaySocial = props => {
       <a
         className="no-underline text-blue-700 m-2"
         href={props.base + "/" + props.username}
-        target="blank"
+        target="_blank"
+        rel="noreferrer"
       >
         <img className="w-6 h-6" src={props.icon} alt="props.username" />
       </a>
@@ -125,7 +128,7 @@ export const SocialPreview = props => {
   const icon_base_url =
     "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
   Object.keys(props.social).forEach(key => {
-    if (props.social[key] && key != "github") viewSocial = true
+    if (props.social[key] && key !== "github") viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
@@ -315,7 +318,7 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
+        <a href={`https://twitter.com/${props.twitter}`} target="blank">
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
@@ -420,6 +423,7 @@ export const SupportPreview = props => {
         <a
           href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -432,6 +436,7 @@ export const SupportPreview = props => {
         <a
           href={`https://ko-fi.com/` + props.support.buyMeAKofi}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"

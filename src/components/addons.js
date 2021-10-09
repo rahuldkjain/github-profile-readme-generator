@@ -91,7 +91,8 @@ const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
           Preview:&nbsp;
           {
             isGitHubUsernameValid(githubName)?
-              <img 
+              <img
+                alt="Preview of the badge"
                 src={`https://komarev.com/ghpvc/`
                     + `?username=${githubName}`
                     + `&label=${encodeURI(badgeOptions.badgeLabel)}`
