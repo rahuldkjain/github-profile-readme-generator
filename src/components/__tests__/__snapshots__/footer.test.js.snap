@@ -157,7 +157,7 @@ exports[`Footer component renders correctly 1`] = `
         </strong>
       </div>
       <div
-        class="ml-2 sm:ml-0"
+        className="ml-2 sm:ml-0"
       >
         <a
           aria-label="Discord of the community"

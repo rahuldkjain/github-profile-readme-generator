@@ -77,9 +77,9 @@ const IndexPage = () => {
     buttonText: "preview",
   })
 
-  const handleSkillsChange = field => {
+  const handleSkillsChange = (field, value) => {
     let change = { ...skills }
-    change[field] = !change[field]
+    change[field] = value
     setSkills(change)
   }
 
@@ -371,15 +371,20 @@ const IndexPage = () => {
 
   const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
     return Object.keys(defaultSkills).reduce((previous, currentKey) => {
-      let currentSelected = false
+      let currentValue = 0
 
       if (newSkills[currentKey]) {
-        currentSelected = true
+        // merge previous boolean cache to new format
+        if (newSkills[currentKey] === true) {
+          currentValue = 1
+        } else {
+          currentValue = newSkills[currentKey]
+        }
       }
 
       return {
         ...previous,
-        [currentKey]: currentSelected,
+        [currentKey]: currentValue,
       }
     }, {})
   }

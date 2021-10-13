@@ -32,10 +32,10 @@ describe("Skills", () => {
   it("calls handleSkillsChange prop when a skill is clicked", () => {
     const mockFn = jest.fn()
     const component = shallow(
-      <Skills skills={{ javascript: true }} handleSkillsChange={mockFn} />
+      <Skills skills={{ javascript: 1 }} handleSkillsChange={mockFn} />
     )
 
-    component.find("#javascript").simulate("change")
+    component.find("#javascript").simulate("change", { target: { value: 2 } })
 
     expect(mockFn).toHaveBeenCalledTimes(1)
   })

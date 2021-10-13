@@ -33,6 +33,11 @@ exports[`Skills renders correctly 1`] = `
       </span>
     </div>
   </div>
+  <span
+    className="text-sm"
+  >
+    Select order of skills (lower first, excluding 0)
+  </span>
   <div
     className="divide-y divide-gray-500"
     key="language"
@@ -50,14 +55,15 @@ exports[`Skills renders correctly 1`] = `
         key="javascript"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="skillLabel cursor-pointer flex items-center justify-start"
           htmlFor="javascript"
         >
           <input
-            checked={true}
+            className="outline-none w-24 sm:w-40 mr-10 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
             id="javascript"
+            min={0}
             onChange={[Function]}
-            type="checkbox"
+            type="number"
           />
           <img
             alt="javascript"
@@ -90,13 +96,15 @@ exports[`Skills renders correctly 1`] = `
         key="react"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="skillLabel cursor-pointer flex items-center justify-start"
           htmlFor="react"
         >
           <input
+            className="outline-none w-24 sm:w-40 mr-10 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
             id="react"
+            min={0}
             onChange={[Function]}
-            type="checkbox"
+            type="number"
           />
           <img
             alt="react"
@@ -115,13 +123,15 @@ exports[`Skills renders correctly 1`] = `
         key="svelte"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="skillLabel cursor-pointer flex items-center justify-start"
           htmlFor="svelte"
         >
           <input
+            className="outline-none w-24 sm:w-40 mr-10 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
             id="svelte"
+            min={0}
             onChange={[Function]}
-            type="checkbox"
+            type="number"
           />
           <img
             alt="svelte"

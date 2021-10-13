@@ -80,8 +80,12 @@ a {
   font-size: 14px;
 }
 
-.skillCheckboxLabel:hover .tooltiptext {
+.skillLabel:hover .tooltiptext {
   visibility: visible;
+}
+
+.skillLabel > input {
+  width: 48px;
 }
 
 .tooltiptext::after {
