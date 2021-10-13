@@ -161,6 +161,7 @@ const categorizedSkills = {
       "puppeteer",
       "karma",
       "jasmine",
+      "phpunit",
     ],
   },
 
@@ -399,6 +400,7 @@ const icons = {
   karma:
     "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg",
   jasmine: "https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg",
+  phpunit: "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_phpunit.svg",
   gtk: "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
   qt: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg",
   wx_widgets:
@@ -562,6 +564,7 @@ const skillWebsites = {
   puppeteer: "https://github.com/puppeteer/puppeteer",
   karma: "https://karma-runner.github.io/latest/index.html",
   jasmine: "https://jasmine.github.io/",
+  phpunit: "https://phpunit.de",
   gtk: "https://www.gtk.org/",
   qt: "https://www.qt.io/",
   wx_widgets: "https://www.wxwidgets.org/",
