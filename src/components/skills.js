@@ -6,7 +6,7 @@ const Skills = props => {
   const [search, setSearch] = useState("")
   const [debounce, setDebounce] = useState(undefined)
   const inputRef = React.createRef()
-  const createSkill = skill => {
+  const createSkill = (skill, value) => {
     return (
       <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
         <label
@@ -21,6 +21,7 @@ const Skills = props => {
             onChange={event =>
               props.handleSkillsChange(skill, event.target.value)
             }
+            value={value}
           />
           <img
             className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
@@ -97,7 +98,7 @@ const Skills = props => {
                 .filter(skill => {
                   return skill.includes(search.toLowerCase())
                 })
-                .map(skill => createSkill(skill))}
+                .map(skill => createSkill(skill, props.skills[skill]))}
             </div>
           </div>
         ))}

@@ -123,7 +123,7 @@ export const DisplaySocial = props => {
 export const SocialPreview = props => {
   let viewSocial = false
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
   Object.keys(props.social).forEach(key => {
     if (props.social[key] && key != "github") viewSocial = true
   })
@@ -245,14 +245,14 @@ export const SocialPreview = props => {
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>
@@ -377,8 +377,13 @@ export const StreakStatsPreview = ({ github, options, show }) => {
 }
 
 export const SkillsPreview = props => {
+  const sortedSkills = Object.entries(props.skills)
+    .filter(entry => entry[1] > 0)
+    .sort((a, b) => a[1] - b[1])
+    .map(s => s[0])
+
   var listSkills = []
-  skills.forEach(skill => {
+  sortedSkills.forEach(skill => {
     if (props.skills[skill]) {
       listSkills.push(
         <a

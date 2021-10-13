@@ -175,7 +175,8 @@ const DisplaySkills = props => {
   const sortedSkills = Object.entries(props.skills)
     .filter(entry => entry[1] > 0)
     .sort((a, b) => a[1] - b[1])
-    .map(skill => skill[0])
+    .map(s => s[0])
+
   const listChosenSkills = []
   sortedSkills.forEach(skill => {
     if (props.skills[skill]) {
