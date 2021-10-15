@@ -67,6 +67,7 @@ const categorizedSkills = {
       "hadoop",
       "nginx",
       "openresty",
+      "nestJs"
     ],
   },
 
@@ -277,6 +278,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
   mysql:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+  nestjs:
+    "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
   nginx:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
   nodejs:
@@ -480,6 +483,7 @@ const skillWebsites = {
   meteor: "https://www.meteor.com/",
   mongodb: "https://www.mongodb.com/",
   mysql: "https://www.mysql.com/",
+  nestjs :"https://nestjs.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
   openresty: "https://openresty.org/",
