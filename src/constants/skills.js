@@ -67,7 +67,7 @@ const categorizedSkills = {
       "hadoop",
       "nginx",
       "openresty",
-      "nestJs"
+      "nestjs"
     ],
   },
 
