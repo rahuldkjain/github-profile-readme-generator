@@ -36,8 +36,18 @@ import {
   DEFAULT_SOCIAL,
   DEFAULT_SUPPORT,
 } from "../constants/defaults"
+import type { ProfileInfo } from "../@types"
 
-const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
+const DEFAULT_SKILLS = initialSkillState
+
+const KeepCacheUpdated = ({
+  prefix,
+  data,
+  link,
+  social,
+  skills,
+  support,
+}: ProfileInfo) => {
   useEffect(() => {
     localStorage.setItem(
       "cache",
@@ -52,8 +62,6 @@ const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
     )
   }, [prefix, data, link, social, skills, support])
 }
-
-const DEFAULT_SKILLS = initialSkillState
 
 const IndexPage = () => {
   const [prefix, setPrefix] = useState(DEFAULT_PREFIX)
@@ -122,7 +130,7 @@ const IndexPage = () => {
 
   const generate = () => {
     setShowConfig(false)
-    var tl = new gsap.timeline()
+    var tl = gsap.timeline()
     tl.to(".generate", {
       scale: 0,
       duration: 0.5,

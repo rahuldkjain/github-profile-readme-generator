@@ -1,3 +1,5 @@
+import type { Skill, Category } from "../@types"
+
 const categorizedSkills = {
   language: {
     title: "Programming Languages",
@@ -213,7 +215,7 @@ const categorizedSkills = {
     title: "Other",
     skills: ["linux", "git", "arduino"],
   },
-}
+} as const
 
 const icons = {
   vuejs:
@@ -222,8 +224,7 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   angularjs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
-  angular:
-    "https://angular.io/assets/images/logos/angular/angular.svg",
+  angular: "https://angular.io/assets/images/logos/angular/angular.svg",
   aws:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   android:
@@ -233,7 +234,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg",
   bootstrap:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
-  c: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+  c:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
   canvasjs:
     "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
   coffeescript:
@@ -257,7 +259,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   express:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-  go: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+  go:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
   graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
@@ -281,8 +284,7 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
   nodejs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-  openresty:
-    "https://openresty.org/images/logo.png",
+  openresty: "https://openresty.org/images/logo.png",
   oracle:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
   photoshop:
@@ -593,18 +595,18 @@ const skillWebsites = {
   middleman: "https://middlemanapp.com/",
 }
 
-const initialSkillState = {}
+const skills = Object.values(categorizedSkills)
+  .map(i => i.skills)
+  .flat()
+  .sort()
 
-const skillsArray = Object.keys(categorizedSkills).map(
-  key => categorizedSkills[key].skills
-)
-const skills = [].concat.apply([], skillsArray).sort()
+const initialSkillState = {} as Record<Skill, boolean>
 
 skills.forEach(skill => {
   initialSkillState[skill] = false
 })
 
-const categories = Object.keys(categorizedSkills)
+const categories = (Object.keys(categorizedSkills) as unknown) as Category[]
 
 export {
   initialSkillState,

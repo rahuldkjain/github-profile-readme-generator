@@ -29,6 +29,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/react-dom": "^17.0.9",
+    "@types/react-helmet": "^6.1.4",
     "babel-jest": "26.3.0",
     "babel-preset-gatsby": "0.5.11",
     "gatsby-plugin-postcss": "^2.3.11",

@@ -7,21 +7,25 @@ import axios from "axios"
 import { Link } from "gatsby"
 import { act } from "react-dom/test-utils"
 
-const Header = props => {
+const Header = ({ heading }: { heading: string }) => {
   const shouldRequestStats = () => {
     const isFirstRequest = stats.starsCount === 0
-    const isVisible = window.document.visibilityState === 'visible'
+    const isVisible = window.document.visibilityState === "visible"
     const hasFocus = window.document.hasFocus()
-    return isFirstRequest || isVisible && hasFocus
+    return isFirstRequest || (isVisible && hasFocus)
   }
 
   const fetchData = async () => {
     if (shouldRequestStats()) {
-      var response = await axios.get(
+      const {
+        data,
+      }: {
+        data: { stargazers_count: number; forks_count: number }
+      } = await axios.get(
         "https://api.github.com/repos/rahuldkjain/github-profile-readme-generator"
       )
 
-      const { stargazers_count, forks_count } = response.data
+      const { stargazers_count, forks_count } = data
 
       act(() =>
         setstats({
@@ -62,7 +66,7 @@ const Header = props => {
             className="w-12 h-12"
             alt="github profile markdown generator logo"
           />
-          <div>{props.heading}</div>
+          <div>{heading}</div>
         </h1>
       </Link>
       <div className="flex justify-center items-center">
@@ -73,7 +77,7 @@ const Header = props => {
           className="mr-2"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
-            <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />
+            <StarIcon size={16} className="px-1 w-6 star" />
             Star this repo
             <span className="github-count px-1 sm:px-2">
               {stats.starsCount}
@@ -86,11 +90,7 @@ const Header = props => {
           target="blank"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
-            <RepoForkedIcon
-              size={16}
-              id="fork-icon"
-              className="px-1 w-6 fork"
-            />
+            <RepoForkedIcon size={16} className="px-1 w-6 fork" />
             Fork on GitHub
             <span className="github-count px-1 sm:px-2">
               {stats.forksCount}

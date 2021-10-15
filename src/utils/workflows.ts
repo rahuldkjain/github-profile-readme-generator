@@ -1,5 +1,5 @@
 import { isMediumUsernameValid } from "./validation"
-import type { Blogs } from "../types"
+import type { Blogs } from "../@types"
 
 export const latestBlogs = ({ dev, rssurl, medium }: Blogs) => {
   let rssFeed = ""

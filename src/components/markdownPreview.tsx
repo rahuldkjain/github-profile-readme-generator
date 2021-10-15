@@ -5,67 +5,84 @@ import {
   topLanguagesLinkGenerator,
   streakStatsLinkGenerator,
 } from "../utils/link-generators"
+import type {
+  ProfileInfo,
+  StatsType,
+  StreakStatsType,
+  Skill,
+  BadgeOptions,
+} from "../@types"
 
-export const TitlePreview = props => {
-  if (props.prefix && props.title) {
+export const TitlePreview = ({
+  prefix,
+  title,
+}: {
+  prefix?: string
+  title?: string
+}) => {
+  if (prefix && title) {
     return (
-      <h1 className="text-center text-xl font-bold">
-        {props.prefix + " " + props.title}
-      </h1>
+      <h1 className="text-center text-xl font-bold">{prefix + " " + title}</h1>
     )
   }
   return null
 }
 
-export const SubTitlePreview = props => {
-  if (props.subtitle) {
-    return <h3 className="text-center font-medium">{props.subtitle}</h3>
+export const SubTitlePreview = ({ subtitle }: { subtitle?: string }) => {
+  if (subtitle) {
+    return <h3 className="text-center font-medium">{subtitle}</h3>
   }
   return null
 }
 
-export const SectionTitle = props => {
-  if (!props.visible) return null
-  else if (props.label) {
-    return <h3 className="w-full text-lg sm:text-xl">{props.label}</h3>
+export const SectionTitle = ({
+  visible,
+  label,
+}: {
+  visible?: boolean
+  label?: string
+}) => {
+  if (!visible) return null
+  else if (label) {
+    return <h3 className="w-full text-lg sm:text-xl">{label}</h3>
   }
   return null
 }
 
-export const DisplayWork = props => {
-  if (props.prefix && props.project) {
-    if (props.link) {
+export const DisplayWork = ({
+  prefix,
+  project,
+  link,
+}: {
+  prefix?: string
+  project?: string
+  link?: string
+}) => {
+  if (prefix && project) {
+    if (link) {
       return (
         <div className="my-2">
-          {props.prefix + " "}
-          <a
-            href={props.link}
-            className="no-underline text-blue-700"
-            target="blank"
-          >
-            {props.project}
+          {prefix + " "}
+          <a href={link} className="no-underline text-blue-700" target="blank">
+            {project}
           </a>
         </div>
       )
     } else {
       return (
         <div className="my-2">
-          {props.prefix + " "}
-          <b>{props.project}</b>
+          {prefix + " "}
+          <b>{project}</b>
         </div>
       )
     }
   }
-  if (props.prefix && props.link) {
+  if (prefix && link) {
     return (
       <div className="my-2">
-        {props.prefix + " "}
-        <a
-          href={props.link}
-          className="no-underline text-blue-700"
-          target="blank"
-        >
-          {props.link}
+        {prefix + " "}
+        <a href={link} className="no-underline text-blue-700" target="blank">
+          {link}
         </a>
       </div>
     )
@@ -73,10 +90,15 @@ export const DisplayWork = props => {
   return null
 }
 
-export const WorkPreview = props => {
-  const prefix = props.work.prefix
-  const data = props.work.data
-  const link = props.work.link
+export const WorkPreview = ({
+  work: { prefix, data, link },
+}: {
+  work: {
+    prefix: ProfileInfo["prefix"]
+    data: ProfileInfo["data"]
+    link: ProfileInfo["link"]
+  }
+}) => {
   return (
     <>
       <DisplayWork
@@ -105,27 +127,36 @@ export const WorkPreview = props => {
   )
 }
 
-export const DisplaySocial = props => {
-  if (props.username) {
+export const DisplaySocial = ({
+  username,
+  base,
+  icon,
+}: {
+  username?: string
+  base?: string
+  icon?: string
+}) => {
+  if (username) {
     return (
       <a
         className="no-underline text-blue-700 m-2"
-        href={props.base + "/" + props.username}
+        href={base + "/" + username}
         target="blank"
       >
-        <img className="w-6 h-6" src={props.icon} alt="props.username" />
+        <img className="w-6 h-6" src={icon} alt="props.username" />
       </a>
     )
   }
   return null
 }
 
-export const SocialPreview = props => {
+export const SocialPreview = (props: Pick<ProfileInfo, "social">) => {
   let viewSocial = false
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
   Object.keys(props.social).forEach(key => {
-    if (props.social[key] && key != "github") viewSocial = true
+    if (props.social[key as keyof ProfileInfo["social"]] && key != "github")
+      viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
@@ -245,14 +276,14 @@ export const SocialPreview = props => {
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>
@@ -288,35 +319,49 @@ export const SocialPreview = props => {
   )
 }
 
-export const VisitorsBadgePreview = props => {
-  let link =
+export const VisitorsBadgePreview = ({
+  badgeOptions,
+  github,
+  show,
+}: {
+  badgeOptions: BadgeOptions
+  github: string
+  show: boolean
+}) => {
+  const link =
     "https://komarev.com/ghpvc/?username=" +
-    props.github +
-    `&label=${props.badgeOptions.badgeLabel}` +
-    `&color=${props.badgeOptions.badgeColor}` +
-    `&style=${props.badgeOptions.badgeStyle}`
-  if (props.show) {
+    github +
+    `&label=${badgeOptions.badgeLabel}` +
+    `&color=${badgeOptions.badgeColor}` +
+    `&style=${badgeOptions.badgeStyle}`
+  if (show) {
     return (
       <div className="text-left my-2">
         {" "}
-        <img className="h-4 sm:h-6" src={link} alt={props.github} />{" "}
+        <img className="h-4 sm:h-6" src={link} alt={github} />{" "}
       </div>
     )
   }
   return null
 }
 
-export const TwitterBadgePreview = props => {
+export const TwitterBadgePreview = ({
+  twitter,
+  show,
+}: {
+  twitter: string
+  show: boolean
+}) => {
   let link =
     "https://img.shields.io/twitter/follow/" +
-    props.twitter +
+    twitter +
     "?logo=twitter&style=for-the-badge"
-  if (props.show) {
+  if (show) {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
-          <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
+        <a href={`https://twitter.com/${twitter}`} target="blank">
+          <img className="h-4 sm:h-6" src={link} alt={twitter} />
         </a>{" "}
       </div>
     )
@@ -324,15 +369,20 @@ export const TwitterBadgePreview = props => {
   return null
 }
 
-export const GithubProfileTrophyPreview = props => {
-  let link =
-    "https://github-profile-trophy.vercel.app/?username=" + props.github
-  if (props.show) {
+export const GithubProfileTrophyPreview = ({
+  github,
+  show,
+}: {
+  github: string
+  show: boolean
+}) => {
+  const link = "https://github-profile-trophy.vercel.app/?username=" + github
+  if (show) {
     return (
       <div className="text-left my-2">
         {" "}
         <a href="https://github.com/ryo-ma/github-profile-trophy">
-          <img src={link} alt={props.github} />
+          <img src={link} alt={github} />
         </a>{" "}
       </div>
     )
@@ -340,7 +390,15 @@ export const GithubProfileTrophyPreview = props => {
   return null
 }
 
-export const GitHubStatsPreview = ({ github, options, show }) => {
+export const GitHubStatsPreview = ({
+  github,
+  options,
+  show,
+}: {
+  github: string
+  options: StatsType
+  show: boolean
+}) => {
   if (show) {
     return (
       <div className="text-center mx-4 mb-4">
@@ -351,7 +409,15 @@ export const GitHubStatsPreview = ({ github, options, show }) => {
   return null
 }
 
-export const TopLanguagesPreview = ({ github, options, show }) => {
+export const TopLanguagesPreview = ({
+  github,
+  options,
+  show,
+}: {
+  github: string
+  options: StatsType
+  show: boolean
+}) => {
   if (show) {
     return (
       <div className="text-center mx-4 mb-4">
@@ -365,7 +431,15 @@ export const TopLanguagesPreview = ({ github, options, show }) => {
   return <div className="text-center mx-4 mb-4"> &nbsp;</div>
 }
 
-export const StreakStatsPreview = ({ github, options, show }) => {
+export const StreakStatsPreview = ({
+  github,
+  options,
+  show,
+}: {
+  github: string
+  options: StreakStatsType
+  show: boolean
+}) => {
   if (show) {
     return (
       <div className="text-center mx-4 mb-4">
@@ -376,8 +450,8 @@ export const StreakStatsPreview = ({ github, options, show }) => {
   return null
 }
 
-export const SkillsPreview = props => {
-  var listSkills = []
+export const SkillsPreview = (props: { skills: Record<Skill, boolean> }) => {
+  const listSkills = [] as JSX.Element[]
   skills.forEach(skill => {
     if (props.skills[skill]) {
       listSkills.push(
@@ -401,24 +475,22 @@ export const SkillsPreview = props => {
       <SectionTitle label="Languages and Tools:" visible={true} />
       {listSkills}
     </div>
-  ) : (
-    ""
-  )
+  ) : null
 }
 
-export const SupportPreview = props => {
+export const SupportPreview = ({ support }: Pick<ProfileInfo, "support">) => {
   let viewSupport = false
-  Object.keys(props.support).forEach(key => {
-    if (props.support[key]) {
+  Object.keys(support).forEach(key => {
+    if (`${key}` in support) {
       viewSupport = true
     }
   })
-  return props.support.buyMeACoffee || props.support.buyMeAKofi ? (
+  return support.buyMeACoffee || support.buyMeAKofi ? (
     <div className="flex flex-wrap justify-start items-center">
       <SectionTitle label="Support:" visible={viewSupport} />
-      {props.support.buyMeACoffee && (
+      {support.buyMeACoffee && (
         <a
-          href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
+          href={`https://www.buymeacoffee.com/` + support.buyMeACoffee}
           target="_blank"
         >
           <img
@@ -428,11 +500,8 @@ export const SupportPreview = props => {
           />
         </a>
       )}
-      {props.support.buyMeAKofi && (
-        <a
-          href={`https://ko-fi.com/` + props.support.buyMeAKofi}
-          target="_blank"
-        >
+      {support.buyMeAKofi && (
+        <a href={`https://ko-fi.com/` + support.buyMeAKofi} target="_blank">
           <img
             src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
             alt="Buy Me A Ko-fi"
@@ -441,52 +510,54 @@ export const SupportPreview = props => {
         </a>
       )}
     </div>
-  ) : (
-    ""
-  )
+  ) : null
 }
 
-const MarkdownPreview = props => {
+const MarkdownPreview = ({
+  prefix,
+  data,
+  social,
+  link,
+  skills,
+  support,
+}: ProfileInfo) => {
   return (
     <div id="markdown-preview">
-      <TitlePreview prefix={props.prefix.title} title={props.data.title} />
-      <SubTitlePreview subtitle={props.data.subtitle} />
+      <TitlePreview prefix={prefix.title} title={data.title} />
+      <SubTitlePreview subtitle={data.subtitle} />
       <VisitorsBadgePreview
-        show={props.data.visitorsBadge}
-        github={props.social.github}
+        show={data.visitorsBadge}
+        github={social.github}
         badgeOptions={{
-          badgeLabel: encodeURI(props.data.badgeLabel),
-          badgeColor: props.data.badgeColor,
-          badgeStyle: props.data.badgeStyle,
+          badgeLabel: encodeURI(data.badgeLabel),
+          badgeColor: data.badgeColor,
+          badgeStyle: data.badgeStyle,
         }}
       />
       <GithubProfileTrophyPreview
-        show={props.data.githubProfileTrophy}
-        github={props.social.github}
+        show={data.githubProfileTrophy}
+        github={social.github}
       />
-      <TwitterBadgePreview
-        show={props.data.twitterBadge}
-        twitter={props.social.twitter}
-      />
-      <WorkPreview work={props} />
-      <SocialPreview social={props.social} />
-      <SkillsPreview skills={props.skills} />
-      <SupportPreview support={props.support} />
+      <TwitterBadgePreview show={data.twitterBadge} twitter={social.twitter} />
+      <WorkPreview work={{ prefix, data, link }} />
+      <SocialPreview social={social} />
+      <SkillsPreview skills={skills} />
+      <SupportPreview support={support} />
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview
-          show={props.data.topLanguages}
-          github={props.social.github}
-          options={props.data.topLanguagesOptions}
+          show={data.topLanguages}
+          github={social.github}
+          options={data.topLanguagesOptions as StatsType}
         />
         <GitHubStatsPreview
-          show={props.data.githubStats}
-          github={props.social.github}
-          options={props.data.githubStatsOptions}
+          show={data.githubStats}
+          github={social.github}
+          options={data.githubStatsOptions as StatsType}
         />
         <StreakStatsPreview
-          show={props.data.streakStats}
-          github={props.social.github}
-          options={props.data.streakStatsOptions}
+          show={data.streakStats}
+          github={social.github}
+          options={data.streakStatsOptions as StreakStatsType}
         />
       </div>
     </div>

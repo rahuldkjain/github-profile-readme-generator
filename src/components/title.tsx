@@ -1,6 +1,7 @@
-import React from "react"
+import * as React from "react"
+import type { ProfilePrefixHandle, ProfileDataHandle } from "../@types"
 
-const Title = props => {
+const Title = (props: ProfilePrefixHandle & ProfileDataHandle) => {
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">

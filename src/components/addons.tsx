@@ -8,14 +8,26 @@ import {
 } from "../utils/validation"
 import { STATS_THEMES, STREAK_STATS_THEMES } from "../constants/options"
 import { ToolsIcon, XCircleIcon } from "@primer/octicons-react"
+import type {
+  BadgeOptions,
+  StatsType,
+  StreakStatsType,
+  ProfileInfo,
+  ProfileDataHandle,
+} from "../@types"
 
 const AddonsItem = ({
   inputId,
   inputChecked,
   onInputChange,
   Options,
-  onIconClick,
-  ...props
+  children,
+}: {
+  inputId: string
+  inputChecked: boolean
+  onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  Options?: React.ReactElement
+  children: React.ReactNode
 }) => {
   const [open, setOpen] = useState(false)
   const Icon = open ? XCircleIcon : ToolsIcon
@@ -30,7 +42,7 @@ const AddonsItem = ({
             checked={inputChecked}
             onChange={onInputChange}
           />
-          <span className="pl-4">{props.children}</span>
+          <span className="pl-4">{children}</span>
         </label>
         {Options && (
           <button
@@ -48,7 +60,13 @@ const AddonsItem = ({
   )
 }
 
-const CustomizeOptions = ({ title, CustomizationOptions }) => (
+const CustomizeOptions = ({
+  title,
+  CustomizationOptions,
+}: {
+  title: string
+  CustomizationOptions: React.ReactElement
+}) => (
   <div
     className={`border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8`}
     style={{ maxWidth: "21rem" }}
@@ -61,7 +79,15 @@ const CustomizeOptions = ({ title, CustomizationOptions }) => (
   </div>
 )
 
-const CustomizeBadge = ({ githubName, badgeOptions, onBadgeUpdate }) => {
+const CustomizeBadge = ({
+  githubName,
+  badgeOptions,
+  onBadgeUpdate,
+}: {
+  githubName: string
+  badgeOptions: BadgeOptions
+  onBadgeUpdate: (key: keyof BadgeOptions, val: string) => void
+}) => {
   return (
     <>
       <label htmlFor="badge-style">
@@ -124,7 +150,15 @@ const CustomizeBadge = ({ githubName, badgeOptions, onBadgeUpdate }) => {
   )
 }
 
-const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
+const CustomizeGithubStatsBase = ({
+  prefix,
+  options,
+  onUpdate,
+}: {
+  prefix: string
+  options: StatsType
+  onUpdate: (key: keyof StatsType, val: StatsType[keyof StatsType]) => void
+}) => (
   <>
     <label htmlFor={`${prefix}-theme`}>
       Theme:&nbsp;
@@ -188,8 +222,8 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
         type="number"
         min={1800}
         max={86400}
-        placeholder={1800}
-        defaultValue={options.cacheSeconds}
+        placeholder="1800"
+        defaultValue={options.cacheSeconds as number}
         onChange={e => onUpdate("cacheSeconds", e.target.value)}
       />
     </label>
@@ -201,19 +235,32 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
         placeholder="en"
         defaultValue={options.locale}
         onChange={e => onUpdate("locale", e.target.value)}
-        size="2"
+        size={2}
       />
     </label>
   </>
 )
 
-const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
+const CustomizeStreakStats = ({
+  prefix,
+  options,
+  onUpdate,
+}: {
+  prefix: string
+  options: StreakStatsType
+  onUpdate: (
+    key: keyof StreakStatsType,
+    val: StreakStatsType[keyof StreakStatsType]
+  ) => void
+}) => (
   <>
     <label htmlFor={`${prefix}-theme`}>
       Theme:&nbsp;
       <select
         id={`${prefix}-theme`}
-        onChange={({ target: { value } }) => onUpdate("theme", value)}
+        onChange={({ target: { value } }) =>
+          onUpdate("theme", value as StreakStatsType[keyof StreakStatsType])
+        }
         defaultValue={options.theme}
       >
         {Object.entries(STREAK_STATS_THEMES).map(([val, name]) => {
@@ -228,69 +275,77 @@ const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
   </>
 )
 
-const Addons = props => {
-  const [debounce, setDebounce] = useState(undefined)
-  const [badgeOptions, setBadgeOptions] = useState({
-    badgeStyle: props.data.badgeStyle,
-    badgeColor: props.data.badgeColor,
-    badgeLabel: props.data.badgeLabel,
+const Addons = ({
+  data,
+  social,
+  handleDataChange,
+  handleCheckChange,
+}: ProfileInfo &
+  ProfileDataHandle & { handleCheckChange: (key: string) => void }) => {
+  const [debounce, setDebounce] = useState<NodeJS.Timeout | undefined>(
+    undefined
+  )
+  const [badgeOptions, setBadgeOptions] = useState<BadgeOptions>({
+    badgeStyle: data.badgeStyle,
+    badgeColor: data.badgeColor,
+    badgeLabel: data.badgeLabel,
   })
 
   useEffect(() => {
     setBadgeOptions({
-      badgeStyle: props.data.badgeStyle,
-      badgeColor: props.data.badgeColor,
-      badgeLabel: props.data.badgeLabel,
+      badgeStyle: data.badgeStyle,
+      badgeColor: data.badgeColor,
+      badgeLabel: data.badgeLabel,
     })
-  }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
+  }, [data.badgeStyle, data.badgeColor, data.badgeLabel])
 
   const [githubStatsOptions, setGithubStatsOptions] = useState({
-    ...props.data.githubStatsOptions,
+    ...data.githubStatsOptions,
   })
 
   useEffect(() => {
     setGithubStatsOptions({
-      ...props.data.githubStatsOptions,
+      ...data.githubStatsOptions,
     })
-  }, [props.data.githubStatsOptions])
+  }, [data.githubStatsOptions])
 
   const [topLanguagesOptions, setTopLanguagesOptions] = useState({
-    ...props.data.topLanguagesOptions,
+    ...data.topLanguagesOptions,
   })
 
   useEffect(() => {
     setTopLanguagesOptions({
-      ...props.data.topLanguagesOptions,
+      ...data.topLanguagesOptions,
     })
-  }, [props.data.topLanguagesOptions])
+  }, [data.topLanguagesOptions])
 
   const [streakStatsOptions, setStreakStatsOptions] = useState({
-    ...props.data.streakStatsOptions,
+    ...data.streakStatsOptions,
   })
 
   useEffect(() => {
     setStreakStatsOptions({
-      ...props.data.streakStatsOptions,
+      ...data.streakStatsOptions,
     })
-  }, [props.data.streakStatsOptions])
+  }, [data.streakStatsOptions])
 
   const blogPostPorkflow = () => {
-    let payload = {
+    const payload = {
       dev: {
-        show: props.data.devDynamicBlogs,
-        username: props.social.dev,
+        show: data.devDynamicBlogs,
+        username: social.dev,
       },
       medium: {
-        show: props.data.mediumDynamicBlogs,
-        username: props.social.medium,
+        show: data.mediumDynamicBlogs,
+        username: social.medium,
       },
       rssurl: {
-        show: props.data.rssDynamicBlogs,
-        username: props.social.rssurl,
+        show: data.rssDynamicBlogs,
+        username: social.rssurl,
       },
     }
-    var actionContent = latestBlogs(payload)
-    var tempElement = document.createElement("a")
+    const actionContent = latestBlogs(payload)
+    const tempElement = document.createElement("a")
     tempElement.setAttribute(
       "href",
       "data:text/yaml;charset=utf-8," + encodeURIComponent(actionContent)
@@ -302,39 +357,50 @@ const Addons = props => {
     document.body.removeChild(tempElement)
   }
 
-  const onBadgeUpdate = (option, value) => {
+  const onBadgeUpdate = (option: keyof ProfileInfo["data"], value: string) => {
     const callback = () => {
-      let newVal =
+      const newVal =
         option === "badgeLabel" && value === "" ? "Profile views" : value
       setBadgeOptions({ ...badgeOptions, [option]: newVal })
-      props.handleDataChange(option, { target: { value: newVal } })
+      handleDataChange(option, {
+        target: { value: newVal },
+      } as React.ChangeEvent<HTMLInputElement>)
     }
-    clearTimeout(debounce)
+    clearTimeout(debounce!)
     setDebounce(setTimeout(callback, 300))
   }
 
-  const onStatsUpdate = (option, value) => {
+  const onStatsUpdate = (
+    option: keyof StatsType,
+    value: StatsType[keyof StatsType]
+  ) => {
     const newStatsOptions = { ...githubStatsOptions, [option]: value }
     setGithubStatsOptions(newStatsOptions)
-    props.handleDataChange("githubStatsOptions", {
+    handleDataChange("githubStatsOptions", ({
       target: { value: newStatsOptions },
-    })
+    } as unknown) as React.ChangeEvent<HTMLInputElement>)
   }
 
-  const onTopLangUpdate = (option, value) => {
+  const onTopLangUpdate = (
+    option: keyof StatsType,
+    value: StatsType[keyof StatsType]
+  ) => {
     const newLangOptions = { ...topLanguagesOptions, [option]: value }
     setTopLanguagesOptions(newLangOptions)
-    props.handleDataChange("topLanguagesOptions", {
+    handleDataChange("topLanguagesOptions", ({
       target: { value: newLangOptions },
-    })
+    } as unknown) as React.ChangeEvent<HTMLInputElement>)
   }
 
-  const onStreakStatsUpdate = (option, value) => {
+  const onStreakStatsUpdate = (
+    option: keyof StreakStatsType,
+    value: StreakStatsType[keyof StreakStatsType]
+  ) => {
     const newStreakStatsOptions = { ...streakStatsOptions, [option]: value }
     setStreakStatsOptions(newStreakStatsOptions)
-    props.handleDataChange("streakStatsOptions", {
+    handleDataChange("streakStatsOptions", ({
       target: { value: newStreakStatsOptions },
-    })
+    } as unknown) as React.ChangeEvent<HTMLInputElement>)
   }
 
   return (
@@ -344,14 +410,14 @@ const Addons = props => {
       </div>
       <AddonsItem
         inputId="visitors-count"
-        inputChecked={props.data.visitorsBadge}
-        onInputChange={() => props.handleCheckChange("visitorsBadge")}
+        inputChecked={data.visitorsBadge}
+        onInputChange={() => handleCheckChange("visitorsBadge")}
         Options={
           <CustomizeOptions
             title="Customize Badge"
             CustomizationOptions={
               <CustomizeBadge
-                githubName={props.social.github}
+                githubName={social.github}
                 badgeOptions={badgeOptions}
                 onBadgeUpdate={onBadgeUpdate}
               />
@@ -363,22 +429,22 @@ const Addons = props => {
       </AddonsItem>
       <AddonsItem
         inputId="github-profile-trophy"
-        inputChecked={props.data.githubProfileTrophy}
-        onInputChange={() => props.handleCheckChange("githubProfileTrophy")}
+        inputChecked={data.githubProfileTrophy}
+        onInputChange={() => handleCheckChange("githubProfileTrophy")}
       >
         display github trophy
       </AddonsItem>
       <AddonsItem
         inputId="github-stats"
-        inputChecked={props.data.githubStats}
-        onInputChange={() => props.handleCheckChange("githubStats")}
+        inputChecked={data.githubStats}
+        onInputChange={() => handleCheckChange("githubStats")}
         Options={
           <CustomizeOptions
             title="Customize Github Stats Card"
             CustomizationOptions={
               <CustomizeGithubStatsBase
                 prefix="stats"
-                options={githubStatsOptions}
+                options={githubStatsOptions as StatsType}
                 onUpdate={onStatsUpdate}
               />
             }
@@ -389,15 +455,15 @@ const Addons = props => {
       </AddonsItem>
       <AddonsItem
         inputId="top-languages"
-        inputChecked={props.data.topLanguages}
-        onInputChange={() => props.handleCheckChange("topLanguages")}
+        inputChecked={data.topLanguages}
+        onInputChange={() => handleCheckChange("topLanguages")}
         Options={
           <CustomizeOptions
             title="Customize Top Skills Card"
             CustomizationOptions={
               <CustomizeGithubStatsBase
                 prefix="top-lang"
-                options={topLanguagesOptions}
+                options={topLanguagesOptions as StatsType}
                 onUpdate={onTopLangUpdate}
               />
             }
@@ -408,15 +474,15 @@ const Addons = props => {
       </AddonsItem>
       <AddonsItem
         inputId="streak-stats"
-        inputChecked={props.data.streakStats}
-        onInputChange={() => props.handleCheckChange("streakStats")}
+        inputChecked={data.streakStats}
+        onInputChange={() => handleCheckChange("streakStats")}
         Options={
           <CustomizeOptions
             title="Customize Streak Stats Card"
             CustomizationOptions={
               <CustomizeStreakStats
                 prefix="streak-stats"
-                options={streakStatsOptions}
+                options={streakStatsOptions as StreakStatsType}
                 onUpdate={onStreakStatsUpdate}
               />
             }
@@ -427,38 +493,38 @@ const Addons = props => {
       </AddonsItem>
       <AddonsItem
         inputId="twitter-badge"
-        inputChecked={props.data.twitterBadge}
-        onInputChange={() => props.handleCheckChange("twitterBadge")}
+        inputChecked={data.twitterBadge}
+        onInputChange={() => handleCheckChange("twitterBadge")}
       >
         display twitter badge
       </AddonsItem>
       <AddonsItem
         inputId="dev-dynamic-blogs"
-        inputChecked={props.data.devDynamicBlogs}
-        onInputChange={() => props.handleCheckChange("devDynamicBlogs")}
+        inputChecked={data.devDynamicBlogs}
+        onInputChange={() => handleCheckChange("devDynamicBlogs")}
       >
         display latest dev.to blogs dynamically (GitHub Action)
       </AddonsItem>
       <AddonsItem
         inputId="medium-dynamic-blogs"
-        inputChecked={props.data.mediumDynamicBlogs}
-        onInputChange={() => props.handleCheckChange("mediumDynamicBlogs")}
+        inputChecked={data.mediumDynamicBlogs}
+        onInputChange={() => handleCheckChange("mediumDynamicBlogs")}
       >
         display latest medium blogs dynamically (GitHub Action)
       </AddonsItem>
       <AddonsItem
         inputId="rss-dynamic-blogs"
-        inputChecked={props.data.rssDynamicBlogs}
-        onInputChange={() => props.handleCheckChange("rssDynamicBlogs")}
+        inputChecked={data.rssDynamicBlogs}
+        onInputChange={() => handleCheckChange("rssDynamicBlogs")}
       >
         display latest blogs from your personal blog dynamically (GitHub Action)
       </AddonsItem>
 
-      {(props.data.devDynamicBlogs && props.social.dev) ||
-      (props.data.rssDynamicBlogs && props.social.rssurl) ||
-      (props.data.mediumDynamicBlogs &&
-        props.social.medium &&
-        isMediumUsernameValid(props.social.medium)) ? (
+      {(data.devDynamicBlogs && social.dev) ||
+      (data.rssDynamicBlogs && social.rssurl) ||
+      (data.mediumDynamicBlogs &&
+        social.medium &&
+        isMediumUsernameValid(social.medium)) ? (
         <div className="workflow">
           <div>
             download
@@ -467,7 +533,7 @@ const Addons = props => {
               onClick={blogPostPorkflow}
               onKeyDown={e => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
-              tabIndex="0"
+              tabIndex={0}
               style={{ cursor: "pointer", color: "#002ead" }}
             >
               {" "}

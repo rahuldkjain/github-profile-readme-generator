@@ -1,4 +1,4 @@
-import type { StatsType, StreakStatsType } from "../types"
+import type { StatsType, StreakStatsType } from "../@types"
 
 const githubStatsStylingQueryString = ({
   theme,

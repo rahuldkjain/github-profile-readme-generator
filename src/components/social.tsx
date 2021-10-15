@@ -1,6 +1,7 @@
-import React from "react"
+import * as React from "react"
+import type { ProfileSocialHandle } from "../@types"
 
-const Social = props => {
+const Social = (props: ProfileSocialHandle) => {
   return (
     <div className="px-2 sm:px-6 mb-4">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">

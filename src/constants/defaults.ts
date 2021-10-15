@@ -93,5 +93,6 @@ export const DEFAULT_SOCIAL = {
 }
 
 export const DEFAULT_SUPPORT = {
-    buyMeACoffee: ""
+  buyMeACoffee: "",
+  buyMeAKofi: "",
 }

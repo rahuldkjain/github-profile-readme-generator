@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react"
 import gsap from "gsap"
 const Loader = () => {
-  let arrow = useRef([])
+  const arrow = useRef<HTMLSpanElement[]>([])
   useEffect(() => {
-    var tl = new gsap.timeline({ repeat: -1 })
+    const tl = gsap.timeline({ repeat: -1 })
     tl.fromTo(
       arrow.current,
       {

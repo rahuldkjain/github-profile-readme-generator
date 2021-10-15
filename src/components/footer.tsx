@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import links from "../constants/page-links"
 import logo from "../images/mdg.png"
 import discord from "../images/Discord-Logo.png"
