@@ -593,7 +593,7 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
-  inkscape: "https://media.inkscape.org/static/images/inkscape-logo.svg",
+  inkscape: "https://media.inkscape.org/",
 }
 
 const initialSkillState = {}
