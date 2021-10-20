@@ -57,9 +57,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
+    "url": "git+https://github.com/rahuldkjain/github-profile-readme-generator.git"
   },
   "bugs": {
     "url": "https://github.com/rahuldkjain/github-profile-readme-generator/issues"
-  }
+  },
+  "homepage": "https://github.com/rahuldkjain/github-profile-readme-generator#readme",
+  "main": "gatsby-browser.js"
 }
