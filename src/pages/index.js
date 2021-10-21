@@ -292,7 +292,7 @@ const IndexPage = () => {
     tempElement.setAttribute(
       "href",
       `data:text/json;charset=utf-8,${encodeURIComponent(
-        JSON.stringify({ prefix, data, link, social, skills })
+        JSON.stringify({ prefix, data, link, social, skills, support })
       )}`
     )
     tempElement.setAttribute("download", "data.json")
@@ -367,6 +367,7 @@ const IndexPage = () => {
     setLink(DEFAULT_LINK)
     setSocial(DEFAULT_SOCIAL)
     setSkills(DEFAULT_SKILLS)
+    setSupport(DEFAULT_SUPPORT)
   }
 
   const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
@@ -396,6 +397,7 @@ const IndexPage = () => {
       setData(restoreData.data || DEFAULT_DATA)
       setLink(restoreData.link || DEFAULT_LINK)
       setSocial(restoreData.social || DEFAULT_SOCIAL)
+      setSupport(restoreData.support || DEFAULT_SUPPORT)
 
       const restoreDataSkills = mergeDefaultWithNewDataSkills(
         DEFAULT_SKILLS,
@@ -410,10 +412,12 @@ const IndexPage = () => {
 
   const handleFileInput = e => {
     const file = e.target.files[0]
-    const reader = new FileReader()
-    reader.readAsText(file, "UTF-8")
-    reader.onload = () => {
-      setRestore(reader.result)
+    if (file && file.type === "application/json") {
+      const reader = new FileReader()
+      reader.readAsText(file, "UTF-8")
+      reader.onload = () => {
+        setRestore(reader.result)
+      }
     }
   }
 
