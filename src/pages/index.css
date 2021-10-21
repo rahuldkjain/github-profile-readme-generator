@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+
 :root {
   --grey-05: #f5f6f7;
   --grey-10: #dfdfe2;
@@ -25,12 +26,46 @@ body {
   color: var(--grey-90);
 }
 
-[type="checkbox"] {
-  -webkit-box-shadow: 0 1px 1px var(--grey-90) !important;
-  -moz-box-shadow: 0 1px 1px var(--grey-90) !important;
-  box-shadow: 0 1px 1px var(--grey-90) !important;
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.checkbox-label {
   cursor: pointer;
-  border-radius: 0px !important;
+}
+.checkbox-label:hover .tooltiptext {
+  visibility: visible;
+}
+.checkbox-label__input {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox-label__control {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: #f7fafc;
+  border: 2px solid var(--grey-90);
+  transform: scale(0.75);
+}
+.checkbox-label__input:checked + .checkbox-label__control:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-purple);
+}
+.checkbox-label__input:hover + .checkbox-label__control,
+.checkbox-label__input:focus + .checkbox-label__control {
+  box-shadow: 0 0 0 10px rgba(10, 10, 35, .1);
 }
 
 .section {
@@ -79,11 +114,6 @@ a {
   padding: 2% 5%;
   font-size: 14px;
 }
-
-.skillCheckboxLabel:hover .tooltiptext {
-  visibility: visible;
-}
-
 .tooltiptext::after {
   content: " ";
   position: absolute;
@@ -95,6 +125,7 @@ a {
   border-style: solid;
   border-color: transparent var(--grey-90) transparent transparent;
 }
+
 .workflow {
   margin-left: 2%;
   padding: 1%;
@@ -120,9 +151,11 @@ a {
   .tooltiptext {
     display: none;
   }
+
   .warning {
     font-size: 10px;
   }
+
   .workflow {
     font-size: 12px;
   }

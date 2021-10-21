@@ -50,14 +50,18 @@ exports[`Skills renders correctly 1`] = `
         key="javascript"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="javascript"
         >
           <input
             checked={true}
+            className="checkbox-label__input"
             id="javascript"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <img
             alt="javascript"
@@ -90,13 +94,17 @@ exports[`Skills renders correctly 1`] = `
         key="react"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="react"
         >
           <input
+            className="checkbox-label__input"
             id="react"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <img
             alt="react"
@@ -115,13 +123,17 @@ exports[`Skills renders correctly 1`] = `
         key="svelte"
       >
         <label
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="checkbox-label flex items-center justify-start"
           htmlFor="svelte"
         >
           <input
+            className="checkbox-label__input"
             id="svelte"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <img
             alt="svelte"

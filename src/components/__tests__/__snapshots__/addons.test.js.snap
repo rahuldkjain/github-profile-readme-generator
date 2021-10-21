@@ -100,6 +100,24 @@ exports[`Addons renders correctly 1`] = `
     display top skills
   </AddonsItem>
   <AddonsItem
+    Options={
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeStreakStats
+            onUpdate={[Function]}
+            options={Object {}}
+            prefix="streak-stats"
+          />
+        }
+        title="Customize Streak Stats Card"
+      />
+    }
+    inputId="streak-stats"
+    onInputChange={[Function]}
+  >
+    display github streak stats
+  </AddonsItem>
+  <AddonsItem
     inputChecked={false}
     inputId="twitter-badge"
     onInputChange={[Function]}
@@ -339,14 +357,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="visitors-count"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="visitors-count"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -510,14 +532,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-profile-trophy"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-profile-trophy"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -558,14 +584,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-stats"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-stats"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -644,14 +674,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="top-languages"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="top-languages"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -700,6 +734,84 @@ exports[`Addons should render Customize Badges 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="checkbox-label flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            className="checkbox-label__input"
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
       inputChecked={false}
       inputId="twitter-badge"
       onInputChange={[Function]}
@@ -708,14 +820,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="twitter-badge"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="twitter-badge"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -734,14 +850,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="dev-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="dev-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -760,14 +880,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="medium-dynamic-blogs"
         >
           <input
             checked="some-medium-blogs-value"
+            className="checkbox-label__input"
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -786,14 +910,18 @@ exports[`Addons should render Customize Badges 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="rss-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="rss-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -931,14 +1059,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="visitors-count"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="visitors-count"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -995,14 +1127,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-profile-trophy"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-profile-trophy"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1043,14 +1179,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-stats"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-stats"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1254,14 +1394,19 @@ exports[`Addons should render Customize Github stats card 1`] = `
                 />
               </label>
               <label
+                className="checkbox-label"
                 htmlFor="stats-hide-border"
               >
                 Hide border: 
                 <input
                   checked={false}
+                  className="checkbox-label__input"
                   id="stats-hide-border"
                   onChange={[Function]}
                   type="checkbox"
+                />
+                <span
+                  class="checkbox-label__control"
                 />
               </label>
               <label
@@ -1327,14 +1472,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="top-languages"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="top-languages"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1383,6 +1532,84 @@ exports[`Addons should render Customize Github stats card 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="checkbox-label flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            className="checkbox-label__input"
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
       inputChecked={false}
       inputId="twitter-badge"
       onInputChange={[Function]}
@@ -1391,14 +1618,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="twitter-badge"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="twitter-badge"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1417,14 +1648,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="dev-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="dev-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1443,14 +1678,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="medium-dynamic-blogs"
         >
           <input
             checked="some-medium-blogs-value"
+            className="checkbox-label__input"
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1469,14 +1708,18 @@ exports[`Addons should render Customize Github stats card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="rss-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="rss-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1614,14 +1857,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="visitors-count"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="visitors-count"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1678,14 +1925,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-profile-trophy"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-profile-trophy"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1726,14 +1977,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="github-stats"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="github-stats"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1812,14 +2067,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="top-languages"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="top-languages"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2023,14 +2282,19 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                 />
               </label>
               <label
+                className="checkbox-label"
                 htmlFor="top-lang-hide-border"
               >
                 Hide border: 
                 <input
                   checked={false}
+                  className="checkbox-label__input"
                   id="top-lang-hide-border"
                   onChange={[Function]}
                   type="checkbox"
+                />
+                <span
+                  class="checkbox-label__control"
                 />
               </label>
               <label
@@ -2066,6 +2330,84 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
       </CustomizeOptions>
     </AddonsItem>
     <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="checkbox-label flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            className="checkbox-label__input"
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
       inputChecked={false}
       inputId="twitter-badge"
       onInputChange={[Function]}
@@ -2074,14 +2416,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="twitter-badge"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="twitter-badge"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2100,14 +2446,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="dev-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="dev-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2126,14 +2476,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="medium-dynamic-blogs"
         >
           <input
             checked="some-medium-blogs-value"
+            className="checkbox-label__input"
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2152,14 +2506,18 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         className="py-2 flex justify-start items-center text-sm sm:text-lg"
       >
         <label
-          className="cursor-pointer flex items-center"
+          className="checkbox-label flex items-center"
           htmlFor="rss-dynamic-blogs"
         >
           <input
             checked={false}
+            className="checkbox-label__input"
             id="rss-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
+          />
+          <span
+            class="checkbox-label__control"
           />
           <span
             className="pl-4"

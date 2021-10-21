@@ -12,14 +12,16 @@ const Skills = props => {
       <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
         <label
           htmlFor={skill}
-          className="skillCheckboxLabel cursor-pointer flex items-center justify-start"
+          className="checkbox-label flex items-center justify-start"
         >
           <input
             id={skill}
             type="checkbox"
+            className="checkbox-label__input"
             checked={props.skills[skill]}
             onChange={event => props.handleSkillsChange(skill)}
           />
+          <span class="checkbox-label__control" />
           <img
             className="ml-4 w-8 h-8 sm:w-10 sm:h-10"
             src={icons[skill]}
