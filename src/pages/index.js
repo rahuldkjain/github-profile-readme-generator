@@ -278,7 +278,7 @@ const IndexPage = () => {
     tempElement.setAttribute(
       "href",
       "data:text/markdown;charset=utf-8," +
-        encodeURIComponent(markdownContent.innerText)
+      encodeURIComponent(markdownContent.innerText)
     )
     tempElement.setAttribute("download", "README.md")
     tempElement.style.display = "none"
@@ -368,6 +368,7 @@ const IndexPage = () => {
     setSocial(DEFAULT_SOCIAL)
     setSkills(DEFAULT_SKILLS)
     setSupport(DEFAULT_SUPPORT)
+    setRestore("")
   }
 
   const mergeDefaultWithNewDataSkills = (defaultSkills, newSkills) => {
@@ -459,7 +460,7 @@ const IndexPage = () => {
               data.githubStats ||
               data.topLanguages ||
               data.streakStats) &&
-            !social.github ? (
+              !social.github ? (
               <div className="warning">
                 * Please add github username to use these add-ons
               </div>
