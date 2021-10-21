@@ -80,9 +80,7 @@ const Skills = props => {
             </div>
           <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
             {categorizedSkills[key].skills   
-            .filter(skill => {
-              return skill.includes(search.toLowerCase())
-            })
+            .filter(skill => skill.includes(search.toLowerCase()))
             .map(skill => createSkill(skill))}
           </div>
         </div>
