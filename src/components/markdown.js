@@ -1,11 +1,11 @@
 import React from "react"
-import { isMediumUsernameValid } from "../utils/validation"
 import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
-  topLanguagesLinkGenerator,
   streakStatsLinkGenerator,
+  topLanguagesLinkGenerator,
 } from "../utils/link-generators"
+import { isMediumUsernameValid } from "../utils/validation"
 const Title = props => {
   if (props.prefix && props.title) {
     return (
@@ -168,7 +168,8 @@ const isSocial = social => {
     social.hackerearth ||
     social.geeks_for_geeks ||
     social.discord ||
-    social.rssurl
+    social.rssurl ||
+    social.hashnode
   )
 }
 const DisplaySkills = props => {
@@ -279,7 +280,7 @@ const DisplaySupport = props => {
 }
 const Markdown = props => {
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
 
   return (
     <div id="markdown-content" className="break-words">
@@ -471,6 +472,13 @@ const Markdown = props => {
       </>
       <>
         <DisplaySocial
+          base="https://hashnode.com"
+          icon={icon_base_url + "hashnode.svg"}
+          username={props.social.hashnode}
+        />
+      </>
+      <>
+        <DisplaySocial
           base="https://www.youtube.com/c"
           icon={icon_base_url + "youtube.svg"}
           username={props.social.youtube}
@@ -493,21 +501,21 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://codeforces.com/profile"
-          icon={icon_base_url+"codeforces.svg"}
+          icon={icon_base_url + "codeforces.svg"}
           username={props.social.codeforces}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>

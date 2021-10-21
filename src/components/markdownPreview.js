@@ -2,8 +2,8 @@ import React from "react"
 import { icons, skills, skillWebsites } from "../constants/skills"
 import {
   githubStatsLinkGenerator,
-  topLanguagesLinkGenerator,
   streakStatsLinkGenerator,
+  topLanguagesLinkGenerator,
 } from "../utils/link-generators"
 
 export const TitlePreview = props => {
@@ -123,7 +123,7 @@ export const DisplaySocial = props => {
 export const SocialPreview = props => {
   let viewSocial = false
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
   Object.keys(props.social).forEach(key => {
     if (props.social[key] && key != "github") viewSocial = true
   })
@@ -216,6 +216,13 @@ export const SocialPreview = props => {
       </>
       <>
         <DisplaySocial
+          base="https://hashnode.com"
+          icon={icon_base_url + "hashnode.svg"}
+          username={props.social.hashnode}
+        />
+      </>
+      <>
+        <DisplaySocial
           base="https://www.youtube.com/c"
           icon={icon_base_url + "youtube.svg"}
           username={props.social.youtube}
@@ -245,14 +252,14 @@ export const SocialPreview = props => {
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>

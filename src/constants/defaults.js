@@ -90,8 +90,9 @@ export const DEFAULT_SOCIAL = {
   geeks_for_geeks: "",
   discord: "",
   rssurl: "",
+  hashnode: "",
 }
 
 export const DEFAULT_SUPPORT = {
-    buyMeACoffee: ""
+  buyMeACoffee: "",
 }
