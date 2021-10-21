@@ -21,7 +21,7 @@ const categorizedSkills = {
       "haskell",
       "coffeescript",
       "elixir",
-      "erlang",
+      "erlang"
     ],
   },
 
@@ -51,6 +51,7 @@ const categorizedSkills = {
       "qt",
       "wx_widgets",
       "ember",
+      "handlebars"
     ],
   },
 
@@ -257,10 +258,14 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   express:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-  go: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
-  graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+  go: 
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+  graphql:
+     "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
+  handlebars: 
+  "https://handlebarsjs.com/images/handlebars_logo.png",
   html5:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
   hugo: "https://api.iconify.design/logos-hugo.svg",
@@ -287,7 +292,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
   photoshop:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
-  xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
+  xd: 
+    "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   php:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
   perl: "https://api.iconify.design/logos-perl.svg",
@@ -470,6 +476,7 @@ const skillWebsites = {
   go: "https://golang.org",
   graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
+  handlebars: "https://handlebarsjs.com/",
   html5: "https://www.w3.org/html/",
   hugo: "https://gohugo.io/",
   java: "https://www.java.com",
