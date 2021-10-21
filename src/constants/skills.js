@@ -22,6 +22,7 @@ const categorizedSkills = {
       "coffeescript",
       "elixir",
       "erlang",
+      "nim",
     ],
   },
 
@@ -442,6 +443,7 @@ const icons = {
   ifttt: "https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg",
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
+  nim: "https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg",
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
   mssql: "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
   middleman:
@@ -600,6 +602,7 @@ const skillWebsites = {
   mssql: "https://www.microsoft.com/en-us/sql-server",
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
+  nim: "https://nim-lang.org/",
   middleman: "https://middlemanapp.com/",
 }
 
