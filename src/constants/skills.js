@@ -177,7 +177,7 @@ const categorizedSkills = {
       "framer",
       "matlab",
       "postman",
-      "inkscape"
+      "inkscape",
     ],
   },
 
