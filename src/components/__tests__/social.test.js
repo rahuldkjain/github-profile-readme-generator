@@ -1,7 +1,6 @@
-import React from "react"
 import { shallow } from "enzyme"
 import toJson from "enzyme-to-json"
-
+import React from "react"
 import Social from "../social"
 
 describe("Social", () => {
@@ -31,6 +30,7 @@ describe("Social", () => {
       geeks_for_geeks: "geeks_for_geeks",
       discord: "discord",
       rssurl: "rssurl",
+      hashnode: "hashnode",
     },
     handleSocialChange: jest.fn().mockReturnValue({}),
   }
