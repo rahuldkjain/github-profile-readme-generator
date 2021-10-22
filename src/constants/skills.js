@@ -147,7 +147,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar",
+      "quasar",room
     ],
   },
 
@@ -593,7 +593,7 @@ const skillWebsites = {
   postman: "https://postman.com",
   erlang: "https://www.erlang.org/",
   middleman: "https://middlemanapp.com/",
-  inkscape: "https://media.inkscape.org/",
+  inkscape: "https://inkscape.org/",
 }
 
 const initialSkillState = {}
