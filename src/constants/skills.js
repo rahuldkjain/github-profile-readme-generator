@@ -114,7 +114,7 @@ const categorizedSkills = {
 
   data_visualization: {
     title: "Data Visualization",
-    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana"],
+    skills: ["d3js", "chartjs", "canvasjs", "kibana", "grafana", "r"],
   },
 
   devops: {
@@ -322,6 +322,8 @@ const icons = {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
   redux:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+  r:
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg",
   webpack:
     "https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg",
   flutter: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg",
@@ -511,6 +513,7 @@ const skillWebsites = {
   typescript: "https://www.typescriptlang.org/",
   linux: "https://www.linux.org/",
   redux: "https://redux.js.org",
+  r: "https://www.r-project.org/",
   webpack: "https://webpack.js.org",
   flutter: "https://flutter.dev",
   dart: "https://dart.dev",
