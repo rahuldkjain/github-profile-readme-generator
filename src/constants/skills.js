@@ -147,7 +147,7 @@ const categorizedSkills = {
       "codeigniter",
       "rails",
       "flask",
-      "quasar",room
+      "quasar",
     ],
   },
 
