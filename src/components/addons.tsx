@@ -280,7 +280,7 @@ const Addons = ({
   social,
   handleDataChange,
   handleCheckChange,
-}: ProfileInfo &
+}: Pick<ProfileInfo, "social"> &
   ProfileDataHandle & { handleCheckChange: (key: string) => void }) => {
   const [debounce, setDebounce] = useState<NodeJS.Timeout | undefined>(
     undefined

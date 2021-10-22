@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    "^.+\\.jsx?$": `<rootDir>/jest-preprocess.js`,
+    "^.+\\.[jt]sx?$": "<rootDir>/jest-preprocess.js",
   },
   moduleNameMapper: {
     ".+\\.(css|styl|less|sass|scss)$": `identity-obj-proxy`,
@@ -10,7 +10,7 @@ module.exports = {
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
   globals: {
     __PATH_PREFIX__: ``,
-    __BASE_PATH__: ``, 
+    __BASE_PATH__: ``,
   },
   setupFiles: [`<rootDir>/loadershim.js`],
   setupFilesAfterEnv: ["<rootDir>/setupTests.js"],

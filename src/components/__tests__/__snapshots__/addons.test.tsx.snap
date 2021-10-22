@@ -100,6 +100,24 @@ exports[`Addons renders correctly 1`] = `
     display top skills
   </AddonsItem>
   <AddonsItem
+    Options={
+      <CustomizeOptions
+        CustomizationOptions={
+          <CustomizeStreakStats
+            onUpdate={[Function]}
+            options={Object {}}
+            prefix="streak-stats"
+          />
+        }
+        title="Customize Streak Stats Card"
+      />
+    }
+    inputId="streak-stats"
+    onInputChange={[Function]}
+  >
+    display github streak stats
+  </AddonsItem>
+  <AddonsItem
     inputChecked={false}
     inputId="twitter-badge"
     onInputChange={[Function]}
@@ -147,7 +165,7 @@ exports[`Addons should display workflow details if devDynamicBlogs and dev socia
           "cursor": "pointer",
         }
       }
-      tabIndex="0"
+      tabIndex={0}
     >
        
       blog-post-workflow.yml
@@ -188,7 +206,7 @@ exports[`Addons should display workflow details if mediumDynamicBlogs, medium so
           "cursor": "pointer",
         }
       }
-      tabIndex="0"
+      tabIndex={0}
     >
        
       blog-post-workflow.yml
@@ -229,7 +247,7 @@ exports[`Addons should display workflow details if rssDynamicBlogs and rss url d
           "cursor": "pointer",
         }
       }
-      tabIndex="0"
+      tabIndex={0}
     >
        
       blog-post-workflow.yml
@@ -279,7 +297,7 @@ exports[`Addons should render Customize Badges 1`] = `
         "titleColor": "",
       },
       "helpWith": "",
-      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "mediumDynamicBlogs": true,
       "rssDynamicBlogs": false,
       "subtitle": "A passionate frontend developer from India",
       "title": "",
@@ -374,7 +392,7 @@ exports[`Addons should render Customize Badges 1`] = `
               className="transform scale-100 md:scale-125"
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M3.404 12.596a6.5 6.5 0 119.192-9.192 6.5 6.5 0 01-9.192 9.192zM2.344 2.343a8 8 0 1011.313 11.314A8 8 0 002.343 2.343zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z\\"></path>",
                 }
               }
               fill="currentColor"
@@ -387,7 +405,7 @@ exports[`Addons should render Customize Badges 1`] = `
                   "verticalAlign": "text-bottom",
                 }
               }
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
               width={16}
             />
           </XCircleIcon>
@@ -700,6 +718,80 @@ exports[`Addons should render Customize Badges 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
       inputChecked={false}
       inputId="twitter-badge"
       onInputChange={[Function]}
@@ -752,7 +844,7 @@ exports[`Addons should render Customize Badges 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
-      inputChecked="some-medium-blogs-value"
+      inputChecked={true}
       inputId="medium-dynamic-blogs"
       onInputChange={[Function]}
     >
@@ -764,7 +856,7 @@ exports[`Addons should render Customize Badges 1`] = `
           htmlFor="medium-dynamic-blogs"
         >
           <input
-            checked="some-medium-blogs-value"
+            checked={true}
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
@@ -819,7 +911,7 @@ exports[`Addons should render Customize Badges 1`] = `
               "cursor": "pointer",
             }
           }
-          tabIndex="0"
+          tabIndex={0}
         >
            
           blog-post-workflow.yml
@@ -871,7 +963,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
         "titleColor": "",
       },
       "helpWith": "",
-      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "mediumDynamicBlogs": true,
       "rssDynamicBlogs": false,
       "subtitle": "A passionate frontend developer from India",
       "title": "",
@@ -1078,7 +1170,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               className="transform scale-100 md:scale-125"
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M3.404 12.596a6.5 6.5 0 119.192-9.192 6.5 6.5 0 01-9.192 9.192zM2.344 2.343a8 8 0 1011.313 11.314A8 8 0 002.343 2.343zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z\\"></path>",
                 }
               }
               fill="currentColor"
@@ -1091,7 +1183,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
                   "verticalAlign": "text-bottom",
                 }
               }
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
               width={16}
             />
           </XCircleIcon>
@@ -1161,56 +1253,67 @@ exports[`Addons should render Customize Github stats card 1`] = `
                   onChange={[Function]}
                 >
                   <option
+                    key="none"
                     value="none"
                   >
                     none
                   </option>
                   <option
+                    key="dark"
                     value="dark"
                   >
                     Dark
                   </option>
                   <option
+                    key="radical"
                     value="radical"
                   >
                     Radical
                   </option>
                   <option
+                    key="merko"
                     value="merko"
                   >
                     Merko
                   </option>
                   <option
+                    key="gruvbox"
                     value="gruvbox"
                   >
                     Gruvbox
                   </option>
                   <option
+                    key="tokyonight"
                     value="tokyonight"
                   >
                     Tokyonight
                   </option>
                   <option
+                    key="onedark"
                     value="onedark"
                   >
                     Onedark
                   </option>
                   <option
+                    key="cobalt"
                     value="cobalt"
                   >
                     Cobalt
                   </option>
                   <option
-                    value="synthwave"
+                    key="synthware"
+                    value="synthware"
                   >
-                    Synthwave
+                    Synthware
                   </option>
                   <option
+                    key="highcontrast"
                     value="highcontrast"
                   >
-                    Highcontrast
+                    HighContrast
                   </option>
                   <option
+                    key="dracula"
                     value="dracula"
                   >
                     Dracula
@@ -1274,7 +1377,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
                   max={86400}
                   min={1800}
                   onChange={[Function]}
-                  placeholder={1800}
+                  placeholder="1800"
                   type="number"
                 />
               </label>
@@ -1287,7 +1390,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
                   id="stats-locale"
                   onChange={[Function]}
                   placeholder="en"
-                  size="2"
+                  size={2}
                   type="text"
                 />
               </label>
@@ -1383,6 +1486,80 @@ exports[`Addons should render Customize Github stats card 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
+    </AddonsItem>
+    <AddonsItem
       inputChecked={false}
       inputId="twitter-badge"
       onInputChange={[Function]}
@@ -1435,7 +1612,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
-      inputChecked="some-medium-blogs-value"
+      inputChecked={true}
       inputId="medium-dynamic-blogs"
       onInputChange={[Function]}
     >
@@ -1447,7 +1624,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
           htmlFor="medium-dynamic-blogs"
         >
           <input
-            checked="some-medium-blogs-value"
+            checked={true}
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
@@ -1502,7 +1679,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               "cursor": "pointer",
             }
           }
-          tabIndex="0"
+          tabIndex={0}
         >
            
           blog-post-workflow.yml
@@ -1554,7 +1731,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         "titleColor": "",
       },
       "helpWith": "",
-      "mediumDynamicBlogs": "some-medium-blogs-value",
+      "mediumDynamicBlogs": true,
       "rssDynamicBlogs": false,
       "subtitle": "A passionate frontend developer from India",
       "title": "",
@@ -1847,7 +2024,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               className="transform scale-100 md:scale-125"
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<path d=\\"M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z\\"></path><path fill-rule=\\"evenodd\\" d=\\"M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z\\"></path>",
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M3.404 12.596a6.5 6.5 0 119.192-9.192 6.5 6.5 0 01-9.192 9.192zM2.344 2.343a8 8 0 1011.313 11.314A8 8 0 002.343 2.343zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z\\"></path>",
                 }
               }
               fill="currentColor"
@@ -1860,7 +2037,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                   "verticalAlign": "text-bottom",
                 }
               }
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
               width={16}
             />
           </XCircleIcon>
@@ -1930,56 +2107,67 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                   onChange={[Function]}
                 >
                   <option
+                    key="none"
                     value="none"
                   >
                     none
                   </option>
                   <option
+                    key="dark"
                     value="dark"
                   >
                     Dark
                   </option>
                   <option
+                    key="radical"
                     value="radical"
                   >
                     Radical
                   </option>
                   <option
+                    key="merko"
                     value="merko"
                   >
                     Merko
                   </option>
                   <option
+                    key="gruvbox"
                     value="gruvbox"
                   >
                     Gruvbox
                   </option>
                   <option
+                    key="tokyonight"
                     value="tokyonight"
                   >
                     Tokyonight
                   </option>
                   <option
+                    key="onedark"
                     value="onedark"
                   >
                     Onedark
                   </option>
                   <option
+                    key="cobalt"
                     value="cobalt"
                   >
                     Cobalt
                   </option>
                   <option
-                    value="synthwave"
+                    key="synthware"
+                    value="synthware"
                   >
-                    Synthwave
+                    Synthware
                   </option>
                   <option
+                    key="highcontrast"
                     value="highcontrast"
                   >
-                    Highcontrast
+                    HighContrast
                   </option>
                   <option
+                    key="dracula"
                     value="dracula"
                   >
                     Dracula
@@ -2043,7 +2231,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                   max={86400}
                   min={1800}
                   onChange={[Function]}
-                  placeholder={1800}
+                  placeholder="1800"
                   type="number"
                 />
               </label>
@@ -2056,7 +2244,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                   id="top-lang-locale"
                   onChange={[Function]}
                   placeholder="en"
-                  size="2"
+                  size={2}
                   type="text"
                 />
               </label>
@@ -2064,6 +2252,80 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
           </div>
         </div>
       </CustomizeOptions>
+    </AddonsItem>
+    <AddonsItem
+      Options={
+        <CustomizeOptions
+          CustomizationOptions={
+            <CustomizeStreakStats
+              onUpdate={[Function]}
+              options={Object {}}
+              prefix="streak-stats"
+            />
+          }
+          title="Customize Streak Stats Card"
+        />
+      }
+      inputId="streak-stats"
+      onInputChange={[Function]}
+    >
+      <div
+        className="py-2 flex justify-start items-center text-sm sm:text-lg"
+      >
+        <label
+          className="cursor-pointer flex items-center"
+          htmlFor="streak-stats"
+        >
+          <input
+            id="streak-stats"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="pl-4"
+          >
+            display github streak stats
+          </span>
+        </label>
+        <button
+          className="flex ml-3 focus:bg-gray-400"
+          id="streak-stats-open-btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "none",
+            }
+          }
+        >
+          <ToolsIcon
+            className="transform scale-100 md:scale-125"
+            size={16}
+            verticalAlign="text-bottom"
+          >
+            <svg
+              aria-hidden="true"
+              className="transform scale-100 md:scale-125"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 16 16"
+              width={16}
+            />
+          </ToolsIcon>
+        </button>
+      </div>
     </AddonsItem>
     <AddonsItem
       inputChecked={false}
@@ -2118,7 +2380,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
       </div>
     </AddonsItem>
     <AddonsItem
-      inputChecked="some-medium-blogs-value"
+      inputChecked={true}
       inputId="medium-dynamic-blogs"
       onInputChange={[Function]}
     >
@@ -2130,7 +2392,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
           htmlFor="medium-dynamic-blogs"
         >
           <input
-            checked="some-medium-blogs-value"
+            checked={true}
             id="medium-dynamic-blogs"
             onChange={[Function]}
             type="checkbox"
@@ -2185,7 +2447,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               "cursor": "pointer",
             }
           }
-          tabIndex="0"
+          tabIndex={0}
         >
            
           blog-post-workflow.yml

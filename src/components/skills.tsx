@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { icons, categorizedSkills, categories } from "../constants/skills"
+import { icons, categorizedSkills } from "../constants/skills"
 import { SearchIcon, XIcon } from "@primer/octicons-react"
-import type { ProfileSkillsHandle, Skill } from "../@types"
+import type { ProfileSkillsHandle, Skill, Category } from "../@types"
 
 const Skills = (props: ProfileSkillsHandle) => {
   const [search, setSearch] = useState("")
@@ -77,7 +77,7 @@ const Skills = (props: ProfileSkillsHandle) => {
         </div>
       </div>
 
-      {categories
+      {(Object.keys(categorizedSkills) as Category[])
         .filter(category => {
           const filtered = ((categorizedSkills[category]
             .skills as unknown) as Skill[]).filter(skill => {
@@ -100,7 +100,7 @@ const Skills = (props: ProfileSkillsHandle) => {
           </div>
         ))}
       <span className="flex justify-center text-gray-900">
-        {categories.filter(category => {
+        {(Object.keys(categorizedSkills) as Category[]).filter(category => {
           const filtered = ((categorizedSkills[category]
             .skills as unknown) as Skill[]).filter(skill => {
             return skill.includes(search.toLowerCase())

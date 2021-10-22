@@ -1,13 +1,13 @@
 import React from "react"
 import { shallow } from "enzyme"
 import toJson from "enzyme-to-json"
-
+import type { ProfileInfo } from "../../@types"
 import Social from "../social"
 
 describe("Social", () => {
   const mockEvent = { target: { value: "This is a mock event" } }
   const props = {
-    social: {
+    social: ({
       github: "github ",
       twitter: "twitter",
       dev: "dev",
@@ -31,7 +31,7 @@ describe("Social", () => {
       geeks_for_geeks: "geeks_for_geeks",
       discord: "discord",
       rssurl: "rssurl",
-    },
+    } as unknown) as ProfileInfo["social"],
     handleSocialChange: jest.fn().mockReturnValue({}),
   }
   it("renders correctly", () => {

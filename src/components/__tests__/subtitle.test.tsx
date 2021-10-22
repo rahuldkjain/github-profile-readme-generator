@@ -1,7 +1,7 @@
 import React from "react"
 import { shallow } from "enzyme"
 import toJson from "enzyme-to-json"
-
+import type { ProfileInfo } from "../../@types"
 import Subtitle from "../subtitle"
 
 describe("Subtitle", () => {
@@ -9,7 +9,7 @@ describe("Subtitle", () => {
   const props = {
     data: {
       subtitle: "A frontend developer",
-    },
+    } as ProfileInfo["data"],
     handleDataChange: jest.fn().mockReturnValue({}),
   }
 

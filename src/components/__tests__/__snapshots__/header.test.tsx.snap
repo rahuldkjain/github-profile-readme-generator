@@ -34,7 +34,6 @@ exports[`Header renders correctly 1`] = `
       >
         <StarIcon
           className="px-1 w-6 star"
-          id="star-icon"
           size={16}
           verticalAlign="text-bottom"
         />
@@ -56,7 +55,6 @@ exports[`Header renders correctly 1`] = `
       >
         <RepoForkedIcon
           className="px-1 w-6 fork"
-          id="fork-icon"
           size={16}
           verticalAlign="text-bottom"
         />
