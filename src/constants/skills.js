@@ -124,7 +124,7 @@ const categorizedSkills = {
 
   baas: {
     title: 'Backend as a Service(BaaS)',
-    skills: ['firebase', 'appwrite', 'amplify', 'heroku'],
+    skills: ['firebase', 'appwrite', 'amplify', 'heroku', 'supabase'],
   },
 
   framework: {
@@ -285,6 +285,7 @@ const icons = {
     'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
   firebase: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
   amplify: 'https://docs.amplify.aws/assets/logo-dark.svg',
+  supabase: 'https://raw.githubusercontent.com/supabase/supabase/cc9f746d624b6d5cc66a83e679831b950c4e2d08/www/public/brand-assets/supabase-logo-icon.svg',
   hive: 'https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg',
   realm:
     'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
@@ -448,6 +449,7 @@ const skillWebsites = {
   couchdb: 'https://couchdb.apache.org/',
   firebase: 'https://firebase.google.com/',
   amplify: 'https://aws.amazon.com/amplify/',
+  supabase: 'https://supabase.io/',
   hive: 'https://hive.apache.org/',
   realm: 'https://realm.io/',
   gatsby: 'https://www.gatsbyjs.com/',
