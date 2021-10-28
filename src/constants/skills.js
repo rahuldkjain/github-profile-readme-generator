@@ -89,7 +89,14 @@ const categorizedSkills = {
 
   ai: {
     title: "AI/ML",
-    skills: ["tensorflow", "pytorch", "pandas", "seaborn", "opencv", "scikit_learn"],
+    skills: [
+      "tensorflow",
+      "pytorch",
+      "pandas",
+      "seaborn",
+      "opencv",
+      "scikit_learn",
+    ],
   },
 
   database: {
@@ -346,7 +353,8 @@ const icons = {
     "https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg",
   bash: "https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg",
   pytorch: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg",
-  pandas: "https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg",
+  pandas:
+    "https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg",
   seaborn: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
   opencv: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg",
   illustrator:
@@ -382,7 +390,7 @@ const icons = {
   gridsome: "https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg",
   nuxtjs: "https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg",
   jekyll: "https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg",
-  nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-3.svg",
+  nextjs: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
   cockroachdb: "https://cdn.worldvectorlogo.com/logos/cockroachdb.svg",
