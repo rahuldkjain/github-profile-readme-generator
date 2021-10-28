@@ -134,7 +134,7 @@ const GitHubStats = ({ show, github, options }) => {
   if (show) {
     return (
       <>
-        {`<p>&nbsp;<img align="center" src="${githubStatsLinkGenerator({
+        {`<p align="center">&nbsp;<img src="${githubStatsLinkGenerator({
           github: github,
           options,
         })}" alt="${github}" /></p>`}
@@ -215,7 +215,7 @@ const DisplayTopLanguages = props => {
     if (!props.showStats) {
       return (
         <>
-          {`<p><img align="center" src="${topLanguagesLinkGenerator({
+          {`<p align="center"><img src="${topLanguagesLinkGenerator({
             github: props.github,
             options: props.options,
           })}" alt="${props.github}" /></p>`}
@@ -241,7 +241,7 @@ const DisplayStreakStats = props => {
   if (props.show) {
     return (
       <>
-        {`<p><img align="center" src="${streakStatsLinkGenerator({
+        {`<p align="center"><img src="${streakStatsLinkGenerator({
           github: props.github,
           options: props.options,
         })}" alt="${props.github}" /></p>`}
