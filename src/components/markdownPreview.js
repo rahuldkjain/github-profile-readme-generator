@@ -107,10 +107,11 @@ export const WorkPreview = props => {
 
 export const DisplaySocial = props => {
   if (props.username) {
+    let link = props.base ? `${props.base}/${props.username}` : props.username;
     return (
       <a
         className="no-underline text-blue-700 m-2"
-        href={props.base + "/" + props.username}
+        href={link}
         target="blank"
       >
         <img className="w-6 h-6" src={props.icon} alt="props.username" />
