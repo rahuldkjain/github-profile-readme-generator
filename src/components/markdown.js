@@ -1,23 +1,23 @@
-import React from "react"
-import { isMediumUsernameValid } from "../utils/validation"
-import { icons, skills, skillWebsites } from "../constants/skills"
+import React from 'react';
+import { isMediumUsernameValid } from '../utils/validation';
+import { icons, skills, skillWebsites } from '../constants/skills';
 import {
   githubStatsLinkGenerator,
   topLanguagesLinkGenerator,
   streakStatsLinkGenerator,
-} from "../utils/link-generators"
-const Title = props => {
+} from '../utils/link-generators';
+const Title = (props) => {
   if (props.prefix && props.title) {
     return (
       <>
-        {`<h1 align="center">${props.prefix + " " + props.title}</h1>`}
+        {`<h1 align="center">${props.prefix + ' ' + props.title}</h1>`}
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const SubTitle = props => {
+  return '';
+};
+const SubTitle = (props) => {
   if (props.subtitle) {
     return (
       <>
@@ -25,22 +25,22 @@ const SubTitle = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const SectionTitle = props => {
+  return '';
+};
+const SectionTitle = (props) => {
   if (props.label) {
     return (
       <>
         {`<h3 align="left">${props.label}</h3>`}
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const DisplayWork = props => {
+  return '';
+};
+const DisplayWork = (props) => {
   if (props.prefix && props.project) {
     if (props.link) {
       return (
@@ -49,7 +49,7 @@ const DisplayWork = props => {
           <br />
           <br />
         </>
-      )
+      );
     } else {
       return (
         <>
@@ -57,7 +57,7 @@ const DisplayWork = props => {
           <br />
           <br />
         </>
-      )
+      );
     }
   }
   if (props.prefix && props.link) {
@@ -67,28 +67,28 @@ const DisplayWork = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const DisplaySocial = props => {
+  return '';
+};
+const DisplaySocial = (props) => {
   if (props.username) {
     return (
       <>
         {`<a href="${props.base}/${props.username}" target="blank"><img align="center" src="${props.icon}" alt="${props.username}" height="30" width="40" /></a>`}
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const VisitorsBadge = props => {
+  return '';
+};
+const VisitorsBadge = (props) => {
   let link =
-    "https://komarev.com/ghpvc/?username=" +
+    'https://komarev.com/ghpvc/?username=' +
     props.github +
     `&label=${props.badgeOptions.badgeLabel}` +
     `&color=${props.badgeOptions.badgeColor}` +
-    `&style=${props.badgeOptions.badgeStyle}`
+    `&style=${props.badgeOptions.badgeStyle}`;
   if (props.show) {
     return (
       <>
@@ -96,15 +96,12 @@ const VisitorsBadge = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const TwitterBadge = props => {
-  let link =
-    "https://img.shields.io/twitter/follow/" +
-    props.twitter +
-    "?logo=twitter&style=for-the-badge"
+  return '';
+};
+const TwitterBadge = (props) => {
+  let link = 'https://img.shields.io/twitter/follow/' + props.twitter + '?logo=twitter&style=for-the-badge';
   if (props.show) {
     return (
       <>
@@ -112,13 +109,12 @@ const TwitterBadge = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const GithubProfileTrophy = props => {
-  let link =
-    "https://github-profile-trophy.vercel.app/?username=" + props.github
+  return '';
+};
+const GithubProfileTrophy = (props) => {
+  let link = 'https://github-profile-trophy.vercel.app/?username=' + props.github;
   if (props.show) {
     return (
       <>
@@ -126,10 +122,10 @@ const GithubProfileTrophy = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
+  return '';
+};
 const GitHubStats = ({ show, github, options }) => {
   if (show) {
     return (
@@ -141,11 +137,11 @@ const GitHubStats = ({ show, github, options }) => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const isSocial = social => {
+  return '';
+};
+const isSocial = (social) => {
   return (
     social.dev ||
     social.twitter ||
@@ -169,11 +165,11 @@ const isSocial = social => {
     social.geeks_for_geeks ||
     social.discord ||
     social.rssurl
-  )
-}
-const DisplaySkills = props => {
-  const listChosenSkills = []
-  skills.forEach(skill => {
+  );
+};
+const DisplaySkills = (props) => {
+  const listChosenSkills = [];
+  skills.forEach((skill) => {
     if (props.skills[skill]) {
       listChosenSkills.push(
         `
@@ -181,21 +177,21 @@ const DisplaySkills = props => {
           <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
         </a>
         `
-      )
+      );
     }
-  })
+  });
   return listChosenSkills.length > 0 ? (
     <>
       <SectionTitle label="Languages and Tools:" />
-      {`<p align="left">${listChosenSkills.join(" ")}</p>`}
+      {`<p align="left">${listChosenSkills.join(' ')}</p>`}
       <br />
       <br />
     </>
   ) : (
-    ""
-  )
-}
-const DisplayDynamicBlogs = props => {
+    ''
+  );
+};
+const DisplayDynamicBlogs = (props) => {
   if (props.show) {
     return (
       <>
@@ -206,11 +202,11 @@ const DisplayDynamicBlogs = props => {
         {`<!-- BLOG-POST-LIST:END -->`}
         <br /> <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const DisplayTopLanguages = props => {
+  return '';
+};
+const DisplayTopLanguages = (props) => {
   if (props.show) {
     if (!props.showStats) {
       return (
@@ -222,7 +218,7 @@ const DisplayTopLanguages = props => {
           <br />
           <br />
         </>
-      )
+      );
     }
     return (
       <>
@@ -233,11 +229,11 @@ const DisplayTopLanguages = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const DisplayStreakStats = props => {
+  return '';
+};
+const DisplayStreakStats = (props) => {
   if (props.show) {
     return (
       <>
@@ -248,17 +244,17 @@ const DisplayStreakStats = props => {
         <br />
         <br />
       </>
-    )
+    );
   }
-  return ""
-}
-const DisplaySupport = props => {
-  let viewSupport = false
-  Object.keys(props.support).forEach(key => {
+  return '';
+};
+const DisplaySupport = (props) => {
+  let viewSupport = false;
+  Object.keys(props.support).forEach((key) => {
     if (props.support[key]) {
-      viewSupport = true
+      viewSupport = true;
     }
-  })
+  });
   return viewSupport ? (
     <div>
       <SectionTitle label="Support:" />
@@ -274,12 +270,12 @@ const DisplaySupport = props => {
       <br />
     </div>
   ) : (
-    ""
-  )
-}
-const Markdown = props => {
+    ''
+  );
+};
+const Markdown = (props) => {
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
+    'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
 
   return (
     <div id="markdown-content" className="break-words">
@@ -301,28 +297,14 @@ const Markdown = props => {
         />
       </>
       <>
-        <GithubProfileTrophy
-          show={props.data.githubProfileTrophy}
-          github={props.social.github}
-        />
-        <TwitterBadge
-          base="https://twitter.com"
-          show={props.data.twitterBadge}
-          twitter={props.social.twitter}
-        />
+        <GithubProfileTrophy show={props.data.githubProfileTrophy} github={props.social.github} />
+        <TwitterBadge base="https://twitter.com" show={props.data.twitterBadge} twitter={props.social.twitter} />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.currentWork}
-          project={props.data.currentWork}
-          link={props.link.currentWork}
-        />
+        <DisplayWork prefix={props.prefix.currentWork} project={props.data.currentWork} link={props.link.currentWork} />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.currentLearn}
-          project={props.data.currentLearn}
-        />
+        <DisplayWork prefix={props.prefix.currentLearn} project={props.data.currentLearn} />
       </>
       <>
         <DisplayWork
@@ -332,17 +314,10 @@ const Markdown = props => {
         />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.helpWith}
-          project={props.data.helpWith}
-          link={props.link.helpWith}
-        />
+        <DisplayWork prefix={props.prefix.helpWith} project={props.data.helpWith} link={props.link.helpWith} />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.portfolio}
-          link={props.link.portfolio}
-        />
+        <DisplayWork prefix={props.prefix.portfolio} link={props.link.portfolio} />
       </>
       <>
         <DisplayWork prefix={props.prefix.blog} link={props.link.blog} />
@@ -351,28 +326,20 @@ const Markdown = props => {
         <DisplayWork prefix={props.prefix.ama} project={props.data.ama} />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.contact}
-          project={props.data.contact}
-        />
+        <DisplayWork prefix={props.prefix.contact} project={props.data.contact} />
       </>
       <>
         <DisplayWork prefix={props.prefix.resume} link={props.link.resume} />
       </>
       <>
-        <DisplayWork
-          prefix={props.prefix.funFact}
-          project={props.data.funFact}
-        />
+        <DisplayWork prefix={props.prefix.funFact} project={props.data.funFact} />
       </>
       <>
         <DisplayDynamicBlogs
           show={
             (props.data.devDynamicBlogs && props.social.dev) ||
             (props.data.rssDynamicBlogs && props.social.rssurl) ||
-            (props.data.mediumDynamicBlogs &&
-              props.social.medium &&
-              isMediumUsernameValid(props.social.medium))
+            (props.data.mediumDynamicBlogs && props.social.medium && isMediumUsernameValid(props.social.medium))
           }
         />
       </>
@@ -382,97 +349,77 @@ const Markdown = props => {
           {`<p align="left">`}
         </>
       ) : (
-        ""
+        ''
       )}
       <br />
       <>
-        <DisplaySocial
-          base="https://codepen.io"
-          icon={icon_base_url + "codepen.svg"}
-          username={props.social.codepen}
-        />
+        <DisplaySocial base="https://codepen.io" icon={icon_base_url + 'codepen.svg'} username={props.social.codepen} />
       </>
       <>
-        <DisplaySocial
-          base="https://dev.to"
-          icon={icon_base_url + "devto.svg"}
-          username={props.social.dev}
-        />
+        <DisplaySocial base="https://dev.to" icon={icon_base_url + 'devto.svg'} username={props.social.dev} />
       </>
       <>
         <DisplaySocial
           base="https://twitter.com"
-          icon={icon_base_url + "twitter.svg"}
+          icon={icon_base_url + 'twitter.svg'}
           username={props.social.twitter}
         />
       </>
       <>
         <DisplaySocial
           base="https://linkedin.com/in"
-          icon={icon_base_url + "linked-in-alt.svg"}
+          icon={icon_base_url + 'linked-in-alt.svg'}
           username={props.social.linkedin}
         />
       </>
       <>
         <DisplaySocial
           base="https://stackoverflow.com/users"
-          icon={icon_base_url + "stack-overflow.svg"}
+          icon={icon_base_url + 'stack-overflow.svg'}
           username={props.social.stackoverflow}
         />
       </>
       <>
         <DisplaySocial
           base="https://codesandbox.com"
-          icon={icon_base_url + "codesandbox.svg"}
+          icon={icon_base_url + 'codesandbox.svg'}
           username={props.social.codesandbox}
         />
       </>
       <>
-        <DisplaySocial
-          base="https://kaggle.com"
-          icon={icon_base_url + "kaggle.svg"}
-          username={props.social.kaggle}
-        />
+        <DisplaySocial base="https://kaggle.com" icon={icon_base_url + 'kaggle.svg'} username={props.social.kaggle} />
       </>
       <>
-        <DisplaySocial
-          base="https://fb.com"
-          icon={icon_base_url + "facebook.svg"}
-          username={props.social.fb}
-        />
+        <DisplaySocial base="https://fb.com" icon={icon_base_url + 'facebook.svg'} username={props.social.fb} />
       </>
       <>
         <DisplaySocial
           base="https://instagram.com"
-          icon={icon_base_url + "instagram.svg"}
+          icon={icon_base_url + 'instagram.svg'}
           username={props.social.instagram}
         />
       </>
       <>
         <DisplaySocial
           base="https://dribbble.com"
-          icon={icon_base_url + "dribbble.svg"}
+          icon={icon_base_url + 'dribbble.svg'}
           username={props.social.dribbble}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.behance.net"
-          icon={icon_base_url + "behance.svg"}
+          icon={icon_base_url + 'behance.svg'}
           username={props.social.behance}
         />
       </>
       <>
-        <DisplaySocial
-          base="https://medium.com"
-          icon={icon_base_url + "medium.svg"}
-          username={props.social.medium}
-        />
+        <DisplaySocial base="https://medium.com" icon={icon_base_url + 'medium.svg'} username={props.social.medium} />
       </>
       <>
         <DisplaySocial
           base="https://www.youtube.com/c"
-          icon={icon_base_url + "youtube.svg"}
+          icon={icon_base_url + 'youtube.svg'}
           username={props.social.youtube}
         />
       </>
@@ -486,58 +433,50 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://www.hackerrank.com"
-          icon={icon_base_url + "hackerrank.svg"}
+          icon={icon_base_url + 'hackerrank.svg'}
           username={props.social.hackerrank}
         />
       </>
       <>
         <DisplaySocial
           base="https://codeforces.com/profile"
-          icon={icon_base_url + "codeforces.svg"}
+          icon={icon_base_url + 'codeforces.svg'}
           username={props.social.codeforces}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url + "leet-code.svg"}
+          icon={icon_base_url + 'leet-code.svg'}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url + "hackerearth.svg"}
+          icon={icon_base_url + 'hackerearth.svg'}
           username={props.social.hackerearth}
         />
       </>
       <>
         <DisplaySocial
           base="https://auth.geeksforgeeks.org/user"
-          icon={icon_base_url + "geeks-for-geeks.svg"}
+          icon={icon_base_url + 'geeks-for-geeks.svg'}
           username={props.social.geeks_for_geeks}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.topcoder.com/members"
-          icon={icon_base_url + "topcoder.svg"}
+          icon={icon_base_url + 'topcoder.svg'}
           username={props.social.topcoder}
         />
       </>
       <>
-        <DisplaySocial
-          base="https://discord.gg"
-          icon={icon_base_url + "discord.svg"}
-          username={props.social.discord}
-        />
+        <DisplaySocial base="https://discord.gg" icon={icon_base_url + 'discord.svg'} username={props.social.discord} />
       </>
       <>
-        <DisplaySocial
-          base=""
-          icon={icon_base_url + "rss.svg"}
-          username={props.social.rssurl}
-        />
+        <DisplaySocial base="" icon={icon_base_url + 'rss.svg'} username={props.social.rssurl} />
       </>
       {isSocial(props.social) ? (
         <>
@@ -546,7 +485,7 @@ const Markdown = props => {
           <br />
         </>
       ) : (
-        ""
+        ''
       )}
       <>
         <DisplaySkills skills={props.skills} />
@@ -577,6 +516,6 @@ const Markdown = props => {
         />
       </>
     </div>
-  )
-}
-export default Markdown
+  );
+};
+export default Markdown;
