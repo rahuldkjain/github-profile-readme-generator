@@ -2,12 +2,22 @@ import React, { useState, useEffect } from "react"
 import { withPrefix } from "gatsby"
 import { latestBlogs } from "../utils/workflows"
 import links from "../constants/page-links"
-import { isMediumUsernameValid, isGitHubUsernameValid } from "../utils/validation"
-import { ToolsIcon, XCircleIcon } from "@primer/octicons-react";
+import {
+  isMediumUsernameValid,
+  isGitHubUsernameValid,
+} from "../utils/validation"
+import { ToolsIcon, XCircleIcon } from "@primer/octicons-react"
 
-const AddonsItem = ({ inputId, inputChecked, onInputChange, Options, onIconClick, ...props }) => {
-  const [open, setOpen] = useState(false);
-  const Icon = open ? XCircleIcon : ToolsIcon;
+const AddonsItem = ({
+  inputId,
+  inputChecked,
+  onInputChange,
+  Options,
+  onIconClick,
+  ...props
+}) => {
+  const [open, setOpen] = useState(false)
+  const Icon = open ? XCircleIcon : ToolsIcon
 
   return (
     <>
@@ -36,8 +46,8 @@ const AddonsItem = ({ inputId, inputChecked, onInputChange, Options, onIconClick
       </div>
       {Options && open && Options}
     </>
-  );
-};
+  )
+}
 
 const CustomizeOptions = ({ title, CustomizationOptions }) => (
   <div
@@ -50,145 +60,160 @@ const CustomizeOptions = ({ title, CustomizationOptions }) => (
       {CustomizationOptions}
     </div>
   </div>
-);
+)
 
-
-const CustomizeBadge = ({githubName, badgeOptions, onBadgeUpdate}) =>  {
+const CustomizeBadge = ({ githubName, badgeOptions, onBadgeUpdate }) => {
   return (
     <>
-        <label htmlFor="badge-style">Style:&nbsp;
-          <select 
-            id="badge-style" 
-            onChange={(e) => onBadgeUpdate('badgeStyle', e.target.value)} 
-            value = {badgeOptions.badgeStyle}
-          >
-            <option value="flat">Flat</option>
-            <option value="flat-square">Flat Square</option>
-            <option value="plastic">Plastic</option>
-          </select> 
-        </label>
-        
-        <label htmlFor="badge-color">Color:&nbsp;
-          <input 
-            type="color" 
-            id="badge-color" 
-            defaultValue={`#${badgeOptions.badgeColor}`} 
-            className="w-6"
-            onChange={(e) => onBadgeUpdate('badgeColor', e.target.value.replace('#', ''))}
-          />
-        </label>
-        
-        <label htmlFor="badge-label-text">Label Text:&nbsp;
-          <input 
-            type="text" 
-            id="badge-label-text" 
-            placeholder="Profile views" 
-            className="w-2/4 bg-gray-300 pl-2"
-            onChange={(e) => onBadgeUpdate('badgeLabel', e.target.value.trim())}
-            defaultValue={badgeOptions.badgeLabel}
-          />
-        </label>
-        
-        <span className="mt-2 flex items-center">
-          Preview:&nbsp;
-          {
-            isGitHubUsernameValid(githubName)?
-              <img 
-                src={`https://komarev.com/ghpvc/`
-                    + `?username=${githubName}`
-                    + `&label=${encodeURI(badgeOptions.badgeLabel)}`
-                    + `&color=${badgeOptions.badgeColor}`
-                    + `&style=${badgeOptions.badgeStyle}`
-                    }
-              />
-            : <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+      <label htmlFor="badge-style">
+        Style:&nbsp;
+        <select
+          id="badge-style"
+          onChange={e => onBadgeUpdate("badgeStyle", e.target.value)}
+          value={badgeOptions.badgeStyle}
+        >
+          <option value="flat">Flat</option>
+          <option value="flat-square">Flat Square</option>
+          <option value="plastic">Plastic</option>
+        </select>
+      </label>
+
+      <label htmlFor="badge-color">
+        Color:&nbsp;
+        <input
+          type="color"
+          id="badge-color"
+          defaultValue={`#${badgeOptions.badgeColor}`}
+          className="w-6"
+          onChange={e =>
+            onBadgeUpdate("badgeColor", e.target.value.replace("#", ""))
           }
-          
-        </span>
+        />
+      </label>
+
+      <label htmlFor="badge-label-text">
+        Label Text:&nbsp;
+        <input
+          type="text"
+          id="badge-label-text"
+          placeholder="Profile views"
+          className="w-2/4 bg-gray-300 pl-2"
+          onChange={e => onBadgeUpdate("badgeLabel", e.target.value.trim())}
+          defaultValue={badgeOptions.badgeLabel}
+        />
+      </label>
+
+      <span className="mt-2 flex items-center">
+        Preview:&nbsp;
+        {isGitHubUsernameValid(githubName) ? (
+          <img
+            src={
+              `https://komarev.com/ghpvc/` +
+              `?username=${githubName}` +
+              `&label=${encodeURI(badgeOptions.badgeLabel)}` +
+              `&color=${badgeOptions.badgeColor}` +
+              `&style=${badgeOptions.badgeStyle}`
+            }
+            alt="profile-visitors-count"
+          />
+        ) : (
+          <span className="text-xxs md:text-sm text-red-600">
+            Invalid GitHub username
+          </span>
+        )}
+      </span>
     </>
   )
 }
 
-const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) =>
-    <>
-      <label htmlFor={`${prefix}-theme`}>Theme:&nbsp;
-        <select
-          id={`${prefix}-theme`}
-          onChange={({target: { value }}) => onUpdate("theme", value)}
-          defaultValue={options.theme}
-        >
-          <option value="none">none</option>
-          <option value="dark">Dark</option>
-          <option value="radical">Radical</option>
-          <option value="merko">Merko</option>
-          <option value="gruvbox">Gruvbox</option>
-          <option value="tokyonight">Tokyonight</option>
-          <option value="onedark">Onedark</option>
-          <option value="cobalt">Cobalt</option>
-          <option value="synthwave">Synthwave</option>
-          <option value="highcontrast">Highcontrast</option>
-          <option value="dracula">Dracula</option>
-        </select>
-      </label>
-      <label htmlFor={`${prefix}-title-color`}>Title Color:&nbsp;
-        <input
-          type="color"
-          id={`${prefix}-title-color`}
-          defaultValue={`#${options.titleColor}`}
-          className="w-6"
-          onChange={(e) => onUpdate('titleColor', e.target.value.replace('#', ''))}
-        />
-      </label>
-      <label htmlFor={`${prefix}-text-color`}>Text Color:&nbsp;
-        <input
-          type="color"
-          id={`${prefix}-text-color`}
-          defaultValue={`#${options.textColor}`}
-          className="w-6"
-          onChange={(e) => onUpdate('textColor', e.target.value.replace('#', ''))}
-        />
-      </label>
-      <label htmlFor={`${prefix}-bg-color`}>Background Color:&nbsp;
-        <input
-          type="color"
-          id={`${prefix}-bg-color`}
-          defaultValue={`#${options.bgColor}`}
-          className="w-6"
-          onChange={(e) => onUpdate('bgColor', e.target.value.replace('#', ''))}
-        />
-      </label>
-      <label htmlFor={`${prefix}-hide-border`} className="checkbox-label">Hide border:&nbsp;
-        <input
-          id={`${prefix}-hide-border`}
-          type="checkbox"
-          className="checkbox-label__input"
-          checked={options.hideBorder}
-          onChange={(e) => onUpdate('hideBorder', e.target.checked)}
-        />
-        <span class="checkbox-label__control" />
-      </label>
-      <label htmlFor={`${prefix}-cache-seconds`}>Cache Seconds:&nbsp;
-        <input
-          id={`${prefix}-cache-seconds`}
-          type="number"
-          min={1800}
-          max={86400}
-          placeholder={1800}
-          defaultValue={options.cacheSeconds}
-          onChange={(e) => onUpdate('cacheSeconds', e.target.value)}
-        />
-      </label>
-      <label htmlFor={`${prefix}-locale`}>Locale:&nbsp;
-        <input
-          id={`${prefix}-locale`}
-          type="text"
-          placeholder="en"
-          defaultValue={options.locale}
-          onChange={(e) => onUpdate('locale', e.target.value)}
-          size="2"
-        />
-      </label>
-    </>
+const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
+  <>
+    <label htmlFor={`${prefix}-theme`}>
+      Theme:&nbsp;
+      <select
+        id={`${prefix}-theme`}
+        onChange={({ target: { value } }) => onUpdate("theme", value)}
+        defaultValue={options.theme}
+      >
+        <option value="none">none</option>
+        <option value="dark">Dark</option>
+        <option value="radical">Radical</option>
+        <option value="merko">Merko</option>
+        <option value="gruvbox">Gruvbox</option>
+        <option value="tokyonight">Tokyonight</option>
+        <option value="onedark">Onedark</option>
+        <option value="cobalt">Cobalt</option>
+        <option value="synthwave">Synthwave</option>
+        <option value="highcontrast">Highcontrast</option>
+        <option value="dracula">Dracula</option>
+      </select>
+    </label>
+    <label htmlFor={`${prefix}-title-color`}>
+      Title Color:&nbsp;
+      <input
+        type="color"
+        id={`${prefix}-title-color`}
+        defaultValue={`#${options.titleColor}`}
+        className="w-6"
+        onChange={e => onUpdate("titleColor", e.target.value.replace("#", ""))}
+      />
+    </label>
+    <label htmlFor={`${prefix}-text-color`}>
+      Text Color:&nbsp;
+      <input
+        type="color"
+        id={`${prefix}-text-color`}
+        defaultValue={`#${options.textColor}`}
+        className="w-6"
+        onChange={e => onUpdate("textColor", e.target.value.replace("#", ""))}
+      />
+    </label>
+    <label htmlFor={`${prefix}-bg-color`}>
+      Background Color:&nbsp;
+      <input
+        type="color"
+        id={`${prefix}-bg-color`}
+        defaultValue={`#${options.bgColor}`}
+        className="w-6"
+        onChange={e => onUpdate("bgColor", e.target.value.replace("#", ""))}
+      />
+    </label>
+    <label htmlFor={`${prefix}-hide-border`} className="checkbox-label">
+      Hide border:&nbsp;
+      <input
+        id={`${prefix}-hide-border`}
+        type="checkbox"
+        className="checkbox-label__input"
+        checked={options.hideBorder}
+        onChange={e => onUpdate("hideBorder", e.target.checked)}
+      />
+      <span class="checkbox-label__control" />
+    </label>
+    <label htmlFor={`${prefix}-cache-seconds`}>
+      Cache Seconds:&nbsp;
+      <input
+        id={`${prefix}-cache-seconds`}
+        type="number"
+        min={1800}
+        max={86400}
+        placeholder={1800}
+        defaultValue={options.cacheSeconds}
+        onChange={e => onUpdate("cacheSeconds", e.target.value)}
+      />
+    </label>
+    <label htmlFor={`${prefix}-locale`}>
+      Locale:&nbsp;
+      <input
+        id={`${prefix}-locale`}
+        type="text"
+        placeholder="en"
+        defaultValue={options.locale}
+        onChange={e => onUpdate("locale", e.target.value)}
+        size="2"
+      />
+    </label>
+  </>
+)
 
 const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
   <>
@@ -208,48 +233,48 @@ const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
 )
 
 const Addons = props => {
-  const [debounce, setDebounce] = useState(undefined);
+  const [debounce, setDebounce] = useState(undefined)
   const [badgeOptions, setBadgeOptions] = useState({
-    badgeStyle: props.data.badgeStyle, 
-    badgeColor: props.data.badgeColor, 
-    badgeLabel: props.data.badgeLabel
-  });
+    badgeStyle: props.data.badgeStyle,
+    badgeColor: props.data.badgeColor,
+    badgeLabel: props.data.badgeLabel,
+  })
 
   useEffect(() => {
     setBadgeOptions({
-      badgeStyle: props.data.badgeStyle, 
-      badgeColor: props.data.badgeColor, 
-      badgeLabel: props.data.badgeLabel
+      badgeStyle: props.data.badgeStyle,
+      badgeColor: props.data.badgeColor,
+      badgeLabel: props.data.badgeLabel,
     })
   }, [props.data.badgeStyle, props.data.badgeColor, props.data.badgeLabel])
 
   const [githubStatsOptions, setGithubStatsOptions] = useState({
     ...props.data.githubStatsOptions,
-  });
+  })
 
   useEffect(() => {
     setGithubStatsOptions({
-      ...props.data.githubStatsOptions
+      ...props.data.githubStatsOptions,
     })
   }, [props.data.githubStatsOptions])
 
   const [topLanguagesOptions, setTopLanguagesOptions] = useState({
     ...props.data.topLanguagesOptions,
-  });
+  })
 
   useEffect(() => {
     setTopLanguagesOptions({
-      ...props.data.topLanguagesOptions
+      ...props.data.topLanguagesOptions,
     })
   }, [props.data.topLanguagesOptions])
 
   const [streakStatsOptions, setStreakStatsOptions] = useState({
     ...props.data.streakStatsOptions,
-  });
+  })
 
   useEffect(() => {
     setStreakStatsOptions({
-      ...props.data.streakStatsOptions
+      ...props.data.streakStatsOptions,
     })
   }, [props.data.streakStatsOptions])
 
@@ -283,30 +308,37 @@ const Addons = props => {
 
   const onBadgeUpdate = (option, value) => {
     const callback = () => {
-      let newVal = (option==='badgeLabel' && value==='')?'Profile views':value;
-      setBadgeOptions({...badgeOptions, [option]: newVal});
-      props.handleDataChange(option, {target: {value: newVal}})
+      let newVal =
+        option === "badgeLabel" && value === "" ? "Profile views" : value
+      setBadgeOptions({ ...badgeOptions, [option]: newVal })
+      props.handleDataChange(option, { target: { value: newVal } })
     }
-    clearTimeout(debounce);
-    setDebounce(setTimeout(callback, 300));
+    clearTimeout(debounce)
+    setDebounce(setTimeout(callback, 300))
   }
 
   const onStatsUpdate = (option, value) => {
-    const newStatsOptions = {...githubStatsOptions, [option]: value}
+    const newStatsOptions = { ...githubStatsOptions, [option]: value }
     setGithubStatsOptions(newStatsOptions)
-    props.handleDataChange("githubStatsOptions", {target: {value: newStatsOptions}})
+    props.handleDataChange("githubStatsOptions", {
+      target: { value: newStatsOptions },
+    })
   }
 
   const onTopLangUpdate = (option, value) => {
-    const newLangOptions = {...topLanguagesOptions, [option]: value}
+    const newLangOptions = { ...topLanguagesOptions, [option]: value }
     setTopLanguagesOptions(newLangOptions)
-    props.handleDataChange("topLanguagesOptions", {target: {value: newLangOptions}})
+    props.handleDataChange("topLanguagesOptions", {
+      target: { value: newLangOptions },
+    })
   }
 
   const onStreakStatsUpdate = (option, value) => {
-    const newStreakStatsOptions = {...streakStatsOptions, [option]: value}
+    const newStreakStatsOptions = { ...streakStatsOptions, [option]: value }
     setStreakStatsOptions(newStreakStatsOptions)
-    props.handleDataChange("streakStatsOptions", {target: {value: newStreakStatsOptions}})
+    props.handleDataChange("streakStatsOptions", {
+      target: { value: newStreakStatsOptions },
+    })
   }
 
   return (
@@ -323,7 +355,7 @@ const Addons = props => {
             title="Customize Badge"
             CustomizationOptions={
               <CustomizeBadge
-                githubName={props.social.github} 
+                githubName={props.social.github}
                 badgeOptions={badgeOptions}
                 onBadgeUpdate={onBadgeUpdate}
               />
@@ -348,7 +380,11 @@ const Addons = props => {
           <CustomizeOptions
             title="Customize Github Stats Card"
             CustomizationOptions={
-          <CustomizeGithubStatsBase prefix="stats" options={githubStatsOptions} onUpdate={onStatsUpdate}/>
+              <CustomizeGithubStatsBase
+                prefix="stats"
+                options={githubStatsOptions}
+                onUpdate={onStatsUpdate}
+              />
             }
           />
         }
@@ -363,7 +399,11 @@ const Addons = props => {
           <CustomizeOptions
             title="Customize Top Skills Card"
             CustomizationOptions={
-            <CustomizeGithubStatsBase prefix="top-lang" options={topLanguagesOptions} onUpdate={onTopLangUpdate}/>
+              <CustomizeGithubStatsBase
+                prefix="top-lang"
+                options={topLanguagesOptions}
+                onUpdate={onTopLangUpdate}
+              />
             }
           />
         }
@@ -378,7 +418,11 @@ const Addons = props => {
           <CustomizeOptions
             title="Customize Streak Stats Card"
             CustomizationOptions={
-            <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate}/>
+              <CustomizeStreakStats
+                prefix="streak-stats"
+                options={streakStatsOptions}
+                onUpdate={onStreakStatsUpdate}
+              />
             }
           />
         }
@@ -425,7 +469,7 @@ const Addons = props => {
             <span
               id="blog-post-worklow-span"
               onClick={blogPostPorkflow}
-              onKeyDown={(e) => e.keyCode === 13 && blogPostPorkflow()}
+              onKeyDown={e => e.keyCode === 13 && blogPostPorkflow()}
               role="button"
               tabIndex="0"
               style={{ cursor: "pointer", color: "#002ead" }}

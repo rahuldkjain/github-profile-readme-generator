@@ -123,9 +123,9 @@ export const DisplaySocial = props => {
 export const SocialPreview = props => {
   let viewSocial = false
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
   Object.keys(props.social).forEach(key => {
-    if (props.social[key] && key != "github") viewSocial = true
+    if (props.social[key] && key !== "github") viewSocial = true
   })
   return (
     <div className="flex justify-start items-end flex-wrap">
@@ -245,14 +245,14 @@ export const SocialPreview = props => {
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>
@@ -315,7 +315,11 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="blank">
+        <a
+          href="https://twitter.com/${props.twitter}"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
@@ -420,6 +424,7 @@ export const SupportPreview = props => {
         <a
           href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -432,6 +437,7 @@ export const SupportPreview = props => {
         <a
           href={`https://ko-fi.com/` + props.support.buyMeAKofi}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"

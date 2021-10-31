@@ -177,7 +177,7 @@ const DisplaySkills = props => {
     if (props.skills[skill]) {
       listChosenSkills.push(
         `
-        <a href="${skillWebsites[skill]}" target="_blank">
+        <a href="${skillWebsites[skill]}" target="_blank" rel="noreferrer">
           <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
         </a>
         `
@@ -279,7 +279,7 @@ const DisplaySupport = props => {
 }
 const Markdown = props => {
   const icon_base_url =
-    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/";
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/"
 
   return (
     <div id="markdown-content" className="break-words">
@@ -493,21 +493,21 @@ const Markdown = props => {
       <>
         <DisplaySocial
           base="https://codeforces.com/profile"
-          icon={icon_base_url+"codeforces.svg"}
+          icon={icon_base_url + "codeforces.svg"}
           username={props.social.codeforces}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.leetcode.com"
-          icon={icon_base_url+"leet-code.svg"}
+          icon={icon_base_url + "leet-code.svg"}
           username={props.social.leetcode}
         />
       </>
       <>
         <DisplaySocial
           base="https://www.hackerearth.com"
-          icon={icon_base_url+"hackerearth.svg"}
+          icon={icon_base_url + "hackerearth.svg"}
           username={props.social.hackerearth}
         />
       </>

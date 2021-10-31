@@ -10,9 +10,9 @@ import { act } from "react-dom/test-utils"
 const Header = props => {
   const shouldRequestStats = () => {
     const isFirstRequest = stats.starsCount === 0
-    const isVisible = window.document.visibilityState === 'visible'
+    const isVisible = window.document.visibilityState === "visible"
     const hasFocus = window.document.hasFocus()
-    return isFirstRequest || isVisible && hasFocus
+    return isFirstRequest || (isVisible && hasFocus)
   }
 
   const fetchData = async () => {
