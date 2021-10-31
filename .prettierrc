@@ -1,14 +1,9 @@
 {
-  "printWidth": 80,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
   "singleQuote": true,
-  "quoteProps": "as-needed",
   "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 480,
   "trailingComma": "all",
-  "bracketSpacing": true,
-  "jsxBracketSameLine": true,
-  "arrowParens": "avoid",
-  "endOfLine": "auto"
+  "semi": true,
+  "exclude": ["node_modules", "codepipeline"]
 }

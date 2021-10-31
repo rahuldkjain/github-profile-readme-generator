@@ -1,5 +1,5 @@
 const isGitHubUsernameValid = (username) => {
-  var pattern = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
+  const pattern = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
   return pattern.test(username);
 };
 const isMediumUsernameValid = (username) => {
@@ -10,7 +10,7 @@ const isMediumUsernameValid = (username) => {
 };
 
 const isTwitterUsernameValid = (username) => {
-  var pattern = /^[a-zA-Z0-9_]{1,15}$/;
+  const pattern = /^[a-zA-Z0-9_]{1,15}$/;
   return pattern.test(username);
 };
 

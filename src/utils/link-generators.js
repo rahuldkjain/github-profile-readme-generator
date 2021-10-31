@@ -9,29 +9,24 @@ const githubStatsStylingQueryString = (options) => {
     ...(options.cacheSeconds && { cache_seconds: options.cacheSeconds }),
     ...(options.locale && { locale: options.locale }),
   };
-  const query_string = Object.entries(params)
+  const queryString = Object.entries(params)
     .map(([key, value]) => `${key}=${value}`)
     .join('&');
-  return query_string;
+  return queryString;
 };
 
 const streakStatsStylingQueryString = (options) => {
   const params = {
     ...(options.theme && options.theme !== 'none' && { theme: options.theme }),
   };
-  const query_string = Object.entries(params)
+  const queryString = Object.entries(params)
     .map(([key, value]) => `${key}=${value}`)
     .join('&');
-  return query_string;
+  return queryString;
 };
 
-export const githubStatsLinkGenerator = ({ github, options }) =>
-  `https://github-readme-stats.vercel.app/api?username=${github}&${githubStatsStylingQueryString(options)}`;
+export const githubStatsLinkGenerator = ({ github, options }) => `https://github-readme-stats.vercel.app/api?username=${github}&${githubStatsStylingQueryString(options)}`;
 
-export const topLanguagesLinkGenerator = ({ github, options }) =>
-  `https://github-readme-stats.vercel.app/api/top-langs?username=${github}&${githubStatsStylingQueryString(
-    options
-  )}&layout=compact`;
+export const topLanguagesLinkGenerator = ({ github, options }) => `https://github-readme-stats.vercel.app/api/top-langs?username=${github}&${githubStatsStylingQueryString(options)}&layout=compact`;
 
-export const streakStatsLinkGenerator = ({ github, options }) =>
-  `https://github-readme-streak-stats.herokuapp.com/?user=${github}&${streakStatsStylingQueryString(options)}`;
+export const streakStatsLinkGenerator = ({ github, options }) => `https://github-readme-streak-stats.herokuapp.com/?user=${github}&${streakStatsStylingQueryString(options)}`;

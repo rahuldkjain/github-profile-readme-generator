@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+
 const Loader = () => {
-  let arrow = useRef([]);
+  const arrow = useRef([]);
   useEffect(() => {
-    var tl = new gsap.timeline({ repeat: -1 });
+    const tl = gsap.timeline({ repeat: -1 });
     tl.fromTo(
       arrow.current,
       {
@@ -16,7 +17,7 @@ const Loader = () => {
         stagger: 0.1,
         duration: 0.5,
         ease: 'Linear.easeNone',
-      }
+      },
     );
     tl.add('cp');
     tl.fromTo(
@@ -32,16 +33,46 @@ const Loader = () => {
         duration: 0.5,
         ease: 'Linear.easeNone',
       },
-      'cp-=0.3'
+      'cp-=0.3',
     );
   });
   return (
     <div className="loader">
-      <span ref={(el) => (arrow.current[0] = el)}>↓</span>
-      <span ref={(el) => (arrow.current[1] = el)}>↓</span>
-      <span ref={(el) => (arrow.current[2] = el)}>↓</span>
-      <span ref={(el) => (arrow.current[3] = el)}>↓</span>
-      <span ref={(el) => (arrow.current[4] = el)}>↓</span>
+      <span
+        ref={(el) => {
+          arrow.current[0] = el;
+        }}
+      >
+        ↓
+      </span>
+      <span
+        ref={(el) => {
+          arrow.current[1] = el;
+        }}
+      >
+        ↓
+      </span>
+      <span
+        ref={(el) => {
+          arrow.current[2] = el;
+        }}
+      >
+        ↓
+      </span>
+      <span
+        ref={(el) => {
+          arrow.current[3] = el;
+        }}
+      >
+        ↓
+      </span>
+      <span
+        ref={(el) => {
+          arrow.current[4] = el;
+        }}
+      >
+        ↓
+      </span>
     </div>
   );
 };
