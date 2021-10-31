@@ -315,7 +315,11 @@ export const TwitterBadgePreview = props => {
     return (
       <div className="text-left my-2">
         {" "}
-        <a href="https://twitter.com/${props.twitter}" target="_blank">
+        <a
+          href="https://twitter.com/${props.twitter}"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="h-4 sm:h-6" src={link} alt={props.twitter} />
         </a>{" "}
       </div>
@@ -420,6 +424,7 @@ export const SupportPreview = props => {
         <a
           href={`https://www.buymeacoffee.com/` + props.support.buyMeACoffee}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
@@ -432,6 +437,7 @@ export const SupportPreview = props => {
         <a
           href={`https://ko-fi.com/` + props.support.buyMeAKofi}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
