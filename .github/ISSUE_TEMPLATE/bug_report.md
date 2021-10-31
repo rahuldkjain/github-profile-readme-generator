@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ""
+title: ''
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 **Describe the bug**
@@ -38,7 +38,6 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
-
 
 Join the **Discord Server** for further discussions.
 

@@ -1,7 +1,7 @@
 ---
-slug: "/addons"
-date: "2019-05-04"
-title: "🚀 Addons"
+slug: '/addons'
+date: '2019-05-04'
+title: '🚀 Addons'
 ---
 
 GitHub Profile README Generator tool uses few open-source addons developed by other developers. Including such features makes the tool useful. The developers of this tool is very grateful to use these awesome addons.
@@ -80,7 +80,7 @@ name: Latest blog post workflow
 on:
   schedule:
     # Runs every hour
-    - cron: "0 * * * *"
+    - cron: '0 * * * *'
 jobs:
   update-readme-with-blog:
     name: Update this repo's README with latest blog posts
@@ -89,7 +89,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://dev.to/feed/rahuldkjain, https://medium.com/feed/@rahuldkjain"
+          feed_list: 'https://dev.to/feed/rahuldkjain, https://medium.com/feed/@rahuldkjain'
 ```
 
 - Replace the above url list with your own rss feed urls. See [popular-sources](#popular-sources) for a list of common RSS feed urls.
