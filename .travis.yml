@@ -1,9 +1,6 @@
 language: node_js
 node_js:
-  - "6"
+  - "14"
 cache:
   directories:
     - "node_modules"
-before_script:
-  - "npm i -g gatsby"
-  - "npm i"
