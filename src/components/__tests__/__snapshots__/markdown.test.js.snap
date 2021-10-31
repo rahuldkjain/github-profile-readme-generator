@@ -35,6 +35,7 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -51,24 +52,30 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -181,7 +188,13 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -211,7 +224,19 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -250,6 +275,7 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -266,24 +292,30 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -396,7 +428,13 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -426,7 +464,19 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -465,6 +515,7 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -481,24 +532,30 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -611,7 +668,13 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -641,7 +704,19 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -680,6 +755,7 @@ exports[`Markdown renders topLanguages is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -696,24 +772,30 @@ exports[`Markdown renders topLanguages is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -826,7 +908,13 @@ exports[`Markdown renders topLanguages is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -856,7 +944,19 @@ exports[`Markdown renders topLanguages is true 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -895,6 +995,7 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -911,24 +1012,30 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1041,7 +1148,13 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -1071,7 +1184,19 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
     }
     show={true}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1110,6 +1235,7 @@ exports[`Markdown renders twitterBadge is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1126,24 +1252,30 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1256,7 +1388,13 @@ exports[`Markdown renders twitterBadge is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -1286,7 +1424,19 @@ exports[`Markdown renders twitterBadge is true 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1325,6 +1475,7 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1341,24 +1492,30 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1471,7 +1628,13 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -1501,7 +1664,19 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1540,6 +1715,7 @@ exports[`Markdown renders without link.currentWork 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1554,23 +1730,32 @@ exports[`Markdown renders without link.currentWork 1`] = `
     project=""
   />
   <DisplayWork
+    link=""
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1683,7 +1868,13 @@ exports[`Markdown renders without link.currentWork 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -1713,7 +1904,19 @@ exports[`Markdown renders without link.currentWork 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1752,6 +1955,7 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1768,24 +1972,30 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1898,7 +2108,13 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -1928,7 +2144,19 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1967,6 +2195,7 @@ exports[`Markdown renders without subtitle 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1983,24 +2212,30 @@ exports[`Markdown renders without subtitle 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -2113,7 +2348,13 @@ exports[`Markdown renders without subtitle 1`] = `
       }
     }
   />
-  <DisplaySupport />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <DisplayTopLanguages
     options={
       Object {
@@ -2143,6 +2384,18 @@ exports[`Markdown renders without subtitle 1`] = `
     }
     show={false}
   />
-  <DisplayStreakStats />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
+  />
 </div>
 `;
