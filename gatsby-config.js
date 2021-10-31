@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-168596085-3",
+        trackingId: 'UA-168596085-3',
         // this option places the tracking script into the head of the DOM
         head: true,
         // other options
@@ -53,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss")],
+        postCssPlugins: [require('tailwindcss')],
       },
     },
     {
@@ -69,4 +69,4 @@ module.exports = {
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
   // `gatsby-plugin-offline`,
-}
+};

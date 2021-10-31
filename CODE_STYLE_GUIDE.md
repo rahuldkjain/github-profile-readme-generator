@@ -9,22 +9,23 @@
 
 ## Reusable components
 
-* Do not make a new file for smaller components.
-* Smaller, reusable components needed in the main components should be added **above** the main component, **not** inside it.
-* Use ES6 arrow functions for defining components.
+- Do not make a new file for smaller components.
+- Smaller, reusable components needed in the main components should be added **above** the main component, **not** inside it.
+- Use ES6 arrow functions for defining components.
 
 ## Spacing
 
 1. **JS:**
-    * Use a space after `if`, `for`, `while`, `switch`.
-    * Do not use a space after the opening `(` and before the closing `)`.
-    * Use a space before and after destructuring objects.
-    ```js
-        //good
-        const { apple, mangoes } = fruits;
-        
-        //bad
-        const {apple, mangoes} = fruits;
+   - Use a space after `if`, `for`, `while`, `switch`.
+   - Do not use a space after the opening `(` and before the closing `)`.
+   - Use a space before and after destructuring objects.
+   ```js
+   //good
+   const { apple, mangoes } = fruits;
+
+   //bad
+   const { apple, mangoes } = fruits;
+   ```
 
 
         //Same for destructuring props:
@@ -36,55 +37,60 @@
     ```
 
 2. **JSX:**
-    * Use a space before the forward slash (`/`) of a self-closing tag
-    ```js
-    //good
-    <Foo />
 
-    //bad 
-    <Foo/>
-    ```
-    * Do **not** use spaces for JSX curly braces
-    ```js
-    //good
-    <Foo bar={baz} />
+   - Use a space before the forward slash (`/`) of a self-closing tag
 
-    //bad
-    <Foo bar={ baz } />
-    ```
+   ```js
+   //good
+   <Foo />
+
+   //bad
+   <Foo/>
+   ```
+
+   - Do **not** use spaces for JSX curly braces
+
+   ```js
+   //good
+   <Foo bar={baz} />
+
+   //bad
+   <Foo bar={ baz } />
+   ```
 
 ## **Props:**
 
-* Use camelCase for prop names, or PascalCase if the prop value is a React component.
-* Use new lines when props do not fit on the same line.
-    ```js
-    //good
-    <Foo 
-        prop1={value1}
-        prop2={value2}
-        prop3={value3}
-    />
+- Use camelCase for prop names, or PascalCase if the prop value is a React component.
+- Use new lines when props do not fit on the same line.
 
-    //bad
-    <Foo prop1={value1} prop2={value2} prop3={value3} />
-    ```
+  ```js
+  //good
+  <Foo
+      prop1={value1}
+      prop2={value2}
+      prop3={value3}
+  />
+
+  //bad
+  <Foo prop1={value1} prop2={value2} prop3={value3} />
+  ```
 
 ## **Best practices:**
 
-* **Always** add semicolons after a line.
-* Use ES6 arrow functions.
-* Keep the indentation in your code correct.
-* Use 4 spaces for tabs.
-* Don't Repeat Yourself. If you think you're repeating too much code, make a smaller component, or a function.
-* **Always** add alt prop to `img` tags.
-* Add `rel="noopener"` for `a` tags which has `target="_blank"`.
-* Don't do `outline: none` on user input elements. If you do not want outline, give them faint, visible background on focus. This is for accessibility.
+- **Always** add semicolons after a line.
+- Use ES6 arrow functions.
+- Keep the indentation in your code correct.
+- Use 4 spaces for tabs.
+- Don't Repeat Yourself. If you think you're repeating too much code, make a smaller component, or a function.
+- **Always** add alt prop to `img` tags.
+- Add `rel="noopener"` for `a` tags which has `target="_blank"`.
+- Don't do `outline: none` on user input elements. If you do not want outline, give them faint, visible background on focus. This is for accessibility.
 
 ### Other things to note
 
-* We are using [octicons](https://primer.style/octicons/) for icons. Use this if you need to add icons. Do **not** add a new library for icons.
-* Try to not commit changes in `package.json`, `package-lock.json`. 
-* Discuss with contributors on discord if you're planning to add/remove a package.
+- We are using [octicons](https://primer.style/octicons/) for icons. Use this if you need to add icons. Do **not** add a new library for icons.
+- Try to not commit changes in `package.json`, `package-lock.json`.
+- Discuss with contributors on discord if you're planning to add/remove a package.
 
 ## Further reading:
 

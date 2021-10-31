@@ -1,7 +1,7 @@
 ---
-slug: "/support"
-date: "2019-05-04"
-title: "💵 Support OSS"
+slug: '/support'
+date: '2019-05-04'
+title: '💵 Support OSS'
 ---
 
 > Think of giving not as a duty but as a privilege --John D. Rockefeller Hr.

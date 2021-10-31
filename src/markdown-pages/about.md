@@ -1,7 +1,7 @@
 ---
-slug: "/about"
-date: "2019-05-04"
-title: "👨‍💻 About"
+slug: '/about'
+date: '2019-05-04'
+title: '👨‍💻 About'
 ---
 
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
