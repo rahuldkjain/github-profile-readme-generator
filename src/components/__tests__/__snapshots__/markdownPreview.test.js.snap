@@ -7,7 +7,7 @@ exports[`DisplaySocial Preview renders correctly 1`] = `
   target="blank"
 >
   <img
-    alt="props.username"
+    alt="username"
     className="w-6 h-6"
     src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
   />
@@ -219,6 +219,9 @@ exports[`Markdown Preview renders correctly 1`] = `
           "twitter": "",
           "youtube": "",
         },
+        "support": Object {
+          "buyMeACoffee": "",
+        },
       }
     }
   />
@@ -254,7 +257,13 @@ exports[`Markdown Preview renders correctly 1`] = `
   <SkillsPreview
     skills={Object {}}
   />
-  <SupportPreview />
+  <SupportPreview
+    support={
+      Object {
+        "buyMeACoffee": "",
+      }
+    }
+  />
   <div
     className="block sm:flex sm:justify-center sm:items-start"
   >
@@ -290,6 +299,8 @@ exports[`Markdown Preview renders correctly 1`] = `
     />
     <StreakStatsPreview
       github=""
+      options={Object {}}
+      show={false}
     />
   </div>
 </div>
@@ -504,8 +515,9 @@ exports[`TwitterBadgePreview Preview renders correctly with show true 1`] = `
 >
    
   <a
-    href="https://twitter.com/\${props.twitter}"
-    target="blank"
+    href="https://twitter.com/"
+    rel="noreferrer"
+    target="_blank"
   >
     <img
       alt=""
@@ -541,6 +553,7 @@ exports[`Work Preview renders correctly 1`] = `
     project="readme-generator"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -555,26 +568,32 @@ exports[`Work Preview renders correctly 1`] = `
     project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
     link=""
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link=""
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
     link=""
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />

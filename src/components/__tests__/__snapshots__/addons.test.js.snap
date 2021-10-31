@@ -368,7 +368,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -385,6 +385,7 @@ exports[`Addons should render Customize Badges 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <XCircleIcon
             className="transform scale-100 md:scale-125"
@@ -515,6 +516,7 @@ exports[`Addons should render Customize Badges 1`] = `
               >
                 Preview: 
                 <img
+                  alt="profile-visitors-count"
                   src="https://komarev.com/ghpvc/?username=undefined&label=Profile%20views&color=0e75b6&style=flat"
                 />
               </span>
@@ -543,7 +545,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -595,7 +597,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -612,6 +614,7 @@ exports[`Addons should render Customize Badges 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -685,7 +688,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -702,6 +705,7 @@ exports[`Addons should render Customize Badges 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -763,7 +767,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -780,6 +784,7 @@ exports[`Addons should render Customize Badges 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -831,7 +836,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -861,7 +866,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -891,7 +896,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -921,7 +926,7 @@ exports[`Addons should render Customize Badges 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1070,7 +1075,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1087,6 +1092,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -1138,7 +1144,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1190,7 +1196,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1207,6 +1213,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <XCircleIcon
             className="transform scale-100 md:scale-125"
@@ -1406,7 +1413,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
                   type="checkbox"
                 />
                 <span
-                  class="checkbox-label__control"
+                  className="checkbox-label__control"
                 />
               </label>
               <label
@@ -1483,7 +1490,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1500,6 +1507,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -1561,7 +1569,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1578,6 +1586,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -1629,7 +1638,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1659,7 +1668,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1689,7 +1698,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1719,7 +1728,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1868,7 +1877,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1885,6 +1894,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -1936,7 +1946,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -1988,7 +1998,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2005,6 +2015,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -2078,7 +2089,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2095,6 +2106,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <XCircleIcon
             className="transform scale-100 md:scale-125"
@@ -2294,7 +2306,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
                   type="checkbox"
                 />
                 <span
-                  class="checkbox-label__control"
+                  className="checkbox-label__control"
                 />
               </label>
               <label
@@ -2359,7 +2371,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2376,6 +2388,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
               "outline": "none",
             }
           }
+          type="button"
         >
           <ToolsIcon
             className="transform scale-100 md:scale-125"
@@ -2427,7 +2440,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2457,7 +2470,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2487,7 +2500,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
@@ -2517,7 +2530,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <span
             className="pl-4"
