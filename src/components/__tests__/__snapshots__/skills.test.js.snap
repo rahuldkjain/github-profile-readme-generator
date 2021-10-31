@@ -61,7 +61,7 @@ exports[`Skills renders correctly 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <img
             alt="javascript"
@@ -104,7 +104,7 @@ exports[`Skills renders correctly 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <img
             alt="react"
@@ -133,7 +133,7 @@ exports[`Skills renders correctly 1`] = `
             type="checkbox"
           />
           <span
-            class="checkbox-label__control"
+            className="checkbox-label__control"
           />
           <img
             alt="svelte"
