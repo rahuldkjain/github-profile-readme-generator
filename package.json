@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@primer/octicons-react": "^10.0.0",
+    "axios": "^0.24.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
