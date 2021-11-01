@@ -138,6 +138,7 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 - [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
 - [Jonah Lawrence](https://github.com/DenverCoder1) for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
 - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
+- [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog input
 
 ## 🙇 Sponsors
 
