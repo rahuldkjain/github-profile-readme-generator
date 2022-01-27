@@ -173,7 +173,7 @@ const categorizedSkills = {
 
   other: {
     title: 'Other',
-    skills: ['linux', 'git', 'arduino'],
+    skills: ['linux', 'git', 'arduino', 'gitkraken'],
   },
 };
 
@@ -240,6 +240,7 @@ const icons = {
   swift: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg',
   typescript: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
   linux: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg',
+  gitkraken: 'https://1v5ymx3zt3y73fq5gy23rtnc-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/gitkraken-logo-dark-sq.svg',
   redux: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
   webpack:
     'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
@@ -409,6 +410,7 @@ const skillWebsites = {
   swift: 'https://developer.apple.com/swift/',
   typescript: 'https://www.typescriptlang.org/',
   linux: 'https://www.linux.org/',
+  gitkraken: 'https://www.gitkraken.com',
   redux: 'https://redux.js.org',
   webpack: 'https://webpack.js.org',
   flutter: 'https://flutter.dev',
