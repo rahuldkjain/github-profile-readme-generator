@@ -85,7 +85,7 @@ const IndexPage = () => {
 
   const handleSocialChange = (field, e) => {
     const change = { ...social };
-    change[field] = field === 'discord' ? e.target.value : e.target.value.toLowerCase();
+    change[field] = e.target.value;
     setSocial(change);
   };
 
