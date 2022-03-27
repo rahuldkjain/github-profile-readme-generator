@@ -199,7 +199,7 @@ const icons = {
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   csharp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
   d3js: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
-  django: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg',
+  django: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django.svg',
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
   electron: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg',
