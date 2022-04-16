@@ -32,14 +32,9 @@ const Donate = () => (
           Buy me a ko-fi
         </a>
         {/* Paypal */}
-        <a href="https://www.paypal.me/rahuldkjain/10" className="flex items-center justify-evenly bg-white-500 text-white py-2 px-4 my-2 border border-solid" target="_blank" rel="noreferrer">
-          <img className="w-32 h-4" src="https://cdn.worldvectorlogo.com/logos/paypal-2.svg" alt="Donate rahuldkjain via paypal" />
-          {/* <img
-              className="w-6 h-6 mr-2"
-              src="https://www.vectorlogo.zone/logos/paypal/paypal-ar21.svg"
-              alt="Donate rahuldkjain via paypal"
-            />
-            Paypal */}
+        <a href="https://www.paypal.me/rahuldkjain/10" className="flex items-center justify-evenly bg-purple-500 text-white py-2 px-4 my-2" target="_blank" rel="noreferrer">
+          <img className="w-6 h-6 mr-2" src="https://cdn.iconscout.com/icon/free/png-256/paypal-4-226455.png" alt="Donate rahuldkjain via paypal" />
+          PayPal Me
         </a>
         {/* BuyMeACoffee */}
         <a href="https://www.buymeacoffee.com/rahuldkjain" className="flex items-center justify-evenly bg-orange-500 text-white py-2 px-4 my-2" target="_blank" rel="noreferrer">
