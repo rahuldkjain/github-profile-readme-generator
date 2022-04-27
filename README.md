@@ -9,7 +9,7 @@
 
 <p align="center">
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" />
+<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
 </a>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
 <img src="https://img.shields.io/github/forks/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
@@ -54,8 +54,8 @@
 
 This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
+## 🚀 Demo
 
-## 🚀 Demo 
 <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">
 <img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
 </a>
@@ -126,10 +126,10 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 ## 💻 Built with
+
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Tailwind CSS](https://tailwindcss.com/): for styling
 - [GSAP](https://greensock.com/gsap/): for small SVG Animations
-
 
 ## 🙇 Special Thanks
 
@@ -138,6 +138,7 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 - [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
 - [Jonah Lawrence](https://github.com/DenverCoder1) for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
 - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
+- [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog input
 
 ## 🙇 Sponsors
 
@@ -145,7 +146,6 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 - [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
 - [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
 - [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
-
 
 ## 🙏 Support
 
@@ -162,7 +162,6 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
   </a>
   <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
 </p>
-
 
 <hr>
 <p align="center">

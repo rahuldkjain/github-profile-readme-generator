@@ -1,11 +1,11 @@
 ---
-slug: "/about"
-date: "2019-05-04"
-title: "👨‍💻 About"
+slug: '/about'
+date: '2019-05-04'
+title: '👨‍💻 About'
 ---
 
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator licence" />
+<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
 </a>
 
 **GitHub Profile README Generator** is an OSS(Open Source Software) that provides a cool interface to generate GitHub profile README in markdown.

@@ -1,4 +1,9 @@
 {
-  "arrowParens": "avoid",
-  "semi": false
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 480,
+  "trailingComma": "all",
+  "semi": true,
+  "exclude": ["node_modules", "codepipeline"]
 }

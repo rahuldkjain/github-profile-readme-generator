@@ -24,8 +24,7 @@ exports[`Footer component renders correctly 1`] = `
           <div
             className="mr-2 sm:mr-0"
           >
-            GitHub Profile
-             
+            GitHub Profile 
             <img
               alt="github profile markdown generator logo"
               className="inline sm:hidden h-12"
@@ -157,7 +156,7 @@ exports[`Footer component renders correctly 1`] = `
         </strong>
       </div>
       <div
-        class="ml-2 sm:ml-0"
+        className="ml-2 sm:ml-0"
       >
         <a
           aria-label="Discord of the community"
