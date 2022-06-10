@@ -1,3 +1,4 @@
+<h1 align="center">Nguyễn Duy Duẩn</h1>
 <h1 align="center">Hi 👋, I'm Duy Duan</h1>
 <h3 align="center">I am from Vietnam, I want to become a data analyst</h3>
 
