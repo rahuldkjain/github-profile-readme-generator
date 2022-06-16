@@ -20,7 +20,8 @@
 <h3 align="left">Tools:</h3>
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-<h3 align="left">The websites that I often learn code:</h3>
+<h3 align="left">SHARING:
+<h4 align="left">The websites that I often learn code:</h4>
 <a href="https://www.w3schools.com">W3SCHOOL</a>
 <br>
 <a href="https://docs.microsoft.com/en-us/">MICROSOFT</a>
@@ -36,3 +37,4 @@
 <a href="https://trailhead.salesforce.com">TRAILHEAD</a>
 <br>
 <a href="https://www.codelearn.io">CODELEARN</a>
+</h3>
