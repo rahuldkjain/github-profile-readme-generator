@@ -26,3 +26,13 @@
 <a href="https://docs.microsoft.com/en-us/">MICROSOFT</a>
 <br>
 <a href="https://app.datacamp.com/learn">DATACAMP</a>
+<br>
+<a href="https://www.udemy.com">UDEMY</a>
+<br>
+<a href="https://www.coursera.com">COURSERA</a>
+<br>
+<a href="https://stackoverflow.com">STACKOVERFLOW</a>
+<br>
+<a href="https://trailhead.salesforce.com">TRAILHEAD</a>
+<br>
+<a href="https://www.codelearn.io">CODELEARN</a>
