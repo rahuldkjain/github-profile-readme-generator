@@ -1,4 +1,5 @@
 <h1 align="center">Nguyễn Duy Duẩn</h1>
+<img src="https://drive.google.com/file/d/1TWOiAkraZn5PFlTp0l1BRPb_d1UP-j0d/view?usp=sharing"width="200" height="200">
 <h3 align="center">"𝙎𝙪𝙘𝙘𝙚𝙨𝙨 𝙞𝙨 𝙩𝙝𝙚 𝙥𝙧𝙤𝙜𝙧𝙚𝙨𝙨𝙞𝙫𝙚 𝙧𝙚𝙖𝙡𝙞𝙯𝙖𝙩𝙞𝙤𝙣 𝙤𝙛 𝙖 𝙬𝙤𝙧𝙩𝙝𝙮 𝙜𝙤𝙖𝙡 𝙤𝙧 𝙞𝙙𝙚𝙖𝙡"-𝙀𝙖𝙧𝙡 𝙉𝙞𝙜𝙝𝙩𝙞𝙣𝙜𝙖𝙡𝙚
 <h3 align="center">I am from Vietnam, I want to become a data analyst</h3></h3>
 
