@@ -173,11 +173,12 @@ const categorizedSkills = {
 
   other: {
     title: 'Other',
-    skills: ['linux', 'git', 'arduino'],
+    skills: ['linux', 'git', 'arduino', 'raspberry'],
   },
 };
 
 const icons = {
+  raspberry: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
@@ -351,6 +352,7 @@ const icons = {
 };
 
 const skillWebsites = {
+  raspberry: 'https://www.raspberrypi.com/',
   arduino: 'https://www.arduino.cc/',
   solidworks: 'https://www.solidworks.com/',
   vuejs: 'https://vuejs.org/',
