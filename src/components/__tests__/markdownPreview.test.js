@@ -248,7 +248,7 @@ describe('DisplaySocial Preview', () => {
         base="https://codepen.io"
         icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
         username={social.codepen}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -259,7 +259,7 @@ describe('DisplaySocial Preview', () => {
         base="https://codepen.io"
         icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
         username={''}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -278,7 +278,7 @@ describe('VisitorsBadge Preview', () => {
           badgeColor: data.badgeColor,
           badgeStyle: data.badgeStyle,
         }}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -295,7 +295,7 @@ describe('VisitorsBadge Preview', () => {
           badgeColor: data.badgeColor,
           badgeStyle: data.badgeStyle,
         }}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -371,7 +371,7 @@ describe('TopLanguages Preview', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
     const tree = shallow(
-      <TopLanguagesPreview show={data.topLanguages} github={social.github} options={data.topLanguagesOptions} />
+      <TopLanguagesPreview show={data.topLanguages} github={social.github} options={data.topLanguagesOptions} />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -389,7 +389,7 @@ describe('GitHubStats Preview', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
     const tree = shallow(
-      <GitHubStatsPreview show={data.githubStats} github={social.github} options={data.githubStatsOptions} />
+      <GitHubStatsPreview show={data.githubStats} github={social.github} options={data.githubStatsOptions} />,
     );
 
     expect(tree).toMatchSnapshot();

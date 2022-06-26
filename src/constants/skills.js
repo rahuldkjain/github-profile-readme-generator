@@ -199,7 +199,7 @@ const icons = {
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   csharp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
   d3js: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
-  django: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg',
+  django: 'https://cdn.worldvectorlogo.com/logos/django.svg',
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
   electron: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg',
@@ -508,7 +508,7 @@ const skillWebsites = {
 const initialSkillState = {};
 
 const skillsArray = Object.keys(categorizedSkills).map((key) => categorizedSkills[key].skills);
-const skills = [].concat.apply([], skillsArray).sort();
+const skills = [...skillsArray].sort();
 
 skills.forEach((skill) => {
   initialSkillState[skill] = false;
