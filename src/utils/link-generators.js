@@ -25,8 +25,13 @@ const streakStatsStylingQueryString = (options) => {
   return queryString;
 };
 
-export const githubStatsLinkGenerator = ({ github, options }) => `https://github-readme-stats.vercel.app/api?username=${github}&${githubStatsStylingQueryString(options)}`;
+export const githubStatsLinkGenerator = ({ github, options }) =>
+  `https://github-readme-stats.vercel.app/api?username=${github}&${githubStatsStylingQueryString(options)}`;
 
-export const topLanguagesLinkGenerator = ({ github, options }) => `https://github-readme-stats.vercel.app/api/top-langs?username=${github}&${githubStatsStylingQueryString(options)}&layout=compact`;
+export const topLanguagesLinkGenerator = ({ github, options }) =>
+  `https://github-readme-stats.vercel.app/api/top-langs?username=${github}&${githubStatsStylingQueryString(
+    options,
+  )}&layout=compact`;
 
-export const streakStatsLinkGenerator = ({ github, options }) => `https://github-readme-streak-stats.herokuapp.com/?user=${github}&${streakStatsStylingQueryString(options)}`;
+export const streakStatsLinkGenerator = ({ github, options }) =>
+  `https://github-readme-streak-stats.herokuapp.com/?user=${github}&${streakStatsStylingQueryString(options)}`;

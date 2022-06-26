@@ -61,14 +61,23 @@ const Header = (props) => {
         </h1>
       </Link>
       <div className="flex justify-center items-center">
-        <a href="https://github.com/rahuldkjain/github-profile-readme-generator" aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub" target="blank" className="mr-2">
+        <a
+          href="https://github.com/rahuldkjain/github-profile-readme-generator"
+          aria-label="Star rahuldkjain/github-profile-readme-generator on GitHub"
+          target="blank"
+          className="mr-2"
+        >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />
             Star this repo
             <span className="github-count px-1 sm:px-2">{stats.starsCount}</span>
           </div>
         </a>
-        <a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub" target="blank">
+        <a
+          href="https://github.com/rahuldkjain/github-profile-readme-generator/fork"
+          aria-label="Fork rahuldkjain/github-profile-readme-generator on GitHub"
+          target="blank"
+        >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <RepoForkedIcon size={16} id="fork-icon" className="px-1 w-6 fork" />
             Fork on GitHub

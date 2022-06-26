@@ -12,7 +12,8 @@ const Footer = () => (
           <div className="flex sm:flex-col items-start mb-3 sm:mb-0">
             <img src={logo} className="hidden sm:block h-24" alt="github profile markdown generator logo" />
             <div className="mr-2 sm:mr-0">
-              GitHub Profile <img src={logo} className="inline sm:hidden h-12" alt="github profile markdown generator logo" />
+              GitHub Profile{' '}
+              <img src={logo} className="inline sm:hidden h-12" alt="github profile markdown generator logo" />
               <span className="block sm:inline">README Generator</span>
             </div>
           </div>
@@ -43,22 +44,38 @@ const Footer = () => (
           <strong>More</strong>
         </div>
         <div className="ml-2 sm:ml-0">
-          <a href="https://github.com/rahuldkjain/github-profile-readme-generator" aria-label="Github rahuldkjain/github-profile-readme-generator" target="blank">
+          <a
+            href="https://github.com/rahuldkjain/github-profile-readme-generator"
+            aria-label="Github rahuldkjain/github-profile-readme-generator"
+            target="blank"
+          >
             Github
           </a>
         </div>
         <div className="ml-2 sm:ml-0">
-          <a href="https://github.com/rahuldkjain/github-profile-readme-generator/releases" aria-label="Releases on Github rahuldkjain/github-profile-readme-generator" target="blank">
+          <a
+            href="https://github.com/rahuldkjain/github-profile-readme-generator/releases"
+            aria-label="Releases on Github rahuldkjain/github-profile-readme-generator"
+            target="blank"
+          >
             Releases
           </a>
         </div>
         <div className="ml-2 sm:ml-0">
-          <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" aria-label="Issues in rahuldkjain/github-profile-readme-generator" target="blank">
+          <a
+            href="https://github.com/rahuldkjain/github-profile-readme-generator/issues"
+            aria-label="Issues in rahuldkjain/github-profile-readme-generator"
+            target="blank"
+          >
             Issues
           </a>
         </div>
         <div className="ml-2 sm:ml-0">
-          <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator" target="blank">
+          <a
+            href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls"
+            aria-label="Pull Requests in rahuldkjain/github-profile-readme-generator"
+            target="blank"
+          >
             Pull Requests
           </a>
         </div>

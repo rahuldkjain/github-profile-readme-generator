@@ -85,7 +85,7 @@ describe('Markdown', () => {
           ...props.data,
           subtitle: '',
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -102,7 +102,7 @@ describe('Markdown', () => {
           ...props.prefix,
           title: '',
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -115,7 +115,7 @@ describe('Markdown', () => {
           ...props.data,
           topLanguages: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -129,7 +129,7 @@ describe('Markdown', () => {
           topLanguages: true,
           githubStats: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -142,7 +142,7 @@ describe('Markdown', () => {
           ...props.data,
           devDynamicBlogs: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -155,7 +155,7 @@ describe('Markdown', () => {
           ...props.data,
           currentWork: '',
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -168,7 +168,7 @@ describe('Markdown', () => {
           ...props.data,
           visitorsBadge: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -181,7 +181,7 @@ describe('Markdown', () => {
           ...props.data,
           twitterBadge: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -194,7 +194,7 @@ describe('Markdown', () => {
           ...props.data,
           githubProfileTrophy: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -207,7 +207,7 @@ describe('Markdown', () => {
           ...props.data,
           githubProfileTrophy: true,
         }}
-      />
+      />,
     );
     expect(toJson(component)).toMatchSnapshot();
   });
