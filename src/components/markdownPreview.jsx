@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { icons, skills as SKILLS, skillWebsites } from '../constants/skills';
-import { githubStatsLinkGenerator, topLanguagesLinkGenerator, streakStatsLinkGenerator } from '../utils/link-generators';
+import {
+  githubStatsLinkGenerator,
+  topLanguagesLinkGenerator,
+  streakStatsLinkGenerator,
+} from '../utils/link-generators';
 import { DEFAULT_DATA, DEFAULT_PREFIX, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
 
 export const TitlePreview = (props) => {
@@ -135,7 +139,8 @@ DisplaySocial.propTypes = {
 export const SocialPreview = (props) => {
   const { social } = props;
   let viewSocial = false;
-  const iconBaseUrl = 'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
+  const iconBaseUrl =
+    'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
   Object.keys(social).forEach((key) => {
     if (social[key] && key !== 'github') viewSocial = true;
   });
@@ -152,13 +157,25 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://twitter.com" icon={`${iconBaseUrl}twitter.svg`} username={social.twitter} />
       </>
       <>
-        <DisplaySocial base="https://linkedin.com/in" icon={`${iconBaseUrl}linked-in-alt.svg`} username={social.linkedin} />
+        <DisplaySocial
+          base="https://linkedin.com/in"
+          icon={`${iconBaseUrl}linked-in-alt.svg`}
+          username={social.linkedin}
+        />
       </>
       <>
-        <DisplaySocial base="https://stackoverflow.com/users" icon={`${iconBaseUrl}stack-overflow.svg`} username={social.stackoverflow} />
+        <DisplaySocial
+          base="https://stackoverflow.com/users"
+          icon={`${iconBaseUrl}stack-overflow.svg`}
+          username={social.stackoverflow}
+        />
       </>
       <>
-        <DisplaySocial base="https://codesandbox.com" icon={`${iconBaseUrl}codesandbox.svg`} username={social.codesandbox} />
+        <DisplaySocial
+          base="https://codesandbox.com"
+          icon={`${iconBaseUrl}codesandbox.svg`}
+          username={social.codesandbox}
+        />
       </>
       <>
         <DisplaySocial base="https://kaggle.com" icon={`${iconBaseUrl}kaggle.svg`} username={social.kaggle} />
@@ -185,25 +202,53 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://www.youtube.com/c" icon={`${iconBaseUrl}youtube.svg`} username={social.youtube} />
       </>
       <>
-        <DisplaySocial base="https://www.codechef.com/users" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" username={social.codechef} />
+        <DisplaySocial
+          base="https://www.codechef.com/users"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+          username={social.codechef}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.hackerrank.com" icon={`${iconBaseUrl}hackerrank.svg`} username={social.hackerrank} />
+        <DisplaySocial
+          base="https://www.hackerrank.com"
+          icon={`${iconBaseUrl}hackerrank.svg`}
+          username={social.hackerrank}
+        />
       </>
       <>
-        <DisplaySocial base="https://codeforces.com/profile" icon={`${iconBaseUrl}codeforces.svg`} username={social.codeforces} />
+        <DisplaySocial
+          base="https://codeforces.com/profile"
+          icon={`${iconBaseUrl}codeforces.svg`}
+          username={social.codeforces}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.leetcode.com" icon={`${iconBaseUrl}leet-code.svg`} username={social.leetcode} />
+        <DisplaySocial
+          base="https://www.leetcode.com"
+          icon={`${iconBaseUrl}leet-code.svg`}
+          username={social.leetcode}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.hackerearth.com" icon={`${iconBaseUrl}hackerearth.svg`} username={social.hackerearth} />
+        <DisplaySocial
+          base="https://www.hackerearth.com"
+          icon={`${iconBaseUrl}hackerearth.svg`}
+          username={social.hackerearth}
+        />
       </>
       <>
-        <DisplaySocial base="https://auth.geeksforgeeks.org/user" icon={`${iconBaseUrl}geeks-for-geeks.svg`} username={social.geeks_for_geeks} />
+        <DisplaySocial
+          base="https://auth.geeksforgeeks.org/user"
+          icon={`${iconBaseUrl}geeks-for-geeks.svg`}
+          username={social.geeks_for_geeks}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.topcoder.com/members" icon={`${iconBaseUrl}topcoder.svg`} username={social.topcoder} />
+        <DisplaySocial
+          base="https://www.topcoder.com/members"
+          icon={`${iconBaseUrl}topcoder.svg`}
+          username={social.topcoder}
+        />
       </>
       <>
         <DisplaySocial base="https://discord.gg" icon={`${iconBaseUrl}discord.svg`} username={social.discord} />
@@ -391,12 +436,20 @@ export const SupportPreview = (props) => {
       <SectionTitle label="Support:" visible={viewSupport} />
       {support.buyMeACoffee && (
         <a href={`https://www.buymeacoffee.com/${support.buyMeACoffee}`} target="_blank" rel="noreferrer">
-          <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12" />
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+          />
         </a>
       )}
       {support.buyMeAKofi && (
         <a href={`https://ko-fi.com/${support.buyMeAKofi}`} target="_blank" rel="noreferrer">
-          <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Buy Me A Ko-fi" className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12" />
+          <img
+            src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
+            alt="Buy Me A Ko-fi"
+            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+          />
         </a>
       )}
     </div>
