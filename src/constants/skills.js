@@ -508,7 +508,8 @@ const skillWebsites = {
 const initialSkillState = {};
 
 const skillsArray = Object.keys(categorizedSkills).map((key) => categorizedSkills[key].skills);
-const skills = [...skillsArray].sort();
+// eslint-disable-next-line prefer-spread
+const skills = [].concat.apply([], skillsArray).sort();
 
 skills.forEach((skill) => {
   initialSkillState[skill] = false;
