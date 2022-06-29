@@ -118,8 +118,8 @@ const categorizedSkills = {
   },
 
   devops: {
-    title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    title: 'DevOps',
+      skills: ['ansible', 'aws', 'azure', 'bash', 'chef', 'circleci', 'docker', 'gcp', 'git', 'github', 'gitlab', 'jenkins', 'kubernetes', 'openshift', 'openstack', 'prometheus', 'puppet', 'splunk', 'terraform', 'travisci', 'vagrant'],
   },
 
   baas: {
@@ -347,10 +347,36 @@ const icons = {
   mssql: 'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
-  matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+    matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+    // Adding new svg urls
+    ansible: 'https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg',
+    chef: 'https://www.vectorlogo.zone/logos/chefio/chefio-icon.svg',
+    git: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    github: 'https://www.vectorlogo.zone/logos/github/github-icon.svg',
+    gitlab: 'https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg',
+    openshift: 'https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg',
+    openstack: 'https://www.vectorlogo.zone/logos/openstack/openstack-icon.svg',
+    prometheus: 'https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg',
+    puppet: 'https://www.vectorlogo.zone/logos/puppet/puppet-icon.svg',
+    splunk: 'https://www.vectorlogo.zone/logos/splunk/splunk-ar21.svg',
+    terraform: 'https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg',
+  //----------------------
 };
 
 const skillWebsites = {
+    // Adding new urls
+    ansible: 'https://www.ansible.com/',
+    chef: 'https://www.chef.io/',
+    git: 'https://git-scm.com/',
+    github: 'https://github.com/',
+    gitlab: 'https://about.gitlab.com/',
+    openshift: 'https://docs.openshift.com/',
+    openstack: 'https://www.openstack.org/',
+    prometheus: 'https://prometheus.io/',
+    puppet: 'https://puppet.com/',
+    splunk: 'https://www.splunk.com/',
+    terraform: 'https://www.terraform.io/',
+    //----------------
   arduino: 'https://www.arduino.cc/',
   solidworks: 'https://www.solidworks.com/',
   vuejs: 'https://vuejs.org/',
