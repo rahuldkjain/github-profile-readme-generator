@@ -91,7 +91,7 @@ describe('Addons', () => {
         social={socialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     expect(toJson(addOnComponent)).toMatchSnapshot();
@@ -113,7 +113,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
@@ -147,7 +147,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
@@ -176,7 +176,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
@@ -205,7 +205,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
@@ -233,7 +233,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -267,7 +267,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -318,7 +318,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -369,7 +369,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -421,7 +421,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -472,7 +472,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -524,7 +524,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -576,7 +576,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
@@ -617,7 +617,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#top-languages-open-btn').simulate('click', {});
@@ -652,7 +652,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#top-languages-open-btn').simulate('click', {});
@@ -686,7 +686,7 @@ describe('Addons', () => {
         social={socialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#visitors-count').simulate('change', mockEvent);
@@ -725,7 +725,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     const workflowElement = addOnComponent.find('.workflow');
@@ -748,7 +748,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     const workflowElement = addOnComponent.find('.workflow');
@@ -771,7 +771,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     const workflowElement = addOnComponent.find('.workflow');
@@ -797,7 +797,7 @@ describe('Addons', () => {
         social={newSocialInput}
         handleCheckChange={mockHandleCheckChange}
         handleDataChange={mockHandleDataChange}
-      />
+      />,
     );
 
     addOnComponent.find('#blog-post-worklow-span').simulate('click', {});

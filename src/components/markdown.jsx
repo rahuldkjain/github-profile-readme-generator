@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { isMediumUsernameValid } from '../utils/validation';
 import { icons, skills as SKILLS, skillWebsites } from '../constants/skills';
-import { githubStatsLinkGenerator, topLanguagesLinkGenerator, streakStatsLinkGenerator } from '../utils/link-generators';
+import {
+  githubStatsLinkGenerator,
+  topLanguagesLinkGenerator,
+  streakStatsLinkGenerator,
+} from '../utils/link-generators';
 import { DEFAULT_DATA, DEFAULT_LINK, DEFAULT_PREFIX, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
 
 const Title = (props) => {
@@ -451,7 +455,8 @@ DisplaySupport.propTypes = {
 
 const Markdown = (props) => {
   const { prefix, data, link, social, skills, support } = props;
-  const iconBaseUrl = 'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
+  const iconBaseUrl =
+    'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/';
   return (
     <div id="markdown-content" className="break-words">
       <>
@@ -506,7 +511,13 @@ const Markdown = (props) => {
         <DisplayWork prefix={prefix.funFact} project={data.funFact} />
       </>
       <>
-        <DisplayDynamicBlogs show={(data.devDynamicBlogs && social.dev) || (data.rssDynamicBlogs && social.rssurl) || (data.mediumDynamicBlogs && social.medium && isMediumUsernameValid(social.medium))} />
+        <DisplayDynamicBlogs
+          show={
+            (data.devDynamicBlogs && social.dev) ||
+            (data.rssDynamicBlogs && social.rssurl) ||
+            (data.mediumDynamicBlogs && social.medium && isMediumUsernameValid(social.medium))
+          }
+        />
       </>
       {isSocial(social) ? (
         <>
@@ -527,13 +538,25 @@ const Markdown = (props) => {
         <DisplaySocial base="https://twitter.com" icon={`${iconBaseUrl}twitter.svg`} username={social.twitter} />
       </>
       <>
-        <DisplaySocial base="https://linkedin.com/in" icon={`${iconBaseUrl}linked-in-alt.svg`} username={social.linkedin} />
+        <DisplaySocial
+          base="https://linkedin.com/in"
+          icon={`${iconBaseUrl}linked-in-alt.svg`}
+          username={social.linkedin}
+        />
       </>
       <>
-        <DisplaySocial base="https://stackoverflow.com/users" icon={`${iconBaseUrl}stack-overflow.svg`} username={social.stackoverflow} />
+        <DisplaySocial
+          base="https://stackoverflow.com/users"
+          icon={`${iconBaseUrl}stack-overflow.svg`}
+          username={social.stackoverflow}
+        />
       </>
       <>
-        <DisplaySocial base="https://codesandbox.com" icon={`${iconBaseUrl}codesandbox.svg`} username={social.codesandbox} />
+        <DisplaySocial
+          base="https://codesandbox.com"
+          icon={`${iconBaseUrl}codesandbox.svg`}
+          username={social.codesandbox}
+        />
       </>
       <>
         <DisplaySocial base="https://kaggle.com" icon={`${iconBaseUrl}kaggle.svg`} username={social.kaggle} />
@@ -560,25 +583,53 @@ const Markdown = (props) => {
         <DisplaySocial base="https://www.youtube.com/c" icon={`${iconBaseUrl}youtube.svg`} username={social.youtube} />
       </>
       <>
-        <DisplaySocial base="https://www.codechef.com/users" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" username={social.codechef} />
+        <DisplaySocial
+          base="https://www.codechef.com/users"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+          username={social.codechef}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.hackerrank.com" icon={`${iconBaseUrl}hackerrank.svg`} username={social.hackerrank} />
+        <DisplaySocial
+          base="https://www.hackerrank.com"
+          icon={`${iconBaseUrl}hackerrank.svg`}
+          username={social.hackerrank}
+        />
       </>
       <>
-        <DisplaySocial base="https://codeforces.com/profile" icon={`${iconBaseUrl}codeforces.svg`} username={social.codeforces} />
+        <DisplaySocial
+          base="https://codeforces.com/profile"
+          icon={`${iconBaseUrl}codeforces.svg`}
+          username={social.codeforces}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.leetcode.com" icon={`${iconBaseUrl}leet-code.svg`} username={social.leetcode} />
+        <DisplaySocial
+          base="https://www.leetcode.com"
+          icon={`${iconBaseUrl}leet-code.svg`}
+          username={social.leetcode}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.hackerearth.com" icon={`${iconBaseUrl}hackerearth.svg`} username={social.hackerearth} />
+        <DisplaySocial
+          base="https://www.hackerearth.com"
+          icon={`${iconBaseUrl}hackerearth.svg`}
+          username={social.hackerearth}
+        />
       </>
       <>
-        <DisplaySocial base="https://auth.geeksforgeeks.org/user" icon={`${iconBaseUrl}geeks-for-geeks.svg`} username={social.geeks_for_geeks} />
+        <DisplaySocial
+          base="https://auth.geeksforgeeks.org/user"
+          icon={`${iconBaseUrl}geeks-for-geeks.svg`}
+          username={social.geeks_for_geeks}
+        />
       </>
       <>
-        <DisplaySocial base="https://www.topcoder.com/members" icon={`${iconBaseUrl}topcoder.svg`} username={social.topcoder} />
+        <DisplaySocial
+          base="https://www.topcoder.com/members"
+          icon={`${iconBaseUrl}topcoder.svg`}
+          username={social.topcoder}
+        />
       </>
       <>
         <DisplaySocial base="https://discord.gg" icon={`${iconBaseUrl}discord.svg`} username={social.discord} />
@@ -602,7 +653,12 @@ const Markdown = (props) => {
         <DisplaySupport support={support} />
       </>
       <>
-        <DisplayTopLanguages show={data.topLanguages} showStats={data.githubStats} github={social.github} options={data.topLanguagesOptions} />
+        <DisplayTopLanguages
+          show={data.topLanguages}
+          showStats={data.githubStats}
+          github={social.github}
+          options={data.topLanguagesOptions}
+        />
       </>
       <>
         <GitHubStats show={data.githubStats} github={social.github} options={data.githubStatsOptions} />
