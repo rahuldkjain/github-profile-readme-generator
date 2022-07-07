@@ -1,0 +1,38 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# Use `allow` to specify which dependencies to maintain
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow updates for Lodash
+      - dependency-name: "lodash"
+      # Allow updates for React and any packages starting "react"
+      - dependency-name: "react*"
+
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow both direct and indirect updates for all packages
+      - dependency-type: "all"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow only direct updates for
+      # Django and any packages starting "django"
+      - dependency-name: "django*"
+        dependency-type: "direct"
+      # Allow only production updates for Sphinx
+      - dependency-name: "sphinx"
+        dependency-type: "production"
