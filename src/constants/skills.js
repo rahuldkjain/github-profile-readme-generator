@@ -129,7 +129,7 @@ const categorizedSkills = {
 
   framework: {
     title: 'Framework',
-    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask', 'quasar'],
+    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'fastapi', 'flask', 'quasar'],
   },
 
   testing: {
@@ -269,6 +269,7 @@ const icons = {
   blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
   babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
   sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
+  fastapi: 'https://raw.githubusercontent.com/simple-icons/simple-icons/2309e4c43c0c0aeb1eda4ab223aa07fcb2238bcc/icons/fastapi.svg',
   flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
   nativescript:
     'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
@@ -436,6 +437,7 @@ const skillWebsites = {
   blender: 'https://www.blender.org/',
   babel: 'https://babeljs.io/',
   sketch: 'https://www.sketch.com/',
+  fastapi: 'https://fastapi.tiangolo.com/',
   flask: 'https://flask.palletsprojects.com/',
   nativescript: 'https://nativescript.org/',
   xamarin: 'https://dotnet.microsoft.com/apps/xamarin',
