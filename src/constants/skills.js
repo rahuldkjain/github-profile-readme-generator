@@ -46,6 +46,7 @@ const categorizedSkills = {
       'webpack',
       'babel',
       'tailwind',
+      'facilecss',
       'materialize',
       'bulma',
       'gtk',
@@ -344,6 +345,7 @@ const icons = {
   erlang: 'https://www.vectorlogo.zone/logos/erlang/erlang-official.svg',
   nim: 'https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg',
   sqlite: 'https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg',
+  facilecss: 'https://www.facilecss.com/icon.png',
   mssql: 'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
@@ -498,6 +500,7 @@ const skillWebsites = {
   travisci: 'https://travis-ci.org',
   apachecordova: 'https://cordova.apache.org/',
   sqlite: 'https://www.sqlite.org/',
+  facilecss: 'https://facilecss.com',
   mssql: 'https://www.microsoft.com/en-us/sql-server',
   postman: 'https://postman.com',
   erlang: 'https://www.erlang.org/',
