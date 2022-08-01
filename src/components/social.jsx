@@ -211,7 +211,7 @@ const Social = (props) => {
           />
           <input
             id="youtube"
-            placeholder="youtube channel name"
+            placeholder="youtube channel ID"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.youtube}
             onChange={(event) => handleSocialChange('youtube', event)}
