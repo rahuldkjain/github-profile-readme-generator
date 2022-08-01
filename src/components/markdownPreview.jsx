@@ -199,7 +199,7 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://medium.com" icon={`${iconBaseUrl}medium.svg`} username={social.medium} />
       </>
       <>
-        <DisplaySocial base="https://www.youtube.com/c" icon={`${iconBaseUrl}youtube.svg`} username={social.youtube} />
+        <DisplaySocial base="https://www.youtube.com/channel" icon={`${iconBaseUrl}youtube.svg`} username={social.youtube} />
       </>
       <>
         <DisplaySocial
