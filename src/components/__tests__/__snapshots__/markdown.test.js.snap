@@ -133,11 +133,15 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -373,11 +377,15 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -613,11 +621,15 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -853,11 +865,15 @@ exports[`Markdown renders topLanguages is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -1093,11 +1109,15 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -1333,11 +1353,15 @@ exports[`Markdown renders twitterBadge is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -1573,11 +1597,15 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -1813,11 +1841,15 @@ exports[`Markdown renders without link.currentWork 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -2053,11 +2085,15 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
@@ -2293,11 +2329,15 @@ exports[`Markdown renders without subtitle 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
-    base="https://www.youtube.com/c"
+    base="https://www.youtube.com/channel"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
