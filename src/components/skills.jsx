@@ -11,7 +11,13 @@ const Skills = (props) => {
   const createSkill = (skill) => (
     <div className="w-1/3 sm:w-1/4 my-6" key={skill}>
       <label htmlFor={skill} className="checkbox-label flex items-center justify-start">
-        <input id={skill} type="checkbox" className="checkbox-label__input" checked={skills[skill]} onChange={() => handleSkillsChange(skill)} />
+        <input
+          id={skill}
+          type="checkbox"
+          className="checkbox-label__input"
+          checked={skills[skill]}
+          onChange={() => handleSkillsChange(skill)}
+        />
         <span className="checkbox-label__control" />
         <img className="ml-4 w-8 h-8 sm:w-10 sm:h-10" src={icons[skill]} alt={skill} />
         <span className="tooltiptext">{skill}</span>
@@ -32,7 +38,13 @@ const Skills = (props) => {
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
         Skills
         <div className="relative flex">
-          <input type="text" onChange={(e) => onSearchChange(e.target.value)} className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700" placeholder="Search Skills" ref={inputRef} />
+          <input
+            type="text"
+            onChange={(e) => onSearchChange(e.target.value)}
+            className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700"
+            placeholder="Search Skills"
+            ref={inputRef}
+          />
           <span className="absolute" style={{ right: '10px' }}>
             {search !== '' ? (
               <button
@@ -60,7 +72,11 @@ const Skills = (props) => {
         .map((key) => (
           <div key={key} className="divide-y divide-gray-500">
             <div className="text-sm sm:text-xl text-gray-900 text-left py-1">{categorizedSkills[key].title}</div>
-            <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">{categorizedSkills[key].skills.filter((skill) => skill.includes(search.toLowerCase())).map((skill) => createSkill(skill))}</div>
+            <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
+              {categorizedSkills[key].skills
+                .filter((skill) => skill.includes(search.toLowerCase()))
+                .map((skill) => createSkill(skill))}
+            </div>
           </div>
         ))}
       <span className="flex justify-center text-gray-900">

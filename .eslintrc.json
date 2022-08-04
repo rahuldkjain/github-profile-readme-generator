@@ -14,5 +14,6 @@
   "plugins": ["react"],
   "rules": {
     "react/forbid-prop-types": 0
-  }
+  },
+  "ignorePatterns": ["**/*.test.js"]
 }
