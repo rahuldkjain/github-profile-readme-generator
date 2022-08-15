@@ -23,6 +23,7 @@ const categorizedSkills = {
       'elixir',
       'erlang',
       'nim',
+      'r'
     ],
   },
 
@@ -223,6 +224,7 @@ const icons = {
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
   photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
   xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
+  r: 'https://www.r-project.org/logo/Rlogo.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
   postgresql:
