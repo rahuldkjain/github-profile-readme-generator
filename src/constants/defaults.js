@@ -8,6 +8,7 @@ export const DEFAULT_PREFIX = {
   contact: '📫 How to reach me',
   resume: '📄 Know about my experiences',
   funFact: '⚡ Fun fact',
+  pronouns: '😄 Pronouns',
   portfolio: '👨‍💻 All of my projects are available at',
   blog: '📝 I regularly write articles on',
 };
@@ -22,6 +23,7 @@ export const DEFAULT_DATA = {
   ama: '',
   contact: '',
   funFact: '',
+  pronouns: '',
   twitterBadge: false,
   visitorsBadge: false,
   badgeStyle: 'flat',
