@@ -84,7 +84,7 @@ Aracı deneyin: [GitHub Profili README Oluşturucu](https://rahuldkjain.github.i
 
 - **RSS Akışından Dinamik Kişisel Bloglar** (GitHub Eylemi)
 
-- **Wakatime İstatistikleri** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
+- **Wakatime İstatistikleri** [katkıda bulunmak](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
 
 - **Bana Kahve Al düğmesi**
 
