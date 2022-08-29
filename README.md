@@ -86,7 +86,7 @@ Aracı deneyin: [GitHub Profili README Oluşturucu](https://rahuldkjain.github.i
 
 - **Wakatime İstatistikleri** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
 
-- **Buy Me A Coffee button**
+- **Bana Kahve Al düğmesi**
 
 README'nizi 'markdown'da almak için 'Beni OKUYUN'u tıklayın.
 README'yi de önizleyebilirsiniz.
@@ -121,33 +121,33 @@ npm start
 
 ## 🍰 Katkı
 
-Lütfen kullanarak katkıda bulunun [GitHub Flow](https://guides.github.com/introduction/flow). Bir şube oluşturun, taahhütler ekleyin ve [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
+Lütfen kullanarak katkıda bulunun [GitHub Akışı](https://guides.github.com/introduction/flow). Bir şube oluşturun, taahhütler ekleyin ve [bir çekme isteği aç](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
 
-Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+[`DAVRANIŞ KODU`](CODE_OF_CONDUCT.md) ile ilgili ayrıntılar ve bize çekme isteklerini gönderme süreci için lütfen [`KATKIDA`](KATKIDAKİ.md) bölümünü okuyun.
 
-## 💻 Built with
+## 💻 İle inşa etmek
 
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Tailwind CSS](https://tailwindcss.com/): for styling
 - [GSAP](https://greensock.com/gsap/): for small SVG Animations
 
-## 🙇 Special Thanks
+## 🙇 Özel Teşekkür
 
-- [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-- [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
-- [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
-- [Jonah Lawrence](https://github.com/DenverCoder1) for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
-- [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
-- [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog input
+- [Anurag Hazra](https://github.com/anuraghazra) inanılmaz için [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+- [Anton Komarev](https://github.com/antonkomarev) süper serin için [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
+- [Gautam Krishna R](https://github.com/gautamkrishnar) harika için [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
+- [Jonah Lawrence](https://github.com/DenverCoder1) inanılmaz için [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+- [Julien Monty](https://github.com/konpa) süper kullanışlı [devicon](https://github.com/konpa/devicon)
+- [Eliot Sanford](https://github.com/techieeliot) hashnode'u blog girişi olarak eklemek için
 
-## 🙇 Sponsors
+## 🙇 Sponsor
 
-- [Scott C Wilson](https://github.com/scottcwilson) donated the first-ever grant to this tool. A big thanks to him.
-- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
-- [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
-- [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
+- [Scott C Wilson](https://github.com/scottcwilson) bu araca ilk hibe bağışladı. Ona büyük bir teşekkür.
+- [Max Schmitt](https://github.com/mxschmitt) aracı sevdi ve bağışıyla destek verdi. Çok teşekkürler.
+- [Aadit Kamat](https://github.com/aaditkamat) aracı faydalı buldu ve bağışıyla destek verdi. Ona büyük bir teşekkür.
+- [Jean-Michel Fayard](https://github.com/jmfayard) Jeneratörü GitHub Profil README'sini oluşturmak için kullandı ve onu sevdi. Bağış ile araca destek gösterdiği için kendisine teşekkür ederiz.
 
-## 🙏 Support
+## 🙏 Destek
 
 <p align="left">
 <a href="https://www.paypal.me/rahuldkjain/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
@@ -165,5 +165,6 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 <hr>
 <p align="center">
-Developed with ❤️ in India 🇮🇳 
+Hindistan'da ❤️ ile geliştirildi 🇮🇳
+Türkçe diline ❤️ çevrilmiştir 🇹🇷
 </p>
