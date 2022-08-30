@@ -23,6 +23,7 @@ const categorizedSkills = {
       'elixir',
       'erlang',
       'nim',
+      'r'
     ],
   },
 
@@ -343,6 +344,7 @@ const icons = {
   postman: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
   erlang: 'https://www.vectorlogo.zone/logos/erlang/erlang-official.svg',
   nim: 'https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg',
+  r: 'https://www.r-project.org/logo/Rlogo.svg',
   sqlite: 'https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg',
   mssql: 'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
   middleman:
@@ -398,6 +400,7 @@ const skillWebsites = {
   perl: 'https://www.perl.org/',
   postgresql: 'https://www.postgresql.org',
   python: 'https://www.python.org',
+  r:  'https://www.r-project.org/',
   rails: 'https://rubyonrails.org',
   redis: 'https://redis.io',
   ruby: 'https://www.ruby-lang.org/en/',
