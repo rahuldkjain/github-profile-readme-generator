@@ -206,17 +206,32 @@ const CustomizeGithubStatsBase = ({ githubName, prefix, options, onUpdate }) => 
         size="2"
       />
     </label>
-    <span className="mt-2 flex items-center">
-      Preview:&nbsp;
-      {isGitHubUsernameValid(githubName) ? (
-        <img
-          src={`https://github-readme-stats.vercel.app/api?username=${githubName}&show_icons=true&hide_border=${options.hideBorder}&theme=${options.theme}&title_color=${options.titleColor}&text_color=${options.textColor}&bg_color=${options.bgColor}&cache_seconds=${options.cacheSeconds}&locale=${options.locale}`}
-          alt="github-stats-preview"
-        />
-      ) : (
-        <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
-      )}
-    </span>
+    {prefix === 'stats' && (
+      <span className="mt-2 flex items-center">
+        Preview:&nbsp;
+        {isGitHubUsernameValid(githubName) ? (
+          <img
+            src={`https://github-readme-stats.vercel.app/api?username=${githubName}&show_icons=true&hide_border=${options.hideBorder}&theme=${options.theme}&title_color=${options.titleColor}&text_color=${options.textColor}&bg_color=${options.bgColor}&cache_seconds=${options.cacheSeconds}&locale=${options.locale}`}
+            alt="github-stats-preview"
+          />
+        ) : (
+          <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+        )}
+      </span>
+    )}
+    {prefix === 'top-lang' && (
+      <span className="mt-2 flex items-center">
+        Preview:&nbsp;
+        {isGitHubUsernameValid(githubName) ? (
+          <img
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubName}&layout=compact&hide_border=${options.hideBorder}&theme=${options.theme}&title_color=${options.titleColor}&text_color=${options.textColor}&bg_color=${options.bgColor}&cache_seconds=${options.cacheSeconds}&locale=${options.locale}`}
+            alt="github-top-languages-preview"
+          />
+        ) : (
+          <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+        )}
+      </span>
+    )}
   </>
 );
 CustomizeGithubStatsBase.propTypes = {
@@ -410,7 +425,12 @@ const Addons = (props) => {
           <CustomizeOptions
             title="Customize Top Skills Card"
             CustomizationOptions={
-              <CustomizeGithubStatsBase prefix="top-lang" options={topLanguagesOptions} onUpdate={onTopLangUpdate} />
+              <CustomizeGithubStatsBase
+                githubName={social.github}
+                prefix="top-lang"
+                options={topLanguagesOptions}
+                onUpdate={onTopLangUpdate}
+              />
             }
           />
         }
