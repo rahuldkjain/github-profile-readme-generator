@@ -134,7 +134,7 @@ const categorizedSkills = {
 
   testing: {
     title: 'Testing',
-    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine'],
+    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine', 'robotframework'],
   },
 
   software: {
@@ -311,6 +311,7 @@ const icons = {
   puppeteer: 'https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg',
   karma: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg',
   jasmine: 'https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg',
+  robotframework: 'https://i.ibb.co/RYxzJd2/Robot-framework-logo.png',
   gtk: 'https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg',
   qt: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg',
   wx_widgets: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg',
@@ -472,6 +473,7 @@ const skillWebsites = {
   puppeteer: 'https://github.com/puppeteer/puppeteer',
   karma: 'https://karma-runner.github.io/latest/index.html',
   jasmine: 'https://jasmine.github.io/',
+  robotframework: 'https://robotframework.org/',
   gtk: 'https://www.gtk.org/',
   qt: 'https://www.qt.io/',
   wx_widgets: 'https://www.wxwidgets.org/',
