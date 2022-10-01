@@ -67,6 +67,10 @@
     "prettier": "2.0.5",
     "tailwindcss": "^1.7.6"
   },
+  "engines" : { 
+    "npm" : ">=8.0.0",
+    "node" : ">=16.0.0"
+  },
   "keywords": [
     "gatsby"
   ],
