@@ -90,6 +90,7 @@ export const DEFAULT_SOCIAL = {
   geeks_for_geeks: '',
   discord: '',
   rssurl: '',
+  replit:''
 };
 
 export const DEFAULT_SUPPORT = {

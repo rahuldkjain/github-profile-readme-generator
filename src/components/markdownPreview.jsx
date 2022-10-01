@@ -256,6 +256,9 @@ export const SocialPreview = (props) => {
       <>
         <DisplaySocial base="" icon={`${iconBaseUrl}rss.svg`} username={social.rssurl} />
       </>
+      <>
+        <DisplaySocial base="https://replit.com" icon={`${iconBaseUrl}replit.svg`} username={social.replit} />
+      </>
     </div>
   );
 };
