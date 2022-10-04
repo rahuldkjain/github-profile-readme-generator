@@ -319,6 +319,7 @@ const icons = {
   quasar: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg',
   kibana: 'https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg',
   grafana: 'https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg',
+  powerbi: 'https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg',
   elasticsearch: 'https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg',
   circleci: 'https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg',
   scully: 'https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg',
@@ -348,7 +349,6 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
-  powerbi: 'https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg',
 };
 
 const skillWebsites = {
@@ -481,6 +481,7 @@ const skillWebsites = {
   quasar: 'https://quasar.dev/',
   kibana: 'https://www.elastic.co/kibana',
   grafana: 'https://grafana.com',
+  powerbi: 'https://powerbi.microsoft.com/',
   elasticsearch: 'https://www.elastic.co',
   circleci: 'https://circleci.com',
   scully: 'https://scully.io/',
@@ -504,7 +505,6 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
-  powerbi: 'https://powerbi.microsoft.com/',
 };
 
 const initialSkillState = {};
