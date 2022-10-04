@@ -114,7 +114,7 @@ const categorizedSkills = {
 
   data_visualization: {
     title: 'Data Visualization',
-    skills: ['d3js', 'chartjs', 'canvasjs', 'kibana', 'grafana'],
+    skills: ['d3js', 'chartjs', 'canvasjs', 'kibana', 'grafana', 'powerbi'],
   },
 
   devops: {
@@ -319,6 +319,7 @@ const icons = {
   quasar: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg',
   kibana: 'https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg',
   grafana: 'https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg',
+  powerbi: 'https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg',
   elasticsearch: 'https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg',
   circleci: 'https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg',
   scully: 'https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg',
@@ -480,6 +481,7 @@ const skillWebsites = {
   quasar: 'https://quasar.dev/',
   kibana: 'https://www.elastic.co/kibana',
   grafana: 'https://grafana.com',
+  powerbi: 'https://powerbi.microsoft.com/',
   elasticsearch: 'https://www.elastic.co',
   circleci: 'https://circleci.com',
   scully: 'https://scully.io/',
