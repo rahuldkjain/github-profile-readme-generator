@@ -158,12 +158,13 @@ const categorizedSkills = {
       'vuepress',
       'hexo',
       'middleman',
+      'astro',
     ],
   },
 
   game_engines: {
     title: 'Game Engines',
-    skills: ['unity', 'unreal'],
+    skills: ['unity', 'unreal','godot'],
   },
 
   automation: {
@@ -332,6 +333,7 @@ const icons = {
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
   unreal:
     'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
+  godot: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/godot/godot-original.svg',
   elixir: 'https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg',
   heroku: 'https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg',
   appwrite: 'https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg',
@@ -348,6 +350,7 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  astro: 'https://astro.build/favicon.svg',
 };
 
 const skillWebsites = {
@@ -489,6 +492,7 @@ const skillWebsites = {
   vuepress: 'https://vuepress.vuejs.org/',
   unity: 'https://unity.com/',
   unreal: 'https://unrealengine.com/',
+  godot: 'https://godotengine.org/',
   hexo: 'hexo.io/',
   heroku: 'https://heroku.com',
   appwrite: 'https://appwrite.io',
@@ -503,6 +507,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  astro: 'https://astro.build/',
 };
 
 const initialSkillState = {};
