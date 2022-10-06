@@ -29,6 +29,7 @@ const categorizedSkills = {
   frontend_dev: {
     title: 'Frontend Development',
     skills: [
+      'astro',
       'vuejs',
       'react',
       'svelte',
@@ -163,7 +164,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: 'Game Engines',
-    skills: ['unity', 'unreal'],
+    skills: ['unity', 'unreal', 'godot'],
   },
 
   automation: {
@@ -178,6 +179,8 @@ const categorizedSkills = {
 };
 
 const icons = {
+  astro: 'https://astro.build/assets/press/full-logo-light.svg',
+  godot: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/godot/godot-original-wordmark.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
