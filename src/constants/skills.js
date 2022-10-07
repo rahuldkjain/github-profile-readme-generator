@@ -109,6 +109,7 @@ const categorizedSkills = {
       'elasticsearch',
       'sqlite',
       'mssql',
+      'planetscale'
     ],
   },
 
@@ -178,6 +179,7 @@ const categorizedSkills = {
 };
 
 const icons = {
+  planetscale: 'https://raw.githubusercontent.com/dhairyathedev/images/main/planetscale.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
