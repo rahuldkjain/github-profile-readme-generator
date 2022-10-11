@@ -362,6 +362,11 @@ exports[`Social Preview renders correctly 1`] = `
     username=""
   />
   <DisplaySocial
+    base="https://t.me"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/telegram.svg"
+    username=""
+  />
+  <DisplaySocial
     base="https://twitter.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
     username=""
@@ -404,6 +409,11 @@ exports[`Social Preview renders correctly 1`] = `
   <DisplaySocial
     base="https://www.behance.net"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
+    username=""
+  />
+  <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
     username=""
   />
   <DisplaySocial
