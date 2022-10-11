@@ -118,8 +118,9 @@ const categorizedSkills = {
   },
 
   devops: {
-    title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    title: 'Devops', 
+    skills: ['github', 'bitbucket', 'gitlab', 'jenkins', 'docker', 'puppet', 'maven', 'aws', 'gcp', 'bash', 'azure', 'vagrant', 'gradle', 'circleci', 'bamboo', 'teamcity', 'travisci', 'buddy', 'chef', 'kubernetes', 'ansible', 'vagrant', 'consul', 'terraform', 'selenium', 'soapui', 'nagios', 'prometheus', 'splunk', 'elasticsearch', 'logstash', 'kibana', 'mesos', 'dynatrace', 'appdynamics', 'datadog', 'sensu'],
+    // skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
   },
 
   baas: {
@@ -348,6 +349,29 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  github: 'https://www.vectorlogo.zone/logos/github/github-tile.svg',
+  gitlab: 'https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg',
+  puppet : 'https://www.vectorlogo.zone/logos/puppet/puppet-icon.svg',
+  gradle : 'https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg',
+  bamboo : 'https://www.vectorlogo.zone/logos/atlassian_bamboo/atlassian_bamboo-icon.svg',
+  chef : 'https://www.vectorlogo.zone/logos/chefio/chefio-icon.svg',
+  ansible : 'https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg',
+  consul : 'https://www.vectorlogo.zone/logos/consulio/consulio-icon.svg',
+  terraform : 'https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg',
+  nagios : 'https://www.vectorlogo.zone/logos/nagios/nagios-icon.svg',
+  prometheus : 'https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg',
+  splunk : 'https://www.vectorlogo.zone/logos/splunk/splunk-icon.svg',
+  logstash : 'https://www.vectorlogo.zone/logos/elasticco_logstash/elasticco_logstash-icon.svg',
+  mesos : 'https://www.vectorlogo.zone/logos/apache_mesos/apache_mesos-icon.svg',
+  dynatrace : 'https://www.vectorlogo.zone/logos/dynatrace/dynatrace-icon.svg',
+  appdynamics : 'https://www.vectorlogo.zone/logos/appdynamics/appdynamics-icon.svg',
+  datadog : 'https://www.vectorlogo.zone/logos/datadoghq/datadoghq-icon.svg',
+  sensu : 'https://www.vectorlogo.zone/logos/sensuio/sensuio-icon.svg',
+  bitbucket : 'https://www.svgrepo.com/show/353486/bitbucket.svg',
+  buddy: 'https://www.svgrepo.com/show/353518/buddy.svg',
+  soapui : 'https://cdn.icon-icons.com/icons2/1381/PNG/512/soapui_93772.png',
+  teamcity : 'https://resources.jetbrains.com/storage/products/teamcity/img/meta/teamcity_logo_300x300.png',
+  maven : 'https://cdn.fs.teachablecdn.com/L2rtxPaRxa4am1VtNegg'
 };
 
 const skillWebsites = {
