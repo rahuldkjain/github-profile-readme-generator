@@ -187,6 +187,9 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://instagram.com" icon={`${iconBaseUrl}instagram.svg`} username={social.instagram} />
       </>
       <>
+        <DisplaySocial base="https://t.me" icon={`${iconBaseUrl}telegram.svg`} username={social.telegram} />
+      </>
+      <>
         <DisplaySocial base="https://dribbble.com" icon={`${iconBaseUrl}dribbble.svg`} username={social.dribbble} />
       </>
       <>
