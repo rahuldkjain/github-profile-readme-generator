@@ -30,9 +30,10 @@ const ScrollToTop = () => {
 
   return (
     <div className="relative">
-      <div
-        className="fixed cursor-pointer h-10 w-10 bg-blue-500 text-white text-xs rounded-full flex justify-center items-center"
+      <button
         onClick={goToTop}
+        type="button"
+        className="fixed cursor-pointer focus:outline-none h-10 w-10 bg-blue-500 text-white text-xs rounded-full flex justify-center items-center"
         style={{
           bottom: 25,
           right: 100,
@@ -41,7 +42,7 @@ const ScrollToTop = () => {
         <svg style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
           <path fill="currentColor" d="M7,15L12,10L17,15H7Z" />
         </svg>
-      </div>
+      </button>
     </div>
   );
 };

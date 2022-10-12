@@ -10,7 +10,7 @@ import {
   FileCodeIcon,
 } from '@primer/octicons-react';
 import MarkdownPreview from '../components/markdownPreview';
-import ScrollToTop from '../components/scroll-up';
+import ScrollToTop from '../components/scrollUp';
 import Markdown from '../components/markdown';
 import Title from '../components/title';
 import Subtitle from '../components/subtitle';
