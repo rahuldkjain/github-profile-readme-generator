@@ -377,7 +377,8 @@ const skillWebsites = {
   go: 'https://golang.org',
   graphql: 'https://graphql.org',
   gulp: 'https://gulpjs.com',
-  html5: 'https://www.w3.org/html/',
+  // html5: 'https://www.w3.org/html/', this page is obsolete
+  html5: 'https://html.spec.whatwg.org/multipage/',
   hugo: 'https://gohugo.io/',
   java: 'https://www.java.com',
   javascript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
