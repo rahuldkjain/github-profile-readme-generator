@@ -363,7 +363,7 @@ const skillWebsites = {
   bootstrap: 'https://getbootstrap.com',
   c: 'https://www.cprogramming.com/',
   canvasjs: 'https://canvasjs.com',
-  coffeescript: 'https://offeescript.org',
+  coffeescript: 'https://coffeescript.org',
   codeigniter: 'https://codeigniter.com',
   cplusplus: 'https://www.w3schools.com/cpp/',
   css3: 'https://www.w3schools.com/css/',
