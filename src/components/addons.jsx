@@ -241,7 +241,7 @@ CustomizeGithubStatsBase.propTypes = {
   onUpdate: PropTypes.func.isRequired,
 };
 
-const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
+const CustomizeStreakStats = ({ githubName, prefix, options, onUpdate }) => (
   <>
     <label htmlFor={`${prefix}-theme`}>
       Theme:&nbsp;
@@ -254,10 +254,20 @@ const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
         <option value="dark">dark</option>
         <option value="highcontrast">highcontrast</option>
       </select>
+      Preview:
+      {isGitHubUsernameValid(githubName) ? (
+        <img
+          src={`https://github-readme-streak-stats.herokuapp.com/?user=${githubName}&theme=${options.theme}`}
+          alt="github-streak-stats-preview"
+        />
+      ) : (
+        <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+      )}
     </label>
   </>
 );
 CustomizeStreakStats.propTypes = {
+  githubName: PropTypes.string.isRequired,
   prefix: PropTypes.string.isRequired,
   options: PropTypes.object.isRequired,
   onUpdate: PropTypes.func.isRequired,
@@ -445,7 +455,12 @@ const Addons = (props) => {
           <CustomizeOptions
             title="Customize Streak Stats Card"
             CustomizationOptions={
-              <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate} />
+              <CustomizeStreakStats
+                githubName={social.github}
+                prefix="streak-stats"
+                options={streakStatsOptions}
+                onUpdate={onStreakStatsUpdate}
+              />
             }
           />
         }
