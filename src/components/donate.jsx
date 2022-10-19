@@ -56,7 +56,7 @@ const Donate = () => (
         >
           <img
             className="w-32 h-4"
-            src="https://cdn.worldvectorlogo.com/logos/paypal-2.svg"
+            src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg"
             alt="Donate rahuldkjain via paypal"
           />
           {/* <img
