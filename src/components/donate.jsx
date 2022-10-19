@@ -29,7 +29,7 @@ const Donate = () => (
       <div className="w-full sm:w-1/3 flex flex-col justify-center items-center">
         <span>
           Tip
-          <span role="img" aria-label="Dollar medal">
+          <span role="img" class="text-xl" aria-label="Dollar medal">
             💰
           </span>
         </span>
@@ -54,17 +54,17 @@ const Donate = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <img
+         { /* <img
             className="w-32 h-4"
             src="https://cdn.worldvectorlogo.com/logos/paypal-2.svg"
             alt="Donate rahuldkjain via paypal"
-          />
-          {/* <img
-              className="w-6 h-6 mr-2"
+          /> */}
+
+          <img
+              className="mr-2" width="90"
               src="https://www.vectorlogo.zone/logos/paypal/paypal-ar21.svg"
               alt="Donate rahuldkjain via paypal"
             />
-            Paypal */}
         </a>
         {/* BuyMeACoffee */}
         <a
