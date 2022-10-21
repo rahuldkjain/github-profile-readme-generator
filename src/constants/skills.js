@@ -40,6 +40,7 @@ const categorizedSkills = {
       'css3',
       'html5',
       'pug',
+      'handlebars',
       'gulp',
       'sass',
       'redux',
@@ -158,6 +159,7 @@ const categorizedSkills = {
       'vuepress',
       'hexo',
       'middleman',
+      'wordpress'
     ],
   },
 
@@ -327,6 +329,8 @@ const icons = {
   sculpin:
     'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
   sapper: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg',
+  handlebars: 'https://handlebarsjs.com/images/handlebars_logo.png',
+  wordpress: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/wordpress/wordpress-original.svg',
   vuepress:
     'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
