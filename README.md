@@ -167,3 +167,8 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 <p align="center">
 Developed with ❤️ in India 🇮🇳 
 </p>
+
+[![ci][1]][2]
+
+[1]: https://github.com/rahuldkjain/github-profile-readme-generator/workflows/ci/badge.svg
+[2]: https://github.com/rahuldkjain/github-profile-readme-generator/actions
