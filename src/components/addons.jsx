@@ -50,7 +50,7 @@ AddonsItem.propTypes = {
 };
 
 const CustomizeOptions = ({ title, CustomizationOptions }) => (
-  <div className="border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8" style={{ maxWidth: '21rem' }}>
+  <div className="border-2 border-solid border-gray-900 bg-gray-100 p-2 ml-8" style={{}}>
     <header className="text-base sm:text-lg">{title}</header>
     <hr className="border-gray-500" />
     <div className="text-sm sm:text-lg flex flex-col mt-2 ml-0 md:ml-4">{CustomizationOptions}</div>
@@ -120,7 +120,7 @@ CustomizeBadge.propTypes = {
   onBadgeUpdate: PropTypes.func.isRequired,
 };
 
-const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
+const CustomizeGithubStatsBase = ({ githubName, prefix, options, onUpdate }) => (
   <>
     <label htmlFor={`${prefix}-theme`}>
       Theme:&nbsp;
@@ -206,15 +206,42 @@ const CustomizeGithubStatsBase = ({ prefix, options, onUpdate }) => (
         size="2"
       />
     </label>
+    {prefix === 'stats' && (
+      <span className="mt-2 flex items-center">
+        Preview:&nbsp;
+        {isGitHubUsernameValid(githubName) ? (
+          <img
+            src={`https://github-readme-stats.vercel.app/api?username=${githubName}&show_icons=true&hide_border=${options.hideBorder}&theme=${options.theme}&title_color=${options.titleColor}&text_color=${options.textColor}&bg_color=${options.bgColor}&cache_seconds=${options.cacheSeconds}&locale=${options.locale}`}
+            alt="github-stats-preview"
+          />
+        ) : (
+          <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+        )}
+      </span>
+    )}
+    {prefix === 'top-lang' && (
+      <span className="mt-2 flex items-center">
+        Preview:&nbsp;
+        {isGitHubUsernameValid(githubName) ? (
+          <img
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubName}&layout=compact&hide_border=${options.hideBorder}&theme=${options.theme}&title_color=${options.titleColor}&text_color=${options.textColor}&bg_color=${options.bgColor}&cache_seconds=${options.cacheSeconds}&locale=${options.locale}`}
+            alt="github-top-languages-preview"
+          />
+        ) : (
+          <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+        )}
+      </span>
+    )}
   </>
 );
 CustomizeGithubStatsBase.propTypes = {
+  githubName: PropTypes.string.isRequired,
   prefix: PropTypes.string.isRequired,
   options: PropTypes.object.isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
 
-const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
+const CustomizeStreakStats = ({ githubName, prefix, options, onUpdate }) => (
   <>
     <label htmlFor={`${prefix}-theme`}>
       Theme:&nbsp;
@@ -227,10 +254,20 @@ const CustomizeStreakStats = ({ prefix, options, onUpdate }) => (
         <option value="dark">dark</option>
         <option value="highcontrast">highcontrast</option>
       </select>
+      Preview:
+      {isGitHubUsernameValid(githubName) ? (
+        <img
+          src={`https://github-readme-streak-stats.herokuapp.com/?user=${githubName}&theme=${options.theme}`}
+          alt="github-streak-stats-preview"
+        />
+      ) : (
+        <span className="text-xxs md:text-sm text-red-600">Invalid GitHub username</span>
+      )}
     </label>
   </>
 );
 CustomizeStreakStats.propTypes = {
+  githubName: PropTypes.string.isRequired,
   prefix: PropTypes.string.isRequired,
   options: PropTypes.object.isRequired,
   onUpdate: PropTypes.func.isRequired,
@@ -367,6 +404,7 @@ const Addons = (props) => {
       >
         display github trophy
       </AddonsItem>
+
       <AddonsItem
         inputId="github-stats"
         inputChecked={data.githubStats}
@@ -375,7 +413,14 @@ const Addons = (props) => {
           <CustomizeOptions
             title="Customize Github Stats Card"
             CustomizationOptions={
-              <CustomizeGithubStatsBase prefix="stats" options={githubStatsOptions} onUpdate={onStatsUpdate} />
+              <div className="flex flex-col">
+                <CustomizeGithubStatsBase
+                  githubName={social.github}
+                  prefix="stats"
+                  options={githubStatsOptions}
+                  onUpdate={onStatsUpdate}
+                />
+              </div>
             }
           />
         }
@@ -390,7 +435,12 @@ const Addons = (props) => {
           <CustomizeOptions
             title="Customize Top Skills Card"
             CustomizationOptions={
-              <CustomizeGithubStatsBase prefix="top-lang" options={topLanguagesOptions} onUpdate={onTopLangUpdate} />
+              <CustomizeGithubStatsBase
+                githubName={social.github}
+                prefix="top-lang"
+                options={topLanguagesOptions}
+                onUpdate={onTopLangUpdate}
+              />
             }
           />
         }
@@ -405,7 +455,12 @@ const Addons = (props) => {
           <CustomizeOptions
             title="Customize Streak Stats Card"
             CustomizationOptions={
-              <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate} />
+              <CustomizeStreakStats
+                githubName={social.github}
+                prefix="streak-stats"
+                options={streakStatsOptions}
+                onUpdate={onStreakStatsUpdate}
+              />
             }
           />
         }
