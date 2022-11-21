@@ -34,4 +34,4 @@ export const topLanguagesLinkGenerator = ({ github, options }) =>
   )}&layout=compact`;
 
 export const streakStatsLinkGenerator = ({ github, options }) =>
-  `https://github-readme-streak-stats.herokuapp.com/?user=${github}&${streakStatsStylingQueryString(options)}`;
+  `https://streak-stats.demolab.com/?user=${github}&${streakStatsStylingQueryString(options)}`;

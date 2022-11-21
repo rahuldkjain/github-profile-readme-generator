@@ -32,7 +32,7 @@ You can customize the theme too. See how to customize yours [here](https://githu
 
 Stay motivated while contributing to open source by displaying your current contribution streak
 
-![rahuldkjain](https://github-readme-streak-stats.herokuapp.com/?user=rahuldkjain)
+![rahuldkjain](https://streak-stats.demolab.com/?user=rahuldkjain)
 
 Developed by by [Jonah Lawrence](https://github.com/DenverCoder1).
 
