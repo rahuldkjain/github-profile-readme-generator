@@ -69,6 +69,7 @@ const categorizedSkills = {
       'nginx',
       'openresty',
       'nestjs',
+      'php',
     ],
   },
 
