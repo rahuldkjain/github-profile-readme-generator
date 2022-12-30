@@ -26,7 +26,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
-    "gatsby": "^2.23.12",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.4.9",
     "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-manifest": "^2.4.14",
