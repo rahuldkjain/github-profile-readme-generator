@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Table</title>
+    <style>
+      /* Add a border to all cells */
+      td, th {
+        border: 1px solid black;
+      }
+
+      /* Change the background color of the header row */
+      th {
+        background-color: lightgrey;
+      }
+
+      /* Style the clear button */
+      .clear-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="myTable">
+      <tr>
+        <th><button onclick="toggleColumn(0)">Emails</button></th>
+        <th><button onclick="toggleColumn(1)">Name</button></th>
+        <th><button onclick="toggleColumn(2)">Status</button></th>
+        <th><button onclick="toggleColumn(3)">Nationality</button></th>
+        <th><button onclick="toggleColumn(4)">Label</button></th>
+        <th><button onclick="toggleColumn(5)">Owner</button></th>
+        <th><button class="clear-button" onclick="clearTable()">Clear</button></th>
+      </tr>
+      <tr>
+        <td>john@example.com</td>
+        <td>John Smith</td>
+        <td>Active</td>
+        <td>American</td>
+        <td>VIP</td>
+        <td>Alice</td>
+      </tr>
+      <tr>
+        <td>mary@example.com</td>
+        <td>Mary Jones</td>
+        <td>Inactive</td>
+        <td>Canadian</td>
+        <td>Standard</td>
+        <td>Bob</td>
+      </tr>
+      <tr>
+        <td>david@example.com</td>
+        <td>David Williams</td>
+        <td>Active</td>
+        <td>British</td>
+        <td>VIP</td>
+        <td>Alice</td>
+      </tr>
+      <tr>
+        <td>sarah@example.com</td>
+        <td>Sarah Brown</td>
+        <td>Inactive</td>
+        <td>Australian</td>
+        <td>Standard</td>
+        <td>Bob</td>
+      </tr>
+    </table>
+
+    <script>
+      function toggleColumn(index) {
+  // Get a reference to the table
+  const table = document.getElementById("myTable");
+
+  // Loop through all the rows in the table
+  for (let i = 0; i < table.rows.length; i++) {
+    const row = table.rows[i];
+
+    // Toggle the visibility of the cell in the specified column
+    if (row.cells[index].style.display === "none") {
+      row.cells[index].style.display = "";
+    } else {
+      row.cells[index].style.display = "none";
+    }
+  }
+}
+
+function clearTable() {
+  // Get a reference to the table
+  const table = document.getElementById("myTable");
+
+  // Loop through all the rows in the table
+  for (let i = table.rows.length - 1; i > 0; i--) {
+    // Remove the row from the table
+    table.deleteRow(i);
+  }
+}
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+  
