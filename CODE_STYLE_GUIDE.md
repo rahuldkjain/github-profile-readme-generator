@@ -16,9 +16,11 @@
 ## Spacing
 
 1. **JS:**
+
    - Use a space after `if`, `for`, `while`, `switch`.
    - Do not use a space after the opening `(` and before the closing `)`.
    - Use a space before and after destructuring objects.
+
    ```js
    //good
    const { apple, mangoes } = fruits;
