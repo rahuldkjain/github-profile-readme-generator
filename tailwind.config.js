@@ -24,4 +24,8 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  content: [
+    './public/index.html',
+    './src/html.{html,jsx}',
+  ],
 };
