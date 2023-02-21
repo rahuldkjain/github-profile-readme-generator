@@ -260,9 +260,7 @@ const DisplaySkills = (props) => {
     if (skills[skill]) {
       listChosenSkills.push(
         `
-        <a href="${skillWebsites[skill]}" target="_blank" rel="noreferrer">
-          <img src="${icons[skill]}" alt="${skill}" width="40" height="40"/>
-        </a>
+        <a href="${skillWebsites[skill]}" target="_blank" rel="noreferrer"><img src="${icons[skill]}" alt="${skill}" width="40" height="40"/></a>
         `,
       );
     }
