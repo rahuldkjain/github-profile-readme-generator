@@ -36,6 +36,7 @@ const categorizedSkills = {
       'angular',
       'backbonejs',
       'bootstrap',
+      'jQuery',
       'vuetify',
       'css3',
       'html5',
@@ -69,6 +70,7 @@ const categorizedSkills = {
       'nginx',
       'openresty',
       'nestjs',
+      'NextJS',
     ],
   },
 
@@ -139,7 +141,7 @@ const categorizedSkills = {
 
   software: {
     title: 'Software',
-    skills: ['illustrator', 'photoshop', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
+    skills: ['illustrator', 'photoshop',,'PremierePro', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
   },
 
   static_site_generator: {
@@ -173,11 +175,15 @@ const categorizedSkills = {
 
   other: {
     title: 'Other',
-    skills: ['linux', 'git', 'arduino'],
+    skills: ['linux', 'git', 'arduino','Wordpress','Joomla'],
   },
 };
 
 const icons = {
+  NextJS:'https://cdn.worldvectorlogo.com/logos/next-js.svg',
+  jQuery:'https://cdn.worldvectorlogo.com/logos/jquery-4.svg',
+  Wordpress: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg',
+  Joomla: 'https://cdn.worldvectorlogo.com/logos/joomla.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
@@ -223,6 +229,7 @@ const icons = {
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
   photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
   xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
+  PremierePro: 'https://cdn.worldvectorlogo.com/logos/premiere-pro-cc.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
   postgresql:
@@ -351,6 +358,10 @@ const icons = {
 };
 
 const skillWebsites = {
+  NextJS: 'https://nextjs.org/',
+  jQuery: 'https://cdn.worldvectorlogo.com/logos/jquery-4.svg',
+  Wordpress: 'https://wordpress.org/',
+  Joomla: 'https://www.joomla.org/',
   arduino: 'https://www.arduino.cc/',
   solidworks: 'https://www.solidworks.com/',
   vuejs: 'https://vuejs.org/',
@@ -393,6 +404,7 @@ const skillWebsites = {
   openresty: 'https://openresty.org/',
   oracle: 'https://www.oracle.com/',
   photoshop: 'https://www.photoshop.com/en',
+  PremierePro:'https://www.adobe.com/products/premiere.html',
   xd: 'https://www.adobe.com/products/xd.html',
   php: 'https://www.php.net',
   perl: 'https://www.perl.org/',
