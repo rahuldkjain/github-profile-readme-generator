@@ -141,7 +141,7 @@ const categorizedSkills = {
 
   software: {
     title: 'Software',
-    skills: ['illustrator', 'photoshop',,'PremierePro', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
+    skills: ['illustrator', 'photoshop',,'PremierePro', 'xd', 'figma','Canva', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
   },
 
   static_site_generator: {
@@ -180,6 +180,7 @@ const categorizedSkills = {
 };
 
 const icons = {
+  Canva: 'https://cdn.worldvectorlogo.com/logos/canva-1.svg',
   NextJS:'https://cdn.worldvectorlogo.com/logos/next-js.svg',
   jQuery:'https://cdn.worldvectorlogo.com/logos/jquery-4.svg',
   Wordpress: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg',
@@ -227,7 +228,7 @@ const icons = {
   nodejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
   openresty: 'https://openresty.org/images/logo.png',
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
-  photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
+  photoshop: 'https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg',
   xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
   PremierePro: 'https://cdn.worldvectorlogo.com/logos/premiere-pro-cc.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
@@ -358,6 +359,7 @@ const icons = {
 };
 
 const skillWebsites = {
+  Canva:'https://canva.com/',
   NextJS: 'https://nextjs.org/',
   jQuery: 'https://cdn.worldvectorlogo.com/logos/jquery-4.svg',
   Wordpress: 'https://wordpress.org/',
