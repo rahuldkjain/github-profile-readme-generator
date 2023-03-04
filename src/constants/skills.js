@@ -139,7 +139,7 @@ const categorizedSkills = {
 
   software: {
     title: 'Software',
-    skills: ['illustrator', 'photoshop', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
+    skills: ['illustrator', 'photoshop', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman', 'canva'],
   },
 
   static_site_generator: {
