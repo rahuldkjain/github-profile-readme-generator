@@ -158,6 +158,7 @@ const categorizedSkills = {
       'vuepress',
       'hexo',
       'middleman',
+      'astro'
     ],
   },
 
@@ -503,6 +504,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  astro: 'https://astro.build/',
 };
 
 const initialSkillState = {};
