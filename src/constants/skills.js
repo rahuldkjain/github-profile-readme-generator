@@ -139,7 +139,7 @@ const categorizedSkills = {
 
   software: {
     title: 'Software',
-    skills: ['illustrator', 'photoshop', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman'],
+    skills: ['illustrator', 'photoshop', 'xd', 'figma', 'blender', 'sketch', 'invision', 'framer', 'matlab', 'postman','gimp'],
   },
 
   static_site_generator: {
@@ -204,6 +204,7 @@ const icons = {
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
   electron: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg',
   express: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+  gimp:'https://raw.githubusercontent.com/devicons/devicon/master/icons/gimp/gimp-original.svg',
   go: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg',
   graphql: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
   gulp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg',
@@ -374,6 +375,7 @@ const skillWebsites = {
   dotnet: 'https://dotnet.microsoft.com/',
   electron: 'https://www.electronjs.org',
   express: 'https://expressjs.com',
+  gimp:'https://www.gimp.org',
   go: 'https://golang.org',
   graphql: 'https://graphql.org',
   gulp: 'https://gulpjs.com',
