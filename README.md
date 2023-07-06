@@ -62,7 +62,7 @@ This tool provides an easy way to create a GitHub profile readme with the latest
 
 Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator)
 
-## 🧐 Features
+### 🧐 Features
 
 Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
