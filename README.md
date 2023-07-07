@@ -119,7 +119,7 @@ npm start
 
 🌟 You are all set!
 
-## 🍰 Contributing
+### 🍰 Contributing
 
 Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
 
