@@ -125,6 +125,25 @@ DisplaySocial.propTypes = {
   icon: PropTypes.string.isRequired,
 };
 
+const DisplayLink = (props) => {
+  const { link, icon } = props;
+  // @TODO add link validation
+  if (link) { 
+    return (
+      <>
+        {`<a href="${link}" target="blank"><img align="center" src="${icon}" alt="${link}" height="30" width="40" /></a>`}
+        <br />
+      </>
+    );
+  }
+  return '';
+};
+
+DisplayLink.propTypes = {
+  link: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
+
 const VisitorsBadge = (props) => {
   const { github, badgeOptions, show } = props;
   const link = `https://komarev.com/ghpvc/?username=${github}&label=${badgeOptions.badgeLabel}&color=${badgeOptions.badgeColor}&style=${badgeOptions.badgeStyle}`;
@@ -635,7 +654,7 @@ const Markdown = (props) => {
         <DisplaySocial base="https://discord.gg" icon={`${iconBaseUrl}discord.svg`} username={social.discord} />
       </>
       <>
-        <DisplaySocial base="" icon={`${iconBaseUrl}rss.svg`} username={social.rssurl} />
+        <DisplayLink icon={`${iconBaseUrl}rss.svg`} link={social.rssurl} />
       </>
       {isSocial(social) ? (
         <>
