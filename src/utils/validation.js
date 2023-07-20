@@ -14,4 +14,11 @@ const isTwitterUsernameValid = (username) => {
   return pattern.test(username);
 };
 
-export { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid };
+const isRSSValid = (link) => {
+  const pattern = /^(https:|http:|www\.)\S*/;
+  return pattern.test(link);
+};
+
+
+
+export { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid, isRSSValid };
