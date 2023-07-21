@@ -127,7 +127,6 @@ DisplaySocial.propTypes = {
 
 const DisplayLink = (props) => {
   const { link, icon } = props;
-  // @TODO add link validation
   if (link) { 
     return (
       <>
