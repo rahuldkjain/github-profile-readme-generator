@@ -136,6 +136,27 @@ DisplaySocial.propTypes = {
   icon: PropTypes.string,
 };
 
+export const DisplayLink = (props) => {
+  const { link, icon } = props;
+  if (link) {
+    return (
+      <a className="no-underline text-blue-700 m-2" href={`${link}`} target="blank">
+        <img className="w-6 h-6" src={icon} alt="link" />
+      </a>
+    );
+  }
+  return null;
+};
+DisplayLink.defaultProps = {
+  link: '',
+  icon: '',
+};
+DisplayLink.propTypes = {
+  link: PropTypes.string,
+  icon: PropTypes.string,
+};
+
+
 export const SocialPreview = (props) => {
   const { social } = props;
   let viewSocial = false;
@@ -254,7 +275,7 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://discord.gg" icon={`${iconBaseUrl}discord.svg`} username={social.discord} />
       </>
       <>
-        <DisplaySocial base="" icon={`${iconBaseUrl}rss.svg`} username={social.rssurl} />
+        <DisplayLink icon={`${iconBaseUrl}rss.svg`} link={social.rssurl} />
       </>
     </div>
   );

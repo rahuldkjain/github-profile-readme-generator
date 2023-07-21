@@ -24,7 +24,7 @@ import Loader from '../components/loader';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import './index.css';
-import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
+import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid, isRSSValid} from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
@@ -466,6 +466,11 @@ const IndexPage = () => {
             )}
             {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
               <div className="warning">* Twitter username is invalid, please add a valid username</div>
+            ) : (
+              ''
+            )}
+            {social.rssurl && !isRSSValid(social.rssurl) ? (
+              <div className="warning">* RSS link is invalid, please add a valid link</div>
             ) : (
               ''
             )}
