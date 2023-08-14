@@ -133,6 +133,10 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -142,7 +146,7 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -373,6 +377,10 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -382,7 +390,7 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -613,6 +621,10 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -622,7 +634,7 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -853,6 +865,10 @@ exports[`Markdown renders topLanguages is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -862,7 +878,7 @@ exports[`Markdown renders topLanguages is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -1093,6 +1109,10 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -1102,7 +1122,7 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -1333,6 +1353,10 @@ exports[`Markdown renders twitterBadge is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -1342,7 +1366,7 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -1573,6 +1597,10 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -1582,7 +1610,7 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -1813,6 +1841,10 @@ exports[`Markdown renders without link.currentWork 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -1822,7 +1854,7 @@ exports[`Markdown renders without link.currentWork 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -2053,6 +2085,10 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -2062,7 +2098,7 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
@@ -2293,6 +2329,10 @@ exports[`Markdown renders without subtitle 1`] = `
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
@@ -2302,7 +2342,7 @@ exports[`Markdown renders without subtitle 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial

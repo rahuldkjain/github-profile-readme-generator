@@ -9,7 +9,7 @@ const Social = (props) => {
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/github.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="github"
           />
@@ -23,7 +23,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2  flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/x.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="twitter"
           />
@@ -37,7 +37,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/devdotto.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="dev.to"
           />
@@ -51,7 +51,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codepen.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="codepen"
           />
@@ -65,7 +65,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codesandbox.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="codesandbox"
           />
@@ -79,7 +79,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/stackoverflow.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="stackoverflow"
           />
@@ -93,7 +93,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/linkedin.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="linkedin"
           />
@@ -107,7 +107,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/kaggle.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="kaggle"
           />
@@ -121,7 +121,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/facebook.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="facebook"
           />
@@ -135,7 +135,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/instagram.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="instagram"
           />
@@ -177,7 +177,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hashnode.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/hashnode.svg"
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="hashnode"
           />

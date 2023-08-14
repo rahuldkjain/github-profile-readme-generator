@@ -9,7 +9,7 @@ exports[`DisplaySocial Preview renders correctly 1`] = `
   <img
     alt="username"
     className="w-6 h-6"
-    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    src="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codepen.svg"
   />
 </a>
 `;
@@ -407,6 +407,11 @@ exports[`Social Preview renders correctly 1`] = `
     username=""
   />
   <DisplaySocial
+    base="https://hashnode.com"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg"
+    username=""
+  />
+  <DisplaySocial
     base="https://medium.com"
     icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
     username=""
@@ -418,7 +423,7 @@ exports[`Social Preview renders correctly 1`] = `
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+    icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
     username=""
   />
   <DisplaySocial
