@@ -119,7 +119,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'terraform', 'ansible', 'jira', 'kibana', 'prometheus', 'gitlab', 'chef'],
   },
 
   baas: {
@@ -348,6 +348,12 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  terraform:'https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg',
+  ansible: 'https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg',
+  jira: 'https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg',
+  prometheus: 'https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg',
+  gitlab: 'https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg',
+  chef: 'https://www.vectorlogo.zone/logos/chefio/chefio-icon.svg',
 };
 
 const skillWebsites = {
@@ -503,6 +509,12 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  terraform: 'https://www.terraform.io/',
+  ansible: 'https://www.ansible.com/',
+  jira: 'https://jira.atlassian.com/',
+  prometheus: 'https://prometheus.io/',
+  gitlab: 'https://about.gitlab.com/',
+  chef: 'https://www.chef.io/',
 };
 
 const initialSkillState = {};
