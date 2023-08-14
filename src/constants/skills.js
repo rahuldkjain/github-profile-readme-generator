@@ -119,7 +119,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'terraform', 'ansible', 'jira', 'kibana', 'prometheus', 'gitlab', 'chef'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'terraform', 'ansible', 'jira', 'prometheus', 'gitlab', 'chef'],
   },
 
   baas: {
