@@ -585,7 +585,7 @@ const Markdown = (props) => {
       <>
         <DisplaySocial
           base="https://www.codechef.com/users"
-          icon="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg"
+          icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codechef.svg"
           username={social.codechef}
         />
       </>

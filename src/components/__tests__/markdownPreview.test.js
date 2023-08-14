@@ -246,7 +246,7 @@ describe('DisplaySocial Preview', () => {
     const tree = shallow(
       <DisplaySocial
         base="https://codepen.io"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+        icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codepen.svg"
         username={social.codepen}
       />,
     );
@@ -257,7 +257,7 @@ describe('DisplaySocial Preview', () => {
     const tree = shallow(
       <DisplaySocial
         base="https://codepen.io"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+        icon="https://cdn.jsdelivr.net/npm/simple-icons@9.10.0/icons/codepen.svg"
         username={''}
       />,
     );
