@@ -26,6 +26,7 @@ import Layout from '../components/layout';
 import './index.css';
 import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
+import Profileimg from '../components/profileimg';
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
   useEffect(() => {
@@ -404,6 +405,7 @@ const IndexPage = () => {
             handlePrefixChange={handlePrefixChange}
           />
           <Subtitle data={data} handleDataChange={handleDataChange} />
+          <Profileimg data={data} handleDataChange={handleDataChange} />
           <Work
             prefix={prefix}
             data={data}

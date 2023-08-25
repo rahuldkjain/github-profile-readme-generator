@@ -466,6 +466,9 @@ const Markdown = (props) => {
         <SubTitle subtitle={data.subtitle} />
       </>
       <>
+        <img src={data.profileimg} alt="profile-img" />
+      </>
+      <>
         <VisitorsBadge
           show={data.visitorsBadge}
           github={social.github}

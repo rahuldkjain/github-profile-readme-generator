@@ -467,6 +467,7 @@ const MarkdownPreview = (props) => {
     <div id="markdown-preview">
       <TitlePreview prefix={prefix.title} title={data.title} />
       <SubTitlePreview subtitle={data.subtitle} />
+      <img className='flex justify-center' width="100%" src={data.profileimg} alt="profile-img" />
       <VisitorsBadgePreview
         show={data.visitorsBadge}
         github={social.github}
