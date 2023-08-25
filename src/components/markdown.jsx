@@ -466,7 +466,7 @@ const Markdown = (props) => {
         <SubTitle subtitle={data.subtitle} />
       </>
       <>
-        <img src={data.profileimg} alt="profile-img" />
+        <img src={data.profileimg} />
       </>
       <>
         <VisitorsBadge
