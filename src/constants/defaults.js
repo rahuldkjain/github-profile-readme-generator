@@ -15,6 +15,7 @@ export const DEFAULT_PREFIX = {
 export const DEFAULT_DATA = {
   title: '',
   subtitle: 'A passionate frontend developer from India',
+  profileimg:'https://camo.githubusercontent.com/2ff23fb270a58ba226e90e723853d8d033a8dae68bcefab0145082170dcbde88/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f76322f726573697a653a6669743a313336302f312a6e57515f55354e4b45664e6547435466685f322d4d772e676966',
   currentWork: '',
   currentLearn: '',
   collaborateOn: '',
