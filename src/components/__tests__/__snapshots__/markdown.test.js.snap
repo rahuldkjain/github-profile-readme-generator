@@ -35,6 +35,7 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -51,24 +52,30 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -82,56 +89,56 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -140,35 +147,35 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -178,6 +185,13 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -209,6 +223,19 @@ exports[`Markdown renders devDynamicBlogs is true 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -248,6 +275,7 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -264,24 +292,30 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -295,56 +329,56 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -353,35 +387,35 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -391,6 +425,13 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -422,6 +463,19 @@ exports[`Markdown renders githubProfileTrophy is true 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -461,6 +515,7 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -477,24 +532,30 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -508,56 +569,56 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -566,35 +627,35 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -604,6 +665,13 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -635,6 +703,19 @@ exports[`Markdown renders githubProfileTrophy is true 2`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -674,6 +755,7 @@ exports[`Markdown renders topLanguages is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -690,24 +772,30 @@ exports[`Markdown renders topLanguages is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -721,56 +809,56 @@ exports[`Markdown renders topLanguages is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -779,35 +867,35 @@ exports[`Markdown renders topLanguages is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -817,6 +905,13 @@ exports[`Markdown renders topLanguages is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -848,6 +943,19 @@ exports[`Markdown renders topLanguages is true 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -887,6 +995,7 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -903,24 +1012,30 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -934,56 +1049,56 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -992,35 +1107,35 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -1030,6 +1145,13 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -1061,6 +1183,19 @@ exports[`Markdown renders topLanguages is true and githubStats is true 1`] = `
       }
     }
     show={true}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -1100,6 +1235,7 @@ exports[`Markdown renders twitterBadge is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1116,24 +1252,30 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1147,56 +1289,56 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -1205,35 +1347,35 @@ exports[`Markdown renders twitterBadge is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -1243,6 +1385,13 @@ exports[`Markdown renders twitterBadge is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -1274,6 +1423,19 @@ exports[`Markdown renders twitterBadge is true 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -1313,6 +1475,7 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1329,24 +1492,30 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1360,56 +1529,56 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -1418,35 +1587,35 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -1456,6 +1625,13 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -1487,6 +1663,19 @@ exports[`Markdown renders visitorsBadge is true 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -1526,6 +1715,7 @@ exports[`Markdown renders without link.currentWork 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1540,23 +1730,32 @@ exports[`Markdown renders without link.currentWork 1`] = `
     project=""
   />
   <DisplayWork
+    link=""
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1570,56 +1769,56 @@ exports[`Markdown renders without link.currentWork 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -1628,35 +1827,35 @@ exports[`Markdown renders without link.currentWork 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -1666,6 +1865,13 @@ exports[`Markdown renders without link.currentWork 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -1697,6 +1903,19 @@ exports[`Markdown renders without link.currentWork 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -1736,6 +1955,7 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1752,24 +1972,30 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1783,56 +2009,56 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -1841,35 +2067,35 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -1879,6 +2105,13 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -1910,6 +2143,19 @@ exports[`Markdown renders without prefix.title and data.title 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;
@@ -1949,6 +2195,7 @@ exports[`Markdown renders without subtitle 1`] = `
     project="currentWork"
   />
   <DisplayWork
+    link=""
     prefix="🌱 I’m currently learning"
     project=""
   />
@@ -1965,24 +2212,30 @@ exports[`Markdown renders without subtitle 1`] = `
   <DisplayWork
     link="portfolio"
     prefix="👨‍💻 All of my projects are available at"
+    project=""
   />
   <DisplayWork
     link="blog"
     prefix="📝 I regularly write articles on"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="💬 Ask me about"
     project=""
   />
   <DisplayWork
+    link=""
     prefix="📫 How to reach me"
     project=""
   />
   <DisplayWork
     link="resume"
     prefix="📄 Know about my experiences"
+    project=""
   />
   <DisplayWork
+    link=""
     prefix="⚡ Fun fact"
     project=""
   />
@@ -1996,56 +2249,56 @@ exports[`Markdown renders without subtitle 1`] = `
   <br />
   <DisplaySocial
     base="https://codepen.io"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
   />
   <DisplaySocial
     base="https://dev.to"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"
     username="dev"
   />
   <DisplaySocial
     base="https://twitter.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
   />
   <DisplaySocial
     base="https://linkedin.com/in"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   />
   <DisplaySocial
     base="https://stackoverflow.com/users"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
   />
   <DisplaySocial
     base="https://codesandbox.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg"
   />
   <DisplaySocial
     base="https://kaggle.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"
   />
   <DisplaySocial
     base="https://fb.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
   />
   <DisplaySocial
     base="https://instagram.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
   />
   <DisplaySocial
     base="https://dribbble.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg"
   />
   <DisplaySocial
     base="https://www.behance.net"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/behance.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg"
   />
   <DisplaySocial
     base="https://medium.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
   />
   <DisplaySocial
     base="https://www.youtube.com/c"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
   />
   <DisplaySocial
     base="https://www.codechef.com/users"
@@ -2054,35 +2307,35 @@ exports[`Markdown renders without subtitle 1`] = `
   />
   <DisplaySocial
     base="https://www.hackerrank.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerrank.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
   />
   <DisplaySocial
     base="https://codeforces.com/profile"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
   />
   <DisplaySocial
     base="https://www.leetcode.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
   />
   <DisplaySocial
     base="https://www.hackerearth.com"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg"
   />
   <DisplaySocial
     base="https://auth.geeksforgeeks.org/user"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
   />
   <DisplaySocial
     base="https://www.topcoder.com/members"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg"
   />
   <DisplaySocial
     base="https://discord.gg"
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
   />
   <DisplaySocial
     base=""
-    icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg"
+    icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg"
   />
   &lt;/p&gt;
   <br />
@@ -2092,6 +2345,13 @@ exports[`Markdown renders without subtitle 1`] = `
       Object {
         "express": false,
         "javascript": true,
+      }
+    }
+  />
+  <DisplaySupport
+    support={
+      Object {
+        "buyMeACoffee": "",
       }
     }
   />
@@ -2123,6 +2383,19 @@ exports[`Markdown renders without subtitle 1`] = `
       }
     }
     show={false}
+  />
+  <DisplayStreakStats
+    options={
+      Object {
+        "bgColor": "",
+        "cacheSeconds": "",
+        "hideBorder": "",
+        "locale": "",
+        "textColor": "",
+        "theme": "",
+        "titleColor": "",
+      }
+    }
   />
 </div>
 `;

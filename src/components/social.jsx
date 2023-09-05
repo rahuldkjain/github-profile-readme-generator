@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Social = props => {
+const Social = (props) => {
+  const { social, handleSocialChange } = props;
   return (
     <div className="px-2 sm:px-6 mb-4">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">
-        Social
-      </div>
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Social</div>
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
@@ -17,8 +17,8 @@ const Social = props => {
             id="github"
             placeholder="github username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-1 sm:px-2 focus:border-blue-700"
-            value={props.social.github}
-            onChange={event => props.handleSocialChange("github", event)}
+            value={social.github}
+            onChange={(event) => handleSocialChange('github', event)}
           />
         </div>
         <div className="w-1/2  flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -31,8 +31,8 @@ const Social = props => {
             id="twitter"
             placeholder="twitter username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.twitter}
-            onChange={event => props.handleSocialChange("twitter", event)}
+            value={social.twitter}
+            onChange={(event) => handleSocialChange('twitter', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -45,8 +45,8 @@ const Social = props => {
             id="dev"
             placeholder="dev.to username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.dev}
-            onChange={event => props.handleSocialChange("dev", event)}
+            value={social.dev}
+            onChange={(event) => handleSocialChange('dev', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -59,8 +59,8 @@ const Social = props => {
             id="codepen"
             placeholder="codepen username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.codepen}
-            onChange={event => props.handleSocialChange("codepen", event)}
+            value={social.codepen}
+            onChange={(event) => handleSocialChange('codepen', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -73,8 +73,8 @@ const Social = props => {
             id="codesandbox"
             placeholder="codesandbox username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.codesandbox}
-            onChange={event => props.handleSocialChange("codesandbox", event)}
+            value={social.codesandbox}
+            onChange={(event) => handleSocialChange('codesandbox', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -87,8 +87,8 @@ const Social = props => {
             id="stackoverflow"
             placeholder="stackoverflow user ID"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.stackoverflow}
-            onChange={event => props.handleSocialChange("stackoverflow", event)}
+            value={social.stackoverflow}
+            onChange={(event) => handleSocialChange('stackoverflow', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -101,8 +101,8 @@ const Social = props => {
             id="linkedin"
             placeholder="linkedin username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.linkedin}
-            onChange={event => props.handleSocialChange("linkedin", event)}
+            value={social.linkedin}
+            onChange={(event) => handleSocialChange('linkedin', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -115,8 +115,8 @@ const Social = props => {
             id="kaggle"
             placeholder="kaggle username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.kaggle}
-            onChange={event => props.handleSocialChange("kaggle", event)}
+            value={social.kaggle}
+            onChange={(event) => handleSocialChange('kaggle', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -129,8 +129,8 @@ const Social = props => {
             id="fb"
             placeholder="facebook username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.fb}
-            onChange={event => props.handleSocialChange("fb", event)}
+            value={social.fb}
+            onChange={(event) => handleSocialChange('fb', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -143,8 +143,8 @@ const Social = props => {
             id="instagram"
             placeholder="instagram username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.instagram}
-            onChange={event => props.handleSocialChange("instagram", event)}
+            value={social.instagram}
+            onChange={(event) => handleSocialChange('instagram', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -157,8 +157,8 @@ const Social = props => {
             id="dribbble"
             placeholder="dribbble username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.dribbble}
-            onChange={event => props.handleSocialChange("dribbble", event)}
+            value={social.dribbble}
+            onChange={(event) => handleSocialChange('dribbble', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -171,8 +171,22 @@ const Social = props => {
             id="behance"
             placeholder="behance username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.behance}
-            onChange={event => props.handleSocialChange("behance", event)}
+            value={social.behance}
+            onChange={(event) => handleSocialChange('behance', event)}
+          />
+        </div>
+        <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hashnode.svg"
+            className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+            alt="hashnode"
+          />
+          <input
+            id="hashnode"
+            placeholder="hashnode username (with @)"
+            className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+            value={social.hashnode}
+            onChange={(event) => handleSocialChange('hashnode', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -185,8 +199,8 @@ const Social = props => {
             id="medium"
             placeholder="medium username (with @)"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.medium}
-            onChange={event => props.handleSocialChange("medium", event)}
+            value={social.medium}
+            onChange={(event) => handleSocialChange('medium', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -199,8 +213,8 @@ const Social = props => {
             id="youtube"
             placeholder="youtube channel name"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.youtube}
-            onChange={event => props.handleSocialChange("youtube", event)}
+            value={social.youtube}
+            onChange={(event) => handleSocialChange('youtube', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -213,8 +227,8 @@ const Social = props => {
             id="codechef"
             placeholder="codechef username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.codechef}
-            onChange={event => props.handleSocialChange("codechef", event)}
+            value={social.codechef}
+            onChange={(event) => handleSocialChange('codechef', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -227,8 +241,8 @@ const Social = props => {
             id="hackerrank"
             placeholder="hackerrank username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.hackerrank}
-            onChange={event => props.handleSocialChange("hackerrank", event)}
+            value={social.hackerrank}
+            onChange={(event) => handleSocialChange('hackerrank', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -241,8 +255,8 @@ const Social = props => {
             id="codeforces"
             placeholder="codeforces username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.codeforces}
-            onChange={event => props.handleSocialChange("codeforces", event)}
+            value={social.codeforces}
+            onChange={(event) => handleSocialChange('codeforces', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -255,8 +269,8 @@ const Social = props => {
             id="leetcode"
             placeholder="leetcode username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.leetcode}
-            onChange={event => props.handleSocialChange("leetcode", event)}
+            value={social.leetcode}
+            onChange={(event) => handleSocialChange('leetcode', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -269,8 +283,8 @@ const Social = props => {
             id="topcoder"
             placeholder="topcoder username"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.topcoder}
-            onChange={event => props.handleSocialChange("topcoder", event)}
+            value={social.topcoder}
+            onChange={(event) => handleSocialChange('topcoder', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -283,8 +297,8 @@ const Social = props => {
             id="hackerearth"
             placeholder="hackerearth user (with @)"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.hackerearth}
-            onChange={event => props.handleSocialChange("hackerearth", event)}
+            value={social.hackerearth}
+            onChange={(event) => handleSocialChange('hackerearth', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -297,10 +311,8 @@ const Social = props => {
             id="geeksforgeeks"
             placeholder="GFG (<username>/profile)"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.geeks_for_geeks}
-            onChange={event =>
-              props.handleSocialChange("geeks_for_geeks", event)
-            }
+            value={social.geeks_for_geeks}
+            onChange={(event) => handleSocialChange('geeks_for_geeks', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -313,8 +325,8 @@ const Social = props => {
             id="discord"
             placeholder="discord invite (only code)"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.discord}
-            onChange={event => props.handleSocialChange("discord", event)}
+            value={social.discord}
+            onChange={(event) => handleSocialChange('discord', event)}
           />
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
@@ -327,13 +339,17 @@ const Social = props => {
             id="rssurl"
             placeholder="RSS feed URL"
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
-            value={props.social.rssurl}
-            onChange={event => props.handleSocialChange("rssurl", event)}
+            value={social.rssurl}
+            onChange={(event) => handleSocialChange('rssurl', event)}
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;
+Social.propTypes = {
+  social: PropTypes.object.isRequired,
+  handleSocialChange: PropTypes.func.isRequired,
+};
