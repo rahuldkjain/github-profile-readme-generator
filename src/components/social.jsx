@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import hashnodeLogo from "../images/icons/Social/hashnode.svg"
 
 const Social = (props) => {
   const { social, handleSocialChange } = props;
@@ -177,7 +178,7 @@ const Social = (props) => {
         </div>
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hashnode.svg"
+            src={hashnodeLogo}
             className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
             alt="hashnode"
           />
