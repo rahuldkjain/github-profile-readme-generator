@@ -119,7 +119,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci','terraform','ansible','gitlab','prometheus','chef'],
   },
 
   baas: {
@@ -173,11 +173,17 @@ const categorizedSkills = {
 
   other: {
     title: 'Other',
-    skills: ['linux', 'git', 'arduino'],
+    skills: ['linux', 'git', 'arduino','jira'],
   },
 };
 
 const icons = {
+  ansible:'https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg',
+  gitlab:'https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg',
+  chef:'https://raw.githubusercontent.com/archikirar30/img/main/Progress_Chef_Symbol.svg',
+  jira:'https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg',
+  prometheus:'https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg',
+  terraform:'https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
