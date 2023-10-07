@@ -119,7 +119,30 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: [
+      'aws', 
+      'docker', 
+      'jenkins', 
+      'gcp', 
+      'kubernetes', 
+      'bash', 
+      'azure', 
+      'vagrant', 
+      'circleci', 
+      'travisci',
+      'terraform',
+      'ansible',
+      'gitlab',
+      'prometheus',
+      'chef',
+      'jira' ,
+      'bitbucket',
+      'puppet',
+      'podman',
+      'elasticstack',
+      'nagios',
+      'zabbix'
+  ],
   },
 
   baas: {
@@ -178,6 +201,18 @@ const categorizedSkills = {
 };
 
 const icons = {
+  zabbix:'https://raw.githubusercontent.com/archikirar30/img/main/zabbix-icon.svg',
+  nagios:'https://raw.githubusercontent.com/archikirar30/img/main/nagios-icon.svg',
+  elasticstack : 'https://raw.githubusercontent.com/archikirar30/img/main/elastic-icon.svg',
+  puppet:'https://raw.githubusercontent.com/archikirar30/img/main/puppet-icon.svg',
+  podman:'https://raw.githubusercontent.com/devicons/devicon/master/icons/podman/podman-original.svg',
+  bitbucket:'https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg',
+  ansible:'https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg',
+  gitlab:'https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg',
+  chef:'https://raw.githubusercontent.com/archikirar30/img/main/Progress_Chef_Symbol.svg',
+  jira:'https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg',
+  prometheus:'https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg',
+  terraform:'https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg',
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
   angularjs:
@@ -351,6 +386,17 @@ const icons = {
 };
 
 const skillWebsites = {
+  zabbix:'https://www.zabbix.com/',
+  nagios:'https://www.nagios.org/',
+  elasticstack :'https://www.elastic.co/elastic-stack',
+  bitbucket:'https://bitbucket.org/',
+  puppet:'https://www.puppet.com/',
+  podman:'https://podman.io/',
+  ansible:'https://www.ansible.com/',
+  terraform :'https://www.terraform.io/',
+  gitlab :'https://about.gitlab.com/',
+  prometheus :'https://prometheus.io/',
+  chef:'https://www.chef.io/',
   arduino: 'https://www.arduino.cc/',
   solidworks: 'https://www.solidworks.com/',
   vuejs: 'https://vuejs.org/',
