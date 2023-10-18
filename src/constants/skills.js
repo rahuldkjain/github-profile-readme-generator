@@ -203,7 +203,7 @@ const icons = {
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
   electron: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg',
-  express: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+  express: 'src/images/icons/BackendDevelopment/express.svg',
   go: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg',
   graphql: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
   gulp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg',
