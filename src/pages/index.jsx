@@ -26,6 +26,7 @@ import Layout from '../components/layout';
 import './index.css';
 import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
+import ScrolltoTop from '../components/ScrolltoTop';
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
   useEffect(() => {
@@ -394,6 +395,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+        <ScrolltoTop/>
       <div className="m-4 sm:p-4">
         <SEO title="GitHub Profile Readme Generator" />
         <div id="form">
