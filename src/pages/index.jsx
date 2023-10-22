@@ -27,6 +27,7 @@ import './index.css';
 import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
 
+const upperCaseSupportedSites = ['discord', 'github'];
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
   useEffect(() => {
     localStorage.setItem(
@@ -93,7 +94,7 @@ const IndexPage = () => {
 
   const handleSocialChange = (field, e) => {
     const change = { ...social };
-    change[field] = field === 'discord' ? e.target.value : e.target.value.toLowerCase();
+    change[field] = upperCaseSupportedSites.includes(field) ? e.target.value : e.target.value.toLowerCase();
     setSocial(change);
   };
 
