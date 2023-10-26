@@ -18,6 +18,19 @@
   --dark-yellow: #4d3800;
   --dark-blue: #002ead;
   --dark-green: #00471b;
+  
+  --darkMode-background: #333333;
+  --darkMode-text-color: #CCCCCC;
+  --darkMode-buttons-background: #CCCCCC;
+  --darkMode-buttons-text-color: #4d3800;
+  --darkMode-sub-headings: #a3cdca;
+  --darkMode-markdown-box: #00b1b1;
+  --darkMode-placeholders: #c6bbbb;
+  --darkMode-github-count: #a62eb0;
+  --darkMode-text-xxs: darkgrey;
+  --darkMode-title: #5bc4b6;
+  --darkMode-img-background: #00471b;
+  --darkMode-color: #4d3800;
 }
 
 html,
@@ -159,4 +172,68 @@ a {
   .workflow {
     font-size: 12px;
   }
+}
+
+.dark {
+  
+  font-family: "Roboto Mono", monospace;
+  
+  .footer {
+    color: var(--darkMode-text-color) !important;
+  }
+
+  .buttons {
+    background-color: var(--darkMode-buttons-background) !important;
+    color: var(--darkMode-buttons-text-color) !important;
+  }
+
+  .add-on {
+    color: var(--darkMode-text-color) !important;
+  }
+
+  .sub-headings {
+    color: var(--darkMode-sub-headings);
+  }
+
+  .headings {
+    color: var(--darkMode-text-color) !important;
+  }
+
+  .markdown-box {
+    border: 1px solid var(--darkMode-markdown-box);
+    color: var(--darkMode-text-color) !important;
+  }
+  
+  background-color: var(--darkMode-background) !important;
+
+  ::placeholder {
+    color: var(--darkMode-placeholders);
+  }
+
+  .bg-gray-100 {
+    --bg-opacity: 0 !important;
+  }
+
+  .github-count {
+    color: var(--darkMode-github-count);
+  }
+
+  .text-xxs {
+    background-color: var(--darkMode-text-xxs);
+  }
+
+  .heading {
+    color: var(--darkMode-title) !important;
+  }
+
+  img {
+    background-color: var(--darkMode-img-background) !important;
+  }
+  color: var(--darkMode-color);
+
+}
+
+.darkmode-toggle {
+  float: right;
+  margin: 30px;
 }

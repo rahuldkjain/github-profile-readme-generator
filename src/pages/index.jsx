@@ -472,7 +472,7 @@ const IndexPage = () => {
           </div>
           <div className="flex items-center justify-center w-full">
             <div
-              className="text-xs sm:text-xl font-medium border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 sm:py-2 px-2 sm:px-4 generate"
+              className="text-xs sm:text-xl font-medium border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 sm:py-2 px-2 sm:px-4 generate buttons"
               tabIndex="0"
               role="button"
               onClick={handleGenerate}
@@ -490,7 +490,7 @@ const IndexPage = () => {
             <div className="w-full flex justify-between items-center">
               <button
                 type="button"
-                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1 buttons"
                 onClick={handleBackToEdit}
               >
                 <ArrowLeftIcon size={24} />
@@ -499,7 +499,7 @@ const IndexPage = () => {
 
               <button
                 type="button"
-                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1 buttons"
                 id="copy-button"
                 onClick={handleCopyToClipboard}
               >
@@ -511,7 +511,7 @@ const IndexPage = () => {
 
               <button
                 type="button"
-                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1 buttons"
                 id="download-md-button"
                 onClick={handleDownloadMarkdown}
               >
@@ -523,7 +523,7 @@ const IndexPage = () => {
 
               <button
                 type="button"
-                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1 buttons"
                 id="download-json-button"
                 onClick={handleDownloadJson}
               >
@@ -535,7 +535,7 @@ const IndexPage = () => {
 
               <button
                 type="button"
-                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1"
+                className="text-base w-1/6 border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center p-1 buttons"
                 onClick={handleGeneratePreview}
               >
                 {previewMarkdown.isPreview ? <MarkdownIcon size={16} /> : <EyeIcon size={16} />}
@@ -547,7 +547,7 @@ const IndexPage = () => {
 
             <div className="w-full flex justify-center items-center">
               <div
-                className="w-full text-sm text-gray-900 shadow-xl mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800"
+                className="w-full text-sm text-gray-900 shadow-xl mt-2 p-4 bg-gray-100 border-2 border-solid border-gray-800 markdown-box"
                 id="markdown-box"
               >
                 {generatePreview ? (
@@ -582,13 +582,13 @@ const IndexPage = () => {
           }`}
         >
           <div className="flex justify-between items-center w-full">
-            <div className="text-lg sm:text-2xl font-bold font-title mt-2 mb-2">
+            <div className="text-lg sm:text-2xl font-bold font-title mt-2 mb-2 headings">
               Config options
               <span className="bg-green-800 text-white text-xs sm:text-sm p-1 ml-1">new feature</span>
             </div>
             <button
               type="button"
-              className="text-xxs sm:text-sm border-2 w-auto px-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center"
+              className="text-xxs sm:text-sm border-2 w-auto px-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center buttons"
               onClick={handleResetForm}
             >
               Reset form
@@ -612,7 +612,7 @@ const IndexPage = () => {
               />
               <button
                 type="button"
-                className="text-xxs sm:text-sm border-2 w-40 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
+                className="text-xxs sm:text-sm border-2 w-40 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 buttons"
               >
                 Upload json file
               </button>
@@ -620,15 +620,15 @@ const IndexPage = () => {
           </div>
           <button
             type="button"
-            className="mr-5 mb-10 text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1"
+            className="mr-5 mb-10 text-xxs sm:text-sm border-2 w-32 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 buttons"
             onClick={handleRestore}
           >
             Restore
           </button>
           <div className="flex flex-col items-start justify-center">
             <div className="text-green-700 font-medium">Tips</div>
-            <div className="text-sm sm:text-lg text-gray-700">* Enter the downloaded JSON text to restore.</div>
-            <div className="text-sm sm:text-lg text-gray-700">* Press reset to reset the form.</div>
+            <div className="text-sm sm:text-lg text-gray-700 sub-headings">* Enter the downloaded JSON text to restore.</div>
+            <div className="text-sm sm:text-lg text-gray-700 sub-headings">* Press reset to reset the form.</div>
           </div>
         </div>
       </div>

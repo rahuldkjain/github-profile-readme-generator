@@ -5,7 +5,7 @@ const Title = (props) => {
   const { data, prefix, handlePrefixChange, handleDataChange } = props;
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Title</div>
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2 headings">Title</div>
       <div className="flex justify-start items-center w-full text-regular text-xs sm:text-lg">
         <input
           id="title-prefix"

@@ -5,7 +5,7 @@ const Social = (props) => {
   const { social, handleSocialChange } = props;
   return (
     <div className="px-2 sm:px-6 mb-4">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Social</div>
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2 headings">Social</div>
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
