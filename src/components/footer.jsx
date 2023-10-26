@@ -5,7 +5,7 @@ import logo from '../images/mdg.png';
 import discord from '../images/Discord-Logo.png';
 
 const Footer = () => (
-  <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
+  <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2 footer">
     <div className="w-full flex flex-col sm:flex-row justify-evenly py-2">
       <div className="sm:ml-0 sm:mr-6 order-last sm:order-none flex">
         <h1 className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0">

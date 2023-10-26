@@ -35,7 +35,7 @@ const Skills = (props) => {
 
   return (
     <div className="px-2 sm:px-6 mb-10 ">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between headings">
         Skills
         <div className="relative flex">
           <input
@@ -71,7 +71,7 @@ const Skills = (props) => {
         })
         .map((key) => (
           <div key={key} className="divide-y divide-gray-500">
-            <div className="text-sm sm:text-xl text-gray-900 text-left py-1">{categorizedSkills[key].title}</div>
+            <div className="text-sm sm:text-xl text-gray-900 text-left py-1 sub-headings">{categorizedSkills[key].title}</div>
             <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
               {categorizedSkills[key].skills
                 .filter((skill) => skill.includes(search.toLowerCase()))

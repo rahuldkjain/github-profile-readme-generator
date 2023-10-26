@@ -2,13 +2,13 @@ import React from 'react';
 
 const Donate = () => (
   <>
-    <div className="text-center text-4xl my-2">
+    <div className="text-center text-4xl my-2 headings">
       Support&nbsp;
       <span role="img" aria-label="praying hand emoji">
         🙏
       </span>
     </div>
-    <div className="flex flex-col sm:flex-row items-start justify-between">
+    <div className="flex flex-col sm:flex-row items-start justify-between headings">
       <div className="w-full sm:w-2/3">
         <div className="text-2xl mb-2">Are you using the tool and happy with it to create your GitHub Profile?</div>
         <div className="text-lg">Your kind support keeps open-source tools like this free for others.</div>
