@@ -40,9 +40,12 @@
     "gsap": "^3.4.0",
     "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/material": "5.14.14"
   },
   "devDependencies": {
     "babel-jest": "26.3.0",
