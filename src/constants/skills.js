@@ -114,7 +114,7 @@ const categorizedSkills = {
 
   data_visualization: {
     title: 'Data Visualization',
-    skills: ['d3js', 'chartjs', 'canvasjs', 'kibana', 'grafana'],
+    skills: ['d3js', 'chartjs', 'canvasjs', 'kibana', 'grafana', 'powerbi', 'tableau'],
   },
 
   devops: {
@@ -199,6 +199,8 @@ const icons = {
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   csharp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
   d3js: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
+  powerbi: 'https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg',
+  tableau: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg",
   django: 'https://cdn.worldvectorlogo.com/logos/django.svg',
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
@@ -369,6 +371,8 @@ const skillWebsites = {
   css3: 'https://www.w3schools.com/css/',
   csharp: 'https://www.w3schools.com/cs/',
   d3js: 'https://d3js.org/',
+  powerbi : 'https://powerbi.microsoft.com/en-in/',
+  tableau : 'https://www.tableau.com/',
   django: 'https://www.djangoproject.com/',
   docker: 'https://www.docker.com/',
   dotnet: 'https://dotnet.microsoft.com/',
