@@ -151,6 +151,7 @@ const categorizedSkills = {
       'jekyll',
       'nextjs',
       'nuxtjs',
+      'pelican',
       '11ty',
       'scully',
       'sculpin',
