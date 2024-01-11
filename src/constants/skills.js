@@ -67,6 +67,7 @@ const categorizedSkills = {
       'rabbitMQ',
       'hadoop',
       'nginx',
+      'apacheserver',
       'openresty',
       'nestjs',
     ],
@@ -348,6 +349,7 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  apacheserver: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg',
 };
 
 const skillWebsites = {
@@ -503,6 +505,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  apacheserver:'https://httpd.apache.org/'
 };
 
 const initialSkillState = {};
