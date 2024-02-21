@@ -212,7 +212,7 @@ const icons = {
   java: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
   javascript: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
   ionic: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg',
-  laravel: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg',
+  laravel: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original-wordmark.svg',
   meteor: 'https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg',
   mongodb: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
   mysql: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
