@@ -52,7 +52,6 @@ const categorizedSkills = {
       'qt',
       'wx_widgets',
       'ember',
-      'astro',
     ],
   },
 
@@ -130,7 +129,7 @@ const categorizedSkills = {
 
   framework: {
     title: 'Framework',
-    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask', 'quasar', 'astro'],
+    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask', 'quasar'],
   },
 
   testing: {
@@ -159,6 +158,7 @@ const categorizedSkills = {
       'vuepress',
       'hexo',
       'middleman',
+      'astro',
     ],
   },
 
