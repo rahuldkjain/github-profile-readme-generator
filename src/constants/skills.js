@@ -129,7 +129,7 @@ const categorizedSkills = {
 
   framework: {
     title: 'Framework',
-    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask', 'quasar'],
+    skills: ['django', 'dotnet', 'electron', 'symfony', 'laravel', 'codeigniter', 'rails', 'flask', 'quasar', 'odoo'],
   },
 
   testing: {
@@ -317,6 +317,7 @@ const icons = {
   ember: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg',
   scikit_learn: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg',
   quasar: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg',
+  odoo: 'https://odoocdn.com/openerp_website/static/src/img/assets/svg/odoo_logo.svg',
   kibana: 'https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg',
   grafana: 'https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg',
   elasticsearch: 'https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg',
@@ -478,6 +479,7 @@ const skillWebsites = {
   ember: 'https://emberjs.com/',
   scikit_learn: 'https://scikit-learn.org/',
   quasar: 'https://quasar.dev/',
+  odoo: 'https://www.odoo.com/',
   kibana: 'https://www.elastic.co/kibana',
   grafana: 'https://grafana.com',
   elasticsearch: 'https://www.elastic.co',
