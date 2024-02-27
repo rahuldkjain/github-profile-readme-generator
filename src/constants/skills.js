@@ -158,6 +158,7 @@ const categorizedSkills = {
       'vuepress',
       'hexo',
       'middleman',
+      'astro',
     ],
   },
 
@@ -187,6 +188,7 @@ const icons = {
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
   android: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg',
   arduino: 'https://cdn.worldvectorlogo.com/logos/arduino-1.svg',
+  astro: 'https://github.com/tandpfun/skill-icons/blob/main/icons/Astro.svg',
   backbonejs:
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg',
   bootstrap: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
@@ -359,6 +361,7 @@ const skillWebsites = {
   angular: 'https://angular.io',
   aws: 'https://aws.amazon.com',
   android: 'https://developer.android.com',
+  astro: 'https://astro.build/',
   backbonejs: 'https://backbonejs.org',
   bootstrap: 'https://getbootstrap.com',
   c: 'https://www.cprogramming.com/',
