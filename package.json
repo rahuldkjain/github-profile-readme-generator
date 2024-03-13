@@ -2,7 +2,7 @@
   "name": "github-profile-readme-generator",
   "private": true,
   "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Rahul Jain <rahuldkjain@gmail.com>",
   "husky": {
     "hooks": {
