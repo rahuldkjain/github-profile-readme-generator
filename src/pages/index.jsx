@@ -19,6 +19,7 @@ import Addons from '../components/addons';
 import Skills from '../components/skills';
 import Donate from '../components/donate';
 import Support from '../components/support';
+import Mode from '../components/Mode';
 import { initialSkillState } from '../constants/skills';
 import Loader from '../components/loader';
 import SEO from '../components/seo';
@@ -394,7 +395,9 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Mode />
       <div className="m-4 sm:p-4">
+        
         <SEO title="GitHub Profile Readme Generator" />
         <div id="form">
           <Title
