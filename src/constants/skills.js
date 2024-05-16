@@ -23,6 +23,7 @@ const categorizedSkills = {
       'elixir',
       'erlang',
       'nim',
+      'fortran',
     ],
   },
 
@@ -222,7 +223,7 @@ const icons = {
   openresty: 'https://openresty.org/images/logo.png',
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
   photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
-  xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
+  xd: 'https://upload.vectorlogo.zone/logos/adobe_illustrator/images/8cf40c06-e920-4d78-8171-6941d7ab675e.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
   postgresql:
@@ -231,7 +232,7 @@ const icons = {
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
   ruby: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
+  rust: 'https://www.vectorlogo.zone/logos/rust-lang/rust-lang-icon.svg',
   sass: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
   scala: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg',
   solidworks: 'https://cdn.worldvectorlogo.com/logos/solidworks.svg',
@@ -326,9 +327,9 @@ const icons = {
     'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg',
   sculpin:
     'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
-  sapper: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg',
+  sapper: 'https://images.prismic.io/intuzwebsite/726f47c0-fe0f-4559-b95d-08ff44926078_Sapper_e35d66f0a3.png?auto=compress,format',
   vuepress:
-    'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
+    'https://upload.vectorlogo.zone/logos/vuejs/images/167f5657-b400-4068-bc98-38ea7e7a3773.svg',
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
   unreal:
     'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
@@ -348,6 +349,7 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  fortran: 'https://raw.githubusercontent.com/gilbarbara/logos/main/logos/fortran.svg',
 };
 
 const skillWebsites = {
@@ -503,6 +505,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  fortran: 'https://fortran-lang.org/',
 };
 
 const initialSkillState = {};
