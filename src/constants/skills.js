@@ -23,6 +23,7 @@ const categorizedSkills = {
       'elixir',
       'erlang',
       'nim',
+      'solidity',
     ],
   },
 
@@ -348,6 +349,7 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  solidity: 'https://docs.soliditylang.org/en/v0.8.26/_static/img/logo.svg',
 };
 
 const skillWebsites = {
@@ -503,6 +505,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  solidity: 'https://soliditylang.org/',
 };
 
 const initialSkillState = {};
