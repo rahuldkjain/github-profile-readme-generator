@@ -82,6 +82,7 @@ const categorizedSkills = {
       'nativescript',
       'xamarin',
       'reactnative',
+      'iOS',
       'ionic',
       'apachecordova',
     ],
@@ -119,7 +120,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'xcode'],
   },
 
   baas: {
@@ -163,7 +164,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: 'Game Engines',
-    skills: ['unity', 'unreal'],
+    skills: ['unity', 'unreal', 'godot'],
   },
 
   automation: {
@@ -348,6 +349,8 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  iOS: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg',
+  xcode: 'https://www.vectorlogo.zone/logos/apple_xcode/apple_xcode-icon.svg'
 };
 
 const skillWebsites = {
@@ -503,6 +506,8 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  iOS: 'https://developer.apple.com/ios/',
+  xcode: 'https://developer.apple.com/xcode/'
 };
 
 const initialSkillState = {};
