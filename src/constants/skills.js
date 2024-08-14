@@ -328,7 +328,7 @@ const icons = {
     'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
   sapper: 'https://raw.githubusercontent.com/bestofjs/bestofjs/825a12cad8d40dc8879ba9226eb628681049416c/apps/bestofjs-nextjs/public/logos/sapper.svg',
   vuepress:
-    'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
+    'https://raw.githubusercontent.com/vuejs/vuepress/9fb4bb00925d9409e6732118e996411c6a82c85d/art/vuepress-icon.svg',
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
   unreal:
     'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
