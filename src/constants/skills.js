@@ -231,7 +231,7 @@ const icons = {
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
   ruby: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
+  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg',
   sass: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
   scala: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg',
   solidworks: 'https://cdn.worldvectorlogo.com/logos/solidworks.svg',
