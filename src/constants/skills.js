@@ -222,7 +222,7 @@ const icons = {
   openresty: 'https://openresty.org/images/logo.png',
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
   photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
-  xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
+  xd: 'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/888aff31e1d26dd2a6acf6afebbc34970aeb0118/src/images/icons/Software/xd.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
   postgresql:
