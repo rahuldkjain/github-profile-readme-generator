@@ -460,12 +460,12 @@ const IndexPage = () => {
               ''
             )}
             {data.twitterBadge && !social.twitter ? (
-              <div className="warning">* Please add twitter username to use these add-ons</div>
+              <div className="warning">* Please add X username to use these add-ons</div>
             ) : (
               ''
             )}
             {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
-              <div className="warning">* Twitter username is invalid, please add a valid username</div>
+              <div className="warning">* X username is invalid, please add a valid username</div>
             ) : (
               ''
             )}

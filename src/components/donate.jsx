@@ -23,7 +23,7 @@ const Donate = () => (
               alt="tweet github profile readme generator"
             />
           </a>
-          Let the world know how you feel using this tool. Share with others on twitter.
+          Let the world know how you feel using this tool. Share with others on X.
         </div>
       </div>
       <div className="w-full sm:w-1/3 flex flex-col justify-center items-center">
