@@ -417,7 +417,7 @@ const Addons = (props) => {
         inputChecked={data.twitterBadge}
         onInputChange={() => handleCheckChange('twitterBadge')}
       >
-        display twitter badge
+        display X badge
       </AddonsItem>
       <AddonsItem
         inputId="dev-dynamic-blogs"
