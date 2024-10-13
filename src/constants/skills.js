@@ -266,7 +266,7 @@ const icons = {
   opencv: 'https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg',
   illustrator: 'https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg',
   figma: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
-blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
+  blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
   babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
   sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
   flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
