@@ -163,7 +163,7 @@ const categorizedSkills = {
 
   game_engines: {
     title: 'Game Engines',
-    skills: ['unity', 'unreal', 'godot'],
+    skills: ['unity', 'unreal', 'godot'] ,
   },
 
   automation: {
@@ -231,7 +231,7 @@ const icons = {
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
   ruby: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
+  unity: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
   sass: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
   scala: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg',
   solidworks: 'https://cdn.worldvectorlogo.com/logos/solidworks.svg',
@@ -348,6 +348,7 @@ const icons = {
   middleman:
     'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
+  godot: 'https://godotengine.org/assets/press/icon_color.svg',
 };
 
 const skillWebsites = {
@@ -503,6 +504,7 @@ const skillWebsites = {
   erlang: 'https://www.erlang.org/',
   nim: 'https://nim-lang.org/',
   middleman: 'https://middlemanapp.com/',
+  godot: 'https://godotengine.org/',
 };
 
 const initialSkillState = {};
