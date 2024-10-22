@@ -158,13 +158,13 @@ VisitorsBadge.propTypes = {
   show: PropTypes.bool.isRequired,
 };
 
-const TwitterBadge = (props) => {
-  const { twitter, show, base } = props;
-  const link = `https://img.shields.io/twitter/follow/${twitter}?logo=twitter&style=for-the-badge`;
+const XBadge = (props) => {
+  const { x, show, base } = props;
+  const link = `https://img.shields.io/twitter/follow/${x}?logo=twitter&style=for-the-badge`;
   if (show) {
     return (
       <>
-        {`<p align="left"> <a href="${base}/${twitter}" target="blank"><img src="${link}" alt="${twitter}" /></a> </p>`}
+        {`<p align="left"> <a href="${base}/${x}" target="blank"><img src="${link}" alt="${x}" /></a> </p>`}
         <br />
         <br />
       </>
@@ -173,8 +173,8 @@ const TwitterBadge = (props) => {
   return '';
 };
 
-TwitterBadge.propTypes = {
-  twitter: PropTypes.string.isRequired,
+XBadge.propTypes = {
+  x: PropTypes.string.isRequired,
   base: PropTypes.string.isRequired,
   show: PropTypes.bool.isRequired,
 };
@@ -478,7 +478,7 @@ const Markdown = (props) => {
       </>
       <>
         <GithubProfileTrophy show={data.githubProfileTrophy} github={social.github} />
-        <TwitterBadge base="https://twitter.com" show={data.twitterBadge} twitter={social.twitter} />
+        <TwitterBadge base="https://x.com" show={data.xBadge} twitter={social.x} />
       </>
       <>
         <DisplayWork prefix={prefix.currentWork} project={data.currentWork} link={link.currentWork} />
@@ -535,7 +535,7 @@ const Markdown = (props) => {
         <DisplaySocial base="https://dev.to" icon={`${iconBaseUrl}devto.svg`} username={social.dev} />
       </>
       <>
-        <DisplaySocial base="https://twitter.com" icon={`${iconBaseUrl}twitter.svg`} username={social.twitter} />
+        <DisplaySocial base="https://x.com" icon={`${iconBaseUrl}x.svg`} username={social.x} />
       </>
       <>
         <DisplaySocial
@@ -703,7 +703,7 @@ Markdown.propTypes = {
     ama: PropTypes.string,
     contact: PropTypes.string,
     funFact: PropTypes.string,
-    twitterBadge: false,
+    xBadge: false,
     visitorsBadge: false,
     badgeStyle: PropTypes.string,
     badgeColor: PropTypes.string,

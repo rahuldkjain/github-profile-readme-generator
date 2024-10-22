@@ -154,7 +154,7 @@ export const SocialPreview = (props) => {
         <DisplaySocial base="https://dev.to" icon={`${iconBaseUrl}devto.svg`} username={social.dev} />
       </>
       <>
-        <DisplaySocial base="https://twitter.com" icon={`${iconBaseUrl}twitter.svg`} username={social.twitter} />
+        <DisplaySocial base="https://x.com" icon={`${iconBaseUrl}x.svg`} username={social.x} />
       </>
       <>
         <DisplaySocial
@@ -287,27 +287,27 @@ VisitorsBadgePreview.propTypes = {
   badgeOptions: PropTypes.object,
 };
 
-export const TwitterBadgePreview = (props) => {
-  const { twitter, show } = props;
-  const link = `https://img.shields.io/twitter/follow/${twitter}?logo=twitter&style=for-the-badge`;
+export const XBadgePreview = (props) => {
+  const { x, show } = props;
+  const link = `https://img.shields.io/twitter/follow/${x}?logo=twitter&style=for-the-badge`;
   if (show) {
     return (
       <div className="text-left my-2">
         {' '}
-        <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noreferrer">
-          <img className="h-4 sm:h-6" src={link} alt={twitter} />
+        <a href={`https://twitter.com/${x}`} target="_blank" rel="noreferrer">
+          <img className="h-4 sm:h-6" src={link} alt={x} />
         </a>{' '}
       </div>
     );
   }
   return null;
 };
-TwitterBadgePreview.defaultProps = {
-  twitter: '',
+XBadgePreview.defaultProps = {
+  x: '',
   show: false,
 };
-TwitterBadgePreview.propTypes = {
-  twitter: PropTypes.string,
+XBadgePreview.propTypes = {
+  x: PropTypes.string,
   show: PropTypes.bool,
 };
 
@@ -477,7 +477,7 @@ const MarkdownPreview = (props) => {
         }}
       />
       <GithubProfileTrophyPreview show={data.githubProfileTrophy} github={social.github} />
-      <TwitterBadgePreview show={data.twitterBadge} twitter={social.twitter} />
+      <XBadgePreview show={data.xBadge} twitter={social.x} />
       <WorkPreview work={props} />
       <SocialPreview social={social} />
       <SkillsPreview skills={skills} />

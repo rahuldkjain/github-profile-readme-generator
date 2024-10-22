@@ -34,7 +34,7 @@ exports[`Donate renders correctly 1`] = `
       >
         <a
           className="flex items-center justify-start w-20"
-          href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator"
+          href="https://x.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator"
         >
           <img
             alt="tweet github profile readme generator"
@@ -42,7 +42,7 @@ exports[`Donate renders correctly 1`] = `
             src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator"
           />
         </a>
-        Let the world know how you feel using this tool. Share with others on twitter.
+        Let the world know how you feel using this tool. Share with others on x.
       </div>
     </div>
     <div

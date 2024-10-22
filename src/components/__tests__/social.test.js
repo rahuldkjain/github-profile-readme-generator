@@ -9,7 +9,7 @@ describe('Social', () => {
   const props = {
     social: {
       github: 'github ',
-      twitter: 'twitter',
+      x: 'x',
       dev: 'dev',
       codepen: 'codepen',
       codesandbox: 'codesandbodx',
