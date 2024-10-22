@@ -119,10 +119,10 @@ exports[`Addons renders correctly 1`] = `
   </AddonsItem>
   <AddonsItem
     inputChecked={false}
-    inputId="twitter-badge"
+    inputId="x-badge"
     onInputChange={[Function]}
   >
-    display twitter badge
+    display x badge
   </AddonsItem>
   <AddonsItem
     inputChecked={false}
@@ -311,7 +311,7 @@ exports[`Addons should render Customize Badges 1`] = `
         "theme": "",
         "titleColor": "",
       },
-      "twitterBadge": false,
+      "xBadge": false,
       "visitorsBadge": false,
     }
   }
@@ -818,7 +818,7 @@ exports[`Addons should render Customize Badges 1`] = `
     </AddonsItem>
     <AddonsItem
       inputChecked={false}
-      inputId="twitter-badge"
+      inputId="x-badge"
       onInputChange={[Function]}
     >
       <div
@@ -826,12 +826,12 @@ exports[`Addons should render Customize Badges 1`] = `
       >
         <label
           className="checkbox-label flex items-center"
-          htmlFor="twitter-badge"
+          htmlFor="x-badge"
         >
           <input
             checked={false}
             className="checkbox-label__input"
-            id="twitter-badge"
+            id="x-badge"
             onChange={[Function]}
             type="checkbox"
           />
@@ -841,7 +841,7 @@ exports[`Addons should render Customize Badges 1`] = `
           <span
             className="pl-4"
           >
-            display twitter badge
+            display x badge
           </span>
         </label>
       </div>
@@ -1018,7 +1018,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
         "theme": "",
         "titleColor": "",
       },
-      "twitterBadge": false,
+      "xBadge": false,
       "visitorsBadge": false,
     }
   }
@@ -1620,7 +1620,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
     </AddonsItem>
     <AddonsItem
       inputChecked={false}
-      inputId="twitter-badge"
+      inputId="x-badge"
       onInputChange={[Function]}
     >
       <div
@@ -1628,12 +1628,12 @@ exports[`Addons should render Customize Github stats card 1`] = `
       >
         <label
           className="checkbox-label flex items-center"
-          htmlFor="twitter-badge"
+          htmlFor="x-badge"
         >
           <input
             checked={false}
             className="checkbox-label__input"
-            id="twitter-badge"
+            id="x-badge"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1643,7 +1643,7 @@ exports[`Addons should render Customize Github stats card 1`] = `
           <span
             className="pl-4"
           >
-            display twitter badge
+            display x badge
           </span>
         </label>
       </div>
@@ -1820,7 +1820,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
         "theme": "",
         "titleColor": "",
       },
-      "twitterBadge": false,
+      "xBadge": false,
       "visitorsBadge": false,
     }
   }
@@ -2422,7 +2422,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
     </AddonsItem>
     <AddonsItem
       inputChecked={false}
-      inputId="twitter-badge"
+      inputId="x-badge"
       onInputChange={[Function]}
     >
       <div
@@ -2430,12 +2430,12 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
       >
         <label
           className="checkbox-label flex items-center"
-          htmlFor="twitter-badge"
+          htmlFor="x-badge"
         >
           <input
             checked={false}
             className="checkbox-label__input"
-            id="twitter-badge"
+            id="x-badge"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2445,7 +2445,7 @@ exports[`Addons should render Customize Top Skills Card 1`] = `
           <span
             className="pl-4"
           >
-            display twitter badge
+            display x badge
           </span>
         </label>
       </div>

@@ -17,7 +17,7 @@ describe('Addons', () => {
     ama: '',
     contact: '',
     funFact: '',
-    twitterBadge: false,
+    xBadge: false,
     visitorsBadge: false,
     badgeStyle: 'flat',
     badgeColor: '0e75b6',
@@ -57,7 +57,7 @@ describe('Addons', () => {
     codesandbox: '',
     fb: '',
     instagram: '',
-    twitter: '',
+    x: '',
     dribbble: '',
     behance: '',
     medium: '',
@@ -693,7 +693,7 @@ describe('Addons', () => {
     addOnComponent.find('#github-profile-trophy').simulate('change', mockEvent);
     addOnComponent.find('#github-stats').simulate('change', mockEvent);
     addOnComponent.find('#top-languages').simulate('change', mockEvent);
-    addOnComponent.find('#twitter-badge').simulate('change', mockEvent);
+    addOnComponent.find('#x-badge').simulate('change', mockEvent);
     addOnComponent.find('#dev-dynamic-blogs').simulate('change', mockEvent);
     addOnComponent.find('#rss-dynamic-blogs').simulate('change', mockEvent);
     addOnComponent.find('#medium-dynamic-blogs').simulate('change', mockEvent);
@@ -703,7 +703,7 @@ describe('Addons', () => {
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(2, 'githubProfileTrophy');
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(3, 'githubStats');
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(4, 'topLanguages');
-    expect(mockHandleCheckChange).toHaveBeenNthCalledWith(5, 'twitterBadge');
+    expect(mockHandleCheckChange).toHaveBeenNthCalledWith(5, 'xBadge');
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(6, 'devDynamicBlogs');
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(7, 'rssDynamicBlogs');
     expect(mockHandleCheckChange).toHaveBeenNthCalledWith(8, 'mediumDynamicBlogs');

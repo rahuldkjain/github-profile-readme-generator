@@ -413,11 +413,11 @@ const Addons = (props) => {
         display github streak stats
       </AddonsItem>
       <AddonsItem
-        inputId="twitter-badge"
-        inputChecked={data.twitterBadge}
-        onInputChange={() => handleCheckChange('twitterBadge')}
+        inputId="x-badge"
+        inputChecked={data.xBadge}
+        onInputChange={() => handleCheckChange('xBadge')}
       >
-        display twitter badge
+        display x badge
       </AddonsItem>
       <AddonsItem
         inputId="dev-dynamic-blogs"

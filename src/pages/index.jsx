@@ -24,7 +24,7 @@ import Loader from '../components/loader';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import './index.css';
-import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
+import { isGitHubUsernameValid, isMediumUsernameValid, isXUsernameValid } from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
@@ -180,8 +180,8 @@ const IndexPage = () => {
       if (social.github && isGitHubUsernameValid(social.github)) {
         generate();
       }
-    } else if (data.twitterBadge) {
-      if (social.twitter && isTwitterUsernameValid(social.twitter)) {
+    } else if (data.xBadge) {
+      if (social.x && isXUsernameValid(social.x)) {
         generate();
       }
     } else if (social.github) {
@@ -459,13 +459,13 @@ const IndexPage = () => {
             ) : (
               ''
             )}
-            {data.twitterBadge && !social.twitter ? (
-              <div className="warning">* Please add twitter username to use these add-ons</div>
+            {data.xBadge && !social.x ? (
+              <div className="warning">* Please add X username to use these add-ons</div>
             ) : (
               ''
             )}
-            {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
-              <div className="warning">* Twitter username is invalid, please add a valid username</div>
+            {social.x && !isXUsernameValid(social.x) ? (
+              <div className="warning">* X username is invalid, please add a valid username</div>
             ) : (
               ''
             )}

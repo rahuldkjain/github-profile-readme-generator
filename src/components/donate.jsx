@@ -15,7 +15,7 @@ const Donate = () => (
         <div className="mt-4">
           <a
             className="flex items-center justify-start w-20"
-            href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator"
+            href="https://x.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator"
           >
             <img
               className="w-20"
@@ -23,7 +23,7 @@ const Donate = () => (
               alt="tweet github profile readme generator"
             />
           </a>
-          Let the world know how you feel using this tool. Share with others on twitter.
+          Let the world know how you feel using this tool. Share with others on x.
         </div>
       </div>
       <div className="w-full sm:w-1/3 flex flex-col justify-center items-center">

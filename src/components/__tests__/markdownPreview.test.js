@@ -9,7 +9,7 @@ import MarkdownPreview, {
   SubTitlePreview,
   TitlePreview,
   TopLanguagesPreview,
-  TwitterBadgePreview,
+  XBadgePreview,
   VisitorsBadgePreview,
   WorkPreview,
   SectionTitle,
@@ -43,7 +43,7 @@ const DEFAULT_DATA = {
   ama: '',
   contact: '',
   funFact: '',
-  twitterBadge: false,
+  xBadge: false,
   visitorsBadge: false,
   badgeStyle: 'flat',
   badgeColor: '0e75b6',
@@ -93,7 +93,7 @@ const DEFAULT_SOCIAL = {
   codesandbox: '',
   fb: '',
   instagram: '',
-  twitter: '',
+  x: '',
   dribbble: '',
   behance: '',
   medium: '',
@@ -317,18 +317,18 @@ describe('GithubProfileTrophy Preview', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-describe('TwitterBadgePreview Preview', () => {
+describe('XBadgePreview Preview', () => {
   it('renders correctly', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
-    const tree = shallow(<TwitterBadgePreview show={data.twitterBadge} twitter={social.twitter} />);
+    const tree = shallow(<XBadgePreview show={data.xBadge} twitter={social.x} />);
 
     expect(tree).toMatchSnapshot();
   });
   it('renders correctly with show true', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
-    const tree = shallow(<TwitterBadgePreview show={true} twitter={social.twitter} />);
+    const tree = shallow(<XBadgePreview show={true} twitter={social.x} />);
 
     expect(tree).toMatchSnapshot();
   });
