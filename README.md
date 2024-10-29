@@ -7,7 +7,7 @@
   GitHub Profile README Generator
 </h1>
 
-### **Version: 1.3.0**  
+### **Version: 1.2.1**  
 
 <p align="center">
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">

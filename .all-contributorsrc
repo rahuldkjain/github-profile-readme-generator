@@ -49,7 +49,7 @@
       "contributions": [
         "code"
       ]
-    }
+    },
     {
       "login": "YashKandalkar",
       "name": "yash",
@@ -77,12 +77,21 @@
       "contributions": [
         "code"
       ]
-    }
+    },
     {
       "login": "g-savitha",
       "name": "Savitha Gollamudi",
       "avatar_url": "https://avatars0.githubusercontent.com/u/31612459?v=4",
       "profile": "https://www.gsavitha.in",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tailung42",
+      "name": "Bipin Thapa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142653093?s=400&u=85ec0c010a765ad7ae7a5104549150e80c52bf06&v=4",
+      "profile": "https://github.com/Tailung42",
       "contributions": [
         "code"
       ]
