@@ -637,6 +637,13 @@ const Markdown = (props) => {
       <>
         <DisplaySocial base="" icon={`${iconBaseUrl}rss.svg`} username={social.rssurl} />
       </>
+      <>
+        <DisplaySocial
+          base="https://exercism.org/profiles"
+          icon={`${iconBaseUrl}exercism.svg`}
+          username={social.exercism}
+        />
+      </>
       {isSocial(social) ? (
         <>
           {'</p>'}
