@@ -212,17 +212,17 @@ const icons = {
   java: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
   javascript: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
   ionic: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg',
-  laravel: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg',
+  laravel: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png',
   meteor: 'https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg',
   mongodb: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
   mysql: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
-  nestjs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg',
+  nestjs: 'https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png',
   nginx: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg',
   nodejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
   openresty: 'https://openresty.org/images/logo.png',
   oracle: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg',
   photoshop: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg',
-  xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
+  xd: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
   postgresql:
@@ -231,7 +231,7 @@ const icons = {
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
   ruby: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
+  rust: 'https://www.svgrepo.com/show/376347/rust.svg',
   sass: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
   scala: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg',
   solidworks: 'https://cdn.worldvectorlogo.com/logos/solidworks.svg',
@@ -269,7 +269,7 @@ const icons = {
   blender: 'https://download.blender.org/branding/community/blender_community_badge_white.svg',
   babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
   sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
-  flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
+  flask: 'https://github.com/bablubambal/All_logo_and_pictures/blob/main/frameworks/flask.svg',
   nativescript:
     'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
   xamarin:
@@ -328,7 +328,7 @@ const icons = {
     'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
   sapper: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg',
   vuepress:
-    'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png',
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
   unreal:
     'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
