@@ -11,6 +11,12 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {headComponents}
+        <button
+          id="themeToggleBtn"
+          style="position:fixed;top:10px;right:10px;z-index:9999;padding:6px 10px;background:#eee;border:none;cursor:pointer;"
+        >
+          Toggle Theme
+        </button>
         <script
           data-name="BMC-Widget"
           src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
