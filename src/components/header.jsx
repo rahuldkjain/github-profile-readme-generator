@@ -15,6 +15,14 @@ const Header = (props) => {
     forksCount: 0,
   });
 
+  const toggleTheme = () => {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    console.log('Theme toggled. Dark mode:', isDark);
+  };
+
+
   const shouldRequestStats = () => {
     const isFirstRequest = stats.starsCount === 0;
     const isVisible = window.document.visibilityState === 'visible';
@@ -84,6 +92,23 @@ const Header = (props) => {
             <span className="github-count px-1 sm:px-2">{stats.forksCount}</span>
           </div>
         </a>
+        <button
+          id="themeToggleBtn"
+          onClick={toggleTheme}
+          style={{
+            position: 'fixed',
+            top: '10px',
+            right: '10px',
+            zIndex: 9999,
+            padding: '6px 10px',
+            background: '#eee',
+            border: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          Toggle Theme
+        </button>
+
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ module.exports = {
   purge: [],
   theme: {
     extend: {},
+    darkMode: 'class',
     fontSize: {
       xxs: '.60rem',
       xs: '.75rem',

@@ -108,3 +108,17 @@
 .markdown .highlight pre {
   @apply bg-gray-100 !important;
 }
+
+/* Add to your global stylesheet */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* Optional: customize header, buttons, links etc. */
+.dark-mode .github-count,
+.dark-mode .border-gray-900 {
+  background-color: #222;
+  color: #eee;
+  border-color: #fff;
+}
