@@ -6,10 +6,10 @@ import discord from '../images/Discord-Logo.png';
 
 const Footer = () => (
   <div className="bg-gray-100 p-4 flex flex-col justify-center items-center shadow-inner mt-2">
-    <div className="w-full flex flex-col sm:flex-row justify-evenly py-2">
-      <div className="sm:ml-0 sm:mr-6 order-last sm:order-none flex">
+    <div className="w-full flex flex-col sm:flex-row flex-wrap gap-6 justify-center items-center sm:items-start text-center sm:text-left py-4">
+      <div className="sm:ml-0 sm:mr-6 order-last sm:order-none flex justify-center">
         <h1 className="text-base font-bold font-title text-xl sm:text-2xl mt-3 sm:mt-0">
-          <div className="flex sm:flex-col items-start mb-3 sm:mb-0">
+          <div className="flex sm:flex-col items-center sm:items-start mb-3 sm:mb-0">
             <img src={logo} className="hidden sm:block h-24" alt="github profile markdown generator logo" />
             <div className="mr-2 sm:mr-0">
               GitHub Profile{' '}
@@ -19,6 +19,7 @@ const Footer = () => (
           </div>
         </h1>
       </div>
+
       <div className="text-xl sm:text-base font-light sm:font-normal">
         <div className="font-title font-bold mb-4 sm:mb-2">
           <strong>Pages</strong>
@@ -39,6 +40,7 @@ const Footer = () => (
           </Link>
         </div>
       </div>
+
       <div className="text-xl sm:text-base font-light sm:font-normal">
         <div className="font-title font-bold my-4 sm:my-0 sm:mb-2">
           <strong>More</strong>
@@ -80,7 +82,8 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <div>
+
+      <div className="flex flex-col items-center sm:items-start">
         <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
           <strong>Join Community</strong>
         </div>
@@ -91,13 +94,14 @@ const Footer = () => (
         </div>
       </div>
     </div>
+
     <div className="py-2 mt-2">
       Developed in India{' '}
       <span role="img" aria-label="india">
-        {' '}
         🇮🇳
       </span>
     </div>
   </div>
 );
+
 export default Footer;
