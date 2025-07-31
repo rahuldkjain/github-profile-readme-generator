@@ -34,7 +34,7 @@ const Skills = (props) => {
   };
 
   return (
-    <div className="px-2 sm:px-6 mb-10 ">
+    <div id="skills-section" className="px-2 sm:px-6 mb-10 relative z-[1]">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
         Skills
         <div className="relative flex">

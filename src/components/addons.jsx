@@ -343,7 +343,7 @@ const Addons = (props) => {
   };
 
   return (
-    <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
+    <div id="addons-section" className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Add-ons</div>
       <AddonsItem
         inputId="visitors-count"

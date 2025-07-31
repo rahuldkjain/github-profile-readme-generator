@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Support = (props) => {
   const { support, handleSupportChange } = props;
   return (
-    <div className="px-2 sm:px-6 mb-4">
+    <div id="support-section" className="px-2 sm:px-6 mb-4">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Support</div>
       <div className="flex flex-wrap justify-start items-center">
         <div className="w-1/2 flex justify-start items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
