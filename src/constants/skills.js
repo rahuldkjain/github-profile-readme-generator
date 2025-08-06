@@ -76,6 +76,7 @@ const categorizedSkills = {
     title: 'Mobile App Development',
     skills: [
       'android',
+      'ios',
       'flutter',
       'dart',
       'kotlin',
@@ -119,7 +120,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'xcodecloud'],
   },
 
   baas: {
