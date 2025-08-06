@@ -76,6 +76,7 @@ const categorizedSkills = {
     title: 'Mobile App Development',
     skills: [
       'android',
+      'ios',
       'flutter',
       'dart',
       'kotlin',
@@ -119,7 +120,7 @@ const categorizedSkills = {
 
   devops: {
     title: 'Devops',
-    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci'],
+    skills: ['aws', 'docker', 'jenkins', 'gcp', 'kubernetes', 'bash', 'azure', 'vagrant', 'circleci', 'travisci', 'xcodecloud'],
   },
 
   baas: {
@@ -186,6 +187,8 @@ const icons = {
   aws:
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
   android: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg',
+  xcodecloud:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xcode/xcode-original.svg',
+  ios:'https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg',
   arduino: 'https://cdn.worldvectorlogo.com/logos/arduino-1.svg',
   backbonejs:
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg',
