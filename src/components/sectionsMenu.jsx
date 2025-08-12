@@ -3,6 +3,7 @@ import { categorizedSkills } from '../constants/skills';
 
 export const SectionsMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSkillsExpanded, setIsSkillsExpanded] = useState(true);
 
   const mainSections = [
     { id: 'title-section', label: 'Title' },
@@ -70,27 +71,58 @@ export const SectionsMenu = () => {
           <ul className="py-2 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 160px)' }}>
             {mainSections.map((section) => (
               <li key={section.id}>
-                <button
-                  onClick={() => scrollToSection(section.id)}
-                  className="w-full text-left px-4 py-2 hover:bg-gray-300 transition-colors duration-200 focus:outline-none flex items-center"
-                >
-                  <JumpOver16 className="" />
-                  {section.label}
-                </button>
+                {section.label === 'Skills' ? (
+                  <button
+                    onClick={() => {
+                      setIsSkillsExpanded(!isSkillsExpanded);
+                      scrollToSection(section.id);
+                    }}
+                    className="w-full text-left px-4 py-2 hover:bg-gray-300 transition-colors duration-200 focus:outline-none flex items-center justify-between"
+                  >
+                    <span className="flex items-center">
+                      <JumpOver16 className="mr-2" />
+                      {section.label}
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`h-4 w-4 transform transition-transform duration-200 ${
+                        isSkillsExpanded ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => scrollToSection(section.id)}
+                    className="w-full text-left px-4 py-2 hover:bg-gray-300 transition-colors duration-200 focus:outline-none flex items-center"
+                  >
+                    <JumpOver16 className="mr-2" />
+                    {section.label}
+                  </button>
+                )}
                 {section.label === 'Skills' && (
-                  <ul className="pl-4 bg-gray-50">
-                    {skillSubSections.map((subSection) => (
-                      <li key={subSection.id}>
-                        <button
-                          onClick={() => scrollToSection(subSection.id)}
-                          className="w-full text-left px-4 py-1 text-sm hover:bg-gray-300 transition-colors duration-200 focus:outline-none flex items-center"
-                        >
-                          {subSection.label}
-                        </button>
-                        <hr className="my-1 border-gray-300" />
-                      </li>
-                    ))}
-                  </ul>
+                  <div
+                    className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+                    style={{ maxHeight: isSkillsExpanded ? `${skillSubSections.length * 40}px` : '0' }}
+                  >
+                    <ul className="pl-4 bg-gray-50">
+                      {skillSubSections.map((subSection) => (
+                        <li key={subSection.id}>
+                          <button
+                            onClick={() => scrollToSection(subSection.id)}
+                            className="w-full text-left px-4 py-1 text-sm hover:bg-gray-300 transition-colors duration-200 focus:outline-none flex items-center"
+                          >
+                            {subSection.label}
+                          </button>
+                          <hr className="my-1 border-gray-300" />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
               </li>
             ))}
