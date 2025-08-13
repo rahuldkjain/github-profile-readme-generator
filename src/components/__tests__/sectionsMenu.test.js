@@ -42,4 +42,14 @@ describe('SectionsMenu', () => {
     component.find('button').first().simulate('click');
     expect(component.find('.absolute').exists()).toBeTruthy();
   });
+
+  it('closes menu when clicking the toggle button again', () => {
+    // Open menu
+    component.find('button').first().simulate('click');
+    expect(component.find('.absolute').exists()).toBeTruthy();
+
+    // Close menu
+    component.find('button').first().simulate('click');
+    expect(component.find('.absolute').exists()).toBeFalsy();
+  });
 });
