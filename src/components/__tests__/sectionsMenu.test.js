@@ -32,4 +32,14 @@ describe('SectionsMenu', () => {
   it('renders correctly', () => {
     expect(toJson(component)).toMatchSnapshot();
   });
+
+  it('starts with a closed menu', () => {
+    expect(component.find('.absolute').exists()).toBeFalsy();
+  });
+
+  it('opens menu when clicking the toggle button', () => {
+    // Find and click the menu button
+    component.find('button').first().simulate('click');
+    expect(component.find('.absolute').exists()).toBeTruthy();
+  });
 });
