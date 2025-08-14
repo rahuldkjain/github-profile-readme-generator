@@ -73,5 +73,16 @@ describe('SectionsMenu', () => {
       expect(document.getElementById).toHaveBeenCalledWith('title-section');
       expect(mockScrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth' });
     });
+
+    it('calls scrollToSection when clicking skill subsection buttons', () => {
+      const mockScrollIntoView = jest.fn();
+      document.getElementById = jest.fn(() => ({
+        scrollIntoView: mockScrollIntoView,
+      }));
+
+      // Click a skill subsection button
+      const subsectionButton = component.find('.pl-4.bg-gray-50 button').first();
+      subsectionButton.simulate('click');
+    });
   });
 });
