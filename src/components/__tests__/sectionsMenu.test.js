@@ -52,4 +52,26 @@ describe('SectionsMenu', () => {
     component.find('button').first().simulate('click');
     expect(component.find('.absolute').exists()).toBeFalsy();
   });
+
+  describe('Section navigation', () => {
+    beforeEach(() => {
+      component.find('button').first().simulate('click');
+    });
+
+    it('calls scrollToSection when clicking main section buttons', () => {
+      const mockScrollIntoView = jest.fn();
+      document.getElementById = jest.fn(() => ({
+        scrollIntoView: mockScrollIntoView,
+      }));
+
+      // Click the Title section button
+      const titleButton = component
+        .findWhere((node) => node.type() === 'button' && node.text().includes('Title'))
+        .first();
+      titleButton.simulate('click');
+
+      expect(document.getElementById).toHaveBeenCalledWith('title-section');
+      expect(mockScrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth' });
+    });
+  });
 });
