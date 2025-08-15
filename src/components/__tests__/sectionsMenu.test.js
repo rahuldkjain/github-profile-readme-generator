@@ -83,6 +83,9 @@ describe('SectionsMenu', () => {
       // Click a skill subsection button
       const subsectionButton = component.find('.pl-4.bg-gray-50 button').first();
       subsectionButton.simulate('click');
+
+      expect(document.getElementById).toHaveBeenCalledWith('skills-language-section');
+      expect(mockScrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth' });
     });
   });
 });
