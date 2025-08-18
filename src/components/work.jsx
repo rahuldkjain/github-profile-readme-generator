@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Work = (props) => {
   const { prefix, handlePrefixChange, data, handleDataChange, link, handleLinkChange } = props;
   return (
-    <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
+    <div id="work-section" className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Work</div>
       <div className="text-xs sm:text-lg flex flex-col sm:flex-row mb-10 justify-center sm:justify-start items-center sm:items-start w-full px-4 sm:px-0">
         <input

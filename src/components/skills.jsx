@@ -34,7 +34,7 @@ const Skills = (props) => {
   };
 
   return (
-    <div className="px-2 sm:px-6 mb-10 ">
+    <div id="skills-section" className="px-2 sm:px-6 mb-10 relative z-[1]">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
         Skills
         <div className="relative flex">
@@ -70,7 +70,7 @@ const Skills = (props) => {
           return filtered.length !== 0;
         })
         .map((key) => (
-          <div key={key} className="divide-y divide-gray-500">
+          <div key={key} id={`skills-${key}-section`} className="divide-y divide-gray-500">
             <div className="text-sm sm:text-xl text-gray-900 text-left py-1">{categorizedSkills[key].title}</div>
             <div className="flex justify-start items-center flex-wrap w-full mb-6 pl-4 sm:pl-10">
               {categorizedSkills[key].skills

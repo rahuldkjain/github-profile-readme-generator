@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionsMenu renders correctly 1`] = `
+<div
+  className="fixed right-0 top-0 p-4"
+  style={
+    Object {
+      "zIndex": 999999,
+    }
+  }
+>
+  <button
+    className="text-white rounded-full p-3 shadow-lg transition-all duration-200 focus:outline-none"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#f3661aff",
+        "transform": "scale(1)",
+      }
+    }
+  >
+    <svg
+      className="h-6 w-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 6h16M4 12h16M4 18h16"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+    </svg>
+  </button>
+</div>
+`;
