@@ -108,3 +108,20 @@
 .markdown .highlight pre {
   @apply bg-gray-100 !important;
 }
+
+/* Dark mode overrides */
+.dark .markdown {
+  @apply text-gray-100;
+}
+
+.dark body, .dark .min-h-screen {
+  background-color: #0f172a; /* slate-900 */
+}
+
+.dark .border-gray-900 {
+  border-color: #e5e7eb;
+}
+
+.dark .bg-gray-100 {
+  background-color: #0b1220; /* darker panel */
+}
