@@ -38,11 +38,14 @@
     "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-sharp": "^2.5.7",
     "gsap": "^3.4.0",
+    "i18next": "^21.10.0",
+    "i18next-browser-languagedetector": "^6.1.8",
     "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.18.6"
   },
   "devDependencies": {
     "babel-jest": "26.3.0",

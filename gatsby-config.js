@@ -27,20 +27,20 @@ module.exports = {
         plugins: [`gatsby-remark-prismjs`],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/mdg.png`, // This path is relative to the root of the site.
-      },
-    },
+    // `gatsby-transformer-sharp`, // Commented out due to sharp module issue
+    // `gatsby-plugin-sharp`, // Commented out due to sharp module issue
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `gatsby-starter-default`,
+    //     short_name: `starter`,
+    //     start_url: `/`,
+    //     background_color: `#663399`,
+    //     theme_color: `#663399`,
+    //     display: `minimal-ui`,
+    //     icon: `src/images/mdg.png`, // This path is relative to the root of the site.
+    //   },
+    // }, // Commented out due to sharp module dependency issue
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

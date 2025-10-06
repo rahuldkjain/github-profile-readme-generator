@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby';
 import { ToolsIcon, XCircleIcon } from '@primer/octicons-react';
+import { useTranslation } from 'react-i18next';
 import latestBlogs from '../utils/workflows';
 import links from '../constants/page-links';
 import { isMediumUsernameValid, isGitHubUsernameValid } from '../utils/validation';
@@ -238,6 +239,7 @@ CustomizeStreakStats.propTypes = {
 
 const Addons = (props) => {
   const { data, social, handleDataChange, handleCheckChange } = props;
+  const { t } = useTranslation();
   const [debounce, setDebounce] = useState(undefined);
   const [badgeOptions, setBadgeOptions] = useState({
     badgeStyle: data.badgeStyle,
@@ -344,28 +346,28 @@ const Addons = (props) => {
 
   return (
     <div className="flex justify-center items-start flex-col w-full px-2 sm:px-6 mb-10">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Add-ons</div>
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">{t('sections.addons')}</div>
       <AddonsItem
         inputId="visitors-count"
         inputChecked={data.visitorsBadge}
         onInputChange={() => handleCheckChange('visitorsBadge')}
         Options={
           <CustomizeOptions
-            title="Customize Badge"
+            title={t('addons.customizeBadge')}
             CustomizationOptions={
               <CustomizeBadge githubName={social.github} badgeOptions={badgeOptions} onBadgeUpdate={onBadgeUpdate} />
             }
           />
         }
       >
-        display visitors count badge
+        {t('addons.visitorsCount')}
       </AddonsItem>
       <AddonsItem
         inputId="github-profile-trophy"
         inputChecked={data.githubProfileTrophy}
         onInputChange={() => handleCheckChange('githubProfileTrophy')}
       >
-        display github trophy
+        {t('addons.trophies')}
       </AddonsItem>
       <AddonsItem
         inputId="github-stats"
@@ -373,14 +375,14 @@ const Addons = (props) => {
         onInputChange={() => handleCheckChange('githubStats')}
         Options={
           <CustomizeOptions
-            title="Customize Github Stats Card"
+            title={t('addons.customizeGithubStatsCard')}
             CustomizationOptions={
               <CustomizeGithubStatsBase prefix="stats" options={githubStatsOptions} onUpdate={onStatsUpdate} />
             }
           />
         }
       >
-        display github profile stats card
+        {t('addons.displayGithubProfileStatsCard')}
       </AddonsItem>
       <AddonsItem
         inputId="top-languages"
@@ -388,14 +390,14 @@ const Addons = (props) => {
         onInputChange={() => handleCheckChange('topLanguages')}
         Options={
           <CustomizeOptions
-            title="Customize Top Skills Card"
+            title={t('addons.customizeTopSkillsCard')}
             CustomizationOptions={
               <CustomizeGithubStatsBase prefix="top-lang" options={topLanguagesOptions} onUpdate={onTopLangUpdate} />
             }
           />
         }
       >
-        display top skills
+        {t('addons.displayTopSkills')}
       </AddonsItem>
       <AddonsItem
         inputId="streak-stats"
@@ -403,42 +405,42 @@ const Addons = (props) => {
         onInputChange={() => handleCheckChange('streakStats')}
         Options={
           <CustomizeOptions
-            title="Customize Streak Stats Card"
+            title={t('addons.customizeStreakStatsCard')}
             CustomizationOptions={
               <CustomizeStreakStats prefix="streak-stats" options={streakStatsOptions} onUpdate={onStreakStatsUpdate} />
             }
           />
         }
       >
-        display github streak stats
+        {t('addons.displayGithubStreakStats')}
       </AddonsItem>
       <AddonsItem
         inputId="twitter-badge"
         inputChecked={data.twitterBadge}
         onInputChange={() => handleCheckChange('twitterBadge')}
       >
-        display twitter badge
+        {t('addons.displayTwitterBadge')}
       </AddonsItem>
       <AddonsItem
         inputId="dev-dynamic-blogs"
         inputChecked={data.devDynamicBlogs}
         onInputChange={() => handleCheckChange('devDynamicBlogs')}
       >
-        display latest dev.to blogs dynamically (GitHub Action)
+        {t('addons.displayLatestDevToBlogs')}
       </AddonsItem>
       <AddonsItem
         inputId="medium-dynamic-blogs"
         inputChecked={data.mediumDynamicBlogs}
         onInputChange={() => handleCheckChange('mediumDynamicBlogs')}
       >
-        display latest medium blogs dynamically (GitHub Action)
+        {t('addons.displayLatestMediumBlogs')}
       </AddonsItem>
       <AddonsItem
         inputId="rss-dynamic-blogs"
         inputChecked={data.rssDynamicBlogs}
         onInputChange={() => handleCheckChange('rssDynamicBlogs')}
       >
-        display latest blogs from your personal blog dynamically (GitHub Action)
+        {t('addons.displayLatestPersonalBlogs')}
       </AddonsItem>
 
       {(data.devDynamicBlogs && social.dev) ||
@@ -446,7 +448,7 @@ const Addons = (props) => {
       (data.mediumDynamicBlogs && social.medium && isMediumUsernameValid(social.medium)) ? (
         <div className="workflow">
           <div>
-            download
+            {t('addons.download')}
             <span
               id="blog-post-worklow-span"
               onClick={blogPostPorkflow}
@@ -458,10 +460,10 @@ const Addons = (props) => {
               {' '}
               blog-post-workflow.yml
             </span>{' '}
-            file(learn
+            {t('addons.file')}({t('addons.learn')}
             <a href={withPrefix(links.addons)} target="blank" style={{ color: '#002ead' }}>
               {' '}
-              how to setup
+              {t('addons.howToSetup')}
             </a>
             )
           </div>

@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 const Social = (props) => {
   const { social, handleSocialChange } = props;
+  const { t } = useTranslation();
+  
   return (
     <div className="px-2 sm:px-6 mb-4">
-      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">Social</div>
+      <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-2">{t('sections.social')}</div>
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
           <img
@@ -15,7 +18,7 @@ const Social = (props) => {
           />
           <input
             id="github"
-            placeholder="github username"
+            placeholder={t('social.github')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-1 sm:px-2 focus:border-blue-700"
             value={social.github}
             onChange={(event) => handleSocialChange('github', event)}
@@ -29,7 +32,7 @@ const Social = (props) => {
           />
           <input
             id="twitter"
-            placeholder="twitter username"
+            placeholder={t('social.twitter')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.twitter}
             onChange={(event) => handleSocialChange('twitter', event)}
@@ -43,7 +46,7 @@ const Social = (props) => {
           />
           <input
             id="dev"
-            placeholder="dev.to username"
+            placeholder={t('social.dev')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.dev}
             onChange={(event) => handleSocialChange('dev', event)}
@@ -57,7 +60,7 @@ const Social = (props) => {
           />
           <input
             id="codepen"
-            placeholder="codepen username"
+            placeholder={t('social.codepen')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.codepen}
             onChange={(event) => handleSocialChange('codepen', event)}
@@ -71,7 +74,7 @@ const Social = (props) => {
           />
           <input
             id="codesandbox"
-            placeholder="codesandbox username"
+            placeholder={t('social.codesandbox')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.codesandbox}
             onChange={(event) => handleSocialChange('codesandbox', event)}
@@ -85,7 +88,7 @@ const Social = (props) => {
           />
           <input
             id="stackoverflow"
-            placeholder="stackoverflow user ID"
+            placeholder={t('social.stackoverflow')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.stackoverflow}
             onChange={(event) => handleSocialChange('stackoverflow', event)}
@@ -99,7 +102,7 @@ const Social = (props) => {
           />
           <input
             id="linkedin"
-            placeholder="linkedin username"
+            placeholder={t('social.linkedin')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.linkedin}
             onChange={(event) => handleSocialChange('linkedin', event)}
@@ -113,7 +116,7 @@ const Social = (props) => {
           />
           <input
             id="kaggle"
-            placeholder="kaggle username"
+            placeholder={t('social.kaggle')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.kaggle}
             onChange={(event) => handleSocialChange('kaggle', event)}
@@ -127,7 +130,7 @@ const Social = (props) => {
           />
           <input
             id="fb"
-            placeholder="facebook username"
+            placeholder={t('social.fb')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.fb}
             onChange={(event) => handleSocialChange('fb', event)}
@@ -141,7 +144,7 @@ const Social = (props) => {
           />
           <input
             id="instagram"
-            placeholder="instagram username"
+            placeholder={t('social.instagram')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.instagram}
             onChange={(event) => handleSocialChange('instagram', event)}
@@ -155,7 +158,7 @@ const Social = (props) => {
           />
           <input
             id="dribbble"
-            placeholder="dribbble username"
+            placeholder={t('social.dribbble')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.dribbble}
             onChange={(event) => handleSocialChange('dribbble', event)}
@@ -169,7 +172,7 @@ const Social = (props) => {
           />
           <input
             id="behance"
-            placeholder="behance username"
+            placeholder={t('social.behance')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.behance}
             onChange={(event) => handleSocialChange('behance', event)}
@@ -183,7 +186,7 @@ const Social = (props) => {
           />
           <input
             id="hashnode"
-            placeholder="hashnode username (with @)"
+            placeholder={t('social.hashnode')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.hashnode}
             onChange={(event) => handleSocialChange('hashnode', event)}
@@ -197,7 +200,7 @@ const Social = (props) => {
           />
           <input
             id="medium"
-            placeholder="medium username (with @)"
+            placeholder={t('social.medium')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.medium}
             onChange={(event) => handleSocialChange('medium', event)}
@@ -211,7 +214,7 @@ const Social = (props) => {
           />
           <input
             id="youtube"
-            placeholder="youtube channel name"
+            placeholder={t('social.youtube')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.youtube}
             onChange={(event) => handleSocialChange('youtube', event)}
@@ -225,7 +228,7 @@ const Social = (props) => {
           />
           <input
             id="codechef"
-            placeholder="codechef username"
+            placeholder={t('social.codechef')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.codechef}
             onChange={(event) => handleSocialChange('codechef', event)}
@@ -239,7 +242,7 @@ const Social = (props) => {
           />
           <input
             id="hackerrank"
-            placeholder="hackerrank username"
+            placeholder={t('social.hackerrank')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.hackerrank}
             onChange={(event) => handleSocialChange('hackerrank', event)}
@@ -253,7 +256,7 @@ const Social = (props) => {
           />
           <input
             id="codeforces"
-            placeholder="codeforces username"
+            placeholder={t('social.codeforces')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.codeforces}
             onChange={(event) => handleSocialChange('codeforces', event)}
@@ -267,7 +270,7 @@ const Social = (props) => {
           />
           <input
             id="leetcode"
-            placeholder="leetcode username"
+            placeholder={t('social.leetcode')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.leetcode}
             onChange={(event) => handleSocialChange('leetcode', event)}
@@ -281,7 +284,7 @@ const Social = (props) => {
           />
           <input
             id="topcoder"
-            placeholder="topcoder username"
+            placeholder={t('social.topcoder')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.topcoder}
             onChange={(event) => handleSocialChange('topcoder', event)}
@@ -295,7 +298,7 @@ const Social = (props) => {
           />
           <input
             id="hackerearth"
-            placeholder="hackerearth user (with @)"
+            placeholder={t('social.hackerearth')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.hackerearth}
             onChange={(event) => handleSocialChange('hackerearth', event)}
@@ -309,7 +312,7 @@ const Social = (props) => {
           />
           <input
             id="geeksforgeeks"
-            placeholder="GFG (<username>/profile)"
+            placeholder={t('social.geeksforgeeks')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.geeks_for_geeks}
             onChange={(event) => handleSocialChange('geeks_for_geeks', event)}
@@ -323,7 +326,7 @@ const Social = (props) => {
           />
           <input
             id="discord"
-            placeholder="discord invite (only code)"
+            placeholder={t('social.discord')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.discord}
             onChange={(event) => handleSocialChange('discord', event)}
@@ -337,7 +340,7 @@ const Social = (props) => {
           />
           <input
             id="rssurl"
-            placeholder="RSS feed URL"
+            placeholder={t('social.rssurl')}
             className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
             value={social.rssurl}
             onChange={(event) => handleSocialChange('rssurl', event)}
