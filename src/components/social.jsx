@@ -343,6 +343,34 @@ const Social = (props) => {
             onChange={(event) => handleSocialChange('rssurl', event)}
           />
         </div>
+          <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/googlescholar.svg"
+              className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+              alt="googlescholar"
+            />
+            <input
+              id="scholar"
+              placeholder="Google Scholar ID"
+              className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+              value={social.scholar}
+              onChange={(event) => handleSocialChange('scholar', event)}
+            />
+          </div>
+          <div className="w-1/2 flex justify-center items-center text-xxs sm:text-lg py-4 pr-2 sm:pr-0">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/researchgate.svg"
+              className="w-6 h-6 sm:w-8 sm:h-8 mr-1 sm:mr-4"
+              alt="researchgate"
+            />
+            <input
+              id="researchgate"
+              placeholder="ResearchGate username"
+              className="outline-none placeholder-gray-700 w-32 sm:w-1/2 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+              value={social.researchgate}
+              onChange={(event) => handleSocialChange('researchgate', event)}
+            />
+          </div>
       </div>
     </div>
   );

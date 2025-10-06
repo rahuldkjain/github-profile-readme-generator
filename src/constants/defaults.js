@@ -90,7 +90,9 @@ export const DEFAULT_SOCIAL = {
   geeks_for_geeks: '',
   discord: '',
   rssurl: '',
-};
+    scholar: '',
+    researchgate: '',
+  };
 
 export const DEFAULT_SUPPORT = {
   buyMeACoffee: '',
