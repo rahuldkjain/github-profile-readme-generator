@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import gsap from 'gsap';
+import { useTranslation } from 'react-i18next';
 import {
   ArrowLeftIcon,
   CopyIcon,
@@ -26,6 +27,7 @@ import Layout from '../components/layout';
 import './index.css';
 import { isGitHubUsernameValid, isMediumUsernameValid, isTwitterUsernameValid } from '../utils/validation';
 import { DEFAULT_PREFIX, DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_SUPPORT } from '../constants/defaults';
+import '../i18n'; // Initialize i18n
 
 const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
   useEffect(() => {
@@ -46,12 +48,52 @@ const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
 const DEFAULT_SKILLS = initialSkillState;
 
 const IndexPage = () => {
+  const { t, i18n } = useTranslation();
+  
   const [prefix, setPrefix] = useState(DEFAULT_PREFIX);
   const [data, setData] = useState(DEFAULT_DATA);
   const [link, setLink] = useState(DEFAULT_LINK);
   const [social, setSocial] = useState(DEFAULT_SOCIAL);
   const [skills, setSkills] = useState(DEFAULT_SKILLS);
   const [support, setSupport] = useState(DEFAULT_SUPPORT);
+
+  // Update defaults when language changes
+  useEffect(() => {
+    const translatedDefaults = {
+      prefix: {
+        title: t('fields.hiIm'),
+        currentWork: t('work.currentWorkPlaceholder'),
+        currentLearn: t('work.learningDefault'),
+        collaborateOn: t('work.collaborateOnDefault'),
+        helpWith: t('work.helpWithDefault'),
+        ama: t('work.askAboutDefault'),
+        contact: t('work.contact'),
+        resume: t('work.resume'),
+        funFact: t('work.funFactDefault'),
+        portfolio: t('work.portfolio'),
+        blog: t('work.blog'),
+      }
+    };
+
+    // Force update all prefix values to translated versions when language changes
+    setPrefix(translatedDefaults.prefix);
+
+    // Define both English and Portuguese default subtitles
+    const englishDefault = "A passionate frontend developer from India";
+    const portugueseDefault = "Um desenvolvedor frontend apaixonado do Brasil";
+    
+    // Update subtitle if it matches any default value
+    if (
+      data.subtitle === englishDefault || 
+      data.subtitle === portugueseDefault ||
+      data.subtitle === "" // Also handle empty subtitle
+    ) {
+      setData(prevData => ({
+        ...prevData,
+        subtitle: t('work.defaultSubtitle')
+      }));
+    }
+  }, [i18n.language]);
 
   const [restore, setRestore] = useState('');
   const [generatePreview, setGeneratePreview] = useState(false);
@@ -428,44 +470,42 @@ const IndexPage = () => {
               data.topLanguages ||
               data.streakStats) &&
             !social.github ? (
-              <div className="warning">* Please add github username to use these add-ons</div>
+              <div className="warning">{t('validation.pleaseAddGithubUsername')}</div>
             ) : (
               ''
             )}
             {social.github && !isGitHubUsernameValid(social.github) ? (
-              <div className="warning">* GitHub username is invalid, please add a valid username</div>
+              <div className="warning">{t('validation.invalidGitHub')}</div>
             ) : (
               ''
             )}
             {social.medium && !isMediumUsernameValid(social.medium) ? (
-              <div className="warning">* Medium username is invalid, please add a valid username (with @)</div>
+              <div className="warning">{t('validation.invalidMedium')}</div>
             ) : (
               ''
             )}
             {data.mediumDynamicBlogs && !social.medium ? (
-              <div className="warning">* Please add medium username to display latest blogs dynamically</div>
+              <div className="warning">{t('validation.pleaseAddMediumUsername')}</div>
             ) : (
               ''
             )}
             {data.devDynamicBlogs && !social.dev ? (
-              <div className="warning">* Please add dev.to username to display latest blogs dynamically</div>
+              <div className="warning">{t('validation.pleaseAddDevUsername')}</div>
             ) : (
               ''
             )}
             {data.rssDynamicBlogs && !social.rssurl ? (
-              <div className="warning">
-                * Please add your rss feed url to display latest blogs dynamically from your personal blog
-              </div>
+              <div className="warning">{t('validation.pleaseAddRssFeedUrl')}</div>
             ) : (
               ''
             )}
             {data.twitterBadge && !social.twitter ? (
-              <div className="warning">* Please add twitter username to use these add-ons</div>
+              <div className="warning">{t('validation.pleaseAddTwitterUsername')}</div>
             ) : (
               ''
             )}
             {social.twitter && !isTwitterUsernameValid(social.twitter) ? (
-              <div className="warning">* Twitter username is invalid, please add a valid username</div>
+              <div className="warning">{t('validation.invalidTwitter')}</div>
             ) : (
               ''
             )}
@@ -478,7 +518,7 @@ const IndexPage = () => {
               onClick={handleGenerate}
               onKeyDown={(e) => e.keyCode === 13 && handleGenerate()}
             >
-              Generate README
+              {t('app.generate')}
             </div>
           </div>
         </div>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { SearchIcon, XIcon } from '@primer/octicons-react';
+import { useTranslation } from 'react-i18next';
 import { icons, categorizedSkills } from '../constants/skills';
 
 const Skills = (props) => {
   const { skills, handleSkillsChange } = props;
+  const { t } = useTranslation();
   const [search, setSearch] = useState('');
   const [debounce, setDebounce] = useState(undefined);
   const inputRef = React.createRef();
@@ -36,13 +38,13 @@ const Skills = (props) => {
   return (
     <div className="px-2 sm:px-6 mb-10 ">
       <div className="text-xl sm:text-2xl font-bold font-title mt-2 mb-4 flex justify-between">
-        Skills
+        {t('sections.skills')}
         <div className="relative flex">
           <input
             type="text"
             onChange={(e) => onSearchChange(e.target.value)}
             className="leading:none text-xs my-0 py-1 px-2 pr-8 sm:text-xl border-2 border-gray-900 focus:border-blue-700 placeholder-gray-700"
-            placeholder="Search Skills"
+            placeholder={t('skills.searchSkills')}
             ref={inputRef}
           />
           <span className="absolute" style={{ right: '10px' }}>
@@ -84,7 +86,7 @@ const Skills = (props) => {
           const filtered = categorizedSkills[key].skills.filter((skill) => skill.includes(search.toLowerCase()));
           return filtered.length !== 0;
         }).length === 0
-          ? 'No Results Found'
+          ? t('skills.noResultsFound')
           : ''}
       </span>
     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { StarIcon, RepoForkedIcon } from '@primer/octicons-react';
+import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import axios from 'axios';
 import { Link } from 'gatsby';
@@ -10,6 +11,7 @@ import logo from '../images/mdg.png';
 
 const Header = (props) => {
   const { heading } = props;
+  const { t } = useTranslation();
   const [stats, setstats] = useState({
     starsCount: 0,
     forksCount: 0,
@@ -69,7 +71,7 @@ const Header = (props) => {
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />
-            Star this repo
+            {t('header.starRepo')}
             <span className="github-count px-1 sm:px-2">{stats.starsCount}</span>
           </div>
         </a>
@@ -80,7 +82,7 @@ const Header = (props) => {
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <RepoForkedIcon size={16} id="fork-icon" className="px-1 w-6 fork" />
-            Fork on GitHub
+            {t('header.forkGitHub')}
             <span className="github-count px-1 sm:px-2">{stats.forksCount}</span>
           </div>
         </a>
