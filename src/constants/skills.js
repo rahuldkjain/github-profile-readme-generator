@@ -52,6 +52,7 @@ const categorizedSkills = {
       'qt',
       'wx_widgets',
       'ember',
+      'dioxus'
     ],
   },
 
@@ -134,7 +135,7 @@ const categorizedSkills = {
 
   testing: {
     title: 'Testing',
-    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine'],
+    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine', 'playwright'],
   },
 
   software: {
@@ -199,6 +200,7 @@ const icons = {
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   csharp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
   d3js: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
+  dioxus: 'https://avatars.githubusercontent.com/u/79236386?s=200&v=4',
   django: 'https://cdn.worldvectorlogo.com/logos/django.svg',
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
@@ -368,6 +370,7 @@ const skillWebsites = {
   cplusplus: 'https://www.w3schools.com/cpp/',
   css3: 'https://www.w3schools.com/css/',
   csharp: 'https://www.w3schools.com/cs/',
+  dioxus: 'https://dioxuslabs.com/',
   d3js: 'https://d3js.org/',
   django: 'https://www.djangoproject.com/',
   docker: 'https://www.docker.com/',
