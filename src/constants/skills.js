@@ -52,6 +52,7 @@ const categorizedSkills = {
       'qt',
       'wx_widgets',
       'ember',
+      'dioxus'
     ],
   },
 
@@ -134,7 +135,7 @@ const categorizedSkills = {
 
   testing: {
     title: 'Testing',
-    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine'],
+    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine', 'playwright'],
   },
 
   software: {
@@ -199,6 +200,7 @@ const icons = {
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   csharp: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
   d3js: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg',
+  dioxus: 'https://avatars.githubusercontent.com/u/79236386?s=200&v=4',
   django: 'https://cdn.worldvectorlogo.com/logos/django.svg',
   docker: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
   dotnet: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
@@ -231,7 +233,7 @@ const icons = {
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
   ruby: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-  rust: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg',
+  rust: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg',
   sass: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
   scala: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg',
   solidworks: 'https://cdn.worldvectorlogo.com/logos/solidworks.svg',
@@ -311,6 +313,7 @@ const icons = {
   puppeteer: 'https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg',
   karma: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg',
   jasmine: 'https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg',
+  playwright: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
   gtk: 'https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg',
   qt: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg',
   wx_widgets: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg',
@@ -368,6 +371,7 @@ const skillWebsites = {
   cplusplus: 'https://www.w3schools.com/cpp/',
   css3: 'https://www.w3schools.com/css/',
   csharp: 'https://www.w3schools.com/cs/',
+  dioxus: 'https://dioxuslabs.com/',
   d3js: 'https://d3js.org/',
   django: 'https://www.djangoproject.com/',
   docker: 'https://www.docker.com/',
@@ -472,6 +476,7 @@ const skillWebsites = {
   puppeteer: 'https://github.com/puppeteer/puppeteer',
   karma: 'https://karma-runner.github.io/latest/index.html',
   jasmine: 'https://jasmine.github.io/',
+  playwright: 'https://playwright.dev/',
   gtk: 'https://www.gtk.org/',
   qt: 'https://www.qt.io/',
   wx_widgets: 'https://www.wxwidgets.org/',
