@@ -66,8 +66,6 @@ const IndexPage = () => {
     isPreview: false,
     buttonText: 'preview',
   });
-  const [showToast, setShowToast] = useState(false);
-
   const handleSkillsChange = (field) => {
     const change = { ...skills };
     change[field] = !change[field];
@@ -240,10 +238,7 @@ const IndexPage = () => {
       isCopied: true,
       copiedText: 'copied!',
     });
-
-    // Show toast notification
-    setShowToast(true);
-    
+     
     // Auto-revert functionality
     setTimeout(() => {
       resetCopyMarkdownButton();
@@ -252,11 +247,6 @@ const IndexPage = () => {
         duration: 0.3,
       });
     }, 2000);
-
-    // Hide toast after 3 seconds
-    setTimeout(() => {
-      setShowToast(false);
-    }, 3000);
   };
 
   const handleCopyToClipboard = () => {
