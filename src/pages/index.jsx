@@ -66,7 +66,6 @@ const IndexPage = () => {
     isPreview: false,
     buttonText: 'preview',
   });
-
   const handleSkillsChange = (field) => {
     const change = { ...skills };
     change[field] = !change[field];
@@ -227,22 +226,27 @@ const IndexPage = () => {
         color: '#00471b',
       });
     }
-    gsap.fromTo(
-      '#copy-button',
-      {
-        scale: 0.5,
-      },
-      {
-        scale: 1,
-        ease: 'elastic.in',
-        border: '2px solid #00471b',
-        duration: 0.5,
-      },
-    );
+    
+    // Smoother animation without shrinking
+    gsap.to('#copy-button', {
+      border: '2px solid #00471b',
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+    
     setcopyObj({
       isCopied: true,
-      copiedText: 'copied',
+      copiedText: 'copied!',
     });
+     
+    // Auto-revert functionality
+    setTimeout(() => {
+      resetCopyMarkdownButton();
+      gsap.to('#copy-button', {
+        border: '2px solid #3b3b4f',
+        duration: 0.3,
+      });
+    }, 2000);
   };
 
   const handleCopyToClipboard = () => {
