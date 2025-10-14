@@ -84,10 +84,19 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
-    # Deploy preview for dev branches (not master, not PRs)
+    # Deploy preview for dev branches (not master, only on direct push)
     if: github.ref != 'refs/heads/master' && github.event_name == 'push'
 
     steps:
+      - name: Debug deployment conditions
+        run: |
+          echo "GitHub ref: ${{ github.ref }}"
+          echo "GitHub ref name: ${{ github.ref_name }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Is master?: ${{ github.ref == 'refs/heads/master' }}"
+          echo "Is push?: ${{ github.event_name == 'push' }}"
+          echo "Should deploy?: ${{ github.ref != 'refs/heads/master' && github.event_name == 'push' }}"
+
       - name: Download Preview Artifact
         uses: actions/download-artifact@v4
         with:
