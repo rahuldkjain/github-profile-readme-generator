@@ -4,8 +4,11 @@ const nextConfig: NextConfig = {
   // Output as static site for GitHub Pages
   output: 'export',
 
-  // Base path for GitHub Pages (only in production)
-  basePath: process.env.NODE_ENV === 'production' ? '/github-profile-readme-generator' : '',
+  // Base path for GitHub Pages (only in production AND not for Surge previews)
+  basePath:
+    process.env.NODE_ENV === 'production' && !process.env.SURGE_PREVIEW
+      ? '/github-profile-readme-generator'
+      : '',
 
   // Image optimization for static export
   images: {

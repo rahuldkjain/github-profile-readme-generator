@@ -38,11 +38,17 @@ jobs:
         run: npm run test
 
       - name: Build application
-        run: npm run build
+        run: |
+          echo "Building for branch: ${{ github.ref_name }}"
+          echo "NODE_ENV: $NODE_ENV"
+          echo "SURGE_PREVIEW: $SURGE_PREVIEW"
+          npm run build
         env:
           NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
           NEXT_PUBLIC_REQUIRE_CONSENT: true
           NEXT_PUBLIC_ANONYMIZE_IP: true
+          # Set SURGE_PREVIEW for non-master branches to disable basePath
+          SURGE_PREVIEW: ${{ github.ref != 'refs/heads/master' && 'true' || '' }}
 
       - name: Upload Pages Artifact (Production)
         if: github.ref == 'refs/heads/master'
