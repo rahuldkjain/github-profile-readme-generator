@@ -28,7 +28,7 @@
 </a>
 </p>
 
-<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
+<p align="center"><img src="/public/demo.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
     <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
@@ -114,7 +114,7 @@ npm install
 4. Run the app
 
 ```bash
-npm start
+npm run dev
 ```
 
 🌟 You are all set!
@@ -127,9 +127,12 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## 💻 Built with
 
-- [Gatsby](https://www.gatsbyjs.com/)
-- [Tailwind CSS](https://tailwindcss.com/): for styling
-- [GSAP](https://greensock.com/gsap/): for small SVG Animations
+- [Next.js 15](https://nextjs.org/) - React framework with App Router
+- [TypeScript](https://www.typescriptlang.org/) - Type safety and better DX
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library
+- [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
+- [React Hook Form](https://react-hook-form.com/) - Performant forms with easy validation
 
 ## 🙇 Special Thanks
 
@@ -146,6 +149,27 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 - [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
 - [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
 - [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
+
+## 🔒 Privacy & Analytics
+
+This tool includes privacy-friendly analytics to help improve the user experience:
+
+- **Google Analytics 4** with GDPR-compliant consent management
+- **IP anonymization** and privacy-first configuration
+- **Custom events** tracking for GitHub auto-fill, README generation, and exports
+- **Cookie consent banner** - users can opt-out anytime
+- **No personal data** collection - only anonymous usage patterns
+
+## 📄 Font Licensing
+
+This project uses the **Wotfard** font family:
+
+- **Font**: Wotfard Regular
+- **Usage**: This font is used under fair use for open source projects
+- **Source**: Downloaded from online typography resources
+- **Note**: If you're the font creator and have concerns about usage, please [contact us](mailto:rahuldkjain@gmail.com)
+
+For commercial use of this project, please verify font licensing requirements.
 
 ## 🙏 Support
 

@@ -1,0 +1,130 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+
+# Allow concurrent deployments for different environments
+concurrency:
+  group: 'pages-${{ github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run type check
+        run: npm run type-check
+
+      - name: Run linting
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Build application
+        run: npm run build
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_REQUIRE_CONSENT: true
+          NEXT_PUBLIC_ANONYMIZE_IP: true
+
+      - name: Upload Pages Artifact (Production)
+        if: github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+      - name: Upload Preview Artifact
+        if: github.ref != 'refs/heads/master'
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-build-${{ github.run_number }}-${{ github.run_attempt }}
+          path: ./out
+          retention-days: 30
+
+  # Production deployment to main GitHub Pages
+  deploy-production:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Only deploy to production from master branch
+    if: github.ref == 'refs/heads/master'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Preview deployment for development branches
+  deploy-preview:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Deploy preview for dev branches (not master, not PRs)
+    if: github.ref != 'refs/heads/master' && github.event_name == 'push'
+
+    steps:
+      - name: Download Preview Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: preview-build-${{ github.run_number }}-${{ github.run_attempt }}
+          path: ./preview-out
+
+      - name: Deploy to Surge.sh (Preview)
+        run: |
+          npm install -g surge
+          # Sanitize branch name for URL (replace invalid characters with dashes)
+          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
+          echo "Deploying preview for branch: ${{ github.ref_name }}"
+          echo "Sanitized branch name: $SANITIZED_BRANCH"
+          surge ./preview-out https://gprg-${SANITIZED_BRANCH}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+      - name: Comment PR with Preview URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Sanitize branch name for URL (replace invalid characters with dashes)
+            const branchName = '${{ github.ref_name }}';
+            const sanitizedBranch = branchName.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase();
+            const previewUrl = `https://gprg-${sanitizedBranch}.surge.sh`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 **Preview Deployment Ready!**\n\n📱 Preview URL: ${previewUrl}\n\n*This preview will be available for 30 days.*`
+            });
+
+      - name: Update Status Check
+        run: |
+          # Sanitize branch name for URL (replace invalid characters with dashes)
+          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
+          echo "Preview deployed successfully!"
+          echo "Preview URL: https://gprg-${SANITIZED_BRANCH}.surge.sh"
