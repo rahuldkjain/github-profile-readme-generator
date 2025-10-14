@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rahuldkjain.github.io
+
+# Sitemaps
+Sitemap: https://rahuldkjain.github.io/gh-profile-readme-generator/sitemap.xml

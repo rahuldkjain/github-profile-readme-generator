@@ -2,8 +2,10 @@
   "singleQuote": true,
   "jsxSingleQuote": false,
   "tabWidth": 2,
-  "printWidth": 120,
-  "trailingComma": "all",
+  "printWidth": 100,
+  "trailingComma": "es5",
   "semi": true,
-  "exclude": ["node_modules", "codepipeline"]
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
