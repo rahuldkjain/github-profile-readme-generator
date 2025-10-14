@@ -4,7 +4,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from '@/components/layout/theme-provider';
 import { ToastProvider } from '@/components/ui/toast';
-import { BuyMeCoffeeWidget } from '@/components/ui/buy-me-coffee';
+import { BuyMeACoffeeWidget } from '@/components/ui/buy-me-coffee';
 import { ConditionalAnalytics } from '@/components/analytics/conditional-analytics';
 import { CookieConsent } from '@/components/ui/cookie-consent';
 
@@ -147,7 +147,7 @@ export default function RootLayout({
         <ThemeProvider>
           <ToastProvider>{children}</ToastProvider>
         </ThemeProvider>
-        <BuyMeCoffeeWidget />
+        <BuyMeACoffeeWidget />
         <ConditionalAnalytics />
         <CookieConsent />
       </body>
