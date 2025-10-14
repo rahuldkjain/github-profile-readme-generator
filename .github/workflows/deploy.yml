@@ -93,7 +93,17 @@ jobs:
     # Deploy preview for dev branches (not master, only on direct push)
     if: github.ref != 'refs/heads/master' && github.event_name == 'push'
 
+    # Add deployment environment to show URL in GitHub UI
+    environment:
+      name: preview-${{ github.ref_name }}
+
     steps:
+      - name: Calculate sanitized branch name
+        id: branch
+        run: |
+          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
+          echo "sanitized=$SANITIZED_BRANCH" >> $GITHUB_OUTPUT
+          echo "url=https://gprg-${SANITIZED_BRANCH}.surge.sh" >> $GITHUB_OUTPUT
       - name: Debug deployment conditions
         run: |
           echo "GitHub ref: ${{ github.ref }}"
@@ -110,13 +120,14 @@ jobs:
           path: ./preview-out
 
       - name: Deploy to Surge.sh (Preview)
+        id: deploy
         run: |
           npm install -g surge
-          # Sanitize branch name for URL (replace invalid characters with dashes)
-          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
           echo "Deploying preview for branch: ${{ github.ref_name }}"
-          echo "Sanitized branch name: $SANITIZED_BRANCH"
-          surge ./preview-out https://gprg-${SANITIZED_BRANCH}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+          echo "Sanitized branch name: ${{ steps.branch.outputs.sanitized }}"
+          echo "Preview URL: ${{ steps.branch.outputs.url }}"
+          surge ./preview-out ${{ steps.branch.outputs.url }} --token ${{ secrets.SURGE_TOKEN }}
+          echo "deployment_url=${{ steps.branch.outputs.url }}" >> $GITHUB_OUTPUT
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
 
@@ -125,10 +136,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // Sanitize branch name for URL (replace invalid characters with dashes)
-            const branchName = '${{ github.ref_name }}';
-            const sanitizedBranch = branchName.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase();
-            const previewUrl = `https://gprg-${sanitizedBranch}.surge.sh`;
+            const previewUrl = '${{ steps.deploy.outputs.deployment_url }}';
 
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -137,9 +145,40 @@ jobs:
               body: `🚀 **Preview Deployment Ready!**\n\n📱 Preview URL: ${previewUrl}\n\n*This preview will be available for 30 days.*`
             });
 
+      - name: Create deployment status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const previewUrl = '${{ steps.deploy.outputs.deployment_url }}';
+
+            // Create a commit status with the deployment URL
+            github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: 'success',
+              target_url: previewUrl,
+              description: `Preview deployed to ${previewUrl}`,
+              context: 'deployment/preview'
+            });
+
       - name: Update Status Check
         run: |
-          # Sanitize branch name for URL (replace invalid characters with dashes)
-          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
-          echo "Preview deployed successfully!"
-          echo "Preview URL: https://gprg-${SANITIZED_BRANCH}.surge.sh"
+          echo "🚀 Preview deployed successfully!"
+          echo "📱 Preview URL: ${{ steps.deploy.outputs.deployment_url }}"
+          echo ""
+          echo "You can find this URL in:"
+          echo "1. GitHub Actions > Environments tab"
+          echo "2. Commit status checks"
+          echo "3. This workflow run summary"
+
+          # Add to job summary for easy access
+          echo "## 🚀 Preview Deployment Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Preview URL:** [${{ steps.deploy.outputs.deployment_url }}](${{ steps.deploy.outputs.deployment_url }})" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Where to find this URL:" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environments tab:** Go to your repository → Environments → preview-${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit status:** Check the commit status checks for 'deployment/preview'" >> $GITHUB_STEP_SUMMARY
+          echo "- **This summary:** Bookmark this workflow run for easy access" >> $GITHUB_STEP_SUMMARY
