@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { getAssetPath } from '@/lib/asset-path';
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         {/* Logo Section */}
         <div className="mb-8 flex items-center justify-center gap-3">
           <Image
-            src="/mdg.png"
+            src={getAssetPath('/mdg.png')}
             alt="GitHub Profile README Generator Logo"
             width={48}
             height={48}

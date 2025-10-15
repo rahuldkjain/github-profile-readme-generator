@@ -7,6 +7,7 @@ import { ToastProvider } from '@/components/ui/toast';
 import { BuyMeACoffeeWidget } from '@/components/ui/buy-me-coffee';
 import { ConditionalAnalytics } from '@/components/analytics/conditional-analytics';
 import { CookieConsent } from '@/components/ui/cookie-consent';
+import { getAssetPath } from '@/lib/asset-path';
 
 const robotoMono = Roboto_Mono({
   variable: '--font-mono',
@@ -83,11 +84,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/mdg.png', type: 'image/png' },
+      { url: getAssetPath('/mdg.png'), type: 'image/png' },
     ],
-    apple: '/mdg.png',
+    apple: getAssetPath('/mdg.png'),
   },
-  manifest: '/manifest.json',
+  manifest: getAssetPath('/manifest.json'),
   robots: {
     index: true,
     follow: true,
