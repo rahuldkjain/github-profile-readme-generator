@@ -1,0 +1,184 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+
+# Allow concurrent deployments for different environments
+concurrency:
+  group: 'pages-${{ github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run type check
+        run: npm run type-check
+
+      - name: Run linting
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Build application
+        run: |
+          echo "Building for branch: ${{ github.ref_name }}"
+          echo "NODE_ENV: $NODE_ENV"
+          echo "SURGE_PREVIEW: $SURGE_PREVIEW"
+          npm run build
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_REQUIRE_CONSENT: true
+          NEXT_PUBLIC_ANONYMIZE_IP: true
+          # Set SURGE_PREVIEW for non-master branches to disable basePath
+          SURGE_PREVIEW: ${{ github.ref != 'refs/heads/master' && 'true' || '' }}
+
+      - name: Upload Pages Artifact (Production)
+        if: github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+      - name: Upload Preview Artifact
+        if: github.ref != 'refs/heads/master'
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-build-${{ github.run_number }}-${{ github.run_attempt }}
+          path: ./out
+          retention-days: 30
+
+  # Production deployment to main GitHub Pages
+  deploy-production:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Only deploy to production from master branch
+    if: github.ref == 'refs/heads/master'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Preview deployment for development branches
+  deploy-preview:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Deploy preview for dev branches (not master, only on direct push)
+    if: github.ref != 'refs/heads/master' && github.event_name == 'push'
+
+    # Add deployment environment to show URL in GitHub UI
+    environment:
+      name: preview-${{ github.ref_name }}
+
+    steps:
+      - name: Calculate sanitized branch name
+        id: branch
+        run: |
+          SANITIZED_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9-]/-/g' | tr '[:upper:]' '[:lower:]')
+          echo "sanitized=$SANITIZED_BRANCH" >> $GITHUB_OUTPUT
+          echo "url=https://gprg-${SANITIZED_BRANCH}.surge.sh" >> $GITHUB_OUTPUT
+      - name: Debug deployment conditions
+        run: |
+          echo "GitHub ref: ${{ github.ref }}"
+          echo "GitHub ref name: ${{ github.ref_name }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Is master?: ${{ github.ref == 'refs/heads/master' }}"
+          echo "Is push?: ${{ github.event_name == 'push' }}"
+          echo "Should deploy?: ${{ github.ref != 'refs/heads/master' && github.event_name == 'push' }}"
+
+      - name: Download Preview Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: preview-build-${{ github.run_number }}-${{ github.run_attempt }}
+          path: ./preview-out
+
+      - name: Deploy to Surge.sh (Preview)
+        id: deploy
+        run: |
+          npm install -g surge
+          echo "Deploying preview for branch: ${{ github.ref_name }}"
+          echo "Sanitized branch name: ${{ steps.branch.outputs.sanitized }}"
+          echo "Preview URL: ${{ steps.branch.outputs.url }}"
+          surge ./preview-out ${{ steps.branch.outputs.url }} --token ${{ secrets.SURGE_TOKEN }}
+          echo "deployment_url=${{ steps.branch.outputs.url }}" >> $GITHUB_OUTPUT
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+      - name: Comment PR with Preview URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const previewUrl = '${{ steps.deploy.outputs.deployment_url }}';
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 **Preview Deployment Ready!**\n\n📱 Preview URL: ${previewUrl}\n\n*This preview will be available for 30 days.*`
+            });
+
+      - name: Create deployment status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const previewUrl = '${{ steps.deploy.outputs.deployment_url }}';
+
+            // Create a commit status with the deployment URL
+            github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: 'success',
+              target_url: previewUrl,
+              description: `Preview deployed to ${previewUrl}`,
+              context: 'deployment/preview'
+            });
+
+      - name: Update Status Check
+        run: |
+          echo "🚀 Preview deployed successfully!"
+          echo "📱 Preview URL: ${{ steps.deploy.outputs.deployment_url }}"
+          echo ""
+          echo "You can find this URL in:"
+          echo "1. GitHub Actions > Environments tab"
+          echo "2. Commit status checks"
+          echo "3. This workflow run summary"
+
+          # Add to job summary for easy access
+          echo "## 🚀 Preview Deployment Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Preview URL:** [${{ steps.deploy.outputs.deployment_url }}](${{ steps.deploy.outputs.deployment_url }})" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Where to find this URL:" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environments tab:** Go to your repository → Environments → preview-${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit status:** Check the commit status checks for 'deployment/preview'" >> $GITHUB_STEP_SUMMARY
+          echo "- **This summary:** Bookmark this workflow run for easy access" >> $GITHUB_STEP_SUMMARY

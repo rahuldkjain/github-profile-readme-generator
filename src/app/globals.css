@@ -1,0 +1,417 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:root {
+  /* Light mode colors */
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #f9fafb;
+  --card-foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #64748b;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2563eb;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode colors */
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #171717;
+    --card-foreground: #ededed;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --secondary: #94a3b8;
+    --secondary-foreground: #0f172a;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f1f5f9;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #3b82f6;
+  }
+}
+
+/* Manual light mode class override (to override system preference) */
+.light {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #f9fafb;
+  --card-foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #64748b;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2563eb;
+}
+
+/* Manual dark mode class override */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card: #171717;
+  --card-foreground: #ededed;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #94a3b8;
+  --secondary-foreground: #0f172a;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #1e293b;
+  --accent-foreground: #f1f5f9;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #3b82f6;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Optimized transitions for theme changes - only target necessary elements */
+html {
+  transition: background-color 100ms ease-out;
+}
+
+body {
+  transition:
+    background-color 100ms ease-out,
+    color 100ms ease-out;
+}
+
+/* Target specific UI elements for faster transitions */
+[class*='bg-'],
+[class*='text-'],
+[class*='border-'] {
+  transition:
+    background-color 100ms ease-out,
+    color 100ms ease-out,
+    border-color 100ms ease-out;
+}
+
+/* SVG icons transition */
+svg {
+  transition:
+    fill 100ms ease-out,
+    stroke 100ms ease-out,
+    color 100ms ease-out;
+}
+
+/* Button and interactive elements */
+button,
+a,
+input,
+select,
+textarea {
+  transition:
+    background-color 100ms ease-out,
+    color 100ms ease-out,
+    border-color 100ms ease-out,
+    opacity 100ms ease-out;
+}
+
+/* Cards and containers */
+[class*='card'],
+[class*='bg-card'] {
+  transition:
+    background-color 100ms ease-out,
+    border-color 100ms ease-out;
+}
+
+/* Optimize theme switching performance */
+html.theme-switching * {
+  transition: none !important;
+}
+
+html.theme-switching {
+  transition: none !important;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Reduced motion override via settings */
+:root[style*='--motion-reduce'] * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Markdown Preview Styles */
+.markdown-preview {
+  color: var(--foreground);
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  color: var(--foreground);
+}
+
+.markdown-preview p {
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+.markdown-preview strong,
+.markdown-preview b {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.markdown-preview img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.markdown-preview a img {
+  margin: 0;
+}
+
+/* Custom page content styles to override prose */
+.page-content {
+  color: var(--foreground);
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  color: var(--foreground);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.page-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.page-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.page-content p {
+  color: var(--foreground);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.page-content strong,
+.page-content b {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.page-content a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.page-content a:hover {
+  text-decoration: none;
+}
+
+.page-content ul,
+.page-content ol {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.page-content li {
+  margin-bottom: 0.5rem;
+}
+
+.page-content blockquote {
+  color: var(--foreground);
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.page-content hr {
+  border-color: var(--border);
+  margin: 2rem 0;
+}
+
+.page-content pre {
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.page-content code {
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #000000;
+  --card-foreground: #ffffff;
+  --primary: #ffff00;
+  --primary-foreground: #000000;
+  --secondary: #00ffff;
+  --secondary-foreground: #000000;
+  --muted: #333333;
+  --muted-foreground: #ffffff;
+  --accent: #00ff00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #ffffff;
+  --input: #ffffff;
+  --ring: #ffff00;
+}
+
+.high-contrast * {
+  border-width: 2px;
+}
+
+.high-contrast button,
+.high-contrast a,
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}
+
+/* Form placeholder opacity - reduce to avoid looking like filled fields */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  opacity: 0.4;
+}
+
+/* Font Size Variants */
+.text-small {
+  font-size: 14px;
+}
+
+.text-small h1 {
+  font-size: 1.75rem;
+}
+
+.text-small h2 {
+  font-size: 1.5rem;
+}
+
+.text-small h3 {
+  font-size: 1.25rem;
+}
+
+.text-large {
+  font-size: 18px;
+}
+
+.text-large h1 {
+  font-size: 2.5rem;
+}
+
+.text-large h2 {
+  font-size: 2rem;
+}
+
+.text-large h3 {
+  font-size: 1.75rem;
+}
