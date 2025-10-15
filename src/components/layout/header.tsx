@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { AccessibilityMenu } from '@/components/ui/accessibility-menu';
 import { GitHubStats } from '@/components/ui/github-stats';
+import { getAssetPath } from '@/lib/asset-path';
 
 const navigation = [
   { name: 'Generator', href: '/' },
@@ -30,7 +31,7 @@ export function Header({}: HeaderProps = {}) {
           <div className="flex items-center gap-4">
             <Link href="/" prefetch={true} className="flex items-center gap-3 hover:opacity-80">
               <Image
-                src="/mdg.png"
+                src={getAssetPath('/mdg.png')}
                 alt="GitHub Profile README Generator Logo"
                 width={40}
                 height={40}
