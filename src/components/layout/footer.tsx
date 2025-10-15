@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Import the logo as a static asset for GitHub Pages compatibility
-import logoImage from '@/images/mdg.png';
+// Import logo from public directory for GitHub Pages compatibility
+import logoImage from '../../../public/mdg.png';
 
 export function Footer() {
   return (
