@@ -80,6 +80,14 @@ export const metadata: Metadata = {
     creator: '@rahuldkjain',
     images: ['/og-image.png'],
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/mdg.png', type: 'image/png' },
+    ],
+    apple: '/mdg.png',
+  },
+  manifest: '/manifest.json',
   robots: {
     index: true,
     follow: true,
@@ -130,10 +138,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/mdg.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/mdg.png" />
-        <link rel="manifest" href="/manifest.json" />
+        {/* Favicon and manifest are now handled by Next.js metadata API above */}
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
