@@ -3,8 +3,6 @@ name: Build and Deploy
 on:
   push:
     branches: [master, dev]
-  pull_request:
-    branches: [master, dev]
 
 # Allow concurrent deployments for different environments
 concurrency:

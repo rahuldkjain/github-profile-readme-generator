@@ -7,6 +7,9 @@ import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { AccessibilityMenu } from '@/components/ui/accessibility-menu';
 import { GitHubStats } from '@/components/ui/github-stats';
 
+// Import the logo as a static asset for GitHub Pages compatibility
+import logoImage from '../../images/mdg.png';
+
 const navigation = [
   { name: 'Generator', href: '/' },
   { name: 'Addons', href: '/addons' },
@@ -30,7 +33,7 @@ export function Header({}: HeaderProps = {}) {
           <div className="flex items-center gap-4">
             <Link href="/" prefetch={true} className="flex items-center gap-3 hover:opacity-80">
               <Image
-                src="/mdg.png"
+                src={logoImage}
                 alt="GitHub Profile README Generator Logo"
                 width={40}
                 height={40}
