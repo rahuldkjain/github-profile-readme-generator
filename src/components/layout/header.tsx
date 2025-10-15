@@ -8,7 +8,7 @@ import { AccessibilityMenu } from '@/components/ui/accessibility-menu';
 import { GitHubStats } from '@/components/ui/github-stats';
 
 // Import the logo as a static asset for GitHub Pages compatibility
-import logoImage from '../../images/mdg.png';
+import logoImage from '@/images/mdg.png';
 
 const navigation = [
   { name: 'Generator', href: '/' },

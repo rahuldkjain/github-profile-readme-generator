@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 // Import the logo as a static asset for GitHub Pages compatibility
-import logoImage from '../../images/mdg.png';
+import logoImage from '@/images/mdg.png';
 
 export function Footer() {
   return (
