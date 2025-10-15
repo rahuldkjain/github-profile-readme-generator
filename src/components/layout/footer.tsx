@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Import the logo as a static asset for GitHub Pages compatibility
-import logoImage from '../../images/mdg.png';
-
 export function Footer() {
   return (
     <footer className="border-border bg-card border-t py-8">
@@ -11,11 +8,12 @@ export function Footer() {
         {/* Logo Section */}
         <div className="mb-8 flex items-center justify-center gap-3">
           <Image
-            src={logoImage}
+            src="/mdg.png"
             alt="GitHub Profile README Generator Logo"
             width={48}
             height={48}
             className="h-12 w-12"
+            unoptimized
           />
           <span className="text-xl font-bold">GitHub Profile README Generator</span>
         </div>
