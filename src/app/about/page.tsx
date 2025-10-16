@@ -162,7 +162,9 @@ export default function AboutPage() {
           <p>Don't worry. Keep calm, fill the form and let the tool do the work for you</p>
 
           <Image
-            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif"
+            // TODO: Replace with GitHub raw URL after PR merge
+            // src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator-v2.gif"
+            src="https://i.postimg.cc/XNGDZpVS/Untitled-design.gif"
             alt="github profile readme generator"
             width="320"
             height={100}
