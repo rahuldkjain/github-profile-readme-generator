@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
+  <a href="https://rahuldkjain.github.io/github-profile-readme-generator">
     <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
   </a>
 </p>
@@ -31,7 +31,7 @@
 <p align="center"><img src="/public/demo.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
-    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
+    <a href="https://rahuldkjain.github.io/github-profile-readme-generator" target="blank">View Demo</a>
     ·
     <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
     ·
@@ -56,11 +56,11 @@ This tool provides an easy way to create a GitHub profile readme with the latest
 
 ## 🚀 Demo
 
-<a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">
-<img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
+<a href="https://rahuldkjain.github.io/github-profile-readme-generator" target="blank">
+<img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator&logo=github&style=flat-square" />
 </a>
 
-Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator)
+Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/github-profile-readme-generator)
 
 ## 🧐 Features
 
