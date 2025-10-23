@@ -163,8 +163,27 @@ export function getSkillIconUrl(skill: string): string {
     middleman: 'ruby/ruby-original',
     // Angular variant
     scully: 'angularjs/angularjs-original',
+    // Robotics
+    ros: 'robotics/Fusion',
+    gazebo: 'robotics/Gazebo',
+    moveit: 'robotics/Moveit',
+    rviz: 'robotics/Rviz',
+    solidworks: 'robotics/Solidworks',
+    fusion360: 'robotics/Fusion',
   };
 
+  const roboticsIcons: Record<string, string> = {
+  ros: 'Fusion',
+  gazebo: 'Gazebo',
+  moveit: 'Moveit',
+  rviz: 'Rviz',
+  solidworks: 'Solidworks',
+  fusion360: 'Fusion',
+};
+
+if (roboticsIcons[skill]) {
+  return `https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Robotics/${roboticsIcons[skill]}.svg`;
+}
   // Check if skill needs devicon fallback
   if (deviconFallback[skill]) {
     return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${deviconFallback[skill]}.svg`;
@@ -313,6 +332,12 @@ export function getSkillIconUrl(skill: string): string {
     linux: 'linux',
     git: 'git',
     arduino: 'arduino',
+    ros: 'ros',
+    gazebo: 'gazebo',
+    moveit: 'moveit',
+    rviz: 'rviz',
+    solidworks: 'solidworks',
+    fusion360: 'fusion360',
   };
 
   const iconName = skillIconsMap[skill] || skill;
