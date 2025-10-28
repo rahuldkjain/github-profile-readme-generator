@@ -224,6 +224,34 @@ export const categorizedSkills: CategorizedSkills = {
     title: 'Automation',
     skills: ['zapier', 'ifttt'],
   },
+  robotics: {
+  title: 'Robotics',
+  skills: [
+    // Core Frameworks
+    'linux',
+    'docker',
+    'ros',
+   
+    // Simulators
+    'gazebo',
+    
+    // Hardware Platforms
+    'arduino',
+    'raspberrypi',
+    
+    // Tools & Libraries
+    'moveit',
+    'rviz',
+    //cad modelling
+    'solidworks',
+    'autocad',
+    'fusion360',
+    // Additional
+    'matlab',
+    'opencv',
+    'git'
+  ],
+},
 
   other: {
     title: 'Other',
