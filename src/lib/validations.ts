@@ -93,6 +93,7 @@ export const socialSchema = z.object({
   geeks_for_geeks: z.string().max(100),
   discord: z.string().max(100),
   rssurl: z.string().url('Invalid URL').or(z.literal('')),
+  exercism: z.string().max(100),
 
   // Twitter Badge Enhancement
   twitterBadge: z.boolean(),

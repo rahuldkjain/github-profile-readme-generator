@@ -38,6 +38,7 @@ export function SocialSection({ register, errors, watch }: SocialSectionProps) {
     { key: 'behance', label: 'Behance', icon: '🎭', placeholder: 'username' },
     { key: 'discord', label: 'Discord', icon: '💬', placeholder: 'invite-code' },
     { key: 'rssurl', label: 'RSS Feed', icon: '📡', placeholder: 'https://...' },
+    { key: 'exercism', label: 'Exercism', icon: '🏃‍♂️', placeholder: 'username' }
   ];
 
   return (

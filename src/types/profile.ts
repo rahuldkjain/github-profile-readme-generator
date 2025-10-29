@@ -96,6 +96,7 @@ export interface SocialLinks {
   geeks_for_geeks: string;
   discord: string;
   rssurl: string;
+  exercism: string;
   twitterBadge: boolean;
 }
 

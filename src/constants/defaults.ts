@@ -97,6 +97,7 @@ export const DEFAULT_SOCIAL: SocialLinks = {
   geeks_for_geeks: '',
   discord: '',
   rssurl: '',
+  exercism: '',
   twitterBadge: false,
 };
 
