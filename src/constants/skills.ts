@@ -173,6 +173,7 @@ export const categorizedSkills: CategorizedSkills = {
       'rails',
       'flask',
       'quasar',
+      'tauri',
     ],
   },
 
