@@ -102,7 +102,9 @@ export function getSkillIconUrl(skill: string): string {
     gridsome: 'gridsome', // Gridsome brand color
     // Automation
     zapier: 'zapier/FF4A00', // Zapier orange
-    ifttt: 'ifttt', // IFTTT brand color
+    n8n: 'n8n/EA4B71', // n8n pinkish orange
+    make: 'make/6D00CC', // Make.com purple
+    ifttt: 'ifttt/0071CE', // IFTTT brand color
   };
 
   // Check if skill needs simple-icons fallback
@@ -151,10 +153,12 @@ export function getSkillIconUrl(skill: string): string {
     quasar: 'quasar/quasar-plain',
     // Testing
     mocha: 'mocha/mocha-plain',
+    playwright: 'playwright/playwright-original',
     karma: 'karma/karma-original',
     jasmine: 'jasmine/jasmine-original',
     // Software
     sketch: 'sketch/sketch-original',
+    maya: 'maya/maya-original',
     // Static Site Generators
     hugo: 'hugo/hugo-original',
     sculpin: 'php/php-original',

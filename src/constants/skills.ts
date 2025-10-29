@@ -43,6 +43,7 @@ export const categorizedSkills: CategorizedSkills = {
       'pug',
       'gulp',
       'sass',
+      'nextjs',
       'redux',
       'webpack',
       'babel',
@@ -178,7 +179,7 @@ export const categorizedSkills: CategorizedSkills = {
 
   testing: {
     title: 'Testing',
-    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine'],
+    skills: ['cypress', 'selenium', 'jest', 'mocha', 'puppeteer', 'karma', 'jasmine', 'playwright'],
   },
 
   software: {
@@ -193,6 +194,7 @@ export const categorizedSkills: CategorizedSkills = {
       'invision',
       'framer',
       'matlab',
+      'maya',
       'postman',
     ],
   },
@@ -204,7 +206,6 @@ export const categorizedSkills: CategorizedSkills = {
       'gridsome',
       'hugo',
       'jekyll',
-      'nextjs',
       'nuxtjs',
       '11ty',
       'scully',
@@ -222,7 +223,7 @@ export const categorizedSkills: CategorizedSkills = {
 
   automation: {
     title: 'Automation',
-    skills: ['zapier', 'ifttt'],
+    skills: ['zapier', 'ifttt', 'n8n', 'make'],
   },
 
   other: {
