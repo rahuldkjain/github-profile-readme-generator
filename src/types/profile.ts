@@ -106,3 +106,6 @@ export interface SupportLinks {
 export interface Skills {
   [key: string]: boolean;
 }
+
+// Re-export GIF types for convenience
+export type { GifItem, GifData, GifCategory, GifSize } from './gifs';

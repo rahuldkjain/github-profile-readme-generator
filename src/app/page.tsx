@@ -5,15 +5,16 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
-import { profileSchema, linksSchema, socialSchema } from '@/lib/validations';
-import { DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL } from '@/constants/defaults';
+import { profileSchema, linksSchema, socialSchema, gifSchema } from '@/lib/validations';
+import { DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL, DEFAULT_GIF } from '@/constants/defaults';
 import { initialSkillState } from '@/constants/skills';
 import { BasicInfoSection } from '@/components/sections/basic-info-section';
 import { LinksSection } from '@/components/sections/links-section';
 import { SocialSection } from '@/components/sections/social-section';
 import { generateMarkdown } from '@/lib/markdown-generator';
 import { saveFormData, loadFormData, clearFormData } from '@/lib/storage';
-import type { ProfileFormData, LinksFormData, SocialFormData } from '@/lib/validations';
+import type { ProfileFormData, LinksFormData, SocialFormData, GifFormData } from '@/lib/validations';
+import type { GifItem } from '@/types/gifs';
 import { DEFAULT_SUPPORT } from '@/constants/defaults';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
@@ -37,7 +38,7 @@ const steps: { id: Step; title: string; description: string }[] = [
   { id: 'basic', title: 'Basic Info', description: 'Tell us about yourself' },
   { id: 'links', title: 'Links', description: 'Portfolio, blog, resume' },
   { id: 'social', title: 'Social', description: 'Social media profiles' },
-  { id: 'skills', title: 'Skills', description: 'Technologies you know' },
+  { id: 'skills', title: 'Skills & GIFs', description: 'Technologies and animations' },
   { id: 'preview', title: 'Preview', description: 'Review and generate' },
 ];
 
@@ -110,10 +111,28 @@ export default function GeneratorPage() {
     mode: 'onChange',
   });
 
+  const {
+    register: registerGifs,
+    formState: { errors: gifsErrors },
+    watch: watchGifs,
+    setValue: setGifValue,
+    reset: resetGifs,
+  } = useForm<GifFormData>({
+    resolver: zodResolver(gifSchema),
+    defaultValues: savedData?.gifs ? { ...DEFAULT_GIF, ...savedData.gifs } : DEFAULT_GIF,
+    mode: 'onChange',
+  });
+
+  // State for selected GIFs (includes File objects which can't be in form)
+  const [selectedGifs, setSelectedGifs] = useState<GifItem[]>(
+    savedData?.gifs?.selectedGifs || []
+  );
+
   // Watch all form values for live preview
   const profileData = watchProfile();
   const linksData = watchLinks();
   const socialData = watchSocial();
+  const gifsData = watchGifs();
 
   // Generate markdown with useMemo to prevent unnecessary recalculations
   const markdown = useMemo(() => {
@@ -123,8 +142,9 @@ export default function GeneratorPage() {
       social: socialData,
       support: DEFAULT_SUPPORT,
       skills,
+      gifs: { ...gifsData, selectedGifs }, // Include actual selectedGifs with File objects
     });
-  }, [profileData, linksData, socialData, skills]);
+  }, [profileData, linksData, socialData, skills, gifsData, selectedGifs]);
 
   // Mark as initialized after first render to enable auto-save
   useEffect(() => {
@@ -157,6 +177,7 @@ export default function GeneratorPage() {
     console.log('📊 Auto-save - Links data:', linksData);
     console.log('📊 Auto-save - Social data:', socialData);
     console.log('📊 Auto-save - Skills selected:', Object.values(skills).filter(Boolean).length);
+    console.log('📊 Auto-save - GIFs data:', gifsData);
 
     setSaveStatus('saving');
     const timer = setTimeout(() => {
@@ -167,6 +188,7 @@ export default function GeneratorPage() {
         social: socialData,
         support: DEFAULT_SUPPORT,
         skills,
+        gifs: { ...gifsData, selectedGifs }, // Include selectedGifs
         lastSaved: now.toISOString(),
       };
 
@@ -193,11 +215,48 @@ export default function GeneratorPage() {
     JSON.stringify(linksData),
     JSON.stringify(socialData),
     JSON.stringify(skills),
+    JSON.stringify(gifsData),
+    JSON.stringify(selectedGifs.map(g => ({ id: g.id, url: g.url, name: g.name }))),
   ]);
 
   const handleSkillChange = (skill: string, checked: boolean) => {
     setSkills((prev) => ({ ...prev, [skill]: checked }));
   };
+
+  // GIF handlers
+  const handleGifSelect = useCallback((gif: GifItem) => {
+    setSelectedGifs((prev) => [...prev, gif]);
+    setGifValue('selectedGifs', [...selectedGifs, gif]);
+  }, [selectedGifs, setGifValue]);
+
+  const handleGifRemove = useCallback((gifId: string) => {
+    setSelectedGifs((prev) => {
+      const updated = prev.filter((g) => g.id !== gifId);
+      setGifValue('selectedGifs', updated);
+      return updated;
+    });
+  }, [setGifValue]);
+
+  const handleCustomGifAdd = useCallback((url: string, name: string) => {
+    const customGif: GifItem = {
+      id: `custom-${Date.now()}`,
+      url,
+      name,
+      category: 'custom',
+      isCustom: true,
+    };
+    setSelectedGifs((prev) => [...prev, customGif]);
+    setGifValue('selectedGifs', [...selectedGifs, customGif]);
+  }, [selectedGifs, setGifValue]);
+
+  const handleGifUpdate = useCallback((gifId: string, updates: Partial<GifItem>) => {
+    setSelectedGifs((prev) => {
+      const updated = prev.map((g) => (g.id === gifId ? { ...g, ...updates } : g));
+      // Also update the form value to keep it in sync
+      setGifValue('selectedGifs', updated);
+      return updated;
+    });
+  }, [setGifValue]);
 
   const handleGitHubAutoFill = (data: {
     profile: Partial<ProfileFormData>;
@@ -261,7 +320,7 @@ export default function GeneratorPage() {
     showConfirm({
       title: 'Clear All Data',
       message:
-        'Are you sure you want to clear all data? This will reset all form fields, skills, and settings. This action cannot be undone.',
+        'Are you sure you want to clear all data? This will reset all form fields, skills, GIFs, and settings. This action cannot be undone.',
       confirmText: 'Clear All',
       cancelText: 'Cancel',
       variant: 'warning',
@@ -270,13 +329,32 @@ export default function GeneratorPage() {
         resetProfile(DEFAULT_DATA);
         resetLinks(DEFAULT_LINK);
         resetSocial(DEFAULT_SOCIAL);
+        resetGifs(DEFAULT_GIF);
         setSkills(initialSkillState);
+        setSelectedGifs([]);
         setLastSaved(null);
         setSaveStatus('idle');
         showSuccess('All data cleared successfully', 'Form has been reset to default values');
       },
     });
-  }, [showConfirm, resetProfile, resetLinks, resetSocial, setSkills, showSuccess]);
+  }, [showConfirm, resetProfile, resetLinks, resetSocial, resetGifs, setSkills, showSuccess]);
+
+  const handleDownloadReadme = async () => {
+    // Standard README download
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `README-${Date.now()}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    showSuccess('README downloaded!', 'Your GitHub profile README is ready');
+    trackReadmeGenerated();
+    trackFileExported('download', 'markdown');
+  };
 
   const handleDownloadJSON = () => {
     const data = {
@@ -560,6 +638,15 @@ export default function GeneratorPage() {
                   selectedSkills={skills}
                   onSkillChange={handleSkillChange}
                   registerProfile={registerProfile}
+                  registerGifs={registerGifs}
+                  errorsGifs={gifsErrors}
+                  watchGifs={watchGifs}
+                  setGifValue={setGifValue}
+                  selectedGifs={selectedGifs}
+                  onGifSelect={handleGifSelect}
+                  onGifRemove={handleGifRemove}
+                  onCustomGifAdd={handleCustomGifAdd}
+                  onGifUpdate={handleGifUpdate}
                 />
               </Suspense>
             )}
@@ -595,7 +682,11 @@ export default function GeneratorPage() {
                     </div>
                   }
                 >
-                  <MarkdownPreview markdown={markdown} title="Your GitHub Profile README" />
+                  <MarkdownPreview 
+                    markdown={markdown} 
+                    title="Your GitHub Profile README"
+                    onDownload={handleDownloadReadme}
+                  />
                 </Suspense>
               </div>
             )}

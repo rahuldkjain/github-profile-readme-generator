@@ -4,6 +4,7 @@ import type {
   ProfileLinks,
   SocialLinks,
   SupportLinks,
+  GifData,
 } from '@/types/profile';
 
 export const DEFAULT_PREFIX: ProfilePrefix = {
@@ -102,4 +103,12 @@ export const DEFAULT_SOCIAL: SocialLinks = {
 
 export const DEFAULT_SUPPORT: SupportLinks = {
   buyMeACoffee: '',
+};
+
+export const DEFAULT_GIF: GifData = {
+  enabled: false,
+  selectedGifs: [],
+  alignment: 'center',
+  size: 'medium',
+  position: 'top',
 };

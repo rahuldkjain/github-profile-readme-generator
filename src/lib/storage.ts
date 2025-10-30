@@ -1,4 +1,4 @@
-import type { ProfileFormData, LinksFormData, SocialFormData, SupportFormData } from './validations';
+import type { ProfileFormData, LinksFormData, SocialFormData, SupportFormData, GifFormData } from './validations';
 
 export interface SavedFormData {
   profile: Partial<ProfileFormData>;
@@ -6,15 +6,39 @@ export interface SavedFormData {
   social: Partial<SocialFormData>;
   support: Partial<SupportFormData>;
   skills: Record<string, boolean>;
+  gifs?: Partial<GifFormData>;
   lastSaved: string;
 }
 
 const STORAGE_KEY = 'github-profile-generator';
 
+// Serialize GIF data for storage
+function serializeGifData(gifs?: Partial<GifFormData>): Partial<GifFormData> | undefined {
+  if (!gifs) return undefined;
+
+  return {
+    ...gifs,
+    selectedGifs: gifs.selectedGifs?.map(gif => ({
+      id: gif.id,
+      url: gif.url,
+      name: gif.name,
+      category: gif.category,
+      isCustom: gif.isCustom,
+      // Save individual GIF settings
+      alignment: gif.alignment,
+      size: gif.size,
+      position: gif.position,
+      customWidth: gif.customWidth,
+      customHeight: gif.customHeight,
+    })),
+  };
+}
+
 export function saveFormData(data: SavedFormData): void {
   try {
     const dataToSave = {
       ...data,
+      gifs: serializeGifData(data.gifs),
       lastSaved: new Date().toISOString(),
     };
     console.log('💾 storage.ts - saveFormData called with:', dataToSave);

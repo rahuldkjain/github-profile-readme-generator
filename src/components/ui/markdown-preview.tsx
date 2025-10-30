@@ -10,11 +10,13 @@ import { trackFileExported } from '@/lib/analytics';
 interface MarkdownPreviewProps {
   markdown: string;
   title?: string;
+  onDownload?: () => void | Promise<void>;
 }
 
 export const MarkdownPreview = memo(function MarkdownPreview({
   markdown,
   title = 'Preview',
+  onDownload,
 }: MarkdownPreviewProps) {
   const [viewMode, setViewMode] = useState<'preview' | 'markdown'>('preview');
   const [copied, setCopied] = useState(false);
@@ -33,6 +35,13 @@ export const MarkdownPreview = memo(function MarkdownPreview({
   };
 
   const handleDownload = () => {
+    // Use custom download handler if provided, otherwise use default
+    if (onDownload) {
+      onDownload();
+      return;
+    }
+
+    // Default download behavior
     const blob = new Blob([markdown], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -51,18 +60,31 @@ export const MarkdownPreview = memo(function MarkdownPreview({
   const markdownComponents = useMemo(
     () => ({
       // Custom rendering to maintain alignment and styling
+      div: ({ children, style, ...props }: any) => {
+        // Preserve inline styles (used for GIF alignment)
+        return <div style={style} {...props}>{children}</div>;
+      },
       p: ({ children }: any) => <p className="my-2">{children}</p>,
       h1: ({ children }: any) => <h1 className="mb-4 text-center text-xl font-bold">{children}</h1>,
       h3: ({ children }: any) => <h3 className="mb-2 text-lg font-semibold">{children}</h3>,
-      img: ({ src, alt, width }: any) => {
+      img: ({ src, alt, width, height, style }: any) => {
         // Skill icons have width=40, resize them responsively
         if (width === '40' || width === 40) {
           return (
             <img src={src} alt={alt} className="mr-4 mb-4 inline-block h-6 w-6 sm:h-10 sm:w-10" />
           );
         }
-        // Other images (badges, stats, etc.) keep their original size
-        return <img src={src} alt={alt} className="inline-block" />;
+        // GIFs and other images - preserve their width, height, and inline styles
+        return (
+          <img 
+            src={src} 
+            alt={alt} 
+            width={width} 
+            height={height}
+            className="inline-block" 
+            style={{ ...style, maxWidth: '100%', height: 'auto' }}
+          />
+        );
       },
       a: ({ href, children }: any) => (
         <a
