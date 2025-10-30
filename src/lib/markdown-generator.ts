@@ -3,8 +3,10 @@ import type {
   LinksFormData,
   SocialFormData,
   SupportFormData,
+  GifFormData,
 } from './validations';
 import { DEFAULT_PREFIX } from '@/constants/defaults';
+import { GIF_SIZES } from '@/constants/gifs';
 
 interface GenerateMarkdownOptions {
   profile: Partial<ProfileFormData>;
@@ -12,6 +14,7 @@ interface GenerateMarkdownOptions {
   social: Partial<SocialFormData>;
   support: Partial<SupportFormData>;
   skills: Record<string, boolean>;
+  gifs?: Partial<GifFormData>;
 }
 
 const socialPlatformUrls: Record<string, (username: string) => string> = {
@@ -322,8 +325,62 @@ export function getSkillIconUrl(skill: string): string {
   return `https://skillicons.dev/icons?i=${iconName}`;
 }
 
+// Generate GIF markdown
+function generateGifMarkdown(gifs: Partial<GifFormData>, position: 'top' | 'middle' | 'bottom'): string {
+  if (!gifs.enabled || !gifs.selectedGifs || gifs.selectedGifs.length === 0) {
+    return '';
+  }
+
+  // Filter GIFs for this position (use individual position or fall back to global)
+  const gifsForPosition = gifs.selectedGifs.filter(gif => 
+    (gif.position || gifs.position) === position
+  );
+
+  if (gifsForPosition.length === 0) {
+    return '';
+  }
+
+  let markdown = '';
+
+  gifsForPosition.forEach((gif) => {
+    // Use individual settings or fall back to global settings
+    const alignment = gif.alignment || gifs.alignment || 'center';
+    const sizeKey = gif.size || gifs.size || 'medium';
+    
+    // Handle custom size with custom width/height
+    let width: number;
+    let height: number;
+    
+    if (sizeKey === 'custom') {
+      // Handle null values during editing (fallback to defaults)
+      width = (gif.customWidth !== null && gif.customWidth !== undefined) ? gif.customWidth : 300;
+      height = (gif.customHeight !== null && gif.customHeight !== undefined) ? gif.customHeight : 225;
+    } else {
+      const size = GIF_SIZES[sizeKey] || GIF_SIZES.medium;
+      width = size.width;
+      height = size.height;
+    }
+
+    // Use modern CSS for alignment - combine text-align with display block for images
+    let alignmentStyle = 'text-align: center;';
+    const imgStyle = 'display: inline-block;';
+    
+    if (alignment === 'left') {
+      alignmentStyle = 'text-align: left;';
+    } else if (alignment === 'right') {
+      alignmentStyle = 'text-align: right;';
+    }
+
+    markdown += `<div style="${alignmentStyle}">\n`;
+    markdown += `  <img src="${gif.url}" alt="${gif.name}" width="${width}" height="${height}" style="${imgStyle}"/>\n`;
+    markdown += `</div>\n\n`;
+  });
+
+  return markdown;
+}
+
 export function generateMarkdown(options: GenerateMarkdownOptions): string {
-  const { profile, links, social, support, skills } = options;
+  const { profile, links, social, support, skills, gifs } = options;
   let markdown = '';
 
   // Title and Subtitle
@@ -333,6 +390,11 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
 
   if (profile.subtitle) {
     markdown += `### ${profile.subtitle}\n\n`;
+  }
+
+  // GIFs at top position
+  if (gifs?.position === 'top' || gifs?.selectedGifs?.some(g => (g.position || gifs.position) === 'top')) {
+    markdown += generateGifMarkdown(gifs, 'top');
   }
 
   // Visitor Badge
@@ -401,6 +463,11 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
     markdown += `- ${DEFAULT_PREFIX.resume} **[${links.resume}](${links.resume})**\n\n`;
   }
 
+  // GIFs at middle position
+  if (gifs?.position === 'middle' || gifs?.selectedGifs?.some(g => (g.position || gifs.position) === 'middle')) {
+    markdown += generateGifMarkdown(gifs, 'middle');
+  }
+
   // Social Connect
   const socialLinks = Object.entries(social).filter(
     ([key, value]) =>
@@ -450,6 +517,11 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   // Streak Stats
   if (profile.streakStats && social.github) {
     markdown += `<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=${social.github}&" alt="${social.github}" /></p>\n\n`;
+  }
+
+  // GIFs at bottom position
+  if (gifs?.position === 'bottom' || gifs?.selectedGifs?.some(g => (g.position || gifs.position) === 'bottom')) {
+    markdown += generateGifMarkdown(gifs, 'bottom');
   }
 
   return markdown;

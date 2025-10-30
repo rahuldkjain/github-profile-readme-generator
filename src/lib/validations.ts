@@ -103,6 +103,32 @@ export const supportSchema = z.object({
   buyMeACoffee: z.string().max(100),
 });
 
+// GIF validation schema
+export const gifSchema = z.object({
+  enabled: z.boolean(),
+  selectedGifs: z
+    .array(
+      z.object({
+        id: z.string(),
+        url: z.string().url('Invalid GIF URL').or(z.string().startsWith('blob:')),
+        name: z.string().min(1, 'GIF name is required').max(100, 'Name is too long'),
+        category: z.enum(['greeting', 'coding', 'celebration', 'thinking', 'tech-logos', 'social', 'characters', 'custom']).optional(),
+        isCustom: z.boolean(),
+        isUploaded: z.boolean().optional(),
+        position: z.enum(['top', 'middle', 'bottom']).optional(),
+        alignment: z.enum(['left', 'center', 'right']).optional(),
+        size: z.enum(['small', 'medium', 'large', 'custom']).optional(),
+        customWidth: z.number().min(50).max(1000).optional().nullable(),
+        customHeight: z.number().min(50).max(1000).optional().nullable(),
+        // File and preview URL are not validated as they're transient
+      })
+    )
+    .max(5, 'Maximum 5 GIFs allowed'),
+  alignment: z.enum(['left', 'center', 'right']),
+  size: z.enum(['small', 'medium', 'large', 'custom']),
+  position: z.enum(['top', 'middle', 'bottom']),
+});
+
 // Complete form schema
 export const completeFormSchema = z.object({
   profile: profileSchema,
@@ -110,10 +136,12 @@ export const completeFormSchema = z.object({
   social: socialSchema,
   support: supportSchema,
   skills: z.record(z.string(), z.boolean()),
+  gifs: gifSchema.optional(),
 });
 
 export type ProfileFormData = z.infer<typeof profileSchema>;
 export type LinksFormData = z.infer<typeof linksSchema>;
 export type SocialFormData = z.infer<typeof socialSchema>;
 export type SupportFormData = z.infer<typeof supportSchema>;
+export type GifFormData = z.infer<typeof gifSchema>;
 export type CompleteFormData = z.infer<typeof completeFormSchema>;
