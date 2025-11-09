@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
-import { profileSchema, linksSchema, socialSchema } from '@/lib/validations';
+import { profileSchema, linksSchema, socialSchema, defaultStarHistoryConfig } from '@/lib/validations';
 import { DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL } from '@/constants/defaults';
 import { initialSkillState } from '@/constants/skills';
 import { BasicInfoSection } from '@/components/sections/basic-info-section';
@@ -74,15 +74,23 @@ export default function GeneratorPage() {
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle');
   const [hasInitialized, setHasInitialized] = useState(false);
 
+  // Create default profile data with Star History config
+  const defaultProfileData = useMemo(() => ({
+    ...DEFAULT_DATA,
+    starHistory: false,
+    starHistoryConfig: defaultStarHistoryConfig
+  }), []);
+
   const {
     register: registerProfile,
     formState: { errors: profileErrors },
     watch: watchProfile,
     reset: resetProfile,
     trigger: triggerProfile,
+    setValue: setValueProfile,
   } = useForm<ProfileFormData>({
     resolver: zodResolver(profileSchema),
-    defaultValues: savedData?.profile ? { ...DEFAULT_DATA, ...savedData.profile } : DEFAULT_DATA,
+    defaultValues: savedData?.profile ? { ...defaultProfileData, ...savedData.profile } : defaultProfileData,
     mode: 'onChange',
   });
 
@@ -267,7 +275,7 @@ export default function GeneratorPage() {
       variant: 'warning',
       onConfirm: () => {
         clearFormData();
-        resetProfile(DEFAULT_DATA);
+        resetProfile(defaultProfileData);
         resetLinks(DEFAULT_LINK);
         resetSocial(DEFAULT_SOCIAL);
         setSkills(initialSkillState);
@@ -276,7 +284,7 @@ export default function GeneratorPage() {
         showSuccess('All data cleared successfully', 'Form has been reset to default values');
       },
     });
-  }, [showConfirm, resetProfile, resetLinks, resetSocial, setSkills, showSuccess]);
+  }, [showConfirm, resetProfile, defaultProfileData, resetLinks, resetSocial, setSkills, showSuccess]);
 
   const handleDownloadJSON = () => {
     const data = {
@@ -316,7 +324,7 @@ export default function GeneratorPage() {
 
         // Validate and import data
         if (imported.profile) {
-          resetProfile({ ...DEFAULT_DATA, ...imported.profile } as ProfileFormData);
+          resetProfile({ ...defaultProfileData, ...imported.profile } as ProfileFormData);
         }
         if (imported.links) {
           resetLinks({ ...DEFAULT_LINK, ...imported.links } as LinksFormData);
@@ -560,6 +568,8 @@ export default function GeneratorPage() {
                   selectedSkills={skills}
                   onSkillChange={handleSkillChange}
                   registerProfile={registerProfile}
+                  watchProfile={watchProfile}
+                  setValueProfile={setValueProfile}
                 />
               </Suspense>
             )}

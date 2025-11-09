@@ -1,5 +1,13 @@
 import { z } from 'zod';
 
+// Star History validation schema
+export const starHistorySchema = z.object({
+  enabled: z.boolean(),
+  repos: z.array(z.string().regex(/^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/, 'Invalid repository format. Use "owner/repo"')),
+  chartType: z.enum(['Date', 'Timeline']),
+  theme: z.enum(['light', 'dark', 'auto']),
+});
+
 // Profile validation schema
 export const profileSchema = z.object({
   // Basic Information
@@ -56,6 +64,10 @@ export const profileSchema = z.object({
   devDynamicBlogs: z.boolean(),
   mediumDynamicBlogs: z.boolean(),
   rssDynamicBlogs: z.boolean(),
+
+  // Star History Integration
+  starHistory: z.boolean(),
+  starHistoryConfig: starHistorySchema,
 });
 
 // Links validation schema
@@ -117,3 +129,12 @@ export type LinksFormData = z.infer<typeof linksSchema>;
 export type SocialFormData = z.infer<typeof socialSchema>;
 export type SupportFormData = z.infer<typeof supportSchema>;
 export type CompleteFormData = z.infer<typeof completeFormSchema>;
+export type StarHistoryFormData = z.infer<typeof starHistorySchema>;
+
+// Default Star History configuration
+export const defaultStarHistoryConfig: StarHistoryFormData = {
+  enabled: false,
+  repos: [],
+  chartType: 'Date',
+  theme: 'auto'
+};

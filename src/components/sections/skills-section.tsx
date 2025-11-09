@@ -2,11 +2,12 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { Info } from 'lucide-react';
-import { UseFormRegister } from 'react-hook-form';
+import { UseFormRegister, UseFormWatch, UseFormSetValue } from 'react-hook-form';
 import { FormCheckbox } from '@/components/forms/form-checkbox';
 import { FormInput } from '@/components/forms/form-input';
 import { Select } from '@/components/ui/select';
 import { CollapsibleSection } from '@/components/ui/collapsible-section';
+import { StarHistory } from './star-history';
 import { categorizedSkills, categories } from '@/constants/skills';
 import { getSkillIconUrl } from '@/lib/markdown-generator';
 import type { ProfileFormData } from '@/lib/validations';
@@ -15,12 +16,16 @@ interface SkillsSectionProps {
   selectedSkills: Record<string, boolean>;
   onSkillChange: (skill: string, checked: boolean) => void;
   registerProfile: UseFormRegister<ProfileFormData>;
+  watchProfile: UseFormWatch<ProfileFormData>;
+  setValueProfile: UseFormSetValue<ProfileFormData>;
 }
 
 export function SkillsSection({
   selectedSkills,
   onSkillChange,
   registerProfile,
+  watchProfile,
+  setValueProfile,
 }: SkillsSectionProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -259,6 +264,13 @@ export function SkillsSection({
           )}
         </div>
       </div>
+
+      {/* Star History Charts */}
+      <StarHistory 
+        register={registerProfile}
+        watch={watchProfile}
+        setValue={setValueProfile}
+      />
     </div>
   );
 }

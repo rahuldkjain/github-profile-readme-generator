@@ -5,6 +5,7 @@ import type {
   SupportFormData,
 } from './validations';
 import { DEFAULT_PREFIX } from '@/constants/defaults';
+import { generateStarHistoryMarkdown } from './star-history';
 
 interface GenerateMarkdownOptions {
   profile: Partial<ProfileFormData>;
@@ -348,6 +349,15 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   // Twitter Badge
   if (social.twitterBadge && social.twitter) {
     markdown += `<p align="left"> <a href="https://twitter.com/${social.twitter}" target="blank"><img src="https://img.shields.io/twitter/follow/${social.twitter}?logo=twitter&style=for-the-badge" alt="${social.twitter}" /></a> </p>\n\n`;
+  }
+
+  // Star History Chart
+  if (profile.starHistory && profile.starHistoryConfig?.enabled) {
+    const starHistoryMarkdown = generateStarHistoryMarkdown(profile.starHistoryConfig);
+    if (starHistoryMarkdown) {
+      markdown += `<h3 align="left">⭐ Star History</h3>\n\n`;
+      markdown += `${starHistoryMarkdown}\n\n`;
+    }
   }
 
   // About sections

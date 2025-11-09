@@ -37,6 +37,13 @@ export interface StreakStatsOptions {
   theme: string;
 }
 
+export interface StarHistoryConfig {
+  enabled: boolean;
+  repos: string[];
+  chartType: 'Date' | 'Timeline';
+  theme: 'light' | 'dark' | 'auto';
+}
+
 export interface ProfileData {
   title: string;
   subtitle: string;
@@ -61,6 +68,8 @@ export interface ProfileData {
   devDynamicBlogs: boolean;
   mediumDynamicBlogs: boolean;
   rssDynamicBlogs: boolean;
+  starHistory: boolean;
+  starHistoryConfig: StarHistoryConfig;
 }
 
 export interface ProfileLinks {
