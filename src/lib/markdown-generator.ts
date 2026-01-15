@@ -158,7 +158,6 @@ export function getSkillIconUrl(skill: string): string {
     // Static Site Generators
     hugo: 'hugo/hugo-original',
     sculpin: 'php/php-original',
-    vuepress: 'vuejs/vuejs-original', // VuePress doesn't have official icon, using Vue
     jekyll: 'jekyll/jekyll-original',
     middleman: 'ruby/ruby-original',
     // Angular variant
