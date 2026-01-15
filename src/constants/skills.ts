@@ -52,6 +52,7 @@ export const categorizedSkills: CategorizedSkills = {
       'gtk',
       'qt',
       'ember',
+      'sapper',
     ],
   },
 
