@@ -52,7 +52,7 @@
 
 #### Tired of editing GitHub Profile README with new features?
 
-This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
+This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, `personal skill set` etc.
 
 ## 🚀 Demo
 
