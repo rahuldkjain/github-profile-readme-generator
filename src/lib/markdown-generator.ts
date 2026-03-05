@@ -14,6 +14,81 @@ interface GenerateMarkdownOptions {
   skills: Record<string, boolean>;
 }
 
+const URL_INPUT_RE = /^(https?:\/\/|www\.)/i;
+
+function trimSlashes(value: string): string {
+  return value.replace(/^\/+|\/+$/g, '');
+}
+
+function extractHandleFromUrl(platform: string, value: string): string {
+  try {
+    const parsedUrl = new URL(value.startsWith('http') ? value : `https://${value}`);
+    const path = decodeURIComponent(trimSlashes(parsedUrl.pathname));
+
+    switch (platform) {
+      case 'linkedin':
+        return path.replace(/^in\//i, '');
+      case 'stackoverflow':
+        return path.replace(/^users\//i, '');
+      case 'codeforces':
+        return path.replace(/^profile\//i, '');
+      case 'codechef':
+        return path.replace(/^users\//i, '');
+      case 'topcoder':
+        return path.replace(/^members\//i, '');
+      case 'geeks_for_geeks':
+        return path.replace(/^user\//i, '');
+      case 'youtube':
+        return path.startsWith('@') ? path.slice(1) : path;
+      case 'medium':
+      case 'hackerearth':
+        return path.replace(/^@+/, '');
+      default:
+        return path.split('/')[0] || '';
+    }
+  } catch {
+    return value;
+  }
+}
+
+function normalizeSocialHandle(platform: string, value: string): string {
+  let handle = value.trim();
+
+  if (!handle) {
+    return '';
+  }
+
+  if (URL_INPUT_RE.test(handle)) {
+    handle = extractHandleFromUrl(platform, handle);
+  }
+
+  handle = trimSlashes(handle);
+
+  switch (platform) {
+    case 'linkedin':
+      handle = handle.replace(/^in\//i, '');
+      break;
+    case 'stackoverflow':
+      handle = handle.replace(/^users\//i, '');
+      break;
+    case 'codeforces':
+      handle = handle.replace(/^profile\//i, '');
+      break;
+    case 'codechef':
+      handle = handle.replace(/^users\//i, '');
+      break;
+    case 'topcoder':
+      handle = handle.replace(/^members\//i, '');
+      break;
+    case 'geeks_for_geeks':
+      handle = handle.replace(/^user\//i, '');
+      break;
+  }
+
+  handle = handle.replace(/^@+/, '');
+  return trimSlashes(handle);
+}
+
 const socialPlatformUrls: Record<string, (username: string) => string> = {
   github: (u) => `https://github.com/${u}`,
   linkedin: (u) => `https://linkedin.com/in/${u}`,
@@ -25,8 +100,9 @@ const socialPlatformUrls: Record<string, (username: string) => string> = {
   instagram: (u) => `https://instagram.com/${u}`,
   dribbble: (u) => `https://dribbble.com/${u}`,
   behance: (u) => `https://behance.net/${u}`,
-  medium: (u) => `https://medium.com/${u}`,
-  youtube: (u) => `https://youtube.com/${u}`,
+  medium: (u) => `https://medium.com/@${u}`,
+  youtube: (u) =>
+    /^(channel|c|user)\//i.test(u) ? `https://youtube.com/${u}` : `https://youtube.com/@${u}`,
   codepen: (u) => `https://codepen.io/${u}`,
   codesandbox: (u) => `https://codesandbox.io/${u}`,
   leetcode: (u) => `https://leetcode.com/${u}`,
@@ -34,10 +110,21 @@ const socialPlatformUrls: Record<string, (username: string) => string> = {
   codeforces: (u) => `https://codeforces.com/profile/${u}`,
   codechef: (u) => `https://codechef.com/users/${u}`,
   topcoder: (u) => `https://topcoder.com/members/${u}`,
-  hackerearth: (u) => `https://hackerearth.com/${u}`,
+  hackerearth: (u) => `https://hackerearth.com/@${u}`,
   geeks_for_geeks: (u) => `https://auth.geeksforgeeks.org/user/${u}`,
   discord: (u) => `https://discord.gg/${u}`,
 };
+
+function buildSocialUrl(platform: string, value: string): string {
+  const urlBuilder = socialPlatformUrls[platform];
+  const normalizedHandle = normalizeSocialHandle(platform, value);
+
+  if (!urlBuilder || !normalizedHandle) {
+    return '';
+  }
+
+  return urlBuilder(normalizedHandle);
+}
 
 const socialIcons: Record<string, string> = {
   github: 'github.svg',
@@ -325,6 +412,14 @@ export function getSkillIconUrl(skill: string): string {
 export function generateMarkdown(options: GenerateMarkdownOptions): string {
   const { profile, links, social, support, skills } = options;
   let markdown = '';
+  const githubUsername = normalizeSocialHandle(
+    'github',
+    typeof social.github === 'string' ? social.github : ''
+  );
+  const twitterUsername = normalizeSocialHandle(
+    'twitter',
+    typeof social.twitter === 'string' ? social.twitter : ''
+  );
 
   // Title and Subtitle
   if (profile.title) {
@@ -336,18 +431,18 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   }
 
   // Visitor Badge
-  if (profile.visitorsBadge && social.github) {
-    markdown += `<p align="left"> <img src="https://komarev.com/ghpvc/?username=${social.github}&label=${profile.badgeLabel || 'Profile views'}&color=${profile.badgeColor || '0e75b6'}&style=${profile.badgeStyle || 'flat'}" alt="${social.github}" /> </p>\n\n`;
+  if (profile.visitorsBadge && githubUsername) {
+    markdown += `<p align="left"> <img src="https://komarev.com/ghpvc/?username=${githubUsername}&label=${profile.badgeLabel || 'Profile views'}&color=${profile.badgeColor || '0e75b6'}&style=${profile.badgeStyle || 'flat'}" alt="${githubUsername}" /> </p>\n\n`;
   }
 
   // GitHub Trophy
-  if (profile.githubProfileTrophy && social.github) {
-    markdown += `<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=${social.github}" alt="${social.github}" /></a> </p>\n\n`;
+  if (profile.githubProfileTrophy && githubUsername) {
+    markdown += `<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=${githubUsername}" alt="${githubUsername}" /></a> </p>\n\n`;
   }
 
   // Twitter Badge
-  if (social.twitterBadge && social.twitter) {
-    markdown += `<p align="left"> <a href="https://twitter.com/${social.twitter}" target="blank"><img src="https://img.shields.io/twitter/follow/${social.twitter}?logo=twitter&style=for-the-badge" alt="${social.twitter}" /></a> </p>\n\n`;
+  if (social.twitterBadge && twitterUsername) {
+    markdown += `<p align="left"> <a href="https://twitter.com/${twitterUsername}" target="blank"><img src="https://img.shields.io/twitter/follow/${twitterUsername}?logo=twitter&style=for-the-badge" alt="${twitterUsername}" /></a> </p>\n\n`;
   }
 
   // About sections
@@ -412,9 +507,11 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
 
     socialLinks.forEach(([platform, username]) => {
       const icon = socialIcons[platform];
-      const url = socialPlatformUrls[platform];
-      if (icon && url && username) {
-        markdown += `<a href="${url(username as string)}" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/${icon}" alt="${username as string}" height="30" width="40" /></a>\n`;
+      const profileUrl = buildSocialUrl(platform, username as string);
+      const normalizedHandle = normalizeSocialHandle(platform, username as string);
+
+      if (icon && profileUrl && normalizedHandle) {
+        markdown += `<a href="${profileUrl}" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/${icon}" alt="${normalizedHandle}" height="30" width="40" /></a>\n`;
       }
     });
 
@@ -442,14 +539,14 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   }
 
   // GitHub Stats
-  if (profile.githubStats && social.github) {
-    markdown += `<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=${social.github}&show_icons=true&locale=en&layout=compact" alt="${social.github}" /></p>\n\n`;
-    markdown += `<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=${social.github}&show_icons=true&locale=en" alt="${social.github}" /></p>\n\n`;
+  if (profile.githubStats && githubUsername) {
+    markdown += `<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=${githubUsername}&show_icons=true&locale=en&layout=compact" alt="${githubUsername}" /></p>\n\n`;
+    markdown += `<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&locale=en" alt="${githubUsername}" /></p>\n\n`;
   }
 
   // Streak Stats
-  if (profile.streakStats && social.github) {
-    markdown += `<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=${social.github}&" alt="${social.github}" /></p>\n\n`;
+  if (profile.streakStats && githubUsername) {
+    markdown += `<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}&" alt="${githubUsername}" /></p>\n\n`;
   }
 
   return markdown;
