@@ -3,19 +3,42 @@
   "version": "2.0.0",
   "description": "Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI",
   "private": true,
+  "license": "MIT",
   "author": "Rahul Jain <rahuldkjain@gmail.com>",
+  "homepage": "https://github.com/rahuldkjain/github-profile-readme-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahuldkjain/github-profile-readme-generator.git"
+  },
+  "keywords": [
+    "github",
+    "profile",
+    "readme",
+    "generator",
+    "markdown",
+    "ui",
+    "tailwindcss",
+    "next.js",
+    "react"
+  ],
   "scripts": {
     "dev": "TURBOPACK=1 next dev --turbo",
     "build": "next build --turbo",
     "export": "next build --turbo",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "lint": "eslint",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --max-warnings 0",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "quality": "npm run type-check && npm run lint && npm run format:check && npm run test"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
@@ -57,3 +80,4 @@
     "vitest": "^3.2.4"
   }
 }
+
