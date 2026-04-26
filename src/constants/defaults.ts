@@ -96,6 +96,7 @@ export const DEFAULT_SOCIAL: SocialLinks = {
   hackerearth: '',
   geeks_for_geeks: '',
   discord: '',
+  telegram: '',
   rssurl: '',
   twitterBadge: false,
 };

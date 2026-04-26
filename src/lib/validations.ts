@@ -92,6 +92,7 @@ export const socialSchema = z.object({
   hackerearth: z.string().max(100),
   geeks_for_geeks: z.string().max(100),
   discord: z.string().max(100),
+  telegram: z.string().max(100),
   rssurl: z.string().url('Invalid URL').or(z.literal('')),
 
   // Twitter Badge Enhancement

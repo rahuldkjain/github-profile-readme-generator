@@ -37,6 +37,7 @@ export function SocialSection({ register, errors, watch }: SocialSectionProps) {
     { key: 'dribbble', label: 'Dribbble', icon: '🎨', placeholder: 'username' },
     { key: 'behance', label: 'Behance', icon: '🎭', placeholder: 'username' },
     { key: 'discord', label: 'Discord', icon: '💬', placeholder: 'invite-code' },
+    { key: 'telegram', label: 'Telegram', icon: '✈️', placeholder: '@username' },
     { key: 'rssurl', label: 'RSS Feed', icon: '📡', placeholder: 'https://...' },
   ];
 

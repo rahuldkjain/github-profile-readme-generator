@@ -37,6 +37,7 @@ const socialPlatformUrls: Record<string, (username: string) => string> = {
   hackerearth: (u) => `https://hackerearth.com/${u}`,
   geeks_for_geeks: (u) => `https://auth.geeksforgeeks.org/user/${u}`,
   discord: (u) => `https://discord.gg/${u}`,
+  telegram: (u) => `https://t.me/${u.replace(/^@/, '')}`,
 };
 
 const socialIcons: Record<string, string> = {
@@ -62,6 +63,7 @@ const socialIcons: Record<string, string> = {
   hackerearth: 'hackerearth.svg',
   geeks_for_geeks: 'geeks-for-geeks.svg',
   discord: 'discord.svg',
+  telegram: 'telegram.svg',
 };
 
 // Generate skill icon URL - uses skillicons.dev for consistent dark mode support
