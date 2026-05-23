@@ -5,7 +5,7 @@
   "private": true,
   "author": "Rahul Jain <rahuldkjain@gmail.com>",
   "scripts": {
-    "dev": "TURBOPACK=1 next dev --turbo",
+    "dev": "cross-env TURBOPACK=1 next dev --turbo",
     "build": "next build --turbo",
     "export": "next build --turbo",
     "start": "next start",
@@ -46,6 +46,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^5.0.4",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "eslint-config-prettier": "^10.1.8",
