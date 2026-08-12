@@ -12,6 +12,83 @@ interface MarkdownPreviewProps {
   title?: string;
 }
 
+/**
+ * Lightweight preview version for the live side panel
+ * - No copy/download buttons
+ * - No view mode toggle
+ * - More compact styling
+ */
+export const MiniMarkdownPreview = memo(function MiniMarkdownPreview({
+  markdown,
+}: {
+  markdown: string;
+}) {
+  const miniComponents = useMemo(
+    () => ({
+      p: ({ children }: any) => <p className="my-1.5 text-sm leading-relaxed">{children}</p>,
+      h1: ({ children }: any) => (
+        <h1 className="mb-3 text-center text-base font-bold">{children}</h1>
+      ),
+      h2: ({ children }: any) => (
+        <h2 className="mb-2 mt-4 text-sm font-bold">{children}</h2>
+      ),
+      h3: ({ children }: any) => <h3 className="mb-1.5 mt-3 text-sm font-semibold">{children}</h3>,
+      img: ({ src, alt, width }: any) => {
+        if (width === '40' || width === 40) {
+          return <img src={src} alt={alt} className="mr-2.5 mb-2.5 inline-block h-5 w-5 sm:h-7 sm:w-7" />;
+        }
+        return <img src={src} alt={alt} className="inline-block max-w-full" />;
+      },
+      a: ({ href, children }: any) => (
+        <a
+          href={href}
+          className="text-blue-600 no-underline hover:underline dark:text-blue-400"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {children}
+        </a>
+      ),
+      ul: ({ children }: any) => <ul className="my-1.5 pl-5 text-sm list-disc">{children}</ul>,
+      ol: ({ children }: any) => <ol className="my-1.5 pl-5 text-sm list-decimal">{children}</ol>,
+      li: ({ children }: any) => <li className="my-0.5 text-sm">{children}</li>,
+      code: ({ children }: any) => (
+        <code className="bg-muted rounded px-1 py-0.5 text-xs font-mono">{children}</code>
+      ),
+      blockquote: ({ children }: any) => (
+        <blockquote className="border-l-4 border-muted-foreground/30 my-2 pl-3 text-sm italic text-muted-foreground">
+          {children}
+        </blockquote>
+      ),
+      table: ({ children }: any) => (
+        <div className="my-2 overflow-x-auto">
+          <table className="min-w-full border-collapse text-sm">{children}</table>
+        </div>
+      ),
+      th: ({ children }: any) => (
+        <th className="border-border border px-2 py-1 text-left font-semibold">{children}</th>
+      ),
+      td: ({ children }: any) => (
+        <td className="border-border border px-2 py-1">{children}</td>
+      ),
+      hr: () => <hr className="border-border my-3 border" />,
+    }),
+    []
+  );
+
+  return (
+    <div className="mini-markdown-preview" role="document">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw, rehypeSanitize]}
+        components={miniComponents}
+      >
+        {markdown}
+      </ReactMarkdown>
+    </div>
+  );
+});
+
 export const MarkdownPreview = memo(function MarkdownPreview({
   markdown,
   title = 'Preview',

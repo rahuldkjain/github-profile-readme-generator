@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useEffect, useMemo, lazy, Suspense, useCallback } from 'react';
+import { useState, useEffect, useMemo, lazy, Suspense, useCallback, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Download, Eye, EyeOff, Maximize2, Minimize2 } from 'lucide-react';
 import { profileSchema, linksSchema, socialSchema } from '@/lib/validations';
 import { DEFAULT_DATA, DEFAULT_LINK, DEFAULT_SOCIAL } from '@/constants/defaults';
 import { initialSkillState } from '@/constants/skills';
@@ -30,6 +30,8 @@ const SkillsSection = lazy(() =>
 const MarkdownPreview = lazy(() =>
   import('@/components/ui/markdown-preview').then((module) => ({ default: module.MarkdownPreview }))
 );
+// Mini preview is lighter, used in side panel
+import { MiniMarkdownPreview } from '@/components/ui/markdown-preview';
 
 type Step = 'basic' | 'links' | 'social' | 'skills' | 'preview';
 
@@ -73,6 +75,10 @@ export default function GeneratorPage() {
   });
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle');
   const [hasInitialized, setHasInitialized] = useState(false);
+  // Live preview state
+  const [showLivePreview, setShowLivePreview] = useState(true);
+  const [isPreviewExpanded, setIsPreviewExpanded] = useState(false);
+  const previewScrollRef = useRef<HTMLDivElement>(null);
 
   const {
     register: registerProfile,
@@ -115,7 +121,8 @@ export default function GeneratorPage() {
   const linksData = watchLinks();
   const socialData = watchSocial();
 
-  // Generate markdown with useMemo to prevent unnecessary recalculations
+  // Debounced markdown generation for live preview performance
+  const [debouncedMarkdown, setDebouncedMarkdown] = useState('');
   const markdown = useMemo(() => {
     return generateMarkdown({
       profile: profileData,
@@ -125,6 +132,14 @@ export default function GeneratorPage() {
       skills,
     });
   }, [profileData, linksData, socialData, skills]);
+
+  // Debounce markdown updates (150ms delay)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedMarkdown(markdown);
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [markdown]);
 
   // Mark as initialized after first render to enable auto-save
   useEffect(() => {
@@ -456,59 +471,131 @@ export default function GeneratorPage() {
     }
   };
 
+  // Live Preview Panel component (inline to avoid prop drilling)
+  const LivePreviewPanel = useCallback(() => (
+    <div
+      ref={previewScrollRef}
+      className="border-border bg-card flex min-h-[70vh] flex-col rounded-lg border shadow-sm lg:min-h-0 lg:h-[calc(100vh-120px)]"
+    >
+      {/* Panel Header */}
+      <div className="border-border flex flex-shrink-0 items-center justify-between border-b px-4 py-3">
+        <div className="flex items-center gap-2">
+          <div className="h-2 w-2 animate-pulse rounded-full bg-green-500" title="Live" />
+          <h3 className="font-semibold text-sm">Live Preview</h3>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => setIsPreviewExpanded(!isPreviewExpanded)}
+            className="hover:bg-accent rounded-md p-1.5 text-muted-foreground transition-colors"
+            title={isPreviewExpanded ? 'Shrink preview' : 'Expand preview'}
+            aria-label={isPreviewExpanded ? 'Shrink preview panel' : 'Expand preview panel'}
+          >
+            {isPreviewExpanded ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
+          </button>
+          <button
+            onClick={() => setShowLivePreview(false)}
+            className="hover:bg-accent rounded-md p-1.5 text-muted-foreground transition-colors"
+            title="Hide preview"
+            aria-label="Hide live preview panel"
+          >
+            <EyeOff className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+      {/* Panel Content with scroll - fills remaining height */}
+      <div className="flex-1 overflow-y-auto p-4">
+        <Suspense
+          fallback={
+            <div className="animate-pulse space-y-3">
+              <div className="h-6 rounded bg-gray-200"></div>
+              <div className="h-32 rounded bg-gray-200"></div>
+              <div className="h-20 rounded bg-gray-200"></div>
+            </div>
+          }
+        >
+          <MiniMarkdownPreview markdown={debouncedMarkdown} />
+        </Suspense>
+      </div>
+    </div>
+  ), [debouncedMarkdown, isPreviewExpanded]);
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header with Save Status */}
       <Header saveStatus={saveStatus} lastSaved={lastSaved} />
 
-      <main className="container mx-auto flex-1 px-4 py-8">
-        <div className="mx-auto max-w-6xl">
-          {/* Progress Steps - Responsive */}
-          <nav aria-label="Form progress" className="mb-8">
-            <div className="flex items-center justify-center overflow-x-auto px-4">
-              <div className="flex min-w-max items-center">
-                {steps.map((step, index) => (
-                  <div key={step.id} className="flex items-center">
-                    <button
-                      onClick={() => setCurrentStep(step.id)}
-                      className={`flex flex-col items-center gap-1 px-2 py-1 ${
-                        currentStep === step.id
-                          ? 'text-primary'
-                          : index < currentStepIndex
-                            ? 'text-foreground'
-                            : 'text-muted-foreground'
-                      }`}
-                      aria-label={`Step ${index + 1}: ${step.title}`}
-                      aria-current={currentStep === step.id ? 'step' : undefined}
-                    >
-                      <div
-                        className={`flex h-8 w-8 items-center justify-center rounded-full border-2 transition-colors sm:h-10 sm:w-10 ${
+      <main className="container mx-auto flex-1 px-4 py-6">
+        <div className="mx-auto max-w-[1600px]">
+          {/* Progress Steps + Preview Toggle */}
+          <nav aria-label="Form progress" className="mb-6">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              {/* Steps */}
+              <div className="flex items-center justify-center overflow-x-auto">
+                <div className="flex min-w-max items-center">
+                  {steps.map((step, index) => (
+                    <div key={step.id} className="flex items-center">
+                      <button
+                        onClick={() => setCurrentStep(step.id)}
+                        className={`flex flex-col items-center gap-1 px-2 py-1 ${
                           currentStep === step.id
-                            ? 'border-primary bg-primary text-primary-foreground'
+                            ? 'text-primary'
                             : index < currentStepIndex
-                              ? 'border-primary bg-primary/20'
-                              : 'border-border'
+                              ? 'text-foreground'
+                              : 'text-muted-foreground'
                         }`}
+                        aria-label={`Step ${index + 1}: ${step.title}`}
+                        aria-current={currentStep === step.id ? 'step' : undefined}
                       >
-                        <span className="text-xs font-medium sm:text-sm">{index + 1}</span>
-                      </div>
-                      <div className="hidden text-center sm:block">
-                        <p className="text-xs font-medium whitespace-nowrap">{step.title}</p>
-                        <p className="text-muted-foreground text-xs whitespace-nowrap">
-                          {step.description}
-                        </p>
-                      </div>
-                    </button>
-                    {index < steps.length - 1 && (
-                      <div
-                        className={`mx-2 h-0.5 w-8 sm:mx-4 sm:w-12 ${
-                          index < currentStepIndex ? 'bg-primary' : 'bg-border'
-                        }`}
-                      />
-                    )}
-                  </div>
-                ))}
+                        <div
+                          className={`flex h-8 w-8 items-center justify-center rounded-full border-2 transition-colors sm:h-10 sm:w-10 ${
+                            currentStep === step.id
+                              ? 'border-primary bg-primary text-primary-foreground'
+                              : index < currentStepIndex
+                                ? 'border-primary bg-primary/20'
+                                : 'border-border'
+                          }`}
+                        >
+                          <span className="text-xs font-medium sm:text-sm">{index + 1}</span>
+                        </div>
+                        <div className="hidden text-center sm:block">
+                          <p className="text-xs font-medium whitespace-nowrap">{step.title}</p>
+                          <p className="text-muted-foreground text-xs whitespace-nowrap">
+                            {step.description}
+                          </p>
+                        </div>
+                      </button>
+                      {index < steps.length - 1 && (
+                        <div
+                          className={`mx-2 h-0.5 w-8 sm:mx-4 sm:w-12 ${
+                            index < currentStepIndex ? 'bg-primary' : 'bg-border'
+                          }`}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
+
+              {/* Preview Toggle Button */}
+              <button
+                onClick={() => setShowLivePreview(!showLivePreview)}
+                className={`border-border hover:bg-accent flex items-center justify-center gap-2 self-center rounded-lg border px-4 py-2 text-sm font-medium transition-colors sm:self-auto ${
+                  showLivePreview ? 'bg-primary/10 border-primary/30' : ''
+                }`}
+                aria-label={showLivePreview ? 'Hide live preview' : 'Show live preview'}
+              >
+                {showLivePreview ? (
+                  <>
+                    <EyeOff className="h-4 w-4" />
+                    <span className="whitespace-nowrap">Hide Preview</span>
+                  </>
+                ) : (
+                  <>
+                    <Eye className="h-4 w-4" />
+                    <span className="whitespace-nowrap">Show Preview</span>
+                  </>
+                )}
+              </button>
             </div>
             {/* Screen reader announcement for step changes */}
             <div className="sr-only" aria-live="polite" aria-atomic="true">
@@ -516,112 +603,180 @@ export default function GeneratorPage() {
             </div>
           </nav>
 
-          {/* Form Content */}
-          <motion.div
-            key={currentStep}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.3 }}
-            className="border-border bg-card rounded-lg border p-6 shadow-sm md:p-8"
-          >
-            {currentStep === 'basic' && (
-              <BasicInfoSection
-                register={registerProfile}
-                errors={profileErrors}
-                socialRegister={registerSocial}
-                watchSocial={watchSocial}
-                onGitHubAutoFill={handleGitHubAutoFill}
-                onImportJSON={handleImportJSON}
-                onClearAll={handleClearAll}
-                hasClearableData={hasAnyData}
-              />
-            )}
-            {currentStep === 'links' && (
-              <LinksSection register={registerLinks} errors={linksErrors} />
-            )}
-            {currentStep === 'social' && (
-              <SocialSection register={registerSocial} errors={socialErrors} watch={watchSocial} />
-            )}
-            {currentStep === 'skills' && (
-              <Suspense
-                fallback={
-                  <div className="animate-pulse space-y-4">
-                    <div className="h-8 rounded bg-gray-200"></div>
-                    <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-                      {Array.from({ length: 12 }).map((_, i) => (
-                        <div key={i} className="h-12 rounded bg-gray-200"></div>
-                      ))}
-                    </div>
-                  </div>
-                }
-              >
-                <SkillsSection
-                  selectedSkills={skills}
-                  onSkillChange={handleSkillChange}
-                  registerProfile={registerProfile}
-                />
-              </Suspense>
-            )}
-            {currentStep === 'preview' && (
-              <div className="space-y-6">
-                <div className="border-border border-b pb-4">
-                  {/* Mobile: Stack vertically, Desktop: Side by side */}
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                      <h2 className="text-xl font-bold sm:text-2xl">Preview & Generate</h2>
-                      <p className="text-muted-foreground mt-1 text-sm">
-                        Your README is ready! Copy or download it below.
-                      </p>
-                    </div>
-                    {/* Export Button - With text */}
-                    <button
-                      onClick={handleDownloadJSON}
-                      className="bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors"
-                      title="Export profile data as JSON"
-                      aria-label="Export profile data as JSON"
-                    >
-                      <Download className="h-4 w-4" />
-                      <span>Export</span>
-                    </button>
-                  </div>
-                </div>
-
-                <Suspense
-                  fallback={
-                    <div className="animate-pulse space-y-4">
-                      <div className="h-8 rounded bg-gray-200"></div>
-                      <div className="h-96 rounded bg-gray-200"></div>
-                    </div>
-                  }
+          {/* Main Content: Preview (Left) + Form (Right) Split Layout */}
+          <div className="flex flex-col gap-6 lg:flex-row">
+            {/* ================= LEFT SIDE: LIVE PREVIEW ================= */}
+            <AnimatePresence>
+              {showLivePreview && currentStep !== 'preview' && (
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -50 }}
+                  transition={{ duration: 0.3 }}
+                  className="order-1 w-full lg:order-none lg:w-[48%] lg:flex-shrink-0"
                 >
-                  <MarkdownPreview markdown={markdown} title="Your GitHub Profile README" />
-                </Suspense>
-              </div>
-            )}
-          </motion.div>
+                  <div className="lg:sticky lg:top-6">
+                    <LivePreviewPanel />
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
 
-          {/* Navigation Buttons */}
-          <nav className="mt-6 flex justify-between" aria-label="Form navigation">
-            <button
-              onClick={goToPrevStep}
-              disabled={currentStepIndex === 0}
-              className="border-border hover:bg-accent rounded-lg border px-6 py-2 font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50"
-              aria-label={`Go to previous step${currentStepIndex > 0 ? `: ${steps[currentStepIndex - 1].title}` : ''}`}
-            >
-              Previous
-            </button>
-            {/* Hide Next button at preview step since we're already at the end */}
-            {currentStepIndex < steps.length - 1 && (
-              <button
-                onClick={goToNextStep}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 py-2 font-medium transition-colors"
-                aria-label={`Go to next step: ${steps[currentStepIndex + 1].title}`}
+            {/* ================= RIGHT SIDE: FORM EDITOR ================= */}
+            <div className={`order-2 flex-1 w-full lg:order-none ${showLivePreview ? '' : ''}`}>
+              <motion.div
+                key={currentStep}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="border-border bg-card rounded-lg border p-5 shadow-sm md:p-7"
               >
-                Next
-              </button>
+                {currentStep === 'basic' && (
+                  <BasicInfoSection
+                    register={registerProfile}
+                    errors={profileErrors}
+                    socialRegister={registerSocial}
+                    watchSocial={watchSocial}
+                    onGitHubAutoFill={handleGitHubAutoFill}
+                    onImportJSON={handleImportJSON}
+                    onClearAll={handleClearAll}
+                    hasClearableData={hasAnyData}
+                  />
+                )}
+                {currentStep === 'links' && (
+                  <LinksSection register={registerLinks} errors={linksErrors} />
+                )}
+                {currentStep === 'social' && (
+                  <SocialSection register={registerSocial} errors={socialErrors} watch={watchSocial} />
+                )}
+                {currentStep === 'skills' && (
+                  <Suspense
+                    fallback={
+                      <div className="animate-pulse space-y-4">
+                        <div className="h-8 rounded bg-gray-200"></div>
+                        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+                          {Array.from({ length: 12 }).map((_, i) => (
+                            <div key={i} className="h-12 rounded bg-gray-200"></div>
+                          ))}
+                        </div>
+                      </div>
+                    }
+                  >
+                    <SkillsSection
+                      selectedSkills={skills}
+                      onSkillChange={handleSkillChange}
+                      registerProfile={registerProfile}
+                    />
+                  </Suspense>
+                )}
+                {currentStep === 'preview' && (
+                  <div className="space-y-6">
+                    <div className="border-border border-b pb-4">
+                      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <h2 className="text-xl font-bold sm:text-2xl">Preview & Generate</h2>
+                          <p className="text-muted-foreground mt-1 text-sm">
+                            Your README is ready! Copy or download it below.
+                          </p>
+                        </div>
+                        <button
+                          onClick={handleDownloadJSON}
+                          className="bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors"
+                          title="Export profile data as JSON"
+                          aria-label="Export profile data as JSON"
+                        >
+                          <Download className="h-4 w-4" />
+                          <span>Export</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <Suspense
+                      fallback={
+                        <div className="animate-pulse space-y-4">
+                          <div className="h-8 rounded bg-gray-200"></div>
+                          <div className="h-96 rounded bg-gray-200"></div>
+                        </div>
+                      }
+                    >
+                      <MarkdownPreview markdown={markdown} title="Your GitHub Profile README" />
+                    </Suspense>
+                  </div>
+                )}
+              </motion.div>
+
+              {/* Navigation Buttons */}
+              <nav className="mt-6 flex justify-between" aria-label="Form navigation">
+                <button
+                  onClick={goToPrevStep}
+                  disabled={currentStepIndex === 0}
+                  className="border-border hover:bg-accent rounded-lg border px-6 py-2 font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+                  aria-label={`Go to previous step${currentStepIndex > 0 ? `: ${steps[currentStepIndex - 1].title}` : ''}`}
+                >
+                  Previous
+                </button>
+                {currentStepIndex < steps.length - 1 && (
+                  <button
+                    onClick={goToNextStep}
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 py-2 font-medium transition-colors"
+                    aria-label={`Go to next step: ${steps[currentStepIndex + 1].title}`}
+                  >
+                    Next
+                  </button>
+                )}
+              </nav>
+            </div>
+          </div>
+
+          {/* Mobile/Tablet (below lg) - Floating Bottom Sheet fallback */}
+          <AnimatePresence>
+            {showLivePreview && currentStep !== 'preview' && (
+              <>
+                {/* Mobile toggle floating button - only below lg */}
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  onClick={() => setIsPreviewExpanded(!isPreviewExpanded)}
+                  className="lg:hidden fixed bottom-4 right-4 z-40 bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium transition-all"
+                  aria-label={isPreviewExpanded ? 'Close mobile preview' : 'Open mobile preview'}
+                >
+                  <Eye className="h-4 w-4" />
+                  <span>{isPreviewExpanded ? 'Close' : 'Preview'}</span>
+                </motion.button>
+
+                {/* Mobile Bottom Sheet Preview - only below lg */}
+                {isPreviewExpanded && (
+                  <motion.div
+                    initial={{ opacity: 0, y: '100%' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: '100%' }}
+                    transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                    className="lg:hidden fixed inset-x-0 bottom-0 left-0 right-0 z-50 h-[80vh] rounded-t-2xl bg-background shadow-2xl"
+                  >
+                    <div className="flex justify-center pt-3 pb-1">
+                      <div className="h-1.5 w-12 rounded-full bg-muted-foreground/30" />
+                    </div>
+                    <div className="h-[calc(80vh-24px)] px-4 pb-4">
+                      <LivePreviewPanel />
+                    </div>
+                  </motion.div>
+                )}
+
+                {isPreviewExpanded && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onClick={() => setIsPreviewExpanded(false)}
+                    className="lg:hidden fixed inset-0 z-40 bg-black/40"
+                    aria-label="Close preview backdrop"
+                  />
+                )}
+              </>
             )}
-          </nav>
+          </AnimatePresence>
         </div>
       </main>
       <Footer />
