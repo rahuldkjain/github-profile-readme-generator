@@ -472,52 +472,59 @@ export default function GeneratorPage() {
   };
 
   // Live Preview Panel component (inline to avoid prop drilling)
-  const LivePreviewPanel = useCallback(() => (
-    <div
-      ref={previewScrollRef}
-      className="border-border bg-card flex min-h-[70vh] flex-col rounded-lg border shadow-sm lg:min-h-0 lg:h-[calc(100vh-120px)]"
-    >
-      {/* Panel Header */}
-      <div className="border-border flex flex-shrink-0 items-center justify-between border-b px-4 py-3">
-        <div className="flex items-center gap-2">
-          <div className="h-2 w-2 animate-pulse rounded-full bg-green-500" title="Live" />
-          <h3 className="font-semibold text-sm">Live Preview</h3>
+  const LivePreviewPanel = useCallback(
+    () => (
+      <div
+        ref={previewScrollRef}
+        className="border-border bg-card flex min-h-[70vh] flex-col rounded-lg border shadow-sm lg:h-[calc(100vh-120px)] lg:min-h-0"
+      >
+        {/* Panel Header */}
+        <div className="border-border flex flex-shrink-0 items-center justify-between border-b px-4 py-3">
+          <div className="flex items-center gap-2">
+            <div className="h-2 w-2 animate-pulse rounded-full bg-green-500" title="Live" />
+            <h3 className="text-sm font-semibold">Live Preview</h3>
+          </div>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setIsPreviewExpanded(!isPreviewExpanded)}
+              className="hover:bg-accent text-muted-foreground rounded-md p-1.5 transition-colors"
+              title={isPreviewExpanded ? 'Shrink preview' : 'Expand preview'}
+              aria-label={isPreviewExpanded ? 'Shrink preview panel' : 'Expand preview panel'}
+            >
+              {isPreviewExpanded ? (
+                <Minimize2 className="h-4 w-4" />
+              ) : (
+                <Maximize2 className="h-4 w-4" />
+              )}
+            </button>
+            <button
+              onClick={() => setShowLivePreview(false)}
+              className="hover:bg-accent text-muted-foreground rounded-md p-1.5 transition-colors"
+              title="Hide preview"
+              aria-label="Hide live preview panel"
+            >
+              <EyeOff className="h-4 w-4" />
+            </button>
+          </div>
         </div>
-        <div className="flex items-center gap-1">
-          <button
-            onClick={() => setIsPreviewExpanded(!isPreviewExpanded)}
-            className="hover:bg-accent rounded-md p-1.5 text-muted-foreground transition-colors"
-            title={isPreviewExpanded ? 'Shrink preview' : 'Expand preview'}
-            aria-label={isPreviewExpanded ? 'Shrink preview panel' : 'Expand preview panel'}
+        {/* Panel Content with scroll - fills remaining height */}
+        <div className="flex-1 overflow-y-auto p-4">
+          <Suspense
+            fallback={
+              <div className="animate-pulse space-y-3">
+                <div className="h-6 rounded bg-gray-200"></div>
+                <div className="h-32 rounded bg-gray-200"></div>
+                <div className="h-20 rounded bg-gray-200"></div>
+              </div>
+            }
           >
-            {isPreviewExpanded ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
-          </button>
-          <button
-            onClick={() => setShowLivePreview(false)}
-            className="hover:bg-accent rounded-md p-1.5 text-muted-foreground transition-colors"
-            title="Hide preview"
-            aria-label="Hide live preview panel"
-          >
-            <EyeOff className="h-4 w-4" />
-          </button>
+            <MiniMarkdownPreview markdown={debouncedMarkdown} />
+          </Suspense>
         </div>
       </div>
-      {/* Panel Content with scroll - fills remaining height */}
-      <div className="flex-1 overflow-y-auto p-4">
-        <Suspense
-          fallback={
-            <div className="animate-pulse space-y-3">
-              <div className="h-6 rounded bg-gray-200"></div>
-              <div className="h-32 rounded bg-gray-200"></div>
-              <div className="h-20 rounded bg-gray-200"></div>
-            </div>
-          }
-        >
-          <MiniMarkdownPreview markdown={debouncedMarkdown} />
-        </Suspense>
-      </div>
-    </div>
-  ), [debouncedMarkdown, isPreviewExpanded]);
+    ),
+    [debouncedMarkdown, isPreviewExpanded]
+  );
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -623,7 +630,7 @@ export default function GeneratorPage() {
             </AnimatePresence>
 
             {/* ================= RIGHT SIDE: FORM EDITOR ================= */}
-            <div className={`order-2 flex-1 w-full lg:order-none ${showLivePreview ? '' : ''}`}>
+            <div className={`order-2 w-full flex-1 lg:order-none ${showLivePreview ? '' : ''}`}>
               <motion.div
                 key={currentStep}
                 initial={{ opacity: 0, x: 20 }}
@@ -648,7 +655,11 @@ export default function GeneratorPage() {
                   <LinksSection register={registerLinks} errors={linksErrors} />
                 )}
                 {currentStep === 'social' && (
-                  <SocialSection register={registerSocial} errors={socialErrors} watch={watchSocial} />
+                  <SocialSection
+                    register={registerSocial}
+                    errors={socialErrors}
+                    watch={watchSocial}
+                  />
                 )}
                 {currentStep === 'skills' && (
                   <Suspense
@@ -739,7 +750,7 @@ export default function GeneratorPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
                   onClick={() => setIsPreviewExpanded(!isPreviewExpanded)}
-                  className="lg:hidden fixed bottom-4 right-4 z-40 bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium transition-all"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 fixed right-4 bottom-4 z-40 flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium shadow-lg transition-all lg:hidden"
                   aria-label={isPreviewExpanded ? 'Close mobile preview' : 'Open mobile preview'}
                 >
                   <Eye className="h-4 w-4" />
@@ -753,10 +764,10 @@ export default function GeneratorPage() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: '100%' }}
                     transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-                    className="lg:hidden fixed inset-x-0 bottom-0 left-0 right-0 z-50 h-[80vh] rounded-t-2xl bg-background shadow-2xl"
+                    className="bg-background fixed inset-x-0 right-0 bottom-0 left-0 z-50 h-[80vh] rounded-t-2xl shadow-2xl lg:hidden"
                   >
                     <div className="flex justify-center pt-3 pb-1">
-                      <div className="h-1.5 w-12 rounded-full bg-muted-foreground/30" />
+                      <div className="bg-muted-foreground/30 h-1.5 w-12 rounded-full" />
                     </div>
                     <div className="h-[calc(80vh-24px)] px-4 pb-4">
                       <LivePreviewPanel />
@@ -770,7 +781,7 @@ export default function GeneratorPage() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onClick={() => setIsPreviewExpanded(false)}
-                    className="lg:hidden fixed inset-0 z-40 bg-black/40"
+                    className="fixed inset-0 z-40 bg-black/40 lg:hidden"
                     aria-label="Close preview backdrop"
                   />
                 )}

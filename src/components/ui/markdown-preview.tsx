@@ -29,13 +29,13 @@ export const MiniMarkdownPreview = memo(function MiniMarkdownPreview({
       h1: ({ children }: any) => (
         <h1 className="mb-3 text-center text-base font-bold">{children}</h1>
       ),
-      h2: ({ children }: any) => (
-        <h2 className="mb-2 mt-4 text-sm font-bold">{children}</h2>
-      ),
-      h3: ({ children }: any) => <h3 className="mb-1.5 mt-3 text-sm font-semibold">{children}</h3>,
+      h2: ({ children }: any) => <h2 className="mt-4 mb-2 text-sm font-bold">{children}</h2>,
+      h3: ({ children }: any) => <h3 className="mt-3 mb-1.5 text-sm font-semibold">{children}</h3>,
       img: ({ src, alt, width }: any) => {
         if (width === '40' || width === 40) {
-          return <img src={src} alt={alt} className="mr-2.5 mb-2.5 inline-block h-5 w-5 sm:h-7 sm:w-7" />;
+          return (
+            <img src={src} alt={alt} className="mr-2.5 mb-2.5 inline-block h-5 w-5 sm:h-7 sm:w-7" />
+          );
         }
         return <img src={src} alt={alt} className="inline-block max-w-full" />;
       },
@@ -49,14 +49,14 @@ export const MiniMarkdownPreview = memo(function MiniMarkdownPreview({
           {children}
         </a>
       ),
-      ul: ({ children }: any) => <ul className="my-1.5 pl-5 text-sm list-disc">{children}</ul>,
-      ol: ({ children }: any) => <ol className="my-1.5 pl-5 text-sm list-decimal">{children}</ol>,
+      ul: ({ children }: any) => <ul className="my-1.5 list-disc pl-5 text-sm">{children}</ul>,
+      ol: ({ children }: any) => <ol className="my-1.5 list-decimal pl-5 text-sm">{children}</ol>,
       li: ({ children }: any) => <li className="my-0.5 text-sm">{children}</li>,
       code: ({ children }: any) => (
-        <code className="bg-muted rounded px-1 py-0.5 text-xs font-mono">{children}</code>
+        <code className="bg-muted rounded px-1 py-0.5 font-mono text-xs">{children}</code>
       ),
       blockquote: ({ children }: any) => (
-        <blockquote className="border-l-4 border-muted-foreground/30 my-2 pl-3 text-sm italic text-muted-foreground">
+        <blockquote className="border-muted-foreground/30 text-muted-foreground my-2 border-l-4 pl-3 text-sm italic">
           {children}
         </blockquote>
       ),
@@ -68,9 +68,7 @@ export const MiniMarkdownPreview = memo(function MiniMarkdownPreview({
       th: ({ children }: any) => (
         <th className="border-border border px-2 py-1 text-left font-semibold">{children}</th>
       ),
-      td: ({ children }: any) => (
-        <td className="border-border border px-2 py-1">{children}</td>
-      ),
+      td: ({ children }: any) => <td className="border-border border px-2 py-1">{children}</td>,
       hr: () => <hr className="border-border my-3 border" />,
     }),
     []

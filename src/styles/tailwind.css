@@ -13,7 +13,7 @@
 }
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply leading-normal break-words text-gray-900;
 }
 
 .markdown > * + * {
@@ -33,7 +33,7 @@
 }
 
 .markdown a {
-  @apply text-blue-600 font-semibold;
+  @apply font-semibold text-blue-600;
 }
 
 .markdown strong a {
@@ -41,67 +41,67 @@
 }
 
 .markdown h1 {
-  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply mt-6 mb-4 border-b pb-2 text-4xl leading-tight font-semibold;
 }
 
 .markdown h2 {
-  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+  @apply mt-6 mb-4 border-b pb-2 text-2xl leading-tight font-semibold;
 }
 
 .markdown h3 {
-  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+  @apply mt-6 mb-4 text-lg leading-snug font-semibold;
 }
 
 .markdown h4 {
-  @apply leading-none text-base font-semibold mb-4 mt-6;
+  @apply mt-6 mb-4 text-base leading-none font-semibold;
 }
 
 .markdown h5 {
-  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+  @apply mt-6 mb-4 text-sm leading-tight font-semibold;
 }
 
 .markdown h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply mt-6 mb-4 text-sm leading-tight font-semibold text-gray-600;
 }
 
 .markdown blockquote {
-  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
+  @apply border-l-4 border-gray-300 pr-4 pl-4 text-base text-gray-600;
 }
 
 .markdown code {
-  @apply font-body text-sm inline bg-gray-200 rounded px-1 py-05;
+  @apply font-body py-05 inline rounded bg-gray-200 px-1 text-sm;
 }
 
 .markdown pre {
-  @apply bg-gray-900 text-white overflow-scroll rounded p-4;
+  @apply overflow-scroll rounded bg-gray-900 p-4 text-white;
 }
 
 .markdown pre code {
-  @apply block p-0 rounded-none text-white;
+  @apply block rounded-none p-0 text-white;
 }
 
 .markdown ul {
-  @apply text-base pl-8 list-disc;
+  @apply list-disc pl-8 text-base;
 }
 
 .markdown ol {
-  @apply text-base pl-8 list-decimal;
+  @apply list-decimal pl-8 text-base;
 }
 
 .markdown kbd {
-  @apply text-xs inline-block rounded border px-1 py-05 align-middle font-normal font-body shadow;
+  @apply py-05 font-body inline-block rounded border px-1 align-middle text-xs font-normal shadow;
 }
 
 .markdown table {
-  @apply text-base border-gray-600;
+  @apply border-gray-600 text-base;
 }
 
 .markdown th {
-  @apply border py-1 px-3;
+  @apply border px-3 py-1;
 }
 
 .markdown td {
-  @apply border py-1 px-3;
+  @apply border px-3 py-1;
 }
 
 /* Override pygments style background color. */
