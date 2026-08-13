@@ -90,9 +90,7 @@ describe('MiniMarkdownPreview', () => {
   });
 
   it('renders horizontal rule', () => {
-    const { container } = render(
-      <MiniMarkdownPreview markdown={'above\n\n***\n\nbelow\n'} />
-    );
+    const { container } = render(<MiniMarkdownPreview markdown={'above\n\n***\n\nbelow\n'} />);
     expect(container.querySelector('hr')).toBeInTheDocument();
   });
 
