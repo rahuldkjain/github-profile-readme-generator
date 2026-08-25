@@ -1,3 +1,5 @@
+> **Repository note:** This repository is a fork/customization of [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator). Upstream authors, license terms, and attribution remain applicable; this copy is maintained for learning and customization.
+>
 <p align="center">
   <a href="https://rahuldkjain.github.io/github-profile-readme-generator">
     <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
