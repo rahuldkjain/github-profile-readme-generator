@@ -1,10 +1,10 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 // Profile validation schema
 export const profileSchema = z.object({
   // Basic Information
-  title: z.string().min(1, "Name is required").max(100, "Name is too long"),
-  subtitle: z.string().max(200, "Subtitle is too long"),
+  title: z.string().min(1, 'Name is required').max(100, 'Name is too long'),
+  subtitle: z.string().max(200, 'Subtitle is too long'),
 
   // About sections
   currentWork: z.string().max(200),
@@ -12,13 +12,13 @@ export const profileSchema = z.object({
   collaborateOn: z.string().max(200),
   helpWith: z.string().max(200),
   ama: z.string().max(200),
-  contact: z.string().email("Invalid email").or(z.string().max(100)),
+  contact: z.string().email('Invalid email').or(z.string().max(100)),
   funFact: z.string().max(200),
 
   // Badges
   visitorsBadge: z.boolean(),
-  badgeStyle: z.enum(["flat", "flat-square", "plastic", "for-the-badge"]),
-  badgeColor: z.string().regex(/^[0-9a-fA-F]{6}$/, "Invalid color hex"),
+  badgeStyle: z.enum(['flat', 'flat-square', 'plastic', 'for-the-badge']),
+  badgeColor: z.string().regex(/^[0-9a-fA-F]{6}$/, 'Invalid color hex'),
   badgeLabel: z.string().max(50),
 
   // GitHub Stats
@@ -60,12 +60,12 @@ export const profileSchema = z.object({
 
 // Links validation schema
 export const linksSchema = z.object({
-  currentWork: z.string().url("Invalid URL").or(z.literal("")),
-  collaborateOn: z.string().url("Invalid URL").or(z.literal("")),
-  helpWith: z.string().url("Invalid URL").or(z.literal("")),
-  portfolio: z.string().url("Invalid URL").or(z.literal("")),
-  blog: z.string().url("Invalid URL").or(z.literal("")),
-  resume: z.string().url("Invalid URL").or(z.literal("")),
+  currentWork: z.string().url('Invalid URL').or(z.literal('')),
+  collaborateOn: z.string().url('Invalid URL').or(z.literal('')),
+  helpWith: z.string().url('Invalid URL').or(z.literal('')),
+  portfolio: z.string().url('Invalid URL').or(z.literal('')),
+  blog: z.string().url('Invalid URL').or(z.literal('')),
+  resume: z.string().url('Invalid URL').or(z.literal('')),
 });
 
 // Social links validation schema
@@ -93,7 +93,7 @@ export const socialSchema = z.object({
   geeks_for_geeks: z.string().max(100),
   discord: z.string().max(100),
   bluesky: z.string().max(100),
-  rssurl: z.string().url("Invalid URL").or(z.literal("")),
+  rssurl: z.string().url('Invalid URL').or(z.literal('')),
 
   // Twitter Badge Enhancement
   twitterBadge: z.boolean(),

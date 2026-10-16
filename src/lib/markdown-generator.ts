@@ -3,8 +3,8 @@ import type {
   LinksFormData,
   SocialFormData,
   SupportFormData,
-} from "./validations";
-import { DEFAULT_PREFIX } from "@/constants/defaults";
+} from './validations';
+import { DEFAULT_PREFIX } from '@/constants/defaults';
 
 interface GenerateMarkdownOptions {
   profile: Partial<ProfileFormData>;
@@ -41,29 +41,29 @@ const socialPlatformUrls: Record<string, (username: string) => string> = {
 };
 
 const socialIcons: Record<string, string> = {
-  github: "github.svg",
-  linkedin: "linked-in-alt.svg",
-  twitter: "twitter.svg",
-  dev: "devto.svg",
-  stackoverflow: "stack-overflow.svg",
-  kaggle: "kaggle.svg",
-  fb: "facebook.svg",
-  instagram: "instagram.svg",
-  dribbble: "dribbble.svg",
-  behance: "behance.svg",
-  medium: "medium.svg",
-  youtube: "youtube.svg",
-  codepen: "codepen.svg",
-  codesandbox: "codesandbox.svg",
-  leetcode: "leet-code.svg",
-  hackerrank: "hackerrank.svg",
-  codeforces: "codeforces.svg",
-  codechef: "codechef.svg",
-  topcoder: "topcoder.svg",
-  hackerearth: "hackerearth.svg",
-  geeks_for_geeks: "geeks-for-geeks.svg",
-  discord: "discord.svg",
-  bluesky: "bluesky.svg",
+  github: 'github.svg',
+  linkedin: 'linked-in-alt.svg',
+  twitter: 'twitter.svg',
+  dev: 'devto.svg',
+  stackoverflow: 'stack-overflow.svg',
+  kaggle: 'kaggle.svg',
+  fb: 'facebook.svg',
+  instagram: 'instagram.svg',
+  dribbble: 'dribbble.svg',
+  behance: 'behance.svg',
+  medium: 'medium.svg',
+  youtube: 'youtube.svg',
+  codepen: 'codepen.svg',
+  codesandbox: 'codesandbox.svg',
+  leetcode: 'leet-code.svg',
+  hackerrank: 'hackerrank.svg',
+  codeforces: 'codeforces.svg',
+  codechef: 'codechef.svg',
+  topcoder: 'topcoder.svg',
+  hackerearth: 'hackerearth.svg',
+  geeks_for_geeks: 'geeks-for-geeks.svg',
+  discord: 'discord.svg',
+  bluesky: 'bluesky.svg',
 };
 
 // Generate skill icon URL - uses skillicons.dev for consistent dark mode support
@@ -72,99 +72,99 @@ export function getSkillIconUrl(skill: string): string {
   // Using colors that work in both light and dark modes
   const simpleIconsFallback: Record<string, string> = {
     // DevOps
-    circleci: "circleci/555", // CircleCI in medium gray (visible in both modes)
-    travisci: "travisci", // Travis CI uses teal brand color (works in both modes)
+    circleci: 'circleci/555', // CircleCI in medium gray (visible in both modes)
+    travisci: 'travisci', // Travis CI uses teal brand color (works in both modes)
     // Modern AI/ML Tools
-    langchain: "langchain/1C3C3C", // LangChain dark color
-    huggingface: "huggingface", // HuggingFace brand color
-    ollama: "ollama", // Ollama brand color
-    mlflow: "mlflow/0194E2", // MLflow blue
-    streamlit: "streamlit/FF4B4B", // Streamlit red
-    gradio: "gradio/FF7C00", // Gradio orange
+    langchain: 'langchain/1C3C3C', // LangChain dark color
+    huggingface: 'huggingface', // HuggingFace brand color
+    ollama: 'ollama', // Ollama brand color
+    mlflow: 'mlflow/0194E2', // MLflow blue
+    streamlit: 'streamlit/FF4B4B', // Streamlit red
+    gradio: 'gradio/FF7C00', // Gradio orange
     // Frontend
-    backbonejs: "backbonedotjs/0071B5", // Backbone.js blue
+    backbonejs: 'backbonedotjs/0071B5', // Backbone.js blue
     // Mobile
-    nativescript: "nativescript/3655FF", // NativeScript blue
-    apachecordova: "apachecordova/E8E8E8", // Apache Cordova gray
+    nativescript: 'nativescript/3655FF', // NativeScript blue
+    apachecordova: 'apachecordova/E8E8E8', // Apache Cordova gray
     // Backend
-    solr: "apachesolr/D9411E", // Apache Solr red
+    solr: 'apachesolr/D9411E', // Apache Solr red
     // Database
-    cockroachdb: "cockroachlabs", // CockroachDB official
-    hive: "apachehive/FDEE21", // Apache Hive yellow
+    cockroachdb: 'cockroachlabs', // CockroachDB official
+    hive: 'apachehive/FDEE21', // Apache Hive yellow
     // Data Visualization
-    chartjs: "chartdotjs/FF6384", // Chart.js pink
+    chartjs: 'chartdotjs/FF6384', // Chart.js pink
     // Testing
-    puppeteer: "puppeteer/40B5A4", // Puppeteer teal
+    puppeteer: 'puppeteer/40B5A4', // Puppeteer teal
     // Software/Design
-    framer: "framer", // Framer brand color
-    invision: "invision/FF3366", // InVision pink
+    framer: 'framer', // Framer brand color
+    invision: 'invision/FF3366', // InVision pink
     // Static Site Generators
-    "11ty": "eleventy", // Eleventy brand color
-    hexo: "hexo/0E83CD", // Hexo blue
-    gridsome: "gridsome", // Gridsome brand color
+    '11ty': 'eleventy', // Eleventy brand color
+    hexo: 'hexo/0E83CD', // Hexo blue
+    gridsome: 'gridsome', // Gridsome brand color
     // Automation
-    zapier: "zapier/FF4A00", // Zapier orange
-    ifttt: "ifttt", // IFTTT brand color
+    zapier: 'zapier/FF4A00', // Zapier orange
+    ifttt: 'ifttt', // IFTTT brand color
   };
 
   // Check if skill needs simple-icons fallback
   if (simpleIconsFallback[skill]) {
-    const parts = simpleIconsFallback[skill].split("/");
+    const parts = simpleIconsFallback[skill].split('/');
     const iconName = parts[0];
-    const color = parts[1] || ""; // Use brand color if specified
-    return `https://cdn.simpleicons.org/${iconName}${color ? `/${color}` : ""}`;
+    const color = parts[1] || ''; // Use brand color if specified
+    return `https://cdn.simpleicons.org/${iconName}${color ? `/${color}` : ''}`;
   }
 
   // Skills that need devicon fallback (not available on skillicons.dev)
   const deviconFallback: Record<string, string> = {
     // Database
-    oracle: "oracle/oracle-original",
-    realm: "realm/realm-original",
-    couchdb: "couchdb/couchdb-original",
-    mssql: "microsoftsqlserver/microsoftsqlserver-plain",
-    mariadb: "mysql/mysql-original-wordmark",
+    oracle: 'oracle/oracle-original',
+    realm: 'realm/realm-original',
+    couchdb: 'couchdb/couchdb-original',
+    mssql: 'microsoftsqlserver/microsoftsqlserver-plain',
+    mariadb: 'mysql/mysql-original-wordmark',
     // Mobile
-    xamarin: "dot-net/dot-net-plain",
-    ionic: "ionic/ionic-original",
+    xamarin: 'dot-net/dot-net-plain',
+    ionic: 'ionic/ionic-original',
     // Programming Languages
-    erlang: "erlang/erlang-original",
+    erlang: 'erlang/erlang-original',
     // Frontend
-    bulma: "bulma/bulma-plain",
-    materialize: "materialui/materialui-original",
+    bulma: 'bulma/bulma-plain',
+    materialize: 'materialui/materialui-original',
     // Backend
-    openresty: "nginx/nginx-original",
-    hadoop: "hadoop/hadoop-original",
+    openresty: 'nginx/nginx-original',
+    hadoop: 'hadoop/hadoop-original',
     // AI/ML - Core Data Science
-    keras: "keras/keras-original",
-    numpy: "numpy/numpy-original",
-    matplotlib: "matplotlib/matplotlib-original",
-    jupyter: "jupyter/jupyter-original-wordmark",
-    pandas: "pandas/pandas-original",
-    seaborn: "python/python-original",
+    keras: 'keras/keras-original',
+    numpy: 'numpy/numpy-original',
+    matplotlib: 'matplotlib/matplotlib-original',
+    jupyter: 'jupyter/jupyter-original-wordmark',
+    pandas: 'pandas/pandas-original',
+    seaborn: 'python/python-original',
     // Data Visualization
-    canvasjs: "javascript/javascript-original", // No official icon available
-    kibana: "kibana/kibana-original",
+    canvasjs: 'javascript/javascript-original', // No official icon available
+    kibana: 'kibana/kibana-original',
     // DevOps
-    vagrant: "vagrant/vagrant-original",
+    vagrant: 'vagrant/vagrant-original',
     // BaaS
-    amplify: "amazonwebservices/amazonwebservices-plain-wordmark",
+    amplify: 'amazonwebservices/amazonwebservices-plain-wordmark',
     // Framework
-    codeigniter: "codeigniter/codeigniter-plain",
-    quasar: "quasar/quasar-plain",
+    codeigniter: 'codeigniter/codeigniter-plain',
+    quasar: 'quasar/quasar-plain',
     // Testing
-    mocha: "mocha/mocha-plain",
-    karma: "karma/karma-original",
-    jasmine: "jasmine/jasmine-original",
+    mocha: 'mocha/mocha-plain',
+    karma: 'karma/karma-original',
+    jasmine: 'jasmine/jasmine-original',
     // Software
-    sketch: "sketch/sketch-original",
+    sketch: 'sketch/sketch-original',
     // Static Site Generators
-    hugo: "hugo/hugo-original",
-    sculpin: "php/php-original",
-    vuepress: "vuejs/vuejs-original", // VuePress doesn't have official icon, using Vue
-    jekyll: "jekyll/jekyll-original",
-    middleman: "ruby/ruby-original",
+    hugo: 'hugo/hugo-original',
+    sculpin: 'php/php-original',
+    vuepress: 'vuejs/vuejs-original', // VuePress doesn't have official icon, using Vue
+    jekyll: 'jekyll/jekyll-original',
+    middleman: 'ruby/ruby-original',
     // Angular variant
-    scully: "angularjs/angularjs-original",
+    scully: 'angularjs/angularjs-original',
   };
 
   // Check if skill needs devicon fallback
@@ -175,146 +175,146 @@ export function getSkillIconUrl(skill: string): string {
   // Map skill names to skillicons identifiers
   const skillIconsMap: Record<string, string> = {
     // Programming Languages
-    c: "c",
-    cplusplus: "cpp",
-    csharp: "cs",
-    go: "go",
-    java: "java",
-    javascript: "js",
-    typescript: "ts",
-    php: "php",
-    perl: "perl",
-    ruby: "ruby",
-    scala: "scala",
-    python: "py",
-    swift: "swift",
-    objectivec: "apple",
-    clojure: "clojure",
-    rust: "rust",
-    haskell: "haskell",
-    coffeescript: "coffeescript",
-    elixir: "elixir",
-    erlang: "erlang",
+    c: 'c',
+    cplusplus: 'cpp',
+    csharp: 'cs',
+    go: 'go',
+    java: 'java',
+    javascript: 'js',
+    typescript: 'ts',
+    php: 'php',
+    perl: 'perl',
+    ruby: 'ruby',
+    scala: 'scala',
+    python: 'py',
+    swift: 'swift',
+    objectivec: 'apple',
+    clojure: 'clojure',
+    rust: 'rust',
+    haskell: 'haskell',
+    coffeescript: 'coffeescript',
+    elixir: 'elixir',
+    erlang: 'erlang',
     // Frontend
-    vuejs: "vue",
-    react: "react",
-    svelte: "svelte",
-    angularjs: "angular",
-    angular: "angular",
-    backbonejs: "backbone",
-    bootstrap: "bootstrap",
-    vuetify: "vuetify",
-    css3: "css",
-    html5: "html",
-    pug: "pug",
-    gulp: "gulp",
-    sass: "sass",
-    redux: "redux",
-    webpack: "webpack",
-    babel: "babel",
-    tailwind: "tailwind",
-    bulma: "bulma",
-    gtk: "gtk",
-    qt: "qt",
-    ember: "ember",
+    vuejs: 'vue',
+    react: 'react',
+    svelte: 'svelte',
+    angularjs: 'angular',
+    angular: 'angular',
+    backbonejs: 'backbone',
+    bootstrap: 'bootstrap',
+    vuetify: 'vuetify',
+    css3: 'css',
+    html5: 'html',
+    pug: 'pug',
+    gulp: 'gulp',
+    sass: 'sass',
+    redux: 'redux',
+    webpack: 'webpack',
+    babel: 'babel',
+    tailwind: 'tailwind',
+    bulma: 'bulma',
+    gtk: 'gtk',
+    qt: 'qt',
+    ember: 'ember',
     // Backend
-    nodejs: "nodejs",
-    spring: "spring",
-    express: "express",
-    graphql: "graphql",
-    kafka: "kafka",
-    rabbitmq: "rabbitmq",
-    rabbitMQ: "rabbitmq", // Handle capital MQ variant
-    hadoop: "hadoop",
-    nginx: "nginx",
-    nestjs: "nestjs",
+    nodejs: 'nodejs',
+    spring: 'spring',
+    express: 'express',
+    graphql: 'graphql',
+    kafka: 'kafka',
+    rabbitmq: 'rabbitmq',
+    rabbitMQ: 'rabbitmq', // Handle capital MQ variant
+    hadoop: 'hadoop',
+    nginx: 'nginx',
+    nestjs: 'nestjs',
     // Mobile
-    android: "androidstudio",
-    flutter: "flutter",
-    dart: "dart",
-    kotlin: "kotlin",
-    reactnative: "react",
-    ionic: "ionic",
+    android: 'androidstudio',
+    flutter: 'flutter',
+    dart: 'dart',
+    kotlin: 'kotlin',
+    reactnative: 'react',
+    ionic: 'ionic',
     // AI/ML
-    tensorflow: "tensorflow",
-    pytorch: "pytorch",
-    opencv: "opencv",
-    scikit_learn: "scikitlearn",
-    anaconda: "anaconda",
-    fastapi: "fastapi",
+    tensorflow: 'tensorflow',
+    pytorch: 'pytorch',
+    opencv: 'opencv',
+    scikit_learn: 'scikitlearn',
+    anaconda: 'anaconda',
+    fastapi: 'fastapi',
     // Database
-    mongodb: "mongodb",
-    mysql: "mysql",
-    postgresql: "postgres",
-    redis: "redis",
-    cassandra: "cassandra",
-    elasticsearch: "elasticsearch",
-    sqlite: "sqlite",
+    mongodb: 'mongodb',
+    mysql: 'mysql',
+    postgresql: 'postgres',
+    redis: 'redis',
+    cassandra: 'cassandra',
+    elasticsearch: 'elasticsearch',
+    sqlite: 'sqlite',
     // Data Visualization
-    d3js: "d3",
-    grafana: "grafana",
+    d3js: 'd3',
+    grafana: 'grafana',
     // DevOps
-    aws: "aws",
-    docker: "docker",
-    jenkins: "jenkins",
-    gcp: "gcp",
-    kubernetes: "kubernetes",
-    bash: "bash",
-    azure: "azure",
-    vagrant: "vagrant",
-    circleci: "circleci",
-    travisci: "travis",
+    aws: 'aws',
+    docker: 'docker',
+    jenkins: 'jenkins',
+    gcp: 'gcp',
+    kubernetes: 'kubernetes',
+    bash: 'bash',
+    azure: 'azure',
+    vagrant: 'vagrant',
+    circleci: 'circleci',
+    travisci: 'travis',
     // BaaS
-    firebase: "firebase",
-    appwrite: "appwrite",
-    heroku: "heroku",
+    firebase: 'firebase',
+    appwrite: 'appwrite',
+    heroku: 'heroku',
     // Framework
-    django: "django",
-    dotnet: "dotnet",
-    electron: "electron",
-    symfony: "symfony",
-    laravel: "laravel",
-    codeigniter: "codeigniter",
-    rails: "rails",
-    flask: "flask",
-    quasar: "quasar",
+    django: 'django',
+    dotnet: 'dotnet',
+    electron: 'electron',
+    symfony: 'symfony',
+    laravel: 'laravel',
+    codeigniter: 'codeigniter',
+    rails: 'rails',
+    flask: 'flask',
+    quasar: 'quasar',
     // Testing
-    cypress: "cypress",
-    selenium: "selenium",
-    jest: "jest",
-    mocha: "mocha",
-    puppeteer: "puppeteer",
-    karma: "karma",
-    jasmine: "jasmine",
+    cypress: 'cypress',
+    selenium: 'selenium',
+    jest: 'jest',
+    mocha: 'mocha',
+    puppeteer: 'puppeteer',
+    karma: 'karma',
+    jasmine: 'jasmine',
     // Software
-    illustrator: "illustrator",
-    photoshop: "photoshop",
-    xd: "xd",
-    figma: "figma",
-    blender: "blender",
-    sketch: "sketch",
-    invision: "invision",
-    framer: "framer",
-    matlab: "matlab",
-    postman: "postman",
+    illustrator: 'illustrator',
+    photoshop: 'photoshop',
+    xd: 'xd',
+    figma: 'figma',
+    blender: 'blender',
+    sketch: 'sketch',
+    invision: 'invision',
+    framer: 'framer',
+    matlab: 'matlab',
+    postman: 'postman',
     // Static Site Generators
-    gatsby: "gatsby",
-    hugo: "hugo",
-    jekyll: "jekyll",
-    nextjs: "nextjs",
-    nuxtjs: "nuxtjs",
-    "11ty": "eleventy",
-    hexo: "hexo",
+    gatsby: 'gatsby',
+    hugo: 'hugo',
+    jekyll: 'jekyll',
+    nextjs: 'nextjs',
+    nuxtjs: 'nuxtjs',
+    '11ty': 'eleventy',
+    hexo: 'hexo',
     // Game Engines
-    unity: "unity",
-    unreal: "unreal",
+    unity: 'unity',
+    unreal: 'unreal',
     // Automation
-    zapier: "zapier",
-    ifttt: "ifttt",
+    zapier: 'zapier',
+    ifttt: 'ifttt',
     // Other
-    linux: "linux",
-    git: "git",
-    arduino: "arduino",
+    linux: 'linux',
+    git: 'git',
+    arduino: 'arduino',
   };
 
   const iconName = skillIconsMap[skill] || skill;
@@ -326,7 +326,7 @@ export function getSkillIconUrl(skill: string): string {
 
 export function generateMarkdown(options: GenerateMarkdownOptions): string {
   const { profile, links, social, support, skills } = options;
-  let markdown = "";
+  let markdown = '';
 
   // Title and Subtitle
   if (profile.title) {
@@ -339,7 +339,7 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
 
   // Visitor Badge
   if (profile.visitorsBadge && social.github) {
-    markdown += `<p align="left"> <img src="https://komarev.com/ghpvc/?username=${social.github}&label=${profile.badgeLabel || "Profile views"}&color=${profile.badgeColor || "0e75b6"}&style=${profile.badgeStyle || "flat"}" alt="${social.github}" /> </p>\n\n`;
+    markdown += `<p align="left"> <img src="https://komarev.com/ghpvc/?username=${social.github}&label=${profile.badgeLabel || 'Profile views'}&color=${profile.badgeColor || '0e75b6'}&style=${profile.badgeStyle || 'flat'}" alt="${social.github}" /> </p>\n\n`;
   }
 
   // GitHub Trophy
@@ -355,31 +355,31 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   // About sections
   const aboutSections = [
     {
-      key: "currentWork",
+      key: 'currentWork',
       value: profile.currentWork,
       prefix: DEFAULT_PREFIX.currentWork,
       link: links.currentWork,
     },
     {
-      key: "currentLearn",
+      key: 'currentLearn',
       value: profile.currentLearn,
       prefix: DEFAULT_PREFIX.currentLearn,
     },
     {
-      key: "collaborateOn",
+      key: 'collaborateOn',
       value: profile.collaborateOn,
       prefix: DEFAULT_PREFIX.collaborateOn,
       link: links.collaborateOn,
     },
     {
-      key: "helpWith",
+      key: 'helpWith',
       value: profile.helpWith,
       prefix: DEFAULT_PREFIX.helpWith,
       link: links.helpWith,
     },
-    { key: "ama", value: profile.ama, prefix: DEFAULT_PREFIX.ama },
-    { key: "contact", value: profile.contact, prefix: DEFAULT_PREFIX.contact },
-    { key: "funFact", value: profile.funFact, prefix: DEFAULT_PREFIX.funFact },
+    { key: 'ama', value: profile.ama, prefix: DEFAULT_PREFIX.ama },
+    { key: 'contact', value: profile.contact, prefix: DEFAULT_PREFIX.contact },
+    { key: 'funFact', value: profile.funFact, prefix: DEFAULT_PREFIX.funFact },
   ];
 
   aboutSections.forEach(({ value, prefix, link }) => {
@@ -410,10 +410,7 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   // Social Connect
   const socialLinks = Object.entries(social).filter(
     ([key, value]) =>
-      key !== "twitterBadge" &&
-      value &&
-      typeof value === "string" &&
-      value.trim() !== "",
+      key !== 'twitterBadge' && value && typeof value === 'string' && value.trim() !== ''
   );
   if (socialLinks.length > 0) {
     markdown += `<h3 align="left">Connect with me:</h3>\n`;
@@ -431,9 +428,7 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
   }
 
   // Skills
-  const selectedSkills = Object.entries(skills).filter(
-    ([_, selected]) => selected,
-  );
+  const selectedSkills = Object.entries(skills).filter(([_, selected]) => selected);
   if (selectedSkills.length > 0) {
     markdown += `<h3 align="left">Languages and Tools:</h3>\n`;
     markdown += `<p align="left">`;
@@ -467,5 +462,5 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
 }
 
 export function generateTitle(profile: Partial<ProfileFormData>): string {
-  return profile.title || "My GitHub Profile";
+  return profile.title || 'My GitHub Profile';
 }

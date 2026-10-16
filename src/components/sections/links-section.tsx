@@ -12,7 +12,7 @@ interface LinksSectionProps {
 export function LinksSection({ register, errors }: LinksSectionProps) {
   return (
     <div className="space-y-6">
-      <div className="border-b border-border pb-4">
+      <div className="border-border border-b pb-4">
         <h2 className="text-2xl font-bold">Links</h2>
         <p className="text-muted-foreground mt-1 text-sm">
           Add links to your portfolio, blog, and resume
