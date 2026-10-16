@@ -1,4 +1,9 @@
-import type { ProfileFormData, LinksFormData, SocialFormData, SupportFormData } from './validations';
+import type {
+  ProfileFormData,
+  LinksFormData,
+  SocialFormData,
+  SupportFormData,
+} from './validations';
 
 export interface SavedFormData {
   profile: Partial<ProfileFormData>;
@@ -31,7 +36,10 @@ export function loadFormData(): SavedFormData | null {
   try {
     console.log('📂 storage.ts - loadFormData called');
     const saved = localStorage.getItem(STORAGE_KEY);
-    console.log('📂 storage.ts - Raw data from localStorage:', saved ? `${saved.length} bytes` : 'null');
+    console.log(
+      '📂 storage.ts - Raw data from localStorage:',
+      saved ? `${saved.length} bytes` : 'null'
+    );
     if (saved) {
       const parsed = JSON.parse(saved);
       console.log('✅ storage.ts - Successfully parsed data:', parsed);

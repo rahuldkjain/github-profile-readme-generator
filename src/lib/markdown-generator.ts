@@ -37,6 +37,7 @@ const socialPlatformUrls: Record<string, (username: string) => string> = {
   hackerearth: (u) => `https://hackerearth.com/${u}`,
   geeks_for_geeks: (u) => `https://auth.geeksforgeeks.org/user/${u}`,
   discord: (u) => `https://discord.gg/${u}`,
+  bluesky: (u) => `https://bsky.app/profile/${u}`,
 };
 
 const socialIcons: Record<string, string> = {
@@ -62,6 +63,7 @@ const socialIcons: Record<string, string> = {
   hackerearth: 'hackerearth.svg',
   geeks_for_geeks: 'geeks-for-geeks.svg',
   discord: 'discord.svg',
+  bluesky: 'bluesky.svg',
 };
 
 // Generate skill icon URL - uses skillicons.dev for consistent dark mode support
@@ -358,7 +360,11 @@ export function generateMarkdown(options: GenerateMarkdownOptions): string {
       prefix: DEFAULT_PREFIX.currentWork,
       link: links.currentWork,
     },
-    { key: 'currentLearn', value: profile.currentLearn, prefix: DEFAULT_PREFIX.currentLearn },
+    {
+      key: 'currentLearn',
+      value: profile.currentLearn,
+      prefix: DEFAULT_PREFIX.currentLearn,
+    },
     {
       key: 'collaborateOn',
       value: profile.collaborateOn,

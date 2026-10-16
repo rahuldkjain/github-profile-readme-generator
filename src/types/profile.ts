@@ -95,6 +95,7 @@ export interface SocialLinks {
   hackerearth: string;
   geeks_for_geeks: string;
   discord: string;
+  bluesky: string;
   rssurl: string;
   twitterBadge: boolean;
 }
