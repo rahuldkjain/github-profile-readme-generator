@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { Info } from 'lucide-react';
+import { Info } from "lucide-react";
 
-import { UseFormRegister, FieldErrors, UseFormWatch } from 'react-hook-form';
-import { FormInput } from '@/components/forms/form-input';
-import { FormCheckbox } from '@/components/forms/form-checkbox';
-import type { SocialFormData } from '@/lib/validations';
+import { UseFormRegister, FieldErrors, UseFormWatch } from "react-hook-form";
+import { FormInput } from "@/components/forms/form-input";
+import { FormCheckbox } from "@/components/forms/form-checkbox";
+import type { SocialFormData } from "@/lib/validations";
 
 interface SocialSectionProps {
   register: UseFormRegister<SocialFormData>;
@@ -15,29 +15,80 @@ interface SocialSectionProps {
 
 export function SocialSection({ register, errors, watch }: SocialSectionProps) {
   const socialPlatforms = [
-    { key: 'github', label: 'GitHub', icon: '🐙', placeholder: 'username' },
-    { key: 'linkedin', label: 'LinkedIn', icon: '💼', placeholder: 'username' },
-    { key: 'twitter', label: 'Twitter', icon: '🐦', placeholder: 'username' },
-    { key: 'dev', label: 'Dev.to', icon: '📝', placeholder: 'username' },
-    { key: 'stackoverflow', label: 'Stack Overflow', icon: '📚', placeholder: 'userid/username' },
-    { key: 'medium', label: 'Medium', icon: '✍️', placeholder: '@username' },
-    { key: 'youtube', label: 'YouTube', icon: '📺', placeholder: 'channel-id' },
-    { key: 'instagram', label: 'Instagram', icon: '📷', placeholder: 'username' },
-    { key: 'fb', label: 'Facebook', icon: '👤', placeholder: 'username' },
-    { key: 'codepen', label: 'CodePen', icon: '🖊️', placeholder: 'username' },
-    { key: 'codesandbox', label: 'CodeSandbox', icon: '📦', placeholder: 'username' },
-    { key: 'kaggle', label: 'Kaggle', icon: '🔬', placeholder: 'username' },
-    { key: 'leetcode', label: 'LeetCode', icon: '💻', placeholder: 'username' },
-    { key: 'hackerrank', label: 'HackerRank', icon: '🏆', placeholder: 'username' },
-    { key: 'codeforces', label: 'Codeforces', icon: '⚡', placeholder: 'username' },
-    { key: 'codechef', label: 'CodeChef', icon: '👨‍🍳', placeholder: 'username' },
-    { key: 'topcoder', label: 'TopCoder', icon: '🥇', placeholder: 'username' },
-    { key: 'hackerearth', label: 'HackerEarth', icon: '🌍', placeholder: '@username' },
-    { key: 'geeks_for_geeks', label: 'GeeksforGeeks', icon: '🤓', placeholder: 'username' },
-    { key: 'dribbble', label: 'Dribbble', icon: '🎨', placeholder: 'username' },
-    { key: 'behance', label: 'Behance', icon: '🎭', placeholder: 'username' },
-    { key: 'discord', label: 'Discord', icon: '💬', placeholder: 'invite-code' },
-    { key: 'rssurl', label: 'RSS Feed', icon: '📡', placeholder: 'https://...' },
+    { key: "github", label: "GitHub", icon: "🐙", placeholder: "username" },
+    { key: "linkedin", label: "LinkedIn", icon: "💼", placeholder: "username" },
+    { key: "twitter", label: "Twitter", icon: "🐦", placeholder: "username" },
+    { key: "dev", label: "Dev.to", icon: "📝", placeholder: "username" },
+    {
+      key: "stackoverflow",
+      label: "Stack Overflow",
+      icon: "📚",
+      placeholder: "userid/username",
+    },
+    { key: "medium", label: "Medium", icon: "✍️", placeholder: "@username" },
+    { key: "youtube", label: "YouTube", icon: "📺", placeholder: "channel-id" },
+    {
+      key: "instagram",
+      label: "Instagram",
+      icon: "📷",
+      placeholder: "username",
+    },
+    { key: "fb", label: "Facebook", icon: "👤", placeholder: "username" },
+    { key: "codepen", label: "CodePen", icon: "🖊️", placeholder: "username" },
+    {
+      key: "codesandbox",
+      label: "CodeSandbox",
+      icon: "📦",
+      placeholder: "username",
+    },
+    { key: "kaggle", label: "Kaggle", icon: "🔬", placeholder: "username" },
+    { key: "leetcode", label: "LeetCode", icon: "💻", placeholder: "username" },
+    {
+      key: "hackerrank",
+      label: "HackerRank",
+      icon: "🏆",
+      placeholder: "username",
+    },
+    {
+      key: "codeforces",
+      label: "Codeforces",
+      icon: "⚡",
+      placeholder: "username",
+    },
+    { key: "codechef", label: "CodeChef", icon: "👨‍🍳", placeholder: "username" },
+    { key: "topcoder", label: "TopCoder", icon: "🥇", placeholder: "username" },
+    {
+      key: "hackerearth",
+      label: "HackerEarth",
+      icon: "🌍",
+      placeholder: "@username",
+    },
+    {
+      key: "geeks_for_geeks",
+      label: "GeeksforGeeks",
+      icon: "🤓",
+      placeholder: "username",
+    },
+    { key: "dribbble", label: "Dribbble", icon: "🎨", placeholder: "username" },
+    { key: "behance", label: "Behance", icon: "🎭", placeholder: "username" },
+    {
+      key: "discord",
+      label: "Discord",
+      icon: "💬",
+      placeholder: "invite-code",
+    },
+    {
+      key: "bluesky",
+      label: "Bluesky",
+      icon: "🦋",
+      placeholder: "handle.bsky.social",
+    },
+    {
+      key: "rssurl",
+      label: "RSS Feed",
+      icon: "📡",
+      placeholder: "https://...",
+    },
   ];
 
   return (
@@ -68,10 +119,12 @@ export function SocialSection({ register, errors, watch }: SocialSectionProps) {
             </svg>
           </div>
           <div className="flex-1">
-            <h4 className="mb-1 text-sm font-semibold">Enter usernames only, not full URLs</h4>
+            <h4 className="mb-1 text-sm font-semibold">
+              Enter usernames only, not full URLs
+            </h4>
             <p className="text-muted-foreground mb-2 text-sm">
-              Just provide your username or handle for each platform. We'll automatically generate
-              the correct URLs.
+              Just provide your username or handle for each platform. We'll
+              automatically generate the correct URLs.
             </p>
             <div className="text-muted-foreground space-y-1 text-xs">
               <div className="flex items-center gap-2">
@@ -107,24 +160,28 @@ export function SocialSection({ register, errors, watch }: SocialSectionProps) {
       {/* Twitter Badge Option - Show always with disabled state and hint */}
       <div className="border-border mt-6 border-t pt-6">
         <div
-          className={`rounded-lg p-4 transition-all ${watch('twitter') ? 'bg-accent/50' : 'bg-muted/30'}`}
+          className={`rounded-lg p-4 transition-all ${watch("twitter") ? "bg-accent/50" : "bg-muted/30"}`}
         >
           <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold">
             <span>🐦</span>
             <span>Twitter Enhancement</span>
           </h4>
-          {!watch('twitter') && (
+          {!watch("twitter") && (
             <p className="text-muted-foreground mb-3 flex items-center gap-1 text-xs">
               <Info className="h-3 w-3" />
               Enter your Twitter username above to enable this feature
             </p>
           )}
-          <div className={!watch('twitter') ? 'pointer-events-none opacity-50' : ''}>
+          <div
+            className={
+              !watch("twitter") ? "pointer-events-none opacity-50" : ""
+            }
+          >
             <FormCheckbox
-              {...register('twitterBadge')}
+              {...register("twitterBadge")}
               id="twitterBadge"
               label="Show Twitter follow badge on profile"
-              disabled={!watch('twitter')}
+              disabled={!watch("twitter")}
             />
           </div>
         </div>

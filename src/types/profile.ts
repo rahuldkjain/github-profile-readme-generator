@@ -48,7 +48,7 @@ export interface ProfileData {
   contact: string;
   funFact: string;
   visitorsBadge: boolean;
-  badgeStyle: 'flat' | 'flat-square' | 'plastic' | 'for-the-badge';
+  badgeStyle: "flat" | "flat-square" | "plastic" | "for-the-badge";
   badgeColor: string;
   badgeLabel: string;
   githubProfileTrophy: boolean;
@@ -95,6 +95,7 @@ export interface SocialLinks {
   hackerearth: string;
   geeks_for_geeks: string;
   discord: string;
+  bluesky: string;
   rssurl: string;
   twitterBadge: boolean;
 }
